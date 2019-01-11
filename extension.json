@@ -1,0 +1,227 @@
+{
+	"name": "BlueSpicePrivacy",
+	"author": [
+		"Dejan Savuljesku <savuljesku@hallowelt.com>"
+	],
+	"license-name": "GPL-3.0-only",
+	"url": "",
+	"type": "bluespice",
+	"version": "3.1.0-alpha",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePrivacy": {
+					"className": "\\BlueSpice\\Privacy\\Extension",
+					"extPath": "/BlueSpicePrivacy"
+				}
+			},
+			"PermissionRegistry": {
+				"bs-privacy-admin": {
+					"type": "global",
+					"roles": [ "admin", "accountmanager" ]
+				}
+			},
+			"NotificationRegistrationFunctions": [
+				"\\BlueSpice\\Privacy\\Notifications\\Registrator::registerNotifications"
+			],
+			"AdminToolRegistry": {
+				"bs-privacy-admin": "BlueSpice\\Privacy\\AdminTool"
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Modules": {
+				"anonymization": {
+					"class": "\\BlueSpice\\Privacy\\Module\\Anonymization"
+				},
+				"deletion": {
+					"class": "\\BlueSpice\\Privacy\\Module\\Deletion"
+				},
+				"transparency": {
+					"class": "\\BlueSpice\\Privacy\\Module\\Transparency"
+				},
+				"consent": {
+					"class": "\\BlueSpice\\Privacy\\Module\\Consent"
+				}
+			},
+			"Handlers": [
+				"\\BlueSpice\\Privacy\\Handler\\Anonymize",
+				"\\BlueSpice\\Privacy\\Handler\\Delete",
+				"\\BlueSpice\\Privacy\\Handler\\ExportData"
+			]
+		}
+	},
+	"APIModules": {
+		"bs-privacy": "\\BlueSpice\\Privacy\\Api\\PrivacyApi",
+		"bs-privacy-get-requests": "\\BlueSpice\\Privacy\\Api\\GetRequests",
+		"bs-privacy-get-all-consents": "\\BlueSpice\\Privacy\\Api\\GetAllConsents"
+	},
+	"MessagesDirs": {
+		"BlueSpicePageRename": "i18n"
+	},
+	"SpecialPages": {
+		"PrivacyCenter": "\\BlueSpice\\Privacy\\Special\\PrivacyCenter",
+		"PrivacyAdmin": "\\BlueSpice\\Privacy\\Special\\PrivacyAdmin"
+	},
+	"ResourceModules": {
+		"ext.bluespice.privacy.styles": {
+			"styles": [
+				"ext.bluespice.privacy.styles.less"
+			]
+		},
+		"ext.bluespice.privacy.user": {
+			"scripts": [
+				"widget/Privacy.js",
+				"widget/PrivacyRequestable.js",
+				"widget/Delete.js",
+				"widget/Anonymize.js",
+				"dialog/ViewData.js",
+				"widget/Transparency.js",
+				"widget/Consent.js",
+				"ext.bluespice.privacy.user.js"
+			],
+			"messages": [
+				"bs-privacy-anonymization-error-retrieving-name",
+				"bs-privacy-anonymization-layout-label",
+				"bs-privacy-anonymization-start-btn-label",
+				"bs-privacy-anonymization-layout-help",
+				"bs-privacy-anonymization-new-username-label",
+				"bs-privacy-anonymization-confirm-button-label",
+				"bs-privacy-anonymization-error-check-name",
+				"bs-privacy-anonymization-invalid-name",
+				"bs-privacy-anonymization-username-exists",
+				"bs-privacy-anonymization-error-anonymizing",
+				"bs-privacy-anonymization-success-anonymizing",
+				"bs-privacy-anonymization-final-prompt",
+				"bs-privacy-anonymize-login-button",
+				"bs-privacy-api-error-generic",
+				"bs-privacy-deletion-layout-label",
+				"bs-privacy-deletion-layout-help",
+				"bs-privacy-deletion-request-deletion-button",
+				"bs-privacy-deletion-submit-request-label",
+				"bs-privacy-deletion-request-pending",
+				"bs-privacy-deletion-cancel-request-button",
+				"bs-privacy-request-failed",
+				"bs-privacy-request-cancel-failed",
+				"bs-privacy-deletion-request-denied",
+				"bs-privacy-acknowledge-request-button",
+				"bs-privacy-cancel-request-button",
+				"bs-privacy-anonymization-request-denied",
+				"bs-privacy-anonymization-request-pending",
+				"bs-privacy-request-denied-comment",
+				"bs-privacy-anonymization-request-button",
+				"bs-privacy-delete-error-deleting",
+				"bs-privacy-deletion-final-prompt",
+				"mainpage",
+				"bs-privacy-deletion-button",
+				"bs-privacy-transparency-layout-label",
+				"bs-privacy-transparency-layout-help",
+				"bs-privacy-transparency-show-all-data-button",
+				"bs-privacy-transparency-type-selector-personal",
+				"bs-privacy-transparency-type-selector-working",
+				"bs-privacy-transparency-type-selector-actions",
+				"bs-privacy-transparency-type-selector-content",
+				"bs-privacy-transparency-export-data-button",
+				"bs-privacy-transparency-export-layout-title",
+				"bs-privacy-transparency-format-html",
+				"bs-privacy-transparency-format-csv",
+				"bs-privacy-transparency-loading-message",
+				"bs-privacy-transparency-view-data-dialog-title",
+				"bs-privacy-transparency-view-data-dialog-close",
+				"bs-privacy-transparency-type-title-personal",
+				"bs-privacy-transparency-type-title-working",
+				"bs-privacy-transparency-type-title-actions",
+				"bs-privacy-transparency-type-title-content",
+				"bs-privacy-consent-layout-label",
+				"bs-privacy-consent-layout-help",
+				"bs-privacy-consent-save-button",
+				"bs-privacy-consent-get-options-fail",
+				"bs-privacy-consent-save-success",
+				"bs-privacy-consent-save-fail",
+				"bs-privacy-transparency-no-data"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.bluespice.privacy.admin": {
+			"scripts": [
+				"widget/admin/AdminWidget.js",
+				"widget/admin/RequestManager.js",
+				"widget/admin/ConsentOverview.js",
+				"ext.bluespice.privacy.admin.js"
+			],
+			"messages": [
+				"bs-privacy-admin-request-manager-help",
+				"bs-privacy-admin-request-manager-title",
+				"bs-privacy-admin-request-action-failed",
+				"bs-privacy-admin-approve-final-prompt",
+				"bs-privacy-admin-deny-prompt",
+				"bs-privacy-admin-deny-comment-placeholder",
+				"bs-privacy-admin-request-grid-column-user",
+				"bs-privacy-admin-request-grid-column-action",
+				"bs-privacy-admin-request-grid-column-timestamp",
+				"bs-privacy-admin-request-grid-column-comment",
+				"bs-privacy-admin-request-grid-action-approve",
+				"bs-privacy-admin-request-grid-column-deny",
+				"bs-privacy-admin-consent-overview-title",
+				"bs-privacy-admin-consent-overview-help",
+				"bs-privacy-admin-consent-grid-column-user",
+				"bs-privacy-admin-consent-grid-column-cookies",
+				"bs-privacy-admin-consent-grid-column-data-collection",
+				"bs-privacy-admin-requests-disabled",
+				"bs-privacy-admin-request-grid-action-deny"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.bluespice.extjs"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePrivacy/resources"
+	},
+	"Hooks": {
+		"PersonalUrls": "\\BlueSpice\\Privacy\\Hook\\PersonalUrls\\AddPrivacyUrls::callback",
+		"LoadExtensionSchemaUpdates":  [
+			"\\BlueSpice\\Privacy\\Hook\\LoadExtensionSchemaUpdates\\AddPrivacyRequestTable::callback"
+		],
+		"GetPreferences": [
+			"\\BlueSpice\\Privacy\\Hook\\GetPreferences\\AddConsentPrefs::callback"
+		]
+	},
+	"callback": "\\BlueSpice\\Privacy\\Extension::onCallback",
+	"config_prefix": "bsg",
+	"config": {
+		"PrivacyEnableRequests": {
+			"value": true
+		},
+		"PrivacyDeleteUsername": {
+			"value": "DeletedUser"
+		},
+		"PrivacyRequestDeadline": {
+			"value": 30
+		},
+		"PrivacyConsentTypes": {
+			"value": {
+				"cookies": "bs-privacy-prefs-consent-cookies",
+				"privacy-policy":  "bs-privacy-prefs-consent-privacy-policy"
+			}
+		}
+	},
+	"LogTypes": [ "bs-privacy" ],
+	"LogNames": {
+		"bs-privacy": "bs-privacy"
+	},
+	"LogHeaders": {
+		"bs-privacy": "bs-privacy-header"
+	},
+	"LogActionsHandlers": {
+		"bs-privacy/*": "LogFormatter"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

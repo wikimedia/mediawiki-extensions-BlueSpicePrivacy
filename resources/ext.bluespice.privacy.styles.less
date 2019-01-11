@@ -1,0 +1,141 @@
+.bs-privacy-user-section, .bs-privacy-admin-widget {
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ececec;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	.oo-ui-fieldsetLayout {
+		.oo-ui-fieldsetLayout-header {
+			span {
+				margin: 0 !important;
+			}
+		}
+	}
+	.oo-ui-fieldsetLayout-group {
+		label.bs-privacy-subtitle {
+			font-weight: normal;
+			color: grey;
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	label.bs-privacy-error {
+		padding: 5px;
+		background-color: #fce1e6;
+		border: 1px solid #fec8d1;
+		border-radius: 10px;
+		color: red;
+		margin-top: 5px;
+		font-weight: normal;
+	}
+	label.bs-privacy-success {
+		padding: 5px;
+		background-color: #eef9ea;
+		border: 1px solid #bafcbb;
+		border-radius: 10px;
+		color: green;
+		font-weight: normal;
+	}
+	.bs-privacy-anonymize-login-btn {
+		margin-left: 20px;
+		vertical-align: top;
+	}
+	.oo-ui-flaggedElement-primary.oo-ui-buttonWidget span {
+		color: white;
+	}
+
+	.bs-privacy-transparency-export {
+		border-top: 2px solid #c2bdbd;
+		margin-top: 10px;
+		padding-top: 10px;
+		.oo-ui-fieldLayout-body {
+			padding-top: 10px;
+			.oo-ui-fieldLayout-header {
+				padding-bottom: 0;
+			}
+			.oo-ui-labelElement-label {
+				font-weight: normal;
+				vertical-align: top;
+			}
+			.oo-ui-horizontalLayout {
+				margin-bottom: 10px;
+				.oo-ui-fieldLayout {
+					padding: 10px;
+				}
+			}
+		}
+	}
+	&.section-consent {
+		.oo-ui-fieldLayout {
+			margin-top: 0px;
+		}
+		.oo-ui-buttonWidget.oo-ui-flaggedElement-primary {
+			margin-bottom: 10px;
+			margin-top: 5px;
+		}
+	}
+}
+
+.bs-privacy-label-warning {
+	color: red;
+}
+
+.bs-privacy-label-block {
+	display: block !important;
+}
+
+#bs-privacy-extjs-requests {
+	.icon-approve {
+		background-image: url( 'images/approve.png' );
+		background-size: contain;
+	}
+	.icon-deny {
+		margin-left: 5px;
+		background-image: url( 'images/deny.png' );
+		background-size: contain;
+	}
+}
+
+.bs-privacy-transparency-tab-line {
+	display: block !important;
+	font-weight: normal;
+}
+
+.bs-privacy-bool-column {
+	.x-grid-cell-inner {
+		padding: 5px;
+		text-align: center !important;
+		.bs-privacy-admin-consent-column-bool-true {
+			font-size: 21px;
+			&:before {
+				content: "\e97d";
+				font-family: "entypo";
+				color: green;
+			}
+		}
+
+		.bs-privacy-admin-consent-column-bool-false {
+			font-size: 24px;
+			&:before {
+				content: "\e98d";
+				font-family: "entypo";
+				color: red;
+			}
+		}
+	}
+}
+
+.bs-privacy-request-overdue {
+	color: red;
+}
+
+.bs-privacy-request-near {
+	color: #e4843d;
+}
+
+.bs-privacy-transparency-no-data {
+	padding: 10px;
+	font-size: 1.2em;
+}
+
