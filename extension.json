@@ -6,7 +6,7 @@
 	"license-name": "GPL-3.0-only",
 	"url": "",
 	"type": "bluespice",
-	"version": "3.1.0-alpha",
+	"version": "3.0.1",
 	"requires": {
 		"MediaWiki": ">= 1.31.0"
 	},
