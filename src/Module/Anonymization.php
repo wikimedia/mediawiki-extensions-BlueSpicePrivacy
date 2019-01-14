@@ -182,4 +182,34 @@ class Anonymization extends ModuleRequestable {
 			$comment
 		);
 	}
+
+	/**
+	 * Get RL modules required to run this module
+	 * @param string $type
+	 * @return string
+	 */
+	public function getRLModule( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			return "ext.bs.privacy.module.anonymization.user";
+		}
+
+		return null;
+	}
+
+	/**
+	 * @param string $type
+	 * @return string|array|null
+	 */
+	public function getUIWidget( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			return [
+				"callback" => "bs.privacy.widget.Anonymize",
+				"data" => [
+					"userName" => \RequestContext::getMain()->getUser()->getName()
+				]
+			];
+		}
+
+		return null;
+	}
 }

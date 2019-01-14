@@ -2,6 +2,8 @@
 
 namespace BlueSpice\Privacy\Module;
 
+use BlueSpice\Privacy\CookieConsentProviderRegistry;
+use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
 use BlueSpice\Services;
 
@@ -18,14 +20,27 @@ class Consent extends Module {
 	protected $options = [];
 
 	/**
+	 * @var \Config
+	 */
+	protected $config;
+
+	/**
+	 * @var ICookieConsentProvider|null
+	 */
+	protected $cookieConsentProvider;
+
+	/**
 	 *
 	 * @param \IContextSource $context
 	 */
 	public function __construct( $context ) {
 		parent::__construct( $context );
 		$this->user = $context->getUser();
-		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$this->options = $config->get( 'PrivacyConsentTypes' );
+		$this->config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$this->options = $this->config ->get( 'PrivacyConsentTypes' );
+
+		$providerRegistry = new CookieConsentProviderRegistry();
+		$this->cookieConsentProvider = $providerRegistry->getProvider();
 	}
 
 	/**
@@ -154,4 +169,48 @@ class Consent extends Module {
 
 		return $descriptors;
 	}
+
+	/**
+	 * Get RL modules required to run this module
+	 * @param string $type
+	 * @return string|null
+	 */
+	public function getRLModule( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			return "ext.bs.privacy.module.consent.user";
+		} elseif ( $type === static::MODULE_UI_TYPE_ADMIN ) {
+			return "ext.bs.privacy.module.consent.admin";
+		}
+	}
+
+	/**
+	 * @param string $type
+	 * @return string|array|null
+	 */
+	public function getUIWidget( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			$widgetData = [];
+			if ( $this->cookieConsentProvider ) {
+				$widgetData['cookieConsentProvider'] = [
+					"class" => $this->cookieConsentProvider->getHandlerClass(),
+					"config" => [
+						"map" => $this->cookieConsentProvider->getGroupMapping(),
+						"cookieName" => $this->cookieConsentProvider->getCookieName()
+					]
+				];
+			}
+			return [
+				"callback" => "bs.privacy.widget.Consent",
+				"data" => $widgetData
+			];
+		} elseif ( $type === static::MODULE_UI_TYPE_ADMIN ) {
+			return [
+				"callback" => "bs.privacy.widget.ConsentOverview",
+				"data" => [
+					"consentTypes" => $this->config->get( 'PrivacyConsentTypes' )
+				]
+			];
+		}
+	}
+
 }

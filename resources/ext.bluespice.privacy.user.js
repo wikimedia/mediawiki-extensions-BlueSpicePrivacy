@@ -1,27 +1,26 @@
 ( function( mw, $, bs ) {
-	window.bs.privacy = bs.privacy || {};
-	bs.privacy.widget = bs.privacy.widget || {};
+	$( '.bs-privacy-user-section' ).each( function( k, section ) {
+		var $section = $( section );
 
-	var anonymizeWidget = new bs.privacy.widget.Anonymize( {
-		$element: $( '.section-anonymization' ),
-		userName: mw.config.get( 'wgUserName' )
+		var rlModule = $section.data( 'rl-module' );
+		if ( !rlModule ) {
+			return;
+		}
+
+		mw.loader.using( rlModule ).then( function() {
+			var sectionCallback = $section.data( 'callback' );
+			var func = bs.privacy.util.funcFromCallback( sectionCallback );
+
+			var config = {};
+			if( $section.data( 'config' ) ) {
+				config = $section.data( 'config' );
+			}
+
+			var widget = new func( $.extend( {
+				$element: $section
+			}, config ) );
+			widget.init();
+		} );
 	} );
-
-	var deleteWidget = new bs.privacy.widget.Delete( {
-		$element: $( '.section-deletion' )
-	} );
-
-	var transparencyWidget = new bs.privacy.widget.Transparency( {
-		$element: $( '.section-transparency' )
-	} );
-
-	var consentWidget = new bs.privacy.widget.Consent( {
-		$element: $( '.section-consent' )
-	} );
-
-	anonymizeWidget.init();
-	deleteWidget.init();
-	transparencyWidget.init();
-	consentWidget.init();
 
 } )( mediaWiki, jQuery, blueSpice );

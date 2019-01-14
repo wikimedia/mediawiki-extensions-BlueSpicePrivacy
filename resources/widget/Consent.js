@@ -8,6 +8,12 @@
 		cfg.title = cfg.title || mw.message( 'bs-privacy-consent-layout-label' ).text();
 		cfg.subtitle = cfg.subtitle || mw.message( 'bs-privacy-consent-layout-help' ).text();
 		bs.privacy.widget.Consent.parent.call( this, cfg );
+
+		this.cookieConsentProvider;
+		if( cfg.cookieConsentProvider ) {
+			var func = bs.privacy.util.funcFromCallback( cfg.cookieConsentProvider.class );
+			this.cookieConsentProvider = new func( cfg.cookieConsentProvider.config );
+		}
 	};
 
 	OO.inheritClass( bs.privacy.widget.Consent, bs.privacy.widget.Privacy );
@@ -42,6 +48,12 @@
 							label: new OO.ui.HtmlSnippet( data.label ),
 							help: new OO.ui.HtmlSnippet( data.help )
 						} )
+					] );
+				}
+
+				if( this.cookieConsentProvider ) {
+					this.form.addItems( [
+						this.cookieConsentProvider.getSettingsWidget()
 					] );
 				}
 
