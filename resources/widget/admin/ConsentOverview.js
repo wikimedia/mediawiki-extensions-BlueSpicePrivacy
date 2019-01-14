@@ -7,6 +7,8 @@
 		cfg.subtitle = 'bs-privacy-admin-consent-overview-help';
 
 		bs.privacy.widget.ConsentOverview.parent.call( this, cfg );
+
+		this.consentTypes = cfg.consentTypes;
 	};
 
 	OO.inheritClass( bs.privacy.widget.ConsentOverview, bs.privacy.widget.AdminWidget );
@@ -16,7 +18,7 @@
 		this.$element.append( $gridContainer );
 
 		Ext.create( 'BS.Privacy.grid.Consents', {
-			consentTypes: mw.config.get( 'bsPrivacyConsentTypes' ),
+			consentTypes: this.consentTypes,
 			renderTo: 'bs-privacy-extjs-consents'
 		} );
 	};

@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Privacy\Special;
 
+use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
 
 class PrivacyCenter extends \SpecialPage {
@@ -46,14 +47,32 @@ class PrivacyCenter extends \SpecialPage {
 
 		$moduleRegistry = new ModuleRegistry();
 		$modules = $moduleRegistry->getAllKeys();
+
 		foreach ( $modules as $key ) {
 			$moduleClass = $moduleRegistry->getModuleClass( $key );
 			if ( class_exists( $moduleClass ) ) {
 				$module = new $moduleClass( $this->getContext() );
-				$this->getOutput()->addHTML( \Html::element( 'div', [
+				$rlModule = $module->getRLModule( Module::MODULE_UI_TYPE_USER );
+				if ( $rlModule === null ) {
+					continue;
+				}
+				$data = [
 					'class' => "bs-privacy-user-section section-{$module->getModuleName()}",
-					'data-requestable' => $module->isRequestable() ? 1 : 0
-				] ) );
+					'data-requestable' => $module->isRequestable() ? 1 : 0,
+					'data-rl-module' => $rlModule
+				];
+				$widgetData = $module->getUIWidget( Module::MODULE_UI_TYPE_USER );
+
+				if ( is_string( $widgetData ) ) {
+					$data['data-callback'] = $widgetData;
+				} elseif ( is_array( $widgetData ) ) {
+					$data['data-callback'] = $widgetData['callback'];
+					if ( isset( $widgetData['data'] ) ) {
+						$data['data-config'] = \FormatJson::encode( $widgetData['data'] );
+					}
+				}
+
+				$this->getOutput()->addHTML( \Html::element( 'div', $data ) );
 			}
 		}
 	}

@@ -1,6 +1,8 @@
 <?php
 namespace BlueSpice\Privacy\Special;
 
+use BlueSpice\Privacy\Module;
+use BlueSpice\Privacy\ModuleRegistry;
 use MediaWiki\MediaWikiServices;
 
 class PrivacyAdmin extends \SpecialPage {
@@ -42,12 +44,6 @@ class PrivacyAdmin extends \SpecialPage {
 			$config->get( 'PrivacyEnableRequests' )
 		);
 
-		// TODO: This kinda breaks "independent module" design
-		$this->getOutput()->addJsConfigVars(
-			'bsPrivacyConsentTypes',
-			$config->get( 'PrivacyConsentTypes' )
-		);
-
 		$this->getOutput()->addModules( 'ext.bluespice.privacy.admin' );
 	}
 
@@ -60,9 +56,35 @@ class PrivacyAdmin extends \SpecialPage {
 			'id' => 'bs-privacy-admin-requests'
 		] );
 
-		$html .= \Html::element( 'div', [
-			'id' => 'bs-privacy-admin-consents'
-		] );
+		$moduleRegistry = new ModuleRegistry();
+		$modules = $moduleRegistry->getAllKeys();
+
+		foreach ( $modules as $key ) {
+			$moduleClass = $moduleRegistry->getModuleClass( $key );
+			if ( class_exists( $moduleClass ) ) {
+				$module = new $moduleClass( $this->getContext() );
+				$rlModule = $module->getRLModule( Module::MODULE_UI_TYPE_ADMIN );
+				if ( $rlModule === null ) {
+					continue;
+				}
+				$data = [
+					'class' => "bs-privacy-admin-section section-{$module->getModuleName()}",
+					'data-rl-module' => $rlModule
+				];
+				$widgetData = $module->getUIWidget( Module::MODULE_UI_TYPE_ADMIN );
+
+				if ( is_string( $widgetData ) ) {
+					$data['data-callback'] = $widgetData;
+				} elseif ( is_array( $widgetData ) ) {
+					$data['data-callback'] = $widgetData['callback'];
+					if ( isset( $widgetData['data'] ) ) {
+						$data['data-config'] = \FormatJson::encode( $widgetData['data'] );
+					}
+				}
+
+				$html .= \Html::element( 'div', $data );
+			}
+		}
 
 		$html .= \Html::closeElement( 'div' );
 

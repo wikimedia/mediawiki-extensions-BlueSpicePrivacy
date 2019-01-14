@@ -162,4 +162,29 @@ class Deletion extends ModuleRequestable {
 			$comment
 		);
 	}
+
+	/**
+	 * Get RL modules required to run this module
+	 * @param string $type
+	 * @return string|null
+	 */
+	public function getRLModule( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			return "ext.bs.privacy.module.deletion.user";
+		}
+
+		return null;
+	}
+
+	/**
+	 * @param string $type
+	 * @return string|array|null
+	 */
+	public function getUIWidget( $type ) {
+		if ( $type === static::MODULE_UI_TYPE_USER ) {
+			return "bs.privacy.widget.Delete";
+		}
+
+		return null;
+	}
 }

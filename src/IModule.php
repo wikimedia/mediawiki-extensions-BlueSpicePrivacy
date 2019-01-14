@@ -36,4 +36,19 @@ interface IModule {
 	 * @return boolean
 	 */
 	public function isRequestable();
+
+	/**
+	 * Get RL modules required to run this module
+	 * @param string $type
+	 * @return string|null
+	 */
+	public function getRLModule( $type );
+
+	/**
+	 * Class name or array of configs
+	 *
+	 * @param string $type
+	 * @return string|array|null
+	 */
+	public function getUIWidget( $type );
 }
