@@ -5,7 +5,7 @@ use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
 use MediaWiki\MediaWikiServices;
 
-class PrivacyAdmin extends \SpecialPage {
+class PrivacyAdmin extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'PrivacyAdmin', 'bs-privacy-admin' );
@@ -20,14 +20,6 @@ class PrivacyAdmin extends \SpecialPage {
 
 		$this->setUp();
 		$this->output();
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getGroupName() {
-		return 'bluespice';
 	}
 
 	protected function setUp() {

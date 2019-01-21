@@ -5,7 +5,7 @@ namespace BlueSpice\Privacy\Special;
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
 
-class PrivacyCenter extends \SpecialPage {
+class PrivacyCenter extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'PrivacyCenter' );
@@ -29,10 +29,6 @@ class PrivacyCenter extends \SpecialPage {
 
 		$this->setUp();
 		$this->output();
-	}
-
-	protected function getGroupName() {
-		return 'bluespice';
 	}
 
 	protected function setUp() {
