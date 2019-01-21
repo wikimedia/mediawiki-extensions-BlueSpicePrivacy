@@ -65,6 +65,9 @@
 	"MessagesDirs": {
 		"BlueSpicePrivacy": "i18n"
 	},
+	"ExtensionMessagesFiles": {
+		"BlueSpicePrivacyAliases": "languages/BlueSpicePrivacy.alias.php"
+	},
 	"SpecialPages": {
 		"PrivacyCenter": "\\BlueSpice\\Privacy\\Special\\PrivacyCenter",
 		"PrivacyAdmin": "\\BlueSpice\\Privacy\\Special\\PrivacyAdmin"
