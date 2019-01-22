@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-privacy-api-error-generic": "Der opstod en fejl",
+	"bs-privacy-anonymization-new-username-label": "Nyt brugernavn",
+	"bs-privacy-anonymization-api-invalid-username": "Ugyldigt brugernavn",
+	"bs-privacy-invalid-user": "Brugeren er ikke gyldig",
+	"bs-privacy-anonymization-request-comment": "Nyt brugernavn: $1",
+	"bs-privacy-admin-request-grid-column-action": "Handling",
+	"bs-privacy-admin-request-grid-action-approve": "Godkend",
+	"bs-privacy-admin-request-grid-column-deny": "Nægt",
+	"bs-privacy-admin-request-grid-action-deny": "Nægt",
+	"bs-privacy-transparency-export-data-button": "Eksporter data",
+	"bs-privacy-transparency-view-data-dialog-close": "Luk",
+	"bs-privacy-transparency-private-username": "Brugernavn: $1",
+	"bs-privacy-transparency-private-groups": "Grupper: $1",
+	"bs-privacy-transparency-private-former-groups": "Tidligere grupper: $1",
+	"bs-privacy-transparency-private-not-blocked": "Blokeret: Nej",
+	"bs-privacy-transparency-private-blocked": "Blokeret: Ja (af $1)",
+	"bs-privacy-consent-save-button": "Gem",
+	"bs-privacy-admin-consent-grid-column-user": "Brugernavn",
+	"bs-privacy-consent-bool-true": "Ja",
+	"bs-privacy-consent-bool-false": "Nej",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
+}
