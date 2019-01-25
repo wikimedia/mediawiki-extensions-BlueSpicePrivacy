@@ -220,7 +220,8 @@
 				"bs-privacy-consent-save-button",
 				"bs-privacy-consent-get-options-fail",
 				"bs-privacy-consent-save-success",
-				"bs-privacy-consent-save-fail"
+				"bs-privacy-consent-save-fail",
+				"bs-privacy-consent-cookie-settings-label"
 			],
 			"dependencies": [
 				"ext.bluespice.privacy.user"
@@ -319,7 +320,8 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Privacy\\Hook\\BeforePageDisplay\\AddCookieConsent::callback"
 		],
-		"WebResponseSetCookie": "BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback"
+		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
+		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\SkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback"
 	},
 	"callback": "\\BlueSpice\\Privacy\\Extension::onCallback",
 	"config_prefix": "bsg",
