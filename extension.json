@@ -291,7 +291,8 @@
 			"group": "general",
 			"dependencies": [
 				"ext.bluespice",
-				"oojs"
+				"oojs",
+				"oojs-ui"
 			]
 		},
 		"ext.bs.privacy.cookieconsent.nativemw.handler": {
@@ -301,6 +302,7 @@
 			"dependencies": [
 				"ext.bluespice",
 				"oojs",
+				"oojs-ui",
 				"ext.bs.privacy.cookieconsent"
 			]
 		}
