@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"bs-privacy-anonymization-new-username-label": "Nieuwe gebruikersnaam",
+	"bs-privacy-anonymization-api-invalid-username": "Ongeldige gebruikersnaam",
+	"bs-privacy-deletion-submit-request-label": "Opmerking (optioneel)",
+	"bs-privacy-anonymization-request-comment": "Nieuwe gebruikersnaam: $1",
+	"bs-privacy-acknowledge-request-button": "Afwijzen",
+	"bs-privacy-cancel-request-button": "Aanvraag annuleren",
+	"bs-privacy-request-denied-comment": "Opmerking: $1",
+	"bs-privacy-admin-request-grid-column-user": "Gebruiker",
+	"bs-privacy-transparency-view-data-dialog-close": "Sluiten",
+	"bs-privacy-consent-save-button": "Opslaan",
+	"bs-privacy-admin-consent-grid-column-user": "Gebruikersnaam",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dagen}} geleden)",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (vandaag)",
+	"bs-privacy-consent-bool-true": "Ja",
+	"bs-privacy-consent-bool-false": "Nee",
+	"logentry-bs-privacy-deletion": "Gebruiker $4 verwijderde zijn/haar account",
+	"echo-category-title-bs-privacy-cat": "Privacy",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alles accepteren",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Opslaan",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sluiten"
+}

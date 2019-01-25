@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog"
+		]
+	},
+	"bs-privacy-anonymization-layout-label": "Анонимизација",
+	"bs-privacy-anonymization-confirm-button-label": "Анонимизуј мој налог",
+	"bs-privacy-invalid-user": "Корисник није важећи",
+	"bs-privacy-anonymization-request-comment": "Ново корисничко име: $1",
+	"bs-privacy-acknowledge-request-button": "Одбаци",
+	"bs-privacy-admin-request-grid-column-comment": "Коментар",
+	"bs-privacy-transparency-show-all-data-button": "Прикажи све податке",
+	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
+	"notification-bs-privacy-center-url": "Центар приватности",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај"
+}

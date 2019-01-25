@@ -33,6 +33,8 @@
 	"bs-privacy-anonymize-login-button": "Entre novamente com seu novo nome de usuário",
 	"bs-privacy-admin-access-denied": "Você deve ser o administradordeprivacidade para executar esta ação",
 	"bs-privacy-invalid-user": "O usuário não é válido",
+	"bs-privacy-request-submit-failed": "Falha ao enviar a solicitação",
+	"bs-privacy-request-cancel-failed": "Falha ao cancelar a solicitação!",
 	"bs-privacy-admin-get-requests-failed": "Falha ao recuperar solicitações de exclusão",
 	"bs-privacy-deletion-layout-label": "Remover sua conta",
 	"bs-privacy-deletion-layout-help": "Você pode excluir completamente sua conta da wiki, juntamente com todos os vestígios do seu nome de usuário",
@@ -132,6 +134,7 @@
 	"notification-bs-privacy-anonymization-done-body": "Sua conta foi anonimizada com sucesso. Nome de usuário antigo: \"$1\". Novo nome de usuário: \"$2\"",
 	"notification-bs-privacy-deletion-approved": "Sua solicitação de exclusão foi aprovado!",
 	"notification-bs-privacy-deletion-approved-body": "A solicitação para excluir sua conta foi aprovado e sua conta será excluída em breve.",
+	"notification-bs-privacy-deletion-failed": "Falha na exclusão da conta!",
 	"notification-bs-privacy-deletion-failed-body": "Não foi possível excluir sua conta. Por favor contate os administradores da wiki para mais informações. Pedimos desculpas pela inconveniência.",
 	"notification-bs-privacy-request-denied-anonymization": "Sua solicitação de anonimização foi negado!",
 	"notification-bs-privacy-request-denied-anonymization-body": "O usuário $1 negou sua solicitação para anonimizar sua conta para o nome de usuário \"$2\". Comentário: $3",
@@ -154,5 +157,6 @@
 	"bs-privacy-cookie-convenience-group-label": "Cookies de conveniência",
 	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
+	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie"
 }
