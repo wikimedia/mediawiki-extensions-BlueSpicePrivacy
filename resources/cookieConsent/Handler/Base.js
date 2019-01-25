@@ -76,7 +76,7 @@
 	bs.privacy.cookieConsent.BaseHandler.prototype.getSettingsWidget = function() {
 		var settingsWidget = new OO.ui.ButtonWidget( {
 			framed: false,
-			label: 'Change cookie consent'
+			label: mw.message( 'bs-privacy-consent-cookie-settings-label' ).text()
 		} );
 
 		settingsWidget.$element.css( 'display', 'block' );

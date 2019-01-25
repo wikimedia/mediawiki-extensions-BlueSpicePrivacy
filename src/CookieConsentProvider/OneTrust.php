@@ -77,6 +77,10 @@ class OneTrust extends Base {
 				$crumbBits = explode( '=', $crumb );
 				$cookie[array_shift( $crumbBits )] = array_shift( $crumbBits );
 			}
+
+			if ( !isset( $cookie['groups'] ) ) {
+				return [];
+			}
 			$groups = $cookie['groups'];
 
 			$parsedGroups = [];

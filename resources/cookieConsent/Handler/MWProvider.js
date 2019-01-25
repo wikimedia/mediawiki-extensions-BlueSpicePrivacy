@@ -30,6 +30,9 @@
 		var dialog = new bs.privacy.dialog.CookieConsentSettings( cfg );
 		windowManager.addWindows( [ dialog ] );
 		windowManager.openWindow( dialog ).closed.then( function ( data ) {
+			if( !data ) {
+				return;
+			}
 			if( data.action === 'save' ) {
 				var newVal = {};
 				for( var groupName in this.getGroups() ) {
