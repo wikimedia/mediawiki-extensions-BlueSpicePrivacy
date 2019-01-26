@@ -98,5 +98,6 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "모두 승인",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "저장",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "닫기"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "닫기",
+	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기"
 }

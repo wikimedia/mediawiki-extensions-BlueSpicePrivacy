@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"bs-privacy-anonymization-new-username-label": "Neie Benotzernumm",
+	"bs-privacy-anonymization-request-comment": "Neie Benotzernumm: $1",
+	"bs-privacy-admin-deny-comment-placeholder": "Bemierkung",
+	"bs-privacy-admin-request-grid-column-user": "Benotzer",
+	"bs-privacy-admin-request-grid-column-action": "Aktioun",
+	"bs-privacy-admin-request-grid-column-comment": "Bemierkung",
+	"bs-privacy-transparency-view-data-dialog-close": "Zoumaachen",
+	"bs-privacy-transparency-private-username": "Benotzernumm: $1",
+	"bs-privacy-transparency-private-realname": "Richtegen Numm: $1",
+	"bs-privacy-transparency-private-not-blocked": "Gespaart: Neen",
+	"bs-privacy-transparency-private-blocked": "Gespaart: Jo (vum $1)",
+	"bs-privacy-consent-save-button": "Späicheren",
+	"bs-privacy-admin-consent-grid-column-user": "Benotzernumm",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (haut)",
+	"bs-privacy-consent-bool-true": "Jo",
+	"bs-privacy-consent-bool-false": "Neen",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen"
+}
