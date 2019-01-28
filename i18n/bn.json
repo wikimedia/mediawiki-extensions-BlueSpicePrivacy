@@ -4,5 +4,10 @@
 			"আফতাবুজ্জামান"
 		]
 	},
-	"bs-privacy-admin-consent-grid-column-user": "ব্যবহারকারী নাম"
+	"privacycenter": "গোপনীয়তা কেন্দ্র",
+	"bs-privacy-admin-request-grid-column-comment": "মন্তব্য",
+	"bs-privacy-transparency-show-all-data-button": "সব উপাত্ত দেখান",
+	"bs-privacy-transparency-private-blocked": "বাধাপ্রাপ্ত: হ্যাঁ ($1 দ্বারা)",
+	"bs-privacy-admin-consent-grid-column-user": "ব্যবহারকারী নাম",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "সংরক্ষণ করুন"
 }

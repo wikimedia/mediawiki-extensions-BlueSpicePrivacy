@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Strayblues"
+		]
+	},
+	"bs-privacy-admin-request-grid-column-deny": "לדחות",
+	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
+	"echo-category-title-bs-privacy-cat": "פרטיות",
+	"notification-bs-privacy-request-denied-deletion": "בקשתך למחוק נדחתה!",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה"
+}

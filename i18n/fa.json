@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amirsara"
+		]
+	},
+	"bs-privacy-anonymization-request-comment": "نام کاربری تازه: $1",
+	"bs-privacy-acknowledge-request-button": "نادیده گرفتن",
+	"bs-privacy-admin-request-grid-column-action": "اقدام",
+	"bs-privacy-transparency-view-data-dialog-close": "بستن",
+	"bs-privacy-admin-consent-grid-column-user": "نام کاربری",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "ذخیره",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "بستن"
+}

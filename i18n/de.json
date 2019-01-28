@@ -56,7 +56,7 @@
 	"bs-privacy-delete-error-deleting": "Beim Versuch, dein Konto zu löschen, ist ein Fehler aufgetreten.",
 	"bs-privacy-deletion-final-prompt": "Dein Konto wird dauerhaft gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
 	"bs-privacy-deletion-button": "Dein Benutzerkonto löschen",
-	"action-bs-privacy-admin": "datenschutzadministrative Aktionen ausführen",
+	"action-bs-privacy-admin": "Datenschutzadministrative Aktionen ausführen",
 	"bs-privacy-admin-request-manager-help": "Übersicht über alle offenen Datenschutzanfragen",
 	"bs-privacy-admin-request-manager-title": "Ausstehende Anfragen",
 	"bs-privacy-admin-invalid-request": "Ungültige Anfrage",

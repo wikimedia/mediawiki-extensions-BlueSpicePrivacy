@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"A Chinese Wikipedian"
+		]
+	},
+	"bs-privacy-anonymization-new-username-label": "新的用户名",
+	"bs-privacy-acknowledge-request-button": "解除",
+	"bs-privacy-admin-request-grid-column-action": "操作",
+	"bs-privacy-admin-request-grid-action-approve": "认可",
+	"bs-privacy-admin-request-grid-action-deny": "拒绝",
+	"bs-privacy-transparency-show-all-data-button": "查看全部数据",
+	"bs-privacy-consent-save-button": "保存",
+	"bs-privacy-admin-consent-grid-column-user": "用户名",
+	"bs-privacy-consent-bool-true": "是",
+	"echo-category-title-bs-privacy-cat": "隐私政策"
+}
