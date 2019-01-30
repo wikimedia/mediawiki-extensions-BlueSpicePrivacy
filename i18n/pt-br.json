@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Tks4Fish"
 		]
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
@@ -124,6 +125,7 @@
 	"logentry-bs-privacy-deletion": "Usuário $4 excluiu sua conta",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|tem|tinha}} mudado dados de consentimento da política de privacidade {{GENDER:$2|dele|dela}} para: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|tem}} enviou uma solicitação para anonimizar conta {{GENDER:$2|delr|dela}} com comentário: $4",
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|cancelou}} o pedido para anonimizar {{GENDER:$2|sua}} conta",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|tem|tinha}} negado o pedido de anonimizar conta feita pelo usuário $4, com comentário: $5",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|tem}} aprovado o pedido para excluir a conta feita pelo usuário $4",
 	"echo-category-title-bs-privacy-cat": "Privacidade",
