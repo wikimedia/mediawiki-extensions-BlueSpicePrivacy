@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-privacy": "خصوصية BlueSpice",
@@ -80,6 +81,8 @@
 	"bs-privacy-transparency-type-selector-content": "الإشارة في المحتوى (مثل المقالات، وكيانات الجداول الزمنية، والتعليقات، وما إلى ذلك)",
 	"bs-privacy-transparency-export-data-button": "تصدير البيانات",
 	"bs-privacy-transparency-export-layout-title": "تصدير بياناتك",
+	"bs-privacy-transparency-format-html": "إتش تي إم إل",
+	"bs-privacy-transparency-format-csv": "سي إس في",
 	"bs-privacy-transparency-loading-message": "الرجاء الانتظار بينما يتم تجميع بياناتك...",
 	"bs-privacy-transparency-view-data-dialog-title": "عرض بياناتك",
 	"bs-privacy-transparency-view-data-dialog-close": "إغلاق",
