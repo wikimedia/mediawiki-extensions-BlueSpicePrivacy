@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Carlosmg.dg"
+		]
+	},
+	"bs-privacy-api-error-generic": "Ha ocurrido un error",
+	"bs-privacy-anonymization-new-username-label": "Nuevo nombre de usuario:",
+	"bs-privacy-anonymization-api-invalid-username": "Nombre de usuario no válido",
+	"bs-privacy-invalid-user": "El usuario no es válido",
+	"bs-privacy-deletion-layout-label": "Elimina tu cuenta",
+	"bs-privacy-deletion-submit-request-label": "Comentario (opcional)",
+	"bs-privacy-acknowledge-request-button": "Descartar",
+	"bs-privacy-admin-request-manager-title": "Solicitudes pendientes",
+	"bs-privacy-admin-invalid-request": "Solicitud no válida",
+	"bs-privacy-admin-request-grid-column-user": "Usuario",
+	"bs-privacy-admin-request-grid-column-timestamp": "Marca de tiempo",
+	"bs-privacy-admin-request-grid-column-comment": "Comentario",
+	"bs-privacy-admin-request-grid-action-approve": "Aprobar",
+	"bs-privacy-admin-request-grid-column-deny": "Denegar",
+	"bs-privacy-transparency-layout-label": "Transparencia",
+	"bs-privacy-transparency-show-all-data-button": "Ver todos los datos",
+	"bs-privacy-transparency-export-data-button": "Exportar datos",
+	"bs-privacy-transparency-view-data-dialog-close": "Cerrar",
+	"bs-privacy-transparency-private-not-blocked": "Bloqueado: No",
+	"bs-privacy-transparency-type-title-personal": "Datos personales",
+	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
+	"bs-privacy-admin-consent-grid-column-user": "Nombre de usuario",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (hoy)",
+	"echo-category-title-bs-privacy-cat": "Privacidad",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todo",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Guardar",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar"
+}

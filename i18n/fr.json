@@ -3,7 +3,8 @@
 		"authors": [
 			"Alno",
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"DSwissK"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -37,7 +38,7 @@
 	"bs-privacy-invalid-user": "L'utilisateur n'est pas valide",
 	"bs-privacy-request-submit-failed": "Échec lors de la soumission de la requête",
 	"bs-privacy-request-cancel-failed": "Échec de l'annulation de la requête !",
-	"bs-privacy-admin-get-requests-failed": "Echec lors de la récupération des demandes de supression",
+	"bs-privacy-admin-get-requests-failed": "Echec lors de la récupération des demandes de suppression",
 	"bs-privacy-deletion-layout-label": "Supprimer votre compte",
 	"bs-privacy-deletion-layout-help": "Vous pouvez complètement supprimer votre compte utilisateur sur le wiki, en même temps que toutes les mentions de votre identifiant",
 	"bs-privacy-deletion-request-deletion-button": "Demander la suppression du compte",
@@ -135,7 +136,7 @@
 	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|a soumis}} une demande pour supprimer son compte avec le commentaire : $4",
 	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|a fermé}} une demande de suppression faite par $4",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|a annulé}} la demande de suppression de son compte",
-	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|a}} approuvé la demande de supression de votre compte faite par l'utilisateur $4",
+	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|a}} approuvé la demande de suppression de compte faite par l'utilisateur $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|a refusé}} la demande de suppression de compte faite par l’utilisateur $4, avec le commentaire : $5",
 	"echo-category-title-bs-privacy-cat": "Confidentialité",
 	"notification-bs-privacy-login-url": "Se connecter au wiki",
@@ -149,8 +150,8 @@
 	"notification-bs-privacy-deletion-failed-body": "Nous ne pouvons pas supprimer votre compte. Veuillez contacter les administrateurs du wiki pour plus d’informations. Nous nous excusons pour la gêne occasionnée.",
 	"notification-bs-privacy-request-denied-anonymization": "Votre demande d’anonymisation a été refusée !",
 	"notification-bs-privacy-request-denied-anonymization-body": "L’utilisateur $1 a refusé votre demande d’anonymiser votre compte avec le nom d’utilisateur « $2 ». Commentaire : $3",
-	"notification-bs-privacy-request-denied-deletion": "Votre demande de supression a été rejetée!",
-	"notification-bs-privacy-request-denied-deletion-body": "L'utilisateur $1 a rejeté la demande de supression de votre compte. Commentaire : $2",
+	"notification-bs-privacy-request-denied-deletion": "Votre demande de suppression a été rejetée!",
+	"notification-bs-privacy-request-denied-deletion-body": "L'utilisateur $1 a rejeté la demande de suppression de votre compte. Commentaire : $2",
 	"notification-bs-privacy-request-submitted": "Nouvelle demande de confidentialité soumise !",
 	"notification-bs-privacy-request-submitted-body": "L’utilisateur « $1 » a soumis une nouvelle demande de confidentialité. Module : $3. Commentaire : $2",
 	"apihelp-bs-privacy-summary": "Point de terminaison pour toutes les actions de l’API concernant la confidentialité",
