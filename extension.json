@@ -4,6 +4,7 @@
 		"Dejan Savuljesku <savuljesku@hallowelt.com>"
 	],
 	"license-name": "GPL-3.0-only",
+	"descriptionmsg": "bs-privacy-desc",
 	"url": "https://bluespice.com",
 	"type": "bluespice",
 	"version": "3.0.1",
@@ -241,10 +242,9 @@
 			]
 
 		},
-		"ext.bs.privacy.cookieconsent": {
+		"ext.bs.privacy.cookieconsent.base": {
 			"scripts": [
-				"cookieConsent/Handler/Base.js",
-				"ext.bluespice.privacy.cookieconsent.js"
+				"cookieConsent/Handler/Base.js"
 			],
 			"dependencies": [
 				"ext.bluespice",
@@ -265,7 +265,7 @@
 			"dependencies": [
 				"ext.bluespice",
 				"oojs",
-				"ext.bs.privacy.cookieconsent"
+				"ext.bs.privacy.cookieconsent.base"
 			]
 		},
 		"ext.bs.privacy.cookieconsent.nativemw.register": {
@@ -303,7 +303,15 @@
 				"ext.bluespice",
 				"oojs",
 				"oojs-ui",
-				"ext.bs.privacy.cookieconsent"
+				"ext.bs.privacy.cookieconsent.base"
+			]
+		},
+		"ext.bs.privacy.cookieconsent": {
+			"scripts": [
+				"ext.bluespice.privacy.cookieconsent.js"
+			],
+			"dependencies": [
+				"ext.bluespice.privacy.util"
 			]
 		}
 	},
