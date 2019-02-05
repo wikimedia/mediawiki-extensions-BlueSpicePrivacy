@@ -5,5 +5,6 @@
 		]
 	},
 	"privacycenter": "Privātuma centrs",
-	"bs-privacy-transparency-show-all-data-button": "Rādīt visus datus"
+	"bs-privacy-transparency-show-all-data-button": "Rādīt visus datus",
+	"bs-privacy-admin-consent-grid-column-user": "Lietotājvārds"
 }
