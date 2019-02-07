@@ -1,16 +1,29 @@
 {
 	"@metadata": {
 		"authors": [
-			"Carlosmg.dg"
+			"Carlosmg.dg",
+			"Fitoschido"
 		]
 	},
+	"bs-privacy": "Privacidad de BlueSpice",
+	"privacycenter": "Centro de privacidad",
 	"bs-privacy-api-error-generic": "Ha ocurrido un error",
-	"bs-privacy-anonymization-new-username-label": "Nuevo nombre de usuario:",
+	"bs-privacy-anonymization-error-retrieving-name": "Se produjo un error al recuperar el nombre de usuario nuevo",
+	"bs-privacy-anonymization-layout-label": "Anonimización",
+	"bs-privacy-anonymization-new-username-label": "Nombre de usuario nuevo",
+	"bs-privacy-anonymization-confirm-button-label": "Hacer anónima mi cuenta",
+	"bs-privacy-anonymization-error-check-name": "Se produjo un error al verificar la validez del nombre de usuario nuevo",
+	"bs-privacy-anonymization-error-anonymizing": "Se produjo un error durante el proceso de anonimización.",
 	"bs-privacy-anonymization-api-invalid-username": "Nombre de usuario no válido",
 	"bs-privacy-invalid-user": "El usuario no es válido",
+	"bs-privacy-request-cancel-failed": "Falló la cancelación de la solicitud.",
 	"bs-privacy-deletion-layout-label": "Elimina tu cuenta",
 	"bs-privacy-deletion-submit-request-label": "Comentario (opcional)",
+	"bs-privacy-anonymization-request-comment": "Nombre de usuario nuevo: $1",
 	"bs-privacy-acknowledge-request-button": "Descartar",
+	"bs-privacy-request-denied-comment": "Comentario: $1",
+	"bs-privacy-delete-error-deleting": "Se produjo un error al eliminar tu cuenta.",
+	"bs-privacy-deletion-final-prompt": "Se eliminará tu cuenta permanentemente. No se puede deshacer esta acción",
 	"bs-privacy-admin-request-manager-title": "Solicitudes pendientes",
 	"bs-privacy-admin-invalid-request": "Solicitud no válida",
 	"bs-privacy-admin-request-grid-column-user": "Usuario",
@@ -22,12 +35,16 @@
 	"bs-privacy-transparency-show-all-data-button": "Ver todos los datos",
 	"bs-privacy-transparency-export-data-button": "Exportar datos",
 	"bs-privacy-transparency-view-data-dialog-close": "Cerrar",
+	"bs-privacy-transparency-private-experience": "Nivel de experiencia: $1",
 	"bs-privacy-transparency-private-not-blocked": "Bloqueado: No",
 	"bs-privacy-transparency-type-title-personal": "Datos personales",
 	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
 	"bs-privacy-admin-consent-grid-column-user": "Nombre de usuario",
+	"bs-privacy-timestamp-with-days-ago": "$1 (hace {{PLURAL:$2|$2 día|$2 días}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hoy)",
 	"echo-category-title-bs-privacy-cat": "Privacidad",
+	"notification-bs-privacy-login-url": "Acceder al wiki",
+	"notification-bs-privacy-center-url": "Centro de privacidad",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todo",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Guardar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar"
