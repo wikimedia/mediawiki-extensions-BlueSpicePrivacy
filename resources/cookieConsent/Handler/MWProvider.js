@@ -1,4 +1,5 @@
 ( function( mw, $ ) {
+
 	bs.privacy.cookieConsent.MWProvider = function( cfg ) {
 		cfg = cfg || {};
 

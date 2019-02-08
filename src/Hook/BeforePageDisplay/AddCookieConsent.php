@@ -17,8 +17,7 @@ class AddCookieConsent extends BeforePageDisplay {
 		}
 
 		$this->out->addModules( [
-			$provider->getRLRegistrationModule(),
-			$provider->getRLHandlerModule()
+			$provider->getRLRegistrationModule()
 		] );
 
 		// Add cookie handling
@@ -26,7 +25,8 @@ class AddCookieConsent extends BeforePageDisplay {
 		$this->out->addJsConfigVars( 'bsPrivacyCookieConsentHandlerConfig', array_merge( [
 			"class" => $provider->getHandlerClass(),
 			"map" => $provider->getGroupMapping(),
-			"cookieName" => $provider->getCookieName()
+			"cookieName" => $provider->getCookieName(),
+			"RLModule" => $provider->getRLHandlerModule()
 		], $provider->getHandlerConfig() ) );
 
 		return true;
