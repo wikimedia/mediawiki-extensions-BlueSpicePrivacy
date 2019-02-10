@@ -15,6 +15,7 @@
 	"bs-privacy-cancel-request-button": "Ufro annuléieren",
 	"bs-privacy-request-denied-comment": "Bemierkung: $1",
 	"bs-privacy-delete-error-deleting": "Beim Versuch fir Äre Benotzekont ze läschen ass e Feeler geschitt.",
+	"bs-privacy-deletion-final-prompt": "Äre Benotzerkomnt gëtt definitiv geläscht. Dës Aktioun kann net zréckgesat",
 	"bs-privacy-deletion-button": "Äre Benotzerkont läschen",
 	"bs-privacy-admin-deny-comment-placeholder": "Bemierkung",
 	"bs-privacy-admin-request-grid-column-user": "Benotzer",
@@ -24,6 +25,7 @@
 	"bs-privacy-admin-request-grid-action-approve": "Zoustëmmen",
 	"bs-privacy-admin-request-grid-action-deny": "Refuséieren",
 	"bs-privacy-transparency-layout-label": "Transparenz",
+	"bs-privacy-transparency-show-all-data-button": "All Donnéeë weisen",
 	"bs-privacy-transparency-view-data-dialog-title": "Äre Date weisen",
 	"bs-privacy-transparency-view-data-dialog-close": "Zoumaachen",
 	"bs-privacy-transparency-no-data": "Keng Donnéeë fonnt",
@@ -33,6 +35,7 @@
 	"bs-privacy-transparency-private-former-groups": "Fréier Gruppen: $1",
 	"bs-privacy-transparency-private-not-blocked": "Gespaart: Neen",
 	"bs-privacy-transparency-private-blocked": "Gespaart: Jo (vum $1)",
+	"bs-privacy-transparency-private-edit-count": "Zuel vun den Ännerungen: $1",
 	"bs-privacy-transparency-type-title-personal": "Perséinlech Daten",
 	"bs-privacy-consent-save-button": "Späicheren",
 	"bs-privacy-admin-consent-grid-column-user": "Benotzernumm",
@@ -40,6 +43,7 @@
 	"bs-privacy-consent-bool-true": "Jo",
 	"bs-privacy-consent-bool-false": "Neen",
 	"logentry-bs-privacy-deletion": "De Benotzer $4 huet säin/ire Benotzerkont geläscht",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "All akzeptéieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen"
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Elroy"
+			"Elroy",
+			"Optilete"
 		]
 	},
 	"privacycenter": "Centrum voor persoonsgegevens",
@@ -22,10 +23,12 @@
 	"bs-privacy-cancel-request-button": "Aanvraag annuleren",
 	"bs-privacy-request-denied-comment": "Opmerking: $1",
 	"bs-privacy-deletion-button": "Uw profiel verwijderen",
+	"bs-privacy-admin-request-manager-title": "Aanvragen in behandeling",
 	"bs-privacy-admin-invalid-request": "Ongeldig verzoek",
 	"bs-privacy-admin-deny-comment-placeholder": "Opmerking",
 	"bs-privacy-admin-request-grid-column-user": "Gebruiker",
 	"bs-privacy-admin-request-grid-column-action": "Bewerking",
+	"bs-privacy-admin-request-grid-column-timestamp": "Tijdstip",
 	"bs-privacy-admin-request-grid-column-comment": "Opmerking",
 	"bs-privacy-admin-request-grid-action-approve": "Goedkeuren",
 	"bs-privacy-admin-request-grid-column-deny": "Weigeren",
@@ -33,9 +36,11 @@
 	"bs-privacy-transparency-layout-label": "Doorzichtigheid",
 	"bs-privacy-transparency-show-all-data-button": "Alle gegevens weergeven",
 	"bs-privacy-transparency-type-selector-personal": "Persoonsgegevens (zoals e-mailadres, naam, profielgegevens enz.)",
+	"bs-privacy-transparency-export-data-button": "Gegevens exporteren",
 	"bs-privacy-transparency-view-data-dialog-title": "Uw gegevens weergeven",
 	"bs-privacy-transparency-view-data-dialog-close": "Sluiten",
 	"bs-privacy-admin-requests-disabled": "Momenteel zijn verzoeken op deze wiki uitgeschakeld.",
+	"bs-privacy-transparency-no-data": "Geen gegevens gevonden.",
 	"bs-privacy-transparency-private-realname": "Echte naam: $1",
 	"bs-privacy-transparency-private-registration": "Ingeschreven op: $1",
 	"bs-privacy-transparency-private-blocked": "Geblokkeerd: ja (door $1)",

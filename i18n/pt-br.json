@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Tks4Fish"
+			"Tks4Fish",
+			"WikiUser22222"
 		]
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
@@ -122,12 +123,20 @@
 	"log-name-bs-privacy": "Privacidade de BS",
 	"bs-privacy-consent-bool-true": "Sim",
 	"bs-privacy-consent-bool-false": "Não",
+	"logentry-bs-privacy-anonymization": "$4 tem {{GENDER:$2|anonimizado|anonimizada}} a conta {{GENDER:$2|dele|dela}}. Novo nome de usuário: $5",
 	"logentry-bs-privacy-deletion": "Usuário $4 excluiu sua conta",
+	"logentry-bs-privacy-transparency": "$1 tem {{GENDER:$2|exportado}} dados {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|tem|tinha}} mudado dados de consentimento da política de privacidade {{GENDER:$2|dele|dela}} para: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|tem}} enviou uma solicitação para anonimizar conta {{GENDER:$2|delr|dela}} com comentário: $4",
+	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|tem encerrado}} pedido de anonimidade feito por $4",
 	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|cancelou}} o pedido para anonimizar {{GENDER:$2|sua}} conta",
+	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|aprovou}} a solicitação para anonimizar uma conta feita {{GENDER:$2|pelo usuário|pela usuária}} $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|tem|tinha}} negado o pedido de anonimizar conta feita pelo usuário $4, com comentário: $5",
+	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|enviou}} uma solicitação para excluir a conta {{GENDER:$2|dele|dela}} com o comentário: $4",
+	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|encerrou o pedido}} de exclusão {{GENDER:$2|feito|feita}} por $4",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|cancelou}} a solicitação para excluir a conta {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|tem}} aprovado o pedido para excluir a conta feita pelo usuário $4",
+	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|tem negado|tem negada}} a solicitação para excluir uma conta feita {{GENDER:$2|pelo usuário $4|pela usuária $4}}, com o comentário: $5",
 	"echo-category-title-bs-privacy-cat": "Privacidade",
 	"notification-bs-privacy-login-url": "Entre para a wiki",
 	"notification-bs-privacy-center-url": "CentrodePrivacidade",
