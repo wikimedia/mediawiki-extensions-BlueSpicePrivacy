@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali"
+			"Mirzali",
+			"Orbot707"
 		]
 	},
 	"privacycenter": "Merkezê xısusiye",
@@ -38,6 +39,6 @@
 	"bs-privacy-consent-bool-false": "Nê",
 	"echo-category-title-bs-privacy-cat": "Dızdêniye",
 	"notification-bs-privacy-center-url": "Merkezê xısusiye",
-	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Pêrıne qebul ke",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Pêrıne qebul kerê",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Qeyd ke"
 }

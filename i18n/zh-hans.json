@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"Ff98sha"
 		]
 	},
 	"bs-privacy-anonymization-new-username-label": "新的用户名",
+	"bs-privacy-deletion-layout-label": "删除您的账户",
 	"bs-privacy-acknowledge-request-button": "解除",
 	"bs-privacy-admin-request-grid-column-action": "操作",
 	"bs-privacy-admin-request-grid-action-approve": "认可",
