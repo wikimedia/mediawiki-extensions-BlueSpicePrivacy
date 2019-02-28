@@ -3,16 +3,24 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Ff98sha",
-			"Zazzzz"
+			"Zazzzz",
+			"WQL"
 		]
 	},
+	"bs-privacy-api-error-generic": "发生错误",
+	"bs-privacy-anonymization-layout-label": "匿名化",
+	"bs-privacy-anonymization-layout-help": "您可以将您的帐户匿名化，将所有出现您用户名的地方替换为新的用户名。",
 	"bs-privacy-anonymization-new-username-label": "新的用户名",
+	"bs-privacy-anonymization-confirm-button-label": "将我的账户匿名化",
+	"bs-privacy-anonymization-api-invalid-username": "无效的用户名",
 	"bs-privacy-deletion-layout-label": "删除您的账户",
 	"bs-privacy-anonymization-request-comment": "新用户名：$1",
 	"bs-privacy-acknowledge-request-button": "解除",
+	"bs-privacy-request-denied-comment": "评论：$1",
 	"bs-privacy-admin-request-grid-column-user": "用户",
 	"bs-privacy-admin-request-grid-column-action": "操作",
 	"bs-privacy-admin-request-grid-action-approve": "认可",
+	"bs-privacy-admin-request-grid-column-deny": "拒绝",
 	"bs-privacy-admin-request-grid-action-deny": "拒绝",
 	"bs-privacy-transparency-show-all-data-button": "查看全部数据",
 	"bs-privacy-consent-save-button": "保存",
