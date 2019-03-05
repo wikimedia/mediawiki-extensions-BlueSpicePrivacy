@@ -69,9 +69,13 @@
 	"bs-privacy-admin-request-grid-column-deny": "拒绝",
 	"bs-privacy-admin-request-grid-action-deny": "拒绝",
 	"bs-privacy-transparency-show-all-data-button": "查看全部数据",
+	"bs-privacy-transparency-view-data-dialog-close": "关闭",
 	"bs-privacy-consent-save-button": "保存",
 	"bs-privacy-admin-consent-grid-column-user": "用户名",
 	"bs-privacy-consent-bool-true": "是",
+	"bs-privacy-consent-bool-false": "否",
 	"echo-category-title-bs-privacy-cat": "隐私政策",
-	"notification-bs-privacy-admin-url": "隐私管理员"
+	"notification-bs-privacy-admin-url": "隐私管理员",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "接受所有",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "关闭"
 }
