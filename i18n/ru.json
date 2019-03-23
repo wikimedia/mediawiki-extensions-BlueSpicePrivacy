@@ -3,13 +3,14 @@
 		"authors": [
 			"Alexandr Efremov",
 			"Athena Atterdag",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"Diralik"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
 	"bs-privacy-anonymization-new-username-label": "Новое имя участника",
 	"bs-privacy-anonymization-confirm-button-label": "Анонимизировать мой аккаунт",
-	"bs-privacy-anonymization-final-prompt": "Ваша учетная запись будет переименована и все ваши вклады будут отображаться под новым именем участника. Это действие нельзя будет обратить",
+	"bs-privacy-anonymization-final-prompt": "Ваша учётная запись будет переименована и все ваши вклады будут отображаться под новым именем участника. Это действие нельзя будет обратить",
 	"bs-privacy-api-error-missing-module": "Модуль $1 не зарегистрирован",
 	"bs-privacy-missing-param": "Должен присутствовать параметр \"$1\"!",
 	"bs-privacy-invalid-param": "Параметр \"$1\" представлен в неправильном формате.",
