@@ -8,6 +8,7 @@
 	"bs-privacy-anonymization-layout-label": "Анонімізація",
 	"bs-privacy-anonymization-new-username-label": "Нове ім'я користувача",
 	"bs-privacy-anonymization-confirm-button-label": "Анонімізувати мій акаунт",
+	"bs-privacy-api-error-missing-module": "Модуль $1 не зареєстрований!",
 	"bs-privacy-anonymization-api-invalid-username": "Неправильне ім'я користувача",
 	"bs-privacy-deletion-layout-label": "Вилучити Ваш обліковий запис",
 	"bs-privacy-anonymization-request-comment": "Нове ім'я користувача: $1",
