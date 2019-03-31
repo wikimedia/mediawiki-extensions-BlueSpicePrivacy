@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Vlad5250",
+			"Gzhegozh"
 		]
 	},
 	"bs-privacy-api-error-generic": "Сталася помилка",
@@ -26,6 +27,7 @@
 	"bs-privacy-admin-request-grid-action-approve": "Затвердити",
 	"bs-privacy-admin-request-grid-column-deny": "Заборонити",
 	"bs-privacy-admin-request-grid-action-deny": "Заборонити",
+	"bs-privacy-transparency-layout-label": "Прозорість",
 	"bs-privacy-transparency-show-all-data-button": "Показати всі дані",
 	"bs-privacy-transparency-export-data-button": "Експортувати дані",
 	"bs-privacy-transparency-export-layout-title": "Експортувати ваші дані",
