@@ -16,6 +16,7 @@
 	"bs-privacy-deletion-cancel-request-button": "Annullér sletnings anmodning",
 	"bs-privacy-anonymization-request-comment": "Nyt brugernavn: $1",
 	"bs-privacy-cancel-request-button": "Annuller anmodning",
+	"bs-privacy-request-denied-comment": "Kommentar: $1",
 	"bs-privacy-deletion-button": "Slet din konto",
 	"bs-privacy-admin-request-manager-title": "Afventende anmodninger",
 	"bs-privacy-admin-invalid-request": "Ugyldig anmodning",
