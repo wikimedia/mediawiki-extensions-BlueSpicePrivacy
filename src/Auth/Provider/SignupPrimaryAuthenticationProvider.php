@@ -19,10 +19,8 @@ class SignupPrimaryAuthenticationProvider extends AbstractPasswordPrimaryAuthent
 		switch ( $action ) {
 			case AuthManager::ACTION_CREATE:
 				return [ new SignupAuthenticationRequest() ];
-				break;
 			default:
 				return [];
-				break;
 		}
 	}
 
@@ -71,7 +69,6 @@ class SignupPrimaryAuthenticationProvider extends AbstractPasswordPrimaryAuthent
 	 * @return void
 	 */
 	public function providerChangeAuthenticationData( AuthenticationRequest $req ) {
-		return;
 	}
 
 	/**
