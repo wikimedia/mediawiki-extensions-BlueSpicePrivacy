@@ -37,7 +37,7 @@ class Consent extends Module {
 		parent::__construct( $context );
 		$this->user = $context->getUser();
 		$this->config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$this->options = $this->config ->get( 'PrivacyConsentTypes' );
+		$this->options = $this->config->get( 'PrivacyConsentTypes' );
 
 		$providerRegistry = new CookieConsentProviderRegistry();
 		$this->cookieConsentProvider = $providerRegistry->getProvider();

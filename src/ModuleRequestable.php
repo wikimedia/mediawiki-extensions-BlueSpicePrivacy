@@ -41,19 +41,14 @@ abstract class ModuleRequestable extends Module {
 		switch ( $func ) {
 			case "checkStatus":
 				return $this->checkStatus();
-				break;
 			case "getRequests":
 				return $this->getRequests();
-				break;
 			case "submitRequest":
 				return $this->submitRequest( $data );
-				break;
 			case "cancelRequest":
 				return $this->cancelRequest();
-				break;
 			case "closeRequest":
 				return $this->closeRequest();
-				break;
 			case "approveRequest":
 				if ( !isset( $data['requestId'] ) ) {
 					return \Status::newFatal(
@@ -61,7 +56,6 @@ abstract class ModuleRequestable extends Module {
 					);
 				}
 				return $this->approveRequest( $data['requestId'] );
-				break;
 			case "denyRequest":
 				if ( !isset( $data['requestId'] ) ) {
 					return \Status::newFatal(
@@ -70,7 +64,6 @@ abstract class ModuleRequestable extends Module {
 				}
 				$comment = isset( $data['comment'] ) ? $data['comment'] : '';
 				return $this->denyRequest( $data['requestId'], $comment );
-				break;
 			default:
 				return \Status::newFatal(
 					wfMessage( 'bs-privacy-module-no-function', $func )
