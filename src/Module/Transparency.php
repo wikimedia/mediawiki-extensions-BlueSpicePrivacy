@@ -44,7 +44,6 @@ class Transparency extends Module {
 				}
 
 				return $this->getData( $types, $format );
-				break;
 			default:
 				return \Status::newFatal( wfMessage( 'bs-privacy-module-no-function', $func ) );
 		}

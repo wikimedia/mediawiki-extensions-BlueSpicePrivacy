@@ -22,13 +22,11 @@ class Anonymization extends ModuleRequestable {
 		switch ( $func ) {
 			case "getUsername":
 				return $this->getAlternativeUsername();
-				break;
 			case "checkUsername":
 				if ( !isset( $data['username'] ) ) {
 					return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 				}
 				return $this->checkUsername( $data['username'] );
-				break;
 			case "anonymize":
 				if ( !isset( $data['username'] ) ) {
 					return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
