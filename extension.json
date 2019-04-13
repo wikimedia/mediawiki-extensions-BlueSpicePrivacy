@@ -58,6 +58,9 @@
 			}
 		}
 	},
+	"AvailableRights": [
+		"bs-privacy-admin"
+	],
 	"APIModules": {
 		"bs-privacy": "\\BlueSpice\\Privacy\\Api\\PrivacyApi",
 		"bs-privacy-get-requests": "\\BlueSpice\\Privacy\\Api\\GetRequests",
@@ -321,7 +324,7 @@
 	},
 	"Hooks": {
 		"PersonalUrls": "\\BlueSpice\\Privacy\\Hook\\PersonalUrls\\AddPrivacyUrls::callback",
-		"LoadExtensionSchemaUpdates":  [
+		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\Privacy\\Hook\\LoadExtensionSchemaUpdates\\AddPrivacyRequestTable::callback"
 		],
 		"GetPreferences": [
@@ -347,7 +350,7 @@
 		},
 		"PrivacyConsentTypes": {
 			"value": {
-				"privacy-policy":  "bs-privacy-prefs-consent-privacy-policy"
+				"privacy-policy": "bs-privacy-prefs-consent-privacy-policy"
 			}
 		},
 		"PrivacyCookieConsentProvider": {
@@ -364,11 +367,13 @@
 									"type": "exact",
 									"name": "_session",
 									"addPrefix": true
-								}, {
+								},
+								{
 									"type": "exact",
 									"name": "UserID",
 									"addPrefix": true
-								}, {
+								},
+								{
 									"type": "exact",
 									"name": "UserName",
 									"addPrefix": true
@@ -384,7 +389,8 @@
 									"type": "regex",
 									"name": "Calumma.*",
 									"addPrefix": true
-								}, {
+								},
+								{
 									"type": "regex",
 									"name": "ext-.*"
 								}
