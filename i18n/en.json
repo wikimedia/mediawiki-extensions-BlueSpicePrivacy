@@ -43,7 +43,6 @@
 	"bs-privacy-deletion-request-pending": "Deletion request is pending!",
 	"bs-privacy-deletion-cancel-request-button": "Cancel deletion request",
 	"bs-privacy-request-failed": "Submitting a request failed!",
-	"bs-privacy-request-cancel-failed": "Canceling the request failed!",
 	"bs-privacy-anonymization-request-comment": "New username: $1",
 	"bs-privacy-request-close-failed": "Closing a request failed",
 	"bs-privacy-deletion-request-denied": "Your deletion has been denied!",
@@ -57,7 +56,8 @@
 	"bs-privacy-deletion-final-prompt": "Your account will be permanently deleted. This action cannot be undone",
 	"bs-privacy-deletion-button": "Delete your account",
 
-	"action-bs-privacy-admin": "Execute Privacy administrative action",
+	"action-bs-privacy-admin": "execute Privacy administrative action",
+	"right-bs-privacy-admin": "Execute Privacy administrative action",
 	"bs-privacy-admin-request-manager-help": "Overview of all open privacy requests",
 	"bs-privacy-admin-request-manager-title": "Pending requests",
 	"bs-privacy-admin-invalid-request": "Invalid request",
