@@ -57,6 +57,7 @@
 	"bs-privacy-deletion-final-prompt": "سيتم حذف حسابك نهائيا، لا يمكن التراجع عن هذا الإجراء",
 	"bs-privacy-deletion-button": "حذف حسابك",
 	"action-bs-privacy-admin": "تنفيذ فعل إداري خصوصية",
+	"right-bs-privacy-admin": "تنفيذ فعل إداري خصوصية",
 	"bs-privacy-admin-request-manager-help": "نظرة عامة على جميع طلبات الخصوصية المفتوحة",
 	"bs-privacy-admin-request-manager-title": "الطلبات المعلقة",
 	"bs-privacy-admin-invalid-request": "طلب غير صالح",
