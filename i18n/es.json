@@ -21,7 +21,7 @@
 	"bs-privacy-anonymization-api-invalid-username": "Nombre de usuario no válido",
 	"bs-privacy-invalid-user": "El usuario no es válido",
 	"bs-privacy-request-submit-failed": "No se pudo enviar la solicitud",
-	"bs-privacy-request-cancel-failed": "Falló la cancelación de la solicitud.",
+	"bs-privacy-request-cancel-failed": "Falló la cancelación de la solicitud",
 	"bs-privacy-deletion-layout-label": "Elimina tu cuenta",
 	"bs-privacy-deletion-request-deletion-button": "Solicitar eliminación de cuenta",
 	"bs-privacy-deletion-submit-request-label": "Comentario (opcional)",

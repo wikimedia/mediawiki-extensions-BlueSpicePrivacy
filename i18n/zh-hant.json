@@ -56,6 +56,7 @@
 	"bs-privacy-deletion-final-prompt": "您的帳號將會被永久刪除，而且此操作無法還原",
 	"bs-privacy-deletion-button": "刪除您的帳號",
 	"action-bs-privacy-admin": "執行隱私管理操作",
+	"right-bs-privacy-admin": "執行隱私管理操作",
 	"bs-privacy-admin-request-manager-help": "所有開放隱私權請求的概要",
 	"bs-privacy-admin-request-manager-title": "等候的請求",
 	"bs-privacy-admin-invalid-request": "無效請求",
