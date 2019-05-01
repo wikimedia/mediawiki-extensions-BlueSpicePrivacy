@@ -8,6 +8,7 @@
 	"bs-privacy-anonymization-new-username-label": "Neie Benotzernumm",
 	"bs-privacy-api-error-missing-module": "Module $1 ass net registréiert!",
 	"bs-privacy-invalid-user": "De Benotzer ass net valabel",
+	"bs-privacy-request-cancel-failed": "D'Ufro konnt net annuléiert ginn",
 	"bs-privacy-deletion-layout-label": "Äre Benotzerkont läschen",
 	"bs-privacy-deletion-submit-request-label": "Bemierkung (fakultativ)",
 	"bs-privacy-anonymization-request-comment": "Neie Benotzernumm: $1",
