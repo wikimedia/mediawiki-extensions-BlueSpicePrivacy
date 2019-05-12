@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Maoue"
 		]
 	},
 	"bs-privacy-api-error-generic": "오류가 발생했습니다",
@@ -46,8 +47,11 @@
 	"bs-privacy-admin-invalid-request": "잘못된 요청",
 	"bs-privacy-admin-request-action-failed": "요청 동작이 실패했습니다!",
 	"bs-privacy-admin-approve-final-prompt": "요청 승인을 확인해 주십시오",
+	"bs-privacy-admin-deny-comment-placeholder": "댓글",
 	"bs-privacy-admin-request-grid-column-user": "사용자",
+	"bs-privacy-admin-request-grid-column-action": "동작",
 	"bs-privacy-admin-request-grid-column-timestamp": "타임스탬프",
+	"bs-privacy-admin-request-grid-column-comment": "댓글",
 	"bs-privacy-admin-request-grid-action-approve": "승인",
 	"bs-privacy-admin-request-grid-column-deny": "거부",
 	"bs-privacy-admin-request-grid-action-deny": "거부",
@@ -84,6 +88,7 @@
 	"logentry-bs-privacy-request-close-anonymization": "$4님의 익명화 요청을 $1님이 닫았{{GENDER:$2|습니다}}",
 	"logentry-bs-privacy-request-close-deletion": "$1님이 $4의 삭제 요청을 {{GENDER:$2|닫았습니다}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1님이 $4 사용자의 삭제 요청을 승인{{GENDER:$2|했습니다}}",
+	"echo-category-title-bs-privacy-cat": "개인정보",
 	"notification-bs-privacy-login-url": "위키로 로그인",
 	"notification-bs-privacy-anonymization-done": "계정이 익명화되었습니다!",
 	"notification-bs-privacy-anonymization-done-body": "계정이 성공적으로 익명화되었습니다. 이전 사용자 이름: \"$1\". 새 사용자 이름: \"$2\"",
