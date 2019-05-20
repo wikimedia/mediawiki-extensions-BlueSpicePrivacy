@@ -4,7 +4,8 @@
 			"Alexandr Efremov",
 			"Athena Atterdag",
 			"Romanko Mikhail",
-			"Diralik"
+			"Diralik",
+			"1233qwer1234qwer4"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
@@ -25,11 +26,17 @@
 	"bs-privacy-request-denied-comment": "Комментарий: $1",
 	"bs-privacy-deletion-button": "Удалить вашу учётную запись",
 	"bs-privacy-admin-request-manager-title": "Запросы, ожидающие рассмотрения",
+	"bs-privacy-admin-request-grid-column-user": "Участник",
+	"bs-privacy-admin-request-grid-column-deny": "Отклонить",
+	"bs-privacy-admin-request-grid-action-deny": "Отклонить",
 	"bs-privacy-transparency-show-all-data-button": "Показать все данные",
 	"bs-privacy-transparency-loading-message": "Пожалуйста, подождите, пока ваши данные собираются...",
 	"bs-privacy-transparency-private-email-not-authenticated": "Адрес электронной почты: $1 (не подтвержден)",
 	"bs-privacy-transparency-private-blocked": "Блокировка: Да (действие произведено $1)",
 	"bs-privacy-admin-consent-grid-column-user": "Имя пользователя",
+	"bs-privacy-consent-bool-true": "Да",
+	"bs-privacy-consent-bool-false": "Нет",
+	"logentry-bs-privacy-deletion": "Участник $4 удалил свою учётную запись",
 	"notification-bs-privacy-request-denied-deletion": "Ваш запрос на удаление был отклонен!",
 	"notification-bs-privacy-request-denied-deletion-body": "Пользователь $1 отклонил ваш запрос на удаление аккаунта. Комментарий: $2",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Настройки согласия на обработку cookies",

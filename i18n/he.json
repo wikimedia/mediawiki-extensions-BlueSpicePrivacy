@@ -2,13 +2,28 @@
 	"@metadata": {
 		"authors": [
 			"Strayblues",
-			"YaronSh"
+			"YaronSh",
+			"Erelon"
 		]
 	},
+	"bs-privacy-missing-param": "הפרמטר \"$1\" חייב להימצא!",
+	"bs-privacy-anonymization-api-invalid-username": "שם משתמש בלתי־תקין",
+	"bs-privacy-acknowledge-request-button": "סגירה",
+	"bs-privacy-cancel-request-button": "ביטול בקשה",
+	"bs-privacy-admin-request-grid-column-user": "משתמש",
 	"bs-privacy-admin-request-grid-column-deny": "לדחות",
+	"bs-privacy-admin-request-grid-action-deny": "לדחות",
+	"bs-privacy-transparency-view-data-dialog-close": "סגירה",
+	"bs-privacy-transparency-private-username": "שם משתמש: $1",
+	"bs-privacy-transparency-private-realname": "שם אמיתי: $1",
+	"bs-privacy-transparency-private-groups": "קבוצות: $1",
+	"bs-privacy-consent-save-button": "שמירה",
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
+	"bs-privacy-consent-bool-true": "כן",
+	"bs-privacy-consent-bool-false": "לא",
 	"echo-category-title-bs-privacy-cat": "פרטיות",
 	"notification-bs-privacy-request-denied-deletion": "בקשתך למחוק נדחתה!",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה",
 	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות"
 }
