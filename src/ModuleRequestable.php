@@ -211,7 +211,7 @@ abstract class ModuleRequestable extends Module {
 		);
 
 		if ( $res ) {
-			$this->logAction( 'submit', [
+			$this->logRequestAction( 'submit', [
 				'comment' => $comment
 			] );
 

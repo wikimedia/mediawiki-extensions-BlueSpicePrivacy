@@ -11,7 +11,7 @@
 
 		this.currentUsername = mw.config.get( 'wgUserName' );
 		this.newUsername = '';
-		this.typingTimer;
+		this.typingTimer = null;
 		this.typingDoneInterval = 500;
 	};
 
