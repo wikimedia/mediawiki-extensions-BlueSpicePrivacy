@@ -1,22 +1,22 @@
 ( function( mw, $, bs ) {
 	$( '.bs-privacy-user-section' ).each( function( k, section ) {
-		var $section = $( section );
+		let $section = $( section );
 
-		var rlModule = $section.data( 'rl-module' );
+		let rlModule = $section.data( 'rl-module' );
 		if ( !rlModule ) {
 			return;
 		}
 
 		mw.loader.using( rlModule ).then( function() {
-			var sectionCallback = $section.data( 'callback' );
-			var func = bs.privacy.util.funcFromCallback( sectionCallback );
+			let sectionCallback = $section.data( 'callback' );
+			let func = bs.privacy.util.funcFromCallback( sectionCallback );
 
-			var config = {};
+			let config = {};
 			if( $section.data( 'config' ) ) {
 				config = $section.data( 'config' );
 			}
 
-			var widget = new func( $.extend( {
+			let widget = new func( $.extend( {
 				$element: $section
 			}, config ) );
 			widget.init();

@@ -5,10 +5,12 @@
 	bs.privacy.widget.RequestManager = function( cfg ) {
 		cfg.title = 'bs-privacy-admin-request-manager-title';
 		cfg.subtitle = 'bs-privacy-admin-request-manager-help';
-		
+
 		this.enabled = mw.config.get( 'bsPrivacyEnableRequests' );
 
 		bs.privacy.widget.RequestManager.parent.call( this, cfg );
+
+		this.makeForm();
 	};
 
 	OO.inheritClass( bs.privacy.widget.RequestManager, bs.privacy.widget.AdminWidget );
@@ -73,9 +75,9 @@
 				this.$element.find( ".bs-privacy-error" ).remove();
 				return this.grid.getStore().reload();
 			}
-			this.displayError( 'bs-privacy-admin-request-action-failed' );
+			this.displayError();
 		}.bind( this ) ).fail( function() {
-			this.displayError( 'bs-privacy-admin-request-action-failed' );
+			this.displayError();
 		}.bind( this ) );
 	};
 
