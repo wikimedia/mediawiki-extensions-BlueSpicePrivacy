@@ -1,14 +1,8 @@
 ( function( mw, $ ) {
 	Ext.onReady( function() {
-		Ext.Loader.setPath(
-			'BS.Privacy',
-			'/extensions/BlueSpicePrivacy/resources/BS.Privacy'
-		);
-
 		var requestManager = new bs.privacy.widget.RequestManager( {
 			$element: $( '#bs-privacy-admin-requests' )
 		} );
-		requestManager.init();
 
 		$( '.bs-privacy-admin-section' ).each( function( k, section ) {
 			var $section = $( section );
