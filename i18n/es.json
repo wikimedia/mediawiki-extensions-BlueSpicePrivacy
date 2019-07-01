@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
+	"bs-privacy-desc": "Página de gestión de las preferencias de privacidad para usuarios",
 	"privacycenter": "Centro de privacidad",
 	"bs-privacy-api-error-generic": "Ha ocurrido un error",
 	"bs-privacy-anonymization-error-retrieving-name": "Se produjo un error al recuperar el nombre de usuario nuevo",
@@ -91,6 +92,7 @@
 	"bs-privacy-admin-consent-grid-column-user": "Nombre de usuario",
 	"bs-privacy-timestamp-with-days-ago": "$1 (hace {{PLURAL:$2|$2 día|$2 días}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hoy)",
+	"log-name-bs-privacy": "Privacidad de BS",
 	"bs-privacy-consent-bool-true": "Sí",
 	"bs-privacy-consent-bool-false": "No",
 	"echo-category-title-bs-privacy-cat": "Privacidad",
