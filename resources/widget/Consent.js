@@ -93,6 +93,6 @@
 	};
 
 	bs.privacy.widget.Consent.prototype.makeApiCall = function( data ) {
-		return bs.privacy.widget.Anonymize.parent.prototype.makeApiCall.apply( this, [ 'consent', data ] );
+		return bs.privacy.widget.Consent.parent.prototype.makeApiCall.apply( this, [ 'consent', data ] );
 	};
 } )( mediaWiki, jQuery, blueSpice );
