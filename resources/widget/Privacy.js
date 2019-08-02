@@ -62,6 +62,8 @@
 	};
 
 	bs.privacy.widget.Privacy.prototype.setLoading = function( value ) {
+		var func;
+
 		if( !this.loading ) {
 			this.loading = new OO.ui.ProgressBarWidget( {
 				progress: false
@@ -70,12 +72,11 @@
 			this.loading.$element.hide();
 		}
 
-		if( value ) {
-			this.loading.$element.show();
-			this.form.$element.hide();
-		} else {
-			this.loading.$element.hide();
-			this.form.$element.show();
+		func = value ? 'show' : 'hide';
+		this.loading.$element[func].apply( this.loading.$element );
+		if ( this.form instanceof OO.ui.Element ) {
+			func = !value ? 'show' : 'hide';
+			this.form.$element[func].apply( this.form.$element );
 		}
 	};
 
