@@ -112,7 +112,7 @@ class ExportData implements IPrivacyHandler {
 		} else {
 			$data[] = wfMessage(
 				'bs-privacy-transparency-private-blocked',
-				$block->getBlocker()->getName()
+				$block->getByName()
 			)->plain();
 		}
 		$email = $this->user->getEmail();
