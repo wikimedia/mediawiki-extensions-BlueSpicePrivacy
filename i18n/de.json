@@ -35,7 +35,7 @@
 	"bs-privacy-admin-access-denied": "Du musst PrivacyAdmin sein, um diese Aktion auszuführen.",
 	"bs-privacy-invalid-user": "Der Benutzer ist nicht gültig",
 	"bs-privacy-request-submit-failed": "Der Anfrage konnte nicht abgesendet werden.",
-	"bs-privacy-request-cancel-failed": "Das Stornieren der Anfrage ist fehlgeschlagen!",
+	"bs-privacy-request-cancel-failed": "Der Abbruch der Anfrage ist fehlgeschlagen",
 	"bs-privacy-admin-get-requests-failed": "Das Abrufen von Löschaufträgen ist fehlgeschlagen.",
 	"bs-privacy-deletion-layout-label": "Dein Benutzerkonto löschen",
 	"bs-privacy-deletion-layout-help": "Du kannst dein Konto komplett aus dem Wiki löschen, zusammen mit allen Spuren deines Benutzernamens.",
@@ -56,7 +56,7 @@
 	"bs-privacy-delete-error-deleting": "Beim Versuch, dein Konto zu löschen, ist ein Fehler aufgetreten.",
 	"bs-privacy-deletion-final-prompt": "Dein Konto wird dauerhaft gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
 	"bs-privacy-deletion-button": "Dein Benutzerkonto löschen",
-	"action-bs-privacy-admin": "Datenschutzadministrative Aktionen ausführen",
+	"action-bs-privacy-admin": "datenschutzadministrative Aktionen auszuführen",
 	"bs-privacy-admin-request-manager-help": "Übersicht über alle offenen Datenschutzanfragen",
 	"bs-privacy-admin-request-manager-title": "Ausstehende Anfragen",
 	"bs-privacy-admin-invalid-request": "Ungültige Anfrage",
@@ -168,5 +168,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, die die Benutzerfreundlichkeit auf der Website verbessern (Speichern von Benutzereinstellungen, Zustand der dynamischen Komponenten....).",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
-	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern"
+	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
+	"right-bs-privacy-admin": "Datenschutzadministrative Aktionen ausführen"
 }

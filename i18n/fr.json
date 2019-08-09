@@ -37,7 +37,7 @@
 	"bs-privacy-admin-access-denied": "Vous devez être PrivacyAdmin pour exécuter cette action",
 	"bs-privacy-invalid-user": "L'utilisateur n'est pas valide",
 	"bs-privacy-request-submit-failed": "Échec lors de la soumission de la requête",
-	"bs-privacy-request-cancel-failed": "Échec de l'annulation de la requête !",
+	"bs-privacy-request-cancel-failed": "Échec de l'annulation de la requête",
 	"bs-privacy-admin-get-requests-failed": "Echec lors de la récupération des demandes de suppression",
 	"bs-privacy-deletion-layout-label": "Supprimer votre compte",
 	"bs-privacy-deletion-layout-help": "Vous pouvez complètement supprimer votre compte utilisateur sur le wiki, en même temps que toutes les mentions de votre identifiant",
@@ -58,7 +58,7 @@
 	"bs-privacy-delete-error-deleting": "Une erreur est survenue lors de la tentative de suppression de votre compte.",
 	"bs-privacy-deletion-final-prompt": "Votre compte sera supprimé définitivement. Cette action ne peut pas être annulée",
 	"bs-privacy-deletion-button": "Supprimer votre compte",
-	"action-bs-privacy-admin": "Exécuter une action administrative de confidentialité",
+	"action-bs-privacy-admin": "exécuter une action administrative confidentielle",
 	"bs-privacy-admin-request-manager-help": "Vue d’ensemble de toutes les requêtes de confidentialité ouvertes",
 	"bs-privacy-admin-request-manager-title": "Demandes en attente",
 	"bs-privacy-admin-invalid-request": "Demande non valide",
@@ -170,5 +170,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies qui améliorent votre expérience utilisateur sur le site (préférences utilisateur enregistrées, état des composants dynamiques…)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Enregistrer",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fermer",
-	"bs-privacy-consent-cookie-settings-label": "Modifier l'acceptation des cookies"
+	"bs-privacy-consent-cookie-settings-label": "Modifier l'acceptation des cookies",
+	"right-bs-privacy-admin": "Exécuter une action administrative confidentielle"
 }

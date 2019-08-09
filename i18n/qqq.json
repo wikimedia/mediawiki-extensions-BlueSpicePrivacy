@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dejan Savuljesku <savuljesku@hallowelt.com>"
+			"Dejan Savuljesku <savuljesku@hallowelt.com>",
+			"Umherirrender"
 		]
 	},
 	"bs-privacy": "Name of the extension",
@@ -156,12 +157,12 @@
 	"notification-bs-privacy-request-denied-deletion-body": "Notification mail body when deletion request has been denied.\n$1 - user who denied the request, $2 - comment",
 	"notification-bs-privacy-request-submitted": "Notification mail subject when new request has been submitted",
 	"notification-bs-privacy-request-submitted-body": "Notification mail body when new request has been submitted.\n$1 - user who submitted the request, $2 - comment, $3 - module request is related to",
-	"apihelp-bs-privacy-summary": "Summary message for bs-privacy endpoint",
-	"apihelp-bs-privacy-get-requests-summary": "Summary message for bs-privacy-get-requests endpoint",
-	"apihelp-bs-privacy-get-all-consents-summary": "Summary message for bs-privacy-get-all-consents endpoint",
-	"apihelp-bs-privacy-param-module": "Param description for param \"module\"",
-	"apihelp-bs-privacy-param-func": "Param description for param \"func\"",
-	"apihelp-bs-privacy-param-data": "Param description for param \"data\"",
+	"apihelp-bs-privacy-summary": "{{doc-apihelp-summary|bs-privacy}}",
+	"apihelp-bs-privacy-get-requests-summary": "{{doc-apihelp-summary|bs-privacy-get-requests}}",
+	"apihelp-bs-privacy-get-all-consents-summary": "{{doc-apihelp-summary|bs-privacy-get-all-consents}}",
+	"apihelp-bs-privacy-param-module": "{{doc-apihelp-param|bs-privacy|module}}",
+	"apihelp-bs-privacy-param-func": "{{doc-apihelp-param|bs-privacy|func}}",
+	"apihelp-bs-privacy-param-data": "{{doc-apihelp-param|bs-privacy|data}}",
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Cookie disclaimer text",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Label text for button opening cookie settings",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Label text for button that accepts all cookies",

@@ -4,7 +4,8 @@
 			"Alexandr Efremov",
 			"Athena Atterdag",
 			"Romanko Mikhail",
-			"Diralik"
+			"Diralik",
+			"1233qwer1234qwer4"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
@@ -33,5 +34,11 @@
 	"notification-bs-privacy-request-denied-deletion": "Ваш запрос на удаление был отклонен!",
 	"notification-bs-privacy-request-denied-deletion-body": "Пользователь $1 отклонил ваш запрос на удаление аккаунта. Комментарий: $2",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Настройки согласия на обработку cookies",
-	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie"
+	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie",
+	"bs-privacy-admin-request-grid-column-user": "Участник",
+	"bs-privacy-admin-request-grid-column-deny": "Отклонить",
+	"bs-privacy-admin-request-grid-action-deny": "Отклонить",
+	"bs-privacy-consent-bool-true": "Да",
+	"bs-privacy-consent-bool-false": "Нет",
+	"logentry-bs-privacy-deletion": "Участник $4 удалил свою учётную запись"
 }

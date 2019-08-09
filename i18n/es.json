@@ -21,7 +21,7 @@
 	"bs-privacy-anonymization-api-invalid-username": "Nombre de usuario no válido",
 	"bs-privacy-invalid-user": "El usuario no es válido",
 	"bs-privacy-request-submit-failed": "No se pudo enviar la solicitud",
-	"bs-privacy-request-cancel-failed": "Falló la cancelación de la solicitud.",
+	"bs-privacy-request-cancel-failed": "Falló la cancelación de la solicitud",
 	"bs-privacy-deletion-layout-label": "Elimina tu cuenta",
 	"bs-privacy-deletion-request-deletion-button": "Solicitar eliminación de cuenta",
 	"bs-privacy-deletion-submit-request-label": "Comentario (opcional)",
@@ -96,5 +96,9 @@
 	"notification-bs-privacy-center-url": "Centro de privacidad",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todo",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Guardar",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar",
+	"bs-privacy-desc": "Página de gestión de las preferencias de privacidad para usuarios",
+	"bs-privacy-anonymization-success-anonymizing": "Se ha anonimizado la cuenta. Tu nombre de usuario nuevo es $1",
+	"bs-privacy-anonymize-login-button": "Accede otra vez con tu nombre de usuario nuevo",
+	"log-name-bs-privacy": "Privacidad de BS"
 }

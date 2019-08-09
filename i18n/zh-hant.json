@@ -167,5 +167,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookie 增進在站台的使用者體驗（儲存使用者偏好設定、動態元件狀態…）",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "儲存",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "關閉",
-	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可"
+	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可",
+	"right-bs-privacy-admin": "執行隱私管理操作"
 }

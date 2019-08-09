@@ -170,5 +170,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "ملفات تعريف الارتباط التي تعمل على تحسين تجربة المستخدم على الموقع (حفظ تفضيلات المستخدم وحالة المكونات الديناميكية...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "حفظ",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "إغلاق",
-	"bs-privacy-consent-cookie-settings-label": "تغيير موافقة ملفات تعريف الارتباط"
+	"bs-privacy-consent-cookie-settings-label": "تغيير موافقة ملفات تعريف الارتباط",
+	"right-bs-privacy-admin": "تنفيذ فعل إداري خصوصية"
 }

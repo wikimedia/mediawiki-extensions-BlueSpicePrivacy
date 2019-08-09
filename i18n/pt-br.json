@@ -36,7 +36,7 @@
 	"bs-privacy-admin-access-denied": "Você deve ser o administradordeprivacidade para executar esta ação",
 	"bs-privacy-invalid-user": "O usuário não é válido",
 	"bs-privacy-request-submit-failed": "Falha ao enviar a solicitação",
-	"bs-privacy-request-cancel-failed": "Falha ao cancelar a solicitação!",
+	"bs-privacy-request-cancel-failed": "Não foi possível cancelar a solicitação",
 	"bs-privacy-admin-get-requests-failed": "Falha ao recuperar solicitações de exclusão",
 	"bs-privacy-deletion-layout-label": "Remover sua conta",
 	"bs-privacy-deletion-layout-help": "Você pode excluir completamente sua conta da wiki, juntamente com todos os vestígios do seu nome de usuário",
@@ -57,7 +57,7 @@
 	"bs-privacy-delete-error-deleting": "Ocorreu um erro ao tentar excluir sua conta.",
 	"bs-privacy-deletion-final-prompt": "Sua conta será excluída permanentemente. Essa ação não pode ser desfeita",
 	"bs-privacy-deletion-button": "Remover sua conta",
-	"action-bs-privacy-admin": "Executar a ação administrativa de privacidade",
+	"action-bs-privacy-admin": "executar ação administrativa de privacidade",
 	"bs-privacy-admin-request-manager-help": "Visão geral de todas as solicitações de privacidade abertas",
 	"bs-privacy-admin-request-manager-title": "Solicitações pendentes",
 	"bs-privacy-admin-invalid-request": "Pedido inválido",
@@ -169,5 +169,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
-	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie"
+	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
+	"right-bs-privacy-admin": "Executar a ação administrativa de privacidade"
 }

@@ -45,5 +45,6 @@
 	"logentry-bs-privacy-deletion": "De Benotzer $4 huet säin/ire Benotzerkont geläscht",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "All akzeptéieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
+	"bs-privacy-request-cancel-failed": "D'Ufro konnt net annuléiert ginn"
 }
