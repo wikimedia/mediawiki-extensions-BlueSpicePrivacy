@@ -65,7 +65,8 @@ class Anonymize implements IPrivacyHandler {
 		$this->db->update(
 			'user',
 			[ 'user_real_name' => '' ],
-			[ 'user_name' => $this->oldUser->getName() ]
+			[ 'user_name' => $this->oldUser->getName() ],
+			__METHOD__
 		);
 
 		foreach ( $this->tableMap as $table => $field ) {
@@ -75,7 +76,8 @@ class Anonymize implements IPrivacyHandler {
 			$this->db->update(
 				$table,
 				[ $field => $newUsername ],
-				[ $field => $this->oldUser->getName() ]
+				[ $field => $this->oldUser->getName() ],
+				__METHOD__
 			);
 		}
 	}
@@ -99,7 +101,8 @@ class Anonymize implements IPrivacyHandler {
 					'log_user' => $this->oldUser->getId(),
 					'log_namespace' => NS_USER,
 					'log_title' => $oldUserPage->getDBkey()
-				]
+				],
+				__METHOD__
 			);
 		}
 	}
