@@ -122,7 +122,8 @@ abstract class ModuleRequestable extends Module {
 		$res = $this->database->select(
 			static::TABLE_NAME,
 			'*',
-			[ 'pr_module' => $this->getModuleName() ]
+			[ 'pr_module' => $this->getModuleName() ],
+			__METHOD__
 		);
 
 		if ( !$res ) {
@@ -207,7 +208,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_timestamp' => wfTimestamp( TS_MW ),
 				'pr_comment' => $comment,
 				'pr_data' => serialize( $data )
-			]
+			],
+			__METHOD__
 		);
 
 		if ( $res ) {
@@ -240,7 +242,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_user' => $this->context->getUser()->getId(),
 				'pr_module' => $this->getModuleName(),
 				'pr_open' => static::REQUEST_OPEN
-			]
+			],
+			__METHOD__
 		);
 
 		if ( $res ) {
@@ -263,7 +266,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_module' => $this->getModuleName(),
 				"(pr_status =" . static::REQUEST_STATUS_DENIED .
 				" OR pr_status = " . static::REQUEST_STATUS_APPROVED . ")"
-			]
+			],
+			__METHOD__
 		);
 
 		if ( $res ) {
@@ -290,7 +294,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_status' => static::REQUEST_STATUS_APPROVED,
 				'pr_open' => static::REQUEST_CLOSED
 			],
-			[ 'pr_id' => $requestId ]
+			[ 'pr_id' => $requestId ],
+			__METHOD__
 		);
 
 		$this->logRequestAction( 'approve', [
@@ -314,7 +319,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_status' => static::REQUEST_STATUS_DENIED,
 				'pr_admin_comment' => $comment
 			],
-			[ 'pr_id' => $requestId ]
+			[ 'pr_id' => $requestId ],
+			__METHOD__
 		);
 
 		$this->logRequestAction( 'deny', [

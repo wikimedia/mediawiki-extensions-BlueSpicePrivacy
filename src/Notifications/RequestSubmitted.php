@@ -63,7 +63,9 @@ class RequestSubmitted extends BaseNotification {
 	protected function getPrivacyAdmins() {
 		$res = $this->db->select(
 			'user',
-			'*'
+			'*',
+			'',
+			__METHOD__
 		);
 
 		$users = [];

@@ -15,7 +15,9 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $db->select(
 			'user',
-			'user_id'
+			'user_id',
+			'',
+			__METHOD__
 		);
 
 		$data = [];

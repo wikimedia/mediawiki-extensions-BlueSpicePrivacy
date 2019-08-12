@@ -111,7 +111,8 @@ class Delete extends Anonymize implements IPrivacyHandler {
 			$this->db->update(
 				$table,
 				[ $field => $this->groupingDeletedUser->getId() ],
-				[ $field => $this->userToDelete->getId() ]
+				[ $field => $this->userToDelete->getId() ],
+				__METHOD__
 			);
 		}
 	}
@@ -120,7 +121,8 @@ class Delete extends Anonymize implements IPrivacyHandler {
 		foreach ( $this->deleteTables as $table => $field ) {
 			$this->db->delete(
 				$table,
-				[ $field => $this->userToDelete->getId() ]
+				[ $field => $this->userToDelete->getId() ],
+				__METHOD__
 			);
 		}
 	}
