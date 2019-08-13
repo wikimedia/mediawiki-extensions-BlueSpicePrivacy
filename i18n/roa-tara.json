@@ -12,6 +12,7 @@
 	"privacyadmin": "Amministratore d'a privacy",
 	"bs-privacy-privacy-center-subtitle": "Panorameche de le 'mbostaziune d'a privacy",
 	"bs-privacy-api-error-generic": "Ave assute 'n'errore",
+	"bs-privacy-anonymization-error-retrieving-name": "Ha assute 'n'errore mendre ste pruvave a pigghià 'u nome de l'utende nuève",
 	"bs-privacy-anonymization-layout-label": "Anonemizzazzione",
 	"bs-privacy-anonymization-new-username-label": "Nome de l'utende nuève",
 	"bs-privacy-missing-param": "'U parametre \"$1\" adda essere presende!",
