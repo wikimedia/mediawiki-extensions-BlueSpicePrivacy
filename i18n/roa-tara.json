@@ -52,6 +52,8 @@
 	"bs-privacy-anonymization-request-denied": "'A richieste de anonimizzazziona toje ha state cacate!",
 	"bs-privacy-request-denied-comment": "Commende: $1",
 	"bs-privacy-anonymization-request-button": "Richieste de anonimizzazzione",
+	"bs-privacy-delete-error-deleting": "Ha assute 'n'errore mendre ste pruvave a scangellà 'u cunde tune.",
+	"bs-privacy-deletion-final-prompt": "'U cunde tune ha state scangellate definitivamende. Stu azione non ge se pò annullà",
 	"bs-privacy-deletion-button": "Scangille 'u cunde utende tune",
 	"bs-privacy-admin-request-manager-help": "Panorameche de tutte le richieste de privacy apirte",
 	"bs-privacy-admin-request-manager-title": "Richieste appese",
