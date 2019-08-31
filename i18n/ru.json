@@ -5,7 +5,8 @@
 			"Athena Atterdag",
 			"Romanko Mikhail",
 			"Diralik",
-			"1233qwer1234qwer4"
+			"1233qwer1234qwer4",
+			"Movses"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
@@ -33,7 +34,7 @@
 	"bs-privacy-transparency-loading-message": "Пожалуйста, подождите, пока ваши данные собираются...",
 	"bs-privacy-transparency-private-email-not-authenticated": "Адрес электронной почты: $1 (не подтвержден)",
 	"bs-privacy-transparency-private-blocked": "Блокировка: Да (действие произведено $1)",
-	"bs-privacy-admin-consent-grid-column-user": "Имя пользователя",
+	"bs-privacy-admin-consent-grid-column-user": "Имя участника",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Нет",
 	"logentry-bs-privacy-deletion": "Участник $4 удалил свою учётную запись",
