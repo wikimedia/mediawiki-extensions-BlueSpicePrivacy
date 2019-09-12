@@ -43,5 +43,10 @@
 	"echo-category-title-bs-privacy-cat": "Приватност",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прифати ги сите",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Зачувај",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори",
+	"bs-privacy-deletion-request-deletion-button": "Барање за бришење на корисничка сметка",
+	"bs-privacy-request-failed": "Поднесувањето на барање не успеа!",
+	"bs-privacy-request-close-failed": "Затварањето на барање не успеа",
+	"apihelp-bs-privacy-get-requests-summary": "Крајна точка за добивање сите барања во исчекување",
+	"apihelp-bs-privacy-get-all-consents-summary": "Крајна точка за добивање информации за согласност за сите корисници"
 }
