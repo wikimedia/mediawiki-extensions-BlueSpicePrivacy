@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"bs-privacy-anonymization-api-invalid-username": "Nieprawidłowa nazwa użytkownika",
+	"bs-privacy-transparency-private-groups": "Groupy: $1",
+	"bs-privacy-consent-save-button": "Zapisz",
+	"bs-privacy-admin-consent-grid-column-user": "Nazwa użytkownika",
+	"bs-privacy-consent-bool-true": "Tak",
+	"bs-privacy-consent-bool-false": "Nie",
+	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął swoje konto",
+	"echo-category-title-bs-privacy-cat": "Prywatność",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij"
+}

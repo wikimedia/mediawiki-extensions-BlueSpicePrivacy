@@ -8,6 +8,7 @@
 	"bs-privacy-anonymization-layout-label": "Анонимизација",
 	"bs-privacy-anonymization-new-username-label": "Ново корисничко име",
 	"bs-privacy-anonymization-api-invalid-username": "Неправилно корисничко име",
+	"bs-privacy-invalid-user": "Корисникот не е важечки",
 	"bs-privacy-deletion-layout-label": "Избришете ја вашата сметка",
 	"bs-privacy-deletion-request-deletion-button": "Барање за бришење на корисничка сметка",
 	"bs-privacy-deletion-submit-request-label": "Коментар (незадолж.)",
