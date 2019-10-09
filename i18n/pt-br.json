@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Tks4Fish",
+			"WikiUser22222"
 		]
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
@@ -33,6 +35,8 @@
 	"bs-privacy-anonymize-login-button": "Entre novamente com seu novo nome de usuário",
 	"bs-privacy-admin-access-denied": "Você deve ser o administradordeprivacidade para executar esta ação",
 	"bs-privacy-invalid-user": "O usuário não é válido",
+	"bs-privacy-request-submit-failed": "Falha ao enviar a solicitação",
+	"bs-privacy-request-cancel-failed": "Não foi possível cancelar a solicitação",
 	"bs-privacy-admin-get-requests-failed": "Falha ao recuperar solicitações de exclusão",
 	"bs-privacy-deletion-layout-label": "Remover sua conta",
 	"bs-privacy-deletion-layout-help": "Você pode excluir completamente sua conta da wiki, juntamente com todos os vestígios do seu nome de usuário",
@@ -53,7 +57,7 @@
 	"bs-privacy-delete-error-deleting": "Ocorreu um erro ao tentar excluir sua conta.",
 	"bs-privacy-deletion-final-prompt": "Sua conta será excluída permanentemente. Essa ação não pode ser desfeita",
 	"bs-privacy-deletion-button": "Remover sua conta",
-	"action-bs-privacy-admin": "Executar a ação administrativa de privacidade",
+	"action-bs-privacy-admin": "executar ação administrativa de privacidade",
 	"bs-privacy-admin-request-manager-help": "Visão geral de todas as solicitações de privacidade abertas",
 	"bs-privacy-admin-request-manager-title": "Solicitações pendentes",
 	"bs-privacy-admin-invalid-request": "Pedido inválido",
@@ -119,11 +123,20 @@
 	"log-name-bs-privacy": "Privacidade de BS",
 	"bs-privacy-consent-bool-true": "Sim",
 	"bs-privacy-consent-bool-false": "Não",
+	"logentry-bs-privacy-anonymization": "$4 tem {{GENDER:$2|anonimizado|anonimizada}} a conta {{GENDER:$2|dele|dela}}. Novo nome de usuário: $5",
 	"logentry-bs-privacy-deletion": "Usuário $4 excluiu sua conta",
+	"logentry-bs-privacy-transparency": "$1 tem {{GENDER:$2|exportado}} dados {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|tem|tinha}} mudado dados de consentimento da política de privacidade {{GENDER:$2|dele|dela}} para: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|tem}} enviou uma solicitação para anonimizar conta {{GENDER:$2|delr|dela}} com comentário: $4",
+	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|tem encerrado}} pedido de anonimidade feito por $4",
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|cancelou}} o pedido para anonimizar {{GENDER:$2|sua}} conta",
+	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|aprovou}} a solicitação para anonimizar uma conta feita {{GENDER:$2|pelo usuário|pela usuária}} $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|tem|tinha}} negado o pedido de anonimizar conta feita pelo usuário $4, com comentário: $5",
+	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|enviou}} uma solicitação para excluir a conta {{GENDER:$2|dele|dela}} com o comentário: $4",
+	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|encerrou o pedido}} de exclusão {{GENDER:$2|feito|feita}} por $4",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|cancelou}} a solicitação para excluir a conta {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|tem}} aprovado o pedido para excluir a conta feita pelo usuário $4",
+	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|tem negado|tem negada}} a solicitação para excluir uma conta feita {{GENDER:$2|pelo usuário $4|pela usuária $4}}, com o comentário: $5",
 	"echo-category-title-bs-privacy-cat": "Privacidade",
 	"notification-bs-privacy-login-url": "Entre para a wiki",
 	"notification-bs-privacy-center-url": "CentrodePrivacidade",
@@ -132,6 +145,7 @@
 	"notification-bs-privacy-anonymization-done-body": "Sua conta foi anonimizada com sucesso. Nome de usuário antigo: \"$1\". Novo nome de usuário: \"$2\"",
 	"notification-bs-privacy-deletion-approved": "Sua solicitação de exclusão foi aprovado!",
 	"notification-bs-privacy-deletion-approved-body": "A solicitação para excluir sua conta foi aprovado e sua conta será excluída em breve.",
+	"notification-bs-privacy-deletion-failed": "Falha na exclusão da conta!",
 	"notification-bs-privacy-deletion-failed-body": "Não foi possível excluir sua conta. Por favor contate os administradores da wiki para mais informações. Pedimos desculpas pela inconveniência.",
 	"notification-bs-privacy-request-denied-anonymization": "Sua solicitação de anonimização foi negado!",
 	"notification-bs-privacy-request-denied-anonymization-body": "O usuário $1 negou sua solicitação para anonimizar sua conta para o nome de usuário \"$2\". Comentário: $3",
@@ -154,5 +168,7 @@
 	"bs-privacy-cookie-convenience-group-label": "Cookies de conveniência",
 	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
+	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
+	"right-bs-privacy-admin": "Executar a ação administrativa de privacidade"
 }

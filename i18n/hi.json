@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Prong$31"
+		]
+	},
+	"privacycenter": "गोपनीयता केन्द्र",
+	"bs-privacy-anonymization-api-invalid-username": "अमान्य सदस्यनाम",
+	"bs-privacy-invalid-user": "सदस्य वैध नहीं है",
+	"bs-privacy-deletion-layout-label": "अपना खाता हटायें",
+	"bs-privacy-anonymization-request-comment": "नया सदस्यनाम: $1",
+	"bs-privacy-acknowledge-request-button": "रद्द करें",
+	"bs-privacy-cancel-request-button": "अनुरोध रद्द करें",
+	"bs-privacy-admin-invalid-request": "अवैध आवेदन",
+	"bs-privacy-admin-deny-comment-placeholder": "टिप्पणी",
+	"bs-privacy-admin-request-grid-column-comment": "टिप्पणी",
+	"bs-privacy-admin-request-grid-action-approve": "अनुमोदन",
+	"bs-privacy-admin-request-grid-column-deny": "रद्द करें",
+	"bs-privacy-admin-request-grid-action-deny": "रद्द करें",
+	"bs-privacy-transparency-layout-label": "पारदर्शिता",
+	"bs-privacy-transparency-export-data-button": "डाटा का निर्यात करें",
+	"bs-privacy-transparency-view-data-dialog-title": "अपना डाटा देखें",
+	"bs-privacy-transparency-view-data-dialog-close": "बंद करें",
+	"bs-privacy-transparency-private-username": "सदस्यनाम: $1",
+	"bs-privacy-transparency-private-groups": "समूह: $1",
+	"bs-privacy-transparency-private-not-blocked": "ब्लॉक: नहीं",
+	"bs-privacy-transparency-private-blocked": "अवरोध: हाँ ($1 द्वारा)",
+	"bs-privacy-consent-save-button": "सहेजें",
+	"bs-privacy-admin-consent-grid-column-user": "सदस्यनाम",
+	"bs-privacy-consent-bool-true": "हाँ",
+	"notification-bs-privacy-login-url": "विकि पर लॉगिन करें",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "सभी स्वीकृति करें",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "सहेजें",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "बंद करें"
+}

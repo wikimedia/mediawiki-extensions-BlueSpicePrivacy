@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান"
+		]
+	},
+	"privacycenter": "গোপনীয়তা কেন্দ্র",
+	"bs-privacy-anonymization-new-username-label": "নতুন ব্যবহারকারী নাম",
+	"bs-privacy-deletion-submit-request-label": "মন্তব্য (ঐচ্ছিক)",
+	"bs-privacy-anonymization-request-comment": "নতুন ব্যবহারকারী নাম: $1",
+	"bs-privacy-acknowledge-request-button": "খারিজ করুন",
+	"bs-privacy-admin-deny-comment-placeholder": "মন্তব্য",
+	"bs-privacy-admin-request-grid-column-comment": "মন্তব্য",
+	"bs-privacy-transparency-show-all-data-button": "সব উপাত্ত দেখান",
+	"bs-privacy-transparency-view-data-dialog-close": "বন্ধ করুন",
+	"bs-privacy-transparency-private-realname": "প্রকৃত নাম: $1",
+	"bs-privacy-transparency-private-blocked": "বাধাপ্রাপ্ত: হ্যাঁ ($1 দ্বারা)",
+	"bs-privacy-consent-save-button": "সংরক্ষণ করুন",
+	"bs-privacy-admin-consent-grid-column-user": "ব্যবহারকারী নাম",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (আজ)",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "সংরক্ষণ করুন",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "বন্ধ করুন"
+}

@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"bs-privacy-api-error-generic": "Si è verificato un errore",
+	"bs-privacy-anonymization-new-username-label": "Nuovo nome utente",
+	"bs-privacy-anonymization-api-invalid-username": "Nome utente non valido",
+	"bs-privacy-invalid-user": "L'utente non è valido",
+	"bs-privacy-anonymization-request-comment": "Nuovo nome utente: $1",
+	"bs-privacy-acknowledge-request-button": "Nascondi",
+	"bs-privacy-cancel-request-button": "Annulla richiesta",
+	"bs-privacy-admin-invalid-request": "Richiesta non valida",
+	"bs-privacy-admin-request-grid-column-action": "Azione",
+	"bs-privacy-admin-request-grid-column-comment": "Commento",
+	"bs-privacy-admin-request-grid-action-approve": "Approva",
+	"bs-privacy-admin-request-grid-action-deny": "Nega",
+	"bs-privacy-transparency-export-data-button": "Esporta dati",
+	"bs-privacy-transparency-private-email-authenticated": "Indirizzo email: $1 (autenticato su $2)",
+	"bs-privacy-transparency-private-email-not-authenticated": "Indirizzo email: $1 (non autenticato)",
+	"bs-privacy-transparency-private-experience": "Livello di esperienza: $1",
+	"bs-privacy-transparency-private-not-blocked": "Bloccato: no",
+	"bs-privacy-transparency-private-blocked": "Bloccato: sì (da $1)",
+	"bs-privacy-transparency-private-edit-count": "Numero di modifiche: $1",
+	"bs-privacy-admin-consent-grid-column-user": "Nome utente",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (oggi)",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salva",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi"
+}

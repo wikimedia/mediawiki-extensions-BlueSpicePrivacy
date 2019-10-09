@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Awangba Mangang"
+		]
+	},
+	"bs-privacy-anonymization-new-username-label": "ꯑꯅꯧꯕꯥ ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯃꯃꯤꯡ",
+	"bs-privacy-anonymization-api-invalid-username": "ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯃꯃꯤꯡ ꯌꯥꯎꯗꯦ",
+	"bs-privacy-invalid-user": "ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤ ꯆꯠꯅꯗꯔꯦ",
+	"bs-privacy-deletion-layout-label": "ꯅꯪꯒꯤ ꯑꯦꯀꯥꯎꯟ ꯀꯛꯊꯠꯂꯨ",
+	"bs-privacy-deletion-cancel-request-button": "ꯀꯛꯊꯠꯅꯕ ꯍꯥꯏꯖꯕꯁꯤ ꯇꯣꯛꯑꯦ",
+	"bs-privacy-cancel-request-button": "ꯍꯥꯏꯖꯕꯁꯤ ꯇꯣꯛꯊꯣꯛꯄꯥ",
+	"bs-privacy-deletion-button": "ꯅꯪꯒꯤ ꯑꯦꯀꯥꯎꯟ ꯀꯛꯊꯠꯂꯨ",
+	"bs-privacy-admin-request-grid-column-user": "ꯁꯤꯖꯤꯟꯅꯔꯤꯕ",
+	"bs-privacy-admin-request-grid-column-action": "ꯊꯕꯛ ꯄꯥꯡꯊꯣꯛꯄ",
+	"bs-privacy-admin-request-grid-column-comment": "ꯑꯄꯥꯝꯕꯥ ꯐꯣꯡꯗꯣꯛ ꯎ",
+	"bs-privacy-admin-request-grid-action-approve": "ꯌꯥꯔꯕ",
+	"bs-privacy-admin-request-grid-column-deny": "ꯌꯥꯗꯕ",
+	"bs-privacy-admin-request-grid-action-deny": "ꯌꯥꯗꯕ",
+	"bs-privacy-transparency-layout-label": "ꯑꯔꯣꯠꯄꯥ ꯂꯩꯇꯕ",
+	"bs-privacy-transparency-export-data-button": "ꯗꯥꯇꯥ ꯄꯨꯊꯣꯛꯈꯤꯕ",
+	"bs-privacy-transparency-view-data-dialog-close": "ꯈꯨꯝꯖꯤꯟꯕ",
+	"bs-privacy-consent-bool-true": "ꯍꯣꯏ",
+	"bs-privacy-consent-bool-false": "ꯅꯠꯇꯦ",
+	"echo-category-title-bs-privacy-cat": "ꯑꯔꯣꯟꯕꯥ",
+	"notification-bs-privacy-admin-url": "ꯆꯨꯞꯂꯤ ꯄꯥꯏꯔꯤꯕꯁꯤꯡ ꯑꯔꯣꯟꯕꯥ",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "ꯂꯣꯏꯅꯥ ꯂꯧꯁꯤꯟꯕꯥ",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "ꯇꯨꯡꯁꯤꯟꯕ",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ꯈꯨꯝꯖꯤꯟꯕ"
+}

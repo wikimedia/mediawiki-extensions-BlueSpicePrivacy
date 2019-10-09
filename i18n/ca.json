@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"privacycenter": "Centre de privadesa",
+	"bs-privacy-anonymization-layout-label": "Anonimització",
+	"bs-privacy-anonymization-confirm-button-label": "Fes anònim el meu compte",
+	"bs-privacy-anonymization-error-anonymizing": "S’ha produït un error durant el procés d’anonimització.",
+	"bs-privacy-request-cancel-failed": "Ha fallat la cancel·lació de la sol·licitud",
+	"bs-privacy-anonymization-request-comment": "Nom d’usuari nou: $1",
+	"bs-privacy-acknowledge-request-button": "Descarta",
+	"bs-privacy-request-denied-comment": "Comentari: $1",
+	"bs-privacy-deletion-final-prompt": "Se suprimirà el vostre compte permanentment. No es pot desfer aquesta acció",
+	"bs-privacy-admin-request-manager-title": "Sol·licituds pendents",
+	"bs-privacy-admin-request-grid-column-user": "Usuari/a",
+	"bs-privacy-admin-request-grid-column-comment": "Comentari",
+	"bs-privacy-transparency-show-all-data-button": "Mostra totes les dades",
+	"bs-privacy-transparency-private-experience": "Nivell d’experiència: $1",
+	"bs-privacy-transparency-type-title-personal": "Dades personals",
+	"bs-privacy-admin-consent-grid-column-user": "Nom d’usuari",
+	"bs-privacy-timestamp-with-days-ago": "$1 (fa {{PLURAL:$2|$2 dia|$2 dies}})",
+	"notification-bs-privacy-center-url": "Centre de privadesa",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Desa"
+}

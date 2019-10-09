@@ -1,11 +1,44 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali"
+			"Mirzali",
+			"Orbot707"
 		]
 	},
 	"privacycenter": "Merkezê xısusiye",
+	"bs-privacy-api-error-generic": "Yew xeta biye",
+	"bs-privacy-anonymization-new-username-label": "Nameyê karberiyo newe",
+	"bs-privacy-anonymization-api-invalid-username": "Nameyê karberiyo nêvêrde",
+	"bs-privacy-deletion-layout-label": "Hesabê xo bestere",
+	"bs-privacy-anonymization-request-comment": "Nameyê karberio newe: $1",
+	"bs-privacy-acknowledge-request-button": "Red ke",
+	"bs-privacy-cancel-request-button": "Waştışi bıtexelne",
+	"bs-privacy-request-denied-comment": "Mışewre: $1.",
+	"bs-privacy-deletion-button": "Hesabê xo bestere",
+	"bs-privacy-admin-deny-comment-placeholder": "Mışewre",
+	"bs-privacy-admin-request-grid-column-user": "Karber",
+	"bs-privacy-admin-request-grid-column-action": "Hereket",
+	"bs-privacy-admin-request-grid-column-timestamp": "Mareyê demi",
+	"bs-privacy-admin-request-grid-column-comment": "Mışewre",
+	"bs-privacy-admin-request-grid-action-approve": "Tesdiq ke",
+	"bs-privacy-admin-request-grid-column-deny": "Red ke",
+	"bs-privacy-admin-request-grid-action-deny": "Red ke",
+	"bs-privacy-transparency-export-data-button": "Melumatan zerre ke",
+	"bs-privacy-transparency-private-username": "Nameyê karberi: $1",
+	"bs-privacy-transparency-private-realname": "Nameyo raştıkên: $1",
+	"bs-privacy-transparency-private-registration": "Tarixê qeydi: $1",
+	"bs-privacy-transparency-private-groups": "Grubi: $1",
 	"bs-privacy-transparency-private-blocked": "Kılit bi: Eya (terefê $1 ra)",
+	"bs-privacy-transparency-private-edit-count": "Amarê vurnayışan: $1",
+	"bs-privacy-transparency-type-title-personal": "Hacetê şexsiyi",
+	"bs-privacy-consent-save-button": "Qeyd ke",
 	"bs-privacy-admin-consent-grid-column-user": "Nameyê karberi",
-	"notification-bs-privacy-center-url": "Merkezê xısusiye"
+	"bs-privacy-timestamp-with-days-ago": "$1 (verê {{PLURAL:$2|$2 roce|$2 rocan}})",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (ewro)",
+	"bs-privacy-consent-bool-true": "Eya",
+	"bs-privacy-consent-bool-false": "Nê",
+	"echo-category-title-bs-privacy-cat": "Dızdêniye",
+	"notification-bs-privacy-center-url": "Merkezê xısusiye",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Pêrıne qebul kerê",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Qeyd ke"
 }
