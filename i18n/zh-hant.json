@@ -105,7 +105,7 @@
 	"bs-privacy-transparency-type-title-personal": "個人資料",
 	"bs-privacy-transparency-type-title-actions": "操作資料",
 	"bs-privacy-prefs-consent-cookies": "我同意儲存 cookie",
-	"bs-privacy-prefs-consent-privacy-policy": "我接受此站台的[[MediaWiki:Privacy|隱私權政策]]",
+	"bs-privacy-prefs-consent-privacy-policy": "我接受此站台的[[Project:Privacy|隱私權政策]]",
 	"bs-privacy-prefs-consent-cookies-help": "Cookie 是一種儲存在您的電腦與 session 之間的小型資訊塊，能讓使用者的體驗上更順暢",
 	"bs-privacy-prefs-consent-privacy-policy-help": "透過勾選此欄位，代表您已確認有閱讀且了解此站台的隱私權政策",
 	"bs-privacy-consent-layout-label": "隱私權政策許可",
