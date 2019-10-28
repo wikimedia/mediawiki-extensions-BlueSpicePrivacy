@@ -7,6 +7,8 @@
 			"Steeve815"
 		]
 	},
+	"privacycenter": "מרכז הפרטיות",
+	"privacyadmin": "מנהל הפרטיות",
 	"bs-privacy-privacy-center-subtitle": "סקירת הגדרות הפרטיות שלך",
 	"bs-privacy-api-error-generic": "אירעה שגיאה",
 	"bs-privacy-anonymization-error-retrieving-name": "אירעה שגיאה בעת ניסיון לאחזר שם משתמש חדש",
@@ -32,6 +34,7 @@
 	"bs-privacy-request-failed": "שליחת הבקשה נכשלה!",
 	"bs-privacy-anonymization-request-comment": "שם משתמש חדש: $1",
 	"bs-privacy-request-close-failed": "סגירת הבקשה נכשלה",
+	"bs-privacy-deletion-request-denied": "המחיקה שלך נדחתה!",
 	"bs-privacy-acknowledge-request-button": "סגירה",
 	"bs-privacy-cancel-request-button": "ביטול בקשה",
 	"bs-privacy-request-denied-comment": "הערה: $1",
@@ -70,6 +73,8 @@
 	"bs-privacy-transparency-private-user-page-url": "כתובת URL של דף המשתמש: $1",
 	"bs-privacy-transparency-private-edit-count": "מספר עריכות: $1",
 	"bs-privacy-transparency-type-title-content": "אזכורים בתוכן",
+	"bs-privacy-prefs-consent-cookies": "אני מסכימ/ה לאחסן עוגיות",
+	"bs-privacy-prefs-consent-privacy-policy": "אני מסכימ/ה ל[[Project:Privacy|מדיניות הפרטיות]] של אתר זה",
 	"bs-privacy-consent-save-button": "שמירה",
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
 	"bs-privacy-timestamp-with-days-ago": "$1 (לפני {{PLURAL:$2|יום אחד|$2 ימים}})",
