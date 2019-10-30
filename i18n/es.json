@@ -83,7 +83,7 @@
 	"bs-privacy-transparency-type-title-personal": "Datos personales",
 	"bs-privacy-transparency-type-title-actions": "Datos de acciones",
 	"bs-privacy-prefs-consent-cookies": "Acepto almacenar «cookies»",
-	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[MediaWiki:Privacy|normativa de privacidad]] de este sitio",
+	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[Project:Privacy|normativa de privacidad]] de este sitio",
 	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
 	"bs-privacy-consent-save-button": "Guardar",
 	"bs-privacy-consent-get-options-fail": "Se produjo un error al recuperar las opciones de la normativa de privacidad",
