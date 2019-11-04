@@ -3,7 +3,8 @@
 		"authors": [
 			"Vlad5250",
 			"Gzhegozh",
-			"Ата"
+			"Ата",
+			"Movses"
 		]
 	},
 	"bs-privacy": "Приватність BlueSpice",
@@ -107,7 +108,7 @@
 	"bs-privacy-transparency-type-title-personal": "Персональні дані",
 	"bs-privacy-transparency-type-title-actions": "Дані дій",
 	"bs-privacy-prefs-consent-cookies": "Я приймаю зберігання cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Я приймаю [[MediaWiki:Privacy|політику приватності]] цього сайту",
+	"bs-privacy-prefs-consent-privacy-policy": "Я приймаю [[Project:Privacy|політику приватності]] цього сайту",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies — це невеличкі шматочки інформації, що зберігаються на вашому комп'ютері між сеансами, щоб згладити ваш користувацький досвід",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ставлячи відмітку в цьому полі ви підтверджуєте, що прочитали та прийняли політику приватності цього сайту",
 	"bs-privacy-consent-layout-label": "Згода з політикою приватності",

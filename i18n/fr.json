@@ -127,7 +127,7 @@
 	"log-name-bs-privacy": "Confidentialité BS",
 	"bs-privacy-consent-bool-true": "Oui",
 	"bs-privacy-consent-bool-false": "Non",
-	"logentry-bs-privacy-anonymization": "$4 a rendu anonyme {{GENDER:$2|}}son compte. Nouveau nom d’utilisateur : $5",
+	"logentry-bs-privacy-anonymization": "$4 a rendu anonyme son compte. Nouveau nom d’utilisateur : $5",
 	"logentry-bs-privacy-deletion": "L’utilisateur $4 a supprimé son compte",
 	"logentry-bs-privacy-transparency": "$1 a exporté {{GENDER:$2|}}ses données",
 	"logentry-bs-privacy-consent": "$1 a modifié {{GENDER:$2|}}ses données d’acceptation de la politique de confidentialité en : $4",

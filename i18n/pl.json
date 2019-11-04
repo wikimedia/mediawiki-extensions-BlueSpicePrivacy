@@ -12,7 +12,8 @@
 	"bs-privacy-admin-consent-grid-column-user": "Nazwa użytkownika",
 	"bs-privacy-consent-bool-true": "Tak",
 	"bs-privacy-consent-bool-false": "Nie",
-	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął swoje konto",
+	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$4|zanonimizował|zanonimizowała}} konto użytkownika. Nowa nazwa użytkownika to $5",
+	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął konto",
 	"echo-category-title-bs-privacy-cat": "Prywatność",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij"
