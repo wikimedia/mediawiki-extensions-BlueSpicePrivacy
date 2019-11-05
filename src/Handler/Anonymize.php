@@ -56,6 +56,7 @@ class Anonymize implements IPrivacyHandler {
 
 		$this->updateTables( $newUsername );
 		$this->moveUserPage( $newUsername );
+		$this->removeSensitivePreferences( $newUsername );
 
 		return \Status::newGood();
 	}
@@ -103,6 +104,29 @@ class Anonymize implements IPrivacyHandler {
 					'log_title' => $oldUserPage->getDBkey()
 				],
 				__METHOD__
+			);
+		}
+	}
+
+	private function removeSensitivePreferences( $username ) {
+		$user = \User::newFromName( $username );
+		if ( $user->getId() === 0 ) {
+			// sanity
+			return;
+		}
+		// We try to remove as little as possible,
+		// add additional properties if need arises
+		$toRemove = [
+			'gender'
+		];
+
+		foreach ( $toRemove as $property ) {
+			$this->db->delete(
+				'user_properties',
+				[
+					'up_property' => $property,
+					'up_user' => $user->getId()
+				]
 			);
 		}
 	}
