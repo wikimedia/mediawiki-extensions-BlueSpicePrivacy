@@ -3,7 +3,8 @@
 		"authors": [
 			"Vlad5250",
 			"Gzhegozh",
-			"Ата"
+			"Ата",
+			"Movses"
 		]
 	},
 	"bs-privacy-api-error-generic": "Сталася помилка",
@@ -117,7 +118,7 @@
 	"bs-privacy-transparency-type-title-personal": "Персональні дані",
 	"bs-privacy-transparency-type-title-actions": "Дані дій",
 	"bs-privacy-prefs-consent-cookies": "Я приймаю зберігання cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Я приймаю [[MediaWiki:Privacy|політику приватності]] цього сайту",
+	"bs-privacy-prefs-consent-privacy-policy": "Я приймаю [[Project:Privacy|політику приватності]] цього сайту",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies — це невеличкі шматочки інформації, що зберігаються на вашому комп'ютері між сеансами, щоб згладити ваш користувацький досвід",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ставлячи відмітку в цьому полі ви підтверджуєте, що прочитали та прийняли політику приватності цього сайту",
 	"bs-privacy-consent-layout-label": "Згода з політикою приватності",
@@ -128,8 +129,8 @@
 	"bs-privacy-admin-consent-overview-title": "Огляд згоди з політикою приватності",
 	"bs-privacy-admin-consent-overview-help": "Огляд стану згоди усіх користувачів",
 	"log-name-bs-privacy": "Приватність BS",
-	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$2|анонімізував|анонімізувала}} {{GENDER:$2|свій}} обліковий запис. Нове ім'я користувача: $5",
-	"logentry-bs-privacy-deletion": "Користувач $4 вилучив/ла свій обліковий запис",
+	"logentry-bs-privacy-anonymization": "$4 анонімізував\\ла обліковий запис. Нове ім'я користувача: $5",
+	"logentry-bs-privacy-deletion": "Користувач $4 вилучив/ла обліковий запис",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|експортував|експортувала}} {{GENDER:$2|свої}} дані",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|змінив|змінила}} {{GENDER:$2|свої}} дані згоди з політикою приватності на: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|подав|подала}} запит на анонімізацію {{GENDER:$2|свого}} облікового запису з коментарем: $4",

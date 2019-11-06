@@ -1,0 +1,13 @@
+{
+	"@metadata": [],
+	"bs-privacy-anonymization-layout-label": "Anonimizacija",
+	"bs-privacy-anonymization-confirm-button-label": "Anonimizuj moj nalog",
+	"bs-privacy-invalid-user": "Korisnik nije važeći",
+	"bs-privacy-anonymization-request-comment": "Novo korisničko ime: $1",
+	"bs-privacy-acknowledge-request-button": "Odbaci",
+	"bs-privacy-admin-request-grid-column-comment": "Komentar",
+	"bs-privacy-transparency-show-all-data-button": "Prikaži sve podatke",
+	"bs-privacy-admin-consent-grid-column-user": "Korisničko ime",
+	"notification-bs-privacy-center-url": "Centar privatnosti",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sačuvaj"
+}

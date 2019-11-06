@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ykhwong",
-			"Maoue"
+			"Maoue",
+			"Nuevo Paso"
 		]
 	},
 	"bs-privacy-api-error-generic": "오류가 발생했습니다",
@@ -81,9 +82,9 @@
 	"bs-privacy-consent-bool-true": "예",
 	"bs-privacy-consent-bool-false": "아니오",
 	"logentry-bs-privacy-anonymization": "$4님이 {{GENDER:$2|자신의}} 계정을 익명화{{GENDER:$2|했습니다}}. 새 사용자 이름: $5",
-	"logentry-bs-privacy-deletion": "$4 사용자가 자신의 계정을 삭제했습니다",
+	"logentry-bs-privacy-deletion": "$4 사용자가 계정을 삭제했습니다",
 	"logentry-bs-privacy-request-close-anonymization": "$4님의 익명화 요청을 $1님이 닫았{{GENDER:$2|습니다}}",
-	"logentry-bs-privacy-request-close-deletion": "$1님이 $4의 삭제 요청을 {{GENDER:$2|닫았습니다}}",
+	"logentry-bs-privacy-request-close-deletion": "$1 님이 $4의 삭제 요청을 {{GENDER:$2|닫았습니다}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1님이 $4 사용자의 삭제 요청을 승인{{GENDER:$2|했습니다}}",
 	"notification-bs-privacy-login-url": "위키로 로그인",
 	"notification-bs-privacy-anonymization-done": "계정이 익명화되었습니다!",

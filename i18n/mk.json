@@ -48,5 +48,6 @@
 	"bs-privacy-request-failed": "Поднесувањето на барање не успеа!",
 	"bs-privacy-request-close-failed": "Затварањето на барање не успеа",
 	"apihelp-bs-privacy-get-requests-summary": "Крајна точка за добивање сите барања во исчекување",
-	"apihelp-bs-privacy-get-all-consents-summary": "Крајна точка за добивање информации за согласност за сите корисници"
+	"apihelp-bs-privacy-get-all-consents-summary": "Крајна точка за добивање информации за согласност за сите корисници",
+	"bs-privacy-invalid-user": "Корисникот не е важечки"
 }
