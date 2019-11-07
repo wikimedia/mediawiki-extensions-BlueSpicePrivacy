@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use RequestContext;
 
 class Anonymize implements IPrivacyHandler {
 	/**
@@ -62,6 +63,11 @@ class Anonymize implements IPrivacyHandler {
 		$newUser->touch();
 		$newUser->clearSharedCache( 'refresh' );
 
+		if ( $this->getContext()->getUser()->getName() === $oldUsername ) {
+			// If user runs the anonymization directly,
+			// change its User object in the context
+			$this->getContext()->setUser( $newUser );
+		}
 		return \Status::newGood();
 	}
 
@@ -156,5 +162,15 @@ class Anonymize implements IPrivacyHandler {
 	public function exportData( array $types, $format, \User $user ) {
 		// Handled in another handler
 		return \Status::newGood( [] );
+	}
+
+	/**
+	 * Ideally, this should be injected, but that would require
+	 * changes in many handlers
+	 *
+	 * @return RequestContext
+	 */
+	private function getContext() {
+		return RequestContext::getMain();
 	}
 }
