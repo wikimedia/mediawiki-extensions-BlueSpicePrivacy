@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
@@ -105,7 +106,7 @@
 	"bs-privacy-transparency-type-title-personal": "Dados pessoais",
 	"bs-privacy-transparency-type-title-actions": "Dados de operações",
 	"bs-privacy-prefs-consent-cookies": "Aceito o armazenamento de ''cookies''",
-	"bs-privacy-prefs-consent-privacy-policy": "Aceito as [[MediaWiki:Privacy|normas de privacidade]] deste ''site''",
+	"bs-privacy-prefs-consent-privacy-policy": "Eu aceito a [[{{MediaWiki:Privacypage}}|política de privacidade]] deste ''site''",
 	"bs-privacy-prefs-consent-cookies-help": "''Cookies'' são pequenas informações armazenadas no seu computador entre sessões para melhorar a experiência de utilização",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ao marcar este campo, confirma que leu e entendeu as normas de privacidade deste ''site''.",
 	"bs-privacy-consent-layout-label": "Aceitação das normas de privacidade",
@@ -122,8 +123,8 @@
 	"log-name-bs-privacy": "Privacidade BS",
 	"bs-privacy-consent-bool-true": "Sim",
 	"bs-privacy-consent-bool-false": "Não",
-	"logentry-bs-privacy-anonymization": "$4 anonimizou a conta {{GENDER:$2|dele|dela}}. Nome de utilizador novo: $5",
-	"logentry-bs-privacy-deletion": "O utilizador $4 eliminou a própria conta",
+	"logentry-bs-privacy-anonymization": "$4 anonimizou a conta. Nome de utilizador novo: $5",
+	"logentry-bs-privacy-deletion": "O utilizador $4 eliminou a conta",
 	"logentry-bs-privacy-transparency": "$1 exportou os dados {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-consent": "$1 alterou os dados {{GENDER:$2|dele|dela}} de aceitação das normas de privacidade para: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|enviou}} um pedido para anonimizar a conta {{GENDER:$2|dele|dela}} com o comentário: $4",

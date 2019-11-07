@@ -85,5 +85,10 @@
 	"notification-bs-privacy-deletion-failed": "מחיקת החשבון שלך נכשלה!",
 	"notification-bs-privacy-deletion-failed-body": "לא יכולנו למחוק את החשבון שלך. נא ליצור קשר עם מפעילי האתר למידע נוסף. אנו מצטערים על אי הנוחות.",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "לקבל את כולם",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה",
+	"privacycenter": "מרכז הפרטיות",
+	"privacyadmin": "מנהל הפרטיות",
+	"bs-privacy-deletion-request-denied": "המחיקה שלך נדחתה!",
+	"bs-privacy-prefs-consent-cookies": "אני מסכימ/ה לאחסן עוגיות",
+	"bs-privacy-prefs-consent-privacy-policy": "אני מסכימ/ה ל[[Project:Privacy|מדיניות הפרטיות]] של אתר זה"
 }

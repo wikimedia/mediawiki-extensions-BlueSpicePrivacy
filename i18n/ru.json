@@ -6,7 +6,8 @@
 			"Romanko Mikhail",
 			"Diralik",
 			"1233qwer1234qwer4",
-			"Movses"
+			"Movses",
+			"Okras"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
@@ -41,5 +42,5 @@
 	"bs-privacy-admin-request-grid-action-deny": "Отклонить",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Нет",
-	"logentry-bs-privacy-deletion": "Участник $4 удалил свою учётную запись"
+	"logentry-bs-privacy-deletion": "Участник $4 удалил учётную запись"
 }

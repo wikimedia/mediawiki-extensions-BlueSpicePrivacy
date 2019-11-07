@@ -60,7 +60,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (vandaag)",
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nee",
-	"logentry-bs-privacy-deletion": "Gebruiker $4 verwijderde zijn/haar account",
+	"logentry-bs-privacy-deletion": "De gebruiker $4 heeft het profiel verwijderd",
 	"echo-category-title-bs-privacy-cat": "Privacy",
 	"notification-bs-privacy-login-url": "Bij de wiki aanmelden",
 	"notification-bs-privacy-center-url": "CentrumVoorPersoonsgegevens",
@@ -71,5 +71,6 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alles accepteren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Opslaan",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sluiten",
-	"bs-privacy-consent-cookie-settings-label": "Toestemming van volgbestanden wijzigen"
+	"bs-privacy-consent-cookie-settings-label": "Toestemming van volgbestanden wijzigen",
+	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5"
 }

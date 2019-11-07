@@ -80,7 +80,7 @@
 	"bs-privacy-transparency-type-title-personal": "Datos personales",
 	"bs-privacy-transparency-type-title-actions": "Datos de acciones",
 	"bs-privacy-prefs-consent-cookies": "Acepto almacenar «cookies»",
-	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[MediaWiki:Privacy|normativa de privacidad]] de este sitio",
+	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[{{MediaWiki:Privacypage}}|normativa de privacidad]] de este sitio",
 	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
 	"bs-privacy-consent-save-button": "Guardar",
 	"bs-privacy-consent-get-options-fail": "Se produjo un error al recuperar las opciones de la normativa de privacidad",
@@ -100,5 +100,9 @@
 	"bs-privacy-desc": "Página de gestión de las preferencias de privacidad para usuarios",
 	"bs-privacy-anonymization-success-anonymizing": "Se ha anonimizado la cuenta. Tu nombre de usuario nuevo es $1",
 	"bs-privacy-anonymize-login-button": "Accede otra vez con tu nombre de usuario nuevo",
-	"log-name-bs-privacy": "Privacidad de BS"
+	"log-name-bs-privacy": "Privacidad de BS",
+	"bs-privacy-prefs-consent-cookies-help": "Las «cookies» son datos que se almacenan entre sesiones en el equipo para mejorar la experiencia de usuario.",
+	"bs-privacy-prefs-consent-privacy-policy-help": "Al marcar este campo se confirma la lectura y comprensión de la normativa de privacidad del sitio",
+	"bs-privacy-admin-consent-overview-title": "Visión de conjunto del consentimiento de la normativa de privacidad",
+	"bs-privacy-admin-consent-overview-help": "Visión de conjunto del estado de consentimiento de todos los usuarios"
 }
