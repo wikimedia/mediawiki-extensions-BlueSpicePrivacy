@@ -58,6 +58,10 @@ class Anonymize implements IPrivacyHandler {
 		$this->moveUserPage( $newUsername );
 		$this->removeSensitivePreferences( $newUsername );
 
+		$newUser = \User::newFromName( $newUsername );
+		$newUser->touch();
+		$newUser->clearSharedCache( 'refresh' );
+
 		return \Status::newGood();
 	}
 
