@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"logentry-bs-privacy-transparency": "$1 ha exportate {{GENDER:$2|su}} datos",
+	"logentry-bs-privacy-consent": "$1 ha cambiate {{GENDER:$2|su}} datos de acceptation del politica de confidentialitate in: $4"
+}

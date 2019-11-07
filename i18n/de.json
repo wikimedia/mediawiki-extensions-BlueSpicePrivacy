@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Metalhead64",
-			"Hwboehm"
+			"Hwboehm",
+			"Mglaser"
 		]
 	},
 	"bs-privacy": "BlueSpice Datenschutz",
@@ -106,7 +107,7 @@
 	"bs-privacy-transparency-type-title-personal": "Personenbezogene Daten",
 	"bs-privacy-transparency-type-title-actions": "Aktionsdaten",
 	"bs-privacy-prefs-consent-cookies": "Ich akzeptiere das Speichern von Cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die [[Project:Datenschutz|Datenschutzrichtlinie]] dieser Website",
+	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die [[{{MediaWiki:Privacypage}}|Datenschutzrichtlinie]] dieser Website",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies sind kleine Informationseinheiten, die zwischen den Sitzungen auf dem Computer gespeichert werden, um die Benutzerfreundlichkeit zu verbessern.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
 	"bs-privacy-consent-layout-label": "Einwilligung in die Datenschutzerklärung",
@@ -123,8 +124,8 @@
 	"log-name-bs-privacy": "BS-Datenschutz",
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nein",
-	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$2|hat}} {{GENDER:$2|sein|ihr}} Benutzerkonto anonymisiert. Neuer Benutzername: $5",
-	"logentry-bs-privacy-deletion": "Der Benutzer $4 hat sein/ihr Benutzerkonto gelöscht",
+	"logentry-bs-privacy-anonymization": "$4 hat das Benutzerkonto anonymisiert. Neuer Benutzername: $5",
+	"logentry-bs-privacy-deletion": "$4 hat das Benutzerkonto gelöscht",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|hat}} {{GENDER:$2|seine|ihre}} Daten exportiert",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|hat}} {{GENDER:$2|seine|ihre}} Zustimmungsdaten zur Datenschutzrichtlinie geändert auf: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|hat}} eine Anfrage zur Anonymisierung {{GENDER:$2|seines|ihres}} Benutzerkontos eingereicht mit dem Kommentar: $4",

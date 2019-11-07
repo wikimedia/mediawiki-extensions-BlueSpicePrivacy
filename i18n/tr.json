@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bs-privacy": "BlueSpice Gizlilik",
@@ -123,14 +124,14 @@
 	"bs-privacy-consent-bool-false": "Hayır",
 	"logentry-bs-privacy-anonymization": "$4, hesabını {{GENDER:$2|anonimleştirdi}}. Yeni kullanıcı adı: $5",
 	"logentry-bs-privacy-deletion": "$4 kullanıcısı hesabını silmiş",
-	"logentry-bs-privacy-transparency": "$1, verilerini dışa aktardı.",
-	"logentry-bs-privacy-consent": "$1, gizlilik politikası izin verilerini şunla değiştirdi: $4",
+	"logentry-bs-privacy-transparency": "$1, $2 verilerini dışa aktardı",
+	"logentry-bs-privacy-consent": "$1, $2 gizlilik politikası izin verisini şu şekilde değiştirdi: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1, yorumuna hesabını gizlemek için bir istek gönderdi: $4",
 	"logentry-bs-privacy-request-close-anonymization": "$1, $4 tarafından yapılan anonimleştirme isteğini kapattı",
 	"logentry-bs-privacy-request-cancel-anonymization": "$1, hesaba isim koyma isteğini iptal etti",
 	"logentry-bs-privacy-request-approve-anonymization": "$1, $4 kullanıcısı tarafından yapılan hesap anonimleştirme talebini onayladı",
 	"logentry-bs-privacy-request-deny-anonymization": "$1, $4 kullanıcısı tarafından yapılan hesabın anonimleştirilmesi talebini reddetti ve şu yorumu yaptı: $5",
-	"logentry-bs-privacy-request-submit-deletion": "$1, hesabını silmek için bir istek gönderdi ve şu yorumu yaptı: $4",
+	"logentry-bs-privacy-request-submit-deletion": "$1, $2 hesabını yorumuyla silme isteği gönderdi: $4",
 	"logentry-bs-privacy-request-close-deletion": "$1, $4 tarafından yapılan silme isteğini kapattı",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 hesabını silme isteğini iptal etti",
 	"logentry-bs-privacy-request-approve-deletion": "$1, $4 kullanıcısı tarafından yapılan hesap silme isteğini onayladı",
