@@ -105,7 +105,7 @@
 	"bs-privacy-transparency-type-title-personal": "Date personale",
 	"bs-privacy-transparency-type-title-actions": "Date de l'azione",
 	"bs-privacy-prefs-consent-cookies": "Accette de reggistrà le cookie",
-	"bs-privacy-prefs-consent-privacy-policy": "Accette le [[Project:Privacy|regole d'a privacy]] de stu site",
+	"bs-privacy-prefs-consent-privacy-policy": "Accette le [[{{MediaWiki:Privacypage}}|regole d'a privacy]] de stu site",
 	"bs-privacy-prefs-consent-cookies-help": "Le cookie so stuèzze piccinne de 'mbormaziune reggistrate sus a 'u combiuter tune 'mbrà le sessiune pe fà l'esperienze de l'utende cchiù belle",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Confermanne stu cambe, ste conferme ca è lette e accettate le regole d'a privacy pe stu site",
 	"bs-privacy-consent-layout-label": "Consense pe le regole d'a privacy",
