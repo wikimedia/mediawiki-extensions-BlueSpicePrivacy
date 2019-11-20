@@ -4,7 +4,7 @@ namespace BlueSpice\Privacy;
 
 use BlueSpice\INotification;
 use BlueSpice\Privacy\Notifications\RequestSubmitted;
-use MediaWiki\MediaWikiServices;
+use BlueSpice\Services;
 
 abstract class ModuleRequestable extends Module {
 	const TABLE_NAME = 'bs_privacy_request';
@@ -25,7 +25,7 @@ abstract class ModuleRequestable extends Module {
 	public function __construct( $context ) {
 		parent::__construct( $context );
 
-		$services = MediaWikiServices::getInstance();
+		$services = Services::getInstance();
 		$this->database = $services->getDBLoadBalancer()->getConnection( DB_MASTER );
 		$this->requestsEnabled = $services->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'PrivacyEnableRequests' );

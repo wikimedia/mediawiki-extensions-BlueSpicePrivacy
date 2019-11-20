@@ -3,7 +3,7 @@ namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\Privacy\IModule;
 use BlueSpice\BaseNotification;
-use MediaWiki\MediaWikiServices;
+use BlueSpice\Services;
 
 class RequestSubmitted extends BaseNotification {
 	/**
@@ -31,7 +31,7 @@ class RequestSubmitted extends BaseNotification {
 	public function __construct( $agent, $comment, $module ) {
 		parent::__construct( 'bs-privacy-request-submitted', $agent, \Title::newMainPage() );
 
-		$this->db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$this->db = Services::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$this->addAffectedUsers( $this->getPrivacyAdmins() );
 		$this->comment = $comment;
 		$this->module = $module;

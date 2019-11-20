@@ -3,7 +3,6 @@
 namespace BlueSpice\Privacy\Api;
 
 use BlueSpice\Privacy\ModuleRegistry;
-use MediaWiki\MediaWikiServices;
 
 class GetAllConsents extends \BSApiExtJSStoreBase {
 
@@ -12,7 +11,7 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 		$moduleConfig = $moduleRegistry->getModuleByKey( 'consent' );
 		$module = new $moduleConfig['class']( $this->getContext() );
 
-		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$db = $this->getServices()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $db->select(
 			'user',
 			'user_id',

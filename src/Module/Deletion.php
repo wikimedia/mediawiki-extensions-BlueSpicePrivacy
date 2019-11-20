@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Privacy\Module;
 
+use BlueSpice\Services;
 use BlueSpice\Privacy\ModuleRequestable;
 use BlueSpice\Privacy\Notifications\RequestDeletionApproved;
 use BlueSpice\Privacy\Notifications\RequestDeletionDenied;
@@ -120,7 +121,7 @@ class Deletion extends ModuleRequestable {
 	 * @throws \MWException
 	 */
 	protected function assertDeletedUser() {
-		$services = \MediaWiki\MediaWikiServices::getInstance();
+		$services = Services::getInstance();
 		$deletedUsername = $services->getConfigFactory()->makeConfig( 'bsg' )->get(
 			'PrivacyDeleteUsername'
 		);
