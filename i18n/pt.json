@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Mansil"
 		]
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
@@ -106,7 +107,7 @@
 	"bs-privacy-transparency-type-title-personal": "Dados pessoais",
 	"bs-privacy-transparency-type-title-actions": "Dados de operações",
 	"bs-privacy-prefs-consent-cookies": "Aceito o armazenamento de ''cookies''",
-	"bs-privacy-prefs-consent-privacy-policy": "Aceito as [[Project:Privacy|normas de privacidade]] deste ''site''",
+	"bs-privacy-prefs-consent-privacy-policy": "Aceito as [[{{MediaWiki:Privacypage}}|normas de privacidade]] deste ''site''",
 	"bs-privacy-prefs-consent-cookies-help": "''Cookies'' são pequenas informações armazenadas no seu computador entre sessões para melhorar a experiência de utilização",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ao marcar este campo, confirma que leu e entendeu as normas de privacidade deste ''site''.",
 	"bs-privacy-consent-layout-label": "Aceitação das normas de privacidade",
@@ -129,7 +130,7 @@
 	"logentry-bs-privacy-consent": "$1 alterou os dados {{GENDER:$2|dele|dela}} de aceitação das normas de privacidade para: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|enviou}} um pedido para anonimizar a conta {{GENDER:$2|dele|dela}} com o comentário: $4",
 	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|fechou}} o pedido de anonimização feito por $4",
-	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|cancelou}} o pedido para anonimizar a conta{{GENDER:$2|dele|dela}}",
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|cancelou}} o pedido para anonimizar a conta {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|aprovou}} o pedido de anonimização de conta feito pelo utilizador\n $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|negou}} o pedido de anonimização de conta feito pelo utilizador $4, com o comentário: $5",
 	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|enviou}} um pedido para eliminar a conta {{GENDER:$2|dele|dela}} com o comentário: $4",

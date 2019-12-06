@@ -106,7 +106,7 @@
 	"bs-privacy-transparency-type-title-personal": "Dados pessoais",
 	"bs-privacy-transparency-type-title-actions": "ação dos dados",
 	"bs-privacy-prefs-consent-cookies": "Eu aceito armazenar cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Eu aceito a [[Project:Privacy|política de privacidade]] dessa site",
+	"bs-privacy-prefs-consent-privacy-policy": "Eu aceito a [[{{MediaWiki:Privacypage}}|política de privacidade]] deste ''site''",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies são pequenos pedaços de informações armazenadas no seu computador entre as sessões para tornar a experiência do usuário mais suave",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ao marcar este campo, você confirma que leu e reconheceu a política de privacidade deste site.",
 	"bs-privacy-consent-layout-label": "Consentimento da política de privacidade",

@@ -97,5 +97,7 @@
 	"notification-bs-privacy-request-denied-anonymization": "Din anonymiseringsbegäran nekades!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Acceptera alla",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Spara",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng",
+	"bs-privacy-anonymization-success-anonymizing": "Ditt konto har blivit anonymiserad! Det nya användarnamnet ditt är $1",
+	"bs-privacy-api-username-mismatch": "Användaren som gör förfrågan är olikt från den innloggede användaren"
 }
