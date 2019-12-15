@@ -71,6 +71,10 @@ class Anonymize implements IPrivacyHandler {
 		return \Status::newGood();
 	}
 
+	/**
+	 *
+	 * @param string $newUsername
+	 */
 	protected function updateTables( $newUsername ) {
 		// Clear realname
 		$this->db->update(
@@ -93,6 +97,10 @@ class Anonymize implements IPrivacyHandler {
 		}
 	}
 
+	/**
+	 *
+	 * @param string $newUsername
+	 */
 	protected function moveUserPage( $newUsername ) {
 		$oldUserPage = $this->oldUser->getUserPage();
 		$newUserPage = \Title::makeTitle( NS_USER, $newUsername );

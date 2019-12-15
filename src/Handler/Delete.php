@@ -56,6 +56,14 @@ class Delete extends Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
+	 * @param \Database $db
+	 */
+	public function __construct( \Database $db ) {
+		$this->db = $db;
+	}
+
+	/**
+	 *
 	 * @param string $oldUsername
 	 * @param string $newUsername
 	 * @return \Status
@@ -66,6 +74,7 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	}
 
 	/**
+	 *
 	 * @param \User $userToDelete
 	 * @param \User $deletedUser
 	 * @return \Status
@@ -75,7 +84,7 @@ class Delete extends Anonymize implements IPrivacyHandler {
 		$this->groupingDeletedUser = $deletedUser;
 
 		// First anonymize to deleted user
-		$anonymizeStatus = parent::anonymize( $userToDelete->getName(), $deletedUser->getName() );
+		$anonymizeStatus = $this->anonymizeParent( $userToDelete, $deletedUser );
 		if ( !$anonymizeStatus->isOK() ) {
 			return \Status::newFatal( 'bs-privacy-deletion-failed' );
 		}
@@ -85,6 +94,19 @@ class Delete extends Anonymize implements IPrivacyHandler {
 		$this->deleteFromTables();
 
 		return \Status::newGood();
+	}
+
+	/**
+	 * @param \User $userToDelete
+	 * @param \User $deletedUser
+	 * @return \Status
+	 */
+	private function anonymizeParent( \User $userToDelete, \User $deletedUser ) {
+		$instance = parent::__construct( $this->db );
+		return $instance->anonymize(
+			$userToDelete->getName(),
+			$deletedUser->getName()
+		);
 	}
 
 	/**

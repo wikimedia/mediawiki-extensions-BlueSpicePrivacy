@@ -37,6 +37,11 @@ class BlockCookie extends WebResponseSetCookie {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array $mapping
+	 * @return string
+	 */
 	protected function getCookieGroup( $mapping ) {
 		$prefixedName = $this->getConfig()->get( 'CookiePrefix' ) . $this->name;
 		foreach ( $mapping as $group => $cookies ) {

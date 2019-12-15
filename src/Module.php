@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy;
 
 use BlueSpice\Services;
+use BlueSpice\BaseNotification;
 
 abstract class Module implements IModule {
 	const MODULE_UI_TYPE_ADMIN = 'admin';
@@ -73,14 +74,26 @@ abstract class Module implements IModule {
 		return false;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function verifyUser() {
 		return $this->context->getUser()->getId() > 0;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function checkAdminPermissions() {
 		return $this->context->getUser()->isAllowed( 'bs-privacy-admin' ) !== false;
 	}
 
+	/**
+	 *
+	 * @param array $params
+	 */
 	protected function logAction( $params = [] ) {
 		$entry = new \ManualLogEntry( 'bs-privacy', $this->getModuleName() );
 
@@ -91,6 +104,11 @@ abstract class Module implements IModule {
 		$entry->insert();
 	}
 
+	/**
+	 *
+	 * @param array $params
+	 * @return arraY
+	 */
 	protected function buildLogParams( $params ) {
 		$logParams = [];
 		$cnt = 4;
@@ -101,6 +119,10 @@ abstract class Module implements IModule {
 		return $logParams;
 	}
 
+	/**
+	 *
+	 * @param BaseNotification $notification
+	 */
 	protected function notify( $notification ) {
 		$notificationsManager = Services::getInstance()
 			->getBSNotificationManager();
