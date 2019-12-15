@@ -86,6 +86,9 @@ class ExportData implements IPrivacyHandler {
 		return \Status::newGood( $this->data );
 	}
 
+	/**
+	 *
+	 */
 	protected function getPersonalInfo() {
 		$data = [];
 
@@ -159,14 +162,23 @@ class ExportData implements IPrivacyHandler {
 		$this->data[Transparency::DATA_TYPE_PERSONAL] = $data;
 	}
 
+	/**
+	 *
+	 */
 	protected function getWorkingData() {
 		$this->data[Transparency::DATA_TYPE_WORKING] = [];
 	}
 
+	/**
+	 *
+	 */
 	protected function getContentData() {
 		$this->data[Transparency::DATA_TYPE_CONTENT] = [];
 	}
 
+	/**
+	 *
+	 */
 	protected function getActionsData() {
 		$data = [];
 		$logRows = $this->getLogRows();
@@ -198,6 +210,10 @@ class ExportData implements IPrivacyHandler {
 		$this->data[Transparency::DATA_TYPE_ACTIONS] = $data;
 	}
 
+	/**
+	 *
+	 * @return \ResultWrapper|bool
+	 */
 	protected function getLogRows() {
 		$res = $this->db->select(
 			'logging',

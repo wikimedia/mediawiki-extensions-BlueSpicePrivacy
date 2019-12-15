@@ -86,6 +86,12 @@ class Transparency extends Module {
 		return $status;
 	}
 
+	/**
+	 *
+	 * @param string $types
+	 * @param string $format
+	 * @return string
+	 */
 	protected function getData( $types, $format ) {
 		$status = $this->runHandlers( 'exportData', [
 			$types,
@@ -161,6 +167,11 @@ class Transparency extends Module {
 		return false;
 	}
 
+	/**
+	 *
+	 * @param array $data
+	 * @return \Status
+	 */
 	protected function getHTML( $data ) {
 		$formattedDate = $this->context->getLanguage()->userTimeAndDate(
 			wfTimestamp(),
@@ -194,6 +205,11 @@ class Transparency extends Module {
 		] );
 	}
 
+	/**
+	 *
+	 * @param array $data
+	 * @return \Status
+	 */
 	protected function getCSV( $data ) {
 		$formattedDate = $this->context->getLanguage()->userTimeAndDate(
 			wfTimestamp(),
