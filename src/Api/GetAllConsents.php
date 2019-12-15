@@ -7,6 +7,11 @@ use MediaWiki\MediaWikiServices;
 
 class GetAllConsents extends \BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $query
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $query = '' ) {
 		$moduleRegistry = new ModuleRegistry();
 		$moduleConfig = $moduleRegistry->getModuleByKey( 'consent' );

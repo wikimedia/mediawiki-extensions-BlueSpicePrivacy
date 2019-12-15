@@ -182,6 +182,11 @@ abstract class ModuleRequestable extends Module {
 		return \Status::newGood( $requests );
 	}
 
+	/**
+	 *
+	 * @param int $id
+	 * @return \stdClass|false
+	 */
 	protected function getRequestById( $id ) {
 		return $this->database->selectRow(
 			static::TABLE_NAME,
@@ -254,6 +259,11 @@ abstract class ModuleRequestable extends Module {
 		return \Status::newFatal( 'bs-privacy-request-cancel-failed' );
 	}
 
+	/**
+	 *
+	 * @param int $userId
+	 * @return \Status
+	 */
 	protected function closeRequest( $userId = 0 ) {
 		$userId = $userId > 0 ? $userId : $this->context->getUser()->getId();
 		$user = \User::newFromId( $userId );
@@ -280,6 +290,11 @@ abstract class ModuleRequestable extends Module {
 		return \Status::newFatal( 'bs-privacy-request-close-failed' );
 	}
 
+	/**
+	 *
+	 * @param int $requestId
+	 * @return \Status
+	 */
 	protected function approveRequest( $requestId ) {
 		if ( !$this->checkAdminPermissions() ) {
 			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
@@ -305,6 +320,12 @@ abstract class ModuleRequestable extends Module {
 		return \Status::newGood();
 	}
 
+	/**
+	 *
+	 * @param int $requestId
+	 * @param string $comment
+	 * @return \Status
+	 */
 	protected function denyRequest( $requestId, $comment ) {
 		if ( !$this->checkAdminPermissions() ) {
 			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
@@ -334,6 +355,12 @@ abstract class ModuleRequestable extends Module {
 		return \Status::newGood();
 	}
 
+	/**
+	 *
+	 * @param string $action
+	 * @param array $params
+	 * @param \User|null $user
+	 */
 	protected function logRequestAction( $action, $params = [], $user = null ) {
 		if ( $user === null ) {
 			$user = $this->context->getUser();
