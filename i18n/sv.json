@@ -97,7 +97,13 @@
 	"notification-bs-privacy-deletion-failed": "Misslyckades att radera ditt konto!",
 	"notification-bs-privacy-deletion-failed-body": "Vi kunde inte radera ditt konto. Kontakta wikins administratörer för mer information. Vi beklagar besväret.",
 	"notification-bs-privacy-request-denied-anonymization": "Din anonymiseringsbegäran nekades!",
+	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Inställningar för informationkapselsamtycke",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Acceptera alla",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Inställningar för informationkapselsamtycke",
+	"bs-privacy-cookie-consent-group-necessary-label": "Obligatoriska informationskapslar",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Informationskapslar som är nödvändiga för att webbplatsen ska fungera",
+	"bs-privacy-cookie-convenience-group-label": "Bekvämlighetsinformationskapslar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Spara",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng",
+	"bs-privacy-consent-cookie-settings-label": "Ändra informationkapselssamtycke"
 }
