@@ -6,6 +6,11 @@ use BlueSpice\Privacy\ModuleRegistry;
 
 class GetRequests extends \BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $query
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $query = '' ) {
 		$moduleRegistry = new ModuleRegistry();
 		$data = [];

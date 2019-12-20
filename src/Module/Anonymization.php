@@ -40,6 +40,10 @@ class Anonymization extends ModuleRequestable {
 		}
 	}
 
+	/**
+	 *
+	 * @return \Status
+	 */
 	protected function getAlternativeUsername() {
 		do {
 			$username = $this->getRandomUsername();
@@ -50,6 +54,11 @@ class Anonymization extends ModuleRequestable {
 		] );
 	}
 
+	/**
+	 *
+	 * @param string $username
+	 * @return \Status
+	 */
 	protected function checkUsername( $username ) {
 		$username = $this->context->getLanguage()->ucfirst( $username );
 		$user = \User::newFromName( $username );
@@ -71,6 +80,12 @@ class Anonymization extends ModuleRequestable {
 		] );
 	}
 
+	/**
+	 *
+	 * @param string $oldUsername
+	 * @param string $username
+	 * @return \Status
+	 */
 	protected function runAnonymization( $oldUsername, $username ) {
 		$username = $this->context->getLanguage()->ucfirst( $username );
 		if ( $this->checkUsernameSimple( $username ) === false ) {
@@ -128,10 +143,19 @@ class Anonymization extends ModuleRequestable {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getRandomUsername() {
 		return "anon" . rand( 101, 99999 );
 	}
 
+	/**
+	 *
+	 * @param array $data
+	 * @return \Status
+	 */
 	protected function submitRequest( $data ) {
 		if ( !isset( $data['username'] ) || empty( $data['username'] ) ) {
 			return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
@@ -142,6 +166,11 @@ class Anonymization extends ModuleRequestable {
 		return parent::submitRequest( $data );
 	}
 
+	/**
+	 *
+	 * @param int $requestId
+	 * @return \Status
+	 */
 	protected function approveRequest( $requestId ) {
 		if ( !$this->checkAdminPermissions() ) {
 			return \Status::newFatal( 'bs-privacy-admin-access-denied' );

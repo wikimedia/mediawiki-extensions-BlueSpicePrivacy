@@ -42,6 +42,12 @@ class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 		return $this->provider;
 	}
 
+	/**
+	 *
+	 * @param string $callback
+	 * @param array $config
+	 * @return \BlueSpice\Privacy\CookieConsentProvider\Base
+	 */
 	protected function instantiate( $callback, $config ) {
 		if ( !is_callable( $callback ) ) {
 			return null;

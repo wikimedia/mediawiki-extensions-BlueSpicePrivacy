@@ -82,6 +82,11 @@ class Deletion extends ModuleRequestable {
 		return "deletion";
 	}
 
+	/**
+	 *
+	 * @param int $requestId
+	 * @return \Status
+	 */
 	protected function approveRequest( $requestId ) {
 		if ( !$this->checkAdminPermissions() ) {
 			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
