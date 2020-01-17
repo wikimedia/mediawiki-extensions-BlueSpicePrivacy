@@ -2,26 +2,24 @@
 	bs.privacy = bs.privacy || {};
 
 	bs.privacy.cookieConsent.MWProviderPrompt = function() {
-		this.cookieName = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieName;
+		this.cookieName =
+			mw.config.get( 'wgCookiePrefix' ) + '_' +
+			mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieName;
 		this.groups = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieGroups;
 
 		if( this.cookieExists() === false ) {
 			this.showFirstLoad();
+		} else if ( !$.cookie( this.cookieName ) ) {
+			// If cookie is not set, but settings do exist in localStorage,
+			// translate settings from local storage to cookie so they can be passed to the server
+			$.cookie( this.cookieName, localStorage.getItem( this.cookieName ), { path: '/', expires: 20 * 365 } );
 		}
 	};
 
 	OO.initClass( bs.privacy.cookieConsent.MWProviderPrompt );
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.cookieExists = function() {
-		var pairs = document.cookie.split( ";" );
-		for( var i = 0; i < pairs.length; i++ ){
-			var pair = pairs[i].split("=");
-			if( ( pair[0]+'' ).trim() === this.cookieName ) {
-				return true;
-			}
-		}
-
-		return false;
+		return localStorage.getItem( this.cookieName ) !== null;
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.showFirstLoad = function() {
@@ -83,12 +81,13 @@
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.onCookieSettingsChanged = function( groups ) {
-		var cookieVal = {
+		var cookieVal = JSON.stringify( {
 			groups: this.getGroupsForCookie( groups )
-		};
+		} );
 
 		// Set the cookie - expires in 20 years
-		$.cookie( this.cookieName, JSON.stringify( cookieVal ), { path: '/', expires: 20 * 365 } );
+		$.cookie( this.cookieName, cookieVal, { path: '/', expires: 20 * 365 } );
+		localStorage.setItem( this.cookieName, cookieVal );
 
 		this.bar.$element.remove();
 		this.$overlay.remove();

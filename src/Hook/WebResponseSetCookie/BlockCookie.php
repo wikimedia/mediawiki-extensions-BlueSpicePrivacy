@@ -25,6 +25,7 @@ class BlockCookie extends WebResponseSetCookie {
 		$groups = $provider->getGroups();
 
 		$cookieGroup = $this->getCookieGroup( $provider->getGroupMapping() );
+
 		if ( !$cookieGroup ) {
 			// Allow all un-categorized cookies - blocking unknown cookies
 			// can lead to unexpected results
