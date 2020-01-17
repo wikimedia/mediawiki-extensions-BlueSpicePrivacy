@@ -142,6 +142,7 @@
 	"logentry-bs-privacy-request-approve-deletion": "Log entry for when user has approved deletion request. $1 - acting user, $2 - acting user username, $4 - user approving the request",
 	"logentry-bs-privacy-request-deny-deletion": "Log entry for when user has denied deletion request. $1 - acting user, $2 - acting user username, $4 - user denying the request, $5 - comment",
 	"echo-category-title-bs-privacy-cat": "Notification category name",
+	"echo-pref-tooltip-bs-privacy-cat": "Tooltip for Echo notification category bs-privacy-cat",
 	"notification-bs-privacy-login-url": "Notification label for login URL",
 	"notification-bs-privacy-center-url": "Notification label for {{Special:PrivacyCenter}}",
 	"notification-bs-privacy-admin-url": "Notification label for {{Special:PrivacyAdmin}}",
