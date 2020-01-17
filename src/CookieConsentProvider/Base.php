@@ -3,15 +3,20 @@
 namespace BlueSpice\Privacy\CookieConsentProvider;
 
 use BlueSpice\Privacy\ICookieConsentProvider;
+use Config;
+use Exception;
+use WebRequest;
+use ConfigException;
+use HashConfig;
 
 abstract class Base implements ICookieConsentProvider {
 	/**
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config;
 
 	/**
-	 * @var \WebRequest
+	 * @var WebRequest
 	 */
 	protected $request;
 
@@ -23,8 +28,8 @@ abstract class Base implements ICookieConsentProvider {
 	/**
 	 * NativeMW constructor.
 	 *
-	 * @param \Config $config
-	 * @param \WebRequest $request
+	 * @param Config $config
+	 * @param WebRequest $request
 	 * @param array $cookieGroups
 	 */
 	public function __construct( $config, $request, $cookieGroups ) {
@@ -34,9 +39,9 @@ abstract class Base implements ICookieConsentProvider {
 	}
 
 	/**
-	 * @param \Config $config
-	 * @param \WebRequest $request
-	 * @param \HashConfig $providerConfig
+	 * @param Config $config
+	 * @param WebRequest $request
+	 * @param HashConfig $providerConfig
 	 * @return ICookieConsentProvider
 	 * @throws Exception
 	 */
@@ -53,6 +58,7 @@ abstract class Base implements ICookieConsentProvider {
 
 	/**
 	 * @return array
+	 * @throws ConfigException
 	 */
 	public function getGroupMapping() {
 		$mapping = [];
@@ -75,5 +81,13 @@ abstract class Base implements ICookieConsentProvider {
 		}
 
 		return $mapping;
+	}
+
+	/**
+	 * @return string
+	 * @throws ConfigException
+	 */
+	protected function getCookiePrefix() {
+		return $this->config->get( 'CookiePrefix' ) . '_';
 	}
 }

@@ -9,12 +9,12 @@
 	OO.inheritClass( bs.privacy.cookieConsent.MWProvider, bs.privacy.cookieConsent.BaseHandler );
 
 	bs.privacy.cookieConsent.MWProvider.prototype.getGroups = function() {
-		var cookie = $.cookie( this.cookieName );
-		if( !cookie ) {
+		var settings = localStorage.getItem( this.cookieName );
+		if( !settings ) {
 			return [];
 		}
 
-		var parsed = JSON.parse( cookie );
+		var parsed = JSON.parse( settings );
 		if( !parsed.groups ) {
 			return [];
 		}
@@ -43,12 +43,13 @@
 						newVal[groupName] = false;
 					}
 				}
-				var cookieVal = {
+				var cookieVal = JSON.stringify( {
 					groups: newVal
-				};
+				} );
 
 				// Set the cookie - expires in 20 years
-				$.cookie( this.cookieName, JSON.stringify( cookieVal ), { path: '/', expires: 20 * 365 } );
+				$.cookie( this.cookieName, cookieVal, { path: '/', expires: 20 * 365 } );
+				localStorage.setItem( this.cookieName, cookieVal );
 			}
 		}.bind( this ) );
 	};
