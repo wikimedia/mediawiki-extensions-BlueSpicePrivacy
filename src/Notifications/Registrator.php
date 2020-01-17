@@ -18,7 +18,9 @@ class Registrator {
 	public static function registerNotifications(
 		\BlueSpice\NotificationManager $notificationsManager ) {
 		$echoNotifier = $notificationsManager->getNotifier();
-		$echoNotifier->registerNotificationCategory( 'bs-privacy-cat' );
+		$echoNotifier->registerNotificationCategory( 'bs-privacy-cat', [
+			'tooltip' => 'echo-pref-tooltip-bs-privacy-cat'
+		] );
 
 		$notificationsManager->registerNotification(
 			'bs-privacy-anonymization-done',
