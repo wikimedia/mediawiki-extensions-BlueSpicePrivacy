@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirin"
+			"Mirin",
+			"Robin van der Vliet"
 		]
 	},
 	"bs-privacy-anonymization-layout-label": "Anonimigo",
-	"bs-privacy-anonymization-new-username-label": "Nova salutnomo",
+	"bs-privacy-anonymization-new-username-label": "Nova uzantnomo",
 	"bs-privacy-anonymization-confirm-button-label": "Anonimigi mian konton",
 	"bs-privacy-admin-request-grid-column-user": "Uzanto",
 	"bs-privacy-admin-request-grid-column-action": "Ago",
@@ -21,7 +22,7 @@
 	"bs-privacy-transparency-private-former-groups": "Eksaj grupoj: $1",
 	"bs-privacy-prefs-consent-cookies": "Mi konsentas konservadon de kuketoj",
 	"bs-privacy-consent-save-button": "Konservi",
-	"bs-privacy-admin-consent-grid-column-user": "Salutnomo",
+	"bs-privacy-admin-consent-grid-column-user": "Uzantnomo",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hodiaŭ)",
 	"bs-privacy-consent-bool-true": "Jes",
 	"bs-privacy-consent-bool-false": "Ne",
