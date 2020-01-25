@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Privacy\Module;
 
-use BlueSpice\Services;
 use BlueSpice\Privacy\ModuleRequestable;
 use BlueSpice\Privacy\Notifications\RequestDeletionApproved;
 use BlueSpice\Privacy\Notifications\RequestDeletionDenied;
+use BlueSpice\Services;
 
 class Deletion extends ModuleRequestable {
 

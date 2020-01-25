@@ -3,10 +3,10 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\Privacy\Notifications\PresentationModel\AnonymizationDone;
-use BlueSpice\Privacy\Notifications\PresentationModel\RequestAnonymizationDenied;
-use BlueSpice\Privacy\Notifications\PresentationModel\RequestDeletionDenied;
-use BlueSpice\Privacy\Notifications\PresentationModel\RequestDeletionApproved;
 use BlueSpice\Privacy\Notifications\PresentationModel\DeletionFailed;
+use BlueSpice\Privacy\Notifications\PresentationModel\RequestAnonymizationDenied;
+use BlueSpice\Privacy\Notifications\PresentationModel\RequestDeletionApproved;
+use BlueSpice\Privacy\Notifications\PresentationModel\RequestDeletionDenied;
 use BlueSpice\Privacy\Notifications\PresentationModel\RequestSubmitted;
 
 class Registrator {

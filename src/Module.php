@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Privacy;
 
-use BlueSpice\Services;
 use BlueSpice\BaseNotification;
+use BlueSpice\Services;
 
 abstract class Module implements IModule {
 	const MODULE_UI_TYPE_ADMIN = 'admin';

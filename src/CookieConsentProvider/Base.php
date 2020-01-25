@@ -4,10 +4,10 @@ namespace BlueSpice\Privacy\CookieConsentProvider;
 
 use BlueSpice\Privacy\ICookieConsentProvider;
 use Config;
-use Exception;
-use WebRequest;
 use ConfigException;
+use Exception;
 use HashConfig;
+use WebRequest;
 
 abstract class Base implements ICookieConsentProvider {
 	/**
