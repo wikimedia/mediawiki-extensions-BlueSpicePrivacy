@@ -6,7 +6,8 @@
 			"Wladek92",
 			"DSwissK",
 			"Thibaut120094",
-			"Verdy p"
+			"Verdy p",
+			"Derugon"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -141,7 +142,8 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 a annulé la demande de suppression de {{GENDER:$2|}}son compte",
 	"logentry-bs-privacy-request-approve-deletion": "$1{{GENDER:$2|}} a approuvé la demande faite par l’utilisat{{GENDER:$4|eur|rice}} $4 de suppression de son compte",
 	"logentry-bs-privacy-request-deny-deletion": "$1{{GENDER:$2|}} a refusé la demande faite par l’utilisat{{GENDER:$4|eur|rice}} $4 de suppression de son compte, avec le commentaire : $5",
-	"echo-category-title-bs-privacy-cat": "Confidentialité",
+	"echo-category-title-bs-privacy-cat": "Actions de confidentialité",
+	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de l’anonymisation de mon compte ou la demande de suppression sont modifiés",
 	"notification-bs-privacy-login-url": "Se connecter au wiki",
 	"notification-bs-privacy-center-url": "Centre de confidentialité",
 	"notification-bs-privacy-admin-url": "Administration de confidentialité",
