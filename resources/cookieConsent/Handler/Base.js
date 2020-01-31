@@ -5,7 +5,7 @@
 	bs.privacy.cookieConsent.BaseHandler = function( cfg ) {
 		cfg = cfg || {};
 
-		this.cookieName = cfg.cookieName;
+		this.cookieName = mw.config.get( 'wgCookiePrefix' ) + '_' + cfg.cookieName;
 		this.cookieMap = cfg.cookieMap;
 
 		this.groups = this.getGroups();
@@ -19,10 +19,12 @@
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
 		var cookieGroup = this.getCookieGroup( cookieName );
+
 		if( !(cookieGroup in this.groups) ) {
 			return true;
 		}
 		if( this.groups[cookieGroup] === true ) {
+
 			return true;
 		}
 		return false;

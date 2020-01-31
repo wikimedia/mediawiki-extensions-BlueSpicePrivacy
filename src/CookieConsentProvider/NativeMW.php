@@ -24,7 +24,7 @@ class NativeMW extends Base {
 	 */
 	public function getGroups() {
 		if ( empty( $this->userGroupPreference ) ) {
-			$rawCookie = $this->request->getCookie( $this->getCookieName(), '' );
+			$rawCookie = $this->request->getCookie( $this->getCookieName(), $this->getCookiePrefix() );
 
 			if ( !$rawCookie ) {
 				return [];
