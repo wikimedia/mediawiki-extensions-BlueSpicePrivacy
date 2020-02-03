@@ -138,7 +138,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|hat}} die Anfrage zur Löschung {{GENDER:$2|seines|ihres}} Benutzerkontos widerrufen",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|hat}} die Anfrage zur Löschung des Benutzerkontos von $4 bestätigt",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|hat}} die Anfrage zur Löschung des Benutzerkontos von $4 abgelehnt, mit dem Kommentar: $5",
-	"echo-category-title-bs-privacy-cat": "Datenschutzereignisse",
+	"echo-category-title-bs-privacy-cat": "Datenschutzaktionen",
 	"echo-pref-tooltip-bs-privacy-cat": "Benachrichtigung wenn es Statusänderungen bei meiner Anfrage zur Kontoanonymisierung oder zur Kontolöschung gibt",
 	"notification-bs-privacy-login-url": "Im Wiki anmelden",
 	"notification-bs-privacy-center-url": "Datenschutzzentrale",
