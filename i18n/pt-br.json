@@ -137,7 +137,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|cancelou}} a solicitação para excluir a conta {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|tem}} aprovado o pedido para excluir a conta feita pelo usuário $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|tem negado|tem negada}} a solicitação para excluir uma conta feita {{GENDER:$2|pelo usuário $4|pela usuária $4}}, com o comentário: $5",
-	"echo-category-title-bs-privacy-cat": "Privacidade",
+	"echo-category-title-bs-privacy-cat": "Ações de privacidade",
 	"notification-bs-privacy-login-url": "Entre para a wiki",
 	"notification-bs-privacy-center-url": "CentrodePrivacidade",
 	"notification-bs-privacy-admin-url": "AdministradordePrivacidade",
@@ -170,5 +170,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
 	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
-	"right-bs-privacy-admin": "Executar a ação administrativa de privacidade"
+	"right-bs-privacy-admin": "Executar a ação administrativa de privacidade",
+	"echo-pref-tooltip-bs-privacy-cat": "Notificar-me quando o status da solicitação de anonimização ou exclusão da minha conta mudar"
 }

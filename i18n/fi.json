@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen"
+			"Silvonen",
+			"FinlandMan"
 		]
 	},
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
@@ -17,5 +18,6 @@
 	"bs-privacy-cookie-consent-group-necessary-label": "Välttämättömät evästeet",
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
+	"echo-category-title-bs-privacy-cat": "Yksityisyystehtävät"
 }

@@ -17,5 +17,15 @@
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 రోజు|$2 రోజుల}} క్రితం)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (ఈరోజు)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "భద్రపరుచు",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "మూసివేయి"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "మూసివేయి",
+	"bs-privacy-anonymization-new-username-label": "కొత్త వాడుకరిపేరు",
+	"bs-privacy-anonymization-api-invalid-username": "చెల్లని వాడుకరి పేరు",
+	"bs-privacy-deletion-submit-request-label": "వ్యాఖ్య (ఐచ్ఛికం)",
+	"bs-privacy-transparency-layout-label": "పారదర్శకత",
+	"bs-privacy-transparency-private-username": "వాడుకరి పేరు: $1",
+	"bs-privacy-transparency-private-realname": "అసలు పేరు: $1",
+	"bs-privacy-transparency-private-registration": "నమోదు సమయం: $1",
+	"bs-privacy-transparency-private-email-authenticated": "ఈమెయిలు చిరునామా: $1 ($2 నాడు నిర్ధారించారు)",
+	"bs-privacy-transparency-private-email-not-authenticated": "ఈమెయిలు చిరునామా: $1 (నిర్ధారించలేదు)",
+	"bs-privacy-transparency-private-experience": "అనుభవ స్థాయి: $1"
 }

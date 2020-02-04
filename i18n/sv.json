@@ -86,7 +86,7 @@
 	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|har}} avbröt begäran att anonymisera {{GENDER:$2|sitt|sitt}} konto",
 	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|har}} godkänt begäran att anonymisera kontot som gjordes av användaren $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|har}} nekat begäran att anonymisera kontot som gjordes av användaren $4, med kommentaren: $5",
-	"echo-category-title-bs-privacy-cat": "Integritet",
+	"echo-category-title-bs-privacy-cat": "Integritetshandlingar",
 	"notification-bs-privacy-login-url": "Logga in på wikin",
 	"notification-bs-privacy-anonymization-done": "Ditt konto har anonymiserats!",
 	"notification-bs-privacy-anonymization-done-body": "Ditt konto har anonymiserats. Gammalt användarnamn: \"$1\". Nytt användarnamn: \"$2\"",
@@ -99,5 +99,14 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Spara",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng",
 	"bs-privacy-anonymization-success-anonymizing": "Ditt konto har blivit anonymiserad! Det nya användarnamnet ditt är $1",
-	"bs-privacy-api-username-mismatch": "Användaren som gör förfrågan är olikt från den innloggede användaren"
+	"bs-privacy-api-username-mismatch": "Användaren som gör förfrågan är olikt från den innloggede användaren",
+	"bs-privacy-anonymize-login-button": "Logg på igen med ditt #nya användarnamn",
+	"bs-privacy-consent-layout-label": "Integritetsreglerssamtycke",
+	"echo-pref-tooltip-bs-privacy-cat": "Avisera mig när statusen hos min kontoanonymisering eller raderingsbegäran ändras",
+	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Inställningar för informationkapselsamtycke",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Inställningar för informationkapselsamtycke",
+	"bs-privacy-cookie-consent-group-necessary-label": "Obligatoriska informationskapslar",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Informationskapslar som är nödvändiga för att webbplatsen ska fungera",
+	"bs-privacy-cookie-convenience-group-label": "Bekvämlighetsinformationskapslar",
+	"bs-privacy-consent-cookie-settings-label": "Ändra informationkapselssamtycke"
 }

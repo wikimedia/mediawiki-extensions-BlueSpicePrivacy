@@ -135,7 +135,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1{{GENDER:$2|已}}取消刪除{{GENDER:$2|他|她}}的帳號請求",
 	"logentry-bs-privacy-request-approve-deletion": "$1{{GENDER:$2|已}}核准由使用者$4做出的刪除請求",
 	"logentry-bs-privacy-request-deny-deletion": "$1{{GENDER:$2|已}}拒絕由使用者$4做出的刪除帳號請求，註釋為：$5",
-	"echo-category-title-bs-privacy-cat": "隱私",
+	"echo-category-title-bs-privacy-cat": "隱私操作",
 	"notification-bs-privacy-login-url": "登入至 wiki",
 	"notification-bs-privacy-center-url": "PrivacyCenter",
 	"notification-bs-privacy-admin-url": "PrivacyAdmin",
@@ -168,5 +168,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "儲存",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "關閉",
 	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可",
-	"right-bs-privacy-admin": "執行隱私管理操作"
+	"right-bs-privacy-admin": "執行隱私管理操作",
+	"echo-pref-tooltip-bs-privacy-cat": "當我的帳號匿名狀態或是刪除請求被更改時通知我"
 }
