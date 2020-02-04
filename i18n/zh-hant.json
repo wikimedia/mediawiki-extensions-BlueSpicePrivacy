@@ -104,7 +104,7 @@
 	"bs-privacy-transparency-type-title-personal": "個人資料",
 	"bs-privacy-transparency-type-title-actions": "操作資料",
 	"bs-privacy-prefs-consent-cookies": "我同意儲存 cookie",
-	"bs-privacy-prefs-consent-privacy-policy": "我接受此站台的[[Project:Privacy|隱私權政策]]",
+	"bs-privacy-prefs-consent-privacy-policy": "我接受此站台的[[{{MediaWiki:Privacypage}}|隱私權政策]]",
 	"bs-privacy-prefs-consent-cookies-help": "Cookie 是一種儲存在您的電腦與 session 之間的小型資訊塊，能讓使用者的體驗上更順暢",
 	"bs-privacy-prefs-consent-privacy-policy-help": "透過勾選此欄位，代表您已確認有閱讀且了解此站台的隱私權政策",
 	"bs-privacy-consent-layout-label": "隱私權政策許可",
@@ -121,8 +121,8 @@
 	"log-name-bs-privacy": "BS 隱私",
 	"bs-privacy-consent-bool-true": "是",
 	"bs-privacy-consent-bool-false": "否",
-	"logentry-bs-privacy-anonymization": "$4{{GENDER:$2|已}}匿名{{GENDER:$2|他|她}}的帳號。新使用者名稱：$5",
-	"logentry-bs-privacy-deletion": "使用者$4已刪除他/她的帳號",
+	"logentry-bs-privacy-anonymization": "$4已匿名帳號。新使用者名稱：$5",
+	"logentry-bs-privacy-deletion": "使用者$4已刪除帳號",
 	"logentry-bs-privacy-transparency": "$1{{GENDER:$2|已}}匯出{{GENDER:$2|他|她}}的資料",
 	"logentry-bs-privacy-consent": "$1{{GENDER:$2|已}}更改{{GENDER:$2|他|她}}的隱私權政策許可資料成為：$4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1{{GENDER:$2|已}}提交匿名{{GENDER:$2|他|她}}自己帳號的請求，註釋為：$4",
@@ -135,7 +135,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1{{GENDER:$2|已}}取消刪除{{GENDER:$2|他|她}}的帳號請求",
 	"logentry-bs-privacy-request-approve-deletion": "$1{{GENDER:$2|已}}核准由使用者$4做出的刪除請求",
 	"logentry-bs-privacy-request-deny-deletion": "$1{{GENDER:$2|已}}拒絕由使用者$4做出的刪除帳號請求，註釋為：$5",
-	"echo-category-title-bs-privacy-cat": "隱私",
+	"echo-category-title-bs-privacy-cat": "隱私操作",
 	"notification-bs-privacy-login-url": "登入至 wiki",
 	"notification-bs-privacy-center-url": "PrivacyCenter",
 	"notification-bs-privacy-admin-url": "PrivacyAdmin",
@@ -168,5 +168,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "儲存",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "關閉",
 	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可",
-	"right-bs-privacy-admin": "執行隱私管理操作"
+	"right-bs-privacy-admin": "執行隱私管理操作",
+	"echo-pref-tooltip-bs-privacy-cat": "當我的帳號匿名狀態或是刪除請求被更改時通知我"
 }

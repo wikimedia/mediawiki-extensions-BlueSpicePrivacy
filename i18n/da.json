@@ -49,7 +49,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (idag)",
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nej",
-	"logentry-bs-privacy-deletion": "Brugeren $4 slettede sin konto",
+	"logentry-bs-privacy-deletion": "Brugeren $4 slettede kontoen",
 	"notification-bs-privacy-login-url": "Log på wikien",
 	"notification-bs-privacy-request-denied-deletion": "Din sletnings anmodning blev afvist!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",

@@ -136,7 +136,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 har avbrutt forespørselen om å slette kontoen {{GENDER:$2|sin}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|har}} godkjent forespørselen til $4 om å slette kontoen sin",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|har}} avvist forespørselen til $4 om å slette kontoen sin, med kommentaren: $5",
-	"echo-category-title-bs-privacy-cat": "Personvern",
+	"echo-category-title-bs-privacy-cat": "Personvernshandlinger",
 	"notification-bs-privacy-login-url": "Logg inn på wikien",
 	"notification-bs-privacy-center-url": "Personvernssenter",
 	"notification-bs-privacy-admin-url": "Personvernsadministrasjon",
@@ -168,5 +168,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Informasjonskapsler som forbedrer brukeropplevelsen på nettstedet (lagring av innstillinger, status for dynamiske komponenter …)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Lagre",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Lukk",
-	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke"
+	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
+	"echo-pref-tooltip-bs-privacy-cat": "Varsle meg når statusen for min forespørsel om kontoanonymisering eller -sletting endrer seg"
 }

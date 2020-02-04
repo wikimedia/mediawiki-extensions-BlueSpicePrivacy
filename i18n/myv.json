@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rueter"
+		]
+	},
+	"bs-privacy-anonymization-request-comment": "Од теицянь лемесь: $1",
+	"bs-privacy-transparency-private-username": "Теицянь леметь: $1",
+	"bs-privacy-admin-consent-grid-column-user": "Теицянь лем"
+}

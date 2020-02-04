@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Vlad5250",
+			"Bjankuloski06"
 		]
 	},
 	"bs-privacy-api-error-generic": "Се појави грешка",
@@ -32,7 +33,7 @@
 	"bs-privacy-transparency-no-data": "Нема пронајдено податоци",
 	"bs-privacy-transparency-private-username": "Корисничко име: $1",
 	"bs-privacy-transparency-private-realname": "Вистинско име: $1",
-	"bs-privacy-transparency-private-registration": "Датум на регистрирање: $1",
+	"bs-privacy-transparency-private-registration": "Датум на пријавување: $1",
 	"bs-privacy-transparency-private-experience": "Ниво на искуство: $1",
 	"bs-privacy-transparency-private-groups": "Групи: $1",
 	"bs-privacy-consent-save-button": "Зачувај",

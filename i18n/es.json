@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Carlosmg.dg",
-			"Fitoschido"
+			"Fitoschido",
+			"DannyS712"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -91,7 +92,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hoy)",
 	"bs-privacy-consent-bool-true": "Sí",
 	"bs-privacy-consent-bool-false": "No",
-	"echo-category-title-bs-privacy-cat": "Privacidad",
+	"echo-category-title-bs-privacy-cat": "Acciones de privacidad",
 	"notification-bs-privacy-login-url": "Acceder al wiki",
 	"notification-bs-privacy-center-url": "Centro de privacidad",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todo",

@@ -72,5 +72,9 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Opslaan",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sluiten",
 	"bs-privacy-consent-cookie-settings-label": "Toestemming van volgbestanden wijzigen",
-	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5"
+	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5",
+	"bs-privacy-anonymization-error-retrieving-name": "Er trad een fout op tijdens het ophalen van de nieuwe gebruikersnaam",
+	"bs-privacy-prefs-consent-cookies": "Ik accepteer dat er cookies worden opgeslagen",
+	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} data geëxporteerd",
+	"bs-privacy-cookie-consent-group-necessary-label": "Benodigde cookies"
 }
