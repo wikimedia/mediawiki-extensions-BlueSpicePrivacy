@@ -8,7 +8,8 @@
 			"佛壁灯",
 			"VulpesVulpes825",
 			"Ywang",
-			"沈澄心"
+			"沈澄心",
+			"铁桶"
 		]
 	},
 	"bs-privacy": "BlueSpice 隐私",
@@ -130,7 +131,7 @@
 	"bs-privacy-consent-bool-true": "是",
 	"bs-privacy-consent-bool-false": "否",
 	"logentry-bs-privacy-anonymization": "$4匿名化了{{GENDER:$2|他的|她的|其}}账户。新用户名：$5",
-	"logentry-bs-privacy-deletion": "用户$4删除了其账户",
+	"logentry-bs-privacy-deletion": "用户$4删除了账户",
 	"logentry-bs-privacy-transparency": "$1导出了{{GENDER:$2|他的|她的|其}}数据",
 	"logentry-bs-privacy-consent": "$1将{{GENDER:$2|他|她}}的隐私政策许可改为：$4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1提交了匿名化{{GENDER:$2|其}}账户的申请，附带了注释：$4",
