@@ -12,6 +12,7 @@
 	"bs-privacy-admin-request-grid-column-comment": "Коментар",
 	"bs-privacy-transparency-show-all-data-button": "Прикажи све податке",
 	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
+	"echo-category-title-bs-privacy-cat": "Радње за приватност",
 	"notification-bs-privacy-center-url": "Центар приватности",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај"
 }
