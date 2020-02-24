@@ -54,7 +54,7 @@
 	"bs-privacy-anonymization-request-comment": "新用户名：$1",
 	"bs-privacy-request-close-failed": "关闭请求失败",
 	"bs-privacy-deletion-request-denied": "您的删除请求已被拒绝！",
-	"bs-privacy-acknowledge-request-button": "解除",
+	"bs-privacy-acknowledge-request-button": "关闭",
 	"bs-privacy-anonymization-request-pending": "您的匿名化请求正在等待中",
 	"bs-privacy-cancel-request-button": "取消请求",
 	"bs-privacy-anonymization-request-denied": "您的匿名化请求已被拒绝！",
