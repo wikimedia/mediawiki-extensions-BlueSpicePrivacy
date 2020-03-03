@@ -4,7 +4,8 @@
 			"Vlad5250",
 			"Gzhegozh",
 			"Ата",
-			"Movses"
+			"Movses",
+			"Piramidion"
 		]
 	},
 	"bs-privacy": "Приватність BlueSpice",
@@ -139,7 +140,8 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|скасував|скасувала}} запит на вилучення {{GENDER:$2|свого}} облікового запису",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|схвалив|схвалила}} запит на вилучення облікового запису від користувача $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|відхилив|відхилила}} запит на вилучення облікового запису від користувача $4, з коментарем: $5",
-	"echo-category-title-bs-privacy-cat": "Конфіденційність",
+	"echo-category-title-bs-privacy-cat": "Дії з конфіденційністю",
+	"echo-pref-tooltip-bs-privacy-cat": "Сповіщати мене, коли змінюється статус мого запиту щодо анонімізації або вилучення мого облікового запису",
 	"notification-bs-privacy-login-url": "Увійти у вікі",
 	"notification-bs-privacy-center-url": "Центр приватності",
 	"notification-bs-privacy-admin-url": "Адмін приватності",
