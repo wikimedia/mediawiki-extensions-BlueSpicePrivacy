@@ -125,7 +125,7 @@ abstract class Module implements IModule {
 	 */
 	protected function notify( $notification ) {
 		$notificationsManager = Services::getInstance()
-			->getBSNotificationManager();
+			->getService( 'BSNotificationManager' );
 		$notifier = $notificationsManager->getNotifier();
 		$notifier->notify( $notification );
 	}
