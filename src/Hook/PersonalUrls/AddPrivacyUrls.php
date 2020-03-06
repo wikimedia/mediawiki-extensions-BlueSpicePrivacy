@@ -14,7 +14,9 @@ class AddPrivacyUrls extends PersonalUrls {
 	protected function doProcess() {
 		$this->personal_urls['privacycenter'] = [
 			'href' => \SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
-			'text' => \SpecialPageFactory::getPage( 'PrivacyCenter' )->getDescription()
+			'text' => \MediaWiki\MediaWikiServices::getInstance()
+				->getSpecialPageFactory()
+				->getPage( 'PrivacyCenter' )->getDescription()
 		];
 
 		return true;
