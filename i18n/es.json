@@ -47,7 +47,7 @@
 	"bs-privacy-cannot-assert-deleted-user": "No se puede crear el objeto «Usuario eliminado»",
 	"bs-privacy-admin-request-grid-column-user": "Usuario",
 	"bs-privacy-admin-request-grid-column-action": "Acción",
-	"bs-privacy-admin-request-grid-column-timestamp": "Marca de tiempo",
+	"bs-privacy-admin-request-grid-column-timestamp": "Cronomarcador",
 	"bs-privacy-admin-request-grid-column-comment": "Comentario",
 	"bs-privacy-admin-request-grid-action-approve": "Aprobar",
 	"bs-privacy-admin-request-grid-column-deny": "Denegar",
