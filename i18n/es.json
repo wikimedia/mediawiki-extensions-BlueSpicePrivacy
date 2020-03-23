@@ -103,6 +103,8 @@
 	"echo-category-title-bs-privacy-cat": "Acciones de privacidad",
 	"notification-bs-privacy-login-url": "Acceder al wiki",
 	"notification-bs-privacy-center-url": "Centro de privacidad",
+	"apihelp-bs-privacy-param-data": "Datos transmitidos a la función solicitada",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Configuración de consentimiento de «cookies»",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todo",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configuración de consentimiento de «cookies»",
