@@ -91,7 +91,7 @@
 	"bs-privacy-delete-error-deleting": "Сталася помилка під час спроби вилучення вашого облікового запису.",
 	"bs-privacy-deletion-final-prompt": "Ваш обліковий запис буде вилучено остаточно. Цю дію не можна скасувати",
 	"action-bs-privacy-admin": "виконання адміністративної дії приватності",
-	"right-bs-privacy-admin": "виконання адміністративної дії приватності",
+	"right-bs-privacy-admin": "Виконання адміністративної дії приватності",
 	"bs-privacy-admin-request-manager-help": "Огляд усіх відкритих запитів приватності",
 	"bs-privacy-admin-request-action-failed": "Не вдалася дія запиту!",
 	"bs-privacy-admin-approve-final-prompt": "Будь ласка, підтвердіть схвалення запиту",

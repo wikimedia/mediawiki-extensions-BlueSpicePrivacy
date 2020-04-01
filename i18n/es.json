@@ -44,7 +44,7 @@
 	"bs-privacy-cannot-assert-deleted-user": "No se puede crear el objeto «Usuario eliminado»",
 	"bs-privacy-admin-request-grid-column-user": "Usuario",
 	"bs-privacy-admin-request-grid-column-action": "Acción",
-	"bs-privacy-admin-request-grid-column-timestamp": "Marca de tiempo",
+	"bs-privacy-admin-request-grid-column-timestamp": "Cronomarcador",
 	"bs-privacy-admin-request-grid-column-comment": "Comentario",
 	"bs-privacy-admin-request-grid-action-approve": "Aprobar",
 	"bs-privacy-admin-request-grid-column-deny": "Denegar",
@@ -109,5 +109,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Configuración de consentimiento de «cookies»",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configuración de consentimiento de «cookies»",
 	"bs-privacy-cookie-consent-group-necessary-label": "«Cookies» indispensables",
-	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»"
+	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»",
+	"apihelp-bs-privacy-param-data": "Datos transmitidos a la función solicitada",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso"
 }
