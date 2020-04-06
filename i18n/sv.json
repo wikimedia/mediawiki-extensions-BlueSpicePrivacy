@@ -82,7 +82,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (idag)",
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nej",
-	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$2|har}} anonymiserat {{GENDER:$2|sitt|sitt}} konto. Nytt användarnamn: $5",
+	"logentry-bs-privacy-anonymization": "$4 har anonymiserat kontot konto. Nytt användarnamn: $5",
 	"logentry-bs-privacy-deletion": "Användaren $4 raderade sitt konto",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|har}} exporterat {{GENDER:$2|sin|sin}} data",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|har}} ändrat {{GENDER:$2|sin|sin}} samtyckesdata för integritetspolicyn till: $4",
