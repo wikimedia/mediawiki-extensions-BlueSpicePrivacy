@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-privacy-anonymization-layout-label": "Anonimizacija",
 	"bs-privacy-anonymization-confirm-button-label": "Anonimizuj moj nalog",
 	"bs-privacy-invalid-user": "Korisnik nije važeći",
