@@ -4,7 +4,8 @@
 	bs.privacy.cookieConsent.MWProviderPrompt = function() {
 		this.cookieName =
 			mw.config.get( 'wgCookiePrefix' ) + '_' +
-			mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieName;
+			mw.config.get( 'bsPrivacyCookieConsentHandlerConfig' ).cookieName;
+		this.acceptMandatory = mw.config.get( 'bsPrivacyCookieAcceptMandatory' );
 		this.groups = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieGroups;
 
 		if( this.cookieExists() === false ) {
@@ -24,11 +25,12 @@
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.showFirstLoad = function() {
 		this.makeBar();
-		this.makeOverlay();
 
-		$( 'body' ).append( this.$overlay, this.bar.$element );
-
-		this.$overlay.fadeIn( 500 );
+		if( this.acceptMandatory ) {
+			this.makeOverlay();
+			$( 'body' ).append( this.$overlay );
+			this.$overlay.fadeIn( 500 );
+		}
 		this.bar.$element.fadeIn( 500 );
 
 		this.bar.on( 'cookieSettingsChanged', this.onCookieSettingsChanged.bind( this ) );
@@ -78,11 +80,23 @@
 			settings,
 			acceptAll
 		] );
+
+		$( 'body' ).append( this.bar.$element );
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.onCookieSettingsChanged = function( groups ) {
+		groups = this.getGroupsForCookie( groups );
+		for ( var groupName in this.groups ) {
+			if ( !this.groups.hasOwnProperty( groupName ) ) {
+				continue;
+			}
+			var groupConfig = this.groups[groupName];
+			if( groupConfig.hasOwnProperty( 'jsCallback' ) ) {
+				this.executeExternalCallback( groupConfig.jsCallback, groups[groupName] );
+			}
+		}
 		var cookieVal = JSON.stringify( {
-			groups: this.getGroupsForCookie( groups )
+			groups: groups
 		} );
 
 		// Set the cookie - expires in 20 years
@@ -90,12 +104,29 @@
 		localStorage.setItem( this.cookieName, cookieVal );
 
 		this.bar.$element.remove();
-		this.$overlay.remove();
+		if ( this.$overlay ) {
+			this.$overlay.remove();
+		}
+	};
+
+	bs.privacy.cookieConsent.MWProviderPrompt.prototype.executeExternalCallback = function( callbackData, group ) {
+		if ( callbackData.hasOwnProperty( 'module' ) && callbackData.hasOwnProperty( 'callback' ) ) {
+			mw.loader.using( callbackData.module ).done( function() {
+				var args = { value: group };
+				if ( callbackData.hasOwnProperty( 'args' ) ) {
+					args = $.extend( callbackData.args, args );
+				}
+				bs.util.runCallback( callbackData.callback, [ args ], this );
+			}.bind( this ) );
+		}
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.getGroupsForCookie = function( groups ) {
 		var ret = {};
 		for( var groupName in this.groups ) {
+			if ( !this.groups.hasOwnProperty( groupName ) ) {
+				continue;
+			}
 			if( groups === '*' ) {
 				ret[groupName] = true;
 				continue;
@@ -120,6 +151,9 @@
 		var dialog = new bs.privacy.dialog.CookieConsentSettings( cfg );
 		windowManager.addWindows( [ dialog ] );
 		windowManager.openWindow( dialog ).closed.then( function ( data ) {
+			if ( !data ) {
+				return;
+			}
 			if( data.action === 'save' ) {
 				this.onCookieSettingsChanged( data.results );
 			}

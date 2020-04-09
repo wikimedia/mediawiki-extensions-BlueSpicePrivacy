@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Privacy\Notifications;
 
-use BlueSpice\Privacy\IModule;
 use BlueSpice\BaseNotification;
+use BlueSpice\Privacy\IModule;
 use BlueSpice\Services;
 
 class RequestSubmitted extends BaseNotification {

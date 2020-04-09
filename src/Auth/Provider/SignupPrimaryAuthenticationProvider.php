@@ -2,11 +2,11 @@
 namespace BlueSpice\Privacy\Auth\Provider;
 
 use BlueSpice\Privacy\Auth\PrefSaver;
-use MediaWiki\Auth\AuthManager;
-use MediaWiki\Auth\AuthenticationResponse;
-use MediaWiki\Auth\AbstractPasswordPrimaryAuthenticationProvider;
 use BlueSpice\Privacy\Auth\Request\SignupAuthenticationRequest;
+use MediaWiki\Auth\AbstractPasswordPrimaryAuthenticationProvider;
 use MediaWiki\Auth\AuthenticationRequest;
+use MediaWiki\Auth\AuthenticationResponse;
+use MediaWiki\Auth\AuthManager;
 
 class SignupPrimaryAuthenticationProvider extends AbstractPasswordPrimaryAuthenticationProvider {
 	/**
