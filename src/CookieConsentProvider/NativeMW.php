@@ -2,6 +2,8 @@
 
 namespace BlueSpice\Privacy\CookieConsentProvider;
 
+use FormatJson;
+
 class NativeMW extends Base {
 	/**
 	 * @var array
@@ -30,7 +32,7 @@ class NativeMW extends Base {
 				return [];
 			}
 
-			$parsed = \FormatJson::decode( $rawCookie, true );
+			$parsed = FormatJson::decode( $rawCookie, true );
 			if ( isset( $parsed['groups'] ) ) {
 				$this->userGroupPreference = $parsed['groups'];
 			}

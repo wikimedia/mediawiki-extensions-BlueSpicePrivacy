@@ -7,6 +7,7 @@ use Config;
 use ConfigException;
 use Exception;
 use HashConfig;
+use Hooks;
 use WebRequest;
 
 abstract class Base implements ICookieConsentProvider {
@@ -35,6 +36,9 @@ abstract class Base implements ICookieConsentProvider {
 	public function __construct( $config, $request, $cookieGroups ) {
 		$this->config  = $config;
 		$this->request = $request;
+
+		$provider = $this;
+		Hooks::run( 'BlueSpicePrivacyCookieConsentProviderGetGroups', [ $provider, &$cookieGroups ] );
 		$this->cookieGroups = $cookieGroups;
 	}
 
