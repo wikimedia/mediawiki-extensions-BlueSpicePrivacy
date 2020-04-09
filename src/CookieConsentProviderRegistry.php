@@ -3,7 +3,9 @@
 namespace BlueSpice\Privacy;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
+use BlueSpice\Privacy\CookieConsentProvider\Base as CookieConsentBase;
 use MediaWiki\MediaWikiServices;
+use RequestContext;
 
 class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 	protected $provider = null;
@@ -46,7 +48,7 @@ class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 	 *
 	 * @param string $callback
 	 * @param array $config
-	 * @return \BlueSpice\Privacy\CookieConsentProvider\Base
+	 * @return CookieConsentBase
 	 */
 	protected function instantiate( $callback, $config ) {
 		if ( !is_callable( $callback ) ) {
@@ -55,11 +57,10 @@ class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 
 		$providerConfig = new \HashConfig( $config );
 
-		$provider = call_user_func_array( $callback, [
+		return call_user_func_array( $callback, [
 			MediaWikiServices::getInstance()->getMainConfig(),
-			\RequestContext::getMain()->getRequest(),
+			RequestContext::getMain()->getRequest(),
 			$providerConfig
 		] );
-		return $provider;
 	}
 }

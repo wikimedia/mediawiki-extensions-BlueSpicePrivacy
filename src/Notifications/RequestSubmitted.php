@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Privacy\Notifications;
 
-use BlueSpice\Privacy\IModule;
 use BlueSpice\BaseNotification;
+use BlueSpice\Privacy\IModule;
 use MediaWiki\MediaWikiServices;
 
 class RequestSubmitted extends BaseNotification {

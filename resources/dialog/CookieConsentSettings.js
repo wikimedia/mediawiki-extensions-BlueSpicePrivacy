@@ -9,7 +9,7 @@
 		this.groups = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieGroups;
 
 		bs.privacy.dialog.CookieConsentSettings.super.call( this, cfg );
-	}
+	};
 
 	OO.inheritClass( bs.privacy.dialog.CookieConsentSettings, OO.ui.ProcessDialog );
 
@@ -59,9 +59,19 @@
 		var content = [];
 		this.switches = {};
 		for ( var groupName in this.groups ) {
+			if ( !this.groups.hasOwnProperty( groupName ) ) {
+				continue;
+			}
 			var groupSettings = this.groups[groupName];
-			var label = mw.message( groupSettings.label ).text();
-			var desc = mw.message( groupSettings.desc ).text();
+
+			var label = groupSettings.label;
+			if ( mw.message( groupSettings.label ).exists() ) {
+				label = mw.message( groupSettings.label ).text();
+			}
+			var desc = groupSettings.desc;
+			if ( mw.message( groupSettings.desc ).exists() ) {
+				desc = mw.message( groupSettings.desc ).text();
+			}
 
 			var value = true;
 			if( groupName in this.values ) {
@@ -102,7 +112,7 @@
 	};
 
 	bs.privacy.dialog.CookieConsentSettings.prototype.getBodyHeight = function () {
-		return this.layout.$element.outerHeight() + 100;
+		return this.layout.$element.outerHeight() + 150;
 	};
 
 } )( mediaWiki, jQuery, blueSpice, document );

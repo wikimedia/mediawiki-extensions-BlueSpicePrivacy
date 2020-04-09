@@ -29,6 +29,11 @@ class AddCookieConsent extends BeforePageDisplay {
 			"RLModule" => $provider->getRLHandlerModule()
 		], $provider->getHandlerConfig() ) );
 
+		$this->out->addJsConfigVars(
+			'bsPrivacyCookieAcceptMandatory',
+			$this->getConfig()->get( 'PrivacyCookieAcceptMandatory' )
+		);
+
 		return true;
 	}
 }
