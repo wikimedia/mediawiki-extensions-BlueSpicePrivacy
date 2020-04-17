@@ -58,6 +58,36 @@
 			"CookieConsentProviders": {
 				"native-mw": "\\BlueSpice\\Privacy\\CookieConsentProvider\\NativeMW::factory",
 				"onetrust": "\\BlueSpice\\Privacy\\CookieConsentProvider\\OneTrust::factory"
+			},
+			"CookieConsentNativeMWCookieGroups": {
+				"necessary": {
+					"label": "bs-privacy-cookie-consent-group-necessary-label",
+					"desc": "bs-privacy-cookie-consent-group-necessary-desc",
+					"type": "always-on"
+				},
+				"convenience": {
+					"label": "bs-privacy-cookie-convenience-group-label",
+					"desc": "bs-privacy-cookie-convenience-group-desc",
+					"type": "opt-out"
+				}
+			},
+			"CookieConsentNativeMWCookies": {
+				"_session": {
+					"group": "necessary",
+					"addPrefix": true
+				},
+				"mwuser-sessionId": {
+					"group": "necessary",
+					"addPrefix": true
+				},
+				"UserID": {
+					"group": "necessary",
+					"addPrefix": true
+				},
+				"UserName": {
+					"group": "necessary",
+					"addPrefix": true
+				}
 			}
 		}
 	},
@@ -357,51 +387,8 @@
 			}
 		},
 		"PrivacyCookieConsentProvider": {
-			"value": {
-				"name": "native-mw",
-				"config": {
-					"groups": {
-						"necessary": {
-							"label": "bs-privacy-cookie-consent-group-necessary-label",
-							"desc": "bs-privacy-cookie-consent-group-necessary-desc",
-							"type": "always-on",
-							"cookies": [
-								{
-									"type": "exact",
-									"name": "_session",
-									"addPrefix": true
-								},
-								{
-									"type": "exact",
-									"name": "UserID",
-									"addPrefix": true
-								},
-								{
-									"type": "exact",
-									"name": "UserName",
-									"addPrefix": true
-								}
-							]
-						},
-						"convenience": {
-							"label": "bs-privacy-cookie-convenience-group-label",
-							"desc": "bs-privacy-cookie-convenience-group-desc",
-							"type": "opt-out",
-							"cookies": [
-								{
-									"type": "regex",
-									"name": "Calumma.*",
-									"addPrefix": true
-								},
-								{
-									"type": "regex",
-									"name": "ext-.*"
-								}
-							]
-						}
-					}
-				}
-			}
+			"value": "native-mw",
+			"description": "Cookie consent provider to be used. One of the keys of BlueSpicePrivacyCookieConsentProviders attribute. Can be a provider key or an array containing the \"name\" and \"config\" properties"
 		},
 		"PrivacyCookieAcceptMandatory": {
 			"value": true,

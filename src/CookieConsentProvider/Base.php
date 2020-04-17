@@ -38,7 +38,11 @@ abstract class Base implements ICookieConsentProvider {
 		$this->request = $request;
 
 		$provider = $this;
-		Hooks::run( 'BlueSpicePrivacyCookieConsentProviderGetGroups', [ $provider, &$cookieGroups ] );
+		Hooks::run(
+			'BlueSpicePrivacyCookieConsentProviderGetGroups',
+			[ $provider, &$cookieGroups ],
+			'3.2'
+		);
 		$this->cookieGroups = $cookieGroups;
 	}
 
