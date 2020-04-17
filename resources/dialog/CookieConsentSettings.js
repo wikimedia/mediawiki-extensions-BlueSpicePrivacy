@@ -111,8 +111,4 @@
 		this.$body.append( this.layout.$element );
 	};
 
-	bs.privacy.dialog.CookieConsentSettings.prototype.getBodyHeight = function () {
-		return this.layout.$element.outerHeight() + 150;
-	};
-
 } )( mediaWiki, jQuery, blueSpice, document );
