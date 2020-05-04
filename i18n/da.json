@@ -28,6 +28,7 @@
 	"bs-privacy-admin-request-grid-action-approve": "Godkend",
 	"bs-privacy-admin-request-grid-column-deny": "Nægt",
 	"bs-privacy-admin-request-grid-action-deny": "Nægt",
+	"bs-privacy-transparency-layout-label": "Gennemsigtighed",
 	"bs-privacy-transparency-show-all-data-button": "Vis alle data",
 	"bs-privacy-transparency-export-data-button": "Eksporter data",
 	"bs-privacy-transparency-export-layout-title": "Eksporter dine data",
@@ -53,6 +54,7 @@
 	"notification-bs-privacy-login-url": "Log på wikien",
 	"notification-bs-privacy-request-denied-deletion": "Din sletnings anmodning blev afvist!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
+	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
 }
