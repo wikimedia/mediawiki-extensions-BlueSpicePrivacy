@@ -54,5 +54,7 @@
 	"notification-bs-privacy-request-denied-deletion": "Din sletnings anmodning blev afvist!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk",
+	"bs-privacy-transparency-layout-label": "Gennemsigtighed",
+	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies"
 }

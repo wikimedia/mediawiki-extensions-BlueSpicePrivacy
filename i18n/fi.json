@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen",
 			"FinlandMan",
-			"Pxos"
+			"Pxos",
+			"Silvonen"
 		]
 	},
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",

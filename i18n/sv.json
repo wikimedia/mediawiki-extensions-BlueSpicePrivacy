@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
-			"Mjälten",
 			"Josve05a",
-			"Technic2"
+			"Mjälten",
+			"Technic2",
+			"WikiPhoenix"
 		]
 	},
 	"privacycenter": "Integritetscenter",
@@ -78,7 +78,7 @@
 	"bs-privacy-transparency-type-title-content": "Omnämnanden i innehåll",
 	"bs-privacy-prefs-consent-privacy-policy": "Jag accepterar denna webbplats [[{{MediaWiki:Privacypage}}|sekretesspolicy]]",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dagar}} sedan)",
-	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$2|har}} anonymiserat {{GENDER:$2|sitt|sitt}} konto. Nytt användarnamn: $5",
+	"logentry-bs-privacy-anonymization": "$4 har anonymiserat kontot konto. Nytt användarnamn: $5",
 	"logentry-bs-privacy-deletion": "Användaren $4 raderade sitt konto",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|har}} exporterat {{GENDER:$2|sin|sin}} data",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|har}} ändrat {{GENDER:$2|sin|sin}} samtyckesdata för integritetspolicyn till: $4",
