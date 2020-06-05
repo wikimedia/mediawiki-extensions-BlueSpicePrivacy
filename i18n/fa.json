@@ -66,5 +66,6 @@
 	"echo-category-title-bs-privacy-cat": "حریم شخصی",
 	"notification-bs-privacy-login-url": "وارد ویکی شوید",
 	"notification-bs-privacy-admin-url": "مدیر حریم شخصی",
-	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "پذیرفتن همه"
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "پذیرفتن همه",
+	"logentry-bs-privacy-deletion": "کاربر «$4» حساب کاربری را حذف کرد"
 }
