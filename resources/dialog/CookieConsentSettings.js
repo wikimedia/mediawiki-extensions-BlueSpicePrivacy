@@ -93,7 +93,7 @@
 
 			var field = new OO.ui.FieldLayout( toggle, {
 				align: 'left',
-				helpInline: true,
+				helpInline: false,
 				label: label,
 				help: desc
 			} );
