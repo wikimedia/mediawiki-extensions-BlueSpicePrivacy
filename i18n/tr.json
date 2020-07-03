@@ -47,7 +47,7 @@
 	"bs-privacy-anonymization-request-comment": "Yeni kullanıcı adı: $1",
 	"bs-privacy-request-close-failed": "Bir istek kapatılamadı",
 	"bs-privacy-deletion-request-denied": "Silme işleminiz reddedildi!",
-	"bs-privacy-acknowledge-request-button": "Reddet",
+	"bs-privacy-acknowledge-request-button": "Kapat",
 	"bs-privacy-anonymization-request-pending": "Anonimleştirme isteğiniz beklemede",
 	"bs-privacy-cancel-request-button": "İsteği iptal et",
 	"bs-privacy-anonymization-request-denied": "Anonimleştirme isteğiniz reddedildi!",
