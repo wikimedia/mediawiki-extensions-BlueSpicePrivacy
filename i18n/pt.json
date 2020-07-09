@@ -139,6 +139,7 @@
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|aprovou}} o pedido de eliminação de conta feito pelo utilizador $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|negou}} o pedido de eliminação de conta feito pelo utilizador $4, com o comentário: $5",
 	"echo-category-title-bs-privacy-cat": "Operações de privacidade",
+	"echo-pref-tooltip-bs-privacy-cat": "Notificar-me quando o estado do pedido de anonimização ou eliminação da minha conta se alterar",
 	"notification-bs-privacy-login-url": "Entrar na wiki",
 	"notification-bs-privacy-center-url": "Centro de Privacidade",
 	"notification-bs-privacy-admin-url": "Administrador de Privacidade",
