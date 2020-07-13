@@ -15,6 +15,7 @@
 	"bs-privacy-deletion-submit-request-label": "Kommentar (valgfri)",
 	"bs-privacy-deletion-cancel-request-button": "Annullér sletnings anmodning",
 	"bs-privacy-anonymization-request-comment": "Nyt brugernavn: $1",
+	"bs-privacy-deletion-request-denied": "Din sletning blev afvist!",
 	"bs-privacy-cancel-request-button": "Annuller anmodning",
 	"bs-privacy-request-denied-comment": "Kommentar: $1",
 	"bs-privacy-deletion-button": "Slet din konto",
