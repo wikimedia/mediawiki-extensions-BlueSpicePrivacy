@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy\Notifications;
 use BlueSpice\BaseNotification;
 use BlueSpice\Privacy\IModule;
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class RequestSubmitted extends BaseNotification {
 	/**
@@ -69,11 +70,16 @@ class RequestSubmitted extends BaseNotification {
 		);
 
 		$users = [];
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		foreach ( $res as $row ) {
 			$user = \User::newFromRow( $row );
-			if ( $user instanceof \User && $user->isAllowed( 'bs-privacy-admin' ) ) {
-				$users[] = $user;
+			if ( !$user instanceof \User ) {
+				continue;
 			}
+			if ( !$pm->userHasRight( $user, 'bs-privacy-admin' ) ) {
+				continue;
+			}
+			$users[] = $user;
 		}
 
 		return $users;
