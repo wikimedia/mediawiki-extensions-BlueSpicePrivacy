@@ -367,7 +367,7 @@
 			"\\BlueSpice\\Privacy\\Hook\\BeforePageDisplay\\AddCookieConsent::callback"
 		],
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
-		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\SkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback"
 	},
 	"callback": "\\BlueSpice\\Privacy\\Extension::onCallback",
 	"config_prefix": "bsg",

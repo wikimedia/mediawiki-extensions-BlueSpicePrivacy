@@ -1,10 +1,10 @@
 <?php
 
-namespace BlueSpice\Privacy\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Privacy\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-class AddCookieConsentFooterLink extends SkinTemplateOutputPageBeforeExec {
+class AddCookieConsentFooterLink extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function skipProcessing() {
 		$title = $this->skin->getTitle();
 
