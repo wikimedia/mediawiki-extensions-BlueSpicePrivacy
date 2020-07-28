@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy;
 
 use BlueSpice\BaseNotification;
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 abstract class Module implements IModule {
 	const MODULE_UI_TYPE_ADMIN = 'admin';
@@ -87,7 +88,10 @@ abstract class Module implements IModule {
 	 * @return bool
 	 */
 	protected function checkAdminPermissions() {
-		return $this->context->getUser()->isAllowed( 'bs-privacy-admin' ) !== false;
+		return MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+			$this->context->getUser(),
+			'bs-privacy-admin'
+		);
 	}
 
 	/**
