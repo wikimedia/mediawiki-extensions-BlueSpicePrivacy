@@ -138,7 +138,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|cancelou}} o pedido para eliminar a conta {{GENDER:$2|dele|dela}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|aprovou}} o pedido de eliminação de conta feito pelo utilizador $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|negou}} o pedido de eliminação de conta feito pelo utilizador $4, com o comentário: $5",
-	"echo-category-title-bs-privacy-cat": "Ações de privacidade",
+	"echo-category-title-bs-privacy-cat": "Operações de privacidade",
 	"notification-bs-privacy-login-url": "Entrar na wiki",
 	"notification-bs-privacy-center-url": "Centro de Privacidade",
 	"notification-bs-privacy-admin-url": "Administrador de Privacidade",
@@ -170,5 +170,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "''Cookies'' que melhoram a experiência do utilizador no ''site'' (gravando as preferências do utilizador, o estado dos componentes dinâmicos...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gravar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
-	"bs-privacy-consent-cookie-settings-label": "Alterar a aceitação de ''cookies''"
+	"bs-privacy-consent-cookie-settings-label": "Alterar a aceitação de ''cookies''",
+	"echo-pref-tooltip-bs-privacy-cat": "Notificar-me quando o estado do pedido de anonimização ou eliminação da minha conta se alterar"
 }

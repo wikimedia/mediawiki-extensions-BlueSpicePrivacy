@@ -3,6 +3,7 @@
 		"authors": [
 			"Josve05a",
 			"Mjälten",
+			"Sabelöga",
 			"Technic2",
 			"WikiPhoenix"
 		]
@@ -84,7 +85,7 @@
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|har}} ändrat {{GENDER:$2|sin|sin}} samtyckesdata för integritetspolicyn till: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|har}} skickat en begäran att anonymisera {{GENDER:$2|sitt|sitt}} konto med kommentaren: $4",
 	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|har}} stängt anonymiseringsbegäran som gjordes av $4",
-	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|har}} avbröt begäran att anonymisera {{GENDER:$2|sitt|sitt}} konto",
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|avbröt}} begäran att anonymisera {{GENDER:$2|sitt|sitt}} konto",
 	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|har}} godkänt begäran att anonymisera kontot som gjordes av användaren $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|har}} nekat begäran att anonymisera kontot som gjordes av användaren $4, med kommentaren: $5",
 	"echo-category-title-bs-privacy-cat": "Integritetshandlingar",

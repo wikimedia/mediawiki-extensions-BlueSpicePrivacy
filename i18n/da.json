@@ -56,5 +56,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk",
 	"bs-privacy-transparency-layout-label": "Gennemsigtighed",
-	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies"
+	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies",
+	"bs-privacy-deletion-request-denied": "Din sletning blev afvist!"
 }
