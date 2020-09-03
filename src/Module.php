@@ -3,7 +3,6 @@
 namespace BlueSpice\Privacy;
 
 use BlueSpice\BaseNotification;
-use BlueSpice\Services;
 use MediaWiki\MediaWikiServices;
 
 abstract class Module implements IModule {
@@ -128,7 +127,7 @@ abstract class Module implements IModule {
 	 * @param BaseNotification $notification
 	 */
 	protected function notify( $notification ) {
-		$notificationsManager = Services::getInstance()
+		$notificationsManager = MediaWikiServices::getInstance()
 			->getService( 'BSNotificationManager' );
 		$notifier = $notificationsManager->getNotifier();
 		$notifier->notify( $notification );

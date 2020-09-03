@@ -5,7 +5,7 @@ namespace BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class Consent extends Module {
 	/**
@@ -36,7 +36,7 @@ class Consent extends Module {
 	public function __construct( $context ) {
 		parent::__construct( $context );
 		$this->user = $context->getUser();
-		$this->config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$this->config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$this->options = $this->config->get( 'PrivacyConsentTypes' );
 
 		$providerRegistry = new CookieConsentProviderRegistry();
