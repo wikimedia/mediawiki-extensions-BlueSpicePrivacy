@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Jlrb+"
+			"Jlrb+",
+			"Mguix"
 		]
 	},
 	"privacycenter": "Centre de privadesa",
@@ -24,5 +25,5 @@
 	"bs-privacy-timestamp-with-days-ago": "$1 (fa {{PLURAL:$2|$2 dia|$2 dies}})",
 	"notification-bs-privacy-center-url": "Centre de privadesa",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Desa",
-	"bs-privacy-prefs-consent-privacy-policy": "Accepto la [[Project:Privacy|privacy policy]] d'aquest lloc web"
+	"bs-privacy-prefs-consent-privacy-policy": "Accepto la [[{{MediaWiki:Privacypage}}|política de privadesa]] d’aquest lloc web"
 }
