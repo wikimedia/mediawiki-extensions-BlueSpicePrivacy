@@ -129,7 +129,7 @@
 	"bs-privacy-consent-bool-true": "Yes",
 	"bs-privacy-consent-bool-false": "No",
 	"bs-privacy-consent-log-consent": "$1: $2",
-	"logentry-bs-privacy-anonymization": "$4 has anonymized the account account. New username: $5",
+	"logentry-bs-privacy-anonymization": "$4 has anonymized the account. New username: $5",
 	"logentry-bs-privacy-deletion": "User $4 deleted the account",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|has}} has exported {{GENDER:$2|his|her}} data",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|has}} changed {{GENDER:$2|his|her}} privacy policy consent data to: $4",
