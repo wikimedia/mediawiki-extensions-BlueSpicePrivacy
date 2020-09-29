@@ -159,10 +159,16 @@ class Consent extends Module {
 	public function getAuthFormDescriptors() {
 		$descriptors = [];
 		foreach ( $this->options as $name => $preferenceName ) {
+			// Give grep a chance to find the usages:
+			// bs-privacy-prefs-consent-cookies-help
+			// bs-privacy-prefs-consent-privacy-policy-help
+			$helpMessageKey = "$preferenceName-help";
 			$descriptors[$name] = [
 				'type' => 'checkbox',
 				'label' => wfMessage( $preferenceName ),
-				'help-message' => "$preferenceName-help",
+				'help' => wfMessage( $helpMessageKey ),
+				// B/C
+				'help-message' => $helpMessageKey,
 				'optional' => true,
 			];
 		}
