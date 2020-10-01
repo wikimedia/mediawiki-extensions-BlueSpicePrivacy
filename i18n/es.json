@@ -3,7 +3,8 @@
 		"authors": [
 			"Carlosmg.dg",
 			"DannyS712",
-			"Fitoschido"
+			"Fitoschido",
+			"MarcoAurelio"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -111,5 +112,11 @@
 	"bs-privacy-cookie-consent-group-necessary-label": "«Cookies» indispensables",
 	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»",
 	"apihelp-bs-privacy-param-data": "Datos transmitidos a la función solicitada",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso"
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso",
+	"bs-privacy-transparency-private-blocked": "Bloqueado: Sí (por $1)",
+	"bs-privacy-consent-layout-help": "Ver y editar los consentimientos que has otorgado conforme a la política de protección de datos",
+	"logentry-bs-privacy-deletion": "El usuario $4 borró su cuenta",
+	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|exportó}} {{GENDER:$2|sus}} datos",
+	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|modificó}} {{GENDER:$2|sus}} consentimientos de privacidad a: $4",
+	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|envió}} una solicitud para anonimizar {{GENDER:$2|su}} cuenta por el siguiente motivo: $4"
 }
