@@ -110,6 +110,8 @@
 	"echo-category-title-bs-privacy-cat": "Acciones de privacidad",
 	"notification-bs-privacy-login-url": "Acceder al wiki",
 	"notification-bs-privacy-center-url": "Centro de privacidad",
+	"notification-bs-privacy-anonymization-done": "Se ha anonimizado la cuenta.",
+	"notification-bs-privacy-deletion-failed": "Falló la eliminación de la cuenta.",
 	"apihelp-bs-privacy-param-data": "Datos transmitidos a la función solicitada",
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Configuración de consentimiento de «cookies»",
