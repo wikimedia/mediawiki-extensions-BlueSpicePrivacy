@@ -10,17 +10,22 @@
 
 		if( this.cookieExists() === false ) {
 			this.showFirstLoad();
-		} else if ( !$.cookie( this.cookieName ) ) {
-			// If cookie is not set, but settings do exist in localStorage,
-			// translate settings from local storage to cookie so they can be passed to the server
-			$.cookie( this.cookieName, localStorage.getItem( this.cookieName ), { path: '/', expires: 20 * 365 } );
 		}
 	};
 
 	OO.initClass( bs.privacy.cookieConsent.MWProviderPrompt );
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.cookieExists = function() {
-		return localStorage.getItem( this.cookieName ) !== null;
+		if ( $.cookie( this.cookieName ) ) {
+			return true;
+		} else if ( localStorage.getItem( this.cookieName ) !== null ) {
+			// If cookie is not set, but settings do exist in localStorage,
+			// translate settings from local storage to cookie so they can be passed to the server
+			$.cookie( this.cookieName, localStorage.getItem( this.cookieName ), { path: '/', expires: 20 * 365 } );
+			return true;
+		}
+		// Neither cookie nor localstorage entry exists
+		return false;
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.showFirstLoad = function() {
