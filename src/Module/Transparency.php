@@ -2,7 +2,9 @@
 
 namespace BlueSpice\Privacy\Module;
 
+use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module;
+use MediaWiki\MediaWikiServices;
 
 class Transparency extends Module {
 	const DATA_TYPE_PERSONAL = 'personal';
@@ -57,9 +59,10 @@ class Transparency extends Module {
 	 */
 	public function runHandlers( $action, $data ) {
 		$status = \Status::newGood();
-		$db = wfGetDB( DB_MASTER );
+		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
 
 		$exportData = [];
+		/** @var IPrivacyHandler $handler */
 		foreach ( $this->getHandlers() as $handler ) {
 			if ( class_exists( $handler ) ) {
 				$handlerObject = new $handler( $db );
@@ -75,6 +78,10 @@ class Transparency extends Module {
 					break;
 				}
 
+				$handlerData = $result->getValue();
+				if ( !is_array( $handlerData ) ) {
+					continue;
+				}
 				$exportData = array_merge_recursive( $exportData, $result->getValue() );
 			}
 		}

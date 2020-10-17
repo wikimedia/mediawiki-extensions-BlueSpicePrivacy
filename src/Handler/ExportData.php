@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use MediaWiki\MediaWikiServices;
 
 class ExportData implements IPrivacyHandler {
 	/**
@@ -142,17 +143,27 @@ class ExportData implements IPrivacyHandler {
 			'bs-privacy-transparency-private-experience',
 			$this->user->getExperienceLevel()
 		)->plain();
+
+		$groups = MediaWikiServices::getInstance()
+			->getUserGroupManager()
+			->getUserGroups( $this->user );
 		$data[] = wfMessage(
 			'bs-privacy-transparency-private-groups',
-			implode( ', ', $this->user->getGroups() )
+			implode( ', ', $groups )
 		)->plain();
+
+		$formerGroups = MediaWikiServices::getInstance()
+			->getUserGroupManager()
+			->getUserFormerGroups( $this->user );
 		$data[] = wfMessage(
 			'bs-privacy-transparency-private-former-groups',
-			implode( ', ', $this->user->getFormerGroups() )
+			implode( ', ', $formerGroups )
 		)->plain();
+		$rights = MediaWikiServices::getInstance()->getPermissionManager()
+			->getUserPermissions( $this->user );
 		$data[] = wfMessage(
 			'bs-privacy-transparency-private-rights',
-			implode( ', ', $this->user->getRights() )
+			implode( ', ', $rights )
 		)->plain();
 		$data[] = wfMessage(
 			'bs-privacy-transparency-private-user-page-url',
@@ -218,7 +229,7 @@ class ExportData implements IPrivacyHandler {
 		$res = $this->db->select(
 			'logging',
 			[ '*' ],
-			[ 'log_user' => $this->user->getId() ],
+			[ 'log_actor' => $this->user->getId() ],
 			__METHOD__,
 			[ 'ORDER BY' => 'log_timestamp DESC' ]
 		);
