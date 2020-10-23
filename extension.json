@@ -383,7 +383,8 @@
 		},
 		"PrivacyConsentTypes": {
 			"value": {
-				"privacy-policy": "bs-privacy-prefs-consent-privacy-policy"
+				"privacy-policy": "bs-privacy-prefs-consent-privacy-policy",
+				"terms-of-service": "bs-privacy-prefs-consent-tos"
 			}
 		},
 		"PrivacyCookieConsentProvider": {

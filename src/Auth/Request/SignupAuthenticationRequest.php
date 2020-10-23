@@ -16,9 +16,8 @@ class SignupAuthenticationRequest extends UserDataAuthenticationRequest {
 	public function getFieldInfo() {
 		$moduleRegistry = new ModuleRegistry();
 		$moduleConfig = $moduleRegistry->getModuleByKey( 'consent' );
+		/** @var Consent $module */
 		$module = new $moduleConfig['class']( \RequestContext::getMain() );
-
-		$module instanceof Consent;
 		return $module->getAuthFormDescriptors();
 	}
 
