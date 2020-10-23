@@ -112,8 +112,10 @@
 	"bs-privacy-transparency-type-title-actions": "Action data",
 	"bs-privacy-prefs-consent-cookies": "I accept storing of cookies",
 	"bs-privacy-prefs-consent-privacy-policy": "I accept the [[{{MediaWiki:Privacypage}}|privacy policy]] of this site",
+	"bs-privacy-prefs-consent-tos": "I accept the [[{{MediaWiki:Termsofservicepage}}|terms of service]] of this site",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies are small pieces of information stored on your computer between sessions to make user experience smoother",
 	"bs-privacy-prefs-consent-privacy-policy-help": "By checking this field you confirm that you have read and acknowledged privacy policy for this site",
+	"bs-privacy-prefs-consent-tos-help": "By checking this field you confirm that you have read and acknowledged terms of service for this site",
 	"bs-privacy-consent-layout-label": "Privacy policy consent",
 	"bs-privacy-consent-layout-help": "View and change your privacy policy agreement settings",
 	"bs-privacy-consent-save-button": "Save",
@@ -179,5 +181,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies that improve user experience on the site (saving user preferences, state of dynamic components...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Save",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Close",
-	"bs-privacy-consent-cookie-settings-label": "Change cookie consent"
+	"bs-privacy-consent-cookie-settings-label": "Change cookie consent",
+	"termsofservicepage": "Project:Terms_of_service"
 }

@@ -81,9 +81,10 @@ class Consent extends Module {
 	 */
 	protected function getConsent() {
 		$consents = [];
+		$userOptionLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
 		foreach ( $this->options as $optionName => $userPreference ) {
 			$consents[$optionName] = [
-				'value' => $this->user->getOption( $userPreference ),
+				'value' => $userOptionLookup->getOption( $this->user, $userPreference ),
 				'label' => wfMessage( $userPreference )->parse(),
 				'help' => wfMessage( "$userPreference-help" )->parse()
 			];
@@ -116,7 +117,8 @@ class Consent extends Module {
 				$valueMessage
 			)->plain();
 
-			$this->user->setOption( $this->options[$consentName], $value );
+			$optionManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+			$optionManager->setOption( $this->user, $this->options[$consentName], $value );
 		}
 		$this->user->saveSettings();
 
@@ -159,17 +161,19 @@ class Consent extends Module {
 	public function getAuthFormDescriptors() {
 		$descriptors = [];
 		foreach ( $this->options as $name => $preferenceName ) {
-			// Give grep a chance to find the usages:
-			// bs-privacy-prefs-consent-cookies-help
-			// bs-privacy-prefs-consent-privacy-policy-help
 			$helpMessageKey = "$preferenceName-help";
+			// Give grep a chance to find the usages:
+			// bs-privacy-prefs-consent-privacy-policy
+			// bs-privacy-prefs-consent-privacy-policy-help
+			// bs-privacy-prefs-consent-tos
+			// bs-privacy-prefs-consent-tos-help
 			$descriptors[$name] = [
 				'type' => 'checkbox',
 				'label' => wfMessage( $preferenceName ),
 				'help' => wfMessage( $helpMessageKey ),
 				// B/C
 				'help-message' => $helpMessageKey,
-				'optional' => true,
+				'optional' => false,
 			];
 		}
 
