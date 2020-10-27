@@ -4,9 +4,9 @@ namespace BlueSpice\Privacy;
 
 class Extension extends \BlueSpice\Extension {
 	public static function onCallback() {
-		$GLOBALS[ 'wgAuthManagerAutoConfig' ][ 'primaryauth' ]
-			[ Auth\Provider\SignupPrimaryAuthenticationProvider::class ] = [
-			'class' => Auth\Provider\SignupPrimaryAuthenticationProvider::class
+		$GLOBALS[ 'wgAuthManagerAutoConfig' ][ 'secondaryauth' ]
+		[ Auth\Provider\ConsentSecondaryAuthenticationProvider::class ] = [
+			'class' => Auth\Provider\ConsentSecondaryAuthenticationProvider::class
 		];
 
 		$GLOBALS['wgLogRestrictions']['bs-privacy'] = 'bs-privacy-admin';
