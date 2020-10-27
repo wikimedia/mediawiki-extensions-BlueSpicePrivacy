@@ -182,5 +182,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Save",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Close",
 	"bs-privacy-consent-cookie-settings-label": "Change cookie consent",
-	"termsofservicepage": "Project:Terms_of_service"
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "To continue, please accept the following terms",
+	"bs-privacy-consent-auth-fail": "You must accept all terms"
 }

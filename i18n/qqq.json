@@ -177,5 +177,7 @@
 	"bs-privacy-consent-cookie-settings-label": "Label for the anchor that opens cookie consent dialog",
 	"bs-privacy-prefs-consent-tos":  "Label for the terms of service user preference",
 	"bs-privacy-prefs-consent-tos-help":  "Help text for the terms of service user preference",
-	"termsofservicepage": "Page where the terms of service are located"
+	"termsofservicepage": "Page where the terms of service are located",
+	"bs-privacy-consent-auth-step": "Label for the secondary authentication step prompting user to accept terms",
+	"bs-privacy-consent-auth-fail": "Error message when user does not accept the terms"
 }
