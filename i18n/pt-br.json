@@ -108,8 +108,10 @@
 	"bs-privacy-transparency-type-title-actions": "ação dos dados",
 	"bs-privacy-prefs-consent-cookies": "Eu aceito armazenar cookies",
 	"bs-privacy-prefs-consent-privacy-policy": "Eu aceito a [[{{MediaWiki:Privacypage}}|política de privacidade]] deste ''site''",
+	"bs-privacy-prefs-consent-tos": "Eu aceito o [[{{MediaWiki:Termsofservicepage}}|termos de serviço]] desse site.",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies são pequenos pedaços de informações armazenadas no seu computador entre as sessões para tornar a experiência do usuário mais suave",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ao marcar este campo, você confirma que leu e reconheceu a política de privacidade deste site.",
+	"bs-privacy-prefs-consent-tos-help": "Ao marcar este campo, você confirma que leu e reconheceu os termos de serviço deste site",
 	"bs-privacy-consent-layout-label": "Consentimento da política de privacidade",
 	"bs-privacy-consent-layout-help": "Visualize e altere suas configurações do contrato de política de privacidade",
 	"bs-privacy-consent-save-button": "Salvar",
@@ -171,5 +173,8 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
-	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie"
+	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
+	"termsofservicepage": "Project:Termos_de_serviço",
+	"bs-privacy-consent-auth-step": "Para continuar, aceite os seguintes termos",
+	"bs-privacy-consent-auth-fail": "Você deve aceitar todos os termos"
 }
