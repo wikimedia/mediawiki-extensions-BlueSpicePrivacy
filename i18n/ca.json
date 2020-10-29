@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Jlrb+"
+			"Jlrb+",
+			"Mguix"
 		]
 	},
 	"privacycenter": "Centre de privadesa",
@@ -20,7 +21,7 @@
 	"bs-privacy-transparency-show-all-data-button": "Mostra totes les dades",
 	"bs-privacy-transparency-private-experience": "Nivell d’experiència: $1",
 	"bs-privacy-transparency-type-title-personal": "Dades personals",
-	"bs-privacy-prefs-consent-privacy-policy": "Accepto la [[Project:Privacy|privacy policy]] d'aquest lloc web",
+	"bs-privacy-prefs-consent-privacy-policy": "Accepto la [[{{MediaWiki:Privacypage}}|política de privadesa]] d’aquest lloc web",
 	"bs-privacy-admin-consent-grid-column-user": "Nom d’usuari",
 	"bs-privacy-timestamp-with-days-ago": "$1 (fa {{PLURAL:$2|$2 dia|$2 dies}})",
 	"notification-bs-privacy-center-url": "Centre de privadesa",

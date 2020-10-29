@@ -130,7 +130,7 @@
 	"bs-privacy-consent-bool-true": "Oui",
 	"bs-privacy-consent-bool-false": "Non",
 	"bs-privacy-consent-log-consent": "$1 : $2",
-	"logentry-bs-privacy-anonymization": "$4 a rendu anonyme un compte. Nouveau nom d’utilisateur : $5",
+	"logentry-bs-privacy-anonymization": "$4 a rendu le compte anonyme. Nouveau nom d’utilisateur : $5",
 	"logentry-bs-privacy-deletion": "L’utilisateur $4 a supprimé son compte",
 	"logentry-bs-privacy-transparency": "$1 a exporté {{GENDER:$2|}}ses données",
 	"logentry-bs-privacy-consent": "$1 a modifié {{GENDER:$2|}}ses données d’acceptation de la politique de confidentialité en : $4",
@@ -177,5 +177,10 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies qui améliorent votre expérience utilisateur sur le site (préférences utilisateur enregistrées, état des composants dynamiques, etc.)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Enregistrer",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fermer",
-	"bs-privacy-consent-cookie-settings-label": "Modifier l’acceptation des cookies"
+	"bs-privacy-consent-cookie-settings-label": "Modifier l’acceptation des cookies",
+	"bs-privacy-prefs-consent-tos": "J’accepte les [[{{MediaWiki:Termsofservicepage}}|conditions d’utilisation]] de ce site",
+	"bs-privacy-prefs-consent-tos-help": "En cochant ce champ, vous confirmez que vous avez lu et accepté les conditions d’utilisations de ce site",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Pour continuer, veuillez accepter les conditions suivantes",
+	"bs-privacy-consent-auth-fail": "Vous devez accepter toutes les conditions"
 }

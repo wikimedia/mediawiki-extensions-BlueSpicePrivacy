@@ -46,5 +46,6 @@
 	"logentry-bs-privacy-deletion": "De Benotzer $4 huet de Benotzerkont geläscht",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "All akzeptéieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
+	"logentry-bs-privacy-anonymization": "$4 huet de Benotzerkont anonymiséiert. Neie Benotzernumm: $5"
 }

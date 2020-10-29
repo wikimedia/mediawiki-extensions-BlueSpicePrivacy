@@ -84,12 +84,14 @@
 	"bs-privacy-consent-bool-false": "לא",
 	"logentry-bs-privacy-deletion": "{{GENDER:$4|משתמש $4 מחק|משתמשת $4 מחקה}} את החשבון",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|ייצא את הנתונים שלו|ייצאה את הנתונים שלה}}",
-	"echo-category-title-bs-privacy-cat": "פרטיות",
+	"echo-category-title-bs-privacy-cat": "פעולות פרטיות",
 	"notification-bs-privacy-deletion-failed": "מחיקת החשבון שלך נכשלה!",
 	"notification-bs-privacy-deletion-failed-body": "לא יכולנו למחוק את החשבון שלך. נא ליצור קשר עם מפעילי האתר למידע נוסף. אנו מצטערים על אי הנוחות.",
 	"notification-bs-privacy-request-denied-deletion": "בקשתך למחוק נדחתה!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "לקבל את כולם",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה",
-	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות"
+	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות",
+	"bs-privacy-transparency-private-email-not-authenticated": "כתובת דוא״ל: $1 (לא מאומתת)",
+	"notification-bs-privacy-login-url": "כניסה לוויקי"
 }

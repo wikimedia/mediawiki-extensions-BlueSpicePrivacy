@@ -44,7 +44,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (oggi)",
 	"bs-privacy-consent-bool-true": "Sì",
 	"bs-privacy-consent-bool-false": "No",
-	"logentry-bs-privacy-anonymization": "$4 ha reso anonimo l'account $2. Nuovo nome utente: $5",
+	"logentry-bs-privacy-anonymization": "$4 ha reso anonimo l'utenza. Nuovo nome utente: $5",
 	"logentry-bs-privacy-deletion": "L'utente $4 ha cancellato l'utenza.",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 ha inviato una richiesta di anonimizzazione del suo account con commento: $4",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
