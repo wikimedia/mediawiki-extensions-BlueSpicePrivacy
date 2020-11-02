@@ -7,7 +7,7 @@ use Config;
 use ConfigException;
 use Exception;
 use HashConfig;
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use WebRequest;
 
 abstract class Base implements ICookieConsentProvider {
@@ -38,10 +38,13 @@ abstract class Base implements ICookieConsentProvider {
 		$this->request = $request;
 
 		$provider = $this;
-		Hooks::run(
+		MediaWikiServices::getInstance()->getHookContainer()->run(
 			'BlueSpicePrivacyCookieConsentProviderGetGroups',
-			[ $provider, &$cookieGroups ],
-			'3.2'
+			[
+				$provider,
+				&$cookieGroups
+			],
+			[ 'deprecatedVersion' => '3.2' ]
 		);
 		$this->cookieGroups = $cookieGroups;
 	}
