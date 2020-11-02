@@ -120,5 +120,7 @@
 	"bs-privacy-cookie-consent-group-necessary-label": "«Cookies» indispensables",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Guardar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar",
-	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»"
+	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»",
+	"bs-privacy-consent-auth-step": "Deben aceptarse los términos siguientes para continuar",
+	"bs-privacy-consent-auth-fail": "Deben aceptarse todos los términos"
 }

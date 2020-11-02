@@ -125,5 +125,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "저장",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "닫기",
-	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기"
+	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기",
+	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
+	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다"
 }
