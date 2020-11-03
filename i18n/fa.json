@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajam",
 			"Amirsara",
 			"FarsiNevis"
 		]
@@ -67,5 +68,7 @@
 	"notification-bs-privacy-admin-url": "مدیر حریم شخصی",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "پذیرفتن همه",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "ذخیره",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "بستن"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "بستن",
+	"bs-privacy-consent-auth-step": "برای ادامه، لطفاً شرایط زیر را بپذیرید",
+	"bs-privacy-consent-auth-fail": "شما باید کلیه شرایط را بپذیرید"
 }
