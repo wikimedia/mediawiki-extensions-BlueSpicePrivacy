@@ -106,8 +106,10 @@
 	"bs-privacy-transparency-type-title-actions": "Handlingsdata",
 	"bs-privacy-prefs-consent-cookies": "Jeg godtar lagring av informasjonskapsler",
 	"bs-privacy-prefs-consent-privacy-policy": "Jeg godtar [[{{MediaWiki:Privacypage}}|personvernspolitikken]] til nettstedet",
+	"bs-privacy-prefs-consent-tos": "Jeg godtar nettstedets [[{{MediaWiki:Termsofservicepage}}|tjenestevilkår]]",
 	"bs-privacy-prefs-consent-cookies-help": "Informasjonskapsler (cookies) er små deler av informasjon som lagres på maskinen din mellom økter for å gjøre brukererfaringen smidigere",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ved å merke av dette feltet bekrefter du at du har lest og godtatt personvernspolitikken til dette nettstedet",
+	"bs-privacy-prefs-consent-tos-help": "Ved å merke av dette feltet bekrefter du at du har lest og godtatt tjenestevilkårene til dette nettstedet",
 	"bs-privacy-consent-layout-label": "Personvernssamtykke",
 	"bs-privacy-consent-layout-help": "Vis og endre personvernsinnstillingene dine",
 	"bs-privacy-consent-save-button": "Lagre",
@@ -169,5 +171,8 @@
 	"bs-privacy-cookie-convenience-group-desc": "Informasjonskapsler som forbedrer brukeropplevelsen på nettstedet (lagring av innstillinger, status for dynamiske komponenter …)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Lagre",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Lukk",
-	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke"
+	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
+	"termsofservicepage": "Project:Tjenestevilkår",
+	"bs-privacy-consent-auth-step": "Godta følgende vilkår for å fortsette",
+	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår"
 }
