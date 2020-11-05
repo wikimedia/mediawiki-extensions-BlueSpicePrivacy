@@ -177,5 +177,10 @@
 	"right-bs-privacy-admin": "exécuter une action d’administration des données personnelles",
 	"bs-privacy-transparency-action-timestamp": "$1 :",
 	"bs-privacy-consent-log-consent": "$1 : $2",
-	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de l’anonymisation de mon compte ou la demande de suppression sont modifiés"
+	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de l’anonymisation de mon compte ou la demande de suppression sont modifiés",
+	"bs-privacy-prefs-consent-tos": "J’accepte les [[{{MediaWiki:Termsofservicepage}}|conditions d’utilisation]] de ce site",
+	"bs-privacy-prefs-consent-tos-help": "En cochant ce champ, vous confirmez que vous avez lu et accepté les conditions d’utilisations de ce site",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Pour continuer, veuillez accepter les conditions suivantes",
+	"bs-privacy-consent-auth-fail": "Vous devez accepter toutes les conditions"
 }

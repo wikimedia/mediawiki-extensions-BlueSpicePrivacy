@@ -169,5 +169,10 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Lagre",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Lukk",
 	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
-	"echo-pref-tooltip-bs-privacy-cat": "Varsle meg når statusen for min forespørsel om kontoanonymisering eller -sletting endrer seg"
+	"echo-pref-tooltip-bs-privacy-cat": "Varsle meg når statusen for min forespørsel om kontoanonymisering eller -sletting endrer seg",
+	"bs-privacy-prefs-consent-tos": "Jeg godtar nettstedets [[{{MediaWiki:Termsofservicepage}}|tjenestevilkår]]",
+	"bs-privacy-prefs-consent-tos-help": "Ved å merke av dette feltet bekrefter du at du har lest og godtatt tjenestevilkårene til dette nettstedet",
+	"termsofservicepage": "Project:Tjenestevilkår",
+	"bs-privacy-consent-auth-step": "Godta følgende vilkår for å fortsette",
+	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår"
 }

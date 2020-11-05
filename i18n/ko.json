@@ -125,5 +125,7 @@
 	"bs-privacy-admin-consent-overview-help": "모든 사용자의 동의 상태 개요",
 	"echo-category-title-bs-privacy-cat": "개인정보 동작",
 	"notification-bs-privacy-center-url": "PrivacyCenter",
-	"notification-bs-privacy-admin-url": "PrivacyAdmin"
+	"notification-bs-privacy-admin-url": "PrivacyAdmin",
+	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
+	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다"
 }

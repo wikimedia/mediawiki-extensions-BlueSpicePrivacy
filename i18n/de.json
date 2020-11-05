@@ -172,5 +172,10 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
-	"right-bs-privacy-admin": "Datenschutzadministrative Aktionen ausführen"
+	"right-bs-privacy-admin": "Datenschutzadministrative Aktionen ausführen",
+	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die [[{{MediaWiki:Termsofservicepage}}|Nutzungsbedingungen]] dieser Seite",
+	"bs-privacy-prefs-consent-tos-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Nutzungsbedingungen für diese Seite gelesen und anerkannt hast.",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
+	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren"
 }

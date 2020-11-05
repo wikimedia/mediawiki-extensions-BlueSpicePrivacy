@@ -118,5 +118,9 @@
 	"logentry-bs-privacy-deletion": "El usuario $4 borró su cuenta",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|exportó}} {{GENDER:$2|sus}} datos",
 	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|modificó}} {{GENDER:$2|sus}} consentimientos de privacidad a: $4",
-	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|envió}} una solicitud para anonimizar {{GENDER:$2|su}} cuenta por el siguiente motivo: $4"
+	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|envió}} una solicitud para anonimizar {{GENDER:$2|su}} cuenta por el siguiente motivo: $4",
+	"notification-bs-privacy-anonymization-done": "Se ha anonimizado la cuenta.",
+	"notification-bs-privacy-deletion-failed": "Falló la eliminación de la cuenta.",
+	"bs-privacy-consent-auth-step": "Deben aceptarse los términos siguientes para continuar",
+	"bs-privacy-consent-auth-fail": "Deben aceptarse todos los términos"
 }
