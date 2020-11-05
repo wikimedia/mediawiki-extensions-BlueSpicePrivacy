@@ -109,8 +109,10 @@
 	"bs-privacy-transparency-type-title-actions": "Aktionsdaten",
 	"bs-privacy-prefs-consent-cookies": "Ich akzeptiere das Speichern von Cookies",
 	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die [[{{MediaWiki:Privacypage}}|Datenschutzrichtlinie]] dieser Website",
+	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die [[{{MediaWiki:Termsofservicepage}}|Nutzungsbedingungen]] dieser Seite",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies sind kleine Informationseinheiten, die zwischen den Sitzungen auf dem Computer gespeichert werden, um die Benutzerfreundlichkeit zu verbessern.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
+	"bs-privacy-prefs-consent-tos-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Nutzungsbedingungen für diese Seite gelesen und anerkannt hast.",
 	"bs-privacy-consent-layout-label": "Einwilligung in die Datenschutzerklärung",
 	"bs-privacy-consent-layout-help": "Anzeigen und Ändern der Einstellungen deiner Datenschutzerklärung",
 	"bs-privacy-consent-save-button": "Speichern",
@@ -172,5 +174,8 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, die die Benutzerfreundlichkeit auf der Website verbessern (Speichern von Benutzereinstellungen, Zustand der dynamischen Komponenten …).",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
-	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern"
+	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
+	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren"
 }
