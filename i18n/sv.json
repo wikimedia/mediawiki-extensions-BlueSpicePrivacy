@@ -74,7 +74,7 @@
 	"bs-privacy-transparency-type-title-working": "Arbetsdata",
 	"bs-privacy-transparency-type-title-personal": "Personlig data",
 	"bs-privacy-transparency-type-title-actions": "Åtgärdsdata",
-	"bs-privacy-prefs-consent-cookies": "Jag accepterar lagring av cookies",
+	"bs-privacy-prefs-consent-cookies": "Jag accepterar lagring av kakor",
 	"bs-privacy-prefs-consent-privacy-policy": "Jag accepterar denna webbplats [[{{MediaWiki:Privacypage}}|sekretesspolicy]]",
 	"bs-privacy-consent-layout-label": "Integritetsreglerssamtycke",
 	"bs-privacy-consent-save-button": "Spara",
