@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Kareyac"
+		]
 	},
 	"bs-privacy-anonymization-layout-label": "Anonimizacija",
 	"bs-privacy-anonymization-confirm-button-label": "Anonimizuj moj nalog",
@@ -11,5 +13,6 @@
 	"bs-privacy-transparency-show-all-data-button": "Prikaži sve podatke",
 	"bs-privacy-admin-consent-grid-column-user": "Korisničko ime",
 	"notification-bs-privacy-center-url": "Centar privatnosti",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sačuvaj"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sačuvaj",
+	"bs-privacy-consent-bool-true": "Da"
 }

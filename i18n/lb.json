@@ -47,5 +47,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
 	"bs-privacy-request-cancel-failed": "D'Ufro konnt net annuléiert ginn",
-	"logentry-bs-privacy-anonymization": "$4 huet de Benotzerkont anonymiséiert. Neie Benotzernumm: $5"
+	"logentry-bs-privacy-anonymization": "$4 huet de Benotzerkont anonymiséiert. Neie Benotzernumm: $5",
+	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren"
 }
