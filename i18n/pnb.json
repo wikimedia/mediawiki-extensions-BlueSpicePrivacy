@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abbas dhothar"
+		]
+	},
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 دن}} پہلے)"
+}
