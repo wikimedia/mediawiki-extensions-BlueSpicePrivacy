@@ -8,6 +8,7 @@
 	"bs-privacy-anonymization-api-invalid-username": "చెల్లని వాడుకరి పేరు",
 	"bs-privacy-deletion-submit-request-label": "వ్యాఖ్య (ఐచ్ఛికం)",
 	"bs-privacy-anonymization-request-comment": "కొత్త వాడుకరి పేరు: $1",
+	"bs-privacy-admin-invalid-request": "చెల్లని అభ్యర్థన",
 	"bs-privacy-admin-request-grid-column-user": "వాడుకరి",
 	"bs-privacy-admin-request-grid-column-action": "చర్య",
 	"bs-privacy-admin-request-grid-column-timestamp": "కాలముద్ర",
