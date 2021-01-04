@@ -7,6 +7,10 @@
 			"아라"
 		]
 	},
+	"bs-privacy-admintool-label": "프라이버시 관리",
+	"privacycenter": "프라이버시 센터",
+	"privacyadmin": "프라이버시 관리",
+	"bs-privacy-privacy-center-subtitle": "프라이버시 설정 개요",
 	"bs-privacy-api-error-generic": "오류가 발생했습니다",
 	"bs-privacy-anonymization-error-retrieving-name": "새 사용자 이름의 검색을 시도하는 동안 오류가 발생했습니다",
 	"bs-privacy-anonymization-layout-label": "익명화",
@@ -119,6 +123,8 @@
 	"notification-bs-privacy-deletion-failed-body": "계정을 삭제하지 못했습니다. 더 자세한 정보에 대해서는 위키 관리자에게 문의하십시오. 불편을 드려 죄송합니다.",
 	"notification-bs-privacy-request-denied-anonymization": "익명화 요청이 거부되었습니다!",
 	"notification-bs-privacy-request-denied-deletion": "삭제 요청이 거부되었습니다!",
+	"notification-bs-privacy-request-submitted": "새 프라이버시 요청을 제출하였습니다!",
+	"notification-bs-privacy-request-submitted-body": "\"$1\" 사용자가 새 프라이버시 요청을 제출하였습니다. 모듈: $3. 댓글: $2",
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "이 사이트를 사용자 경험을 개선하기 위해 쿠키를 사용합니다",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "모두 승인",
