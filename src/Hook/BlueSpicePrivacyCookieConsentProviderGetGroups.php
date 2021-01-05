@@ -10,7 +10,7 @@ use IContextSource;
 abstract class BlueSpicePrivacyCookieConsentProviderGetGroups extends Hook {
 	/** @var CookieConsentProvider */
 	protected $provider;
-	/** @var */
+	/** @var array */
 	protected $groups;
 
 	/**

@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Notifications;
 use BlueSpice\BaseNotification;
 
 class RequestDeletionApproved extends BaseNotification {
+	/** @var bool */
 	protected $notifyAgent = false;
 
 	/**
