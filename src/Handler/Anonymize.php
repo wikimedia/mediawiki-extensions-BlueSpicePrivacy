@@ -126,6 +126,9 @@ class Anonymize implements IPrivacyHandler {
 		}
 	}
 
+	/**
+	 * @param string $username
+	 */
 	private function removeSensitivePreferences( $username ) {
 		$user = \User::newFromName( $username );
 		if ( $user->getId() === 0 ) {

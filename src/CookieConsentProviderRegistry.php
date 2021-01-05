@@ -8,6 +8,7 @@ use MediaWiki\MediaWikiServices;
 use RequestContext;
 
 class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
+	/** @var ICookieConsentProvider|null */
 	protected $provider = null;
 
 	public function __construct() {

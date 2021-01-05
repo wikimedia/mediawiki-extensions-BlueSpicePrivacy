@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Api;
 use BlueSpice\Privacy\ModuleRegistry;
 
 class PrivacyApi extends \ApiBase {
+	/** @var Status */
 	protected $status;
 
 	public function execute() {
