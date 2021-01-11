@@ -15,7 +15,9 @@ abstract class ModuleRequestable extends Module {
 	const REQUEST_OPEN = 1;
 	const REQUEST_CLOSED = 0;
 
+	/** @var \Wikimedia\Rdbms\IDatabase */
 	protected $database;
+	/** @var bool */
 	protected $requestsEnabled;
 
 	/**

@@ -5,8 +5,11 @@ namespace BlueSpice\Privacy\Notifications;
 use BlueSpice\BaseNotification;
 
 class DeletionFailed extends BaseNotification {
+	/** @var \User */
 	protected $user;
+	/** @var string */
 	protected $comment;
+	/** @var bool */
 	protected $notifyAgent = false;
 
 	/**

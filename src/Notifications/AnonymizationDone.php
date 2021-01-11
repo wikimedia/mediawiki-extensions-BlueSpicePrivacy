@@ -5,8 +5,11 @@ namespace BlueSpice\Privacy\Notifications;
 use BlueSpice\BaseNotification;
 
 class AnonymizationDone extends BaseNotification {
+	/** @var \User */
 	protected $oldUsername;
+	/** @var \User */
 	protected $newUsername;
+	/** @var bool */
 	protected $notifyAgent = false;
 
 	/**

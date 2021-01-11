@@ -5,9 +5,13 @@ namespace BlueSpice\Privacy\Notifications;
 use BlueSpice\BaseNotification;
 
 class RequestAnonymizationDenied extends BaseNotification {
+	/** @var \User */
 	protected $oldUsername;
+	/** @var \User */
 	protected $newUsername;
+	/** @var string */
 	protected $comment;
+	/** @var bool */
 	protected $notifyAgent = false;
 
 	/**
