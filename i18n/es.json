@@ -89,7 +89,7 @@
 	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[{{MediaWiki:Privacypage}}|normativa de privacidad]] de este sitio",
 	"bs-privacy-prefs-consent-cookies-help": "Las «cookies» son datos que se almacenan entre sesiones en el equipo para mejorar la experiencia de usuario.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Al marcar este campo se confirma la lectura y comprensión de la normativa de privacidad del sitio",
-	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
+	"bs-privacy-consent-layout-label": "Consentimiento de normativa de privacidad",
 	"bs-privacy-consent-layout-help": "Ver y editar los consentimientos que has otorgado conforme a la política de protección de datos",
 	"bs-privacy-consent-save-button": "Guardar",
 	"bs-privacy-consent-get-options-fail": "Se produjo un error al recuperar las opciones de la normativa de privacidad",
