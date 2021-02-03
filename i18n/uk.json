@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250",
 			"Gzhegozh",
-			"Ата",
-			"Movses"
+			"Movses",
+			"Piramidion",
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"bs-privacy-api-error-generic": "Сталася помилка",
@@ -46,7 +47,7 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (сьогодні)",
 	"bs-privacy-consent-bool-true": "Так",
 	"bs-privacy-consent-bool-false": "Ні",
-	"echo-category-title-bs-privacy-cat": "Конфіденційність",
+	"echo-category-title-bs-privacy-cat": "Дії з конфіденційністю",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прийняти всі",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Зберегти",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Закрити",
@@ -90,7 +91,7 @@
 	"bs-privacy-delete-error-deleting": "Сталася помилка під час спроби вилучення вашого облікового запису.",
 	"bs-privacy-deletion-final-prompt": "Ваш обліковий запис буде вилучено остаточно. Цю дію не можна скасувати",
 	"action-bs-privacy-admin": "виконання адміністративної дії приватності",
-	"right-bs-privacy-admin": "виконання адміністративної дії приватності",
+	"right-bs-privacy-admin": "Виконання адміністративної дії приватності",
 	"bs-privacy-admin-request-manager-help": "Огляд усіх відкритих запитів приватності",
 	"bs-privacy-admin-request-action-failed": "Не вдалася дія запиту!",
 	"bs-privacy-admin-approve-final-prompt": "Будь ласка, підтвердіть схвалення запиту",
@@ -171,5 +172,6 @@
 	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, що необхідні для функціонування сайту (cookies сеансу, ідентифікації користувача тощо)",
 	"bs-privacy-cookie-convenience-group-label": "Cookies для зручності",
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті (збереження налаштувань користувача, стан динамічних компонентів тощо)",
-	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies"
+	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
+	"echo-pref-tooltip-bs-privacy-cat": "Сповіщати мене, коли змінюється статус мого запиту щодо анонімізації або вилучення мого облікового запису"
 }

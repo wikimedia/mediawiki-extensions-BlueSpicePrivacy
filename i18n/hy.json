@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"bs-privacy-admin-request-grid-column-user": "Մասնակից",
+	"bs-privacy-admin-request-grid-column-action": "Գործողություն",
+	"bs-privacy-admin-request-grid-column-deny": "Մերժել",
+	"bs-privacy-admin-request-grid-action-deny": "Մերժել",
+	"bs-privacy-transparency-view-data-dialog-close": "Փակել",
+	"bs-privacy-consent-save-button": "Հիշել",
+	"bs-privacy-admin-consent-grid-column-user": "Մասնակցի անուն",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (այսոր)",
+	"bs-privacy-consent-bool-true": "Այո",
+	"bs-privacy-consent-bool-false": "Ոչ",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Հիշել",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Փակել"
+}

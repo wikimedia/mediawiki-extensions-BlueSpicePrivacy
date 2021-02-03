@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Meno25",
 			"ديفيد",
-			"Meno25"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-privacy": "خصوصية BlueSpice",
@@ -171,5 +172,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "حفظ",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "إغلاق",
 	"bs-privacy-consent-cookie-settings-label": "تغيير موافقة ملفات تعريف الارتباط",
-	"right-bs-privacy-admin": "تنفيذ فعل إداري خصوصية"
+	"right-bs-privacy-admin": "تنفيذ فعل إداري خصوصية",
+	"bs-privacy-consent-auth-fail": "عليك قبول الشروط"
 }

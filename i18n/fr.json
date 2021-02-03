@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Alno",
-			"Gomoko",
-			"Wladek92",
 			"DSwissK",
+			"Derugon",
+			"Gomoko",
 			"Thibaut120094",
 			"Verdy p",
-			"Derugon"
+			"Wladek92"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -127,7 +127,7 @@
 	"log-name-bs-privacy": "Confidentialité BS",
 	"bs-privacy-consent-bool-true": "Oui",
 	"bs-privacy-consent-bool-false": "Non",
-	"logentry-bs-privacy-anonymization": "$4 a rendu anonyme un compte. Nouveau nom d’utilisateur : $5",
+	"logentry-bs-privacy-anonymization": "$4 a rendu le compte anonyme. Nouveau nom d’utilisateur : $5",
 	"logentry-bs-privacy-deletion": "L’utilisateur $4 a supprimé son compte",
 	"logentry-bs-privacy-transparency": "$1 a exporté {{GENDER:$2|}}ses données",
 	"logentry-bs-privacy-consent": "$1 a modifié {{GENDER:$2|}}ses données d’acceptation de la politique de confidentialité en : $4",
@@ -177,5 +177,10 @@
 	"right-bs-privacy-admin": "exécuter une action d’administration des données personnelles",
 	"bs-privacy-transparency-action-timestamp": "$1 :",
 	"bs-privacy-consent-log-consent": "$1 : $2",
-	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de l’anonymisation de mon compte ou la demande de suppression sont modifiés"
+	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de l’anonymisation de mon compte ou la demande de suppression sont modifiés",
+	"bs-privacy-prefs-consent-tos": "J’accepte les [[{{MediaWiki:Termsofservicepage}}|conditions d’utilisation]] de ce site",
+	"bs-privacy-prefs-consent-tos-help": "En cochant ce champ, vous confirmez que vous avez lu et accepté les conditions d’utilisations de ce site",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Pour continuer, veuillez accepter les conditions suivantes",
+	"bs-privacy-consent-auth-fail": "Vous devez accepter toutes les conditions"
 }

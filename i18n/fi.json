@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen",
-			"FinlandMan"
+			"FinlandMan",
+			"Pxos",
+			"Silvonen"
 		]
 	},
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
@@ -19,5 +20,5 @@
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
-	"echo-category-title-bs-privacy-cat": "Yksityisyystehtävät"
+	"echo-category-title-bs-privacy-cat": "Tietosuojaan liittyvät toimet"
 }

@@ -1,16 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Strayblues",
-			"YaronSh",
+			"Amire80",
 			"Erelon",
 			"Steeve815",
-			"Amire80"
+			"Strayblues",
+			"YaronSh"
 		]
 	},
 	"bs-privacy-admin-request-grid-column-deny": "לדחות",
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
-	"echo-category-title-bs-privacy-cat": "פרטיות",
+	"echo-category-title-bs-privacy-cat": "פעולות פרטיות",
 	"notification-bs-privacy-request-denied-deletion": "בקשתך למחוק נדחתה!",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה",
 	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות",
@@ -91,5 +91,7 @@
 	"privacyadmin": "מנהל הפרטיות",
 	"bs-privacy-deletion-request-denied": "המחיקה שלך נדחתה!",
 	"bs-privacy-prefs-consent-cookies": "אני מסכימ/ה לאחסן עוגיות",
-	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] של אתר זה"
+	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] של אתר זה",
+	"bs-privacy-transparency-private-email-not-authenticated": "כתובת דוא״ל: $1 (לא מאומתת)",
+	"notification-bs-privacy-login-url": "כניסה לוויקי"
 }

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjh21"
+		]
+	},
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|has}} cancelled the request to anonymize {{GENDER:$2|his|her}} account",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} cancelled the request to delete {{GENDER:$2|his|her}} account"
+}

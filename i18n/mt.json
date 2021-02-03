@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"ToniSant"
+		]
+	},
+	"bs-privacy-prefs-consent-cookies": "Naċċetta li jinħażnu l-cookies",
+	"bs-privacy-prefs-consent-cookies-help": "Il-cookies huma bċejjeċ zgħar t'informazzjoni maħżuna fuq il-kompjuter tiegħek bejn is-sessjonijiet biex itejbu l-espererjenza tiegħek bħala utent",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Dan is-sit juża l-cookies biex itejjeb l-esperjenza tal-utent",
+	"bs-privacy-cookie-consent-group-necessary-label": "Cookies meħtieġa",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Il-cookies huma meħtieġa biex is-sit jiffunzjona (cookies tas-sessjoni, cookies li jidentifikaw l-utent...)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookie li jtejjbu l-esperjenza tal-utent fuq dan is-sit (salvar tal-preferenza tal-utent, stat ta' komponenti dinamiċi...)",
+	"bs-privacy-consent-cookie-settings-label": "Biddel il-kunsens tal-cookie"
+}

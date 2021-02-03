@@ -27,5 +27,6 @@
 	"bs-privacy-transparency-private-registration": "నమోదు సమయం: $1",
 	"bs-privacy-transparency-private-email-authenticated": "ఈమెయిలు చిరునామా: $1 ($2 నాడు నిర్ధారించారు)",
 	"bs-privacy-transparency-private-email-not-authenticated": "ఈమెయిలు చిరునామా: $1 (నిర్ధారించలేదు)",
-	"bs-privacy-transparency-private-experience": "అనుభవ స్థాయి: $1"
+	"bs-privacy-transparency-private-experience": "అనుభవ స్థాయి: $1",
+	"bs-privacy-admin-invalid-request": "చెల్లని అభ్యర్థన"
 }

@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Carlosmg.dg",
+			"DannyS712",
 			"Fitoschido",
-			"DannyS712"
+			"MarcoAurelio"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -44,7 +45,7 @@
 	"bs-privacy-cannot-assert-deleted-user": "No se puede crear el objeto «Usuario eliminado»",
 	"bs-privacy-admin-request-grid-column-user": "Usuario",
 	"bs-privacy-admin-request-grid-column-action": "Acción",
-	"bs-privacy-admin-request-grid-column-timestamp": "Marca de tiempo",
+	"bs-privacy-admin-request-grid-column-timestamp": "Cronomarcador",
 	"bs-privacy-admin-request-grid-column-comment": "Comentario",
 	"bs-privacy-admin-request-grid-action-approve": "Aprobar",
 	"bs-privacy-admin-request-grid-column-deny": "Denegar",
@@ -82,7 +83,7 @@
 	"bs-privacy-transparency-type-title-actions": "Datos de acciones",
 	"bs-privacy-prefs-consent-cookies": "Acepto almacenar «cookies»",
 	"bs-privacy-prefs-consent-privacy-policy": "Acepto la [[{{MediaWiki:Privacypage}}|normativa de privacidad]] de este sitio",
-	"bs-privacy-consent-layout-label": "Consentimiento de política de privacidad",
+	"bs-privacy-consent-layout-label": "Consentimiento de normativa de privacidad",
 	"bs-privacy-consent-save-button": "Guardar",
 	"bs-privacy-consent-get-options-fail": "Se produjo un error al recuperar las opciones de la normativa de privacidad",
 	"bs-privacy-consent-save-success": "Se guardaron tus preferencias de normativa de privacidad",
@@ -105,5 +106,21 @@
 	"bs-privacy-prefs-consent-cookies-help": "Las «cookies» son datos que se almacenan entre sesiones en el equipo para mejorar la experiencia de usuario.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Al marcar este campo se confirma la lectura y comprensión de la normativa de privacidad del sitio",
 	"bs-privacy-admin-consent-overview-title": "Visión de conjunto del consentimiento de la normativa de privacidad",
-	"bs-privacy-admin-consent-overview-help": "Visión de conjunto del estado de consentimiento de todos los usuarios"
+	"bs-privacy-admin-consent-overview-help": "Visión de conjunto del estado de consentimiento de todos los usuarios",
+	"bs-privacy-transparency-private-blocked": "Bloqueado: Sí (por $1)",
+	"bs-privacy-consent-layout-help": "Ver y editar los consentimientos que has otorgado conforme a la política de protección de datos",
+	"logentry-bs-privacy-deletion": "El usuario $4 borró su cuenta",
+	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|exportó}} {{GENDER:$2|sus}} datos",
+	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|modificó}} {{GENDER:$2|sus}} consentimientos de privacidad a: $4",
+	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|envió}} una solicitud para anonimizar {{GENDER:$2|su}} cuenta por el siguiente motivo: $4",
+	"notification-bs-privacy-anonymization-done": "Se ha anonimizado la cuenta.",
+	"notification-bs-privacy-deletion-failed": "Falló la eliminación de la cuenta.",
+	"apihelp-bs-privacy-param-data": "Datos transmitidos a la función solicitada",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio utiliza «cookies» para mejorar la experiencia de uso",
+	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Configuración de consentimiento de «cookies»",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configuración de consentimiento de «cookies»",
+	"bs-privacy-cookie-consent-group-necessary-label": "«Cookies» indispensables",
+	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»",
+	"bs-privacy-consent-auth-step": "Deben aceptarse los términos siguientes para continuar",
+	"bs-privacy-consent-auth-fail": "Deben aceptarse todos los términos"
 }
