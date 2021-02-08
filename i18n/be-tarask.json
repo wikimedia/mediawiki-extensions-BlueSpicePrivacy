@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-privacy-deletion-layout-label": "Выдаліць Ваш рахунак",
+	"bs-privacy-deletion-cancel-request-button": "Скасаваць запыт выдаленьня",
+	"bs-privacy-cancel-request-button": "Скасаваць запыт",
+	"bs-privacy-deletion-button": "Выдаліць Ваш рахунак",
+	"bs-privacy-admin-request-grid-column-action": "Дзеяньне",
+	"bs-privacy-transparency-layout-label": "Празрыстасьць",
+	"bs-privacy-transparency-show-all-data-button": "Паказаць усе зьвесткі",
+	"bs-privacy-transparency-export-data-button": "Вывесьці зьвесткі",
+	"bs-privacy-transparency-export-layout-title": "Вывесьці Вашыя зьвесткі",
+	"bs-privacy-transparency-private-experience": "Узровень досьведу:$1",
+	"bs-privacy-transparency-private-rights": "Дазволы (правы): $1",
+	"bs-privacy-transparency-private-edit-count": "Лік правак: $1",
+	"bs-privacy-transparency-type-title-working": "Працоўныя зьвесткі",
+	"bs-privacy-transparency-type-title-personal": "Асабістыя зьвесткі",
+	"bs-privacy-prefs-consent-cookies": "Я прымаю захоўваньне маркёраў",
+	"bs-privacy-consent-save-button": "Захаваць",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (сёньня)",
+	"bs-privacy-consent-bool-true": "Так",
+	"bs-privacy-consent-bool-false": "Не",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прыняць усё",
+	"bs-privacy-cookie-consent-group-necessary-label": "Патрэбныя маркёры",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Захаваць",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Зачыніць",
+	"bs-privacy-consent-auth-fail": "Вы маеце прыняць усе ўмовы"
+}
