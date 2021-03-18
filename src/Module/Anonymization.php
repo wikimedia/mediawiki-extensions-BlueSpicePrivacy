@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRequestable;
 use BlueSpice\Privacy\Notifications\AnonymizationDone;
 use BlueSpice\Privacy\Notifications\RequestAnonymizationDenied;
+use MediaWiki\MediaWikiServices;
 
 class Anonymization extends ModuleRequestable {
 
@@ -60,11 +61,12 @@ class Anonymization extends ModuleRequestable {
 	 * @return \Status
 	 */
 	protected function checkUsername( $username ) {
+		$services = MediaWikiServices::getInstance();
 		$username = $this->context->getLanguage()->ucfirst( $username );
-		$user = \User::newFromName( $username );
+		$user = $services->getUserFactory()->newFromName( (string)$username );
 		$invalid = !$user instanceof \User;
 
-		if ( \User::isCreatableName( $username ) === false ) {
+		if ( $services->getUserNameUtils()->isCreatable( $username ) === false ) {
 			$invalid = true;
 		}
 
