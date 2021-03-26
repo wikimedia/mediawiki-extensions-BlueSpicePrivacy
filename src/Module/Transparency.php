@@ -74,7 +74,9 @@ class Transparency extends Module {
 					$status = \Status::newFatal( wfMessage( 'bs-privacy-handler-error', $handler ) );
 					break;
 				}
-
+				if ( empty( $result->getValue() ) ) {
+					continue;
+				}
 				$exportData = array_merge_recursive( $exportData, $result->getValue() );
 			}
 		}
