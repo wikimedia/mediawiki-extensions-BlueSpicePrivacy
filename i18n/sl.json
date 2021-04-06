@@ -4,6 +4,10 @@
 			"Eleassar"
 		]
 	},
+	"bs-privacy-anonymization-layout-label": "Anonimizacija",
+	"bs-privacy-deletion-layout-label": "Izbris računa",
+	"bs-privacy-transparency-layout-label": "Transparentnost",
+	"bs-privacy-consent-layout-label": "Privolitev k pravilniku o zasebnosti",
 	"bs-privacy-consent-bool-true": "Da",
 	"bs-privacy-consent-bool-false": "Ne"
 }
