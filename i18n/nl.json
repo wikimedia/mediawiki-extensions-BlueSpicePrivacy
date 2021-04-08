@@ -53,7 +53,7 @@
 	"bs-privacy-transparency-private-edit-count": "Aantal bewerkingen: $1",
 	"bs-privacy-transparency-type-title-content": "Vermeldingen in inhoud",
 	"bs-privacy-transparency-type-title-personal": "Persoonsgegevens",
-	"bs-privacy-prefs-consent-privacy-policy": "Ik ga akkoord met de [[MediaWiki:Privacy|privacy policy]] van deze pagina",
+	"bs-privacy-prefs-consent-privacy-policy": "Ik ga akkoord met de [[{{MediaWiki:Privacypage}}|privacy policy]] van deze site",
 	"bs-privacy-consent-save-button": "Opslaan",
 	"bs-privacy-admin-consent-grid-column-user": "Gebruikersnaam",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dagen}} geleden)",
@@ -76,5 +76,6 @@
 	"bs-privacy-anonymization-error-retrieving-name": "Er trad een fout op tijdens het ophalen van de nieuwe gebruikersnaam",
 	"bs-privacy-prefs-consent-cookies": "Ik accepteer dat er cookies worden opgeslagen",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} data geëxporteerd",
-	"bs-privacy-cookie-consent-group-necessary-label": "Benodigde cookies"
+	"bs-privacy-cookie-consent-group-necessary-label": "Benodigde cookies",
+	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de [[{{MediaWiki:Termsofservicepage}}|servicevoorwaarden]] van deze site"
 }

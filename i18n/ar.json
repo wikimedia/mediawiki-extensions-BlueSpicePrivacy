@@ -173,5 +173,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "إغلاق",
 	"bs-privacy-consent-cookie-settings-label": "تغيير موافقة ملفات تعريف الارتباط",
 	"right-bs-privacy-admin": "تنفيذ فعل إداري خصوصية",
-	"bs-privacy-consent-auth-fail": "عليك قبول الشروط"
+	"bs-privacy-consent-auth-fail": "عليك قبول الشروط",
+	"bs-privacy-consent-auth-step": "للمواصلة، رجاءً قبول الشروط التالية"
 }
