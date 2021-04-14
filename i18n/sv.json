@@ -22,7 +22,7 @@
 	"bs-privacy-module-no-function": "\"$1\" är inte ett giltigt funktionsnamn för denna modul",
 	"bs-privacy-anonymization-api-invalid-username": "Ogiltigt användarnamn",
 	"bs-privacy-api-username-mismatch": "Användaren som gör förfrågan är olikt från den innloggede användaren",
-	"bs-privacy-anonymize-login-button": "Logg på igen med ditt #nya användarnamn",
+	"bs-privacy-anonymize-login-button": "Logga in igen med ditt nya användarnamn",
 	"bs-privacy-invalid-user": "Användaren är inte giltig",
 	"bs-privacy-request-submit-failed": "Misslyckades att avbryta begäran",
 	"bs-privacy-request-cancel-failed": "Misslyckades att avbryta begäran",
