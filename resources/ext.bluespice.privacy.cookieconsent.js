@@ -1,6 +1,6 @@
 ( function( mw, $, bs ) {
 	var handlerConfig = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" );
-	mw.loader.using( handlerConfig.RLModule ).done( function() {
+	mw.loader.using( [ 'ext.bs.privacy.cookieconsent.base', handlerConfig.RLModule ] ).done( function() {
 		var callback = handlerConfig.class;
 
 		var func = bs.privacy.util.funcFromCallback( callback );
