@@ -59,7 +59,7 @@ class Transparency extends Module {
 	 */
 	public function runHandlers( $action, $data ) {
 		$status = \Status::newGood();
-		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$exportData = [];
 		/** @var IPrivacyHandler $handler */

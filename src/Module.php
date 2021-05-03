@@ -32,7 +32,7 @@ abstract class Module implements IModule {
 	 */
 	public function runHandlers( $action, $data ) {
 		$status = \Status::newGood();
-		$db = wfGetDB( DB_MASTER );
+		$db = wfGetDB( DB_PRIMARY );
 		$db->startAtomic( __METHOD__ );
 
 		foreach ( $this->getHandlers() as $handler ) {

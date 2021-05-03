@@ -28,7 +28,7 @@ abstract class ModuleRequestable extends Module {
 		parent::__construct( $context );
 
 		$services = MediaWikiServices::getInstance();
-		$this->database = $services->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$this->database = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$this->requestsEnabled = $services->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'PrivacyEnableRequests' );
 	}
