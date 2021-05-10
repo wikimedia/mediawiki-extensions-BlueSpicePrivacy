@@ -17,7 +17,7 @@ class PrivacyCenter extends \BlueSpice\SpecialPage {
 	 * @return bool
 	 */
 	public function userCanExecute( \User $user ) {
-		return $user->isLoggedIn();
+		return $user->isRegistered();
 	}
 
 	/**

@@ -8,7 +8,7 @@ class AddPrivacyUrls extends PersonalUrls {
 
 	protected function skipProcessing() {
 		$user = $this->getContext()->getUser();
-		return !$user->isLoggedIn();
+		return !$user->isRegistered();
 	}
 
 	protected function doProcess() {
