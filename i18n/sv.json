@@ -102,7 +102,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Stäng",
 	"bs-privacy-anonymization-success-anonymizing": "Ditt konto har blivit anonymiserad! Det nya användarnamnet ditt är $1",
 	"bs-privacy-api-username-mismatch": "Användaren som gör förfrågan är olikt från den innloggede användaren",
-	"bs-privacy-anonymize-login-button": "Logg på igen med ditt #nya användarnamn",
+	"bs-privacy-anonymize-login-button": "Logga in igen med ditt nya användarnamn",
 	"bs-privacy-consent-layout-label": "Integritetsreglerssamtycke",
 	"echo-pref-tooltip-bs-privacy-cat": "Avisera mig när statusen hos min kontoanonymisering eller raderingsbegäran ändras",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Inställningar för informationkapselsamtycke",
