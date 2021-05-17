@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"TheRukk",
 			"ValeJappo"
 		]
 	},
 	"bs-privacy-api-error-generic": "Si è verificato un errore",
+	"bs-privacy-anonymization-layout-label": "Anonimizzazione",
 	"bs-privacy-anonymization-new-username-label": "Nuovo nome utente",
 	"bs-privacy-anonymization-api-invalid-username": "Nome utente non valido",
 	"bs-privacy-invalid-user": "L'utente non è valido",
@@ -23,6 +25,7 @@
 	"bs-privacy-admin-request-grid-action-approve": "Approva",
 	"bs-privacy-admin-request-grid-column-deny": "Nega",
 	"bs-privacy-admin-request-grid-action-deny": "Nega",
+	"bs-privacy-transparency-layout-label": "Trasparenza",
 	"bs-privacy-transparency-export-data-button": "Esporta dati",
 	"bs-privacy-transparency-view-data-dialog-close": "Chiudi",
 	"bs-privacy-transparency-private-username": "Nome utente: $1",
