@@ -6,7 +6,7 @@
 	},
 	"bs-privacy": "BlueSpice Privacy",
 	"bs-privacy-desc": "Management page for user privacy settings",
-	"bs-privacy-admintool-label": "Privacy Admin",
+	"bs-privacy-admintool-label": "Privacy admin",
 	"bs-privacy-header": "Log of all actions users took regarding privacy",
 	"privacycenter": "Privacy center",
 	"privacyadmin": "Privacy admin",
