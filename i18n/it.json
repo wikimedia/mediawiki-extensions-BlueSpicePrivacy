@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"TheRukk",
 			"ValeJappo"
@@ -50,5 +51,7 @@
 	"logentry-bs-privacy-anonymization": "$4 ha reso anonimo l'utenza. Nuovo nome utente: $5",
 	"logentry-bs-privacy-deletion": "L'utente $4 ha cancellato l'utenza.",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|ha}} inviato una richiesta di anonimizzazione del proprio account con commento: $4",
-	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto"
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
+	"bs-privacy-anonymization-layout-label": "Anonimizzazione",
+	"bs-privacy-transparency-layout-label": "Trasparenza"
 }
