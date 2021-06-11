@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bugoslav"
+			"Bugoslav",
+			"Neptune, the Mystic"
 		]
 	},
-	"logentry-bs-privacy-anonymization": "Suradnik/ca $4 anonimizirao/la je račun suradnika/ce $2. Novo suradničko ime: $5"
+	"logentry-bs-privacy-anonymization": "Suradnik/ca $4 anonimizirao/la je račun suradnika/ce $2. Novo suradničko ime: $5",
+	"bs-privacy-consent-auth-step": "Prihvatite sljedeće uvjete kako biste nastavili",
+	"bs-privacy-consent-auth-fail": "Morate prihvatiti sve uvjete"
 }

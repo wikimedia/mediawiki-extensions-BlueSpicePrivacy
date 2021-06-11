@@ -125,5 +125,17 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "저장",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "닫기",
-	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기"
+	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기",
+	"bs-privacy-admintool-label": "프라이버시 관리",
+	"privacycenter": "프라이버시 센터",
+	"privacyadmin": "프라이버시 관리",
+	"bs-privacy-privacy-center-subtitle": "프라이버시 설정 개요",
+	"bs-privacy-deletion-submit-request-label": "의견 (선택사항)",
+	"bs-privacy-request-denied-comment": "의견: $1",
+	"notification-bs-privacy-request-submitted": "새 프라이버시 요청을 제출하였습니다!",
+	"notification-bs-privacy-request-submitted-body": "\"$1\" 사용자가 새 프라이버시 요청을 제출하였습니다. 모듈: $3. 댓글: $2",
+	"bs-privacy-cookie-consent-group-necessary-label": "Necessary 쿠키",
+	"bs-privacy-cookie-convenience-group-label": "Convenience 쿠키",
+	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
+	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다"
 }

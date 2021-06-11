@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dejan Savuljesku <savuljesku@hallowelt.com>",
-			"Umherirrender"
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"bs-privacy": "Name of the extension",
@@ -135,7 +136,7 @@
 	"logentry-bs-privacy-request-close-anonymization": "Log entry for when user has closed anonimization request. $1 - acting user, $2 - acting user username, $4 - user anonimization request is about",
 	"logentry-bs-privacy-request-cancel-anonymization": "Log entry for when user has canceled anonimization request. $1 - acting user, $2 - acting user username",
 	"logentry-bs-privacy-request-approve-anonymization": "Log entry for when user has approved anonimization request. $1 - acting user, $2 - acting user username, $4 - user approving the request",
-	"logentry-bs-privacy-request-deny-anonymization": "Log entry for when user has denied anonimization request. $1 - acting user, $2 - acting user username, $4 - user denying the request, $5 - comment",
+	"logentry-bs-privacy-request-deny-anonymization": "Log entry for when a user has denied an anonymization request.\n* $1 - denying user, $2 - denying user username,\n* $4 - requesting user,\n* $5 - comment",
 	"logentry-bs-privacy-request-submit-deletion": "Log entry for when user has submitted deletion request. $1 - acting user, $2 - acting user username, $4 - comment",
 	"logentry-bs-privacy-request-close-deletion": "Log entry for when user has closed deletion request. $1 - acting user, $2 - acting user username, $4 - user deletion request is about",
 	"logentry-bs-privacy-request-cancel-deletion": "Log entry for when user has canceled deletion request. $1 - acting user, $2 - acting user username",

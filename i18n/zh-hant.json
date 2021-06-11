@@ -107,7 +107,7 @@
 	"bs-privacy-prefs-consent-cookies": "我同意儲存 cookie",
 	"bs-privacy-prefs-consent-privacy-policy": "我接受此站台的[[{{MediaWiki:Privacypage}}|隱私權政策]]",
 	"bs-privacy-prefs-consent-cookies-help": "Cookie 是一種儲存在您的電腦與 session 之間的小型資訊塊，能讓使用者的體驗上更順暢",
-	"bs-privacy-prefs-consent-privacy-policy-help": "透過勾選此欄位，代表您已確認有閱讀且了解此站台的隱私權政策",
+	"bs-privacy-prefs-consent-privacy-policy-help": "透過勾選此欄位，代表您已確認您有閱讀過並且了解此站台的隱私權政策",
 	"bs-privacy-consent-layout-label": "隱私權政策許可",
 	"bs-privacy-consent-layout-help": "檢視並更改您的隱私權同意設定",
 	"bs-privacy-consent-save-button": "儲存",
@@ -169,5 +169,10 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookie 增進在站台的使用者體驗（儲存使用者偏好設定、動態元件狀態…）",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "儲存",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "關閉",
-	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可"
+	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可",
+	"bs-privacy-prefs-consent-tos": "我接受此站台的[[{{MediaWiki:Termsofservicepage}}|服務條款]]",
+	"bs-privacy-prefs-consent-tos-help": "透過勾選此欄位，代表您已確認您有閱讀過並且承認此站台的服務條款",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "若要繼續，請接受以下條款",
+	"bs-privacy-consent-auth-fail": "您必須接受所有條款"
 }

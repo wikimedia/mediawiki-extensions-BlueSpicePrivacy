@@ -169,5 +169,10 @@
 	"bs-privacy-cookie-convenience-group-desc": "Le cookie migliorane l'esperienze utende sus a 'u site (preferenze de reggistrazione de l'utende, state de le combonende dinamece...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Reggìstre",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Achiude",
-	"bs-privacy-consent-cookie-settings-label": "Cange 'u conzense a le cookie"
+	"bs-privacy-consent-cookie-settings-label": "Cange 'u conzense a le cookie",
+	"bs-privacy-prefs-consent-tos": "Accette le [[{{MediaWiki:Termsofservicepage}}|termine de servizie]] de stu site",
+	"bs-privacy-prefs-consent-tos-help": "Confermanne stu cambe, ste conferme ca è lette e accettate le termine de servizie pe stu site",
+	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-consent-auth-step": "Pe condinuò, accette ste termine",
+	"bs-privacy-consent-auth-fail": "TU a accettà tutte le termine"
 }
