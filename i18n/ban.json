@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chinamoonroll",
 			"NoiX180"
 		]
 	},
+	"bs-privacy-transparency-private-blocked": "Kacadel: Inggih (olih $1)",
 	"bs-privacy-consent-save-button": "Raksa",
+	"bs-privacy-consent-bool-true": "Inggih",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Raksa"
 }
