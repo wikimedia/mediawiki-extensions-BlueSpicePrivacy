@@ -68,7 +68,7 @@
 				"convenience": {
 					"label": "bs-privacy-cookie-convenience-group-label",
 					"desc": "bs-privacy-cookie-convenience-group-desc",
-					"type": "opt-out"
+					"type": "opt-in"
 				}
 			},
 			"CookieConsentNativeMWCookies": {
