@@ -28,7 +28,7 @@ class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthentica
 	 * @inheritDoc
 	 */
 	public function beginSecondaryAuthentication( $user, array $reqs ) {
-		if ( !$this->userAccepted( $user ) ) {
+		if ( !$this->getModule()->hasUserConsented( $user ) ) {
 			return $this->returnUI();
 		}
 
@@ -102,21 +102,6 @@ class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthentica
 
 		$user->saveSettings();
 		return AuthenticationResponse::newPass( $user->getName() );
-	}
-
-	/**
-	 * @param User $user
-	 * @return bool
-	 */
-	protected function userAccepted( User $user ) {
-		$module = $this->getModule();
-		foreach ( $module->getOptions() as $name => $prefName ) {
-			if ( !$this->getOptionsManager()->getOption( $user, $prefName, false ) ) {
-				return false;
-			}
-		}
-
-		return true;
 	}
 
 	/**
