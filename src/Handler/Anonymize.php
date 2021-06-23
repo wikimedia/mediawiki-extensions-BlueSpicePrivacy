@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use MediaWiki\MediaWikiServices;
 use RequestContext;
 
 class Anonymize implements IPrivacyHandler {
@@ -104,10 +105,11 @@ class Anonymize implements IPrivacyHandler {
 	protected function moveUserPage( $newUsername ) {
 		$oldUserPage = $this->oldUser->getUserPage();
 		$newUserPage = \Title::makeTitle( NS_USER, $newUsername );
+		$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
 		if ( $oldUserPage->exists() ) {
 			$movePage = new \MovePage( $oldUserPage, $newUserPage );
 			$movePage->move(
-				$this->user,
+				$util->getMaintenanceUser()->getUser(),
 				'',
 				false
 			);
