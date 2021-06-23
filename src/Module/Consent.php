@@ -3,9 +3,11 @@
 namespace BlueSpice\Privacy\Module;
 
 use BlueSpice\Privacy\CookieConsentProviderRegistry;
+use BlueSpice\Privacy\Html\CheckLinkField;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
 use BlueSpice\Services;
+use User;
 
 class Consent extends Module {
 	/**
@@ -153,10 +155,10 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
+	 * @param string|null $type
 	 * @return array
 	 */
-	public function getAuthFormDescriptors() {
+	public function getAuthFormDescriptors( $type = 'checkbox' ) {
 		$descriptors = [];
 		foreach ( $this->options as $name => $preferenceName ) {
 			// Give grep a chance to find the usages:
@@ -164,9 +166,11 @@ class Consent extends Module {
 			// bs-privacy-prefs-consent-privacy-policy-help
 			$helpMessageKey = "$preferenceName-help";
 			$descriptors[$name] = [
-				'type' => 'checkbox',
+				'type' => $type,
+				'class' => CheckLinkField::class,
 				'label' => wfMessage( $preferenceName ),
-				'help' => wfMessage( $helpMessageKey ),
+				'help' => wfMessage( $helpMessageKey ) ,
+				'default' => $this->user->getOption( $preferenceName ),
 				// B/C
 				'help-message' => $helpMessageKey,
 				'optional' => true,
@@ -217,6 +221,22 @@ class Consent extends Module {
 				]
 			];
 		}
+	}
+
+	/**
+	 * Check if user consented
+	 *
+	 * @param User $user
+	 * @return bool
+	 */
+	public function hasUserConsented( User $user ) {
+		foreach ( $this->getOptions() as $name => $prefName ) {
+			if ( !$user->getOption( $prefName, false ) ) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 }

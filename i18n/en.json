@@ -178,5 +178,8 @@
 	"bs-privacy-prefs-consent-tos-help": "By checking this field you confirm that you have read and acknowledged terms of service for this site",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "To continue, please accept the following terms",
-	"bs-privacy-consent-auth-fail": "You must accept all terms"
+	"bs-privacy-consent-auth-fail": "You must accept all terms",
+	"bs-privacy-module-consent-accepted": "You have already accepted all terms",
+	"bs-privacy-module-consent-set-success": "Consent stored successfully",
+	"bs-privacy-module-consent-set-fail": "Failed to save consent!"
 }
