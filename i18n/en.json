@@ -187,5 +187,6 @@
 	"bs-privacy-consent-auth-fail": "You must accept all terms",
 	"bs-privacy-module-consent-accepted": "You have already accepted all terms",
 	"bs-privacy-module-consent-set-success": "Consent stored successfully",
-	"bs-privacy-module-consent-set-fail": "Failed to save consent!"
+	"bs-privacy-module-consent-set-fail": "Failed to save consent!",
+	"privacyconsent": "Consent to Privacy Policy"
 }
