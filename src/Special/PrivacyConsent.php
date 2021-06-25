@@ -18,6 +18,14 @@ class PrivacyConsent extends \FormSpecialPage {
 	 * @param string $sub
 	 */
 	public function execute( $sub ) {
+		$this->setHeaders();
+
+		if ( !$this->getUser()->isRegistered() ) {
+			$this->getOutput()->showPermissionsErrorPage( [
+				'apierror-mustbeloggedin-generic'
+			] );
+			return;
+		}
 		if ( $this->module->hasUserConsented( $this->getUser() ) ) {
 			$this->getOutput()->addWikiMsg( 'bs-privacy-module-consent-accepted' );
 			return;
