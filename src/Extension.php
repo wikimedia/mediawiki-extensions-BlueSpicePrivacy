@@ -9,11 +9,6 @@ class Extension extends \BlueSpice\Extension {
 			[ Auth\Provider\ConsentSecondaryAuthenticationProvider::class ] = [
 				'class' => Auth\Provider\ConsentSecondaryAuthenticationProvider::class
 			];
-		} else {
-			$GLOBALS[ 'wgAuthManagerAutoConfig' ][ 'primaryauth' ]
-			[ Auth\Provider\SignupPrimaryAuthenticationProvider::class ] = [
-				'class' => Auth\Provider\SignupPrimaryAuthenticationProvider::class
-			];
 		}
 
 		$GLOBALS['wgLogRestrictions']['bs-privacy'] = 'bs-privacy-admin';
