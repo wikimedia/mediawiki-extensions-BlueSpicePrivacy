@@ -55,7 +55,7 @@ class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthentica
 			// we don't want that user to be able to accept for the target user
 			return AuthenticationResponse::newAbstain();
 		}
-		if ( !$this->userAccepted( $user ) ) {
+		if ( !$this->getModule()->hasUserConsented( $user ) ) {
 			return $this->returnUI();
 		}
 
