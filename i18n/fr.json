@@ -6,6 +6,7 @@
 			"Derugon",
 			"Gomoko",
 			"Thibaut120094",
+			"VIGNERON",
 			"Verdy p",
 			"Wladek92"
 		]
@@ -184,5 +185,9 @@
 	"bs-privacy-consent-cookie-settings-label": "Modifier l’acceptation des cookies",
 	"termsofservicepage": "Project:Terms of service",
 	"bs-privacy-consent-auth-step": "Pour continuer, veuillez accepter les conditions suivantes",
-	"bs-privacy-consent-auth-fail": "Vous devez accepter toutes les conditions"
+	"bs-privacy-consent-auth-fail": "Vous devez accepter toutes les conditions",
+	"bs-privacy-module-consent-accepted": "Vous avez déjà accepté toutes les conditions.",
+	"bs-privacy-module-consent-set-success": "Consentement bien stocké",
+	"bs-privacy-module-consent-set-fail": "Échec de sauvegarde du consentement !",
+	"privacyconsent": "Consentement à la politique de confidentialité"
 }
