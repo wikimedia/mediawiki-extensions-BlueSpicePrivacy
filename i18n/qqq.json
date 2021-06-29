@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dejan Savuljesku <savuljesku@hallowelt.com>",
+			"Jeeputer",
 			"Umherirrender",
 			"Verdy p"
 		]
@@ -181,8 +182,8 @@
 	"termsofservicepage": "Page where the terms of service are located",
 	"bs-privacy-consent-auth-step": "Label for the secondary authentication step prompting user to accept terms",
 	"bs-privacy-consent-auth-fail": "Error message when user does not accept the terms",
-	"bs-privacy-module-consent-accepted": "Message shown when user navigates to Special:PrivacyConsent, but has already accepted all terms",
-	"bs-privacy-module-consent-set-success": "Message shown when consents are set correctly",
+	"bs-privacy-module-consent-accepted": "هم‌اکنون با تمامی شرایط موافقت کرده‌اید",
+	"bs-privacy-module-consent-set-success": "موافقت با موفقیت ذخیره شد",
 	"bs-privacy-module-consent-set-fail": "Message shown when setting consents failed",
-	"privacyconsent": "Title of {{Special:PrivacyConsent}}"
+	"privacyconsent": "موافقت با سیاست حرثم خصوصی"
 }

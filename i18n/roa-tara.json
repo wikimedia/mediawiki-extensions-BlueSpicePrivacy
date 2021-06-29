@@ -174,5 +174,9 @@
 	"bs-privacy-consent-cookie-settings-label": "Cange 'u conzense a le cookie",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "Pe condinuò, accette ste termine",
-	"bs-privacy-consent-auth-fail": "TU a accettà tutte le termine"
+	"bs-privacy-consent-auth-fail": "TU a accettà tutte le termine",
+	"bs-privacy-module-consent-accepted": "E' ggià accettate tutte le termine",
+	"bs-privacy-module-consent-set-success": "Consense reggistrate",
+	"bs-privacy-module-consent-set-fail": "'Mbossibbele reggistrà 'u consense!",
+	"privacyconsent": "Consense a le Regole d'a Privacy"
 }
