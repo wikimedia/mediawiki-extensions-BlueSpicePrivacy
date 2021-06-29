@@ -398,7 +398,7 @@
 			"description": "If true, will grey-out the screen and prevent user from doing anything until cookies are accepted"
 		},
 		"PrivacyPrivacyPolicyMandatory": {
-			"value": true,
+			"value": false,
 			"description": "If true, user will be forced to consent to privacy policy and terms of service at first login"
 		}
 	},
