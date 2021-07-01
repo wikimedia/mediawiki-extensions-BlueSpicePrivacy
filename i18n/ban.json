@@ -5,6 +5,10 @@
 			"NoiX180"
 		]
 	},
+	"bs-privacy-deletion-submit-request-label": "Penampen (dadi-dadi)",
+	"bs-privacy-request-denied-comment": "Penampen: $1",
+	"bs-privacy-admin-deny-comment-placeholder": "Panampen",
+	"bs-privacy-admin-request-grid-column-comment": "Panampen",
 	"bs-privacy-transparency-view-data-dialog-title": "Cingak data ragané",
 	"bs-privacy-transparency-private-blocked": "Kacadel: Inggih (olih $1)",
 	"bs-privacy-consent-save-button": "Raksa",

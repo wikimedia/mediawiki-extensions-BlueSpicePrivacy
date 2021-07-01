@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"Lorem Ipsum",
 			"TheRukk",
 			"ValeJappo"
 		]
@@ -53,5 +54,7 @@
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|ha}} inviato una richiesta di anonimizzazione del proprio account con commento: $4",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salva",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi",
+	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
+	"privacyconsent": "Acconsentire alla privacy policy"
 }
