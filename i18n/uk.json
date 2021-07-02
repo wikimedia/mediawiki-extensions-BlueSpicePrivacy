@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Gzhegozh",
 			"Movses",
 			"Piramidion",
@@ -173,5 +174,7 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті (збереження налаштувань користувача, стан динамічних компонентів тощо)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Зберегти",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Закрити",
-	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies"
+	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
+	"termsofservicepage": "Project:Умови_використання",
+	"bs-privacy-consent-auth-fail": "Вам потрібно прийняти усі умови"
 }
