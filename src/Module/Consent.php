@@ -243,4 +243,16 @@ class Consent extends Module {
 		return true;
 	}
 
+	/**
+	 * Check if PrivacyPolicy consent is mandatory
+	 *
+	 * @return bool
+	 */
+	public function isPrivacyPolicyConsentMandatory() {
+		if ( !$this->config->has( 'PrivacyPrivacyPolicyMandatory' ) ) {
+			return false;
+		}
+
+		return $this->config->get( 'PrivacyPrivacyPolicyMandatory' );
+	}
 }
