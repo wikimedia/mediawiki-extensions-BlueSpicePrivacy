@@ -3,11 +3,6 @@
 namespace BlueSpice\Privacy;
 
 interface IPrivacyHandler {
-	/**
-	 *
-	 * @param \Database $db
-	 */
-	public function __construct( \Database $db );
 
 	/**
 	 * @param string $oldUsername
