@@ -369,7 +369,8 @@
 		],
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
-		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback"
+		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback",
+		"SpecialPageBeforeExecute": "\\BlueSpice\\Privacy\\Hook\\SpecialPageBeforeExecute\\RedirectToConsent::callback"
 	},
 	"callback": "\\BlueSpice\\Privacy\\Extension::onCallback",
 	"config_prefix": "bsg",
