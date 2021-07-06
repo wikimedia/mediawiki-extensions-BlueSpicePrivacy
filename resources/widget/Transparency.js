@@ -8,6 +8,12 @@
 		cfg.title = cfg.title || mw.message( 'bs-privacy-transparency-layout-label' ).text();
 		cfg.subtitle = cfg.subtitle || mw.message( 'bs-privacy-transparency-layout-help' ).text();
 		bs.privacy.widget.Transparency.parent.call( this, cfg );
+
+		this.api = new mw.Api( {
+			ajax: {
+				timeout: 300 * 1000 // 5min
+			}
+		} );
 	};
 
 	OO.inheritClass( bs.privacy.widget.Transparency, bs.privacy.widget.Privacy );
