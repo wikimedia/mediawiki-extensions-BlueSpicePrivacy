@@ -10,6 +10,11 @@ use SpecialUserLogin;
 use SpecialUserLogout;
 
 class RedirectToConsent {
+
+	/**
+	 *
+	 * @var array
+	 */
 	private static $exceptions = [
 		SpecialUserLogin::class,
 		SpecialUserLogout::class,
