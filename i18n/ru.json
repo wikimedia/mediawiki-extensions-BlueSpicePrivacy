@@ -5,6 +5,7 @@
 			"Alexandr Efremov",
 			"Athena Atterdag",
 			"Diralik",
+			"Kareyac",
 			"Movses",
 			"Okras",
 			"Romanko Mikhail"
@@ -42,5 +43,8 @@
 	"notification-bs-privacy-request-denied-deletion": "Ваш запрос на удаление был отклонен!",
 	"notification-bs-privacy-request-denied-deletion-body": "Пользователь $1 отклонил ваш запрос на удаление аккаунта. Комментарий: $2",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Настройки согласия на обработку cookies",
-	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie"
+	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie",
+	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
+	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
+	"privacyconsent": "Согласие с Политикой конфиденциальности"
 }
