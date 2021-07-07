@@ -6,15 +6,30 @@ use BlueSpice\Privacy\Module\Consent;
 use BlueSpice\Privacy\Special\PrivacyConsent;
 use MediaWiki\MediaWikiServices;
 use SpecialPage;
+use SpecialUserLogin;
+use SpecialUserLogout;
 
 class RedirectToConsent {
+	private static $exceptions = [
+		SpecialUserLogin::class,
+		SpecialUserLogout::class,
+		PrivacyConsent::class,
+	];
+
 	/**
 	 * @param SpecialPage $sp
 	 * @param string $subPage
 	 * @return bool
 	 */
 	public static function callback( SpecialPage $sp, $subPage ) {
-		if ( $sp instanceof PrivacyConsent ) {
+		foreach ( static::$exceptions as $class ) {
+			if ( $sp instanceof $class ) {
+				return true;
+			}
+		}
+
+		if ( !$sp->getUser()->isRegistered() ) {
+			// Only applies to logged in users
 			return true;
 		}
 
