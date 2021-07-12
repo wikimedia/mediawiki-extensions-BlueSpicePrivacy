@@ -176,5 +176,9 @@
 	"bs-privacy-consent-cookie-settings-label": "Çerez onayını değiştir",
 	"termsofservicepage": "Project:Hizmet_şartları",
 	"bs-privacy-consent-auth-step": "Devam etmek için lütfen aşağıdaki şartları kabul edin",
-	"bs-privacy-consent-auth-fail": "Tüm şartları kabul etmelisiniz"
+	"bs-privacy-consent-auth-fail": "Tüm şartları kabul etmelisiniz",
+	"bs-privacy-module-consent-accepted": "Tüm şartları zaten kabul ettiniz",
+	"bs-privacy-module-consent-set-success": "İzin başarıyla saklandı",
+	"bs-privacy-module-consent-set-fail": "İzin kaydedilemedi!",
+	"privacyconsent": "Gizlilik Politikası Onayı"
 }

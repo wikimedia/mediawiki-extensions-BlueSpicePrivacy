@@ -3,6 +3,7 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
+			"McDutchie",
 			"Optilete"
 		]
 	},
@@ -66,7 +67,7 @@
 	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5",
 	"logentry-bs-privacy-deletion": "De gebruiker $4 heeft het profiel verwijderd",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} data geëxporteerd",
-	"echo-category-title-bs-privacy-cat": "Privacy",
+	"echo-category-title-bs-privacy-cat": "Privacyacties",
 	"notification-bs-privacy-login-url": "Bij de wiki aanmelden",
 	"notification-bs-privacy-center-url": "CentrumVoorPersoonsgegevens",
 	"notification-bs-privacy-anonymization-done": "Uw profiel is anoniem gemaakt!",

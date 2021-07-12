@@ -43,5 +43,6 @@
 	"notification-bs-privacy-request-denied-anonymization-body": "Der Benutzer $1 hat Ihre Anfrage zur Anonymisierung Ihres Benutzerkontos auf den Benutzernamen „$2“ abgelehnt. Kommentar: $3",
 	"notification-bs-privacy-request-denied-deletion": "Ihre Löschanfrage wurde abgelehnt!",
 	"notification-bs-privacy-request-denied-deletion-body": "Der Benutzer $1 hat Ihre Anfrage zur Löschung Ihres Benutzerkontos abgelehnt. Kommentar: $2",
-	"bs-privacy-consent-auth-fail": "Sie müssen alle Nutzungsbedingungen akzeptieren"
+	"bs-privacy-consent-auth-fail": "Sie müssen alle Nutzungsbedingungen akzeptieren",
+	"bs-privacy-module-consent-accepted": "Sie haben bereits alle Bedingungen akzeptiert."
 }

@@ -177,5 +177,9 @@
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
-	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren"
+	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren",
+	"bs-privacy-module-consent-accepted": "Du hast bereits alle Bedingungen akzeptiert.",
+	"bs-privacy-module-consent-set-success": "Zustimmung erfolgreich gespeichert",
+	"bs-privacy-module-consent-set-fail": "Fehler beim Speichern der Zustimmung!",
+	"privacyconsent": "Zustimmung zur Datenschutzerklärung"
 }
