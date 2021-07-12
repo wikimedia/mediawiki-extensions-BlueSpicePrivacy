@@ -5,6 +5,7 @@
 			"Alexandr Efremov",
 			"Athena Atterdag",
 			"Diralik",
+			"Kareyac",
 			"Movses",
 			"Okras",
 			"Romanko Mikhail"
@@ -42,5 +43,8 @@
 	"bs-privacy-admin-request-grid-action-deny": "Отклонить",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Нет",
-	"logentry-bs-privacy-deletion": "Участник $4 удалил учётную запись"
+	"logentry-bs-privacy-deletion": "Участник $4 удалил учётную запись",
+	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
+	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
+	"privacyconsent": "Согласие с Политикой конфиденциальности"
 }

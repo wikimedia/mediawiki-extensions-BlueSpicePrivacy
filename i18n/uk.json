@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Gzhegozh",
 			"Movses",
 			"Piramidion",
@@ -173,5 +174,14 @@
 	"bs-privacy-cookie-convenience-group-label": "Cookies для зручності",
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті (збереження налаштувань користувача, стан динамічних компонентів тощо)",
 	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
-	"echo-pref-tooltip-bs-privacy-cat": "Сповіщати мене, коли змінюється статус мого запиту щодо анонімізації або вилучення мого облікового запису"
+	"echo-pref-tooltip-bs-privacy-cat": "Сповіщати мене, коли змінюється статус мого запиту щодо анонімізації або вилучення мого облікового запису",
+	"bs-privacy-prefs-consent-tos": "Я приймаю [[{{MediaWiki:Termsofservicepage}}|умови використання]] цього сайту",
+	"bs-privacy-prefs-consent-tos-help": "Перевіряючи це поле, ви підтверджуєте, що прочитали та визнали умови використання цього веб-сайту",
+	"termsofservicepage": "Project:Умови_використання",
+	"bs-privacy-consent-auth-step": "Щоб продовжити, прийміть наступні умови",
+	"bs-privacy-consent-auth-fail": "Вам потрібно прийняти усі умови",
+	"bs-privacy-module-consent-accepted": "Ви вже прийняли всі умови",
+	"bs-privacy-module-consent-set-success": "Згода успішно збережена",
+	"bs-privacy-module-consent-set-fail": "Не вдалося зберегти згоду!",
+	"privacyconsent": "Згода на політику конфіденційності"
 }

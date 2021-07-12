@@ -174,5 +174,9 @@
 	"echo-pref-tooltip-bs-privacy-cat": "Avvisame quanne 'u state d'a richieste de cangiamende de l'anonimizzazzione d'u cunde o d'a scangellazione",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "Pe condinuò, accette ste termine",
-	"bs-privacy-consent-auth-fail": "TU a accettà tutte le termine"
+	"bs-privacy-consent-auth-fail": "TU a accettà tutte le termine",
+	"bs-privacy-module-consent-accepted": "E' ggià accettate tutte le termine",
+	"bs-privacy-module-consent-set-success": "Consense reggistrate",
+	"bs-privacy-module-consent-set-fail": "'Mbossibbele reggistrà 'u consense!",
+	"privacyconsent": "Consense a le Regole d'a Privacy"
 }

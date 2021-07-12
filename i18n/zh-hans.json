@@ -3,6 +3,8 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Ff98sha",
+			"GuoPC",
+			"Lakejason0",
 			"Ps2049",
 			"VulpesVulpes825",
 			"WQL",
@@ -177,5 +179,10 @@
 	"bs-privacy-cookie-convenience-group-label": "便捷的Cookie",
 	"bs-privacy-cookie-convenience-group-desc": "用以在此站点上提升用户体验的Cookie（保存用户偏好设置、动态组件状态等）。",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "保存",
-	"bs-privacy-consent-cookie-settings-label": "更改Cookie许可"
+	"bs-privacy-consent-cookie-settings-label": "更改Cookie许可",
+	"termsofservicepage": "Project:服务条款",
+	"bs-privacy-module-consent-accepted": "您已经接受了所有条款",
+	"bs-privacy-module-consent-set-success": "许可已成功存储",
+	"bs-privacy-module-consent-set-fail": "许可存储失败！",
+	"privacyconsent": "同意隐私政策"
 }

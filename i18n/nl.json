@@ -3,6 +3,7 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
+			"McDutchie",
 			"Optilete"
 		]
 	},
@@ -61,7 +62,7 @@
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nee",
 	"logentry-bs-privacy-deletion": "De gebruiker $4 heeft het profiel verwijderd",
-	"echo-category-title-bs-privacy-cat": "Privacy",
+	"echo-category-title-bs-privacy-cat": "Privacyacties",
 	"notification-bs-privacy-login-url": "Bij de wiki aanmelden",
 	"notification-bs-privacy-center-url": "CentrumVoorPersoonsgegevens",
 	"notification-bs-privacy-anonymization-done": "Uw profiel is anoniem gemaakt!",
