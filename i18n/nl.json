@@ -4,7 +4,8 @@
 			"Elroy",
 			"Mainframe98",
 			"McDutchie",
-			"Optilete"
+			"Optilete",
+			"Romaine"
 		]
 	},
 	"privacycenter": "Centrum voor persoonsgegevens",
@@ -54,7 +55,9 @@
 	"bs-privacy-transparency-private-blocked": "Geblokkeerd: ja (door $1)",
 	"bs-privacy-transparency-private-edit-count": "Aantal bewerkingen: $1",
 	"bs-privacy-transparency-type-title-content": "Vermeldingen in inhoud",
+	"bs-privacy-transparency-type-title-working": "Werkgegevens",
 	"bs-privacy-transparency-type-title-personal": "Persoonsgegevens",
+	"bs-privacy-transparency-type-title-actions": "Actiegegevens",
 	"bs-privacy-prefs-consent-cookies": "Ik accepteer dat er cookies worden opgeslagen",
 	"bs-privacy-prefs-consent-privacy-policy": "Ik ga akkoord met de [[{{MediaWiki:Privacypage}}|privacy policy]] van deze site",
 	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de [[{{MediaWiki:Termsofservicepage}}|servicevoorwaarden]] van deze site",
