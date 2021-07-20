@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"Lorem Ipsum",
 			"TheRukk",
 			"ValeJappo"
 		]
@@ -53,5 +54,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salva",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi",
 	"bs-privacy-anonymization-layout-label": "Anonimizzazione",
-	"bs-privacy-transparency-layout-label": "Trasparenza"
+	"bs-privacy-transparency-layout-label": "Trasparenza",
+	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
+	"privacyconsent": "Acconsentire alla privacy policy"
 }

@@ -3,7 +3,9 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
-			"Optilete"
+			"McDutchie",
+			"Optilete",
+			"Romaine"
 		]
 	},
 	"privacycenter": "Centrum voor persoonsgegevens",
@@ -65,7 +67,7 @@
 	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5",
 	"logentry-bs-privacy-deletion": "De gebruiker $4 heeft het profiel verwijderd",
 	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} data geëxporteerd",
-	"echo-category-title-bs-privacy-cat": "Privacy",
+	"echo-category-title-bs-privacy-cat": "Privacyacties",
 	"notification-bs-privacy-login-url": "Bij de wiki aanmelden",
 	"notification-bs-privacy-center-url": "CentrumVoorPersoonsgegevens",
 	"notification-bs-privacy-anonymization-done": "Uw profiel is anoniem gemaakt!",
@@ -77,5 +79,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Opslaan",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sluiten",
 	"bs-privacy-consent-cookie-settings-label": "Toestemming van volgbestanden wijzigen",
-	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de [[{{MediaWiki:Termsofservicepage}}|servicevoorwaarden]] van deze site"
+	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de [[{{MediaWiki:Termsofservicepage}}|servicevoorwaarden]] van deze site",
+	"bs-privacy-transparency-type-title-working": "Werkgegevens",
+	"bs-privacy-transparency-type-title-actions": "Actiegegevens"
 }
