@@ -25,7 +25,7 @@
 	"bs-privacy-anonymization-final-prompt": "Ваш обліковий запис буде перейменовано, а весь ваш внесок показуватиметься під новим іменем користувача. Цю дію не можна анулювати",
 	"bs-privacy-anonymization-error-check-name": "Сталася помилка під час спроби перевірити дійсність нового імені користувача",
 	"bs-privacy-anonymization-invalid-name": "Введене вами ім'я користувача недійсне. Будь ласка, виберіть інше ім'я користувача.",
-	"bs-privacy-anonymization-username-exists": "Введене вами ім'я користувача уже належить іншому користувачу. Будь ласка, виберіть інше ім'я користувача.",
+	"bs-privacy-anonymization-username-exists": "Введене вами ім'я користувача уже належить іншому користувачеві. Будь ласка, виберіть інше ім'я користувача.",
 	"bs-privacy-anonymization-error-anonymizing": "Сталася помилка у процесі анонімізації.",
 	"bs-privacy-anonymization-success-anonymizing": "Ваш обліковий запис анонімізовано! Ваше нове ім'я користувача — $1",
 	"bs-privacy-api-error-missing-module": "Модуль $1 не зареєстрований!",
