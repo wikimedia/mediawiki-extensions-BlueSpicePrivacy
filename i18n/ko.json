@@ -138,5 +138,6 @@
 	"bs-privacy-cookie-convenience-group-label": "Convenience 쿠키",
 	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
 	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다",
-	"bs-privacy-module-consent-accepted": "이미 모든 약관에 동의했습니다"
+	"bs-privacy-module-consent-accepted": "이미 모든 약관에 동의했습니다",
+	"privacyconsent": "개인정보 보호정책 동의"
 }
