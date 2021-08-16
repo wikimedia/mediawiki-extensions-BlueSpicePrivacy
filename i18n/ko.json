@@ -7,6 +7,7 @@
 			"아라"
 		]
 	},
+	"bs-privacy-desc": "사용자 개인정보 설정의 관리 페이지",
 	"bs-privacy-admintool-label": "프라이버시 관리",
 	"privacycenter": "프라이버시 센터",
 	"privacyadmin": "프라이버시 관리",
@@ -14,8 +15,10 @@
 	"bs-privacy-api-error-generic": "오류가 발생했습니다",
 	"bs-privacy-anonymization-error-retrieving-name": "새 사용자 이름의 검색을 시도하는 동안 오류가 발생했습니다",
 	"bs-privacy-anonymization-layout-label": "익명화",
+	"bs-privacy-anonymization-layout-help": "사용자 이름의 모든 기여를 새 사용자로 대체함으로써 계정을 익명화할 수 있습니다",
 	"bs-privacy-anonymization-new-username-label": "새 사용자 이름",
 	"bs-privacy-anonymization-confirm-button-label": "내 계정 익명화",
+	"bs-privacy-anonymization-final-prompt": "계정 이름이 변경되고 모든 기여는 새 사용자 이름으로 표시됩니다. 이 동작은 되돌릴 수 없습니다",
 	"bs-privacy-anonymization-error-check-name": "새 사용자 이름의 유효성 검사를 시도하는 동안 오류가 발생했습니다",
 	"bs-privacy-anonymization-invalid-name": "입력한 사용자 이름이 유효하지 않습니다. 다른 사용자 이름을 지정해 주십시오.",
 	"bs-privacy-anonymization-username-exists": "입력한 사용자 이름은 이미 다른 사용자에 할당되어 있습니다. 다른 사용자 이름을 지정해 주십시오.",

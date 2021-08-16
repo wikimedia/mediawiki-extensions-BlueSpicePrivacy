@@ -75,6 +75,8 @@
 	"notification-bs-privacy-center-url": "CentrumVoorPersoonsgegevens",
 	"notification-bs-privacy-anonymization-done": "Uw profiel is anoniem gemaakt!",
 	"notification-bs-privacy-deletion-approved-body": "Het verzoek om uw profiel te verwijderen is goedgekeurd. Uw profiel wordt binnen enkele ogenblikken verwijderd.",
+	"notification-bs-privacy-deletion-failed-body": "We konden uw account niet verwijderen. Neem voor meer informatie contact op met de wikibeheerders. Onze excuses voor het ongemak.",
+	"notification-bs-privacy-request-denied-anonymization": "Uw anonimiseringsverzoek is geweigerd.",
 	"notification-bs-privacy-request-submitted": "Nieuw persoonsgegevensverzoek verzonden!",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Instellingen voor toestemming van volgbestanden",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alles accepteren",
