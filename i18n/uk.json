@@ -183,5 +183,9 @@
 	"bs-privacy-module-consent-accepted": "Ви вже прийняли всі умови",
 	"bs-privacy-module-consent-set-success": "Згода успішно збережена",
 	"bs-privacy-module-consent-set-fail": "Не вдалося зберегти згоду!",
-	"privacyconsent": "Згода на політику конфіденційності"
+	"privacyconsent": "Згода на політику конфіденційності",
+	"bs-privacy-transparency-format-html": "HTML",
+	"bs-privacy-transparency-format-csv": "CSV",
+	"bs-privacy-transparency-action-timestamp": "$1:",
+	"bs-privacy-consent-log-consent": "$1: $2"
 }
