@@ -4,6 +4,7 @@
 			"Ajeje Brazorf",
 			"Beta16",
 			"Lorem Ipsum",
+			"Stefano",
 			"TheRukk",
 			"ValeJappo"
 		]
@@ -56,5 +57,20 @@
 	"bs-privacy-anonymization-layout-label": "Anonimizzazione",
 	"bs-privacy-transparency-layout-label": "Trasparenza",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
-	"privacyconsent": "Acconsentire alla privacy policy"
+	"privacyconsent": "Acconsentire alla privacy policy",
+	"bs-privacy-api-error-missing-module": "Modulo $1 non registrato!",
+	"bs-privacy-invalid-param": "Parametro \"$1\" in formato non valido!",
+	"bs-privacy-anonymize-login-button": "Effettua nuovamente login con il nuovo username",
+	"bs-privacy-deletion-submit-request-label": "Commento (opzionale)",
+	"bs-privacy-deletion-button": "Elimina il tuo account",
+	"bs-privacy-transparency-export-layout-title": "Esporta dati utente",
+	"bs-privacy-transparency-no-data": "Nessun dato trovato",
+	"bs-privacy-prefs-consent-cookies": "Accetto la memorizzazione dei cookie",
+	"bs-privacy-prefs-consent-cookies-help": "I cookie sono piccole informazioni memorizzate sul tuo computer tra le sessioni per rendere l'esperienza dell'utente più fluid",
+	"bs-privacy-prefs-consent-tos-help": "Selezionando questo campo confermi di aver letto e accettato i termini di servizio per questo sito",
+	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Impostazioni del consenso ai cookie",
+	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessari",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookie necessari al funzionamento del sito (cookie di sessione, cookie di identificazione dell'utente...)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookie che migliorano l'esperienza dell'utente sul sito (salvataggio delle preferenze dell'utente, stato dei componenti dinamici...)",
+	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini"
 }

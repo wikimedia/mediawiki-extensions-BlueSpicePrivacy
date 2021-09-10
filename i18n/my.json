@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"bs-privacy-api-error-generic": "အမှားတစ်ခု ဖြစ်ပွားခဲ့ပါသည်",
+	"bs-privacy-anonymization-error-check-name": "အသုံးပြုသူအမည်သစ်အား အတည်ပြုစိစစ်နေစဉ် အမှားတစ်ခုဖြစ်ပွားခဲ့ပါသည်"
+}
