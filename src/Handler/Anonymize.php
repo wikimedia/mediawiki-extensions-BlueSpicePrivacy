@@ -13,15 +13,7 @@ class Anonymize implements IPrivacyHandler {
 	 */
 	protected $tableMap = [
 		'user' => 'user_name',
-		'revision' => 'rev_user_text',
-		'archive' => 'ar_user_text',
-		'ipblocks' => 'ipb_by_text',
-		'image' => 'img_user_text',
-		'oldimage' => 'oi_user_text',
-		'filearchive' => 'fa_user_text',
-		'recentchanges' => 'rc_user_text',
-		'logging' => 'log_user_text',
-		'filearchive' => 'fa_user_text'
+		'actor' => 'actor_name',
 	];
 
 	/**
@@ -41,9 +33,9 @@ class Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \Database $db
+	 * @param \IDatabase $db
 	 */
-	public function __construct( \Database $db ) {
+	public function __construct( \IDatabase $db ) {
 		$this->db = $db;
 	}
 
@@ -119,7 +111,7 @@ class Anonymize implements IPrivacyHandler {
 				'logging',
 				[
 					'log_action' => 'move',
-					'log_user' => $this->oldUser->getId(),
+					'log_actor' => $this->oldUser->getActorId(),
 					'log_namespace' => NS_USER,
 					'log_title' => $oldUserPage->getDBkey()
 				],
