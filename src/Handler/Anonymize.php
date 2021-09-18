@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Handler;
 use BlueSpice\Privacy\IPrivacyHandler;
 use MediaWiki\MediaWikiServices;
 use RequestContext;
+use Wikimedia\Rdbms\IDatabase;
 
 class Anonymize implements IPrivacyHandler {
 	/**
@@ -17,7 +18,7 @@ class Anonymize implements IPrivacyHandler {
 	];
 
 	/**
-	 * @var \Database
+	 * @var IDatabase
 	 */
 	protected $db;
 
@@ -33,9 +34,9 @@ class Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \IDatabase $db
+	 * @param IDatabase $db
 	 */
-	public function __construct( \IDatabase $db ) {
+	public function __construct( IDatabase $db ) {
 		$this->db = $db;
 	}
 

@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use Wikimedia\Rdbms\IDatabase;
 
 class Delete extends Anonymize implements IPrivacyHandler {
 	/**
@@ -56,9 +57,9 @@ class Delete extends Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \IDatabase $db
+	 * @param IDatabase $db
 	 */
-	public function __construct( \IDatabase $db ) {
+	public function __construct( IDatabase $db ) {
 		$this->db = $db;
 	}
 
