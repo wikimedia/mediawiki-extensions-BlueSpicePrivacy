@@ -27,6 +27,12 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 		$data = [];
 		foreach ( $res as $row ) {
 			$user = \User::newFromId( $row->user_id );
+
+			$block = $user->getBlock( true );
+			if ( $block && $block->appliesToRight( 'read' ) ) {
+				continue;
+			}
+
 			$record = [
 				'id' => $user->getId(),
 				'userName' => $user->getName()
@@ -40,4 +46,5 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 
 		return $data;
 	}
+
 }
