@@ -31,19 +31,25 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	 *
 	 * @var array
 	 */
-	protected $moveToDeletedTables = [
-		'archive' => 'ar_user',
-		'filearchive' => 'fa_user',
-		'image' => 'img_user',
-		'logging' => 'log_user',
-		'oldimage' => 'oi_user',
-		'page_restrictions' => 'pr_user',
-		'protected_titles' => 'pt_user',
-		'recentchanges' => 'rc_user',
-		'revision' => 'rev_user',
-		'user_newtalk' => 'user_id'
+	protected $moveToDeletedActorTables = [
+		'archive' => 'ar_actor',
+		'filearchive' => 'fa_actor',
+		'image' => 'img_actor',
+		'logging' => 'log_actor',
+		'oldimage' => 'oi_actor',
+		'recentchanges' => 'rc_actor',
+		'revision' => 'rev_actor'
 	];
 
+	/**
+	 *
+	 * @var array
+	 */
+	protected $moveToDeletedTables = [
+		'page_restrictions' => 'pr_user',
+		'protected_titles' => 'pt_user',
+		'user_newtalk' => 'user_id'
+	];
 	/**
 	 *
 	 * @var array
@@ -112,6 +118,14 @@ class Delete extends Anonymize implements IPrivacyHandler {
 				$table,
 				[ $field => $this->groupingDeletedUser->getId() ],
 				[ $field => $this->userToDelete->getId() ],
+				__METHOD__
+			);
+		}
+		foreach ( $this->moveToDeletedActorTables as $table => $field ) {
+			$this->db->update(
+				$table,
+				[ $field => $this->groupingDeletedUser->getActorId() ],
+				[ $field => $this->userToDelete->getActorId() ],
 				__METHOD__
 			);
 		}
