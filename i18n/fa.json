@@ -84,7 +84,7 @@
 	"logentry-bs-privacy-anonymization": "$4 حساب کاربری را گمنام‌سازی کرده‌است. نام جدید کاربری: $5",
 	"logentry-bs-privacy-deletion": "کاربر «$4» حساب کاربری را حذف کرد",
 	"logentry-bs-privacy-transparency": "$1 داده‌های {{GENDER:$2|خود}} را برون‌بری {{GENDER:$2|کرده‌است}}",
-	"echo-category-title-bs-privacy-cat": "حریم شخصی",
+	"echo-category-title-bs-privacy-cat": "اقدامات حریم خصوصی",
 	"notification-bs-privacy-login-url": "وارد ویکی شوید",
 	"notification-bs-privacy-admin-url": "مدیر حریم شخصی",
 	"notification-bs-privacy-anonymization-done": "حساب شما گمنام‌سازی شد!",
