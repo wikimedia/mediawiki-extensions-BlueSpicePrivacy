@@ -81,6 +81,9 @@ class Anonymize implements IPrivacyHandler {
 			if ( $table === 'user' && $this->skipUserTable ) {
 				continue;
 			}
+			if ( $table === 'actor' && $this->skipUserTable ) {
+				continue;
+			}
 			$this->db->update(
 				$table,
 				[ $field => $newUsername ],
