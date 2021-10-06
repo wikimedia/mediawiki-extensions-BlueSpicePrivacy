@@ -65,7 +65,7 @@
 	"bs-privacy-consent-bool-true": "بله",
 	"bs-privacy-consent-bool-false": "نه",
 	"logentry-bs-privacy-anonymization": "$4 حساب کاربری را گمنام‌سازی کرده‌است. نام جدید کاربری: $5",
-	"echo-category-title-bs-privacy-cat": "حریم شخصی",
+	"echo-category-title-bs-privacy-cat": "اقدامات حریم خصوصی",
 	"notification-bs-privacy-login-url": "وارد ویکی شوید",
 	"notification-bs-privacy-admin-url": "مدیر حریم شخصی",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "پذیرفتن همه",
