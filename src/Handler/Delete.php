@@ -57,7 +57,8 @@ class Delete extends Anonymize implements IPrivacyHandler {
 		'user' => 'user_id',
 		'user_groups' => 'ug_user',
 		'user_properties' => 'up_user',
-		'user_former_groups' => 'ufg_user'
+		'user_former_groups' => 'ufg_user',
+		'actor' => 'actor_user',
 	];
 
 	/**
