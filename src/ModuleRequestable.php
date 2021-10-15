@@ -7,13 +7,13 @@ use BlueSpice\Privacy\Notifications\RequestSubmitted;
 use MediaWiki\MediaWikiServices;
 
 abstract class ModuleRequestable extends Module {
-	const TABLE_NAME = 'bs_privacy_request';
-	const REQUEST_STATUS_PENDING = 1;
-	const REQUEST_STATUS_DENIED = 2;
-	const REQUEST_STATUS_APPROVED = 3;
+	public const TABLE_NAME = 'bs_privacy_request';
+	public const REQUEST_STATUS_PENDING = 1;
+	public const REQUEST_STATUS_DENIED = 2;
+	public const REQUEST_STATUS_APPROVED = 3;
 
-	const REQUEST_OPEN = 1;
-	const REQUEST_CLOSED = 0;
+	public const REQUEST_OPEN = 1;
+	public const REQUEST_CLOSED = 0;
 
 	/** @var \Wikimedia\Rdbms\IDatabase */
 	protected $database;

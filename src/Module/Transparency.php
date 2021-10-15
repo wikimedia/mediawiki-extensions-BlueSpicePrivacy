@@ -7,14 +7,14 @@ use BlueSpice\Privacy\Module;
 use MediaWiki\MediaWikiServices;
 
 class Transparency extends Module {
-	const DATA_TYPE_PERSONAL = 'personal';
-	const DATA_TYPE_WORKING = 'working';
-	const DATA_TYPE_ACTIONS = 'actions';
-	const DATA_TYPE_CONTENT = 'content';
+	public const DATA_TYPE_PERSONAL = 'personal';
+	public const DATA_TYPE_WORKING = 'working';
+	public const DATA_TYPE_ACTIONS = 'actions';
+	public const DATA_TYPE_CONTENT = 'content';
 
-	const DATA_FORMAT_RAW = 'raw';
-	const DATA_FORMAT_HTML = 'html';
-	const DATA_FORMAT_CSV = 'csv';
+	public const DATA_FORMAT_RAW = 'raw';
+	public const DATA_FORMAT_HTML = 'html';
+	public const DATA_FORMAT_CSV = 'csv';
 
 	/**
 	 *
