@@ -6,8 +6,8 @@ use BlueSpice\BaseNotification;
 use MediaWiki\MediaWikiServices;
 
 abstract class Module implements IModule {
-	const MODULE_UI_TYPE_ADMIN = 'admin';
-	const MODULE_UI_TYPE_USER = 'user';
+	public const MODULE_UI_TYPE_ADMIN = 'admin';
+	public const MODULE_UI_TYPE_USER = 'user';
 
 	/**
 	 * @var \IContextSource
