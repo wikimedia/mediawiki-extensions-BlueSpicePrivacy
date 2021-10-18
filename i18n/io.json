@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos"
+		]
+	},
+	"bs-privacy-consent-bool-true": "Yes",
+	"bs-privacy-consent-bool-false": "No"
+}
