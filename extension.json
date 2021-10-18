@@ -357,8 +357,8 @@
 		"remoteExtPath": "BlueSpicePrivacy/resources"
 	},
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\Privacy\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\Privacy\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
@@ -376,7 +376,7 @@
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
 		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback",
 		"SpecialPageBeforeExecute": "\\BlueSpice\\Privacy\\Hook\\SpecialPageBeforeExecute\\RedirectToConsent::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"callback": "\\BlueSpice\\Privacy\\Extension::onCallback",
 	"config_prefix": "bsg",

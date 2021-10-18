@@ -5,7 +5,7 @@ namespace BlueSpice\Privacy\HookHandler;
 use BlueSpice\Privacy\GlobalActionsManager;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class Main implements MWStakeCommonUIRegisterSkinSlotComponents {
+class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 
 	/**
 	 * @inheritDoc
@@ -15,7 +15,7 @@ class Main implements MWStakeCommonUIRegisterSkinSlotComponents {
 			'GlobalActionsManager',
 			[
 				'special-bluespice-privacy' => [
-					'factory' => function () {
+					'factory' => static function () {
 						return new GlobalActionsManager();
 					}
 				]
