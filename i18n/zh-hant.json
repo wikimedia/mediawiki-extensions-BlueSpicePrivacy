@@ -174,5 +174,8 @@
 	"bs-privacy-prefs-consent-tos-help": "透過勾選此欄位，代表您已確認您有閱讀過並且承認此站台的服務條款",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "若要繼續，請接受以下條款",
-	"bs-privacy-consent-auth-fail": "您必須接受所有條款"
+	"bs-privacy-consent-auth-fail": "您必須接受所有條款",
+	"bs-privacy-module-consent-accepted": "您已接受了所有條款",
+	"bs-privacy-module-consent-set-success": "許可儲存成功",
+	"bs-privacy-module-consent-set-fail": "許可儲存失敗！"
 }
