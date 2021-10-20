@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Dejan Savuljesku <savuljesku@hallowelt.com>",
 			"Jeeputer",
 			"Pikne",
@@ -127,8 +128,8 @@
 	"bs-privacy-timestamp-with-days-ago": "Message for request timestamp when creation date is not today.\n$1 - timestamp, $2 - number of days ago",
 	"bs-privacy-timestamp-with-days-ago-today": "Message for request timestamp when creation date today.\n$1 - timestamp",
 	"log-name-bs-privacy": "Name for bs-privacy log",
-	"bs-privacy-consent-bool-true": "Textual representation of the consent value for true",
-	"bs-privacy-consent-bool-false": "Textual representation of the consent value for false",
+	"bs-privacy-consent-bool-true": "Textual representation of the consent value for true\n\n{{Identical|Yes}}",
+	"bs-privacy-consent-bool-false": "Textual representation of the consent value for false\n\n{{Identical|No}}",
 	"bs-privacy-consent-log-consent": "{{optional}}\nMessage for log for privacy policy.\n$1 - consent type, $2 - consent value",
 	"logentry-bs-privacy-anonymization": "Log entry message for anonymization. \n$2 - user action is being done over, $4 - acting user, $5 - new username",
 	"logentry-bs-privacy-deletion": "Log entry message for deletion. $4 - acting user",
