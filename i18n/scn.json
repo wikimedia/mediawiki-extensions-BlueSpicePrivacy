@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (oi)",
+	"bs-privacy-consent-bool-true": "Sì",
+	"bs-privacy-consent-bool-false": "No"
+}

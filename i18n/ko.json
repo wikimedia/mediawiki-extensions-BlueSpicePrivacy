@@ -139,5 +139,8 @@
 	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
 	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다",
 	"bs-privacy-module-consent-accepted": "이미 모든 약관에 동의했습니다",
-	"privacyconsent": "개인정보 보호정책 동의"
+	"privacyconsent": "개인정보 보호정책 동의",
+	"bs-privacy-desc": "사용자 개인정보 설정의 관리 페이지",
+	"bs-privacy-anonymization-layout-help": "사용자 이름의 모든 기여를 새 사용자로 대체함으로써 계정을 익명화할 수 있습니다",
+	"bs-privacy-anonymization-final-prompt": "계정 이름이 변경되고 모든 기여는 새 사용자 이름으로 표시됩니다. 이 동작은 되돌릴 수 없습니다"
 }
