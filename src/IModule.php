@@ -33,7 +33,7 @@ interface IModule {
 	/**
 	 * Does module support request workflow
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isRequestable();
 
