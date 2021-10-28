@@ -103,5 +103,9 @@
 	"notification-bs-privacy-request-submitted": "درخواست جدید حریم خصوصی ثبت شد!",
 	"notification-bs-privacy-request-submitted-body": "کاربر «$1» یک درخواست جدید حریم خصوصی ثبت کرد. پودمان: $3. توضیح: $2",
 	"bs-privacy-consent-auth-step": "برای ادامه، لطفاً شرایط زیر را بپذیرید",
-	"bs-privacy-consent-auth-fail": "شما باید کلیه شرایط را بپذیرید"
+	"bs-privacy-consent-auth-fail": "شما باید کلیه شرایط را بپذیرید",
+	"bs-privacy-api-error-missing-module": "پودمان $1 ثبت نشده‌است!",
+	"bs-privacy-missing-param": "پارامتر «$1» باید وارد شود!",
+	"bs-privacy-invalid-param": "پارامتر «$1» با فرمت نامعتبر وارد شده‌است!",
+	"bs-privacy-cookie-consent-group-necessary-label": "کلوچک‌های الزامی"
 }
