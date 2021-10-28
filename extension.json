@@ -350,6 +350,11 @@
 			"dependencies": [
 				"ext.bluespice.privacy.util"
 			]
+		},
+		"ext.bs.privacy.login.styles": {
+			"styles": [
+				"ext.bluespice.privacy.login.less"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
