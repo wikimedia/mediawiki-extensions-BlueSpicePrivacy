@@ -27,6 +27,7 @@ class RedirectToConsent {
 	 * @return bool
 	 */
 	public static function callback( SpecialPage $sp, $subPage ) {
+		$sp->getOutput()->addModuleStyles( 'ext.bs.privacy.login.styles' );
 		foreach ( static::$exceptions as $class ) {
 			if ( $sp instanceof $class ) {
 				return true;
