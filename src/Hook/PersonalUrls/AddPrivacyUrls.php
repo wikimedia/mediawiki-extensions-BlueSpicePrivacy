@@ -16,7 +16,8 @@ class AddPrivacyUrls extends PersonalUrls {
 			'href' => \SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
 			'text' => \MediaWiki\MediaWikiServices::getInstance()
 				->getSpecialPageFactory()
-				->getPage( 'PrivacyCenter' )->getDescription()
+				->getPage( 'PrivacyCenter' )->getDescription(),
+			'position' => 70,
 		];
 
 		return true;
