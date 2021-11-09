@@ -59,6 +59,9 @@
 			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-disclaimer' ).text(),
 			classes: [ 'disclaimer' ]
 		} );
+		// Accessibility: Set tabindex fot tab navigation
+		disclamer.$element.attr( 'tabindex', '0' );
+
 		var settings = new OO.ui.ButtonWidget( {
 			framed: false,
 			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-settings-btn-label' ).text(),
@@ -86,7 +89,8 @@
 			acceptAll
 		] );
 
-		$( 'body' ).append( this.bar.$element );
+		// Accessibility: prepend element to be first focus with tab navigation
+		$( 'body' ).prepend( this.bar.$element );
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.onCookieSettingsChanged = function( groups ) {
