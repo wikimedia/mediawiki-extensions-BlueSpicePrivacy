@@ -7,6 +7,7 @@
 
 		this.cookieName = mw.config.get( 'wgCookiePrefix' ) + '_' + cfg.cookieName;
 		this.cookieMap = cfg.cookieMap;
+		this.cookieSetterOrig = cfg.cookieSetterOrig;
 
 		this.groups = this.getGroups();
 
@@ -17,17 +18,34 @@
 
 	OO.initClass( bs.privacy.cookieConsent.BaseHandler );
 
-	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
-		var cookieGroup = this.getCookieGroup( cookieName );
-
-		if( !(cookieGroup in this.groups) ) {
+	bs.privacy.cookieConsent.BaseHandler.prototype.setIfAllowed = function() {
+		var cookie = arguments[0];
+		if ( !cookie ) {
 			return true;
 		}
-		if( this.groups[cookieGroup] === true ) {
-
+		var bits = cookie.split( '=' );
+		if ( !bits ) {
 			return true;
+		}
+		var cookieName = bits.shift();
+		if ( this.isCookieAllowed( cookieName ) ) {
+			this.cookieSetterOrig.apply( document, arguments );
+			return;
 		}
 		return false;
+	};
+
+	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
+		if ( cookieName === this.cookieName ) {
+			// Always allow cookie preferences cookie
+			return true;
+		}
+		var cookieGroup = this.getCookieGroup( cookieName );
+		if( !cookieGroup || !this.groups.hasOwnProperty( cookieGroup ) ) {
+			return false;
+		}
+
+		return this.groups[cookieGroup];
 	};
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.getGroups = function() {
@@ -37,7 +55,13 @@
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.getCookieGroup = function( cookieName ) {
 		for( var groupId in this.cookieMap ) {
+			if ( !this.cookieMap.hasOwnProperty( groupId ) ) {
+				continue;
+			}
 			for( var idx in this.cookieMap[groupId] ) {
+				if ( !this.cookieMap[groupId].hasOwnProperty( idx ) ) {
+					continue;
+				}
 				var cookieItem = this.cookieMap[groupId][idx];
 				if( !cookieItem.type || cookieItem.type === 'exact' ) {
 					if( cookieName === cookieItem.name ) {
@@ -52,7 +76,8 @@
 				}
 			}
 		}
-		return '';
+		console.warn( 'Cookie ' + cookieName + ' is not registered with any cookie groups' );
+		return null;
 	};
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.parseActiveCookies = function() {
