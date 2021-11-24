@@ -5,7 +5,8 @@
 			"DannyS712",
 			"Fitoschido",
 			"Jackiezelaya",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Jakeukalane"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -55,7 +56,7 @@
 	"bs-privacy-admin-request-grid-column-deny": "Denegar",
 	"bs-privacy-admin-request-grid-action-deny": "Denegar",
 	"bs-privacy-transparency-layout-label": "Transparencia",
-	"bs-privacy-transparency-layout-help": "Ver y exportar todos los datos personales recopilados por el wiki",
+	"bs-privacy-transparency-layout-help": "Ver y exportar todos los datos personales recopilados por la wiki",
 	"bs-privacy-transparency-show-all-data-button": "Ver todos los datos",
 	"bs-privacy-transparency-type-selector-personal": "Datos personales (p. ej., correo, nombre, información de perfil…)",
 	"bs-privacy-transparency-type-selector-working": "Datos de trabajo (p. ej., recordatorios, asignaciones…)",
@@ -67,7 +68,7 @@
 	"bs-privacy-transparency-view-data-dialog-title": "Ver tus datos",
 	"bs-privacy-transparency-view-data-dialog-close": "Cerrar",
 	"bs-privacy-transparency-html-export-title": "Exportación de datos de BlueSpicePrivacy. $1",
-	"bs-privacy-admin-requests-disabled": "Las solicitudes están actualmente desactivadas en el wiki.",
+	"bs-privacy-admin-requests-disabled": "Las solicitudes están actualmente desactivadas en la wiki.",
 	"bs-privacy-transparency-no-data": "No se encontró ningún dato",
 	"bs-privacy-transparency-private-username": "Nombre de usuario: $1",
 	"bs-privacy-transparency-private-realname": "Nombre verdadero: $1",

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-privacy-anonymization-new-username-label": "Ođđ õõʹnninõmm",
+	"bs-privacy-anonymization-api-invalid-username": "Vââǥǥlaž õõʹnninõmm",
+	"bs-privacy-anonymization-request-comment": "Ođđ õõʹnninõmm: $1",
+	"bs-privacy-transparency-private-username": "Õõʹnninõmm: $1",
+	"bs-privacy-consent-save-button": "Ruõkk",
+	"bs-privacy-admin-consent-grid-column-user": "Õõʹnninõmm",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk"
+}

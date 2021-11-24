@@ -4,6 +4,31 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"bs-privacy-anonymization-new-username-label": "Novu nomu utenti",
+	"bs-privacy-anonymization-api-invalid-username": "Nomu utenti nun vàlidu",
+	"bs-privacy-invalid-user": "L'utenti nun è vàliddu",
+	"bs-privacy-deletion-layout-label": "Cancella lu tò cuntu",
+	"bs-privacy-anonymization-request-comment": "Novu nomu utenti: $1",
+	"bs-privacy-request-denied-comment": "Cummentu: $1",
+	"bs-privacy-admin-deny-comment-placeholder": "Cummentu",
+	"bs-privacy-admin-request-grid-column-user": "Utenti",
+	"bs-privacy-admin-request-grid-column-action": "Azzioni",
+	"bs-privacy-admin-request-grid-column-timestamp": "Data e ura",
+	"bs-privacy-admin-request-grid-column-comment": "Cummentu",
+	"bs-privacy-transparency-private-username": "Nomu utenti: $1",
+	"bs-privacy-transparency-private-realname": "Nomu veru: $1",
+	"bs-privacy-transparency-private-registration": "Riggistratu supra: $1",
+	"bs-privacy-transparency-private-groups": "Gruppi: $1",
+	"bs-privacy-transparency-private-former-groups": "Gruppi pricidenti: $1",
+	"bs-privacy-transparency-private-not-blocked": "Bluccatu: No",
+	"bs-privacy-transparency-private-edit-count": "Nùmmiru di canciamenti: $1",
+	"bs-privacy-consent-save-button": "Sarva",
+	"bs-privacy-admin-consent-grid-column-user": "Nomu utenti",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 jornu|$2 jorna}} fa)",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (oi)",
 	"bs-privacy-consent-bool-true": "Sì",
-	"bs-privacy-consent-bool-false": "No"
+	"bs-privacy-consent-bool-false": "No",
+	"notification-bs-privacy-login-url": "Trasi ô wiki",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sarva",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi"
 }
