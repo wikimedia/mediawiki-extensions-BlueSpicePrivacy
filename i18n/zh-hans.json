@@ -12,6 +12,7 @@
 			"Zazzzz",
 			"佛壁灯",
 			"沈澄心",
+			"落花有意12138",
 			"铁桶"
 		]
 	},
@@ -184,5 +185,6 @@
 	"bs-privacy-module-consent-accepted": "您已经接受了所有条款",
 	"bs-privacy-module-consent-set-success": "许可已成功存储",
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
-	"privacyconsent": "同意隐私政策"
+	"privacyconsent": "同意隐私政策",
+	"bs-privacy-consent-auth-fail": "您必须同意所有的条款"
 }
