@@ -12,6 +12,7 @@
 	"bs-privacy": "Name of the extension",
 	"bs-privacy-desc": "Description of BlueSpicePrivacy extension.",
 	"bs-privacy-admintool-label": "Privacy Admin",
+	"bs-privacy-admintool-text": "Label for global actions menu",
 	"bs-privacy-header": "Header for bs-privacy log type",
 	"privacycenter": "Title of {{Special:PrivacyCenter}}",
 	"privacyadmin": "Title of {{Special:PrivacyAdmin}}",
