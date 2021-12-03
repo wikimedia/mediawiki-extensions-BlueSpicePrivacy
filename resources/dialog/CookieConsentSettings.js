@@ -95,7 +95,8 @@
 				align: 'left',
 				helpInline: false,
 				label: label,
-				help: desc
+				$overlay: true,
+				help: new OO.ui.HtmlSnippet( desc )
 			} );
 			content.push( field );
 		}
@@ -109,6 +110,10 @@
 		} );
 
 		this.$body.append( this.layout.$element );
+	};
+
+	bs.privacy.dialog.CookieConsentSettings.prototype.getBodyHeight = function() {
+		return this.$body[0].scrollHeight + 20;
 	};
 
 } )( mediaWiki, jQuery, blueSpice, document );

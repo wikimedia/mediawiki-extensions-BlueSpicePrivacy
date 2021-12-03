@@ -87,6 +87,22 @@
 				"UserName": {
 					"group": "necessary",
 					"addPrefix": true
+				},
+				"VEE": {
+					"group": "convenience",
+					"addPrefix": false
+				},
+				"UseDC": {
+					"group": "necessary",
+					"addPrefix": false
+				},
+				"UseCDNCache": {
+					"group": "necessary",
+					"addPrefix": false
+				},
+				"forceHTTPS": {
+					"group": "necessary",
+					"addPrefix": false
 				}
 			}
 		}

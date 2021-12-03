@@ -8,6 +8,8 @@ use Exception;
 use ExtensionRegistry;
 use FormatJson;
 use HashConfig;
+use Message;
+use RawMessage;
 use WebRequest;
 
 class NativeMW extends Base {
@@ -134,13 +136,42 @@ class NativeMW extends Base {
 	public function getHandlerConfig() {
 		$groupConfigs = [];
 		foreach ( $this->cookieGroups as $key => $conf ) {
+			$conf['desc'] = $this->generateDescription( $conf );
 			if ( isset( $conf['cookies'] ) ) {
 				unset( $conf['cookies'] );
 			}
+
 			$groupConfigs[$key] = $conf;
 		}
 		return [
 			"cookieGroups" => $groupConfigs
 		];
+	}
+
+	/**
+	 * Get group description and cookie list
+	 *
+	 * @param array $conf
+	 * @return string
+	 */
+	private function generateDescription( $conf ) {
+		$desc = '';
+		if ( isset( $conf['desc'] ) ) {
+			$desc = Message::newFromKey( $conf['desc'] )->text();
+		}
+
+		$desc .= "\n\n" . Message::newFromKey(
+			'bs-privacy-cookie-consent-cookie-list-label'
+			)->text();
+
+		foreach ( $conf['cookies'] as $cookieSpec ) {
+			$cookieName = $cookieSpec['name'];
+			$descMessage = Message::newFromKey(
+				'bs-privacy-cookie-consent-cookie-desc-' . strtolower( $cookieName )
+			);
+			$desc .= "\n \n'''{$cookieName}'''<br>{$descMessage->text()}";
+		}
+
+		return ( new RawMessage( $desc ) )->parseAsBlock();
 	}
 }

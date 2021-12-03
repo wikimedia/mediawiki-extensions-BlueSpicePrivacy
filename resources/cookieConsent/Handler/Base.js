@@ -54,6 +54,7 @@
 	};
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.getCookieGroup = function( cookieName ) {
+
 		for( var groupId in this.cookieMap ) {
 			if ( !this.cookieMap.hasOwnProperty( groupId ) ) {
 				continue;
