@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"FinlandMan",
+			"MITO",
 			"Pxos",
 			"Silvonen"
 		]
 	},
+	"bs-privacy-admintool-text": "Yksityisyys",
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
 	"bs-privacy-admin-request-grid-column-action": "Toiminto",
 	"bs-privacy-transparency-show-all-data-button": "Näytä kaikki tiedot",

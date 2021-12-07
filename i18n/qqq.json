@@ -196,9 +196,9 @@
 	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-userid": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-username": "Cookie description",
-	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Cookie description",
-	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Cookie description"
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Cookie description",
+	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description"
 }
