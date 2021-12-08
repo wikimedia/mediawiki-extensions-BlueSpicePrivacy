@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+		]
+	},
+	"bs-privacy-request-denied-comment": "ಟಿಪ್ಪಣಿ: $1",
+	"bs-privacy-admin-deny-comment-placeholder": "ಟಿಪ್ಪಣಿ",
+	"bs-privacy-admin-request-grid-column-user": "ಬಳಕೆದಾರ",
+	"bs-privacy-admin-request-grid-column-action": "ಕ್ರಿಯೆ",
+	"bs-privacy-admin-request-grid-column-comment": "ಟಿಪ್ಪಣಿ",
+	"bs-privacy-transparency-private-username": "ಬಳಕೆದಾರರ ಹೆಸರು: $1",
+	"bs-privacy-transparency-private-realname": "ನಿಜ ಹೆಸರು: $1",
+	"bs-privacy-transparency-private-groups": "ಗುಂಪುಗಳು: $1",
+	"bs-privacy-consent-save-button": "ಉಳಿಸಿ",
+	"bs-privacy-admin-consent-grid-column-user": "ಬಳಕೆದಾರರ ಹೆಸರು",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 ದಿನದ|$2 ದಿನಗಳ}} ಹಿಂದೆ)",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (ಇಂದು)",
+	"bs-privacy-consent-bool-true": "ಹೌದು",
+	"bs-privacy-consent-bool-false": "ಇಲ್ಲ",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "ಉಳಿಸಿ",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ಮುಚ್ಚಿ"
+}
