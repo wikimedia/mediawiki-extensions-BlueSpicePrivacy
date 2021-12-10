@@ -46,7 +46,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	 * @var array
 	 */
 	protected $moveToDeletedTables = [
-		'page_restrictions' => 'pr_user',
 		'protected_titles' => 'pt_user',
 		'user_newtalk' => 'user_id'
 	];
