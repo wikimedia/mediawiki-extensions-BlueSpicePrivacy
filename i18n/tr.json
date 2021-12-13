@@ -3,7 +3,8 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Hedda",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"DDPAT"
 		]
 	},
 	"bs-privacy": "BlueSpice Gizlilik",
@@ -108,8 +109,10 @@
 	"bs-privacy-transparency-type-title-actions": "Eylem verisi",
 	"bs-privacy-prefs-consent-cookies": "Çerezleri saklamayı kabul ediyorum",
 	"bs-privacy-prefs-consent-privacy-policy": "Bu sitenin [[{{MediaWiki:Privacypage}}|gizlilik politikasını]] kabul ediyorum",
+	"bs-privacy-prefs-consent-tos": "Bu sitenin [[{{MediaWiki:Termsofservicepage}}|hizmet şartlarını]] kabul ediyorum",
 	"bs-privacy-prefs-consent-cookies-help": "Çerezler, kullanıcı deneyimini daha mükemmel hale getirmek için bilgisayarınızda oturumlar arasında depolanan küçük bilgi parçalarıdır",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Bu alanı işaretleyerek bu site için gizlilik politikasını okuduğunuzu ve kabul ettiğinizi onaylarsınız",
+	"bs-privacy-prefs-consent-tos-help": "Bu alanı kontrol ederek, bu site için hizmet şartlarını okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz",
 	"bs-privacy-consent-layout-label": "Gizlilik politikası onayı",
 	"bs-privacy-consent-layout-help": "Gizlilik politikası anlaşma ayarlarınızı görüntüleyin ve değiştirin",
 	"bs-privacy-consent-save-button": "Kaydet",
@@ -166,14 +169,12 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Hepsini kabul et",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Çerez onayı ayarları",
 	"bs-privacy-cookie-consent-group-necessary-label": "Gerekli çerezler",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Sitenin çalışması için gerekli olan çerezler (oturum çerezleri, kullanıcı tanımlama çerezleri...)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Sitenin çalışması için gerekli olan çerezler",
 	"bs-privacy-cookie-convenience-group-label": "Uygunluk çerezleri",
-	"bs-privacy-cookie-convenience-group-desc": "Sitedeki kullanıcı deneyimini geliştiren çerezler (kullanıcı tercihlerinden tasarruf etme, dinamik bileşenlerin durumu...)",
+	"bs-privacy-cookie-convenience-group-desc": "Sitedeki kullanıcı deneyimini geliştiren çerezler",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Kaydet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Kapat",
 	"bs-privacy-consent-cookie-settings-label": "Çerez onayını değiştir",
-	"bs-privacy-prefs-consent-tos": "Bu sitenin [[{{MediaWiki:Termsofservicepage}}|hizmet şartlarını]] kabul ediyorum",
-	"bs-privacy-prefs-consent-tos-help": "Bu alanı kontrol ederek, bu site için hizmet şartlarını okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz",
 	"termsofservicepage": "Project:Hizmet_şartları",
 	"bs-privacy-consent-auth-step": "Devam etmek için lütfen aşağıdaki şartları kabul edin",
 	"bs-privacy-consent-auth-fail": "Tüm şartları kabul etmelisiniz",
