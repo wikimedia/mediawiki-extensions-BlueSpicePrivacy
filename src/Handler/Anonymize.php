@@ -70,6 +70,30 @@ class Anonymize implements IPrivacyHandler {
 	 * @param string $newUsername
 	 */
 	protected function updateTables( $newUsername ) {
+		$res = $this->db->select(
+			'bs_privacy_request',
+			[ 'pr_id', 'pr_data', 'pr_module' ],
+			[ 'pr_user' => $this->oldUser->getId(), 'pr_open' => 1 ],
+			__METHOD__
+		);
+		foreach ( $res as $row ) {
+			// existing open privacy requests for this user need to be updated
+			$data = unserialize( $row->pr_data );
+			if ( $row->pr_module === "deletion" ) {
+				$data['username'] = $newUsername;
+			}
+			if ( $row->pr_module === "anonymization" ) {
+				$data['oldUsername'] = $newUsername;
+			}
+			// Clear realname
+			$this->db->update(
+				'bs_privacy_request',
+				[ 'pr_data' => serialize( $data ) ],
+				[ 'pr_id' => $row->pr_id ],
+				__METHOD__
+			);
+		}
+
 		// Clear realname
 		$this->db->update(
 			'user',
