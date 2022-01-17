@@ -4,7 +4,8 @@
 			"Maoue",
 			"Nuevo Paso",
 			"Ykhwong",
-			"아라"
+			"아라",
+			"Yunbj"
 		]
 	},
 	"bs-privacy-desc": "사용자 개인정보 설정의 관리 페이지",
@@ -94,6 +95,7 @@
 	"bs-privacy-transparency-private-blocked": "차단됨: 예 ($1님에 의해)",
 	"bs-privacy-transparency-private-user-page-url": "사용자 문서 URL: $1",
 	"bs-privacy-transparency-private-edit-count": "편집 수: $1",
+	"bs-privacy-transparency-type-title-working": "작업중인 데이터",
 	"bs-privacy-transparency-type-title-personal": "개인 데이터",
 	"bs-privacy-prefs-consent-cookies": "쿠키 저장에 동의합니다",
 	"bs-privacy-prefs-consent-privacy-policy": "이 사이트의 [[{{MediaWiki:Privacypage}}|개인정보처리방침]]에 동의합니다",

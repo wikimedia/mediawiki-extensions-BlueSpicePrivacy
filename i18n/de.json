@@ -4,7 +4,8 @@
 			"Hwboehm",
 			"Metalhead64",
 			"Mglaser",
-			"Umherirrender"
+			"Umherirrender",
+			"Mschlindwein"
 		]
 	},
 	"bs-privacy": "BlueSpice Datenschutz",
@@ -110,8 +111,10 @@
 	"bs-privacy-transparency-type-title-actions": "Aktionsdaten",
 	"bs-privacy-prefs-consent-cookies": "Ich akzeptiere das Speichern von Cookies",
 	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die [[{{MediaWiki:Privacypage}}|Datenschutzrichtlinie]] dieser Website",
+	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die [[{{MediaWiki:Termsofservicepage}}|Nutzungsbedingungen]] dieser Seite",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies sind kleine Informationseinheiten, die zwischen den Sitzungen auf dem Computer gespeichert werden, um die Benutzerfreundlichkeit zu verbessern.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
+	"bs-privacy-prefs-consent-tos-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Nutzungsbedingungen für diese Seite gelesen und anerkannt hast.",
 	"bs-privacy-consent-layout-label": "Einwilligung in die Datenschutzerklärung",
 	"bs-privacy-consent-layout-help": "Anzeigen und Ändern der Einstellungen deiner Datenschutzerklärung",
 	"bs-privacy-consent-save-button": "Speichern",
@@ -174,13 +177,23 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
-	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die [[{{MediaWiki:Termsofservicepage}}|Nutzungsbedingungen]] dieser Seite",
-	"bs-privacy-prefs-consent-tos-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Nutzungsbedingungen für diese Seite gelesen und anerkannt hast.",
 	"termsofservicepage": "Project:Terms_of_service",
 	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
 	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren",
 	"bs-privacy-module-consent-accepted": "Du hast bereits alle Bedingungen akzeptiert.",
 	"bs-privacy-module-consent-set-success": "Zustimmung erfolgreich gespeichert",
 	"bs-privacy-module-consent-set-fail": "Fehler beim Speichern der Zustimmung!",
-	"privacyconsent": "Zustimmung zur Datenschutzerklärung"
+	"privacyconsent": "Zustimmung zur Datenschutzerklärung",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Speichert den Status der Komponenten der Oberfläche BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Speichert den Status der Komponenten der Oberfläche BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Speichert den Status von Benutzerbenachrichtigungen",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Enthält den Hashwert der aktuellen Benutzersitzung",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Enthält die ID der aktuellen Benutzersitzung",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Enthält die aktuelle Benutzer-ID",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Enthält den Benutzernamen des aktuellen Benutzers",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Enthält den vom Nutzer ausgewählten Zustand des VisualEditors",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Wird für den internen Ladeausgleich verwendet",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Enthält den konfigurierten Wert für den Caching-Mechanismus",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Speichert die Konfiguration, ob das HTTPS-Protokoll erzwungen werden soll",
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste der Cookies in dieser Gruppe:"
 }
