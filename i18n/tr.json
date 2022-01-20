@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"DDPAT",
 			"Hedda",
 			"MuratTheTurkish"
@@ -10,6 +11,7 @@
 	"bs-privacy": "BlueSpice Gizlilik",
 	"bs-privacy-desc": "Kullanıcı gizlilik ayarları için yönetim sayfası",
 	"bs-privacy-admintool-label": "Gizlilik Yöneticisi",
+	"bs-privacy-admintool-text": "Gizlilik",
 	"bs-privacy-header": "Kullanıcıların gizlilik konusunda gerçekleştirdikleri tüm işlemlerin günlüğü",
 	"privacycenter": "Gizlilik merkezi",
 	"privacyadmin": "Gizlilik yöneticisi",
