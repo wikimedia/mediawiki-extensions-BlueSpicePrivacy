@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Vukky"
 		]
 	},
 	"bs-privacy": "BlueSpice Privacy",
@@ -167,9 +168,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Godta alle",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Innstillinger for informasjonskapselsamtykke",
 	"bs-privacy-cookie-consent-group-necessary-label": "Påkrevde informasjonskapsler",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Informasjonskapsler som er nødvendige for at nettstedet skal fungere (øktkapsler, identifikasjonskapsler …)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Informasjonskapsler som er nødvendige for at nettstedet skal fungere",
 	"bs-privacy-cookie-convenience-group-label": "Bekvemmelighetsinformasjonskapsler",
-	"bs-privacy-cookie-convenience-group-desc": "Informasjonskapsler som forbedrer brukeropplevelsen på nettstedet (lagring av innstillinger, status for dynamiske komponenter …)",
+	"bs-privacy-cookie-convenience-group-desc": "Informasjonskapsler som forbedrer brukeropplevelsen på nettstedet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Lagre",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Lukk",
 	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
