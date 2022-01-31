@@ -183,5 +183,7 @@
 	"bs-privacy-module-consent-accepted": "Tüm şartları zaten kabul ettiniz",
 	"bs-privacy-module-consent-set-success": "İzin başarıyla saklandı",
 	"bs-privacy-module-consent-set-fail": "İzin kaydedilemedi!",
-	"privacyconsent": "Gizlilik Politikası Onayı"
+	"privacyconsent": "Gizlilik Politikası Onayı",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Kullanıcı bildirimleri durumunu kaydeder",
+	"bs-privacy-cookie-consent-cookie-list-label": "Bu gruptaki çerezlerin listesi:"
 }
