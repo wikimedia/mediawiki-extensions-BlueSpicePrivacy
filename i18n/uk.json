@@ -169,9 +169,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прийняти всі",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Налаштування згоди на обробку cookies",
 	"bs-privacy-cookie-consent-group-necessary-label": "Необхідні cookies",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, що необхідні для функціонування сайту (cookies сеансу, ідентифікації користувача тощо)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, що необхідні для функціонування сайту",
 	"bs-privacy-cookie-convenience-group-label": "Cookies для зручності",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті (збереження налаштувань користувача, стан динамічних компонентів тощо)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Зберегти",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Закрити",
 	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
@@ -187,5 +187,6 @@
 	"bs-privacy-transparency-format-html": "HTML",
 	"bs-privacy-transparency-format-csv": "CSV",
 	"bs-privacy-transparency-action-timestamp": "$1:",
-	"bs-privacy-consent-log-consent": "$1: $2"
+	"bs-privacy-consent-log-consent": "$1: $2",
+	"bs-privacy-admintool-text": "Конфіденційність"
 }

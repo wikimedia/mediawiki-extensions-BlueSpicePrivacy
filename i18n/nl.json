@@ -5,6 +5,7 @@
 			"Elroy",
 			"Mainframe98",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Optilete",
 			"Romaine"
 		]
@@ -183,5 +184,6 @@
 	"bs-privacy-module-consent-accepted": "U hebt alle voorwaarden al aanvaard.",
 	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
-	"privacyconsent": "Ga akkoord met het privacybeleid"
+	"privacyconsent": "Ga akkoord met het privacybeleid",
+	"bs-privacy-admintool-text": "Privacy"
 }
