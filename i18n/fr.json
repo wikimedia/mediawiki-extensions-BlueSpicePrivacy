@@ -192,16 +192,16 @@
 	"bs-privacy-module-consent-set-success": "Consentement bien stocké",
 	"bs-privacy-module-consent-set-fail": "Échec de sauvegarde du consentement !",
 	"privacyconsent": "Consentement à la politique de confidentialité",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Enregistre l’état des composants de l’habillage BlucSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Enregistre l’état des composants de l’habillage BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Enregistre l’état des composants de l’habillage BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Enregistre l’état des notifications utilisateur",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contient le hachage de la session de l’utilisateur actuel",
 	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Contient l’ID de la session de l’utilisateur actuel",
 	"bs-privacy-cookie-consent-cookie-desc-userid": "Contient l’ID de l’utilisateur actuel",
 	"bs-privacy-cookie-consent-cookie-desc-username": "Contient le nom de l’utilisateur actuel",
-	"bs-privacy-cookie-consent-cookie-desc-vee": "Contient le mode sélectionné de VisualEditor de l’utilisateur",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Contient le mode sélectionné par l’utilisateur pour l’ÉditeurVisuel",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilisé pour la répartition de charge interne",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Contient la valeur configurée pour le mécanisme de cache",
-	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Enregistre la configuration s’il faut imposer le protocole HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :"
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Enregistre la configuration de l’imposition du protocole HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :"
 }
