@@ -4,11 +4,13 @@
 			"Ajam",
 			"Amirsara",
 			"FarsiNevis",
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
 	"bs-privacy": "حریم خصوصی «چاشنی آبی»",
 	"bs-privacy-admintool-label": "مدیر حریم خصوصی",
+	"bs-privacy-admintool-text": "حریم خصوصی",
 	"privacycenter": "مرکز حریم خصوصی",
 	"privacyadmin": "مدیر حریم خصوصی",
 	"bs-privacy-api-error-generic": "خطایی رخ داد",
