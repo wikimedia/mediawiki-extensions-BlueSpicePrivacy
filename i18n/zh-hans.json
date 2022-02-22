@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"500000000006城",
 			"A Chinese Wikipedian",
 			"Ff98sha",
 			"GuoPC",
@@ -20,6 +21,7 @@
 	"bs-privacy": "BlueSpice 隐私",
 	"bs-privacy-desc": "用户隐私设置的管理页面",
 	"bs-privacy-admintool-label": "隐私管理",
+	"bs-privacy-admintool-text": "隐私政策",
 	"bs-privacy-header": "用户对隐私设置的操作日志",
 	"privacycenter": "隐私中心",
 	"privacyadmin": "隐私管理",
@@ -187,5 +189,6 @@
 	"bs-privacy-module-consent-accepted": "您已经接受了所有条款",
 	"bs-privacy-module-consent-set-success": "许可已成功存储",
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
-	"privacyconsent": "同意隐私政策"
+	"privacyconsent": "同意隐私政策",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置"
 }
