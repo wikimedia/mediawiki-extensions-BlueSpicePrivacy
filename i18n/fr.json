@@ -8,7 +8,8 @@
 			"Thibaut120094",
 			"VIGNERON",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Ajeje Brazorf"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -108,7 +109,7 @@
 	"bs-privacy-transparency-private-not-blocked": "Bloqué : non",
 	"bs-privacy-transparency-private-blocked": "Bloqué : oui (par $1)",
 	"bs-privacy-transparency-private-user-page-url": "URL de la page utilisateur : $1",
-	"bs-privacy-transparency-action-timestamp": "$1 :",
+	"bs-privacy-transparency-action-timestamp": "$1 :",
 	"bs-privacy-transparency-private-edit-count": "Nombre de modifications : $1",
 	"bs-privacy-transparency-type-title-content": "Références dans le contenu",
 	"bs-privacy-transparency-type-title-working": "Données de travail",
@@ -134,7 +135,7 @@
 	"log-name-bs-privacy": "Confidentialité BS",
 	"bs-privacy-consent-bool-true": "Oui",
 	"bs-privacy-consent-bool-false": "Non",
-	"bs-privacy-consent-log-consent": "$1 : $2",
+	"bs-privacy-consent-log-consent": "$1 : $2",
 	"logentry-bs-privacy-anonymization": "$4 a rendu le compte anonyme. Nouveau nom d’utilisateur : $5",
 	"logentry-bs-privacy-deletion": "L’utilisateur $4 a supprimé son compte",
 	"logentry-bs-privacy-transparency": "$1 a exporté {{GENDER:$2|}}ses données",
