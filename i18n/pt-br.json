@@ -3,6 +3,7 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Juan90264",
 			"Tks4Fish",
 			"WikiUser22222"
 		]
@@ -169,9 +170,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceitar todos",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configurações de consentimento de cookies",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessários",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies que são necessários para o site funcionar (cookies de sessão, cookies de identificação de usuário ...)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies que são necessários para o site funcionar",
 	"bs-privacy-cookie-convenience-group-label": "Cookies de conveniência",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
 	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
