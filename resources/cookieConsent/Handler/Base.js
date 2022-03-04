@@ -19,6 +19,10 @@
 	OO.initClass( bs.privacy.cookieConsent.BaseHandler );
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.setIfAllowed = function() {
+		if ( arguments.length === 0 ) {
+			this.cookieSetterOrig.apply( document, arguments );
+			return;
+		}
 		var cookie = arguments[0];
 		if ( !cookie ) {
 			return true;
@@ -28,6 +32,9 @@
 			return true;
 		}
 		var cookieName = bits.shift();
+		if ( !cookieName ) {
+			return false;
+		}
 		if ( this.isCookieAllowed( cookieName ) ) {
 			this.cookieSetterOrig.apply( document, arguments );
 			return;
