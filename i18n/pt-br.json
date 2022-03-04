@@ -11,6 +11,7 @@
 	"bs-privacy": "Privacidade do BlueSpice",
 	"bs-privacy-desc": "Página de gerenciamento para configurações de privacidade do usuário",
 	"bs-privacy-admintool-label": "Administrador de privacidade",
+	"bs-privacy-admintool-text": "Privacidade",
 	"bs-privacy-header": "Registro de todas as ações realizadas pelos usuários em relação à privacidade",
 	"privacycenter": "Centro de privacidade",
 	"privacyadmin": "Administrador de privacidade",
@@ -182,5 +183,17 @@
 	"bs-privacy-module-consent-accepted": "Você já aceitou todos os termos",
 	"bs-privacy-module-consent-set-success": "Consentimento armazenado com sucesso",
 	"bs-privacy-module-consent-set-fail": "Falha ao salvar consentimento!",
-	"privacyconsent": "Consentimento para a política de privacidade"
+	"privacyconsent": "Consentimento para a política de privacidade",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva o estado dos componentes da skin BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva o estado dos componentes da skin BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva o estado das notificações do usuário",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Mantém o hash da sessão do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Mantém o ID da sessão do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Mantém o ID do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Mantém o nome de usuário do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantém o modo Editor Visual selecionado pelo usuário",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usado para balanceamento de carga interno",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantém o valor configurado para o mecanismo de cache",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salva a configuração sobre a aplicação do protocolo HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies neste grupo:"
 }
