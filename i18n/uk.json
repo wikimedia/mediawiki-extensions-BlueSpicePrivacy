@@ -3,8 +3,10 @@
 		"authors": [
 			"DDPAT",
 			"Gzhegozh",
+			"Ice bulldog",
 			"Movses",
 			"Piramidion",
+			"Samflint",
 			"Vlad5250",
 			"Ата"
 		]
@@ -170,9 +172,9 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Налаштування згоди на обробку cookies",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Налаштування згоди на обробку cookies",
 	"bs-privacy-cookie-consent-group-necessary-label": "Необхідні cookies",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, що необхідні для функціонування сайту (cookies сеансу, ідентифікації користувача тощо)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, що необхідні для функціонування сайту",
 	"bs-privacy-cookie-convenience-group-label": "Cookies для зручності",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті (збереження налаштувань користувача, стан динамічних компонентів тощо)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті",
 	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
 	"echo-pref-tooltip-bs-privacy-cat": "Сповіщати мене, коли змінюється статус мого запиту щодо анонімізації або вилучення мого облікового запису",
 	"bs-privacy-prefs-consent-tos": "Я приймаю [[{{MediaWiki:Termsofservicepage}}|умови використання]] цього сайту",
@@ -187,5 +189,16 @@
 	"bs-privacy-transparency-format-html": "HTML",
 	"bs-privacy-transparency-format-csv": "CSV",
 	"bs-privacy-transparency-action-timestamp": "$1:",
-	"bs-privacy-consent-log-consent": "$1: $2"
+	"bs-privacy-consent-log-consent": "$1: $2",
+	"bs-privacy-admintool-text": "Конфіденційність",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Зберігає стан сповіщень користувачів",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Зберігає хеш сеансу поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Зберігає ідентифікатор сеансу поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Зберігає ідентифікатор поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Зберігає ім’я користувача поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Утримує вибраний користувачем режим візуального редактора",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Використовується для внутрішнього балансування навантаження",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Зберігає налаштоване значення для механізму кешування",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Зберігає конфігурацію щодо застосування протоколу HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Список файлів cookie в цій групі:"
 }

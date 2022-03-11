@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"bs-privacy-admintool-text": "Riservatezza",
+	"bs-privacy-cookie-convenience-group-desc": "Coochi che miglioren l'esperienza de l'utent in sul sit",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "El salva el stat del component de la pell BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "El salva el satat di notifeghe de l'utent",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "El ten l'hasc de la session de l'utent de adess",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "El ten l'ID de la session de l'utent de adess",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Ten l'ID de l'utent de adess",
+	"bs-privacy-cookie-consent-cookie-desc-username": "El ten el nom de l'utent de adess",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "El manten el moeud VisualEditor catad foeura de l'utent",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Drovad per gualivà el caregh interno",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "El manten el valor configurad per el mecanismo de salvament in de la chesc",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "El salva la configurazzion a segonda del protocoll HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista di coochi quell grup chì"
+}

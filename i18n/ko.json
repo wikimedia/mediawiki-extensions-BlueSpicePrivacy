@@ -4,6 +4,7 @@
 			"Maoue",
 			"Nuevo Paso",
 			"Ykhwong",
+			"Yunbj",
 			"아라"
 		]
 	},
@@ -142,5 +143,21 @@
 	"privacyconsent": "개인정보 보호정책 동의",
 	"bs-privacy-desc": "사용자 개인정보 설정의 관리 페이지",
 	"bs-privacy-anonymization-layout-help": "사용자 이름의 모든 기여를 새 사용자로 대체함으로써 계정을 익명화할 수 있습니다",
-	"bs-privacy-anonymization-final-prompt": "계정 이름이 변경되고 모든 기여는 새 사용자 이름으로 표시됩니다. 이 동작은 되돌릴 수 없습니다"
+	"bs-privacy-anonymization-final-prompt": "계정 이름이 변경되고 모든 기여는 새 사용자 이름으로 표시됩니다. 이 동작은 되돌릴 수 없습니다",
+	"bs-privacy-admintool-text": "개인정보",
+	"bs-privacy-transparency-type-title-working": "작업중인 데이터",
+	"bs-privacy-cookie-consent-group-necessary-desc": "사이트가 기능하는데 필수적인 쿠키",
+	"bs-privacy-cookie-convenience-group-desc": "사이트의 사용자 경험을 개선하는 쿠키",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "BlueSpiceCalumma 스킨 구성 요소의 상태를 저장합니다",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "BlueSpiceDiscovery 스킨 구성 요소의 상태를 저장합니다",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "사용자 알림의 상태를 저장합니다",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "현재 사용자의 세션 해시를 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "현재 사용자의 세션 ID를 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "현재 사용자의 ID를 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-username": "현재 사용자의 사용자 이름을 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "사용자가 선택한 시각 편집기 모드를 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "내부 부하 분산에 사용됨",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "캐시 매커니즘의 구성된 값을 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS 프로토콜의 강제 여부에 관한 구성을 저장합니다",
+	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:"
 }

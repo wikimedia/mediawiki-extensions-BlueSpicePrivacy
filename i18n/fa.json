@@ -4,7 +4,8 @@
 			"Ajam",
 			"Amirsara",
 			"FarsiNevis",
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
 	"bs-privacy-anonymization-request-comment": "نام کاربری تازه: $1",
@@ -107,5 +108,6 @@
 	"bs-privacy-api-error-missing-module": "پودمان $1 ثبت نشده‌است!",
 	"bs-privacy-missing-param": "پارامتر «$1» باید وارد شود!",
 	"bs-privacy-invalid-param": "پارامتر «$1» با فرمت نامعتبر وارد شده‌است!",
-	"bs-privacy-cookie-consent-group-necessary-label": "کلوچک‌های الزامی"
+	"bs-privacy-cookie-consent-group-necessary-label": "کلوچک‌های الزامی",
+	"bs-privacy-admintool-text": "حریم خصوصی"
 }

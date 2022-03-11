@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Alno",
 			"DSwissK",
 			"Derugon",
@@ -169,15 +170,15 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Tout accepter",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Paramètres d’acceptation des cookies",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies obligatoires",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Les cookies qui sont nécessaires pour que ce site fonctionne (cookies de session, cookies d’identification utilisateur…)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Les cookies qui sont nécessaires pour que ce site fonctionne",
 	"bs-privacy-cookie-convenience-group-label": "Cookies de confort",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies qui améliorent votre expérience utilisateur sur le site (préférences utilisateur enregistrées, état des composants dynamiques, etc.)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies qui améliorent l’expérience utilisateur sur le site",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Enregistrer",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fermer",
 	"bs-privacy-consent-cookie-settings-label": "Modifier l’acceptation des cookies",
 	"right-bs-privacy-admin": "exécuter une action d’administration des données personnelles",
-	"bs-privacy-transparency-action-timestamp": "$1 :",
-	"bs-privacy-consent-log-consent": "$1 : $2",
+	"bs-privacy-transparency-action-timestamp": "$1 :",
+	"bs-privacy-consent-log-consent": "$1 : $2",
 	"echo-pref-tooltip-bs-privacy-cat": "Me notifier quand l’état de ma demande d’anonymisation ou de suppression de mon compte est modifié",
 	"bs-privacy-prefs-consent-tos": "J’accepte les [[{{MediaWiki:Termsofservicepage}}|conditions d’utilisation]] de ce site",
 	"bs-privacy-prefs-consent-tos-help": "En cochant ce champ, vous confirmez que vous avez lu et accepté les conditions d’utilisations de ce site",
@@ -189,5 +190,18 @@
 	"bs-privacy-module-consent-accepted": "Vous avez déjà accepté toutes les conditions.",
 	"bs-privacy-module-consent-set-success": "Consentement bien stocké",
 	"bs-privacy-module-consent-set-fail": "Échec de sauvegarde du consentement !",
-	"privacyconsent": "Consentement à la politique de confidentialité"
+	"privacyconsent": "Consentement à la politique de confidentialité",
+	"bs-privacy-admintool-text": "Confidentialité",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Enregistre l’état des composants de l’habillage BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Enregistre l’état des composants de l’habillage BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Enregistre l’état des notifications de l’utilisateur",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Contient le hachage de la session de l’utilisateur actuel",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Contient l’ID de la session de l’utilisateur actuel",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Contient l’ID de l’utilisateur actuel",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Contient le nom de l’utilisateur actuel",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Contient le mode sélectionné par l’utilisateur pour l’ÉditeurVisuel",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilisé pour la répartition de charge interne",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Contient la valeur configurée pour le mécanisme de cache",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Enregistre la configuration de l’imposition du protocole HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :"
 }

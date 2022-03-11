@@ -2,7 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
+			"DDPAT",
 			"Hedda",
+			"Ice bulldog",
 			"MuratTheTurkish"
 		]
 	},
@@ -164,9 +167,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Hepsini kabul et",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Çerez onayı ayarları",
 	"bs-privacy-cookie-consent-group-necessary-label": "Gerekli çerezler",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Sitenin çalışması için gerekli olan çerezler (oturum çerezleri, kullanıcı tanımlama çerezleri...)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Sitenin çalışması için gerekli olan çerezler",
 	"bs-privacy-cookie-convenience-group-label": "Uygunluk çerezleri",
-	"bs-privacy-cookie-convenience-group-desc": "Sitedeki kullanıcı deneyimini geliştiren çerezler (kullanıcı tercihlerinden tasarruf etme, dinamik bileşenlerin durumu...)",
+	"bs-privacy-cookie-convenience-group-desc": "Sitedeki kullanıcı deneyimini geliştiren çerezler",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Kaydet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Kapat",
 	"bs-privacy-consent-cookie-settings-label": "Çerez onayını değiştir",
@@ -180,5 +183,8 @@
 	"bs-privacy-module-consent-accepted": "Tüm şartları zaten kabul ettiniz",
 	"bs-privacy-module-consent-set-success": "İzin başarıyla saklandı",
 	"bs-privacy-module-consent-set-fail": "İzin kaydedilemedi!",
-	"privacyconsent": "Gizlilik Politikası Onayı"
+	"privacyconsent": "Gizlilik Politikası Onayı",
+	"bs-privacy-admintool-text": "Gizlilik",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Kullanıcı bildirimleri durumunu kaydeder",
+	"bs-privacy-cookie-consent-cookie-list-label": "Bu gruptaki çerezlerin listesi:"
 }

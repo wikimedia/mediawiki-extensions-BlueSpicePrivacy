@@ -70,7 +70,8 @@
 	"bs-privacy-prefs-consent-tos-help": "Selezionando questo campo confermi di aver letto e accettato i termini di servizio per questo sito",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Impostazioni del consenso ai cookie",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessari",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookie necessari al funzionamento del sito (cookie di sessione, cookie di identificazione dell'utente...)",
-	"bs-privacy-cookie-convenience-group-desc": "Cookie che migliorano l'esperienza dell'utente sul sito (salvataggio delle preferenze dell'utente, stato dei componenti dinamici...)",
-	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini"
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookie necessari al funzionamento del sito",
+	"bs-privacy-cookie-convenience-group-desc": "Cookie che migliorano l'esperienza dell'utente sul sito",
+	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
+	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:"
 }

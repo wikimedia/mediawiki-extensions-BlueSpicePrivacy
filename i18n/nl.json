@@ -5,6 +5,7 @@
 			"Elroy",
 			"Mainframe98",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Optilete",
 			"Romaine"
 		]
@@ -174,14 +175,15 @@
 	"apihelp-bs-privacy-param-data": "De gegevens die aan de gevraagde functie doorgegeven worden",
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Deze site gebruikt cookies om het gebruik te verbeteren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Instellingen voor toestemming voor cookies",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies die noodzakelijk zijn voor het functioneren van de site (sessiecookies, cookies voor gebruikersidentificatie…)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies die noodzakelijk zijn voor het functioneren van de site",
 	"bs-privacy-cookie-convenience-group-label": "Gemakscookies",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies die het gebruik van de site verbeteren (opslaan van gebruikersvoorkeuren, toestand van dynamische onderdelen…)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies die het gebruik van de site verbeteren",
 	"termsofservicepage": "Project:Gebruiksvoorwaarden",
 	"bs-privacy-consent-auth-step": "Aanvaard de volgende voorwaarden om door te gaan:",
 	"bs-privacy-consent-auth-fail": "U moet alle voorwaarden aanvaarden.",
 	"bs-privacy-module-consent-accepted": "U hebt alle voorwaarden al aanvaard.",
 	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
-	"privacyconsent": "Ga akkoord met het privacybeleid"
+	"privacyconsent": "Ga akkoord met het privacybeleid",
+	"bs-privacy-admintool-text": "Privacy"
 }

@@ -4,6 +4,7 @@
 			"Hwboehm",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"Umherirrender"
 		]
 	},
@@ -166,9 +167,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alle akzeptieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Cookie-Zustimmungseinstellungen",
 	"bs-privacy-cookie-consent-group-necessary-label": "Erforderliche Cookies",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, die für die Funktion der Website erforderlich sind (Session-Cookies, Benutzeridentifizierungs-Cookies …).",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies, die für die Funktion der Website erforderlich sind",
 	"bs-privacy-cookie-convenience-group-label": "Komfort Cookies",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies, die die Benutzerfreundlichkeit auf der Website verbessern (Speichern von Benutzereinstellungen, Zustand der dynamischen Komponenten …).",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies, die die Benutzerfreundlichkeit auf der Website verbessern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
@@ -181,5 +182,18 @@
 	"bs-privacy-module-consent-accepted": "Du hast bereits alle Bedingungen akzeptiert.",
 	"bs-privacy-module-consent-set-success": "Zustimmung erfolgreich gespeichert",
 	"bs-privacy-module-consent-set-fail": "Fehler beim Speichern der Zustimmung!",
-	"privacyconsent": "Zustimmung zur Datenschutzerklärung"
+	"privacyconsent": "Zustimmung zur Datenschutzerklärung",
+	"bs-privacy-admintool-text": "Datenschutz",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Speichert den Status der Komponenten der Oberfläche BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Speichert den Status der Komponenten der Oberfläche BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Speichert den Status von Benutzerbenachrichtigungen",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Enthält den Hashwert der aktuellen Benutzersitzung",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Enthält die ID der aktuellen Benutzersitzung",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Enthält die aktuelle Benutzer-ID",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Enthält den Benutzernamen des aktuellen Benutzers",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Enthält den vom Nutzer ausgewählten Zustand des VisualEditors",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Wird für den internen Ladeausgleich verwendet",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Enthält den konfigurierten Wert für den Caching-Mechanismus",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Speichert die Konfiguration, ob das HTTPS-Protokoll erzwungen werden soll",
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste der Cookies in dieser Gruppe:"
 }
