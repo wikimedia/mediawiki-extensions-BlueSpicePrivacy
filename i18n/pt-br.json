@@ -3,6 +3,7 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Juan90264",
 			"Tks4Fish",
 			"WikiUser22222"
 		]
@@ -167,9 +168,9 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceitar todos",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configurações de consentimento de cookies",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessários",
-	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies que são necessários para o site funcionar (cookies de sessão, cookies de identificação de usuário ...)",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Cookies que são necessários para o site funcionar",
 	"bs-privacy-cookie-convenience-group-label": "Cookies de conveniência",
-	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site (salvando as preferências do usuário, o estado dos componentes dinâmicos ...)",
+	"bs-privacy-cookie-convenience-group-desc": "Cookies que melhoram a experiência do usuário no site",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salvar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
 	"bs-privacy-consent-cookie-settings-label": "Alterar consentimento do cookie",
@@ -181,5 +182,18 @@
 	"bs-privacy-module-consent-accepted": "Você já aceitou todos os termos",
 	"bs-privacy-module-consent-set-success": "Consentimento armazenado com sucesso",
 	"bs-privacy-module-consent-set-fail": "Falha ao salvar consentimento!",
-	"privacyconsent": "Consentimento para a política de privacidade"
+	"privacyconsent": "Consentimento para a política de privacidade",
+	"bs-privacy-admintool-text": "Privacidade",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva o estado dos componentes da skin BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva o estado dos componentes da skin BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva o estado das notificações do usuário",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Mantém o hash da sessão do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Mantém o ID da sessão do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Mantém o ID do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Mantém o nome de usuário do usuário atual",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantém o modo Editor Visual selecionado pelo usuário",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usado para balanceamento de carga interno",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantém o valor configurado para o mecanismo de cache",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salva a configuração sobre a aplicação do protocolo HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies neste grupo:"
 }

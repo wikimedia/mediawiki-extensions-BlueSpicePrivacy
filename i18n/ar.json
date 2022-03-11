@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -140,7 +141,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 قد {{GENDER:$2|ألغى|ألغت}} طلب حذف {{GENDER:$2|حسابه|حسابها}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 قد {{GENDER:$2|وافق|وافقت}} على طلب حذف الحساب المقدم بواسطة المستخدم $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 قد {{GENDER:$2|رفض|رفضت}} طلب حذف  الحساب المقدم بواسطة المستخدم $4، مع تعليق: $5",
-	"echo-category-title-bs-privacy-cat": "الخصوصية",
+	"echo-category-title-bs-privacy-cat": "إجراءات الخصوصية",
 	"notification-bs-privacy-login-url": "تسجيل الدخول إلى الويكي",
 	"notification-bs-privacy-center-url": "مركز الخصوصية",
 	"notification-bs-privacy-admin-url": "إداري الخصوصية",
@@ -174,5 +175,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "إغلاق",
 	"bs-privacy-consent-cookie-settings-label": "تغيير موافقة ملفات تعريف الارتباط",
 	"bs-privacy-consent-auth-step": "للمواصلة، رجاءً قبول الشروط التالية",
-	"bs-privacy-consent-auth-fail": "عليك قبول الشروط"
+	"bs-privacy-consent-auth-fail": "عليك قبول الشروط",
+	"bs-privacy-admintool-text": "الخصوصية"
 }

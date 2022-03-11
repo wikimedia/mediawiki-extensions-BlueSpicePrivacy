@@ -3,8 +3,10 @@
 		"authors": [
 			"DDPAT",
 			"Gzhegozh",
+			"Ice bulldog",
 			"Movses",
 			"Piramidion",
+			"Samflint",
 			"Vlad5250",
 			"Ата"
 		]
@@ -188,5 +190,15 @@
 	"bs-privacy-transparency-format-csv": "CSV",
 	"bs-privacy-transparency-action-timestamp": "$1:",
 	"bs-privacy-consent-log-consent": "$1: $2",
-	"bs-privacy-admintool-text": "Конфіденційність"
+	"bs-privacy-admintool-text": "Конфіденційність",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Зберігає стан сповіщень користувачів",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Зберігає хеш сеансу поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Зберігає ідентифікатор сеансу поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Зберігає ідентифікатор поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Зберігає ім’я користувача поточного користувача",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Утримує вибраний користувачем режим візуального редактора",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Використовується для внутрішнього балансування навантаження",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Зберігає налаштоване значення для механізму кешування",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Зберігає конфігурацію щодо застосування протоколу HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Список файлів cookie в цій групі:"
 }

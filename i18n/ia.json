@@ -178,5 +178,9 @@
 	"bs-privacy-module-consent-accepted": "Tu ha jam acceptate tote le conditiones",
 	"bs-privacy-module-consent-set-success": "Consentimento immagazinate con successo",
 	"bs-privacy-module-consent-set-fail": "Fallimento de salveguarda del consentimento!",
-	"privacyconsent": "Consentimento al politica de confidentialitate"
+	"privacyconsent": "Consentimento al politica de confidentialitate",
+	"bs-privacy-admintool-text": "Confidentialitate",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salveguarda le stato de componentes del apparentia BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salveguarda le stato de componentes del apparentia BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salveguarda le stato de notificationes de usator"
 }
