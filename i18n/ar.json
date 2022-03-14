@@ -3,12 +3,14 @@
 		"authors": [
 			"Meno25",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"FiberAhmed"
 		]
 	},
 	"bs-privacy": "خصوصية BlueSpice",
 	"bs-privacy-desc": "صفحةلإدارة لإعدادات خصوصية المستخدم",
 	"bs-privacy-admintool-label": "إداري الخصوصية",
+	"bs-privacy-admintool-text": "الخصوصية",
 	"bs-privacy-header": "سجل جميع الإجراءات التي اتخذها المستخدمون بخصوص الخصوصية",
 	"privacycenter": "مركز الخصوصية",
 	"privacyadmin": "إداري الخصوصية",
@@ -140,7 +142,7 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 قد {{GENDER:$2|ألغى|ألغت}} طلب حذف {{GENDER:$2|حسابه|حسابها}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1 قد {{GENDER:$2|وافق|وافقت}} على طلب حذف الحساب المقدم بواسطة المستخدم $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 قد {{GENDER:$2|رفض|رفضت}} طلب حذف  الحساب المقدم بواسطة المستخدم $4، مع تعليق: $5",
-	"echo-category-title-bs-privacy-cat": "الخصوصية",
+	"echo-category-title-bs-privacy-cat": "إجراءات الخصوصية",
 	"notification-bs-privacy-login-url": "تسجيل الدخول إلى الويكي",
 	"notification-bs-privacy-center-url": "مركز الخصوصية",
 	"notification-bs-privacy-admin-url": "إداري الخصوصية",

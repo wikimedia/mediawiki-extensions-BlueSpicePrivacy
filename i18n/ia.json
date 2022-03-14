@@ -7,6 +7,7 @@
 	"bs-privacy": "Confidentialitate de BlueSpice",
 	"bs-privacy-desc": "Pagina de gestion pro parametros de confidentialitate del usator",
 	"bs-privacy-admintool-label": "Administration de confidentialitate",
+	"bs-privacy-admintool-text": "Confidentialitate",
 	"bs-privacy-header": "Registro de tote le actiones le usatores ha prendite concernente le confidentialitate",
 	"privacycenter": "Centro de confidentialitate",
 	"privacyadmin": "Administration de confidentialitate",
@@ -178,5 +179,8 @@
 	"bs-privacy-module-consent-accepted": "Tu ha jam acceptate tote le conditiones",
 	"bs-privacy-module-consent-set-success": "Consentimento immagazinate con successo",
 	"bs-privacy-module-consent-set-fail": "Fallimento de salveguarda del consentimento!",
-	"privacyconsent": "Consentimento al politica de confidentialitate"
+	"privacyconsent": "Consentimento al politica de confidentialitate",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salveguarda le stato de componentes del apparentia BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salveguarda le stato de componentes del apparentia BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salveguarda le stato de notificationes de usator"
 }
