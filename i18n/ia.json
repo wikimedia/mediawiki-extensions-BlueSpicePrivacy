@@ -182,5 +182,14 @@
 	"privacyconsent": "Consentimento al politica de confidentialitate",
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salveguarda le stato de componentes del apparentia BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salveguarda le stato de componentes del apparentia BlueSpiceDiscovery",
-	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salveguarda le stato de notificationes de usator"
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salveguarda le stato de notificationes de usator",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Tene le hash de session del usator actual",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Tene le ID de session del usator actual",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Tene le ID del usator actual",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Tene le nomine de usator del usator actual",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Tene le modo VisualEditor seligite per le usator",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usate pro le balanciamento interne de carga",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Tene le valor configurate pro le mechanismo de cache",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salveguarda le configuration de si o non applicar le protocollo HTTPS",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:"
 }
