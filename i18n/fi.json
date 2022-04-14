@@ -4,7 +4,8 @@
 			"FinlandMan",
 			"MITO",
 			"Pxos",
-			"Silvonen"
+			"Silvonen",
+			"Yupik"
 		]
 	},
 	"bs-privacy-admintool-text": "Yksityisyys",
@@ -20,6 +21,7 @@
 	"echo-category-title-bs-privacy-cat": "Tietosuojaan liittyvät toimet",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Hyväksy kaikki",
 	"bs-privacy-cookie-consent-group-necessary-label": "Välttämättömät evästeet",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Evästeet, jotka ovat tarpeellisia sivuston toiminnan kannalta",
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje"
