@@ -12,5 +12,9 @@
 	"bs-privacy-consent-save-button": "Ruõkk",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk",
 	"bs-privacy-transparency-show-all-data-button": "Čuäʹjet puk teâđaid",
-	"bs-privacy-transparency-private-edit-count": "Muttâz ohttsa: $1"
+	"bs-privacy-transparency-private-edit-count": "Muttâz ohttsa: $1",
+	"bs-privacy-admin-request-grid-column-timestamp": "Äiʹǧǧštemppal",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tät seiddõs âânn jeäʹvstõõzzid, što ââʹnnemǩiõččlâsttmõš lij pueʹrab",
+	"bs-privacy-cookie-consent-group-necessary-label": "Vieʹltʼteʹmes jeäʹvstõõzz",
+	"bs-privacy-cookie-consent-group-necessary-desc": "Jeäʹvstõõzz, koid âlgg ââʹnned, što seiddõs tuåimmai"
 }

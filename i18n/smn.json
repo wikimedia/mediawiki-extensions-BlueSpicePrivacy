@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
 	"bs-privacy-admin-request-grid-column-user": "Kevttee",
@@ -9,5 +10,7 @@
 	"bs-privacy-consent-save-button": "Vuorkkii",
 	"bs-privacy-admin-consent-grid-column-user": "Kevtteenommâ",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Vuorkkii",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Toopâ"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Toopâ",
+	"bs-privacy-admintool-text": "Priivaatvuotâ",
+	"bs-privacy-cookie-consent-group-necessary-label": "Velttidmettum niästádâsah"
 }
