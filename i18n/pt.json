@@ -108,8 +108,10 @@
 	"bs-privacy-transparency-type-title-actions": "Dados de operações",
 	"bs-privacy-prefs-consent-cookies": "Aceito o armazenamento de ''cookies''",
 	"bs-privacy-prefs-consent-privacy-policy": "Aceito as [[{{MediaWiki:Privacypage}}|normas de privacidade]] deste ''site''",
+	"bs-privacy-prefs-consent-tos": "Aceito as [[{{MediaWiki:Termsofservicepage}}|condições de utilização]] deste ''site''",
 	"bs-privacy-prefs-consent-cookies-help": "''Cookies'' são pequenas informações armazenadas no seu computador entre sessões para melhorar a experiência de utilização",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ao marcar este campo, confirma que leu e entendeu as normas de privacidade deste ''site''.",
+	"bs-privacy-prefs-consent-tos-help": "Ao marcar este campo, confirma que leu e aceita as condições de utilização deste ''site''",
 	"bs-privacy-consent-layout-label": "Aceitação das normas de privacidade",
 	"bs-privacy-consent-layout-help": "Ver e alterar as configurações de aceitação das normas de privacidade",
 	"bs-privacy-consent-save-button": "Gravar",
@@ -171,5 +173,12 @@
 	"bs-privacy-cookie-convenience-group-desc": "''Cookies'' que melhoram a experiência do utilizador no ''site'' (gravando as preferências do utilizador, o estado dos componentes dinâmicos...)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gravar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fechar",
-	"bs-privacy-consent-cookie-settings-label": "Alterar a aceitação de ''cookies''"
+	"bs-privacy-consent-cookie-settings-label": "Alterar a aceitação de ''cookies''",
+	"termsofservicepage": "Project:Condições_de_utilização",
+	"bs-privacy-consent-auth-step": "Para continuar, aceite as seguintes condições, por favor",
+	"bs-privacy-consent-auth-fail": "Tem de aceitar todas as condições",
+	"bs-privacy-module-consent-accepted": "Já aceitou todas as condições",
+	"bs-privacy-module-consent-set-success": "Consentimento foi armazenado",
+	"bs-privacy-module-consent-set-fail": "Não foi possível gravar o consentimento!",
+	"privacyconsent": "Consentimento da política de privacidade"
 }
