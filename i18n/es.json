@@ -3,11 +3,12 @@
 		"authors": [
 			"Carlosmg.dg",
 			"DannyS712",
+			"DiegoAmbrocio",
 			"Fitoschido",
+			"Francodiaz7",
 			"Jackiezelaya",
 			"Jakeukalane",
-			"MarcoAurelio",
-			"DiegoAmbrocio"
+			"MarcoAurelio"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -175,5 +176,12 @@
 	"bs-privacy-cookie-consent-cookie-desc-userid": "Mantiene el ID del usuario actual",
 	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene el nombre de usuario del usuario actual",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Se utiliza para equilibrar la carga interna",
-	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantiene el valor configurado para el mecanismo de almacenamiento en caché"
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantiene el valor configurado para el mecanismo de almacenamiento en caché",
+	"notification-bs-privacy-admin-url": "Administración de privacidad",
+	"notification-bs-privacy-request-denied-anonymization-body": "El usuario $1 negó tu petición para anonimizar tu cuenta al nombre de usuario \"$2\". Comentario: $3",
+	"notification-bs-privacy-request-denied-deletion-body": "El usuario $1 ha negado tu petición para eliminar tu cuenta. Comentario: $2",
+	"notification-bs-privacy-request-submitted-body": "El usuario \"$1\" entregó una nueva petición de privacidad. Módulo: $3. Comentario: $2",
+	"termsofservicepage": "Proyecto:Términos_de_servicio",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Usuario de control seleccióno modo VisualEditor",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:"
 }
