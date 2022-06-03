@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"Msz2001",
 			"Rail"
 		]
 	},
 	"bs-privacy-anonymization-api-invalid-username": "Nieprawidłowa nazwa użytkownika",
 	"bs-privacy-transparency-private-groups": "Groupy: $1",
-	"bs-privacy-prefs-consent-privacy-policy": "Akceptuję [[Project:Privacy|politykę prywatności]] tej strony",
+	"bs-privacy-prefs-consent-privacy-policy": "Akceptuję [[{{MediaWiki:Privacypage}}|politykę prywatności]] tej strony",
 	"bs-privacy-consent-save-button": "Zapisz",
 	"bs-privacy-admin-consent-grid-column-user": "Nazwa użytkownika",
 	"bs-privacy-consent-bool-true": "Tak",
