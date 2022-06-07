@@ -7,7 +7,7 @@
 	"descriptionmsg": "bs-privacy-desc",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePrivacy",
 	"type": "bluespice",
-	"version": "4.2.0-alpha",
+	"version": "4.2.0",
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
 		"extensions": {
