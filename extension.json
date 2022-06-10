@@ -428,7 +428,11 @@
 		},
 		"PrivacyPrivacyPolicyMandatory": {
 			"value": false,
-			"description": "If true, user will be forced to consent to privacy policy and terms of service at first login"
+			"description": "If true, user will be forced to consent to privacy policy and terms of service before accessing any other page"
+		},
+		"PrivacyPrivacyPolicyOnLogin": {
+			"value": true,
+			"description": "If true, accepting of privacy policy will be included in the login process"
 		}
 	},
 	"LogTypes": [ "bs-privacy" ],
