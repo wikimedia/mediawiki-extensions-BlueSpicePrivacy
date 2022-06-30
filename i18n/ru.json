@@ -10,9 +10,17 @@
 			"Kareyac",
 			"Movses",
 			"Okras",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"Pacha Tchernof"
 		]
 	},
+	"bs-privacy": "Приватность BlueSpice",
+	"bs-privacy-desc": "Страница управления настройками конфиденциальности пользователей",
+	"bs-privacy-admintool-label": "Администратор приватности",
+	"bs-privacy-admintool-text": "Приватность",
+	"bs-privacy-header": "Журнал всех действий, предпринятых пользователями в отношении приватности",
+	"privacycenter": "Центр приватности",
+	"privacyadmin": "Администратор приватности",
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
 	"bs-privacy-anonymization-new-username-label": "Новое имя участника",
 	"bs-privacy-anonymization-confirm-button-label": "Анонимизировать мой аккаунт",
