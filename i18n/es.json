@@ -183,5 +183,8 @@
 	"notification-bs-privacy-request-submitted-body": "El usuario \"$1\" entregó una nueva petición de privacidad. Módulo: $3. Comentario: $2",
 	"termsofservicepage": "Proyecto:Términos_de_servicio",
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Usuario de control seleccióno modo VisualEditor",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
+	"bs-privacy-prefs-consent-tos": "Acepto los [[{{MediaWiki:Termsofservicepage}}|términos de servicio]] de este sitio",
+	"bs-privacy-prefs-consent-tos-help": "Al marcar este campo se confirma la lectura y comprensión de la normativa de privacidad del sitio",
+	"logentry-bs-privacy-anonymization": "$4 ha anonimizado la cuenta. Nuevo nombre de usuario: $5"
 }

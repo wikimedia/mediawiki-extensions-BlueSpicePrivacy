@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hwboehm",
-			"Mglaser"
+			"Mglaser",
+			"Mschlindwein"
 		]
 	},
 	"bs-privacy-privacy-center-subtitle": "Übersicht über Ihre Datenschutzeinstellungen",
@@ -27,7 +28,7 @@
 	"bs-privacy-transparency-export-layout-title": "Ihre Daten exportieren",
 	"bs-privacy-transparency-loading-message": "Bitte warten Sie, während Ihre Daten gesammelt werden...",
 	"bs-privacy-transparency-view-data-dialog-title": "Ihre Daten anzeigen",
-	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
+	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn Sie dieses Feld ankreuzen, bestätigen Sie, dass Sie die Datenschutzerklärung für diese Website gelesen und anerkannt haben.",
 	"bs-privacy-consent-layout-help": "Anzeigen und Ändern der Einstellungen Ihrer Datenschutzerklärung",
 	"bs-privacy-consent-get-options-fail": "Beim Versuch, Ihre Datenschutzrichtlinienoptionen abzurufen, ist ein Fehler aufgetreten.",
 	"bs-privacy-consent-save-success": "Ihre Datenschutzeinstellungen wurden gespeichert.",

@@ -10,6 +10,7 @@
 			"Kareyac",
 			"Movses",
 			"Okras",
+			"Pacha Tchernof",
 			"Romanko Mikhail"
 		]
 	},
@@ -68,5 +69,12 @@
 	"notification-bs-privacy-login-url": "Войти на вики",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Принять все",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сохранить",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Закрыть"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Закрыть",
+	"bs-privacy": "Приватность BlueSpice",
+	"bs-privacy-desc": "Страница управления настройками конфиденциальности пользователей",
+	"bs-privacy-admintool-label": "Администратор приватности",
+	"bs-privacy-admintool-text": "Приватность",
+	"bs-privacy-header": "Журнал всех действий, предпринятых пользователями в отношении приватности",
+	"privacycenter": "Центр приватности",
+	"privacyadmin": "Администратор приватности"
 }
