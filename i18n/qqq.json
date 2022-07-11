@@ -16,6 +16,7 @@
 	"bs-privacy-header": "Header for bs-privacy log type",
 	"privacycenter": "Title of {{Special:PrivacyCenter}}",
 	"privacyadmin": "Title of {{Special:PrivacyAdmin}}",
+	"privacypages": "Title of {{Special:PrivacyPages}}",
 	"bs-privacy-privacy-center-subtitle": "Subtitle of {{Special:PrivacyCenter}}",
 	"bs-privacy-api-error-generic": "Generic error message for bs-privacy-api API endpoint",
 	"bs-privacy-anonymization-error-retrieving-name": "Error message when new random username cannot be retrieved",
@@ -184,7 +185,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Label for button to save settings in cookie consent settings dialog",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Label for button to close cookie consent settings dialog",
 	"bs-privacy-consent-cookie-settings-label": "Label for the anchor that opens cookie consent dialog",
-	"termsofservicepage": "Page where the terms of service are located",
+	"bs-privacy-termsofservicepage": "Page where the terms of service are located",
+	"bs-privacy-privacypage": "Page where the privacy policies are located",
 	"bs-privacy-consent-auth-step": "Label for the secondary authentication step prompting user to accept terms",
 	"bs-privacy-consent-auth-fail": "Error message when user does not accept the terms",
 	"bs-privacy-module-consent-accepted": "Message shown when user navigates to Special:PrivacyConsent, but has already accepted all terms",
@@ -202,5 +204,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Cookie description",
-	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description"
+	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description",
+	"bs-privacy-alert-page-not-exist": "Alert message that is shown to an admin to inform about missing pages\n$1 - number of missinf pages, $2 - link list to the missing pages",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Error message shown when Special:PrivacyPages is called with and invalid subpage"
 }

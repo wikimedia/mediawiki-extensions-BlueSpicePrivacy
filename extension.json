@@ -33,6 +33,9 @@
 			],
 			"AdminToolRegistry": {
 				"bs-privacy-admin": "BlueSpice\\Privacy\\AdminTool"
+			},
+			"AlertProviderRegistry": {
+				"bs-privacy-alert": "\\BlueSpice\\Privacy\\AlertProvider\\MissingPrivacyPages::factory"
 			}
 		},
 		"BlueSpicePrivacy": {
@@ -124,6 +127,10 @@
 	"SpecialPages": {
 		"PrivacyCenter": "\\BlueSpice\\Privacy\\Special\\PrivacyCenter",
 		"PrivacyAdmin": "\\BlueSpice\\Privacy\\Special\\PrivacyAdmin",
+		"PrivacyPages": {
+			"class": "\\BlueSpice\\Privacy\\Special\\PrivacyPages",
+			"args": [ "PrivacyPages" ]
+		},
 		"PrivacyConsent": "\\BlueSpice\\Privacy\\Special\\PrivacyConsent"
 	},
 	"ResourceModules": {
@@ -401,6 +408,7 @@
 			"\\BlueSpice\\Privacy\\Hook\\GetPreferences\\AddConsentPrefs::callback"
 		],
 		"BeforePageDisplay": "addCookieConsent",
+		"TitleReadWhitelist": "\\BlueSpice\\Privacy\\Hook\\TitleReadWhitelist\\AddWhitelistPages::callback",
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
 		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback",
@@ -440,6 +448,12 @@
 		"PrivacyPrivacyPolicyOnLogin": {
 			"value": true,
 			"description": "If true, accepting of privacy policy will be included in the login process"
+		},
+		"PrivacyTermsOfServiceLink": {
+			"value": ""
+		},
+		"PrivacyPrivacyPolicyLink": {
+			"value": ""
 		}
 	},
 	"LogTypes": [ "bs-privacy" ],
