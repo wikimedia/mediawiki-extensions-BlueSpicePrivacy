@@ -18,5 +18,8 @@
 	"bs-privacy-cookie-consent-group-necessary-desc": "Jeäʹvstõõzz, koid âlgg ââʹnned, što seiddõs tuåimmai",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk",
 	"bs-privacy-deletion-layout-label": "Õõʹnnitobldõõǥǥ jaukkummuš",
-	"bs-privacy-deletion-button": "Jaukkâd õõʹnnitobldõõǥǥ"
+	"bs-privacy-deletion-button": "Jaukkâd õõʹnnitobldõõǥǥ",
+	"bs-privacy-deletion-submit-request-label": "Kommeʹntt (vaʹlljeemnallšem)",
+	"bs-privacy-admin-request-grid-action-approve": "Priim",
+	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]"
 }
