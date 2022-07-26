@@ -76,6 +76,7 @@
 	"bs-privacy-transparency-private-blocked": "مسدود شده: بله (توسط $1)",
 	"bs-privacy-transparency-private-user-page-url": "نشانی صفحهٔ کاریری: $1",
 	"bs-privacy-transparency-private-edit-count": "شمار ویرایش‌ها: $1",
+	"bs-privacy-transparency-type-title-content": "اشاره‌ها در محتوا",
 	"bs-privacy-transparency-type-title-personal": "داده‌های شخصی",
 	"bs-privacy-prefs-consent-cookies": "ذخیره شدن کوکی‌ها را می‌پذیرم",
 	"bs-privacy-prefs-consent-privacy-policy": "من [[{{MediaWiki:Privacypage}}|سیاست حریم خصوصی]] این سایت را می‌پذیرم",
