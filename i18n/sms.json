@@ -21,5 +21,6 @@
 	"bs-privacy-deletion-button": "Jaukkâd õõʹnnitobldõõǥǥ",
 	"bs-privacy-deletion-submit-request-label": "Kommeʹntt (vaʹlljeemnallšem)",
 	"bs-privacy-admin-request-grid-action-approve": "Priim",
-	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]"
+	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (täʹbbe)"
 }
