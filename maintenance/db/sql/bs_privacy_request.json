@@ -1,0 +1,86 @@
+[
+	{
+		"name": "bs_privacy_request",
+		"columns": [
+			{
+				"name": "pr_id",
+				"type": "integer",
+				"options": {
+					"length": 6,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "pr_user",
+				"type": "integer",
+				"options": {
+					"length": 6,
+					"notnull": true
+				}
+			},
+			{
+				"name": "pr_module",
+				"type": "string",
+				"options": {
+					"length": 100,
+					"notnull": true
+				}
+			},
+			{
+				"name": "pr_timestamp",
+				"type": "mwtimestamp",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "pr_comment",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": false
+				}
+			},
+			{
+				"name": "pr_admin_comment",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": false,
+					"default": ""
+				}
+			},
+			{
+				"name": "pr_status",
+				"type": "integer",
+				"options": {
+					"length": 1,
+					"notnull": true,
+					"default": 1
+				}
+			},
+			{
+				"name": "pr_open",
+				"type": "integer",
+				"options": {
+					"length": 1,
+					"notnull": true,
+					"default": 1
+				}
+			},
+			{
+				"name": "pr_data",
+				"type": "blob",
+				"options": {
+					"length": 65535,
+					"notnull": false
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"pr_id"
+		]
+	}
+]
