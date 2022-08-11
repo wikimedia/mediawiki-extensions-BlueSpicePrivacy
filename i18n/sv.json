@@ -5,7 +5,8 @@
 			"Mjälten",
 			"Sabelöga",
 			"Technic2",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Yupik"
 		]
 	},
 	"privacycenter": "Integritetscenter",
@@ -46,7 +47,7 @@
 	"bs-privacy-transparency-layout-label": "Genomskinlighet",
 	"bs-privacy-transparency-layout-help": "Visa och exportera all data som wikin har samlat in om dig",
 	"bs-privacy-transparency-show-all-data-button": "Visa all data",
-	"bs-privacy-transparency-type-selector-personal": "Personlig data (d.v.s. e-post, namn profilinfo, etc.)",
+	"bs-privacy-transparency-type-selector-personal": "Personlig data (d.v.s. e-post, namn, profilinfo, etc.)",
 	"bs-privacy-transparency-type-selector-working": "Arbetsdata, (d.v.s. påminnelser, uppgifter, etc.)",
 	"bs-privacy-transparency-type-selector-actions": "Loggdata (d.v.s. bidragshistorik, administrativa handlingar, etc.)",
 	"bs-privacy-transparency-type-selector-content": "Omnämnanden i innehåll (d.v.s. artiklar, entiteter i tidslinjer, kommentarer, etc.)",
