@@ -22,5 +22,7 @@
 	"bs-privacy-deletion-submit-request-label": "Kommeʹntt (vaʹlljeemnallšem)",
 	"bs-privacy-admin-request-grid-action-approve": "Priim",
 	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]",
-	"bs-privacy-timestamp-with-days-ago-today": "$1 (täʹbbe)"
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (täʹbbe)",
+	"bs-privacy-transparency-type-selector-personal": "Persoonteâđ håʹt mâka e-pååʹštaddrõs, nõmm, õõʹnnitobldõõǥǥ teâđ dno.",
+	"bs-privacy-transparency-type-title-personal": "Persoonteâđ"
 }
