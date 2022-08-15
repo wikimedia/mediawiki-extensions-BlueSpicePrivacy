@@ -112,5 +112,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "بستن",
 	"bs-privacy-consent-auth-step": "برای ادامه، لطفاً شرایط زیر را بپذیرید",
 	"bs-privacy-consent-auth-fail": "شما باید کلیه شرایط را بپذیرید",
-	"bs-privacy-transparency-type-title-content": "اشاره‌ها در محتوا"
+	"bs-privacy-transparency-type-title-content": "اشاره‌ها در محتوا",
+	"bs-privacy-transparency-type-title-working": "داده‌های کاری",
+	"bs-privacy-transparency-type-title-actions": "داده‌های عملی",
+	"notification-bs-privacy-center-url": "مرکز حریم خصوصی"
 }
