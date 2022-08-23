@@ -172,5 +172,3 @@
 	new bs.privacy.cookieConsent.MWProviderPrompt();
 
 } )( mediaWiki, jQuery, blueSpice );
-
-
