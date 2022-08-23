@@ -46,7 +46,7 @@
 	};
 
 	bs.privacy.widget.Privacy.prototype.displayMessage = function( classes, message ) {
-		if( $.isArray( classes ) === false ) {
+		if( Array.isArray( classes ) === false ) {
 			classes = [ classes ];
 		}
 
