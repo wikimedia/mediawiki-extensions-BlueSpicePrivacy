@@ -27,6 +27,7 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 
 		$data = [];
 		$userFactory = $services->getUserFactory();
+		$userOptionsLookup = $services->getUserOptionsLookup();
 		foreach ( $res as $row ) {
 			$user = $userFactory->newFromId( $row->user_id );
 
@@ -40,7 +41,7 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 				'userName' => $user->getName()
 			];
 			foreach ( $module->getOptions() as $name => $prefName ) {
-				$record[$name] = $user->getOption( $prefName );
+				$record[$name] = $userOptionsLookup()->getOption( $user, $prefName );
 			}
 
 			$data[] = (object)$record;
