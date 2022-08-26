@@ -32,13 +32,19 @@ class Consent extends Module {
 	protected $cookieConsentProvider;
 
 	/**
+	 * @var MediaWikiServices
+	 */
+	private $services = null;
+
+	/**
 	 *
 	 * @param \IContextSource $context
 	 */
 	public function __construct( $context ) {
 		parent::__construct( $context );
 		$this->user = $context->getUser();
-		$this->config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$this->services = MediaWikiServices::getInstance();
+		$this->config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
 		$this->options = $this->config->get( 'PrivacyConsentTypes' );
 
 		$providerRegistry = new CookieConsentProviderRegistry();
@@ -83,7 +89,7 @@ class Consent extends Module {
 	 */
 	protected function getConsent() {
 		$consents = [];
-		$userOptionLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+		$userOptionLookup = $this->services->getUserOptionsLookup();
 		foreach ( $this->options as $optionName => $userPreference ) {
 			$consents[$optionName] = [
 				'value' => $userOptionLookup->getOption( $this->user, $userPreference ),
@@ -119,7 +125,7 @@ class Consent extends Module {
 				$valueMessage
 			)->plain();
 
-			$optionManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+			$optionManager = $this->services->getUserOptionsManager();
 			$optionManager->setOption( $this->user, $this->options[$consentName], $value );
 		}
 		$this->user->saveSettings();
@@ -162,6 +168,7 @@ class Consent extends Module {
 	 */
 	public function getAuthFormDescriptors( $type = 'checkbox' ) {
 		$descriptors = [];
+		$userOptionsLookup = $this->services->getUserOptionsLookup();
 		foreach ( $this->options as $name => $preferenceName ) {
 			$helpMessageKey = "$preferenceName-help";
 			// Give grep a chance to find the usages:
@@ -174,7 +181,7 @@ class Consent extends Module {
 				'class' => CheckLinkField::class,
 				'label' => wfMessage( $preferenceName ),
 				'help' => wfMessage( $helpMessageKey ) ,
-				'default' => $this->user->getOption( $preferenceName ),
+				'default' => $userOptionsLookup->getOption( $this->user, $preferenceName ),
 				// B/C
 				'help-message' => $helpMessageKey,
 				'optional' => false,
@@ -235,7 +242,8 @@ class Consent extends Module {
 	 */
 	public function hasUserConsented( User $user ) {
 		foreach ( $this->getOptions() as $name => $prefName ) {
-			if ( !$user->getOption( $prefName, false ) ) {
+			if ( !$this->services->getUserOptionsLookup()
+				->getBoolOption( $user, $prefName, false ) ) {
 				return false;
 			}
 		}
