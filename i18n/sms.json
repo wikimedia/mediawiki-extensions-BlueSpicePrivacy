@@ -24,5 +24,7 @@
 	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (täʹbbe)",
 	"bs-privacy-transparency-type-selector-personal": "Persoonteâđ håʹt mâka e-pååʹštaddrõs, nõmm, õõʹnnitobldõõǥǥ teâđ dno.",
-	"bs-privacy-transparency-type-title-personal": "Persoonteâđ"
+	"bs-privacy-transparency-type-title-personal": "Persoonteâđ",
+	"bs-privacy-prefs-consent-cookies": "Mon priimam jeäʹvstõõzzid ruõkkmõõžž",
+	"bs-privacy-timestamp-with-days-ago": "$1 {{PLURAL:$2|$2 peiʹvv|$2 peeiʹv|$2 peiʹvved}} mââiårra"
 }

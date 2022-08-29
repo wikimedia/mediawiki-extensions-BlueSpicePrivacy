@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Lorem Ipsum",
 			"Stefano",
 			"TheRukk",
@@ -34,7 +35,7 @@
 	"bs-privacy-admin-request-grid-action-deny": "Nega",
 	"bs-privacy-transparency-layout-label": "Trasparenza",
 	"bs-privacy-transparency-export-data-button": "Esporta dati",
-	"bs-privacy-transparency-export-layout-title": "Esporta dati utente",
+	"bs-privacy-transparency-export-layout-title": "Esporta i tuoi dati",
 	"bs-privacy-transparency-view-data-dialog-close": "Chiudi",
 	"bs-privacy-transparency-no-data": "Nessun dato trovato",
 	"bs-privacy-transparency-private-username": "Nome utente: $1",
@@ -73,5 +74,10 @@
 	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
 	"privacyconsent": "Acconsentire alla privacy policy",
-	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:",
+	"bs-privacy-transparency-layout-help": "Visualizza ed esporta tutti i dati che il wiki ha raccolto su di te",
+	"bs-privacy-transparency-show-all-data-button": "Mostra tutti i dati",
+	"bs-privacy-transparency-type-selector-personal": "Dati personali (es. email, nome, info profilo ecc.)",
+	"bs-privacy-transparency-type-selector-working": "Dati di lavoro (es. Promemoria, Compiti, ecc.)",
+	"bs-privacy-transparency-type-selector-actions": "Dati di registro (ad es. cronologia dei contributi, azioni amministrative, ecc.)"
 }
