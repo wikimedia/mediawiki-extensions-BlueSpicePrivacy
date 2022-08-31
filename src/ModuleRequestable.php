@@ -19,6 +19,8 @@ abstract class ModuleRequestable extends Module {
 	protected $database;
 	/** @var bool */
 	protected $requestsEnabled;
+	/** @var MediaWikiServices */
+	private $services;
 
 	/**
 	 *
@@ -27,9 +29,9 @@ abstract class ModuleRequestable extends Module {
 	public function __construct( $context ) {
 		parent::__construct( $context );
 
-		$services = MediaWikiServices::getInstance();
-		$this->database = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
-		$this->requestsEnabled = $services->getConfigFactory()
+		$this->services = MediaWikiServices::getInstance();
+		$this->database = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$this->requestsEnabled = $this->services->getConfigFactory()
 			->makeConfig( 'bsg' )->get( 'PrivacyEnableRequests' );
 	}
 
@@ -133,8 +135,9 @@ abstract class ModuleRequestable extends Module {
 		}
 
 		$requests = [];
+		$userFactory = $this->services->getUserFactory();
 		foreach ( $res as $row ) {
-			$user = \User::newFromId( $row->pr_user );
+			$user = $userFactory->newFromId( $row->pr_user );
 
 			// Get how many days ago request was made
 			$ts = wfTimestamp( TS_UNIX, $row->pr_timestamp );
@@ -268,7 +271,7 @@ abstract class ModuleRequestable extends Module {
 	 */
 	protected function closeRequest( $userId = 0 ) {
 		$userId = $userId > 0 ? $userId : $this->context->getUser()->getId();
-		$user = \User::newFromId( $userId );
+		$user = $this->services->getUserFactory()->newFromId( $userId );
 
 		$res = $this->database->update(
 			static::TABLE_NAME,
@@ -334,7 +337,7 @@ abstract class ModuleRequestable extends Module {
 		}
 
 		$request = $this->getRequestById( $requestId );
-		$subjectUser = \User::newFromId( $request->pr_user );
+		$subjectUser = $this->services->getUserFactory()->newFromId( $request->pr_user );
 
 		$this->database->update(
 			static::TABLE_NAME,
