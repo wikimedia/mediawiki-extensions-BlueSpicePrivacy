@@ -3,7 +3,6 @@ namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
-use MediaWiki\MediaWikiServices;
 
 class PrivacyAdmin extends \BlueSpice\SpecialPage {
 
@@ -26,7 +25,7 @@ class PrivacyAdmin extends \BlueSpice\SpecialPage {
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.privacy.styles' );
 		$this->getOutput()->enableOOUI();
 
-		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
 		$this->getOutput()->addJsConfigVars(
 			'bsPrivacyRequestDeadline',
 			$config->get( 'PrivacyRequestDeadline' )
