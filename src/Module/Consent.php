@@ -6,7 +6,6 @@ use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\Html\CheckLinkField;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
-use MediaWiki\MediaWikiServices;
 use User;
 
 class Consent extends Module {
@@ -32,18 +31,12 @@ class Consent extends Module {
 	protected $cookieConsentProvider;
 
 	/**
-	 * @var MediaWikiServices
-	 */
-	private $services = null;
-
-	/**
 	 *
 	 * @param \IContextSource $context
 	 */
 	public function __construct( $context ) {
 		parent::__construct( $context );
 		$this->user = $context->getUser();
-		$this->services = MediaWikiServices::getInstance();
 		$this->config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
 		$this->options = $this->config->get( 'PrivacyConsentTypes' );
 
