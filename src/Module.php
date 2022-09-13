@@ -14,12 +14,16 @@ abstract class Module implements IModule {
 	 */
 	protected $context;
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @param \IContextSource $context
 	 */
 	public function __construct( $context ) {
 		$this->context = $context;
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	/**
@@ -87,7 +91,7 @@ abstract class Module implements IModule {
 	 * @return bool
 	 */
 	protected function checkAdminPermissions() {
-		return MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+		return $this->services->getPermissionManager()->userHasRight(
 			$this->context->getUser(),
 			'bs-privacy-admin'
 		);
@@ -127,8 +131,7 @@ abstract class Module implements IModule {
 	 * @param BaseNotification $notification
 	 */
 	protected function notify( $notification ) {
-		$notificationsManager = MediaWikiServices::getInstance()
-			->getService( 'BSNotificationManager' );
+		$notificationsManager = $this->services->getService( 'BSNotificationManager' );
 		$notifier = $notificationsManager->getNotifier();
 		$notifier->notify( $notification );
 	}
