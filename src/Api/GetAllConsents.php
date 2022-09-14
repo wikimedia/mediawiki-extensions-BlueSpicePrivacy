@@ -16,8 +16,7 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 		$moduleConfig = $moduleRegistry->getModuleByKey( 'consent' );
 		$module = new $moduleConfig['class']( $this->getContext() );
 
-		$services = $this->getServices();
-		$db = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$db = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $db->select(
 			'user',
 			'user_id',
@@ -26,8 +25,8 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 		);
 
 		$data = [];
-		$userFactory = $services->getUserFactory();
-		$userOptionsLookup = $services->getUserOptionsLookup();
+		$userFactory = $this->services->getUserFactory();
+		$userOptionsLookup = $this->services->getUserOptionsLookup();
 		foreach ( $res as $row ) {
 			$user = $userFactory->newFromId( $row->user_id );
 
