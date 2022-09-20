@@ -61,7 +61,7 @@ class Anonymization extends ModuleRequestable {
 	 */
 	protected function checkUsername( $username ) {
 		$username = $this->context->getLanguage()->ucfirst( $username );
-		$user = \User::newFromName( $username );
+		$user = $this->services->getUserFactory()->newFromName( $username );
 		$invalid = !$user instanceof \User;
 
 		if ( \User::isCreatableName( $username ) === false ) {

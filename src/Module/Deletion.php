@@ -37,7 +37,7 @@ class Deletion extends ModuleRequestable {
 	protected function delete( $username ) {
 		$executingUser = $this->context->getUser();
 
-		$user = \User::newFromName( $username );
+		$user = $this->services->getUserFactory()->newFromName( $username );
 		if ( $user->getId() === 0 ) {
 			return \Status::newFatal( 'bs-privacy-invalid-user' );
 		}
@@ -129,7 +129,7 @@ class Deletion extends ModuleRequestable {
 			'PrivacyDeleteUsername'
 		);
 
-		$deletedUser = \User::newFromName( $deletedUsername );
+		$deletedUser = $this->services->getUserFactory()->newFromName( $deletedUsername );
 		if ( !$deletedUser ) {
 			return null;
 		}
