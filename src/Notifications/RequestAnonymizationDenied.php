@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\BaseNotification;
+use MediaWiki\MediaWikiServices;
 
 class RequestAnonymizationDenied extends BaseNotification {
 	/** @var \User */
@@ -25,7 +26,7 @@ class RequestAnonymizationDenied extends BaseNotification {
 	public function __construct( $agent, $title, $oldUsername, $newUsername, $comment ) {
 		parent::__construct( 'bs-privacy-request-anonymization-denied', $agent, $title );
 
-		$user = \User::newFromName( $oldUsername );
+		$user = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $oldUsername );
 		$this->addAffectedUsers( [ $user->getId() ] );
 
 		$this->oldUsername = $oldUsername;

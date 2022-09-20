@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\BaseNotification;
+use MediaWiki\MediaWikiServices;
 
 class RequestDeletionApproved extends BaseNotification {
 	/** @var bool */
@@ -17,7 +18,7 @@ class RequestDeletionApproved extends BaseNotification {
 	public function __construct( $agent, $title, $username ) {
 		parent::__construct( 'bs-privacy-request-deletion-approved', $agent, $title );
 
-		$user = \User::newFromName( $username );
+		$user = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $username );
 		$this->addAffectedUsers( [ $user->getId() ] );
 
 		// If user executed request himself, notify him

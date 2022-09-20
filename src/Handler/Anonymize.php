@@ -32,12 +32,16 @@ class Anonymize implements IPrivacyHandler {
 	 */
 	protected $oldUser;
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @param IDatabase $db
 	 */
 	public function __construct( IDatabase $db ) {
 		$this->db = $db;
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	/**
@@ -47,13 +51,14 @@ class Anonymize implements IPrivacyHandler {
 	 * @return \Status
 	 */
 	public function anonymize( $oldUsername, $newUsername ) {
-		$this->oldUser = \User::newFromName( $oldUsername );
+		$userFactory = $this->services->getUserFactory();
+		$this->oldUser = $userFactory->newFromName( $oldUsername );
 
 		$this->updateTables( $newUsername );
 		$this->moveUserPage( $newUsername );
 		$this->removeSensitivePreferences( $newUsername );
 
-		$newUser = \User::newFromName( $newUsername );
+		$newUser = $userFactory->newFromName( $newUsername );
 		$newUser->touch();
 		$newUser->clearSharedCache( 'refresh' );
 
@@ -125,7 +130,7 @@ class Anonymize implements IPrivacyHandler {
 	protected function moveUserPage( $newUsername ) {
 		$oldUserPage = $this->oldUser->getUserPage();
 		$newUserPage = \Title::makeTitle( NS_USER, $newUsername );
-		$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
+		$util = $this->services->getService( 'BSUtilityFactory' );
 		if ( $oldUserPage->exists() ) {
 			$movePage = new \MovePage( $oldUserPage, $newUserPage );
 			$movePage->move(
@@ -152,7 +157,7 @@ class Anonymize implements IPrivacyHandler {
 	 * @param string $username
 	 */
 	private function removeSensitivePreferences( $username ) {
-		$user = \User::newFromName( $username );
+		$user = $this->services->getUserFactory()->newFromName( $username );
 		if ( $user->getId() === 0 ) {
 			// sanity
 			return;
