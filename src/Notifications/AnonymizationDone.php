@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\BaseNotification;
+use MediaWiki\MediaWikiServices;
 
 class AnonymizationDone extends BaseNotification {
 	/** @var \User */
@@ -22,7 +23,7 @@ class AnonymizationDone extends BaseNotification {
 	public function __construct( $agent, $title, $oldUsername, $newUsername ) {
 		parent::__construct( 'bs-privacy-anonymization-done', $agent, $title );
 
-		$user = \User::newFromName( $newUsername );
+		$user = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $newUsername );
 		$this->addAffectedUsers( [ $user->getId() ] );
 
 		$this->oldUsername = $oldUsername;

@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\BaseNotification;
+use MediaWiki\MediaWikiServices;
 
 class DeletionFailed extends BaseNotification {
 	/** @var \User */
@@ -22,7 +23,7 @@ class DeletionFailed extends BaseNotification {
 	public function __construct( $agent, $title, $userToDelete, $comment ) {
 		parent::__construct( 'bs-privacy-deletion-failed', $agent, $title );
 
-		$user = \User::newFromName( $userToDelete );
+		$user = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $userToDelete );
 		$this->addAffectedUsers( [ $user->getId() ] );
 
 		$this->comment = $comment;
