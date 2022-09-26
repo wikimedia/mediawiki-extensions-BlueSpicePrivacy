@@ -53,7 +53,7 @@
 	"bs-privacy-deletion-cancel-request-button": "Annuler la demande de suppression",
 	"bs-privacy-request-failed": "Échec de la création de votre demande !",
 	"bs-privacy-anonymization-request-comment": "Nouveau nom d’utilisateur : $1",
-	"bs-privacy-request-close-failed": "Échec de la clôture de la demande",
+	"bs-privacy-request-close-failed": "Échec de clôture de la demande",
 	"bs-privacy-deletion-request-denied": "Votre suppression a été refusée !",
 	"bs-privacy-acknowledge-request-button": "Abandonner",
 	"bs-privacy-anonymization-request-pending": "Votre demande d'anonymisation est en attente",
