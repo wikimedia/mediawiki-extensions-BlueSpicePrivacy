@@ -185,5 +185,17 @@
 	"bs-privacy-module-consent-accepted": "U hebt alle voorwaarden al aanvaard.",
 	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
-	"privacyconsent": "Ga akkoord met het privacybeleid"
+	"privacyconsent": "Ga akkoord met het privacybeleid",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Slaat de status van gebruikersmeldingen op",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Bevat de sessie-hash van de huidige gebruiker",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Bevat de sessie-ID van de huidige gebruiker",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Bevat het ID van de huidige gebruiker",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Bevat de gebruikersnaam van de huidige gebruiker",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Bevat de door de gebruiker geselecteerde VisualEditor-modus",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Gebruikt voor interne lastverdeling",
+	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Bevat de ingestelde waarde voor het cache-mechanisme",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Slaat de configuratie op voor het al dan niet afdwingen van het HTTPS-protocol",
+	"bs-privacy-cookie-consent-cookie-list-label": "Lijst van cookies in deze groep:"
 }
