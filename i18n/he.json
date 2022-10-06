@@ -75,7 +75,7 @@
 	"bs-privacy-transparency-private-user-page-url": "כתובת URL של דף המשתמש: $1",
 	"bs-privacy-transparency-private-edit-count": "מספר עריכות: $1",
 	"bs-privacy-transparency-type-title-content": "אזכורים בתוכן",
-	"bs-privacy-prefs-consent-cookies": "אני מסכימ/ה לאחסן עוגיות",
+	"bs-privacy-prefs-consent-cookies": "אני {{GENDER:|מסכים|מסכימה}} לאחסן עוגיות",
 	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] של אתר זה",
 	"bs-privacy-consent-save-button": "שמירה",
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
