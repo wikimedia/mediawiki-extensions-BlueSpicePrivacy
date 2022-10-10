@@ -1,7 +1,15 @@
 /* override of mediawiki styling
-due to mismatched vertical align of link in 
+due to mismatched vertical align of link in
 checkbox label. Also appears in skin vector.
 */
 .mw-ui-checkbox:not(#noop) * a {
 	vertical-align: baseline;
+}
+/* When user refreshes the login page without accepting cookies
+   input boxes and login buttons gets enabled until page gets loaded
+   hence used the below code to disable clicking on loginform
+*/
+.mw-ui-container #userloginForm
+{
+	pointer-events: none;
 }

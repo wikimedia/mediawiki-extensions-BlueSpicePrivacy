@@ -1,5 +1,6 @@
 ( function( mw, $, bs ){
 	bs.privacy = bs.privacy || {};
+	$( ".mw-ui-container #userloginForm" ).css( "pointer-events", "visible" );
 
 	bs.privacy.cookieConsent.MWProviderPrompt = function() {
 		this.cookieName =
@@ -10,6 +11,7 @@
 
 		if( this.cookieExists() === false ) {
 			this.showFirstLoad();
+			$( '#wpLoginAttempt' ).attr( 'disabled', 'disabled' );
 		}
 	};
 
@@ -115,6 +117,7 @@
 		this.bar.$element.remove();
 		if ( this.$overlay ) {
 			this.$overlay.remove();
+			$( '#wpLoginAttempt' ).removeAttr( 'disabled' );
 		}
 	};
 
