@@ -9,5 +9,9 @@
 	"bs-privacy-transparency-layout-label": "Transparentnost",
 	"bs-privacy-consent-layout-label": "Privolitev k pravilniku o zasebnosti",
 	"bs-privacy-consent-bool-true": "Da",
-	"bs-privacy-consent-bool-false": "Ne"
+	"bs-privacy-consent-bool-false": "Ne",
+	"bs-privacy-admintool-text": "Zasebnost",
+	"bs-privacy-admin-consent-grid-column-user": "Uporabniško ime",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Shrani",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zapri"
 }
