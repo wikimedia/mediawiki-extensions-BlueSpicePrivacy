@@ -79,5 +79,9 @@
 	"bs-privacy-transparency-show-all-data-button": "Mostra tutti i dati",
 	"bs-privacy-transparency-type-selector-personal": "Dati personali (es. email, nome, info profilo ecc.)",
 	"bs-privacy-transparency-type-selector-working": "Dati di lavoro (es. Promemoria, Compiti, ecc.)",
-	"bs-privacy-transparency-type-selector-actions": "Dati di registro (ad es. cronologia dei contributi, azioni amministrative, ecc.)"
+	"bs-privacy-transparency-type-selector-actions": "Dati di registro (ad es. cronologia dei contributi, azioni amministrative, ecc.)",
+	"bs-privacy-admin-request-manager-title": "Richieste in sospeso",
+	"notification-bs-privacy-deletion-approved": "La tua richiesta di cancellazione è stata approvata!",
+	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare il tuo account è stata approvata e il tuo account verrà cancellato a breve.",
+	"notification-bs-privacy-deletion-failed": "Cancellazione del tuo account non riuscita!"
 }
