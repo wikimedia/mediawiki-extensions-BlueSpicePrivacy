@@ -93,5 +93,11 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "לקבל את כולם",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה",
-	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות"
+	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות",
+	"bs-privacy-admintool-label": "מנהל הפרטיות",
+	"bs-privacy-admintool-text": "פרטיות",
+	"bs-privacy-transparency-type-title-working": "נתוני עבודה",
+	"bs-privacy-transparency-type-title-personal": "נתונים אישיים",
+	"bs-privacy-transparency-type-title-actions": "נתוני פעולה",
+	"bs-privacy-consent-layout-label": "הסכמה למדיניות הפרטיות"
 }

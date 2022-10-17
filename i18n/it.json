@@ -82,6 +82,14 @@
 	"bs-privacy-transparency-type-selector-actions": "Dati di registro (ad es. cronologia dei contributi, azioni amministrative, ecc.)",
 	"bs-privacy-admin-request-manager-title": "Richieste in sospeso",
 	"notification-bs-privacy-deletion-approved": "La tua richiesta di cancellazione è stata approvata!",
-	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare il tuo account è stata approvata e il tuo account verrà cancellato a breve.",
-	"notification-bs-privacy-deletion-failed": "Cancellazione del tuo account non riuscita!"
+	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare la tua utenza è stata approvata e verrà eseguita a breve.",
+	"notification-bs-privacy-deletion-failed": "Cancellazione della tua utenza non riuscita!",
+	"bs-privacy-missing-param": "Il parametro \" $1 \" deve essere presente!",
+	"bs-privacy-module-no-function": "\" $1 \" non è un nome di funzione valido per questo modulo",
+	"bs-privacy-api-username-mismatch": "L'utente che effettua la richiesta è diverso dall'utente attualmente connesso",
+	"bs-privacy-request-submit-failed": "Impossibile inviare la richiesta",
+	"bs-privacy-request-cancel-failed": "Impossibile annullare la richiesta",
+	"bs-privacy-admin-get-requests-failed": "Impossibile recuperare le richieste di cancellazione",
+	"bs-privacy-deletion-final-prompt": "Il tuo account verrà cancellato definitivamente. Questa azione non può essere annullata",
+	"bs-privacy-transparency-type-title-personal": "Dati personali"
 }
