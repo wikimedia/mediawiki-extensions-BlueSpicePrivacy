@@ -91,5 +91,17 @@
 	"bs-privacy-request-cancel-failed": "Impossibile annullare la richiesta",
 	"bs-privacy-admin-get-requests-failed": "Impossibile recuperare le richieste di cancellazione",
 	"bs-privacy-deletion-final-prompt": "La tua utenza verrà cancellata definitivamente. Questa azione non può essere annullata",
-	"bs-privacy-transparency-type-title-personal": "Dati personali"
+	"bs-privacy-transparency-type-title-personal": "Dati personali",
+	"bs-privacy-anonymization-final-prompt": "La tua utenza verrà rinominato e tutti i tuoi contributi appariranno sotto il nuovo nome utente. Questa azione non può essere annullata",
+	"bs-privacy-anonymization-error-check-name": "Si è verificato un errore durante il tentativo di verificare la validità del nuovo nome utente",
+	"bs-privacy-anonymization-invalid-name": "Il nome utente inserito non è valido. Scegli un nome utente diverso.",
+	"bs-privacy-deletion-request-deletion-button": "Richiedi la cancellazione dell'utenza",
+	"bs-privacy-deletion-request-pending": "La richiesta di cancellazione è in attesa!",
+	"bs-privacy-deletion-cancel-request-button": "Annulla richiesta di cancellazione",
+	"bs-privacy-transparency-type-title-working": "Dati di lavoro",
+	"bs-privacy-consent-save-success": "Le tue preferenze sulla privacy sono state salvate",
+	"bs-privacy-consent-save-fail": "Si è verificato un errore durante il tentativo di salvare le opzioni dell'informativa sulla privacy",
+	"bs-privacy-admin-consent-overview-title": "Panoramica del consenso sull'informativa sulla privacy",
+	"bs-privacy-admin-consent-overview-help": "Panoramica dello stato del consenso di tutti gli utenti",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 giorno|$2 giorni}} fa)"
 }
