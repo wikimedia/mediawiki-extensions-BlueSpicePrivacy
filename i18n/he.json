@@ -8,6 +8,8 @@
 			"YaronSh"
 		]
 	},
+	"bs-privacy-admintool-label": "מנהל הפרטיות",
+	"bs-privacy-admintool-text": "פרטיות",
 	"privacycenter": "מרכז הפרטיות",
 	"privacyadmin": "מנהל הפרטיות",
 	"bs-privacy-privacy-center-subtitle": "סקירת הגדרות הפרטיות שלך",
@@ -75,8 +77,12 @@
 	"bs-privacy-transparency-private-user-page-url": "כתובת URL של דף המשתמש: $1",
 	"bs-privacy-transparency-private-edit-count": "מספר עריכות: $1",
 	"bs-privacy-transparency-type-title-content": "אזכורים בתוכן",
+	"bs-privacy-transparency-type-title-working": "נתוני עבודה",
+	"bs-privacy-transparency-type-title-personal": "נתונים אישיים",
+	"bs-privacy-transparency-type-title-actions": "נתוני פעולה",
 	"bs-privacy-prefs-consent-cookies": "אני {{GENDER:|מסכים|מסכימה}} לאחסן עוגיות",
 	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] של אתר זה",
+	"bs-privacy-consent-layout-label": "הסכמה למדיניות הפרטיות",
 	"bs-privacy-consent-save-button": "שמירה",
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
 	"bs-privacy-timestamp-with-days-ago": "$1 (לפני {{PLURAL:$2|יום אחד|$2 ימים}})",
