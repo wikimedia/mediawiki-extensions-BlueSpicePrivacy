@@ -103,5 +103,8 @@
 	"bs-privacy-consent-save-fail": "Si è verificato un errore durante il tentativo di salvare le opzioni dell'informativa sulla privacy",
 	"bs-privacy-admin-consent-overview-title": "Panoramica del consenso sull'informativa sulla privacy",
 	"bs-privacy-admin-consent-overview-help": "Panoramica dello stato del consenso di tutti gli utenti",
-	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 giorno|$2 giorni}} fa)"
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 giorno|$2 giorni}} fa)",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|ha}} annullato la richiesta di cancellare {{GENDER:$2|la sua|la sua}} utenza",
+	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|ha}} approvato la richiesta di cancellare l'utenza fatta dall'utente $4",
+	"bs-privacy-consent-auth-step": "Per continuare, accetta i seguenti termini"
 }
