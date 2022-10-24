@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Api;
 
 use BlueSpice\Privacy\ModuleRegistry;
+use Wikimedia\ParamValidator\ParamValidator;
 
 class PrivacyApi extends \ApiBase {
 	/** @var Status */
@@ -20,16 +21,16 @@ class PrivacyApi extends \ApiBase {
 	protected function getAllowedParams() {
 		return [
 			'module' => [
-				\ApiBase::PARAM_TYPE => 'string',
-				\ApiBase::PARAM_REQUIRED => true
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => true
 			],
 			'func' => [
-				\ApiBase::PARAM_TYPE => 'string',
-				\ApiBase::PARAM_REQUIRED => true
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => true
 			],
 			'data' => [
-				\ApiBase::PARAM_TYPE => 'string',
-				\ApiBase::PARAM_REQUIRED => false
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => false
 			]
 		];
 	}
