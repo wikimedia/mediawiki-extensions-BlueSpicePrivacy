@@ -57,5 +57,6 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
 	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dage}} siden)"
 }
