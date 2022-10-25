@@ -381,10 +381,13 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\CommonUserInterface"
+		},
+		"addPrivacyUrls": {
+			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddPrivacyUrls"
 		}
 	},
 	"Hooks": {
-		"PersonalUrls": "\\BlueSpice\\Privacy\\Hook\\PersonalUrls\\AddPrivacyUrls::callback",
+		"SkinTemplateNavigation::Universal": "addPrivacyUrls",
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\Privacy\\Hook\\LoadExtensionSchemaUpdates\\AddPrivacyRequestTable::callback"
 		],
