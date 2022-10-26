@@ -4,7 +4,6 @@ namespace BlueSpice\Privacy\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 
 class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 
@@ -13,12 +12,13 @@ class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 	 * @inheritDoc
 	 */
 	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
-		$user = RequestContext::getMain()->getUser();
+		$user = $sktemplate->getUser();
 		if ( !$user->isRegistered() ) {
 			return;
 		}
 
-		$links['privacycenter'] = [
+		$links['user-menu']['privacycenter'] = [
+			'id' => 'pt-privacycenter',
 			'href' => \SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
 			'text' => MediaWikiServices::getInstance()->getSpecialPageFactory()
 				->getPage( 'PrivacyCenter' )->getDescription(),
