@@ -106,5 +106,7 @@
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 giorno|$2 giorni}} fa)",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|ha}} annullato la richiesta di cancellare {{GENDER:$2|la sua|la sua}} utenza",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|ha}} approvato la richiesta di cancellare l'utenza fatta dall'utente $4",
-	"bs-privacy-consent-auth-step": "Per continuare, accetta i seguenti termini"
+	"bs-privacy-consent-auth-step": "Per continuare, accetta i seguenti termini",
+	"notification-bs-privacy-request-submitted-body": "L'utente \"$1\" ha inviato una nuova richiesta di privacy. Modulo: $3 . Commento: $2",
+	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta"
 }
