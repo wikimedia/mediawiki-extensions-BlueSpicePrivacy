@@ -95,6 +95,8 @@
 	"notification-bs-privacy-deletion-approved": "La tua richiesta di cancellazione è stata approvata!",
 	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare la tua utenza è stata approvata e verrà eseguita a breve.",
 	"notification-bs-privacy-deletion-failed": "Cancellazione della tua utenza non riuscita!",
+	"notification-bs-privacy-request-submitted-body": "L'utente \"$1\" ha inviato una nuova richiesta di privacy. Modulo: $3 . Commento: $2",
+	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Impostazioni del consenso ai cookie",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessari",
