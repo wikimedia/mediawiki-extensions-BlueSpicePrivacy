@@ -108,5 +108,14 @@
 	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
 	"privacyconsent": "Acconsentire alla privacy policy",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva lo stato dei componenti del tema BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva lo stato dei componenti del tema BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva lo stato delle notifiche dell'utente",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Contiene l'hash della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Contiene l'ID della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Contiene l'ID dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene il nome utente dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantiene la modalità VisualEditor selezionata dall'utente",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
 	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:"
 }
