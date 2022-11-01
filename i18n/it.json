@@ -108,5 +108,14 @@
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|ha}} approvato la richiesta di cancellare l'utenza fatta dall'utente $4",
 	"bs-privacy-consent-auth-step": "Per continuare, accetta i seguenti termini",
 	"notification-bs-privacy-request-submitted-body": "L'utente \"$1\" ha inviato una nuova richiesta di privacy. Modulo: $3 . Commento: $2",
-	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta"
+	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva lo stato dei componenti del tema BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva lo stato dei componenti del tema BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva lo stato delle notifiche dell'utente",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Contiene l'hash della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Contiene l'ID della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Contiene l'ID dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene il nome utente dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantiene la modalità VisualEditor selezionata dall'utente",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno"
 }
