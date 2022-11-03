@@ -95,6 +95,8 @@
 	"notification-bs-privacy-deletion-approved": "La tua richiesta di cancellazione è stata approvata!",
 	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare la tua utenza è stata approvata e verrà eseguita a breve.",
 	"notification-bs-privacy-deletion-failed": "Cancellazione della tua utenza non riuscita!",
+	"notification-bs-privacy-request-submitted-body": "L'utente \"$1\" ha inviato una nuova richiesta di privacy. Modulo: $3 . Commento: $2",
+	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Impostazioni del consenso ai cookie",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
 	"bs-privacy-cookie-consent-group-necessary-label": "Cookies necessari",
@@ -106,5 +108,14 @@
 	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
 	"privacyconsent": "Acconsentire alla privacy policy",
+	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva lo stato dei componenti del tema BlueSpiceCalumma",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva lo stato dei componenti del tema BlueSpiceDiscovery",
+	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva lo stato delle notifiche dell'utente",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "Contiene l'hash della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "Contiene l'ID della sessione dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-userid": "Contiene l'ID dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene il nome utente dell'utente corrente",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantiene la modalità VisualEditor selezionata dall'utente",
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
 	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:"
 }
