@@ -117,5 +117,13 @@
 	"bs-privacy-cookie-consent-cookie-desc-userid": "Contiene l'ID dell'utente corrente",
 	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene il nome utente dell'utente corrente",
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantiene la modalità VisualEditor selezionata dall'utente",
-	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno"
+	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
+	"bs-privacy-anonymization-error-retrieving-name": "Si è verificato un errore durante il tentativo di recuperare un nuovo nome utente",
+	"bs-privacy-anonymization-username-exists": "Il nome utente che hai inserito è già assegnato a un altro utente. Scegli un nome utente diverso.",
+	"bs-privacy-anonymization-error-anonymizing": "Si è verificato un errore nel processo di anonimizzazione.",
+	"bs-privacy-anonymization-success-anonymizing": "La tua utenza è stata resa anonima! Il tuo nuovo nome utente è $1",
+	"bs-privacy-deletion-request-denied": "La tua cancellazione è stata negata!",
+	"bs-privacy-anonymization-request-pending": "La tua richiesta di anonimizzazione è in attesa",
+	"notification-bs-privacy-request-denied-deletion": "La tua richiesta di cancellazione è stata respinta!",
+	"notification-bs-privacy-request-denied-deletion-body": "L'utente $1 ha rifiutato la tua richiesta di eliminare la tua utenza. Commento: $2"
 }
