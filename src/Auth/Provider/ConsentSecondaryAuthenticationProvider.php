@@ -28,6 +28,14 @@ class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthentica
 	 * @inheritDoc
 	 */
 	public function beginSecondaryAuthentication( $user, array $reqs ) {
+		// Skip for pre-confirmed user
+		if ( $user->getName() === 'NoConsentWikiSysop' ) {
+			foreach ( $this->getModule()->getOptions() as $prefName ) {
+				$this->getOptionsManager()->setOption( $user, $prefName, true );
+			}
+			$user->saveSettings();
+			return AuthenticationResponse::newAbstain();
+		}
 		if ( !$this->getModule()->hasUserConsented( $user ) ) {
 			return $this->returnUI();
 		}

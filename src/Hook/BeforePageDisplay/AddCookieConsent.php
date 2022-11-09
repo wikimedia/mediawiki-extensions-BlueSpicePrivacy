@@ -15,6 +15,10 @@ class AddCookieConsent extends BeforePageDisplay {
 		if ( $provider instanceof ICookieConsentProvider === false ) {
 			return true;
 		}
+		if ( $this->getContext()->getUser()->getName() === 'NoConsentWikiSysop' ) {
+			// User does not require consent
+			return true;
+		}
 
 		$this->out->addModules( [
 			$provider->getRLRegistrationModule()
