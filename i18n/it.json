@@ -125,5 +125,8 @@
 	"bs-privacy-deletion-request-denied": "La tua cancellazione è stata negata!",
 	"bs-privacy-anonymization-request-pending": "La tua richiesta di anonimizzazione è in attesa",
 	"notification-bs-privacy-request-denied-deletion": "La tua richiesta di cancellazione è stata respinta!",
-	"notification-bs-privacy-request-denied-deletion-body": "L'utente $1 ha rifiutato la tua richiesta di eliminare la tua utenza. Commento: $2"
+	"notification-bs-privacy-request-denied-deletion-body": "L'utente $1 ha rifiutato la tua richiesta di eliminare la tua utenza. Commento: $2",
+	"bs-privacy-admin-requests-disabled": "Le richieste sono attualmente disabilitate su questo wiki.",
+	"bs-privacy-prefs-consent-tos": "Accetto i [[{{MediaWiki:Termsofservicepage}}|termini di servizio]] di questo sito",
+	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|ha}} chiuso la richiesta di cancellazione fatta da $4"
 }
