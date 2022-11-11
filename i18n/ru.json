@@ -76,5 +76,10 @@
 	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie",
 	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
 	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
-	"privacyconsent": "Согласие с Политикой конфиденциальности"
+	"privacyconsent": "Согласие с Политикой конфиденциальности",
+	"bs-privacy-transparency-layout-label": "Прозрачность",
+	"bs-privacy-transparency-export-data-button": "Экспортировать данные",
+	"bs-privacy-transparency-no-data": "Данные не найдены",
+	"bs-privacy-transparency-type-title-personal": "Персональные данные",
+	"bs-privacy-cookie-consent-group-necessary-label": "Необходимые cookie-файлы"
 }
