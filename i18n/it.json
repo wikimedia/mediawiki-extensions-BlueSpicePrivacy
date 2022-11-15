@@ -98,6 +98,7 @@
 	"logentry-bs-privacy-anonymization": "$4 ha reso anonimo l'utenza. Nuovo nome utente: $5",
 	"logentry-bs-privacy-deletion": "L'utente $4 ha cancellato l'utenza.",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|ha}} inviato una richiesta di anonimizzazione del proprio account con commento: $4",
+	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|ha}} ha inviato una richiesta di cancellare la {{GENDER:$2|sua|sua}} utenza con commento: $4",
 	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|ha}} chiuso la richiesta di cancellazione fatta da $4",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|ha}} annullato la richiesta di cancellare {{GENDER:$2|la sua|la sua}} utenza",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|ha}} approvato la richiesta di cancellare l'utenza fatta dall'utente $4",
