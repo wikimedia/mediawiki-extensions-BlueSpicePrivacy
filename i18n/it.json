@@ -129,5 +129,7 @@
 	"bs-privacy-admin-requests-disabled": "Le richieste sono attualmente disabilitate su questo wiki.",
 	"bs-privacy-prefs-consent-tos": "Accetto i [[{{MediaWiki:Termsofservicepage}}|termini di servizio]] di questo sito",
 	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|ha}} chiuso la richiesta di cancellazione fatta da $4",
-	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|ha}} ha inviato una richiesta di cancellare la {{GENDER:$2|sua|sua}} utenza con commento: $4"
+	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|ha}} ha inviato una richiesta di cancellare la {{GENDER:$2|sua|sua}} utenza con commento: $4",
+	"bs-privacy-transparency-view-data-dialog-title": "Visualizza i tuoi dati",
+	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|ha}} respinto la richiesta di cancellare l'utenza fatta dall'utente $4, con commento: $5"
 }
