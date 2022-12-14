@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"捍粵者"
 		]
 	},
 	"bs-privacy": "BlueSpice 隱私",
@@ -38,7 +39,7 @@
 	"bs-privacy-request-cancel-failed": "取消請求失敗！",
 	"bs-privacy-admin-get-requests-failed": "取得刪除請求失敗",
 	"bs-privacy-deletion-layout-label": "刪除您的帳號",
-	"bs-privacy-deletion-layout-help": "您可以完整刪除您在 wiki 上的帳號，以及您使用者名稱所有的進行過行為",
+	"bs-privacy-deletion-layout-help": "您可徹底刪除您wiki的帳號及使用者名所有行為",
 	"bs-privacy-deletion-request-deletion-button": "請求帳號刪除",
 	"bs-privacy-deletion-submit-request-label": "註釋（選填）",
 	"bs-privacy-deletion-request-pending": "刪除請求等待中！",
