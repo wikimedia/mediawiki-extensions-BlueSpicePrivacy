@@ -1,18 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Milicevic01"
 		]
 	},
+	"bs-privacy-admintool-text": "Приватност",
 	"bs-privacy-anonymization-layout-label": "Анонимизација",
 	"bs-privacy-anonymization-confirm-button-label": "Анонимизуј мој налог",
 	"bs-privacy-invalid-user": "Корисник није важећи",
 	"bs-privacy-anonymization-request-comment": "Ново корисничко име: $1",
 	"bs-privacy-acknowledge-request-button": "Одбаци",
+	"bs-privacy-cancel-request-button": "Откажи захтев",
 	"bs-privacy-admin-request-grid-column-comment": "Коментар",
 	"bs-privacy-transparency-show-all-data-button": "Прикажи све податке",
+	"bs-privacy-consent-save-button": "Сачувај",
 	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
+	"bs-privacy-consent-bool-true": "Да",
+	"bs-privacy-consent-bool-false": "Не",
 	"echo-category-title-bs-privacy-cat": "Радње за приватност",
 	"notification-bs-privacy-center-url": "Центар приватности",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај"
+	"notification-bs-privacy-anonymization-done": "Ваш налог је анонимизован!",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прихвати све",
+	"bs-privacy-cookie-consent-group-necessary-label": "Само неопходни",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори"
 }
