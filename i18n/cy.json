@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"bs-privacy-anonymization-layout-label": "Dienwi",
+	"bs-privacy-anonymization-layout-help": "Gallwch wneud eich cyfrif yn ddienw, trwy disodli pob defnydd o'ch enw defnyddiwr ag enw defnyddiwr newydd",
+	"bs-privacy-anonymization-new-username-label": "Enw defnyddiwr newydd",
+	"bs-privacy-anonymization-confirm-button-label": "Dienwi fy nghyfrif",
+	"bs-privacy-deletion-submit-request-label": "Sylw (dewisol)",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (heddiw)"
+}
