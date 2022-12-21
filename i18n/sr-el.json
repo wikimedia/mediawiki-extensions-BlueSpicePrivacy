@@ -14,5 +14,14 @@
 	"bs-privacy-admin-consent-grid-column-user": "Korisničko ime",
 	"notification-bs-privacy-center-url": "Centar privatnosti",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sačuvaj",
-	"bs-privacy-consent-bool-true": "Da"
+	"bs-privacy-consent-bool-true": "Da",
+	"bs-privacy-admintool-text": "Privatnost",
+	"bs-privacy-cancel-request-button": "Otkaži zahtev",
+	"bs-privacy-consent-save-button": "Sačuvaj",
+	"bs-privacy-consent-bool-false": "Ne",
+	"echo-category-title-bs-privacy-cat": "Radnje za privatnost",
+	"notification-bs-privacy-anonymization-done": "Vaš nalog je anonimizovan!",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Prihvati sve",
+	"bs-privacy-cookie-consent-group-necessary-label": "Samo neophodni",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zatvori"
 }
