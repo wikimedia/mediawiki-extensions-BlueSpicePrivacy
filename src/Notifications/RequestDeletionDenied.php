@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Notifications;
 
 use BlueSpice\BaseNotification;
+use MediaWiki\MediaWikiServices;
 
 class RequestDeletionDenied extends BaseNotification {
 	/** @var \User */
@@ -22,7 +23,7 @@ class RequestDeletionDenied extends BaseNotification {
 	public function __construct( $agent, $title, $userToDelete, $comment ) {
 		parent::__construct( 'bs-privacy-request-deletion-denied', $agent, $title );
 
-		$user = \User::newFromName( $userToDelete );
+		$user = MediaWikiServices::getInstance()->getUserFactory()->newFromName( $userToDelete );
 		$this->addAffectedUsers( [ $user->getId() ] );
 
 		$this->comment = $comment;
