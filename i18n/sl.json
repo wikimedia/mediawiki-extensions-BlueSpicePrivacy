@@ -13,5 +13,13 @@
 	"bs-privacy-admintool-text": "Zasebnost",
 	"bs-privacy-admin-consent-grid-column-user": "Uporabniško ime",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Shrani",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zapri"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zapri",
+	"bs-privacy-api-error-generic": "Prišlo je do napake",
+	"bs-privacy-anonymization-error-retrieving-name": "Pri poskusu pridobiti novo uporabniško ime je prišlo do napake.",
+	"bs-privacy-anonymization-error-anonymizing": "V postopku anonimizacije je prišlo do napake.",
+	"bs-privacy-handler-error": "Napaka upravljalnika »$1«",
+	"bs-privacy-request-submit-failed": "Zahtevka ni bilo mogoče predložiti",
+	"bs-privacy-request-cancel-failed": "Zahtevka ni bilo mogoče preklicati",
+	"bs-privacy-delete-error-deleting": "Pri poskusu izbrisa vašega računa je prišlo do napake.",
+	"bs-privacy-admin-request-action-failed": "Zahtevanje dejanja ni uspelo!"
 }
