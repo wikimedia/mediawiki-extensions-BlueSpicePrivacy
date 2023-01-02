@@ -21,5 +21,9 @@
 	"bs-privacy-request-submit-failed": "Zahtevka ni bilo mogoče predložiti",
 	"bs-privacy-request-cancel-failed": "Zahtevka ni bilo mogoče preklicati",
 	"bs-privacy-delete-error-deleting": "Pri poskusu izbrisa vašega računa je prišlo do napake.",
-	"bs-privacy-admin-request-action-failed": "Zahtevanje dejanja ni uspelo!"
+	"bs-privacy-admin-request-action-failed": "Zahtevanje dejanja ni uspelo!",
+	"bs-privacy": "Zasebnost BlueSpice",
+	"bs-privacy-api-error-missing-module": "Modul $1 ni registriran!",
+	"bs-privacy-admin-request-grid-column-user": "Uporabnik",
+	"bs-privacy-transparency-private-former-groups": "Nekdanje skupine: $1"
 }
