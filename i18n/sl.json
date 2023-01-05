@@ -25,5 +25,7 @@
 	"bs-privacy": "Zasebnost BlueSpice",
 	"bs-privacy-api-error-missing-module": "Modul $1 ni registriran!",
 	"bs-privacy-admin-request-grid-column-user": "Uporabnik",
-	"bs-privacy-transparency-private-former-groups": "Nekdanje skupine: $1"
+	"bs-privacy-transparency-private-former-groups": "Nekdanje skupine: $1",
+	"bs-privacy-deletion-cancel-request-button": "Prekliči predlog za brisanje",
+	"bs-privacy-cancel-request-button": "Prekliči zahtevek"
 }
