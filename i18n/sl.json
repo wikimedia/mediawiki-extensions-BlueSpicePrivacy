@@ -15,6 +15,8 @@
 	"bs-privacy-request-submit-failed": "Zahtevka ni bilo mogoče predložiti",
 	"bs-privacy-request-cancel-failed": "Zahtevka ni bilo mogoče preklicati",
 	"bs-privacy-deletion-layout-label": "Izbris računa",
+	"bs-privacy-deletion-cancel-request-button": "Prekliči predlog za brisanje",
+	"bs-privacy-cancel-request-button": "Prekliči zahtevek",
 	"bs-privacy-delete-error-deleting": "Pri poskusu izbrisa vašega računa je prišlo do napake.",
 	"bs-privacy-admin-request-action-failed": "Zahtevanje dejanja ni uspelo!",
 	"bs-privacy-admin-request-grid-column-user": "Uporabnik",
