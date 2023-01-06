@@ -27,5 +27,15 @@
 	"bs-privacy-admin-request-grid-column-user": "Uporabnik",
 	"bs-privacy-transparency-private-former-groups": "Nekdanje skupine: $1",
 	"bs-privacy-deletion-cancel-request-button": "Prekliči predlog za brisanje",
-	"bs-privacy-cancel-request-button": "Prekliči zahtevek"
+	"bs-privacy-cancel-request-button": "Prekliči zahtevek",
+	"bs-privacy-anonymization-api-invalid-username": "Neveljavno uporabniško ime",
+	"bs-privacy-acknowledge-request-button": "Opusti",
+	"bs-privacy-admin-invalid-request": "Neveljaven zahtevek",
+	"bs-privacy-admin-request-grid-column-action": "Dejanje",
+	"bs-privacy-admin-request-grid-column-timestamp": "Časovni žig",
+	"bs-privacy-admin-request-grid-column-comment": "Komentar",
+	"bs-privacy-admin-request-grid-action-approve": "Odobri",
+	"bs-privacy-admin-request-grid-column-deny": "Zavrni",
+	"bs-privacy-admin-request-grid-action-deny": "Zavrni",
+	"bs-privacy-transparency-view-data-dialog-close": "Zapri"
 }
