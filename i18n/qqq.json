@@ -87,6 +87,8 @@
 	"bs-privacy-transparency-type-selector-content": "Label for option when exporting data for content user data, mentions of the user in the page content",
 	"bs-privacy-transparency-export-data-button": "Label for button to export data",
 	"bs-privacy-transparency-export-layout-title": "Title for export data layout",
+	"bs-privacy-transparency-export-types-of-data-label": "Label for a fieldset within a form",
+	"bs-privacy-transparency-export-export-format-label": "Label for a fieldset within a form",
 	"bs-privacy-transparency-format-html": "{{optional}}\nLabel for export format HTML",
 	"bs-privacy-transparency-format-csv": "{{optional}}\nLabel for export format HTML",
 	"bs-privacy-transparency-loading-message": "Message shown while the data is being compiled",
