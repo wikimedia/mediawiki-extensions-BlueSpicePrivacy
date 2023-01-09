@@ -84,6 +84,8 @@
 	"bs-privacy-transparency-type-selector-content": "Mentions in content (e.g. articles, timeline entities, comments etc.)",
 	"bs-privacy-transparency-export-data-button": "Export data",
 	"bs-privacy-transparency-export-layout-title": "Export your data",
+	"bs-privacy-transparency-export-types-of-data-label": "Types of data",
+	"bs-privacy-transparency-export-export-format-label": "Export format",
 	"bs-privacy-transparency-format-html": "HTML",
 	"bs-privacy-transparency-format-csv": "CSV",
 	"bs-privacy-transparency-loading-message": "Please wait while your data is being gathered...",
