@@ -248,6 +248,8 @@
 				"bs-privacy-transparency-type-selector-content",
 				"bs-privacy-transparency-export-data-button",
 				"bs-privacy-transparency-export-layout-title",
+				"bs-privacy-transparency-export-types-of-data-label",
+				"bs-privacy-transparency-export-export-format-label",
 				"bs-privacy-transparency-format-html",
 				"bs-privacy-transparency-format-csv",
 				"bs-privacy-transparency-loading-message",

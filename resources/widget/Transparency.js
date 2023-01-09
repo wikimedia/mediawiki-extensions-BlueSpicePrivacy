@@ -194,11 +194,11 @@
 				new OO.ui.HorizontalLayout( {
 					items: [
 						new OO.ui.FieldLayout( this.typeSelector, {
-							label: 'Types of data',
+							label: mw.message( 'bs-privacy-transparency-export-types-of-data-label' ).text(),
 							align: 'top'
 						} ),
 						new OO.ui.FieldLayout( this.formatSelector, {
-							label: 'Export format',
+							label: mw.message( 'bs-privacy-transparency-export-export-format-label' ).text(),
 							align: 'top'
 						} )
 					]
