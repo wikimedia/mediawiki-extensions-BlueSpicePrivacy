@@ -31,5 +31,10 @@
 	},
 	"extra": {
 		"installer-name": "BlueSpicePrivacy"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
