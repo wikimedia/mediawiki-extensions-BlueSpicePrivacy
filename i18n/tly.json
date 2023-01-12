@@ -6,5 +6,6 @@
 		]
 	},
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (ımrüj)",
+	"bs-privacy-consent-bool-false": "Ne",
 	"bs-privacy-cookie-consent-group-necessary-label": "Lozım cookies"
 }
