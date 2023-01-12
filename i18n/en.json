@@ -56,7 +56,6 @@
 	"bs-privacy-delete-error-deleting": "An error occurred while trying to delete your account.",
 	"bs-privacy-deletion-final-prompt": "Your account will be permanently deleted. This action cannot be undone",
 	"bs-privacy-deletion-button": "Delete your account",
-
 	"action-bs-privacy-admin": "execute Privacy administrative action",
 	"right-bs-privacy-admin": "Execute Privacy administrative action",
 	"bs-privacy-admin-request-manager-help": "Overview of all open privacy requests",
@@ -74,7 +73,6 @@
 	"bs-privacy-admin-request-grid-action-approve": "Approve",
 	"bs-privacy-admin-request-grid-column-deny": "Deny",
 	"bs-privacy-admin-request-grid-action-deny": "Deny",
-
 	"bs-privacy-transparency-layout-label": "Transparency",
 	"bs-privacy-transparency-layout-help": "View and export all the data wiki has collected on you",
 	"bs-privacy-transparency-show-all-data-button": "Show all data",
@@ -94,7 +92,6 @@
 	"bs-privacy-transparency-html-export-title": "BlueSpicePrivacy data export - $1",
 	"bs-privacy-admin-requests-disabled": "Requests are currently disabled on this wiki.",
 	"bs-privacy-transparency-no-data": "No data found",
-
 	"bs-privacy-transparency-private-username": "Username: $1",
 	"bs-privacy-transparency-private-realname": "Real name: $1",
 	"bs-privacy-transparency-private-registration": "Registered on: $1",
@@ -143,13 +140,11 @@
 	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|has}} canceled the request to anonymize {{GENDER:$2|his|her}} account",
 	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|has}} approved the request to anonymize account made by user $4",
 	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|has}} denied the request to anonymize account made by user $4, with comment: $5",
-
 	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|has}} submitted a request to delete {{GENDER:$2|his|her}} account with comment: $4",
 	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|has}} closed deletion request made by $4",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} canceled the request to delete {{GENDER:$2|his|her}} account",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|has}} approved the request to delete account made by user $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|has}} denied the request to delete account made by user $4, with comment: $5",
-
 	"echo-category-title-bs-privacy-cat": "Privacy actions",
 	"echo-pref-tooltip-bs-privacy-cat": "Notify me when the status of my account anonymization or deletion request changes",
 	"notification-bs-privacy-login-url": "Login to the wiki",
@@ -173,7 +168,6 @@
 	"apihelp-bs-privacy-param-module": "Requested module to execute action on",
 	"apihelp-bs-privacy-param-func": "Function to execute withing the requested module",
 	"apihelp-bs-privacy-param-data": "Data passed to the requested function",
-
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "This site uses cookies to improve user experience",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Cookie consent settings",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accept all",
@@ -192,7 +186,6 @@
 	"bs-privacy-module-consent-set-success": "Consent stored successfully",
 	"bs-privacy-module-consent-set-fail": "Failed to save consent!",
 	"privacyconsent": "Consent to Privacy Policy",
-
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Saves state of BlueSpiceCalumma skin components",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Saves state of BlueSpiceDiscovery skin components",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Saves state of user notifications",
