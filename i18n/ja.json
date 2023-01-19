@@ -21,5 +21,6 @@
 	"bs-privacy-consent-bool-false": "いいえ",
 	"bs-privacy-module-consent-accepted": "あなたはすでにすべての条件に同意しました",
 	"bs-privacy-module-consent-set-fail": "同意の保存に失敗しました！",
-	"privacyconsent": "プライバシーポリシーへの同意"
+	"privacyconsent": "プライバシーポリシーへの同意",
+	"bs-privacy-transparency-export-types-of-data-label": "データの種類"
 }

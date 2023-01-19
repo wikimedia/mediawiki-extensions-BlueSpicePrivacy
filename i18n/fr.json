@@ -203,5 +203,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilisé pour la répartition de charge interne",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Contient la valeur configurée pour le mécanisme de cache",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Enregistre la configuration de l’imposition du protocole HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :"
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :",
+	"bs-privacy-transparency-export-types-of-data-label": "Types de données",
+	"bs-privacy-transparency-export-export-format-label": "Format d’exportation"
 }

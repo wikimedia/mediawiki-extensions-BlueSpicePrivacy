@@ -191,5 +191,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usate pro le balanciamento interne de carga",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Tene le valor configurate pro le mechanismo de cache",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salveguarda le configuration de si o non applicar le protocollo HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:",
+	"bs-privacy-transparency-export-types-of-data-label": "Typos de datos",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportation"
 }
