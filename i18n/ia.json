@@ -82,6 +82,8 @@
 	"bs-privacy-transparency-type-selector-content": "Mentiones in le contento (p.ex. articulos, entitates de chronologia, commentos, etc.)",
 	"bs-privacy-transparency-export-data-button": "Exportar datos",
 	"bs-privacy-transparency-export-layout-title": "Exportar tu datos",
+	"bs-privacy-transparency-export-types-of-data-label": "Typos de datos",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportation",
 	"bs-privacy-transparency-loading-message": "Un momento, tu datos se collige…",
 	"bs-privacy-transparency-view-data-dialog-title": "Vider tu datos",
 	"bs-privacy-transparency-view-data-dialog-close": "Clauder",

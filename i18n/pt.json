@@ -84,6 +84,8 @@
 	"bs-privacy-transparency-type-selector-content": "Menções em conteúdos (por exemplo, artigos, entidades cronológicas, comentários, etc.)",
 	"bs-privacy-transparency-export-data-button": "Exportar dados",
 	"bs-privacy-transparency-export-layout-title": "Exportar os seus dados",
+	"bs-privacy-transparency-export-types-of-data-label": "Tipos de dados",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportação",
 	"bs-privacy-transparency-loading-message": "Aguarde enquanto os seus dados são recolhidos, por favor...",
 	"bs-privacy-transparency-view-data-dialog-title": "Ver os seus dados",
 	"bs-privacy-transparency-view-data-dialog-close": "Fechar",

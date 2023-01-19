@@ -8,6 +8,7 @@
 	},
 	"bs-privacy-deletion-submit-request-label": "コメント (任意)",
 	"bs-privacy-anonymization-request-comment": "新しい利用者名: $1",
+	"bs-privacy-transparency-export-types-of-data-label": "データの種類",
 	"bs-privacy-transparency-view-data-dialog-close": "閉じる",
 	"bs-privacy-transparency-no-data": "データが見つかりません",
 	"bs-privacy-transparency-private-username": "利用者名: $1",

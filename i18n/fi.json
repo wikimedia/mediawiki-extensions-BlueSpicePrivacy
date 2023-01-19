@@ -3,6 +3,7 @@
 		"authors": [
 			"FinlandMan",
 			"MITO",
+			"Nike",
 			"Pxos",
 			"Silvonen",
 			"Yupik"
@@ -12,6 +13,7 @@
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
 	"bs-privacy-admin-request-grid-column-action": "Toiminto",
 	"bs-privacy-transparency-show-all-data-button": "Näytä kaikki tiedot",
+	"bs-privacy-transparency-export-export-format-label": "Vientimuoto",
 	"bs-privacy-transparency-view-data-dialog-close": "Sulje",
 	"bs-privacy-prefs-consent-cookies": "Hyväksyn evästeiden tallentamisen",
 	"bs-privacy-consent-save-button": "Tallenna",

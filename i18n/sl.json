@@ -82,6 +82,8 @@
 	"bs-privacy-transparency-type-selector-content": "Omembe v vsebini (npr. članki, entitete časovnice, komentarji idr.)",
 	"bs-privacy-transparency-export-data-button": "Izvozi podatke",
 	"bs-privacy-transparency-export-layout-title": "Izvoz vaših podatkov",
+	"bs-privacy-transparency-export-types-of-data-label": "Vrste podatkov",
+	"bs-privacy-transparency-export-export-format-label": "Izvozni format",
 	"bs-privacy-transparency-loading-message": "Počakajte, da se vaši podatki zberejo ...",
 	"bs-privacy-transparency-view-data-dialog-title": "Ogled vaših podatkov",
 	"bs-privacy-transparency-view-data-dialog-close": "Zapri",
