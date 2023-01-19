@@ -191,5 +191,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Uporablja se za notranje uravnoteženje obremenitve",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Ohranja konfigurirano vrednost za mehanizem predpomnjenja",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Shranjuje konfiguracijo, ali naj se vsili protokol HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Seznam piškotkov v tej skupini:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Seznam piškotkov v tej skupini:",
+	"bs-privacy-transparency-export-types-of-data-label": "Vrste podatkov",
+	"bs-privacy-transparency-export-export-format-label": "Izvozni format"
 }

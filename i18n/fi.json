@@ -3,6 +3,7 @@
 		"authors": [
 			"FinlandMan",
 			"MITO",
+			"Nike",
 			"Pxos",
 			"Silvonen",
 			"Yupik"
@@ -24,5 +25,6 @@
 	"bs-privacy-cookie-consent-group-necessary-desc": "Evästeet, jotka ovat tarpeellisia sivuston toiminnan kannalta",
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
+	"bs-privacy-transparency-export-export-format-label": "Vientimuoto"
 }
