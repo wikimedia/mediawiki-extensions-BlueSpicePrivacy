@@ -6,6 +6,7 @@
 			"DiegoAmbrocio",
 			"Fitoschido",
 			"Francodiaz7",
+			"JDíaz32",
 			"Jackiezelaya",
 			"Jakeukalane",
 			"MarcoAurelio"
@@ -186,5 +187,6 @@
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Usuario de control seleccióno modo VisualEditor",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Se utiliza para equilibrar la carga interna",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantiene el valor configurado para el mecanismo de almacenamiento en caché",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportación"
 }
