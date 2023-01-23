@@ -6,6 +6,7 @@
 			"DiegoAmbrocio",
 			"Fitoschido",
 			"Francodiaz7",
+			"JDíaz32",
 			"Jackiezelaya",
 			"Jakeukalane",
 			"MarcoAurelio"
@@ -186,5 +187,6 @@
 	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
 	"bs-privacy-prefs-consent-tos": "Acepto los [[{{MediaWiki:Termsofservicepage}}|términos de servicio]] de este sitio",
 	"bs-privacy-prefs-consent-tos-help": "Al marcar este campo se confirma la lectura y comprensión de la normativa de privacidad del sitio",
-	"logentry-bs-privacy-anonymization": "$4 ha anonimizado la cuenta. Nuevo nombre de usuario: $5"
+	"logentry-bs-privacy-anonymization": "$4 ha anonimizado la cuenta. Nuevo nombre de usuario: $5",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportación"
 }

@@ -159,5 +159,6 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "내부 부하 분산에 사용됨",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "캐시 매커니즘의 구성된 값을 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS 프로토콜의 강제 여부에 관한 구성을 저장합니다",
-	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:"
+	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:",
+	"bs-privacy-transparency-export-types-of-data-label": "데이터 유형"
 }
