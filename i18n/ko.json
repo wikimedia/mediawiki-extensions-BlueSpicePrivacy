@@ -77,6 +77,7 @@
 	"bs-privacy-transparency-type-selector-actions": "로그 데이터 (예: 기여 역사, 관리 조치 등)",
 	"bs-privacy-transparency-export-data-button": "데이터 내보내기",
 	"bs-privacy-transparency-export-layout-title": "데이터 내보내기",
+	"bs-privacy-transparency-export-types-of-data-label": "데이터 유형",
 	"bs-privacy-transparency-loading-message": "데이터를 수집하는 동안 기다려 주십시오...",
 	"bs-privacy-transparency-view-data-dialog-title": "데이터 보기",
 	"bs-privacy-transparency-view-data-dialog-close": "닫기",
