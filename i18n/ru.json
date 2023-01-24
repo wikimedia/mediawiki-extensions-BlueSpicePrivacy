@@ -54,6 +54,7 @@
 	"bs-privacy-transparency-layout-label": "Прозрачность",
 	"bs-privacy-transparency-show-all-data-button": "Показать все данные",
 	"bs-privacy-transparency-export-data-button": "Экспортировать данные",
+	"bs-privacy-transparency-export-types-of-data-label": "Типы данных",
 	"bs-privacy-transparency-loading-message": "Пожалуйста, подождите, пока ваши данные собираются...",
 	"bs-privacy-transparency-view-data-dialog-close": "Закрыть",
 	"bs-privacy-transparency-no-data": "Данные не найдены",
