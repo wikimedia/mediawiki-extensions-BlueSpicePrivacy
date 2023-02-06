@@ -48,5 +48,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
 	"logentry-bs-privacy-anonymization": "$4 huet de Benotzerkont anonymiséiert. Neie Benotzernumm: $5",
-	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren"
+	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
+	"bs-privacy-transparency-export-export-format-label": "Format exportéieren"
 }
