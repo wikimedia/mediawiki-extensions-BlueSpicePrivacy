@@ -116,5 +116,6 @@
 	"bs-privacy-cookie-convenience-group-desc": "עוגיות שמשפרות את חוויית המשתמש באתר",
 	"termsofservicepage": "Project:תנאי שירות",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "שמירת תצורה על האם לכפות פרוטוקול HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "רשימת העוגיות בקבוצה הזאת:"
+	"bs-privacy-cookie-consent-cookie-list-label": "רשימת העוגיות בקבוצה הזאת:",
+	"log-name-bs-privacy": "פרטיות BS"
 }
