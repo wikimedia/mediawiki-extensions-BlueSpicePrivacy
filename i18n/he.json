@@ -93,6 +93,7 @@
 	"bs-privacy-admin-consent-grid-column-user": "שם משתמש",
 	"bs-privacy-timestamp-with-days-ago": "$1 (לפני {{PLURAL:$2|יום אחד|$2 ימים}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (היום)",
+	"log-name-bs-privacy": "פרטיות BS",
 	"bs-privacy-consent-bool-true": "כן",
 	"bs-privacy-consent-bool-false": "לא",
 	"logentry-bs-privacy-deletion": "{{GENDER:$4|משתמש $4 מחק|משתמשת $4 מחקה}} את החשבון",
