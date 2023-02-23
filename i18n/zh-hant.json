@@ -83,6 +83,8 @@
 	"bs-privacy-transparency-type-selector-content": "在內容的提及（例如：條目、時間軸實體、註釋等等。）",
 	"bs-privacy-transparency-export-data-button": "匯出資料",
 	"bs-privacy-transparency-export-layout-title": "匯出您的資料",
+	"bs-privacy-transparency-export-types-of-data-label": "資料類型",
+	"bs-privacy-transparency-export-export-format-label": "匯出格式",
 	"bs-privacy-transparency-loading-message": "當收集您的資料時請稍待…",
 	"bs-privacy-transparency-view-data-dialog-title": "檢視您的資料",
 	"bs-privacy-transparency-view-data-dialog-close": "關閉",
