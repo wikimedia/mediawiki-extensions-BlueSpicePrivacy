@@ -36,3 +36,12 @@
 .oo-ui-defaultOverlay .oo-ui-floatableElement-floatable {
 	z-index: 2000;
 }
+
+/* When user refreshes the login page without accepting cookies
+   input boxes and login buttons gets enabled until page gets loaded
+   hence used the below code to disable clicking on loginform
+*/
+.mw-ui-container #userloginForm
+{
+	pointer-events: none;
+}
