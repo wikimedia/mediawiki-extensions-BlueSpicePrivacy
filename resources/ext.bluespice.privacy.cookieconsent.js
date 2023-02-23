@@ -20,6 +20,7 @@
 			return;
 		}
 
+		$( '#userloginForm .mw-htmlform .warningbox' ).attr( 'tabindex', 0 );
 		// Bind to change cookie settings footer link
 		$( 'body' ).on( 'click', '#bs-privacy-footer-change-cookie-settings', function() {
 			var openSettings = handler.settingsOpen;
