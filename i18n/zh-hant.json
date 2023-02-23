@@ -192,5 +192,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "用於內部負載平衡",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "保持快取機制的配置值",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "儲存是否強制執行 HTTPS 協定的配置",
-	"bs-privacy-cookie-consent-cookie-list-label": "此群組中的 cookie 清單："
+	"bs-privacy-cookie-consent-cookie-list-label": "此群組中的 cookie 清單：",
+	"bs-privacy-transparency-export-types-of-data-label": "資料類型",
+	"bs-privacy-transparency-export-export-format-label": "匯出格式"
 }
