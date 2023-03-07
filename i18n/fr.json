@@ -90,6 +90,8 @@
 	"bs-privacy-transparency-type-selector-content": "Références dans le contenu (par ex. : articles, éléments de chronologie, commentaires, etc.)",
 	"bs-privacy-transparency-export-data-button": "Exporter les données",
 	"bs-privacy-transparency-export-layout-title": "Exporter vos données",
+	"bs-privacy-transparency-export-types-of-data-label": "Types de données",
+	"bs-privacy-transparency-export-export-format-label": "Format d’exportation",
 	"bs-privacy-transparency-format-html": "HTML",
 	"bs-privacy-transparency-format-csv": "CSV",
 	"bs-privacy-transparency-loading-message": "Veuillez patienter le temps que vos données soient rassemblées...",
@@ -203,7 +205,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilisé pour la répartition de charge interne",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Contient la valeur configurée pour le mécanisme de cache",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Enregistre la configuration de l’imposition du protocole HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :",
-	"bs-privacy-transparency-export-types-of-data-label": "Types de données",
-	"bs-privacy-transparency-export-export-format-label": "Format d’exportation"
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste des cookies dans ce groupe :"
 }

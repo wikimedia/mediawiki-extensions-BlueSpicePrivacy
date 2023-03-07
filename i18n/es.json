@@ -90,6 +90,7 @@
 	"bs-privacy-transparency-type-selector-content": "Menciones en el contenido (p. ej., artículos, elementos de cronología, comentarios…)",
 	"bs-privacy-transparency-export-data-button": "Exportar datos",
 	"bs-privacy-transparency-export-layout-title": "Exportar tus datos",
+	"bs-privacy-transparency-export-export-format-label": "Formato de exportación",
 	"bs-privacy-transparency-loading-message": "Espera mientras se recopilan tus datos…",
 	"bs-privacy-transparency-view-data-dialog-title": "Ver tus datos",
 	"bs-privacy-transparency-view-data-dialog-close": "Cerrar",
@@ -187,6 +188,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Usuario de control seleccióno modo VisualEditor",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Se utiliza para equilibrar la carga interna",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantiene el valor configurado para el mecanismo de almacenamiento en caché",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
-	"bs-privacy-transparency-export-export-format-label": "Formato de exportación"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:"
 }

@@ -13,6 +13,7 @@
 	"bs-privacy": "BlueSpice Privacy",
 	"bs-privacy-desc": "Beheerpagina voor gebruikersprivacy-instellingen",
 	"bs-privacy-admintool-label": "Privacybeheer",
+	"bs-privacy-admintool-text": "Privacy",
 	"bs-privacy-header": "Logboek van alle handelingen die gebruikers hebben verricht met betrekking tot privacy",
 	"privacycenter": "Centrum voor persoonsgegevens",
 	"privacyadmin": "Privacybeheer",
@@ -87,6 +88,8 @@
 	"bs-privacy-transparency-type-selector-content": "Vermeldingen in de inhoud (bv. artikelen, tijdlijn-elementen, opmerkingen, enz.)",
 	"bs-privacy-transparency-export-data-button": "Gegevens exporteren",
 	"bs-privacy-transparency-export-layout-title": "Uw gegevens uitvoeren",
+	"bs-privacy-transparency-export-types-of-data-label": "Soorten gegevens",
+	"bs-privacy-transparency-export-export-format-label": "Exportformaat",
 	"bs-privacy-transparency-loading-message": "Even geduld a.u.b. terwijl uw gegevens worden verzameld…",
 	"bs-privacy-transparency-view-data-dialog-title": "Uw gegevens weergeven",
 	"bs-privacy-transparency-view-data-dialog-close": "Sluiten",
@@ -185,7 +188,6 @@
 	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
 	"privacyconsent": "Ga akkoord met het privacybeleid",
-	"bs-privacy-admintool-text": "Privacy",
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Slaat de status van gebruikersmeldingen op",
@@ -197,7 +199,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Gebruikt voor interne lastverdeling",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Bevat de ingestelde waarde voor het cache-mechanisme",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Slaat de configuratie op voor het al dan niet afdwingen van het HTTPS-protocol",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lijst van cookies in deze groep:",
-	"bs-privacy-transparency-export-types-of-data-label": "Soorten gegevens",
-	"bs-privacy-transparency-export-export-format-label": "Exportformaat"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lijst van cookies in deze groep:"
 }

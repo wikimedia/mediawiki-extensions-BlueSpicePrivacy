@@ -5,15 +5,15 @@
 			"NoiX180"
 		]
 	},
-	"bs-privacy-consent-save-button": "Raksa",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Raksa",
 	"bs-privacy-deletion-submit-request-label": "Penampen (dadi-dadi)",
 	"bs-privacy-request-denied-comment": "Penampen: $1",
 	"bs-privacy-admin-deny-comment-placeholder": "Panampen",
 	"bs-privacy-admin-request-grid-column-comment": "Panampen",
 	"bs-privacy-transparency-view-data-dialog-title": "Cingak data ragané",
-	"bs-privacy-transparency-private-blocked": "Kacadel: Inggih (olih $1)",
-	"bs-privacy-consent-bool-true": "Inggih",
 	"bs-privacy-transparency-view-data-dialog-close": "Sineb",
+	"bs-privacy-transparency-private-blocked": "Kacadel: Inggih (olih $1)",
+	"bs-privacy-consent-save-button": "Raksa",
+	"bs-privacy-consent-bool-true": "Inggih",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Raksa",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sineb"
 }

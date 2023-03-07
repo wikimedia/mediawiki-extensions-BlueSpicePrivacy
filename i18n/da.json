@@ -48,6 +48,7 @@
 	"bs-privacy-prefs-consent-cookies": "Jeg accepterer lagring af cookies",
 	"bs-privacy-consent-save-button": "Gem",
 	"bs-privacy-admin-consent-grid-column-user": "Brugernavn",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dage}} siden)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (idag)",
 	"bs-privacy-consent-bool-true": "Ja",
 	"bs-privacy-consent-bool-false": "Nej",
@@ -57,6 +58,5 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
 	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk",
-	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dage}} siden)"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
 }

@@ -13,6 +13,7 @@
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
 	"bs-privacy-admin-request-grid-column-action": "Toiminto",
 	"bs-privacy-transparency-show-all-data-button": "Näytä kaikki tiedot",
+	"bs-privacy-transparency-export-export-format-label": "Vientimuoto",
 	"bs-privacy-transparency-view-data-dialog-close": "Sulje",
 	"bs-privacy-prefs-consent-cookies": "Hyväksyn evästeiden tallentamisen",
 	"bs-privacy-consent-save-button": "Tallenna",
@@ -25,6 +26,5 @@
 	"bs-privacy-cookie-consent-group-necessary-desc": "Evästeet, jotka ovat tarpeellisia sivuston toiminnan kannalta",
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
-	"bs-privacy-transparency-export-export-format-label": "Vientimuoto"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje"
 }
