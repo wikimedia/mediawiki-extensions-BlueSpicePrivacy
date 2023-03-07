@@ -5,10 +5,10 @@
 			"Rooiratel"
 		]
 	},
-	"echo-category-title-bs-privacy-cat": "Privaatheid aksies",
-	"echo-pref-tooltip-bs-privacy-cat": "Stel my in kennis wanneer die status van my anonimisering of verwydering van my rekening verander",
 	"bs-privacy-anonymization-success-anonymizing": "Jou rekening is geanonimiseer! Jou nuwe gebruikersnaam is $1",
 	"bs-privacy-anonymize-login-button": "Meld weer aan met jou nuwe gebruikersnaam",
 	"bs-privacy-anonymization-request-comment": "Nuwe gebruikernaam: $1",
+	"echo-category-title-bs-privacy-cat": "Privaatheid aksies",
+	"echo-pref-tooltip-bs-privacy-cat": "Stel my in kennis wanneer die status van my anonimisering of verwydering van my rekening verander",
 	"notification-bs-privacy-anonymization-done-body": "Jou rekening is suksesvol geanonimiseer. Ou gebruikernaam: \"$1\". Nuwe gebruikernaam: \"$2\""
 }

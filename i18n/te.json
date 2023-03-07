@@ -8,6 +8,7 @@
 	"bs-privacy-anonymization-api-invalid-username": "చెల్లని వాడుకరి పేరు",
 	"bs-privacy-deletion-submit-request-label": "వ్యాఖ్య (ఐచ్ఛికం)",
 	"bs-privacy-anonymization-request-comment": "కొత్త వాడుకరి పేరు: $1",
+	"bs-privacy-admin-invalid-request": "చెల్లని అభ్యర్థన",
 	"bs-privacy-admin-request-grid-column-user": "వాడుకరి",
 	"bs-privacy-admin-request-grid-column-action": "చర్య",
 	"bs-privacy-admin-request-grid-column-timestamp": "కాలముద్ర",
@@ -27,6 +28,5 @@
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 రోజు|$2 రోజుల}} క్రితం)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (ఈరోజు)",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "భద్రపరుచు",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "మూసివేయి",
-	"bs-privacy-admin-invalid-request": "చెల్లని అభ్యర్థన"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "మూసివేయి"
 }

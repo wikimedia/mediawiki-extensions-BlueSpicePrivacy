@@ -77,6 +77,7 @@
 	"bs-privacy-transparency-type-selector-actions": "로그 데이터 (예: 기여 역사, 관리 조치 등)",
 	"bs-privacy-transparency-export-data-button": "데이터 내보내기",
 	"bs-privacy-transparency-export-layout-title": "데이터 내보내기",
+	"bs-privacy-transparency-export-types-of-data-label": "데이터 유형",
 	"bs-privacy-transparency-loading-message": "데이터를 수집하는 동안 기다려 주십시오...",
 	"bs-privacy-transparency-view-data-dialog-title": "데이터 보기",
 	"bs-privacy-transparency-view-data-dialog-close": "닫기",
@@ -159,6 +160,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "내부 부하 분산에 사용됨",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "캐시 매커니즘의 구성된 값을 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS 프로토콜의 강제 여부에 관한 구성을 저장합니다",
-	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:",
-	"bs-privacy-transparency-export-types-of-data-label": "데이터 유형"
+	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:"
 }
