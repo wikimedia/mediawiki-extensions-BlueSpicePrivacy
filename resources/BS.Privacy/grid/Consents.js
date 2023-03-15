@@ -51,8 +51,16 @@ Ext.define( 'BS.Privacy.grid.Consents', {
 
 	renderBool: function( value ) {
 		if( value ) {
-			return $( "<div>" ).append( $( "<span>" ).addClass( 'bs-privacy-admin-consent-column-bool-true' ) ).html();
+			return $( "<div>" ).append(
+				$( "<span>" )
+					.addClass( 'bs-privacy-admin-consent-column-bool-true' )
+					.attr( 'aria-label', mw.message( 'bs-privacy-admin-icon-bool-true-aria-label' ).text() )
+			).html();
 		}
-		return $( "<div>" ).append( $( "<span>" ).addClass( 'bs-privacy-admin-consent-column-bool-false' ) ).html();
+		return $( "<div>" ).append(
+			$( "<span>" )
+				.addClass( 'bs-privacy-admin-consent-column-bool-false' )
+				.attr( 'aria-label', mw.message( 'bs-privacy-admin-icon-bool-false-aria-label' ).text() )
+		).html();
 	}
 } );

@@ -188,7 +188,9 @@
 				"bs-privacy-admin-request-grid-action-approve",
 				"bs-privacy-admin-request-grid-column-deny",
 				"bs-privacy-admin-requests-disabled",
-				"bs-privacy-admin-request-grid-action-deny"
+				"bs-privacy-admin-request-grid-action-deny",
+				"bs-privacy-admin-icon-bool-true-aria-label",
+				"bs-privacy-admin-icon-bool-false-aria-label"
 			],
 			"dependencies": [
 				"oojs-ui",
