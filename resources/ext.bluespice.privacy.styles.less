@@ -106,22 +106,19 @@
 	.x-grid-cell-inner {
 		padding: 5px;
 		text-align: center !important;
+		.bs-privacy-admin-consent-column-bool-true,
+		.bs-privacy-admin-consent-column-bool-false {
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+		}
 		.bs-privacy-admin-consent-column-bool-true {
-			font-size: 21px;
-			&:before {
-				content: "\e97d";
-				font-family: "entypo";
-				color: green;
-			}
+			background-image: url('../../BlueSpiceFoundation/resources/bluespice/images/bs-tick.png');
 		}
 
 		.bs-privacy-admin-consent-column-bool-false {
-			font-size: 24px;
-			&:before {
-				content: "\e98d";
-				font-family: "entypo";
-				color: red;
-			}
+			background-image: url('../../BlueSpiceFoundation/resources/bluespice/images/bs-cross.png');
 		}
 	}
 }
