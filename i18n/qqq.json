@@ -207,5 +207,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description",
 	"bs-privacy-alert-page-not-exist": "Alert message that is shown to an admin to inform about missing pages\n$1 - number of missinf pages, $2 - link list to the missing pages",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Error message shown when Special:PrivacyPages is called with an invalid subpage"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Error message shown when Special:PrivacyPages is called with an invalid subpage",
+	"bs-privacy-admin-icon-bool-true-aria-label": "Aria label for a icon that indicates a checked state of a boolean option",
+	"bs-privacy-admin-icon-bool-false-aria-label": "Aria label for a icon that indicates a unchecked state of a boolean option"
 }
