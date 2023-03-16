@@ -176,5 +176,10 @@
 	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
 	"termsofservicepage": "Project:Tjenestevilkår",
 	"bs-privacy-consent-auth-step": "Godta følgende vilkår for å fortsette",
-	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår"
+	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår",
+	"bs-privacy-transparency-export-types-of-data-label": "Typer data",
+	"bs-privacy-module-consent-accepted": "Du har allerede godtatt alle vilkårene",
+	"bs-privacy-module-consent-set-success": "Samtykket ble lagret",
+	"bs-privacy-module-consent-set-fail": "Kunne ikke lagre samtykke!",
+	"privacyconsent": "Samtykke i personvernspolitikken"
 }
