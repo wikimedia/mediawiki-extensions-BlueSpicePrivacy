@@ -386,6 +386,10 @@
 		},
 		"addPrivacyUrls": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddPrivacyUrls"
+		},
+		"addCookieConsent": {
+			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddCookieConsent",
+			"services": [ "MainConfig", "ConfigFactory" ]
 		}
 	},
 	"Hooks": {
@@ -396,9 +400,7 @@
 		"GetPreferences": [
 			"\\BlueSpice\\Privacy\\Hook\\GetPreferences\\AddConsentPrefs::callback"
 		],
-		"BeforePageDisplay": [
-			"\\BlueSpice\\Privacy\\Hook\\BeforePageDisplay\\AddCookieConsent::callback"
-		],
+		"BeforePageDisplay": "addCookieConsent",
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
 		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback",
