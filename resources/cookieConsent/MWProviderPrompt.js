@@ -3,11 +3,9 @@
 	$( ".mw-ui-container #userloginForm" ).css( "pointer-events", "visible" );
 
 	bs.privacy.cookieConsent.MWProviderPrompt = function() {
-		this.cookieName =
-			mw.config.get( 'wgCookiePrefix' ) + '_' +
-			mw.config.get( 'bsPrivacyCookieConsentHandlerConfig' ).cookieName;
-		this.acceptMandatory = mw.config.get( 'bsPrivacyCookieAcceptMandatory' );
-		this.groups = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieGroups;
+		this.handlerConfig = mw.config.get( 'bsPrivacyCookieConsentHandlerConfig' );
+		this.acceptMandatory = this.handlerConfig.acceptMandatory;
+		this.groups = this.handlerConfig.cookieGroups;
 
 		if( this.cookieExists() === false ) {
 			this.showFirstLoad();
@@ -18,16 +16,27 @@
 	OO.initClass( bs.privacy.cookieConsent.MWProviderPrompt );
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.cookieExists = function() {
-		if ( $.cookie( this.cookieName ) ) {
+		if ( mw.cookie.get( this.getCookieName() ) ) {
 			return true;
-		} else if ( localStorage.getItem( this.cookieName ) !== null ) {
+		} else if ( localStorage.getItem( this.getCookieName( true ) ) !== null ) {
 			// If cookie is not set, but settings do exist in localStorage,
 			// translate settings from local storage to cookie so they can be passed to the server
-			$.cookie( this.cookieName, localStorage.getItem( this.cookieName ), { path: '/', expires: 20 * 365 } );
+			mw.cookie.set(
+				this.getCookieName(),
+				localStorage.getItem( this.getCookieName( true ) ),
+				{ path: '/', expires: 20* 365 }
+			);
 			return true;
 		}
 		// Neither cookie nor localstorage entry exists
 		return false;
+	};
+
+	bs.privacy.cookieConsent.MWProviderPrompt.prototype.getCookieName = function( prefixed ) {
+		if ( !prefixed ) {
+			return '_' + this.handlerConfig.cookieName;
+		}
+		return this.handlerConfig.cookiePrefix + this.getCookieName( false );
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.showFirstLoad = function() {
@@ -111,8 +120,8 @@
 		} );
 
 		// Set the cookie - expires in 20 years
-		$.cookie( this.cookieName, cookieVal, { path: '/', expires: 20 * 365 } );
-		localStorage.setItem( this.cookieName, cookieVal );
+		mw.cookie.set( this.getCookieName(), cookieVal, { path: '/', expires: 20 * 365 } );
+		localStorage.setItem( this.getCookieName( true ), cookieVal );
 
 		this.bar.$element.remove();
 		if ( this.$overlay ) {
