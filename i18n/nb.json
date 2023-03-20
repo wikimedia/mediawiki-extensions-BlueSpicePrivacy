@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby",
 			"Vukky"
 		]
@@ -181,5 +182,6 @@
 	"bs-privacy-module-consent-accepted": "Du har allerede godtatt alle vilkårene",
 	"bs-privacy-module-consent-set-success": "Samtykket ble lagret",
 	"bs-privacy-module-consent-set-fail": "Kunne ikke lagre samtykke!",
-	"privacyconsent": "Samtykke i personvernspolitikken"
+	"privacyconsent": "Samtykke i personvernspolitikken",
+	"bs-privacy-transparency-export-export-format-label": "Eksporter format"
 }
