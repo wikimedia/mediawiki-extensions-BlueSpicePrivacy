@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby",
 			"Vukky"
 		]
@@ -84,6 +85,7 @@
 	"bs-privacy-transparency-export-data-button": "Eksporter data",
 	"bs-privacy-transparency-export-layout-title": "Eksporter dataene dine",
 	"bs-privacy-transparency-export-types-of-data-label": "Typer data",
+	"bs-privacy-transparency-export-export-format-label": "Eksporter format",
 	"bs-privacy-transparency-loading-message": "Vent mens dataene dine samles …",
 	"bs-privacy-transparency-view-data-dialog-title": "Vis dataene dine",
 	"bs-privacy-transparency-view-data-dialog-close": "Lukk",
