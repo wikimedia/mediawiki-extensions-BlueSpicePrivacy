@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Vukky"
+			"Vukky",
+			"EdoAug"
 		]
 	},
 	"bs-privacy": "BlueSpice Privacy",
@@ -83,6 +84,8 @@
 	"bs-privacy-transparency-type-selector-content": "Omtaler i innhold (f.eks. artikler, tidslinjeoppføringer, kommentarer osv.)",
 	"bs-privacy-transparency-export-data-button": "Eksporter data",
 	"bs-privacy-transparency-export-layout-title": "Eksporter dataene dine",
+	"bs-privacy-transparency-export-types-of-data-label": "Typer data",
+	"bs-privacy-transparency-export-export-format-label": "Eksporter format",
 	"bs-privacy-transparency-loading-message": "Vent mens dataene dine samles …",
 	"bs-privacy-transparency-view-data-dialog-title": "Vis dataene dine",
 	"bs-privacy-transparency-view-data-dialog-close": "Lukk",
@@ -176,5 +179,9 @@
 	"bs-privacy-consent-cookie-settings-label": "Endre informasjonskapselsamtykke",
 	"termsofservicepage": "Project:Tjenestevilkår",
 	"bs-privacy-consent-auth-step": "Godta følgende vilkår for å fortsette",
-	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår"
+	"bs-privacy-consent-auth-fail": "Du må godta alle vilkår",
+	"bs-privacy-module-consent-accepted": "Du har allerede godtatt alle vilkårene",
+	"bs-privacy-module-consent-set-success": "Samtykket ble lagret",
+	"bs-privacy-module-consent-set-fail": "Kunne ikke lagre samtykke!",
+	"privacyconsent": "Samtykke i personvernspolitikken"
 }
