@@ -78,7 +78,7 @@
 	"bs-privacy-transparency-layout-label": "Gjennomsiktighet",
 	"bs-privacy-transparency-layout-help": "Vis og eksporter all data wikien har samlet om deg",
 	"bs-privacy-transparency-show-all-data-button": "Vis all data",
-	"bs-privacy-transparency-type-selector-personal": "Personlig data (f.eks. epost, navn, profilinfo osv.)",
+	"bs-privacy-transparency-type-selector-personal": "Personlig data (f.eks. e-post, navn, profilinfo osv.)",
 	"bs-privacy-transparency-type-selector-working": "Arbeidsdata (f.eks. påminnelser, tildelinger osv.)",
 	"bs-privacy-transparency-type-selector-actions": "Loggdata (f.eks. bidragshistorikk, administrative handlinger osv.)",
 	"bs-privacy-transparency-type-selector-content": "Omtaler i innhold (f.eks. artikler, tidslinjeoppføringer, kommentarer osv.)",
