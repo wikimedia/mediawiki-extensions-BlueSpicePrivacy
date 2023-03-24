@@ -36,7 +36,7 @@
 			label: mw.message( 'bs-privacy-deletion-submit-request-label' ).text()
 		} );
 
-		this.layout.addItems( this.form );
+		this.layout.addItems( [ this.form ] );
 	};
 
 	bs.privacy.widget.Delete.prototype.makePendingForm = function() {
