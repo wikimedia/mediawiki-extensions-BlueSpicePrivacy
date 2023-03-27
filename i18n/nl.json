@@ -3,6 +3,7 @@
 		"authors": [
 			"Danieldegroot2",
 			"Elroy",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Nickthijssen1994",
@@ -114,8 +115,8 @@
 	"bs-privacy-transparency-type-title-personal": "Persoonsgegevens",
 	"bs-privacy-transparency-type-title-actions": "Actiegegevens",
 	"bs-privacy-prefs-consent-cookies": "Ik accepteer dat er cookies worden opgeslagen",
-	"bs-privacy-prefs-consent-privacy-policy": "Ik ga akkoord met het [[{{MediaWiki:Privacypage}}|privacybeleid]] van deze site",
-	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de [[{{MediaWiki:Termsofservicepage}}|servicevoorwaarden]] van deze site",
+	"bs-privacy-prefs-consent-privacy-policy": "Ik ga akkoord met het <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} privacybeleid]</span> van deze site",
+	"bs-privacy-prefs-consent-tos": "Ik ga akkoord met de <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} servicevoorwaarden]</span> van deze site",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies zijn kleine stukjes informatie die tussen sessies op uw computer worden opgeslagen om het gebruik soepeler te laten verlopen.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Door dit vakje aan te vinken bevestigt u dat u het privacybeleid van deze site hebt gelezen en aanvaard.",
 	"bs-privacy-prefs-consent-tos-help": "Door dit vakje aan te vinken bevestigt u dat u de gebruiksvoorwaarden van deze site hebt gelezen en aanvaard.",
