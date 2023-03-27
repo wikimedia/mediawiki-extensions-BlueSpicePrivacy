@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Hwboehm",
 			"Justman10000",
 			"Metalhead64",
@@ -199,6 +200,6 @@
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Enthält den konfigurierten Wert für den Caching-Mechanismus",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Speichert die Konfiguration, ob das HTTPS-Protokoll erzwungen werden soll",
 	"bs-privacy-cookie-consent-cookie-list-label": "Liste der Cookies in dieser Gruppe:",
-	"bs-privacy-alert-page-not-exist": "Die {{PLURAL:$1|folgendende Seite existiert|folgenden Seiten existieren}} nicht: $2. Bitte lege sie an.",
+	"bs-privacy-alert-page-not-exist": "Die {{PLURAL:$1|folgende Seite existiert|folgenden Seiten existieren}} nicht: $2. Bitte lege sie an.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1"
 }

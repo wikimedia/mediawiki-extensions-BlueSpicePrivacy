@@ -108,8 +108,8 @@
 	"bs-privacy-transparency-type-title-personal": "Osebni podatki",
 	"bs-privacy-transparency-type-title-actions": "Podatki o dejanjih",
 	"bs-privacy-prefs-consent-cookies": "Sprejemam shranjevanje piškotkov",
-	"bs-privacy-prefs-consent-privacy-policy": "Sprejemam [[{{MediaWiki:Privacypage}}|pravilnik o zasebnosti]] tega mesta",
-	"bs-privacy-prefs-consent-tos": "Sprejemam [[{{MediaWiki:Termsofservicepage}}|pogoje uporabe]] tega mesta",
+	"bs-privacy-prefs-consent-privacy-policy": "Sprejemam <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} pravilnik o zasebnosti]</span> tega spletišča",
+	"bs-privacy-prefs-consent-tos": "Sprejemam <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} pogoje uporabe]</span> tega spletišča",
 	"bs-privacy-prefs-consent-cookies-help": "Piškotki so majhni deli informacij, ki so med sejami shranjeni na vašem računalniku, da je uporabniška izkušnja bolj gladka",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Z označitvijo tega polja potrjujete, da ste prebrali in da sprejemate pravilnik o zasebnosti tega mesta.",
 	"bs-privacy-prefs-consent-tos-help": "S potrditvijo tega polja potrjujete, da ste prebrali in da sprejemate pogoje uporabe tega mesta.",
@@ -193,5 +193,10 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Uporablja se za notranje uravnoteženje obremenitve",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Ohranja konfigurirano vrednost za mehanizem predpomnjenja",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Shranjuje konfiguracijo, ali naj se vsili protokol HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Seznam piškotkov v tej skupini:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Seznam piškotkov v tej skupini:",
+	"privacypages": "Strani o zasebnosti",
+	"bs-privacy-termsofservicepage": "Project:Terms of service",
+	"bs-privacy-privacypage": "Project:Pravilnik o zasebnosti",
+	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|Naslednja stran ne obstaja|Naslednji strani ne obstajata|Naslednje strani ne obstajajo}}: $2. Ustvarite {{PLURAL:$1|jo|ju|jih}}.",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Neveljavna podstran. Uporabite eno od naslednjega: $1"
 }

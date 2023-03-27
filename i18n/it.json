@@ -82,8 +82,8 @@
 	"bs-privacy-transparency-type-title-working": "Dati di lavoro",
 	"bs-privacy-transparency-type-title-personal": "Dati personali",
 	"bs-privacy-prefs-consent-cookies": "Accetto la memorizzazione dei cookie",
-	"bs-privacy-prefs-consent-privacy-policy": "Accetto la [[{{MediaWiki:Privacypage}}|policy sulla privacy]] di questo sito",
-	"bs-privacy-prefs-consent-tos": "Accetto i [[{{MediaWiki:Termsofservicepage}}|termini di servizio]] di questo sito",
+	"bs-privacy-prefs-consent-privacy-policy": "Accetto la <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} politica sulla privacy]</span> di questo sito",
+	"bs-privacy-prefs-consent-tos": "Accetto i <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} termini di servizio]</span> di questo sito",
 	"bs-privacy-prefs-consent-cookies-help": "I cookie sono piccole informazioni memorizzate sul tuo computer tra le sessioni per rendere l'esperienza dell'utente più fluid",
 	"bs-privacy-prefs-consent-tos-help": "Selezionando questo campo confermi di aver letto e accettato i termini di servizio per questo sito",
 	"bs-privacy-consent-save-button": "Salva",
@@ -131,5 +131,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-username": "Contiene il nome utente dell'utente corrente",
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Mantiene la modalità VisualEditor selezionata dall'utente",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
-	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:",
+	"bs-privacy-termsofservicepage": "Project:Termini di servizio",
+	"bs-privacy-privacypage": "Project:Informazioni sulla privacy"
 }
