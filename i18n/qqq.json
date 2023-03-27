@@ -12,11 +12,11 @@
 	"bs-privacy": "Name of the extension",
 	"bs-privacy-desc": "Description of BlueSpicePrivacy extension.",
 	"bs-privacy-admintool-label": "Privacy Admin",
+	"privacypages": "Title of {{Special:PrivacyPages}}",
 	"bs-privacy-admintool-text": "Label for global actions menu\n\n{{Identical|Privacy}}",
 	"bs-privacy-header": "Header for bs-privacy log type",
 	"privacycenter": "Title of {{Special:PrivacyCenter}}",
 	"privacyadmin": "Title of {{Special:PrivacyAdmin}}",
-	"privacypages": "Title of {{Special:PrivacyPages}}",
 	"bs-privacy-privacy-center-subtitle": "Subtitle of {{Special:PrivacyCenter}}",
 	"bs-privacy-api-error-generic": "Generic error message for bs-privacy-api API endpoint",
 	"bs-privacy-anonymization-error-retrieving-name": "Error message when new random username cannot be retrieved",
@@ -206,5 +206,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-list-label": "Cookie description",
 	"bs-privacy-alert-page-not-exist": "Alert message that is shown to an admin to inform about missing pages\n$1 - number of missinf pages, $2 - link list to the missing pages",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Error message shown when Special:PrivacyPages is called with and invalid subpage"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Error message shown when Special:PrivacyPages is called with an invalid subpage"
 }

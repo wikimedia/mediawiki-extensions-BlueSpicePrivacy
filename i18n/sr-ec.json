@@ -14,6 +14,8 @@
 	"bs-privacy-cancel-request-button": "Откажи захтев",
 	"bs-privacy-admin-request-grid-column-comment": "Коментар",
 	"bs-privacy-transparency-show-all-data-button": "Прикажи све податке",
+	"bs-privacy-prefs-consent-privacy-policy": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} политику приватности]</span> овог сајта",
+	"bs-privacy-prefs-consent-tos": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} услове коришћења]</span> овог сајта",
 	"bs-privacy-consent-save-button": "Сачувај",
 	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
 	"bs-privacy-consent-bool-true": "Да",

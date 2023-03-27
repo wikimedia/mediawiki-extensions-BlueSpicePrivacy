@@ -7,6 +7,7 @@
 	"bs-privacy": "Confidentialitate de BlueSpice",
 	"bs-privacy-desc": "Pagina de gestion pro parametros de confidentialitate del usator",
 	"bs-privacy-admintool-label": "Administration de confidentialitate",
+	"privacypages": "Paginas de confidentialitate",
 	"bs-privacy-admintool-text": "Confidentialitate",
 	"bs-privacy-header": "Registro de tote le actiones le usatores ha prendite concernente le confidentialitate",
 	"privacycenter": "Centro de confidentialitate",
@@ -108,8 +109,8 @@
 	"bs-privacy-transparency-type-title-personal": "Datos personal",
 	"bs-privacy-transparency-type-title-actions": "Datos de actiones",
 	"bs-privacy-prefs-consent-cookies": "Io accepta le immagazinage de cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Io accepta le [[{{MediaWiki:Privacypage}}|politica de confidentialitate]] de iste sito",
-	"bs-privacy-prefs-consent-tos": "Io accepta le [[{{MediaWiki:Termsofservicepage}}|conditiones de servicio]] de iste sito",
+	"bs-privacy-prefs-consent-privacy-policy": "Io accepta le <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} politica de confidentialitate]</span> de iste sito",
+	"bs-privacy-prefs-consent-tos": "Io accepta le <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} conditiones de servicio]</span> de iste sito",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies es micre pecias de information que se immagazina sur tu computator inter sessiones pro meliorar tu experientia de usator",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Marcante iste quadrato, tu confirma que tu ha legite e acceptate le politica de confidentialitate de iste sito",
 	"bs-privacy-prefs-consent-tos-help": "Marcante iste quadrato, tu confirma que tu ha legite e acceptate le conditiones de servicio de iste sito",
@@ -175,7 +176,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Salveguardar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Clauder",
 	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimento de cookies",
-	"termsofservicepage": "Project:Conditiones_de_servicio",
+	"bs-privacy-termsofservicepage": "Project:Conditiones de servicio",
+	"bs-privacy-privacypage": "Project:Politica de confidentialitate",
 	"bs-privacy-consent-auth-step": "Pro continuar, per favor accepta le sequente conditiones",
 	"bs-privacy-consent-auth-fail": "Tu debe acceptar tote le conditiones",
 	"bs-privacy-module-consent-accepted": "Tu ha jam acceptate tote le conditiones",
@@ -193,5 +195,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usate pro le balanciamento interne de carga",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Tene le valor configurate pro le mechanismo de cache",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salveguarda le configuration de si o non applicar le protocollo HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:",
+	"bs-privacy-alert-page-not-exist": "Le sequente pagina{{PLURAL:$1||s}} non existe: $2. Per favor crea lo{{PLURAL:$1||s}}.",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Subpagina non valide. Per favor usa un del sequentes: $1"
 }
