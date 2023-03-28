@@ -83,8 +83,8 @@
 	"bs-privacy-transparency-type-title-personal": "נתונים אישיים",
 	"bs-privacy-transparency-type-title-actions": "נתוני פעולה",
 	"bs-privacy-prefs-consent-cookies": "אני {{GENDER:|מסכים|מסכימה}} לאחסן עוגיות",
-	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] של אתר זה",
-	"bs-privacy-prefs-consent-tos": "אני מקבל את [[{{MediaWiki:Termsofservicepage}}|תנאי השירות]] של האתר הזה",
+	"bs-privacy-prefs-consent-privacy-policy": "אני {{GENDER:|מקבל|מקבלת}} את <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} מדיניות הפרטיות]</span> של האתר הזה",
+	"bs-privacy-prefs-consent-tos": "אני מקבל את <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} תנאי השירות]</span> של האתר הזה",
 	"bs-privacy-prefs-consent-cookies-help": "עוגיות הן פיסות מידע קטנות המאוחסנות במחשב שלך בין התחברויות כדי להפוך את חוויית המשתמש לחלקה יותר",
 	"bs-privacy-prefs-consent-privacy-policy-help": "סימון השדה הזה מהווה את האישור שלך לכך שקראת וקיבלת את מדיניות הפרטיות של האתר הזה",
 	"bs-privacy-prefs-consent-tos-help": "סימון השדה הזה מהווה את האישור שלך לכך שקראת וקיבלת את מדיניות הפרטיות של האתר הזה",
@@ -115,7 +115,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "שמירה",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "סגירה",
 	"bs-privacy-consent-cookie-settings-label": "שינוי הסכמה לעוגיות",
-	"termsofservicepage": "Project:תנאי שירות",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "שמירת תצורה על האם לכפות פרוטוקול HTTPS",
 	"bs-privacy-cookie-consent-cookie-list-label": "רשימת העוגיות בקבוצה הזאת:"
 }

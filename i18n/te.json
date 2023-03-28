@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Veeven"
+			"Veeven",
+			"V Bhavya"
 		]
 	},
+	"privacypages": "గోప్యతా పేజీలు",
 	"bs-privacy-anonymization-new-username-label": "కొత్త వాడుకరిపేరు",
 	"bs-privacy-anonymization-api-invalid-username": "చెల్లని వాడుకరి పేరు",
 	"bs-privacy-deletion-submit-request-label": "వ్యాఖ్య (ఐచ్ఛికం)",
