@@ -114,8 +114,8 @@
 	"bs-privacy-transparency-type-title-personal": "Personenbezogene Daten",
 	"bs-privacy-transparency-type-title-actions": "Aktionsdaten",
 	"bs-privacy-prefs-consent-cookies": "Ich akzeptiere das Speichern von Cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die [[{{MediaWiki:Privacypage}}|Datenschutzrichtlinie]] dieser Website",
-	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die [[{{MediaWiki:Termsofservicepage}}|Nutzungsbedingungen]] dieser Seite",
+	"bs-privacy-prefs-consent-privacy-policy": "I akzeptiere die <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} Datenschutzrichtlinie]</span> dieser Website",
+	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} Servicebedingungen]</span> dieser Website",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies sind kleine Informationseinheiten, die zwischen den Sitzungen auf dem Computer gespeichert werden, um die Benutzerfreundlichkeit zu verbessern.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
 	"bs-privacy-prefs-consent-tos-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Nutzungsbedingungen für diese Seite gelesen und anerkannt hast.",
@@ -201,5 +201,8 @@
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Speichert die Konfiguration, ob das HTTPS-Protokoll erzwungen werden soll",
 	"bs-privacy-cookie-consent-cookie-list-label": "Liste der Cookies in dieser Gruppe:",
 	"bs-privacy-alert-page-not-exist": "Die {{PLURAL:$1|folgende Seite existiert|folgenden Seiten existieren}} nicht: $2. Bitte lege sie an.",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1",
+	"privacypages": "Datenschutz Seiten",
+	"bs-privacy-termsofservicepage": "Projekt:Allgemeine Geschäftsbedingungen",
+	"bs-privacy-privacypage": "Projekt:Datenschutzrichtlinie"
 }
