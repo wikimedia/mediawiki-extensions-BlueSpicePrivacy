@@ -132,7 +132,7 @@ class Anonymize implements IPrivacyHandler {
 		$newUserPage = \Title::makeTitle( NS_USER, $newUsername );
 		$util = $this->services->getService( 'BSUtilityFactory' );
 		if ( $oldUserPage->exists() ) {
-			$movePage = new \MovePage( $oldUserPage, $newUserPage );
+			$movePage = $this->services->getMovePageFactory()->newMovePage( $oldUserPage, $newUserPage );
 			$movePage->move(
 				$util->getMaintenanceUser()->getUser(),
 				'',
