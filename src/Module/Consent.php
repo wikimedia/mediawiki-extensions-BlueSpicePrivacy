@@ -177,8 +177,9 @@ class Consent extends Module {
 				'default' => $userOptionsLookup->getOption( $this->user, $preferenceName ),
 				// B/C
 				'help-message' => $helpMessageKey,
-				'optional' => false,
-			];
+				// validation is implemented elsewhere
+				'optional' => true,
+ ];
 		}
 
 		return $descriptors;
