@@ -6,7 +6,8 @@
 			"Jeeputer",
 			"Pikne",
 			"Umherirrender",
-			"Verdy p"
+			"Verdy p",
+			"Amire80"
 		]
 	},
 	"bs-privacy": "Name of the extension",
@@ -100,7 +101,7 @@
 	"bs-privacy-transparency-private-username": "Text for the line in exported data for username. \n$1 - username of the user",
 	"bs-privacy-transparency-private-realname": "Text for the line in exported data for real name. \n$1 - real name of the user",
 	"bs-privacy-transparency-private-registration": "Text for the line in exported data for registration data. \n$1 - date and time user was registered",
-	"bs-privacy-transparency-private-email-authenticated": "Text for the line in exported data for email when email is authenticated.\n$1 - email address of the user, $2 - timestamp of authentication",
+	"bs-privacy-transparency-private-email-authenticated": "Text for the line in exported data for email when email is authenticated.\n* $1 - email address of the user\n* $2 - timestamp of authentication",
 	"bs-privacy-transparency-private-email-not-authenticated": "Text for the line in exported data for email when its not authenticated.\n$1 - email address of the user",
 	"bs-privacy-transparency-private-experience": "Text for the line in exported data for experience level.\n$1 - exeperience level",
 	"bs-privacy-transparency-private-groups": "Text for the line in exported data for groups.\n$1 - groups user belongs to",

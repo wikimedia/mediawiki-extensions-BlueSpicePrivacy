@@ -16,7 +16,8 @@
 			"佛壁灯",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"850710247liu"
 		]
 	},
 	"bs-privacy": "BlueSpice 隐私",
@@ -191,5 +192,6 @@
 	"bs-privacy-module-consent-set-success": "许可已成功存储",
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
 	"privacyconsent": "同意隐私政策",
-	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置"
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置",
+	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单："
 }
