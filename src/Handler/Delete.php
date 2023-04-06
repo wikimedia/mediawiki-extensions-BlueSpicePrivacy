@@ -49,6 +49,7 @@ class Delete extends Anonymize implements IPrivacyHandler {
 		'protected_titles' => 'pt_user',
 		'user_newtalk' => 'user_id'
 	];
+
 	/**
 	 *
 	 * @var array
@@ -62,11 +63,12 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	];
 
 	/**
-	 *
+	 * We need to implement/call this explicitly as we also have a `delete` method that may be
+	 * mistaken as constructor
 	 * @param \IDatabase $db
 	 */
 	public function __construct( \IDatabase $db ) {
-		$this->db = $db;
+		parent::__construct( $db );
 	}
 
 	/**
