@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Msz2001",
-			"Rail"
+			"Rail",
+			"WaldiSt"
 		]
 	},
 	"bs-privacy-anonymization-api-invalid-username": "Nieprawidłowa nazwa użytkownika",
@@ -17,5 +18,6 @@
 	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął konto",
 	"echo-category-title-bs-privacy-cat": "Prywatność",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij",
+	"bs-privacy-privacypage": "Projekt:Polityka prywatności"
 }
