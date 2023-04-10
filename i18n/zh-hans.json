@@ -7,6 +7,7 @@
 			"Diskdance",
 			"Ff98sha",
 			"GuoPC",
+			"Kishinsagi",
 			"Lakejason0",
 			"Ps2049",
 			"Tranve",
@@ -193,5 +194,8 @@
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
 	"privacyconsent": "同意隐私政策",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置",
-	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单："
+	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单：",
+	"bs-privacy-termsofservicepage": "Project:服务条款",
+	"bs-privacy-privacypage": "Project:隐私政策",
+	"bs-privacy-consent-auth-step": "要继续，请接受以下条款"
 }
