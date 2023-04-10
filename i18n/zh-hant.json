@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
+			"Winston Sung",
 			"捍粵者"
 		]
 	},
@@ -194,5 +195,8 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "用於內部負載平衡",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "保持快取機制的配置值",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "儲存是否強制執行 HTTPS 協定的配置",
-	"bs-privacy-cookie-consent-cookie-list-label": "此群組中的 cookie 清單："
+	"bs-privacy-cookie-consent-cookie-list-label": "此群組中的 cookie 清單：",
+	"privacypages": "隱私權頁面",
+	"bs-privacy-termsofservicepage": "Project:服務條款",
+	"bs-privacy-privacypage": "Project:隱私權政策"
 }
