@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"捍粵者"
+			"捍粵者",
+			"Winston Sung"
 		]
 	},
 	"bs-privacy": "BlueSpice 隱私",
 	"bs-privacy-desc": "使用者隱私設定的管理頁面",
 	"bs-privacy-admintool-label": "隱私管理",
+	"privacypages": "隱私權頁面",
 	"bs-privacy-admintool-text": "隱私",
 	"bs-privacy-header": "使用者採取對於隱私所有操作的日誌",
 	"privacycenter": "隱私中心",
@@ -176,7 +178,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "儲存",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "關閉",
 	"bs-privacy-consent-cookie-settings-label": "更改 cookie 許可",
-	"termsofservicepage": "Project:Terms_of_service",
+	"bs-privacy-termsofservicepage": "Project:服務條款",
+	"bs-privacy-privacypage": "Project:隱私權政策",
 	"bs-privacy-consent-auth-step": "若要繼續，請接受以下條款",
 	"bs-privacy-consent-auth-fail": "您必須接受所有條款",
 	"bs-privacy-module-consent-accepted": "您已接受了所有條款",
