@@ -5,7 +5,8 @@
 	bs.privacy.cookieConsent.BaseHandler = function( cfg ) {
 		cfg = cfg || {};
 
-		this.cookieName = mw.config.get( 'wgCookiePrefix' ) + '_' + cfg.cookieName;
+		this.cookieName = cfg.cookieName;
+		this.cookiePrefix = cfg.cookiePrefix;
 		this.cookieMap = cfg.cookieMap;
 		this.cookieSetterOrig = cfg.cookieSetterOrig;
 
@@ -42,8 +43,15 @@
 		return false;
 	};
 
+	bs.privacy.cookieConsent.BaseHandler.prototype.getCookieName = function( prefixed ) {
+		if ( !prefixed ) {
+			return '_' + this.cookieName;
+		}
+		return this.cookiePrefix + this.getCookieName( false );
+	};
+
 	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
-		if ( cookieName === this.cookieName ) {
+		if ( cookieName === this.getCookieName( true ) ) {
 			// Always allow cookie preferences cookie
 			return true;
 		}

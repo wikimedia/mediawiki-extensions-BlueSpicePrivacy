@@ -9,7 +9,7 @@
 	OO.inheritClass( bs.privacy.cookieConsent.MWProvider, bs.privacy.cookieConsent.BaseHandler );
 
 	bs.privacy.cookieConsent.MWProvider.prototype.getGroups = function() {
-		var settings = localStorage.getItem( this.cookieName );
+		var settings = localStorage.getItem( this.getCookieName( true ) );
 		if( !settings ) {
 			return [];
 		}
@@ -48,8 +48,8 @@
 				} );
 
 				// Set the cookie - expires in 20 years
-				$.cookie( this.cookieName, cookieVal, { path: '/', expires: 20 * 365 } );
-				localStorage.setItem( this.cookieName, cookieVal );
+				mw.cookie.set( this.getCookieName(), cookieVal, { path: '/', expires: 20 * 365 } );
+				localStorage.setItem( this.getCookieName( true ), cookieVal );
 			}
 		}.bind( this ) );
 	};
