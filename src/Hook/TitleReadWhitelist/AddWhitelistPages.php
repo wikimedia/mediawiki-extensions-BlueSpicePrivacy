@@ -30,6 +30,7 @@ class AddWhitelistPages extends TitleReadWhitelist {
 			}
 
 		}
+		return true;
 	}
 
 	protected function doProcess() {
