@@ -17,7 +17,8 @@
 			"沈澄心",
 			"落花有意12138",
 			"铁桶",
-			"850710247liu"
+			"850710247liu",
+			"Kishinsagi"
 		]
 	},
 	"bs-privacy": "BlueSpice 隐私",
@@ -187,6 +188,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "关闭",
 	"bs-privacy-consent-cookie-settings-label": "更改Cookie许可",
 	"termsofservicepage": "Project:服务条款",
+	"bs-privacy-consent-auth-step": "要继续，请接受以下条款",
 	"bs-privacy-consent-auth-fail": "您必须同意所有的条款",
 	"bs-privacy-module-consent-accepted": "您已经接受了所有条款",
 	"bs-privacy-module-consent-set-success": "许可已成功存储",
