@@ -197,5 +197,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Salveguarda le configuration de si o non applicar le protocollo HTTPS",
 	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies in iste gruppo:",
 	"bs-privacy-alert-page-not-exist": "Le sequente pagina{{PLURAL:$1||s}} non existe: $2. Per favor crea lo{{PLURAL:$1||s}}.",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Subpagina non valide. Per favor usa un del sequentes: $1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Subpagina non valide. Per favor usa un del sequentes: $1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "marcate",
+	"bs-privacy-admin-icon-bool-false-aria-label": "non marcate"
 }
