@@ -198,5 +198,7 @@
 	"bs-privacy-termsofservicepage": "Project:Terms of service",
 	"bs-privacy-privacypage": "Project:Pravilnik o zasebnosti",
 	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|Naslednja stran ne obstaja|Naslednji strani ne obstajata|Naslednje strani ne obstajajo}}: $2. Ustvarite {{PLURAL:$1|jo|ju|jih}}.",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Neveljavna podstran. Uporabite eno od naslednjega: $1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Neveljavna podstran. Uporabite eno od naslednjega: $1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "obkljukano",
+	"bs-privacy-admin-icon-bool-false-aria-label": "odkljukano"
 }
