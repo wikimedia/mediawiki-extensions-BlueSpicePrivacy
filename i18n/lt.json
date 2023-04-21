@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-privacy": "BlueSpice Privatumas",
+	"bs-privacy-desc": "Naudotojo privatumo nustatymų valdymo puslapis",
+	"bs-privacy-admintool-label": "Privatumo administratorius",
+	"privacypages": "Privatumo puslapiai",
+	"bs-privacy-admintool-text": "Privatumas",
+	"bs-privacy-header": "Žurnalas apie visus veiksmus, kurių naudotojai ėmėsi dėl privatumo",
+	"privacycenter": "Privatumo centras",
+	"privacyadmin": "Privatumo administratorius",
+	"bs-privacy-privacy-center-subtitle": "Jūsų privatumo nustatymų apžvalga",
+	"bs-privacy-api-error-generic": "Įvyko klaida",
+	"bs-privacy-anonymization-error-retrieving-name": "Bandant gauti naują naudotojo vardą įvyko klaida",
+	"bs-privacy-anonymization-layout-label": "Anonimizacija",
+	"bs-privacy-anonymization-layout-help": "Galite anonimizuoti savo paskyrą, pakeisdami visus naudotojo vardo naudojimo atvejus nauju naudotojo vardu",
+	"bs-privacy-anonymization-new-username-label": "Naujas naudotojo vardas",
+	"bs-privacy-anonymization-confirm-button-label": "Anonimizuoti mano paskyrą",
+	"bs-privacy-anonymization-final-prompt": "Jūsų paskyra bus pervadinta, o visa jūsų pateikta informacija bus rodoma nauju naudotojo vardu. Šio veiksmo negalima atšaukti",
+	"bs-privacy-anonymization-error-check-name": "Bandant patikrinti naują naudotojo vardą įvyko klaida",
+	"bs-privacy-anonymization-invalid-name": "Įvestas naudotojo vardas negalimas. Pasirinkite kitą naudotojo vardą.",
+	"bs-privacy-anonymization-username-exists": "Įvestas naudotojo vardas jau priskirtas kitam naudotojui. Pasirinkite kitą naudotojo vardą.",
+	"bs-privacy-anonymization-error-anonymizing": "Anonimizacijos procese įvyko klaida.",
+	"bs-privacy-anonymization-success-anonymizing": "Jūsų paskyra buvo anonimizuota! Jūsų naujas naudotojo vardas yra $1",
+	"bs-privacy-api-error-missing-module": "Modulis $1 neregistruotas!",
+	"bs-privacy-missing-param": "Parametras „$1“ turi būti!",
+	"bs-privacy-invalid-param": "Parametras „$1“ netinkamo formato!",
+	"bs-privacy-module-no-function": "„$1“ nėra tinkamas šio modulio funkcijos pavadinimas",
+	"bs-privacy-anonymization-api-invalid-username": "Negalimas naudotojo vardas",
+	"bs-privacy-api-username-mismatch": "Užklausą teikiantis naudotojas skiriasi nuo prisijungusio naudotojo",
+	"bs-privacy-anonymize-login-button": "Prisijunkite iš naujo naudodami naują naudotojo vardą"
+}

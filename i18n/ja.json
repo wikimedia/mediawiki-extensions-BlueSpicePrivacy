@@ -76,5 +76,6 @@
 	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント",
 	"bs-privacy-module-consent-accepted": "あなたはすでにすべての条件に同意しました",
 	"bs-privacy-module-consent-set-fail": "同意の保存に失敗しました！",
-	"privacyconsent": "プライバシーポリシーへの同意"
+	"privacyconsent": "プライバシーポリシーへの同意",
+	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み"
 }
