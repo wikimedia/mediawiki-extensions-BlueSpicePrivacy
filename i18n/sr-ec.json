@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Milicevic01"
 		]
 	},
@@ -26,5 +27,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори",
 	"bs-privacy-prefs-consent-privacy-policy": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} политику приватности]</span> овог сајта",
-	"bs-privacy-prefs-consent-tos": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} услове коришћења]</span> овог сајта"
+	"bs-privacy-prefs-consent-tos": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} услове коришћења]</span> овог сајта",
+	"bs-privacy-admin-icon-bool-true-aria-label": "проверено",
+	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено"
 }
