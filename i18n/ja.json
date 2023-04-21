@@ -76,5 +76,6 @@
 	"notification-bs-privacy-request-submitted": "新しいプライバシー リクエストが送信されました。",
 	"notification-bs-privacy-request-submitted-body": "利用者 $1が新しいプライバシー要求を送信しました。モジュール: $3 コメント: $2",
 	"apihelp-bs-privacy-summary": "プライバシーに関するすべての API アクションのエンドポイント",
-	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント"
+	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント",
+	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み"
 }

@@ -133,5 +133,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
 	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:",
 	"bs-privacy-termsofservicepage": "Project:Termini di servizio",
-	"bs-privacy-privacypage": "Project:Informazioni sulla privacy"
+	"bs-privacy-privacypage": "Project:Informazioni sulla privacy",
+	"bs-privacy-admin-icon-bool-true-aria-label": "selezionato",
+	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato"
 }
