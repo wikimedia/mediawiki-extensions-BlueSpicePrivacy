@@ -58,8 +58,7 @@ class Anonymize implements IPrivacyHandler {
 		$this->removeSensitivePreferences( $newUsername );
 
 		$newUser = $userFactory->newFromName( $newUsername );
-		$newUser->touch();
-		$newUser->clearSharedCache( 'refresh' );
+		$newUser->saveSettings();
 
 		if ( $this->getContext()->getUser()->getName() === $oldUsername ) {
 			// If user runs the anonymization directly,
