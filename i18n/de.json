@@ -4,6 +4,7 @@
 			"Brettchenweber",
 			"Hwboehm",
 			"Justman10000",
+			"Lukasaiko",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
@@ -204,5 +205,7 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1",
 	"privacypages": "Datenschutz Seiten",
 	"bs-privacy-termsofservicepage": "Projekt:Allgemeine Geschäftsbedingungen",
-	"bs-privacy-privacypage": "Projekt:Datenschutzrichtlinie"
+	"bs-privacy-privacypage": "Projekt:Datenschutzrichtlinie",
+	"bs-privacy-admin-icon-bool-true-aria-label": "ausgewählt",
+	"bs-privacy-admin-icon-bool-false-aria-label": "Nicht ausgewählt"
 }
