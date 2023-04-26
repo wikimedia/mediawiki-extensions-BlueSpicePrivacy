@@ -95,7 +95,7 @@
 				align: 'left',
 				helpInline: false,
 				label: label,
-				$overlay: true,
+				$overlay: this.$overlay,
 				help: new OO.ui.HtmlSnippet( desc )
 			} );
 			content.push( field );
