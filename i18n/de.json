@@ -4,6 +4,7 @@
 			"Brettchenweber",
 			"Hwboehm",
 			"Justman10000",
+			"Lukasaiko",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
@@ -203,5 +204,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Speichert die Konfiguration, ob das HTTPS-Protokoll erzwungen werden soll",
 	"bs-privacy-cookie-consent-cookie-list-label": "Liste der Cookies in dieser Gruppe:",
 	"bs-privacy-alert-page-not-exist": "Die {{PLURAL:$1|folgende Seite existiert|folgenden Seiten existieren}} nicht: $2. Bitte lege sie an.",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "ausgewählt",
+	"bs-privacy-admin-icon-bool-false-aria-label": "Nicht ausgewählt"
 }
