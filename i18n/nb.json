@@ -183,5 +183,6 @@
 	"bs-privacy-module-consent-accepted": "Du har allerede godtatt alle vilkårene",
 	"bs-privacy-module-consent-set-success": "Samtykket ble lagret",
 	"bs-privacy-module-consent-set-fail": "Kunne ikke lagre samtykke!",
-	"privacyconsent": "Samtykke i personvernspolitikken"
+	"privacyconsent": "Samtykke i personvernspolitikken",
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:"
 }
