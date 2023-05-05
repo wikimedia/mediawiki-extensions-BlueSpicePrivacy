@@ -8,5 +8,6 @@
 	"echo-category-title-bs-privacy-cat": "نويڪلائي عمل",
 	"bs-privacy-consent-save-button": "سانڍيو",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 ڏينھن}} اڳ)",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "سانڍيو"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "سانڍيو",
+	"bs-privacy-transparency-private-groups": "گروھَ: $1"
 }
