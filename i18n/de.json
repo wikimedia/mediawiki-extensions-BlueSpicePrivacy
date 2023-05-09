@@ -8,7 +8,8 @@
 			"Mschlindwein",
 			"Umherirrender",
 			"Brettchenweber",
-			"Lukasaiko"
+			"Lukasaiko",
+			"Vhoesl"
 		]
 	},
 	"bs-privacy": "BlueSpice Datenschutz",
@@ -116,7 +117,7 @@
 	"bs-privacy-transparency-type-title-personal": "Personenbezogene Daten",
 	"bs-privacy-transparency-type-title-actions": "Aktionsdaten",
 	"bs-privacy-prefs-consent-cookies": "Ich akzeptiere das Speichern von Cookies",
-	"bs-privacy-prefs-consent-privacy-policy": "I akzeptiere die <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} Datenschutzrichtlinie]</span> dieser Website",
+	"bs-privacy-prefs-consent-privacy-policy": "Ich akzeptiere die <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} Datenschutzrichtlinie]</span> dieser Website",
 	"bs-privacy-prefs-consent-tos": "Ich akzeptiere die <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} Servicebedingungen]</span> dieser Website",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies sind kleine Informationseinheiten, die zwischen den Sitzungen auf dem Computer gespeichert werden, um die Benutzerfreundlichkeit zu verbessern.",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Wenn du dieses Feld ankreuzt, bestätigst du, dass du die Datenschutzerklärung für diese Website gelesen und anerkannt hast.",
