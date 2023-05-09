@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Brettchenweber",
+			"DraconicDark",
 			"Hwboehm",
 			"Justman10000",
 			"Lukasaiko",
@@ -184,8 +185,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Speichern",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
-	"bs-privacy-termsofservicepage": "Projekt:Allgemeine Geschäftsbedingungen",
-	"bs-privacy-privacypage": "Projekt:Datenschutzrichtlinie",
+	"bs-privacy-termsofservicepage": "Project:Nutzungsbedingungen",
+	"bs-privacy-privacypage": "Project:Datenschutzrichtlinie",
 	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
 	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren",
 	"bs-privacy-module-consent-accepted": "Du hast bereits alle Bedingungen akzeptiert.",
