@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Brettchenweber",
+			"DraconicDark",
 			"Hwboehm",
 			"Justman10000",
 			"Lukasaiko",
@@ -205,8 +206,8 @@
 	"bs-privacy-alert-page-not-exist": "Die {{PLURAL:$1|folgende Seite existiert|folgenden Seiten existieren}} nicht: $2. Bitte lege sie an.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1",
 	"privacypages": "Datenschutz Seiten",
-	"bs-privacy-termsofservicepage": "Projekt:Allgemeine Geschäftsbedingungen",
-	"bs-privacy-privacypage": "Projekt:Datenschutzrichtlinie",
+	"bs-privacy-termsofservicepage": "Project:Nutzungsbedingungen",
+	"bs-privacy-privacypage": "Project:Datenschutzrichtlinie",
 	"bs-privacy-admin-icon-bool-true-aria-label": "ausgewählt",
 	"bs-privacy-admin-icon-bool-false-aria-label": "Nicht ausgewählt"
 }
