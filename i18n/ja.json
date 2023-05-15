@@ -4,6 +4,7 @@
 			"A2y4",
 			"MathXplore",
 			"Reiwa period",
+			"Shirayuki",
 			"もなー(偽物)"
 		]
 	},
@@ -36,7 +37,7 @@
 	"bs-privacy-transparency-show-all-data-button": "すべてのデータを表示",
 	"bs-privacy-transparency-type-selector-personal": "個人情報 (例: メールアドレス、本名、プロフィール情報など)",
 	"bs-privacy-transparency-type-selector-working": "作業データ (例: リマインダー、課題など)",
-	"bs-privacy-transparency-type-selector-actions": "ログデータ (例: 投稿履歴、管理アクションなど)",
+	"bs-privacy-transparency-type-selector-actions": "記録データ (例: 投稿履歴、管理操作など)",
 	"bs-privacy-transparency-type-selector-content": "コンテンツ内の言及 (例: 記事、タイムライン エンティティ、コメントなど)",
 	"bs-privacy-transparency-export-data-button": "データをエクスポート",
 	"bs-privacy-transparency-export-layout-title": "利用者データをエクスポート",
@@ -59,7 +60,7 @@
 	"bs-privacy-consent-save-fail": "プライバシー ポリシー オプションの保存中にエラーが発生しました",
 	"bs-privacy-admin-consent-overview-title": "プライバシー ポリシーの同意の概要",
 	"bs-privacy-admin-consent-overview-help": "全ユーザーの同意状況の概要",
-	"echo-category-title-bs-privacy-cat": "プライバシー アクション",
+	"echo-category-title-bs-privacy-cat": "プライバシーの操作",
 	"echo-pref-tooltip-bs-privacy-cat": "アカウントの匿名化または削除リクエストのステータスが変更されたときに通知する",
 	"notification-bs-privacy-center-url": "プライバシーセンター",
 	"notification-bs-privacy-admin-url": "プライバシー管理者",
@@ -75,7 +76,7 @@
 	"notification-bs-privacy-request-denied-deletion-body": "利用者 $1は、あなたのアカウントを削除するリクエストを拒否しました。コメント: $2",
 	"notification-bs-privacy-request-submitted": "新しいプライバシー リクエストが送信されました。",
 	"notification-bs-privacy-request-submitted-body": "利用者 $1が新しいプライバシー要求を送信しました。モジュール: $3 コメント: $2",
-	"apihelp-bs-privacy-summary": "プライバシーに関するすべての API アクションのエンドポイント",
+	"apihelp-bs-privacy-summary": "プライバシーに関するすべての API 操作のエンドポイント",
 	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント",
 	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み"
 }
