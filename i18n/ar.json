@@ -190,6 +190,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "يحفظ حالة مكونات البشرة BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "يحفظ حالة مكونات الجلد BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "يحفظ حالة إخطارات المستخدم",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "يحتفظ بتجزئة جلسة المستخدم الحالية",
 	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "يحمل معرّف جلسة المستخدم الحالي",
 	"bs-privacy-cookie-consent-cookie-desc-userid": "يحمل معرف المستخدم الحالي",
 	"bs-privacy-cookie-consent-cookie-desc-username": "يحمل اسم المستخدم الحالي للمستخدم",
