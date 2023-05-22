@@ -59,7 +59,7 @@
 	"bs-privacy-consent-save-success": "プライバシー ポリシーの設定が保存されました",
 	"bs-privacy-consent-save-fail": "プライバシー ポリシー オプションの保存中にエラーが発生しました",
 	"bs-privacy-admin-consent-overview-title": "プライバシー ポリシーの同意の概要",
-	"bs-privacy-admin-consent-overview-help": "全ユーザーの同意状況の概要",
+	"bs-privacy-admin-consent-overview-help": "すべての利用者の同意状況の概要",
 	"echo-category-title-bs-privacy-cat": "プライバシーの操作",
 	"echo-pref-tooltip-bs-privacy-cat": "アカウントの匿名化または削除リクエストのステータスが変更されたときに通知する",
 	"notification-bs-privacy-center-url": "プライバシーセンター",
