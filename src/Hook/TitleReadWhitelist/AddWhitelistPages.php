@@ -12,10 +12,13 @@ class AddWhitelistPages extends TitleReadWhitelist {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
+		if ( $this->title->isSpecial( 'PrivacyPages' ) ) {
+			return false;
+		}
+
 		$pages = [
 			'bs-privacy-privacypage',
-			'bs-privacy-termsofservicepage',
-			'privacypages'
+			'bs-privacy-termsofservicepage'
 		];
 
 		foreach ( $pages as $value ) {
