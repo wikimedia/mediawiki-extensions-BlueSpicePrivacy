@@ -4,6 +4,20 @@
 			"Dr Lotus Black"
 		]
 	},
+	"bs-privacy-admintool-text": "ကိုယ်ရေးမူဝါဒ",
 	"bs-privacy-api-error-generic": "အမှားတစ်ခု ဖြစ်ပွားခဲ့ပါသည်",
-	"bs-privacy-anonymization-error-check-name": "အသုံးပြုသူအမည်သစ်အား အတည်ပြုစိစစ်နေစဉ် အမှားတစ်ခုဖြစ်ပွားခဲ့ပါသည်"
+	"bs-privacy-anonymization-error-check-name": "အသုံးပြုသူအမည်သစ်အား အတည်ပြုစိစစ်နေစဉ် အမှားတစ်ခုဖြစ်ပွားခဲ့ပါသည်",
+	"bs-privacy-admin-request-grid-column-user": "အသုံးပြုသူ",
+	"bs-privacy-admin-request-grid-column-action": "ဆောင်ရွက်ချက်",
+	"bs-privacy-admin-request-grid-column-timestamp": "အချိန်တံဆိပ်",
+	"bs-privacy-admin-request-grid-column-comment": "မှတ်ချက်",
+	"bs-privacy-admin-request-grid-action-approve": "အတည်ပြု",
+	"bs-privacy-admin-request-grid-column-deny": "ငြင်းပယ်",
+	"bs-privacy-admin-request-grid-action-deny": "ငြင်းပယ်",
+	"bs-privacy-transparency-layout-label": "ပွင့်လင်းမြင်သာမှု",
+	"bs-privacy-transparency-view-data-dialog-close": "ပိတ်ရန်",
+	"bs-privacy-consent-save-button": "သိမ်းရန်",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "အကုန် လက်ခံသည်",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "သိမ်းရန်",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ပိတ်ရန်"
 }

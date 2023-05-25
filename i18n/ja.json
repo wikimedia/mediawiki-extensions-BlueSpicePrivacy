@@ -50,7 +50,7 @@
 	"bs-privacy-consent-save-success": "プライバシー ポリシーの設定が保存されました",
 	"bs-privacy-consent-save-fail": "プライバシー ポリシー オプションの保存中にエラーが発生しました",
 	"bs-privacy-admin-consent-overview-title": "プライバシー ポリシーの同意の概要",
-	"bs-privacy-admin-consent-overview-help": "全ユーザーの同意状況の概要",
+	"bs-privacy-admin-consent-overview-help": "すべての利用者の同意状況の概要",
 	"bs-privacy-admin-consent-grid-column-user": "利用者名",
 	"bs-privacy-consent-bool-true": "はい",
 	"bs-privacy-consent-bool-false": "いいえ",
