@@ -10,5 +10,6 @@
 	"bs-privacy-anonymization-confirm-button-label": "Dienwi fy nghyfrif",
 	"bs-privacy-deletion-submit-request-label": "Sylw (dewisol)",
 	"bs-privacy-transparency-export-export-format-label": "Allforio fformat",
+	"bs-privacy-transparency-private-not-blocked": "Wedi'i blocio: Na",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (heddiw)"
 }
