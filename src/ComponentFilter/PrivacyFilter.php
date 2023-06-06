@@ -12,6 +12,9 @@ class PrivacyFilter implements IComponentFilter {
 	private const HIDDEN_COMPONENTS = [
 		'BlueSpice\Discovery\Component\MainLinksPanel',
 		'BlueSpice\Discovery\Component\MediaWikiLinksPanel',
+		'BlueSpice\Discovery\Component\NamespaceMainPages',
+		'BlueSpice\Discovery\Component\EnhancedSidebarContainer',
+		'BlueSpice\Discovery\Component\SubpageTreePanel',
 		'BlueSpice\Discovery\Component\SidebarSecondaryToggleButton',
 		'BlueSpice\Discovery\Component\SidebarPrimaryToggleButton',
 		'BlueSpice\Discovery\Component\SidebarPrimaryToggleButtonMobile'
