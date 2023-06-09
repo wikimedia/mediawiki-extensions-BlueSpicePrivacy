@@ -14,5 +14,6 @@
 	"bs-privacy-admin-consent-grid-column-user": "Kevtteenommâ",
 	"bs-privacy-cookie-consent-group-necessary-label": "Velttidmettum niästádâsah",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Vuorkkii",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Toopâ"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Toopâ",
+	"bs-privacy-request-denied-comment": "Komment: $1"
 }

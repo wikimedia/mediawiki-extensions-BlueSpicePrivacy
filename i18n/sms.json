@@ -26,5 +26,6 @@
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tät seiddõs âânn jeäʹvstõõzzid, što ââʹnnemǩiõččlâsttmõš lij pueʹrab",
 	"bs-privacy-cookie-consent-group-necessary-label": "Vieʹltʼteʹmes jeäʹvstõõzz",
 	"bs-privacy-cookie-consent-group-necessary-desc": "Jeäʹvstõõzz, koid âlgg ââʹnned, što seiddõs tuåimmai",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk",
+	"bs-privacy-request-denied-comment": "Kommeʹntt: $1"
 }
