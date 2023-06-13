@@ -9,6 +9,7 @@
 	"bs-privacy-deletion-layout-label": "Õõʹnnitobldõõǥǥ jaukkummuš",
 	"bs-privacy-deletion-submit-request-label": "Kommeʹntt (vaʹlljeemnallšem)",
 	"bs-privacy-anonymization-request-comment": "Ođđ õõʹnninõmm: $1",
+	"bs-privacy-request-denied-comment": "Kommeʹntt: $1",
 	"bs-privacy-deletion-button": "Jaukkâd õõʹnnitobldõõǥǥ",
 	"bs-privacy-admin-request-grid-column-timestamp": "Äiʹǧǧštemppal",
 	"bs-privacy-admin-request-grid-action-approve": "Priim",

@@ -6,10 +6,13 @@
 			"Nike",
 			"Pxos",
 			"Silvonen",
-			"Yupik"
+			"Yupik",
+			"Pyscowicz"
 		]
 	},
 	"bs-privacy-admintool-text": "Yksityisyys",
+	"bs-privacy-anonymization-new-username-label": "Uusi käyttäjänimi",
+	"bs-privacy-cancel-request-button": "Peruuta pyyntö",
 	"bs-privacy-admin-request-grid-column-user": "Käyttäjä",
 	"bs-privacy-admin-request-grid-column-action": "Toiminto",
 	"bs-privacy-transparency-show-all-data-button": "Näytä kaikki tiedot",
