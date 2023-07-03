@@ -192,5 +192,5 @@
 	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
 	"bs-privacy-admin-icon-bool-true-aria-label": "marcada",
 	"bs-privacy-admin-icon-bool-false-aria-label": "sin marcar",
-	"bs-privacy-alert-page-not-exist": "La{{PLURAL:$1||s}} siguiente{{PLURAL:$1||s}} {{PLURAL:$1|página|páginas}} no existen: $2. Por favor {{PLURAL:$1|créalo|créalos}}"
+	"bs-privacy-alert-page-not-exist": "La{{PLURAL:$1||s}} siguiente{{PLURAL:$1|&nbsp;página|s páginas}} no existe{{PLURAL:$1||n}}: $2. Por favor {{PLURAL:$1|créalo|créalos}}."
 }
