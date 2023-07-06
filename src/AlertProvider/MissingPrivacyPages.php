@@ -116,6 +116,7 @@ class MissingPrivacyPages extends AlertProviderBase {
 			$titles[] = $ppTitle;
 		}
 		if ( empty( $titles ) ) {
+			$this->isInitialized = true;
 			return;
 		}
 		$redLinks = [];
@@ -126,6 +127,7 @@ class MissingPrivacyPages extends AlertProviderBase {
 			$redLinks[] = $this->linkRenderer->makeLink( $title );
 		}
 		if ( empty( $redLinks ) ) {
+			$this->isInitialized = true;
 			return;
 		}
 		$redLinkList = $this->skin->getLanguage()->listToText( $redLinks );
