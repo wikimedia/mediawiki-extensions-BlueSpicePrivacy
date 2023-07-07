@@ -11,6 +11,7 @@
 			"Lakejason0",
 			"Ps2049",
 			"Tranve",
+			"U.T.",
 			"VulpesVulpes825",
 			"WQL",
 			"Ywang",
@@ -197,5 +198,6 @@
 	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单：",
 	"bs-privacy-termsofservicepage": "Project:服务条款",
 	"bs-privacy-privacypage": "Project:隐私政策",
-	"bs-privacy-consent-auth-step": "要继续，请接受以下条款"
+	"bs-privacy-consent-auth-step": "要继续，请接受以下条款",
+	"bs-privacy-transparency-export-export-format-label": "导出格式"
 }
