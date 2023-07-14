@@ -2,9 +2,19 @@
 	"@metadata": {
 		"authors": [
 			"Bjh21",
-			"Mako001"
+			"Mako001",
+			"Piano1forte2"
 		]
 	},
+	"bs-privacy-missing-param": "Parameter '$1' must be present!",
+	"bs-privacy-invalid-param": "Parameter '$1' is in invalid format!",
+	"bs-privacy-module-no-function": "'$1' is not a valid function name for this module",
+	"bs-privacy-handler-error": "Handler '$1' failed",
+	"bs-privacy-cannot-assert-deleted-user": "Cannot create 'Deleted user' object",
 	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|has}} cancelled the request to anonymise {{GENDER:$2|his|her}} account",
-	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} cancelled the request to delete {{GENDER:$2|his|her}} account"
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} cancelled the request to delete {{GENDER:$2|his|her}} account",
+	"notification-bs-privacy-anonymization-done-body": "Your account has been successfully anonymised. Old username: '$1'. New username: '$2'",
+	"notification-bs-privacy-deletion-failed-body": "We could not delete your account. Please contact wiki administrators for more information. We apologise for the inconvenience.",
+	"notification-bs-privacy-request-denied-anonymization-body": "User $1 denied your request to anonymise your account to username '$2'. Comment: $3",
+	"notification-bs-privacy-request-submitted-body": "User '$1' submitted new privacy request. Module: $3. Comment: $2"
 }
