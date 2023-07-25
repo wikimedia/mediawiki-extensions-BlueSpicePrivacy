@@ -182,6 +182,8 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Opslaan",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sluiten",
 	"bs-privacy-consent-cookie-settings-label": "Toestemming van volgbestanden wijzigen",
+	"bs-privacy-termsofservicepage": "Project:Servicevoorwaarden",
+	"bs-privacy-privacypage": "Project:Privacybeleid",
 	"bs-privacy-consent-auth-step": "Aanvaard de volgende voorwaarden om door te gaan:",
 	"bs-privacy-consent-auth-fail": "U moet alle voorwaarden aanvaarden.",
 	"bs-privacy-module-consent-accepted": "U hebt alle voorwaarden al aanvaard.",
@@ -199,5 +201,9 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Gebruikt voor interne lastverdeling",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Bevat de ingestelde waarde voor het cache-mechanisme",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Slaat de configuratie op voor het al dan niet afdwingen van het HTTPS-protocol",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lijst van cookies in deze groep:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lijst van cookies in deze groep:",
+	"bs-privacy-alert-page-not-exist": "De volgende {{PLURAL:$1|pagina bestaat|pagina's bestaan}} niet: $2. Maak {{PLURAL:$1|deze|ze}} aan.",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Ongeldige subpagina. Gebruik een van de volgende: $1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "aangevinkt",
+	"bs-privacy-admin-icon-bool-false-aria-label": "niet aangevinkt"
 }
