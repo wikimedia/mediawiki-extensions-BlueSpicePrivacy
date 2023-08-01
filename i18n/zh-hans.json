@@ -33,7 +33,7 @@
 	"bs-privacy-api-error-generic": "发生错误",
 	"bs-privacy-anonymization-error-retrieving-name": "接收新用户名时出错",
 	"bs-privacy-anonymization-layout-label": "匿名化",
-	"bs-privacy-anonymization-layout-help": "您可以将您的帐户匿名化，将所有出现您用户名的地方替换为新的用户名。",
+	"bs-privacy-anonymization-layout-help": "您可以将您的账号匿名化，将所有出现您用户名的地方替换为新的用户名。",
 	"bs-privacy-anonymization-new-username-label": "新的用户名",
 	"bs-privacy-anonymization-confirm-button-label": "将我的账号匿名化",
 	"bs-privacy-anonymization-final-prompt": "您的账户将被重命名且您所有的编辑将以新用户名的名义显示。此操作无法撤销",
