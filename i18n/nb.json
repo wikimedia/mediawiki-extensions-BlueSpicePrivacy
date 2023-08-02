@@ -185,5 +185,7 @@
 	"privacyconsent": "Samtykke i personvernspolitikken",
 	"bs-privacy-transparency-export-export-format-label": "Eksporter format",
 	"privacypages": "Personvernssider",
-	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:",
+	"bs-privacy-admin-icon-bool-true-aria-label": "krysset av",
+	"bs-privacy-admin-icon-bool-false-aria-label": "ikke krysset av"
 }
