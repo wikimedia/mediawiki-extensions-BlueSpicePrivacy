@@ -4,6 +4,7 @@
 			"500000000006城",
 			"850710247liu",
 			"A Chinese Wikipedian",
+			"CrownedWharf566",
 			"Diskdance",
 			"Ff98sha",
 			"GuoPC",
@@ -199,5 +200,6 @@
 	"bs-privacy-termsofservicepage": "Project:服务条款",
 	"bs-privacy-privacypage": "Project:隐私政策",
 	"bs-privacy-consent-auth-step": "要继续，请接受以下条款",
-	"bs-privacy-transparency-export-export-format-label": "导出格式"
+	"bs-privacy-transparency-export-export-format-label": "导出格式",
+	"bs-privacy-transparency-export-types-of-data-label": "数据类型"
 }
