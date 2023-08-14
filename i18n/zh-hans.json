@@ -13,6 +13,7 @@
 			"Ps2049",
 			"Tranve",
 			"U.T.",
+			"Vikarna",
 			"VulpesVulpes825",
 			"WQL",
 			"Ywang",
@@ -201,5 +202,6 @@
 	"bs-privacy-privacypage": "Project:隐私政策",
 	"bs-privacy-consent-auth-step": "要继续，请接受以下条款",
 	"bs-privacy-transparency-export-export-format-label": "导出格式",
-	"bs-privacy-transparency-export-types-of-data-label": "数据类型"
+	"bs-privacy-transparency-export-types-of-data-label": "数据类型",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "子页面无效。请使用以下其中之一：$1"
 }
