@@ -13,6 +13,7 @@
 			"Ps2049",
 			"Tranve",
 			"U.T.",
+			"Vikarna",
 			"VulpesVulpes825",
 			"WQL",
 			"Ywang",
@@ -200,5 +201,6 @@
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
 	"privacyconsent": "同意隐私政策",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置",
-	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单："
+	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单：",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "子页面无效。请使用以下其中之一：$1"
 }
