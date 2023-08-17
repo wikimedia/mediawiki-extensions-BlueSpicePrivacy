@@ -22,7 +22,10 @@ class PrivacyFilter implements IComponentFilter {
 
 	private const PRIVACY_PAGES = [
 		'bs-privacy-privacypage',
-		'bs-privacy-termsofservicepage'
+		'bs-privacy-termsofservicepage',
+		'privacypage',
+		'aboutpage',
+		'disclaimerpage'
 	];
 
 	/**
