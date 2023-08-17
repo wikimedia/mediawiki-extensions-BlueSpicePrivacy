@@ -1,7 +1,7 @@
 ( function( mw, $, d ){
 
 	$( d ).keydown( function(e) {
-		if( e.key.toLowerCase() === 'tab' &&
+		if( e.key && e.key.toLowerCase() === 'tab' &&
 			$( '.bs-privacy-cookie-consent-mw-provider-bar' ).length ) {
 			var $targetEl = $( e.target );
 			var $tabChildren = $( ".bs-privacy-cookie-consent-mw-provider-bar ").children();
