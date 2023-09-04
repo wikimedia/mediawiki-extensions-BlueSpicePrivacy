@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Kokage si",
 			"MathXplore",
 			"Reiwa period",
 			"Shirayuki",
@@ -78,5 +79,9 @@
 	"notification-bs-privacy-request-submitted-body": "利用者 $1が新しいプライバシー要求を送信しました。モジュール: $3 コメント: $2",
 	"apihelp-bs-privacy-summary": "プライバシーに関するすべての API 操作のエンドポイント",
 	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント",
-	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み"
+	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み",
+	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
+	"bs-privacy-anonymization-api-invalid-username": "無効な利用者名",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "保存",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "閉じる"
 }
