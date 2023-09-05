@@ -5,9 +5,12 @@
 			"MathXplore",
 			"Reiwa period",
 			"もなー(偽物)",
-			"Shirayuki"
+			"Shirayuki",
+			"Kokage si"
 		]
 	},
+	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
+	"bs-privacy-anonymization-api-invalid-username": "無効な利用者名",
 	"bs-privacy-deletion-submit-request-label": "コメント (任意)",
 	"bs-privacy-anonymization-request-comment": "新しい利用者名: $1",
 	"bs-privacy-deletion-button": "アカウントを削除",
@@ -75,6 +78,8 @@
 	"notification-bs-privacy-request-submitted-body": "利用者 $1が新しいプライバシー要求を送信しました。モジュール: $3 コメント: $2",
 	"apihelp-bs-privacy-summary": "プライバシーに関するすべての API 操作のエンドポイント",
 	"apihelp-bs-privacy-get-requests-summary": "保留中のすべてのリクエストを取得するためのエンドポイント",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "保存",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "閉じる",
 	"bs-privacy-module-consent-accepted": "あなたはすでにすべての条件に同意しました",
 	"bs-privacy-module-consent-set-fail": "同意の保存に失敗しました！",
 	"privacyconsent": "プライバシーポリシーへの同意",
