@@ -22,6 +22,11 @@
 					"extPath": "/BlueSpicePrivacy"
 				}
 			},
+			"ConfigDefinitionRegistry": {
+				"PrivacyCookieAcceptMandatory": "\\BlueSpice\\Privacy\\ConfigDefinition\\CookieAcceptMandatory::getInstance",
+				"PrivacyPrivacyPolicyMandatory": "\\BlueSpice\\Privacy\\ConfigDefinition\\PrivacyPolicyMandatory::getInstance",
+				"PrivacyPrivacyPolicyOnLogin": "\\BlueSpice\\Privacy\\ConfigDefinition\\PrivacyPolicyOnLogin::getInstance"
+			},
 			"PermissionRegistry": {
 				"bs-privacy-admin": {
 					"type": "global",
