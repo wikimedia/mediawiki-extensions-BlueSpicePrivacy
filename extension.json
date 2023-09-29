@@ -399,6 +399,10 @@
 		"addCookieConsent": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddCookieConsent",
 			"services": [ "MainConfig", "ConfigFactory" ]
+		},
+		"redirectToConsent": {
+			"class": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent",
+			"services": [ "SpecialPageFactory", "ConfigFactory", "TitleFactory" ]
 		}
 	},
 	"Hooks": {
@@ -413,7 +417,7 @@
 		"TitleReadWhitelist": "\\BlueSpice\\Privacy\\Hook\\TitleReadWhitelist\\AddWhitelistPages::callback",
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
-		"OutputPageParserOutput": "\\BlueSpice\\Privacy\\Hook\\OutputPageParserOutput\\RedirectToConsent::callback",
+		"OutputPageParserOutput": "redirectToConsent",
 		"SpecialPageBeforeExecute": "\\BlueSpice\\Privacy\\Hook\\SpecialPageBeforeExecute\\RedirectToConsent::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
