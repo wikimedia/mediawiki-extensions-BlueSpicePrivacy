@@ -2,60 +2,95 @@
 
 namespace BlueSpice\Privacy\Hook\OutputPageParserOutput;
 
-use BlueSpice\Hook\OutputPageParserOutput;
+use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\Module\Consent;
-use ConfigException;
-use SpecialPageFactory;
+use Config;
+use ConfigFactory;
+use IContextSource;
+use MediaWiki\Hook\OutputPageParserOutputHook;
+use MediaWiki\SpecialPage\SpecialPageFactory;
+use OutputPage;
 use Title;
+use TitleFactory;
 
-class RedirectToConsent extends OutputPageParserOutput {
-	protected function doProcess() {
-		$this->out->redirect(
-			SpecialPageFactory::getPage( 'PrivacyConsent' )->getPageTitle()->getFullURL( [
-				'returnto' => $this->out->getTitle()->getPrefixedDBkey()
+class RedirectToConsent implements OutputPageParserOutputHook {
+
+	/** @var SpecialPageFactory */
+	private $specialPageFactory;
+
+	/** @var ConfigFactory */
+	private $configFactory;
+
+	/** @var TitleFactory */
+	private $titleFactory;
+
+	/**
+	 * @param SpecialPageFactory $specialPageFactory
+	 * @param ConfigFactory $configFactory
+	 * @param TitleFactory $titleFactory
+	 */
+	public function __construct(
+		SpecialPageFactory $specialPageFactory, ConfigFactory $configFactory, TitleFactory $titleFactory
+	) {
+		$this->specialPageFactory = $specialPageFactory;
+		$this->configFactory = $configFactory;
+		$this->titleFactory = $titleFactory;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function onOutputPageParserOutput( $outputPage, $parserOutput ): void {
+		if ( $this->skipProcessing( $outputPage ) ) {
+			return;
+		}
+		$outputPage->redirect(
+			$this->specialPageFactory->getPage( 'PrivacyConsent' )->getPageTitle()->getFullURL( [
+				'returnto' => $outputPage->getTitle()->getPrefixedDBkey()
 			] )
 		);
 	}
 
 	/**
+	 * @param OutputPage $outputPage
+	 *
 	 * @return bool
-	 * @throws ConfigException
 	 */
-	protected function skipProcessing() {
+	protected function skipProcessing( OutputPage $outputPage ): bool {
 		if ( $this->getConfig()->get( 'PrivacyPrivacyPolicyMandatory' ) === false ) {
 			return true;
 		}
-		if ( $this->out->getTitle() === null ) {
+		if ( $outputPage->getTitle() === null ) {
 			return true;
 		}
-		if ( !$this->out->getUser()->isRegistered() ) {
+		if ( !$outputPage->getUser()->isRegistered() ) {
 			return true;
 		}
 
-		if ( $this->getModule()->hasUserConsented( $this->out->getUser() ) ) {
+		if ( $this->getModule( $outputPage->getContext() )->hasUserConsented( $outputPage->getUser() ) ) {
 			return true;
 		}
 
 		$exceptions = [
-			$this->getContext()->msg( 'Privacypage' )->plain(),
-			$this->getContext()->msg( 'Termsofservicepage' )->plain(),
+			$outputPage->getContext()->msg( 'Privacypage' )->plain(),
+			$outputPage->getContext()->msg( 'Termsofservicepage' )->plain(),
 		];
-		$action = $this->getContext()->getRequest()->getText( 'action', 'view' );
+		$action = $outputPage->getContext()->getRequest()->getText( 'action', 'view' );
 		foreach ( $exceptions as $exceptionPage ) {
-			$exceptionTitle = Title::newFromText( $exceptionPage );
+			$exceptionTitle = $this->titleFactory->newFromText( $exceptionPage );
 			if (
 				$exceptionTitle instanceof Title &&
-				$this->out->getTitle()->equals( $exceptionTitle ) &&
+				$outputPage->getTitle()->equals( $exceptionTitle ) &&
 				$action === 'view'
 			) {
 				return true;
 			}
 		}
-		$sp = SpecialPageFactory::getTitleForAlias( 'PrivacyConsent' );
+		$sp = $this->specialPageFactory->getTitleForAlias( 'PrivacyConsent' );
 		if ( !$sp ) {
 			return true;
 		}
-		if ( $this->out->getTitle()->equals( $sp ) ) {
+		if ( $outputPage->getTitle()->equals( $sp ) ) {
 			return true;
 		}
 
@@ -63,9 +98,18 @@ class RedirectToConsent extends OutputPageParserOutput {
 	}
 
 	/**
+	 * @param IContextSource $context
+	 *
 	 * @return Consent
 	 */
-	protected function getModule() {
-		return new Consent( $this->getContext() );
+	private function getModule( IContextSource $context ): Module {
+		return new Consent( $context );
+	}
+
+	/**
+	 * @return Config
+	 */
+	private function getConfig(): Config {
+		return $this->configFactory->makeConfig( 'bsg' );
 	}
 }
