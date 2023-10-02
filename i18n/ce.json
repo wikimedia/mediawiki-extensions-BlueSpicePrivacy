@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-privacy-anonymization-request-comment": "Декъашхочун керла цӀе: $1",
+	"bs-privacy-acknowledge-request-button": "Йухадаккха",
+	"bs-privacy-request-denied-comment": "Коммент: $1",
+	"bs-privacy-admin-request-grid-column-user": "Декъашхо",
+	"bs-privacy-admin-request-grid-column-action": "Ардамаш",
+	"bs-privacy-admin-request-grid-column-timestamp": "Билгало",
+	"bs-privacy-admin-request-grid-column-comment": "Коммент",
+	"bs-privacy-admin-request-grid-action-approve": "Маго",
+	"bs-privacy-admin-request-grid-column-deny": "Йухатоха",
+	"bs-privacy-admin-request-grid-action-deny": "Йухатоха",
+	"bs-privacy-transparency-export-data-button": "Хаамаш экспортбан",
+	"bs-privacy-transparency-export-types-of-data-label": "Хаамийн тайпанаш",
+	"bs-privacy-transparency-loading-message": "Дехар до, собар де, хьан хаамаш гулбеш бу...",
+	"bs-privacy-transparency-view-data-dialog-close": "ДӀачӀагӀа",
+	"bs-privacy-transparency-no-data": "Хаамаш цакарий",
+	"bs-privacy-transparency-private-username": "Декъашхочун цӀе: $1",
+	"bs-privacy-transparency-private-realname": "Бакъ цӀе: $1",
+	"bs-privacy-transparency-private-registration": "Регистрацийина терахь: $1",
+	"bs-privacy-transparency-private-email-not-authenticated": "Электронан поштан адрес: $1 (бакъдина дац)",
+	"bs-privacy-transparency-private-groups": "Тобанаш: $1",
+	"bs-privacy-consent-save-button": "Ӏалашйе",
+	"bs-privacy-admin-consent-grid-column-user": "Декъашхочун цӀе",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (тахана)",
+	"bs-privacy-consent-bool-true": "ХӀаъ",
+	"bs-privacy-consent-bool-false": "ХӀан-хӀа",
+	"logentry-bs-privacy-deletion": "$4 декъашхочо дӀайаьккхина аккаунт",
+	"notification-bs-privacy-login-url": "Викин чугӀо",
+	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "ТӀеэца массо",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ӏалашйе",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ДӀачӀагӀа"
+}
