@@ -21,10 +21,11 @@
 			"Kishinsagi",
 			"U.T.",
 			"CrownedWharf566",
-			"Vikarna"
+			"Vikarna",
+			"LittlePaw365"
 		]
 	},
-	"bs-privacy": "BlueSpice 隐私",
+	"bs-privacy": "BlueSpice隐私",
 	"bs-privacy-desc": "用户隐私设置的管理页面",
 	"bs-privacy-admintool-label": "隐私管理",
 	"bs-privacy-admintool-text": "隐私政策",
