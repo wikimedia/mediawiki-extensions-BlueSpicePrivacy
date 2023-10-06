@@ -17,6 +17,7 @@
 			"Vikarna",
 			"VulpesVulpes825",
 			"WQL",
+			"Xyb",
 			"Ywang",
 			"Zazzzz",
 			"佛壁灯",
@@ -203,5 +204,7 @@
 	"privacyconsent": "同意隐私政策",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置",
 	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单：",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "子页面无效。请使用以下其中之一：$1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "子页面无效。请使用以下其中之一：$1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "已勾选",
+	"bs-privacy-admin-icon-bool-false-aria-label": "未勾选"
 }
