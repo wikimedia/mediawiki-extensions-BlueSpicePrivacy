@@ -200,5 +200,11 @@
 	"bs-privacy-alert-page-not-exist": "Le sequente pagina{{PLURAL:$1||s}} non existe: $2. Per favor crea lo{{PLURAL:$1||s}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Subpagina non valide. Per favor usa un del sequentes: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "marcate",
-	"bs-privacy-admin-icon-bool-false-aria-label": "non marcate"
+	"bs-privacy-admin-icon-bool-false-aria-label": "non marcate",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "Activar cookies obligatori",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Si iste campo es marcate, le schermo essera rendite gris e impedira le usator de facer alcun cosa usque le cookies es acceptate",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Activar le politica de confidentialitate obligatori",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Si iste campo es marcate, le usator essera fortiate a consentir al politica de confidentialitate e al conditiones de servicio ante de acceder a alcun altere pagina",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Acceptar politica de confidentialitate al apertura de session",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Si iste campo es marcate, le acceptation del politica de confidentialitate essera includite in le processo de apertura de session"
 }

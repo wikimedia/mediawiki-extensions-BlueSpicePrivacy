@@ -29,5 +29,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
 	"bs-privacy-anonymization-new-username-label": "Uusi käyttäjänimi",
-	"bs-privacy-cancel-request-button": "Peruuta pyyntö"
+	"bs-privacy-cancel-request-button": "Peruuta pyyntö",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Hyväksy tietosuojakäytäntö kirjautuessasi"
 }
