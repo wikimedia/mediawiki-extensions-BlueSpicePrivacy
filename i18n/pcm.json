@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Confidence"
+		]
+	},
+	"bs-privacy-prefs-cookieacceptmandatory-label": "On the mandatory cookies",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Wen you look this field, the screen dey change to grey so e go allow users to anything till them accept the cookies",
+	"bs-privacy-prefs-privacypolicymandatory-label": "On the mandatory privacy policy",
+	"bs-privacy-prefs-privacypolicymandatory-help": "As the user dey look the field, them go force am to accept the privacy policy with terms of service, before him go fit access other pages.",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Make you gree for the login of privacy policy",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "For the login process, we go add accepting of privacy policy as you dey check this field."
+}

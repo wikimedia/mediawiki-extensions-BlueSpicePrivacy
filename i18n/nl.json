@@ -206,5 +206,11 @@
 	"bs-privacy-alert-page-not-exist": "De volgende {{PLURAL:$1|pagina bestaat|pagina's bestaan}} niet: $2. Maak {{PLURAL:$1|deze|ze}} aan.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ongeldige subpagina. Gebruik een van de volgende: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "aangevinkt",
-	"bs-privacy-admin-icon-bool-false-aria-label": "niet aangevinkt"
+	"bs-privacy-admin-icon-bool-false-aria-label": "niet aangevinkt",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "Verplichte cookies inschakelen",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Als u dit veld aanvinkt, wordt het scherm grijs en kan de gebruiker niets doen totdat cookies worden geaccepteerd",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Verplicht privacybeleid inschakelen",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Als u dit veld aanvinkt, wordt de gebruiker gedwongen akkoord te gaan met het privacybeleid en de servicevoorwaarden alvorens andere pagina’s te kunnen bezoeken",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Het privacybeleid accepteren bij het inloggen",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Als u dit veld aanvinkt, wordt het accepteren van het privacybeleid opgenomen in het inlogproces"
 }
