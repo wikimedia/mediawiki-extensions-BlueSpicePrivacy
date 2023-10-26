@@ -204,5 +204,11 @@
 	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|הדף הבא אינו קיים|הדפים הבאים אינם קיימים}}: $2. נא ליצור {{PLURAL:$1|אותו|אותם}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "דף־משנה לא תקין. נא להשתמש באחד מהבאים: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "מסומן",
-	"bs-privacy-admin-icon-bool-false-aria-label": "לא מסומן"
+	"bs-privacy-admin-icon-bool-false-aria-label": "לא מסומן",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "הפעלת עוגיות מחייבות",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "סימון השדה הזה יגרום למסך להיות מואפר וימנע מהמשתמש לעשות דבר כלשהו עד לאישור העוגיות",
+	"bs-privacy-prefs-privacypolicymandatory-label": "הפעלת מדיניות פרטיות מחייבת",
+	"bs-privacy-prefs-privacypolicymandatory-help": "סימון השדה הזה יאלץ את המשתמש להסכים למדיניות הפרטיות ולתנאי השירות לפני גישה לכל דף אחר",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "קבלת מדיניות הפרטיות בעת הכניסה לחשבון",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "סימון השדה הזה יכלול את קבלת מדיניות הפרטיות בתהליך הכניסה לחשבון"
 }
