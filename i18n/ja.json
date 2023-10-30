@@ -3,12 +3,15 @@
 		"authors": [
 			"A2y4",
 			"Kokage si",
+			"LaMagiaaa",
 			"MathXplore",
 			"Reiwa period",
 			"Shirayuki",
 			"もなー(偽物)"
 		]
 	},
+	"bs-privacy-admintool-label": "プライバシー管理者",
+	"bs-privacy-admintool-text": "プライバシー",
 	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
 	"bs-privacy-anonymization-api-invalid-username": "無効な利用者名",
 	"bs-privacy-deletion-submit-request-label": "コメント (任意)",
