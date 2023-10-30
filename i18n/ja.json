@@ -3,6 +3,7 @@
 		"authors": [
 			"A2y4",
 			"Kokage si",
+			"LaMagiaaa",
 			"MathXplore",
 			"Reiwa period",
 			"Shirayuki",
@@ -83,5 +84,7 @@
 	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
 	"bs-privacy-anonymization-api-invalid-username": "無効な利用者名",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "保存",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "閉じる"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "閉じる",
+	"bs-privacy-admintool-label": "プライバシー管理者",
+	"bs-privacy-admintool-text": "プライバシー"
 }
