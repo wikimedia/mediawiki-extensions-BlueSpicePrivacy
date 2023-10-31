@@ -6,9 +6,12 @@
 			"Reiwa period",
 			"もなー(偽物)",
 			"Shirayuki",
-			"Kokage si"
+			"Kokage si",
+			"LaMagiaaa"
 		]
 	},
+	"bs-privacy-admintool-label": "プライバシー管理者",
+	"bs-privacy-admintool-text": "プライバシー",
 	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
 	"bs-privacy-anonymization-api-invalid-username": "無効な利用者名",
 	"bs-privacy-deletion-submit-request-label": "コメント (任意)",
