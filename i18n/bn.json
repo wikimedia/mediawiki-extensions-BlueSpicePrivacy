@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Borhan"
 		]
 	},
 	"privacycenter": "গোপনীয়তা কেন্দ্র",
@@ -15,6 +16,7 @@
 	"bs-privacy-transparency-view-data-dialog-close": "বন্ধ করুন",
 	"bs-privacy-transparency-private-realname": "প্রকৃত নাম: $1",
 	"bs-privacy-transparency-private-blocked": "বাধাপ্রাপ্ত: হ্যাঁ ($1 দ্বারা)",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "বাধ্যতামূলক কুকি সক্রিয় করুন",
 	"bs-privacy-consent-save-button": "সংরক্ষণ করুন",
 	"bs-privacy-admin-consent-grid-column-user": "ব্যবহারকারী নাম",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (আজ)",
