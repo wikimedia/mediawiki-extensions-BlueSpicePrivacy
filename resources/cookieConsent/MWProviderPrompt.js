@@ -7,7 +7,7 @@
 		this.acceptMandatory = this.handlerConfig.acceptMandatory;
 		this.groups = this.handlerConfig.cookieGroups;
 
-		if( this.cookieExists() === false ) {
+		if( this.shouldCookieBannerBeShown() ) {
 			this.showFirstLoad();
 			$( '#wpLoginAttempt' ).attr( 'disabled', 'disabled' );
 		}
@@ -163,7 +163,6 @@
 		return ret;
 	};
 
-
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.showSettingsDialog = function() {
 		var windowManager = OO.ui.getWindowManager();
 		var cfg = {
@@ -179,6 +178,10 @@
 				this.onCookieSettingsChanged( data.results );
 			}
 		}.bind( this ) );
+	};
+
+	bs.privacy.cookieConsent.MWProviderPrompt.prototype.shouldCookieBannerBeShown = function( ) {
+		return this.cookieExists() === false && this.acceptMandatory;
 	};
 
 	new bs.privacy.cookieConsent.MWProviderPrompt();
