@@ -9,6 +9,7 @@
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
+			"Osnard",
 			"Umherirrender",
 			"Vhoesl"
 		]
@@ -207,7 +208,7 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ungültige Unterseite. Bitte verwende eine der folgenden: $1",
 	"privacypages": "Datenschutz Seiten",
 	"bs-privacy-termsofservicepage": "Project:Nutzungsbedingungen",
-	"bs-privacy-privacypage": "Project:Datenschutzrichtlinie",
+	"bs-privacy-privacypage": "Project:Datenschutz",
 	"bs-privacy-admin-icon-bool-true-aria-label": "ausgewählt",
 	"bs-privacy-admin-icon-bool-false-aria-label": "Nicht ausgewählt",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Obligatorische Cookies aktivieren",
