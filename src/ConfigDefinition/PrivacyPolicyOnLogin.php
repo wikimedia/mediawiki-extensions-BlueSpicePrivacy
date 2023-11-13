@@ -3,9 +3,10 @@
 namespace BlueSpice\Privacy\ConfigDefinition;
 
 use BlueSpice\ConfigDefinition\BooleanSetting;
+use BlueSpice\ConfigDefinition\IOverwriteGlobal;
 use BlueSpice\Privacy\ISettingPaths;
 
-class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths {
+class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths, IOverwriteGlobal {
 
 	/**
 	 *
@@ -33,5 +34,13 @@ class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths {
 	 */
 	public function getHelpMessageKey() {
 		return 'bs-privacy-prefs-privacypolicyonlogin-help';
+	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getGlobalName() {
+		return "bsgPrivacyPrivacyPolicyOnLogin";
 	}
 }
