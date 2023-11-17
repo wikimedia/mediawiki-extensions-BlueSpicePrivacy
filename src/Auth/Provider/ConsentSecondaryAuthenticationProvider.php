@@ -28,6 +28,11 @@ class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthentica
 	 * @inheritDoc
 	 */
 	public function beginSecondaryAuthentication( $user, array $reqs ) {
+		// If false, accepting of privacy policy will not be included in the login process
+		if ( !$GLOBALS['bsgPrivacyPrivacyPolicyOnLogin'] ) {
+			return AuthenticationResponse::newAbstain();
+		}
+
 		// Skip for pre-confirmed user
 		if ( $user->getName() === 'NoConsentWikiSysop' ) {
 			foreach ( $this->getModule()->getOptions() as $prefName ) {
