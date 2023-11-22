@@ -212,9 +212,9 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "ausgewählt",
 	"bs-privacy-admin-icon-bool-false-aria-label": "Nicht ausgewählt",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Obligatorische Cookies aktivieren",
-	"bs-privacy-prefs-cookieacceptmandatory-help": "Durch Ankreuzen dieses Feldes wird der Bildschirm ausgegraut und der Benutzer kann nichts tun, bis die Cookies akzeptiert werden",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Benutzer müssen den erforderlichen Cookies zustimmen, damit der Zugriff gewährt wird und bleibt",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Obligatorische Datenschutzpolitik aktivieren",
-	"bs-privacy-prefs-privacypolicymandatory-help": "Durch Ankreuzen dieses Feldes wird der Benutzer gezwungen, der Datenschutzrichtlinie und den Nutzungsbedingungen zuzustimmen, bevor er auf eine andere Seite zugreifen kann",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Benutzer müssen der Datenschutzrichtlinie und den Servicebedingungen zustimmen, damit der Zugriff gewährt wird und bleibt",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "Datenschutzbestimmungen bei der Anmeldung akzeptieren",
-	"bs-privacy-prefs-privacypolicyonlogin-help": "Durch Ankreuzen dieses Feldes wird die Annahme der Datenschutzbestimmungen in den Anmeldevorgang einbezogen"
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Die Zustimmung zu den Datenschutzrichlinien und zu den Servicebedingungen ist in den Anmeldeprozess integriert. Sie ist bei der Erstanmeldung erforderlich und jedesmal, wenn die Zustimmung in den Einstellungen deaktiviert ist"
 }
