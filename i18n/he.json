@@ -206,9 +206,9 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "מסומן",
 	"bs-privacy-admin-icon-bool-false-aria-label": "לא מסומן",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "הפעלת עוגיות מחייבות",
-	"bs-privacy-prefs-cookieacceptmandatory-help": "סימון השדה הזה יגרום למסך להיות מואפר וימנע מהמשתמש לעשות דבר כלשהו עד לאישור העוגיות",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "המשתמשים חייבים לקבל את עוגיות החובה כדי לקבל גישה ולשמור עליה",
 	"bs-privacy-prefs-privacypolicymandatory-label": "הפעלת מדיניות פרטיות מחייבת",
-	"bs-privacy-prefs-privacypolicymandatory-help": "סימון השדה הזה יאלץ את המשתמש להסכים למדיניות הפרטיות ולתנאי השירות לפני גישה לכל דף אחר",
+	"bs-privacy-prefs-privacypolicymandatory-help": "המשתמשים חייבים להסכים ל\"מדיניות הפרטיות\" ול\"תנאי השירות\" כדי לקבל גישה ולשמור עליה",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "קבלת מדיניות הפרטיות בעת הכניסה לחשבון",
-	"bs-privacy-prefs-privacypolicyonlogin-help": "סימון השדה הזה יכלול את קבלת מדיניות הפרטיות בתהליך הכניסה לחשבון"
+	"bs-privacy-prefs-privacypolicyonlogin-help": "קבלת \"מדיניות הפרטיות\" ו\"תנאי השירות\" משולבת בתהליך הכניסה לחשבון. זה נדרש בכניסה הראשונה ובכל פעם שהמשתמש מכבה את הסכמתו בהגדרות"
 }
