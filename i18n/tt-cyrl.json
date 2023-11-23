@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansur"
+		]
+	},
+	"bs-privacy-prefs-cookieacceptmandatory-label": "Мәҗбүри cookies файлларын кертү",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Әгәр сез бу кырны билгеләсәгез, экран соры булачак һәм кулланучы cookie файллары кабул ителгәнче берни дә эшли алмаячак.",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Конфиденциальлекнең мәҗбүри сәясәтен кертү",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Бу кырны урнаштырып, кулланучы, теләсә кайсы башка биткә керү мөмкинлеге алганчы, конфиденциальлек һәм хезмәт күрсәтү шартлары сәясәте белән килешергә мәҗбүр булачак.",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Системага кергәндә конфиденциальлек сәясәтен кабул итегез",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Әгәр сез бу кырны билгеләсәгез, конфиденциальлек сәясәтен кабул итү системага керү барышына кертеләчәк."
+}

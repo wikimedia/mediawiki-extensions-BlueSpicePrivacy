@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Borhan",
 			"আফতাবুজ্জামান"
 		]
 	},
@@ -20,5 +21,6 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (আজ)",
 	"echo-category-title-bs-privacy-cat": "গোপনীয়তার কার্য",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "সংরক্ষণ করুন",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "বন্ধ করুন"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "বন্ধ করুন",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "বাধ্যতামূলক কুকি সক্রিয় করুন"
 }

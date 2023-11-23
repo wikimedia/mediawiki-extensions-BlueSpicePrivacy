@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"FiberAhmed",
 			"Meno25",
 			"أَحمد",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح",
-			"Alshamiri1"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-privacy": "خصوصية BlueSpice",
@@ -205,5 +205,6 @@
 	"bs-privacy-alert-page-not-exist": "التالي {{PLURAL:$1| الصفحة | الصفحات غير موجودة}} غير موجودة: $2 . يرجى إنشاء {{PLURAL:$1| انها | هم}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "صفحة فرعية غير صالحة. الرجاء استخدام أحد الخيارات التالية: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "مفحوص",
-	"bs-privacy-admin-icon-bool-false-aria-label": "غير مفحوص"
+	"bs-privacy-admin-icon-bool-false-aria-label": "غير مفحوص",
+	"bs-privacy-cookie-consent-cookie-desc-_session": "يحتفظ بتجزئة جلسة المستخدم الحالية"
 }

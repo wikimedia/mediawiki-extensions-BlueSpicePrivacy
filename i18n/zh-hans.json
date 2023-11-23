@@ -2,26 +2,31 @@
 	"@metadata": {
 		"authors": [
 			"500000000006城",
+			"850710247liu",
 			"A Chinese Wikipedian",
+			"CrownedWharf566",
 			"Diskdance",
 			"Ff98sha",
 			"GuoPC",
+			"Kishinsagi",
 			"Lakejason0",
+			"LittlePaw365",
 			"Ps2049",
 			"Tranve",
+			"U.T.",
+			"Vikarna",
 			"VulpesVulpes825",
 			"WQL",
+			"Xyb",
 			"Ywang",
 			"Zazzzz",
 			"佛壁灯",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶",
-			"850710247liu",
-			"Kishinsagi"
+			"铁桶"
 		]
 	},
-	"bs-privacy": "BlueSpice 隐私",
+	"bs-privacy": "BlueSpice隐私",
 	"bs-privacy-desc": "用户隐私设置的管理页面",
 	"bs-privacy-admintool-label": "隐私管理",
 	"bs-privacy-admintool-text": "隐私政策",
@@ -32,7 +37,7 @@
 	"bs-privacy-api-error-generic": "发生错误",
 	"bs-privacy-anonymization-error-retrieving-name": "接收新用户名时出错",
 	"bs-privacy-anonymization-layout-label": "匿名化",
-	"bs-privacy-anonymization-layout-help": "您可以将您的帐户匿名化，将所有出现您用户名的地方替换为新的用户名。",
+	"bs-privacy-anonymization-layout-help": "您可以将您的账号匿名化，将所有出现您用户名的地方替换为新的用户名。",
 	"bs-privacy-anonymization-new-username-label": "新的用户名",
 	"bs-privacy-anonymization-confirm-button-label": "将我的账号匿名化",
 	"bs-privacy-anonymization-final-prompt": "您的账户将被重命名且您所有的编辑将以新用户名的名义显示。此操作无法撤销",
@@ -196,5 +201,10 @@
 	"bs-privacy-module-consent-set-fail": "许可存储失败！",
 	"privacyconsent": "同意隐私政策",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "‎保存有关是否强制使用HTTPS协议的设置",
-	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单："
+	"bs-privacy-cookie-consent-cookie-list-label": "该组中的 cookie 清单：",
+	"bs-privacy-transparency-export-types-of-data-label": "数据类型",
+	"bs-privacy-transparency-export-export-format-label": "导出格式",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "子页面无效。请使用以下其中之一：$1",
+	"bs-privacy-admin-icon-bool-true-aria-label": "已勾选",
+	"bs-privacy-admin-icon-bool-false-aria-label": "未勾选"
 }

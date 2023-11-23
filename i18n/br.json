@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adriendelucca"
+		]
+	},
+	"bs-privacy-admintool-text": "Prevezded",
+	"bs-privacy-anonymization-new-username-label": "Anv implijer nevez",
+	"bs-privacy-anonymization-api-invalid-username": "Anv implijer direizh",
+	"bs-privacy-anonymization-request-comment": "Anv implijer nevez: $1",
+	"bs-privacy-acknowledge-request-button": "Disteurel",
+	"bs-privacy-request-denied-comment": "Evezhiadenn: $1",
+	"bs-privacy-admin-deny-comment-placeholder": "Evezhiadenn",
+	"bs-privacy-admin-request-grid-column-user": "Implijer",
+	"bs-privacy-admin-request-grid-column-action": "Ober",
+	"bs-privacy-admin-request-grid-column-timestamp": "Deiziad hag eur",
+	"bs-privacy-admin-request-grid-column-comment": "Evezhiadenn",
+	"bs-privacy-admin-request-grid-action-approve": "Aprouiñ",
+	"bs-privacy-admin-request-grid-column-deny": "Nac'hañ",
+	"bs-privacy-admin-request-grid-action-deny": "Nac'hañ",
+	"bs-privacy-transparency-show-all-data-button": "Diskouez an holl roadennoù",
+	"bs-privacy-transparency-export-data-button": "Ezporzhiañ ar roadennoù",
+	"bs-privacy-transparency-export-layout-title": "Ezporzhiañ ho roadennoù",
+	"bs-privacy-transparency-export-types-of-data-label": "Seurt roadennoù",
+	"bs-privacy-transparency-view-data-dialog-close": "Serriñ",
+	"bs-privacy-transparency-private-username": "Anv implijer: $1",
+	"bs-privacy-transparency-private-realname": "Anv gwir: $1",
+	"bs-privacy-transparency-private-groups": "Strolladoù: $1",
+	"bs-privacy-transparency-private-rights": "Aotreoù (gwirioù): $1",
+	"bs-privacy-transparency-private-not-blocked": "Stanket: Ket",
+	"bs-privacy-transparency-private-blocked": "Stanket: Ya (gant $1)",
+	"bs-privacy-transparency-private-edit-count": "Niver a zegasadennoù: $1",
+	"bs-privacy-transparency-type-title-personal": "Titouroù personel",
+	"bs-privacy-consent-save-button": "Enrollañ",
+	"bs-privacy-admin-consent-grid-column-user": "Anv implijer",
+	"bs-privacy-timestamp-with-days-ago": "$1 {{PLURAL:$2|$2 devezh|$2 zevezh|$2 devezh}} zo",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (hiriv)",
+	"bs-privacy-consent-bool-true": "Ya",
+	"bs-privacy-consent-bool-false": "Ket"
+}

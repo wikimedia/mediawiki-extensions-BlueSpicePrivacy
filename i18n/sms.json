@@ -21,10 +21,11 @@
 	"bs-privacy-prefs-consent-tos": "Mon priimam tän seiddõõzz [[{{MediaWiki:Termsofservicepage}}|ââʹnnem-määinaid]]",
 	"bs-privacy-consent-save-button": "Ruõkk",
 	"bs-privacy-admin-consent-grid-column-user": "Õõʹnninõmm",
-	"bs-privacy-timestamp-with-days-ago": "$1 {{PLURAL:$2|$2 peiʹvv|$2 peeiʹv|$2 peiʹvved}} mââiårra",
+	"bs-privacy-timestamp-with-days-ago": "$1 {{PLURAL:$2|$2 peiʹvved|1=peiʹvv|2=2 peeiʹv|3=3 peeiʹv|4=4 peeiʹv|5=5 peeiʹv|6=6 peeiʹv}} mââiårra",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (täʹbbe)",
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tät seiddõs âânn jeäʹvstõõzzid, što ââʹnnemǩiõččlâsttmõš lij pueʹrab",
 	"bs-privacy-cookie-consent-group-necessary-label": "Vieʹltʼteʹmes jeäʹvstõõzz",
 	"bs-privacy-cookie-consent-group-necessary-desc": "Jeäʹvstõõzz, koid âlgg ââʹnned, što seiddõs tuåimmai",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk",
+	"bs-privacy-request-denied-comment": "Kommeʹntt: $1"
 }

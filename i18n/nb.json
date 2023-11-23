@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby",
-			"Vukky",
-			"EdoAug"
+			"Vukky"
 		]
 	},
 	"bs-privacy": "BlueSpice Privacy",
@@ -111,8 +111,8 @@
 	"bs-privacy-transparency-type-title-personal": "Personlig data",
 	"bs-privacy-transparency-type-title-actions": "Handlingsdata",
 	"bs-privacy-prefs-consent-cookies": "Jeg godtar lagring av informasjonskapsler",
-	"bs-privacy-prefs-consent-privacy-policy": "Jeg godtar [[{{MediaWiki:Privacypage}}|personvernspolitikken]] til nettstedet",
-	"bs-privacy-prefs-consent-tos": "Jeg godtar nettstedets [[{{MediaWiki:Termsofservicepage}}|tjenestevilkår]]",
+	"bs-privacy-prefs-consent-privacy-policy": "Jeg godtar <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} personvernspolitikken]</span> til dette nettstedet",
+	"bs-privacy-prefs-consent-tos": "Jeg godtar <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} tjenestevilkårene]</span> for dette nettstedet",
 	"bs-privacy-prefs-consent-cookies-help": "Informasjonskapsler (cookies) er små deler av informasjon som lagres på maskinen din mellom økter for å gjøre brukererfaringen smidigere",
 	"bs-privacy-prefs-consent-privacy-policy-help": "Ved å merke av dette feltet bekrefter du at du har lest og godtatt personvernspolitikken til dette nettstedet",
 	"bs-privacy-prefs-consent-tos-help": "Ved å merke av dette feltet bekrefter du at du har lest og godtatt tjenestevilkårene til dette nettstedet",
@@ -184,5 +184,9 @@
 	"bs-privacy-module-consent-set-success": "Samtykket ble lagret",
 	"bs-privacy-module-consent-set-fail": "Kunne ikke lagre samtykke!",
 	"privacyconsent": "Samtykke i personvernspolitikken",
-	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:",
+	"bs-privacy-termsofservicepage": "Project:Bruksvilkår",
+	"bs-privacy-privacypage": "Project:Personvernerklæring",
+	"bs-privacy-admin-icon-bool-true-aria-label": "krysset av",
+	"bs-privacy-admin-icon-bool-false-aria-label": "ikke krysset av"
 }

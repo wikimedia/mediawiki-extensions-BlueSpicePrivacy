@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjh21"
+			"Bjh21",
+			"Mako001",
+			"Piano1forte2"
 		]
 	},
-	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|has}} cancelled the request to anonymize {{GENDER:$2|his|her}} account",
-	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} cancelled the request to delete {{GENDER:$2|his|her}} account"
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|has}} cancelled the request to anonymise {{GENDER:$2|his|her}} account",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|has}} cancelled the request to delete {{GENDER:$2|his|her}} account",
+	"notification-bs-privacy-deletion-failed-body": "We could not delete your account. Please contact wiki administrators for more information. We apologise for the inconvenience."
 }
