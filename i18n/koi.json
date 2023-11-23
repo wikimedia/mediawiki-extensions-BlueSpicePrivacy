@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Римма"
+		]
+	},
+	"bs-privacy-prefs-cookieacceptmandatory-label": "Пыртны колана cookies файллэз",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Ті кӧ пуктатӧ пас эта полеӧ, экран лоас руд и вӧдитчись нем оз вермы керны сэтчӧдз,кытчӧдз оз ло примитӧма cookies файл.",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Пыртны колана юӧр кутан политика",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Лосьӧтӧ эта полеӧ пас, вӧдитчисьлӧ колас согласитчыны юӧр кутан политикаӧн да отсӧт сетан сернитчӧмӧн, медбы одзлань вуджны мӧд листбоккез вылӧ.",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Системаӧ пырикӧ кутчисьӧ юӧр кутан политикаӧ",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Эта полеӧ пас пуктӧмӧн ті, системаӧ пырикӧ,согласитчатӧ юӧр кутан политикаӧн."
+}

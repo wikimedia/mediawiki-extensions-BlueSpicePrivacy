@@ -1,16 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
+			"DraconicDark",
 			"Hwboehm",
 			"Justman10000",
+			"Lukasaiko",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
+			"Osnard",
 			"Umherirrender",
-			"Brettchenweber",
-			"Lukasaiko",
-			"Vhoesl",
-			"DraconicDark"
+			"Vhoesl"
 		]
 	},
 	"bs-privacy": "BlueSpice Datenschutz",
@@ -192,7 +193,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Schließen",
 	"bs-privacy-consent-cookie-settings-label": "Cookie-Zustimmung ändern",
 	"bs-privacy-termsofservicepage": "Project:Nutzungsbedingungen",
-	"bs-privacy-privacypage": "Project:Datenschutzrichtlinie",
+	"bs-privacy-privacypage": "Project:Datenschutz",
 	"bs-privacy-consent-auth-step": "Bitte akzeptiere die folgenden Nutzungsbedingungen",
 	"bs-privacy-consent-auth-fail": "Du musst alle Nutzungsbedingungen akzeptieren",
 	"bs-privacy-module-consent-accepted": "Du hast bereits alle Bedingungen akzeptiert.",

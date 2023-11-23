@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Kokage si",
+			"LaMagiaaa",
 			"MathXplore",
 			"Reiwa period",
-			"もなー(偽物)",
 			"Shirayuki",
-			"Kokage si"
+			"もなー(偽物)"
 		]
 	},
 	"bs-privacy-anonymization-new-username-label": "新しい利用者名",
@@ -83,5 +84,7 @@
 	"bs-privacy-module-consent-accepted": "あなたはすでにすべての条件に同意しました",
 	"bs-privacy-module-consent-set-fail": "同意の保存に失敗しました！",
 	"privacyconsent": "プライバシーポリシーへの同意",
-	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み"
+	"bs-privacy-admin-icon-bool-true-aria-label": "チェック済み",
+	"bs-privacy-admintool-label": "プライバシー管理者",
+	"bs-privacy-admintool-text": "プライバシー"
 }
