@@ -44,7 +44,7 @@
 	"bs-privacy-prefs-consent-privacy-policy": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} политику приватности]</span> овог сајта",
 	"bs-privacy-prefs-consent-tos": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} услове коришћења]</span> овог сајта",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Омогући обавезне колачиће",
-	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности и услова коришћења",
 	"bs-privacy-consent-save-button": "Сачувај",
 	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (данас)",
@@ -60,5 +60,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори",
 	"bs-privacy-admin-icon-bool-true-aria-label": "проверено",
-	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено"
+	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”"
 }
