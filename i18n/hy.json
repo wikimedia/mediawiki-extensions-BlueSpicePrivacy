@@ -4,11 +4,15 @@
 			"Kareyac"
 		]
 	},
+	"bs-privacy-anonymization-new-username-label": "Նոր մասնակցային անուն",
 	"bs-privacy-admin-request-grid-column-user": "Մասնակից",
 	"bs-privacy-admin-request-grid-column-action": "Գործողություն",
+	"bs-privacy-admin-request-grid-column-comment": "Մեկնաբանություն",
+	"bs-privacy-admin-request-grid-action-approve": "Հաստատել",
 	"bs-privacy-admin-request-grid-column-deny": "Մերժել",
 	"bs-privacy-admin-request-grid-action-deny": "Մերժել",
 	"bs-privacy-transparency-view-data-dialog-close": "Փակել",
+	"bs-privacy-transparency-type-title-personal": "Անձնական տվյալներ",
 	"bs-privacy-consent-save-button": "Հիշել",
 	"bs-privacy-admin-consent-grid-column-user": "Մասնակցային անուն",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (այսոր)",
