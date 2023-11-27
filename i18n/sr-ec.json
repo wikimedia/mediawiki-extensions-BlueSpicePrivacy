@@ -31,7 +31,7 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "проверено",
 	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Омогући обавезне колачиће",
-	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности и услова коришћења",
 	"bs-privacy-admin-deny-comment-placeholder": "Коментар",
 	"bs-privacy-admin-request-grid-column-user": "Корисник",
 	"bs-privacy-admin-request-grid-column-action": "Радња",
@@ -60,5 +60,6 @@
 	"bs-privacy-transparency-type-title-personal": "Лични подаци",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (данас)",
 	"logentry-bs-privacy-anonymization": "$4 је анонимизовао налог. Ново корисничко име: $5",
-	"logentry-bs-privacy-deletion": "Корисник $4 је обрисао налог"
+	"logentry-bs-privacy-deletion": "Корисник $4 је обрисао налог",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”"
 }
