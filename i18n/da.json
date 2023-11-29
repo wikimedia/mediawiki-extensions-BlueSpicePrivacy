@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saederup92"
+			"Saederup92",
+			"Zakawer2"
 		]
 	},
 	"bs-privacy-api-error-generic": "Der opstod en fejl",
@@ -46,6 +47,11 @@
 	"bs-privacy-transparency-private-edit-count": "Antal redigeringer: $1",
 	"bs-privacy-transparency-type-title-personal": "Persondata",
 	"bs-privacy-prefs-consent-cookies": "Jeg accepterer lagring af cookies",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Brugere skal acceptere de obligatoriske cookies for at få og for at beholde adgang",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Aktiver obligatorisk »privatlivspolitik« og »servicevilkår«",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Brugere skal give samtykke til »privatlivspolitikken« og »servicevilkåren« for at få og beholde adgang",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Accepter »privatlivspolitik« og »servicevilkår« ved login",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "At acceptere »privatlivspolitikken« og »servicevilkåret« er integreret i login-processen. Det er påkrævet ved den første login, og hver gang en bruger deaktiverer samtykket i indstillingerne",
 	"bs-privacy-consent-save-button": "Gem",
 	"bs-privacy-admin-consent-grid-column-user": "Brugernavn",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dage}} siden)",

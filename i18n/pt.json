@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Caiofernandes",
 			"Hamilton Abreu",
 			"Mansil",
 			"Mansil alfalb"
@@ -117,6 +118,11 @@
 	"bs-privacy-prefs-consent-tos-help": "Ao marcar este campo, confirma que leu e aceita as condições de utilização deste ''site''",
 	"bs-privacy-consent-layout-label": "Aceitação das normas de privacidade",
 	"bs-privacy-consent-layout-help": "Ver e alterar as configurações de aceitação das normas de privacidade",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Os usuários devem aceitar os cookies obrigatórios para obter e manter o acesso",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Ative a \"Política de privacidade\" e os \"Termos de serviço\" obrigatórios",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Os usuários devem concordar com a \"Política de Privacidade\" e os \"Termos de serviço\" para obter e manter o acesso",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Aceite a \"Política de Privacidade\" e os \"Termos de Serviço\" no login",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "A aceitação da “Política de Privacidade” e dos “Termos de serviço” está integrada no processo de login. É necessário no primeiro login e sempre que um usuário desativa o consentimento nas configurações",
 	"bs-privacy-consent-save-button": "Gravar",
 	"bs-privacy-consent-get-options-fail": "Ocorreu um erro ao tentar obter as suas opções das normas de privacidade",
 	"bs-privacy-consent-save-success": "A suas preferências das normas de privacidade foram gravadas",
