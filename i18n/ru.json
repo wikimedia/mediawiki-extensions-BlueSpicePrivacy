@@ -82,5 +82,6 @@
 	"bs-privacy-consent-cookie-settings-label": "Изменить согласие на cookie",
 	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
 	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
-	"privacyconsent": "Согласие с Политикой конфиденциальности"
+	"privacyconsent": "Согласие с Политикой конфиденциальности",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Включите обязательные «Политику конфиденциальности» и «Условия обслуживания»"
 }
