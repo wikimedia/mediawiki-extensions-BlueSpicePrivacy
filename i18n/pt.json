@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Caiofernandes",
 			"Hamilton Abreu",
 			"Mansil",
 			"Mansil alfalb"
@@ -195,5 +196,10 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Usado para balanceamento de carga interno",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Contém o valor configurado para o mecanismo de ''cache''",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Grava a configuração da imposição do protocolo HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Lista de ''cookies'' neste grupo:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista de ''cookies'' neste grupo:",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Os usuários devem aceitar os cookies obrigatórios para obter e manter o acesso",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Ative a \"Política de privacidade\" e os \"Termos de serviço\" obrigatórios",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Os usuários devem concordar com a \"Política de Privacidade\" e os \"Termos de serviço\" para obter e manter o acesso",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Aceite a \"Política de Privacidade\" e os \"Termos de Serviço\" no login",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "A aceitação da “Política de Privacidade” e dos “Termos de serviço” está integrada no processo de login. É necessário no primeiro login e sempre que um usuário desativa o consentimento nas configurações"
 }
