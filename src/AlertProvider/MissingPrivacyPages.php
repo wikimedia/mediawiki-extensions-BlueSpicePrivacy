@@ -121,7 +121,7 @@ class MissingPrivacyPages extends AlertProviderBase {
 		}
 		$redLinks = [];
 		foreach ( $titles as $title ) {
-			if ( $title->exists() ) {
+			if ( !$title || $title->exists() ) {
 				continue;
 			}
 			$redLinks[] = $this->linkRenderer->makeLink( $title );
