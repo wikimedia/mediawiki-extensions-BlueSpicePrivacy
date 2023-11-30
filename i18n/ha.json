@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamza DK"
+		]
+	},
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Masu amfani dole ne su yarda da kukis don samun kuma ci gaba da samun dama",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Kunna tilas \"Manufar Keɓantawa\" da \"Sharuɗɗan sabis\"",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Masu amfani dole ne su yarda da \"ka'idojin keɓancewa\" da \"Matsayin sabis\" don samun da ci gaba da samun dama",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Karɓi \"Manufar Keɓantawa\" da \"Sharuɗɗan sabis\" akan shiga",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Karɓar \"Manufar Keɓantawa\" da \"Sharuɗɗan sabis\" an haɗa su cikin tsarin shiga. Ana buƙatar shigarwa ta farko kuma duk lokacin da mai amfani ya kashe yarda a cikin saitunan"
+}
