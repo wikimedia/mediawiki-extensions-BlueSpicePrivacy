@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saederup92"
+			"Saederup92",
+			"Zakawer2"
 		]
 	},
 	"bs-privacy-api-error-generic": "Der opstod en fejl",
@@ -58,5 +59,8 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accepter alle",
 	"bs-privacy-cookie-consent-group-necessary-label": "Påkrævede cookies",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Gem",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Luk",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Brugere skal acceptere de obligatoriske cookies for at få og for at beholde adgang",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Brugere skal give samtykke til »privatlivspolitikken« og »servicevilkåren« for at få og beholde adgang",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "At acceptere »privatlivspolitikken« og »servicevilkåret« er integreret i login-processen. Det er påkrævet ved den første login, og hver gang en bruger deaktiverer samtykket i indstillingerne"
 }
