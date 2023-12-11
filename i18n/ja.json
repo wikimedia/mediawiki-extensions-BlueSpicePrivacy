@@ -169,5 +169,8 @@
 	"bs-privacy-cookie-consent-cookie-desc-_session": "現在の利用者のセッションハッシュを保持します",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "キャッシュメカニズムの設定値を保持する",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS プロトコルを強制するかどうかに関する設定を保存します",
-	"bs-privacy-cookie-consent-cookie-list-label": "このグループ内のCookieのリスト:"
+	"bs-privacy-cookie-consent-cookie-list-label": "このグループ内のCookieのリスト:",
+	"logentry-bs-privacy-deletion": "ユーザー$4がアカウントを削除しました",
+	"apihelp-bs-privacy-get-all-consents-summary": "すべての利用者の同意情報を取得するためのエンドポイント",
+	"apihelp-bs-privacy-param-module": "操作を実行するために要求されたモジュール"
 }
