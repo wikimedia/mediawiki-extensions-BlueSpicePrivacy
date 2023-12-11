@@ -4,5 +4,6 @@
 			"Ideophagous"
 		]
 	},
-	"bs-privacy-transparency-private-groups": "لݣروپات: $1"
+	"bs-privacy-transparency-private-groups": "لݣروپات: $1",
+	"bs-privacy-timestamp-with-days-ago": "$1 (هادي {{#switch: $2\n| 0 = 0 يوم\n| 1 = يوم واحد\n| 2 = يوماين\n| {{#switch: {{#expr: $2 mod 100}}\n  | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 = $2 يّام\n  | #default = $2 يوم\n}}}})"
 }
