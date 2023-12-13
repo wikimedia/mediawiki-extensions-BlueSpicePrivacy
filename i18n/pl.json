@@ -19,5 +19,15 @@
 	"echo-category-title-bs-privacy-cat": "Prywatność",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij",
-	"bs-privacy-privacypage": "Projekt:Polityka prywatności"
+	"bs-privacy-privacypage": "Projekt:Polityka prywatności",
+	"bs-privacy-api-error-generic": "Wystąpił błąd",
+	"bs-privacy-anonymization-layout-label": "Anonimizacja",
+	"bs-privacy-anonymization-new-username-label": "Nowa nazwa użytkownika",
+	"bs-privacy-anonymization-request-comment": "Nowa nazwa użytkownika: $1",
+	"bs-privacy-admin-request-grid-column-user": "Użytkownik",
+	"bs-privacy-transparency-view-data-dialog-close": "Zamknij",
+	"bs-privacy-transparency-no-data": "Nie znaleziono danych",
+	"bs-privacy-transparency-private-username": "Nazwa użytkownika:",
+	"bs-privacy-transparency-type-title-personal": "Dane osobowe",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (dzisiaj)"
 }
