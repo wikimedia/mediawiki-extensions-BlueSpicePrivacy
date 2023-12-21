@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Msz2001",
+			"Odder",
 			"Rail",
 			"WaldiSt"
 		]
@@ -29,5 +30,5 @@
 	"echo-category-title-bs-privacy-cat": "Prywatność",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij",
-	"bs-privacy-privacypage": "Projekt:Polityka prywatności"
+	"bs-privacy-privacypage": "Project:Polityka prywatności"
 }
