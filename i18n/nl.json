@@ -36,7 +36,7 @@
 	"bs-privacy-invalid-param": "Parameter \"$1\" heeft een ongeldig formaat!",
 	"bs-privacy-module-no-function": "\"$1\" is geen geldige functienaam voor deze module.",
 	"bs-privacy-anonymization-api-invalid-username": "Ongeldige gebruikersnaam",
-	"bs-privacy-api-username-mismatch": "De gebruiker die het verzoek doet is een andere dan de gebruiker die momenteel is ingelogd",
+	"bs-privacy-api-username-mismatch": "De gebruiker die het verzoek doet is een andere dan de gebruiker die momenteel is aangemeld",
 	"bs-privacy-handler-error": "Afhandelaar \"$1\" werkt niet",
 	"bs-privacy-anonymize-login-button": "Opnieuw aanmelden met uw nieuwe gebruikersnaam",
 	"bs-privacy-admin-access-denied": "U moet privacybeheerder zijn om deze handeling te verrichten",
