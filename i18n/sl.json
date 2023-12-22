@@ -135,7 +135,7 @@
 	"bs-privacy-consent-bool-true": "Da",
 	"bs-privacy-consent-bool-false": "Ne",
 	"logentry-bs-privacy-anonymization": "$4 je anonimiziral_a račun. Novo uporabniško ime: $5",
-	"logentry-bs-privacy-deletion": "Uporabnik/ca $4 je izbrisal/a račun",
+	"logentry-bs-privacy-deletion": "uporabnik_ca $4 je izbrisal_a račun",
 	"logentry-bs-privacy-transparency": "$1 je {{GENDER:$2|izvozil|izvozila|izvozil_a}} {{GENDER:$2|svoje}} podatke",
 	"logentry-bs-privacy-consent": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} {{GENDER:$2|svoje}} podatke o soglašanju s pravilnikom o zasebnosti na: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 je {{GENDER:$2|predložil|predložila|predložil_a}} zahtevek za anonimizacijo {{GENDER:$2|njegovega|njenega|njegovega_njenega}} računa s komentarjem: $4",
