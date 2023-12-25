@@ -43,7 +43,7 @@
 	"bs-privacy-request-cancel-failed": "ביטול הבקשה נכשל",
 	"bs-privacy-admin-get-requests-failed": "אחזור בקשות המחיקה נכשל",
 	"bs-privacy-deletion-layout-label": "מחיקת החשבון שלך",
-	"bs-privacy-deletion-layout-help": "ניתן למחוק את החשבון שלך לצמיתות מאתר ויקי זה, כולל כל הפעולות שנעשו תחת שם המשתמש שלך",
+	"bs-privacy-deletion-layout-help": "באפשרותך למחוק לחלוטין את חשבונך מהוויקי, יחד עם כל העקבות של שם המשתמש שלך",
 	"bs-privacy-deletion-request-deletion-button": "בקשה למחוק את החשבון",
 	"bs-privacy-deletion-submit-request-label": "הערה (אופציונלי)",
 	"bs-privacy-deletion-request-pending": "בקשת המחיקה בהמתנה!",
