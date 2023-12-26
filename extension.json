@@ -9,9 +9,9 @@
 	"type": "bluespice",
 	"version": "4.5.0-alpha",
 	"requires": {
-		"MediaWiki": ">= 1.36.0",
+		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.1"
+			"BlueSpiceFoundation": ">= 4.3"
 		}
 	},
 	"AuthManagerAutoConfig": {
