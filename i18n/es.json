@@ -9,6 +9,7 @@
 			"JDíaz32",
 			"Jackiezelaya",
 			"Jakeukalane",
+			"Jmabel",
 			"MarcoAurelio",
 			"No se"
 		]
@@ -91,6 +92,7 @@
 	"bs-privacy-transparency-type-selector-content": "Menciones en el contenido (p. ej., artículos, elementos de cronología, comentarios…)",
 	"bs-privacy-transparency-export-data-button": "Exportar datos",
 	"bs-privacy-transparency-export-layout-title": "Exportar tus datos",
+	"bs-privacy-transparency-export-types-of-data-label": "Tipos de datos",
 	"bs-privacy-transparency-export-export-format-label": "Formato de exportación",
 	"bs-privacy-transparency-loading-message": "Espera mientras se recopilan tus datos…",
 	"bs-privacy-transparency-view-data-dialog-title": "Ver tus datos",
