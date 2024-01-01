@@ -10,7 +10,8 @@
 			"Jackiezelaya",
 			"Jakeukalane",
 			"MarcoAurelio",
-			"No se"
+			"No se",
+			"Jmabel"
 		]
 	},
 	"bs-privacy": "Privacidad de BlueSpice",
@@ -91,6 +92,7 @@
 	"bs-privacy-transparency-type-selector-content": "Menciones en el contenido (p. ej., artículos, elementos de cronología, comentarios…)",
 	"bs-privacy-transparency-export-data-button": "Exportar datos",
 	"bs-privacy-transparency-export-layout-title": "Exportar tus datos",
+	"bs-privacy-transparency-export-types-of-data-label": "Tipos de datos",
 	"bs-privacy-transparency-export-export-format-label": "Formato de exportación",
 	"bs-privacy-transparency-loading-message": "Espera mientras se recopilan tus datos…",
 	"bs-privacy-transparency-view-data-dialog-title": "Ver tus datos",
@@ -172,7 +174,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Guardar",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Cerrar",
 	"bs-privacy-consent-cookie-settings-label": "Cambiar consentimiento de «cookies»",
-	"termsofservicepage": "Proyecto:Términos_de_servicio",
 	"bs-privacy-consent-auth-step": "Deben aceptarse los términos siguientes para continuar",
 	"bs-privacy-consent-auth-fail": "Deben aceptarse todos los términos",
 	"bs-privacy-module-consent-accepted": "Ya has aceptado todos los  plazos",
@@ -190,7 +191,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Se utiliza para equilibrar la carga interna",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Mantiene el valor configurado para el mecanismo de almacenamiento en caché",
 	"bs-privacy-cookie-consent-cookie-list-label": "Lista de cookies en este grupo:",
+	"bs-privacy-alert-page-not-exist": "La{{PLURAL:$1||s}} siguiente{{PLURAL:$1|&nbsp;página|s páginas}} no existe{{PLURAL:$1||n}}: $2. Por favor {{PLURAL:$1|créalo|créalos}}.",
 	"bs-privacy-admin-icon-bool-true-aria-label": "marcada",
-	"bs-privacy-admin-icon-bool-false-aria-label": "sin marcar",
-	"bs-privacy-alert-page-not-exist": "La{{PLURAL:$1||s}} siguiente{{PLURAL:$1|&nbsp;página|s páginas}} no existe{{PLURAL:$1||n}}: $2. Por favor {{PLURAL:$1|créalo|créalos}}."
+	"bs-privacy-admin-icon-bool-false-aria-label": "sin marcar"
 }
