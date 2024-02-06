@@ -7,6 +7,7 @@
 
 		this.cookieName = cfg.cookieName;
 		this.cookiePrefix = cfg.cookiePrefix;
+		this.cookiePath = cfg.cookiePath;
 		this.cookieMap = cfg.cookieMap;
 		this.cookieSetterOrig = cfg.cookieSetterOrig;
 
@@ -111,7 +112,7 @@
 		for( var idx in this.cookies ) {
 			var cookieName = this.cookies[idx];
 			if( !this.isCookieAllowed( cookieName ) ) {
-				$.removeCookie( cookieName, { path: '/' } );
+				$.removeCookie( cookieName, { path: this.cookiePath } );
 			}
 		}
 	};
