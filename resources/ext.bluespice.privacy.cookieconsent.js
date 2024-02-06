@@ -13,6 +13,7 @@
 		try {
 			handler = new func( {
 				cookiePrefix: handlerConfig.cookiePrefix,
+				cookiePath: handlerConfig.cookiePath,
 				cookieName: handlerConfig.cookieName,
 				cookieMap: handlerConfig.map,
 				cookieSetterOrig: cookieSetterOrig

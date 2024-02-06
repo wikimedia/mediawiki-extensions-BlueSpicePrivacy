@@ -9,18 +9,23 @@ use ConfigFactory;
 use MediaWiki\Hook\BeforePageDisplayHook;
 
 class AddCookieConsent implements BeforePageDisplayHook {
-	/** @var bool */
-	private $acceptMandatory;
-	/** @var string */
-	private $cookiePrefix;
+	/**
+	 * @var Config
+	 */
+	protected $mainConfig;
+
+	/**
+	 * @var Config
+	 */
+	protected $bsgConfig;
 
 	/**
 	 * @param Config $mainConfig
 	 * @param ConfigFactory $configFactory
 	 */
 	public function __construct( Config $mainConfig, ConfigFactory $configFactory ) {
-		$this->acceptMandatory = (bool)$configFactory->makeConfig( 'bsg' )->get( 'PrivacyCookieAcceptMandatory' );
-		$this->cookiePrefix = $mainConfig->get( 'CookiePrefix' );
+		$this->mainConfig = $mainConfig;
+		$this->bsgConfig = $configFactory->makeConfig( 'bsg' );
 	}
 
 	/**
@@ -48,9 +53,10 @@ class AddCookieConsent implements BeforePageDisplayHook {
 			"class" => $provider->getHandlerClass(),
 			"map" => $provider->getGroupMapping(),
 			"cookieName" => $provider->getCookieName(),
-			"cookiePrefix" => $this->cookiePrefix,
+			"cookiePrefix" => $this->mainConfig->get( 'CookiePrefix' ),
+			"cookiePath" => $this->mainConfig->get( 'CookiePath' ),
 			"RLModule" => $provider->getRLHandlerModule(),
-			"acceptMandatory" => $this->acceptMandatory
+			"acceptMandatory" => (bool)$this->bsgConfig->get( 'PrivacyCookieAcceptMandatory' )
 		], $provider->getHandlerConfig() ) );
 	}
 }
