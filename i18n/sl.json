@@ -119,7 +119,7 @@
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Omogoči obvezne piškotke",
 	"bs-privacy-prefs-cookieacceptmandatory-help": "Uporabniki morajo za pridobitev in ohranitev dostopa sprejeti obvezne piškotke",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Omogoči obvezna »Politiko zasebnosti« in »Pogoje storitve«",
-	"bs-privacy-prefs-privacypolicymandatory-help": "Uporabniki se morajo strinjati s »Politiko zasebnosti« in »Pogoji storitve«, da pridobijo in ohranijo dostop",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Uporabniki morajo soglašati s »Politiko zasebnosti« in »Pogoji storitve«, da pridobijo in ohranijo dostop",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "Sprejmi »Politiko zasebnosti« in »Pogoje storitve« ob prijavi",
 	"bs-privacy-prefs-privacypolicyonlogin-help": "Sprejetje »Politike zasebnosti« in »Pogojev storitve« je vključeno v postopek prijave. Zahteva se ob prvi prijavi in vsakič, ko uporabnik v nastavitvah dezaktivira soglasje.",
 	"bs-privacy-consent-save-button": "Shrani",
