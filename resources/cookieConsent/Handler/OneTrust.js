@@ -30,6 +30,10 @@
 		return groups;
 	};
 
+	bs.privacy.cookieConsent.OneTrust.prototype.getCookieName = function( prefixed ) {
+		return this.cookieName;
+	};
+
 	bs.privacy.cookieConsent.OneTrust.prototype.settingsOpen = function() {
 		Optanon.ToggleInfoDisplay();
 	};
