@@ -154,7 +154,7 @@
 	"notification-bs-privacy-center-url": "Center zasebnosti",
 	"notification-bs-privacy-admin-url": "Administrator zasebnosti",
 	"notification-bs-privacy-anonymization-done": "Vaš račun je anonimiziran!",
-	"notification-bs-privacy-anonymization-done-body": "Vaš račun je bil uspešno anonimiziran. Staro uporabniško ime: »$1«. Novo uporabniško ime: »$2.",
+	"notification-bs-privacy-anonymization-done-body": "Vaš račun je uspešno anonimiziran. Staro uporabniško ime: »$1«. Novo uporabniško ime: »$2.",
 	"notification-bs-privacy-deletion-approved": "Vaš zahtevek za izbris je odobren!",
 	"notification-bs-privacy-deletion-approved-body": "Zahtevek za izbris vašega računa je bil odobren in vaš račun bo v kratkem izbrisan.",
 	"notification-bs-privacy-deletion-failed": "Izbris vašega računa je spodletel!",
