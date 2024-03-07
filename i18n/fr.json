@@ -6,6 +6,7 @@
 			"DSwissK",
 			"Derugon",
 			"Gomoko",
+			"MacOS Weed",
 			"McDutchie",
 			"Thibaut120094",
 			"VIGNERON",
@@ -212,5 +213,6 @@
 	"bs-privacy-alert-page-not-exist": "L{{PLURAL:$1|a|es}} page{{PLURAL:$1||s}} suivante{{PLURAL:$1||s}} n’existe{{PLURAL:$1||nt}} pas : $2. Veuillez l{{PLURAL:$1|a|es}} créer.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Sous-page non valide. Veuillez utiliser l’une des suivantes : $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "coché",
-	"bs-privacy-admin-icon-bool-false-aria-label": "décoché"
+	"bs-privacy-admin-icon-bool-false-aria-label": "décoché",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "Activer les cookies obligatoires"
 }
