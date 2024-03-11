@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Arielyurusova",
 			"Kly",
 			"Winston Sung",
 			"捍粵者"
@@ -200,5 +201,11 @@
 	"bs-privacy-alert-page-not-exist": "以下{{PLURAL:$1|頁面}}不存在：$2。請建立{{PLURAL:$1|它|它們}}。",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "子頁面無效。請使用以下其一：$1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "已勾選",
-	"bs-privacy-admin-icon-bool-false-aria-label": "取消勾選"
+	"bs-privacy-admin-icon-bool-false-aria-label": "取消勾選",
+	"bs-privacy-prefs-cookieacceptmandatory-label": "啟用強制cookie",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "使用者必須接受強制性 cookie 才能獲得並保持存取權限",
+	"bs-privacy-prefs-privacypolicymandatory-label": "啟用強制性“隱私權政策”和“服務條款”",
+	"bs-privacy-prefs-privacypolicymandatory-help": "使用者必須同意「隱私權政策」和「服務條款」才能取得並維持存取權限",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "登入時接受“隱私權政策”和“服務條款”",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "接受「隱私權政策」和「服務條款」已整合到登入過程中。首次登入以及每次使用者在設定中停用同意時都需要它"
 }
