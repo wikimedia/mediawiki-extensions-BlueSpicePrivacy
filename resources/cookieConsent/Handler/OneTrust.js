@@ -13,18 +13,19 @@
 		if( !cookie ) {
 			return [];
 		}
-		var parsed = JSON.parse( '{"' + decodeURI( cookie ).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}' );
-
-		if( !parsed.groups ) {
+		// Find `groups=((.*=?))\' in the cookie
+		var match = cookie.match( /groups=(.*=?)/ );
+		if( !match ) {
 			return [];
 		}
-		var groups = parsed.groups;
+		// Get the first match
+		var groups = match[1];
 
 		var pairs = groups.split( "," );
 		groups = {};
 		for( var i = 0; i < pairs.length; i++ ){
-			var pair = pairs[i].split(":");
-			groups[( pair[0]+'' ).trim()] = pair[1] === "1" ? true : false;
+			var pair = pairs[i].split( ":" );
+			groups[( pair[0] + '' ).trim()] = pair[1] === "1";
 		}
 
 		return groups;
