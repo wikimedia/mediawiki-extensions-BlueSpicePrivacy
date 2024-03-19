@@ -38,4 +38,11 @@
 	bs.privacy.cookieConsent.OneTrust.prototype.settingsOpen = function() {
 		Optanon.ToggleInfoDisplay();
 	};
+
+	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
+		if ( cookieName === 'OptanonAlertBoxClosed' ) {
+			return true;
+		}
+		return bs.privacy.cookieConsent.BaseHandler.parent.prototype.isCookieAllowed.call( this, cookieName );
+	};
 } )( mediaWiki, jQuery );
