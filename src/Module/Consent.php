@@ -173,13 +173,13 @@ class Consent extends Module {
 				'type' => $type,
 				'class' => CheckLinkField::class,
 				'label' => wfMessage( $preferenceName ),
-				'help' => wfMessage( $helpMessageKey ) ,
+				'help' => wfMessage( $helpMessageKey ),
 				'default' => $userOptionsLookup->getOption( $this->user, $preferenceName ),
 				// B/C
 				'help-message' => $helpMessageKey,
 				// validation is implemented elsewhere
 				'optional' => true,
- ];
+			];
 		}
 
 		return $descriptors;
