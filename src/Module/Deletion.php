@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRequestable;
 use BlueSpice\Privacy\Notifications\RequestDeletionApproved;
 use BlueSpice\Privacy\Notifications\RequestDeletionDenied;
+use MediaWiki\Block\DatabaseBlock;
 
 class Deletion extends ModuleRequestable {
 
@@ -141,11 +142,11 @@ class Deletion extends ModuleRequestable {
 			}
 
 			// Block user
-			$block = new \Block();
+			$block = new DatabaseBlock();
 			$block->setTarget( $deletedUser );
 			$block->setBlocker( $this->context->getUser() );
-			$block->mExpiry = 'infinity';
-			$block->insert();
+			$block->setExpiry( 'infinity' );
+			$this->services->getDatabaseBlockStore()->insertBlock( $block );
 		}
 		return $deletedUser;
 	}
