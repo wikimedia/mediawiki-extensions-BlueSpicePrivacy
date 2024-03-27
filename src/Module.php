@@ -36,12 +36,12 @@ abstract class Module implements IModule {
 	 */
 	public function runHandlers( $action, $data ) {
 		$status = \Status::newGood();
-		$db = wfGetDB( DB_PRIMARY );
-		$db->startAtomic( __METHOD__ );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw->startAtomic( __METHOD__ );
 
 		foreach ( $this->getHandlers() as $handler ) {
 			if ( class_exists( $handler ) ) {
-				$handlerObject = new $handler( $db );
+				$handlerObject = new $handler( $dbw );
 				$result = call_user_func_array( [ $handlerObject, $action ], $data );
 
 				if ( $result instanceof \Status && $result->isOk() === false ) {
@@ -56,7 +56,7 @@ abstract class Module implements IModule {
 			}
 		}
 
-		$db->endAtomic( __METHOD__ );
+		$dbw->endAtomic( __METHOD__ );
 
 		return $status;
 	}
