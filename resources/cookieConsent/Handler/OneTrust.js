@@ -39,10 +39,10 @@
 		Optanon.ToggleInfoDisplay();
 	};
 
-	bs.privacy.cookieConsent.BaseHandler.prototype.isCookieAllowed = function( cookieName ) {
+	bs.privacy.cookieConsent.OneTrust.prototype.isCookieAllowed = function( cookieName ) {
 		if ( cookieName === 'OptanonAlertBoxClosed' ) {
 			return true;
 		}
-		return bs.privacy.cookieConsent.BaseHandler.parent.prototype.isCookieAllowed.call( this, cookieName );
+		return bs.privacy.cookieConsent.OneTrust.parent.prototype.isCookieAllowed.call( this, cookieName );
 	};
 } )( mediaWiki, jQuery );
