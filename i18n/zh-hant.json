@@ -43,7 +43,7 @@
 	"bs-privacy-deletion-layout-label": "刪除您的帳號",
 	"bs-privacy-deletion-layout-help": "您可徹底刪除您wiki的帳號及使用者名所有行為",
 	"bs-privacy-deletion-request-deletion-button": "請求帳號刪除",
-	"bs-privacy-deletion-submit-request-label": "註釋（選填）",
+	"bs-privacy-deletion-submit-request-label": "留言（非必填）",
 	"bs-privacy-deletion-request-pending": "刪除請求等待中！",
 	"bs-privacy-deletion-cancel-request-button": "取消刪除請求",
 	"bs-privacy-request-failed": "提交請求失敗！",
