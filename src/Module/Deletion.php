@@ -2,9 +2,11 @@
 
 namespace BlueSpice\Privacy\Module;
 
+use BlueSpice\Privacy\Event\DeletionDone;
+use BlueSpice\Privacy\Event\DeletionFailed;
+use BlueSpice\Privacy\Event\DeletionRejected;
 use BlueSpice\Privacy\ModuleRequestable;
-use BlueSpice\Privacy\Notifications\RequestDeletionApproved;
-use BlueSpice\Privacy\Notifications\RequestDeletionDenied;
+use MWStake\MediaWiki\Component\Events\NotificationEvent;
 
 class Deletion extends ModuleRequestable {
 
@@ -38,7 +40,7 @@ class Deletion extends ModuleRequestable {
 		$executingUser = $this->context->getUser();
 
 		$user = $this->services->getUserFactory()->newFromName( $username );
-		if ( $user->getId() === 0 ) {
+		if ( !$user || !$user->isRegistered() ) {
 			return \Status::newFatal( 'bs-privacy-invalid-user' );
 		}
 
@@ -61,13 +63,7 @@ class Deletion extends ModuleRequestable {
 				'username' => $username
 			] );
 		} else {
-			// Notify user if deleting their account failed
-			$notification = new RequestDeletionApproved(
-				$this->context->getUser(),
-				\Title::newMainPage(),
-				$username
-			);
-			$this->notify( $notification );
+			$this->notify( new DeletionFailed( $user ) );
 		}
 
 		return $status;
@@ -99,12 +95,11 @@ class Deletion extends ModuleRequestable {
 		$data = unserialize( $request->pr_data );
 
 		// Send notification while user still exists that deletion process is being carried out
-		$notification = new RequestDeletionApproved(
-			$this->context->getUser(),
-			\Title::newMainPage(),
-			$data['username']
-		);
-		$this->notify( $notification );
+		$user = $this->services->getUserFactory()->newFromName( $data['username'] );
+		if ( $user ) {
+			$event = new DeletionDone( $this->context->getUser(), $user );
+			$this->notify( $event );
+		}
 
 		$status = $this->delete( $data['username'] );
 
@@ -154,17 +149,16 @@ class Deletion extends ModuleRequestable {
 	 *
 	 * @param \stdClass $request
 	 * @param string $comment
-	 * @return RequestDeletionDenied
+	 * @return NotificationEvent
 	 */
 	public function getRequestDeniedNotification( $request, $comment ) {
 		$requestData = unserialize( $request->pr_data );
 
-		return new RequestDeletionDenied(
-			$this->context->getUser(),
-			\Title::newMainPage(),
-			$requestData['username'],
-			$comment
-		);
+		$user = $this->services->getUserFactory()->newFromName( $requestData['username'] );
+		if ( !$user ) {
+			$user = $this->services->getUserFactory()->newAnonymous();
+		}
+		return new DeletionRejected( $this->context->getUser(), $user, $comment );
 	}
 
 	/**

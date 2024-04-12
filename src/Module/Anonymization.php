@@ -2,10 +2,11 @@
 
 namespace BlueSpice\Privacy\Module;
 
+use BlueSpice\Privacy\Event\AnonymizationDone;
+use BlueSpice\Privacy\Event\AnonymizationRejected;
 use BlueSpice\Privacy\ModuleRequestable;
-use BlueSpice\Privacy\Notifications\AnonymizationDone;
-use BlueSpice\Privacy\Notifications\RequestAnonymizationDenied;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\Events\NotificationEvent;
 
 class Anonymization extends ModuleRequestable {
 
@@ -110,13 +111,12 @@ class Anonymization extends ModuleRequestable {
 				'newUsername' => $username
 			] );
 
-			$notification = new AnonymizationDone(
-				$this->context->getUser(),
-				\Title::newMainPage(),
-				$oldUsername,
-				$username
-			);
-			$this->notify( $notification );
+			$user = $this->services->getUserFactory()->newFromName( $username );
+			if ( !$user ) {
+				$event = new AnonymizationDone( $executingUser, $oldUsername, $user );
+				$this->notify( $event );
+			}
+
 		}
 
 		return $status;
@@ -198,15 +198,18 @@ class Anonymization extends ModuleRequestable {
 	 *
 	 * @param \stdClass $request
 	 * @param string $comment
-	 * @return RequestAnonymizationDenied
+	 * @return NotificationEvent
 	 */
 	public function getRequestDeniedNotification( $request, $comment ) {
 		$requestData = unserialize( $request->pr_data );
 
-		return new RequestAnonymizationDenied(
+		$user = $this->services->getUserFactory()->newFromName( $requestData['oldUsername'] );
+		if ( !$user ) {
+			$user = $this->services->getUserFactory()->newAnonymous();
+		}
+		return new AnonymizationRejected(
 			$this->context->getUser(),
-			\Title::newMainPage(),
-			$requestData['oldUsername'],
+			$user,
 			$requestData['username'],
 			$comment
 		);
