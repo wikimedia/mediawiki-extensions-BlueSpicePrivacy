@@ -2,8 +2,9 @@
 
 namespace BlueSpice\Privacy;
 
-use BlueSpice\INotification;
-use BlueSpice\Privacy\Notifications\RequestSubmitted;
+use BlueSpice\Privacy\Event\RequestSubmitted;
+use MediaWiki\Extension\Notifications\EventFactory;
+use MWStake\MediaWiki\Component\Events\NotificationEvent;
 
 abstract class ModuleRequestable extends Module {
 	public const TABLE_NAME = 'bs_privacy_request';
@@ -223,12 +224,14 @@ abstract class ModuleRequestable extends Module {
 				'comment' => $comment
 			] );
 
-			$notification = new RequestSubmitted(
+			/** @var EventFactory $eventFactory */
+			$eventFactory = $this->services->getService( 'Notifications.EventFactory' );
+			$event = $eventFactory->create( 'bs-privacy-request-submitted', [
 				$this->context->getUser(),
 				$comment,
 				$this->getModuleName()
-			);
-			$this->notify( $notification );
+			] );
+			$this->notify( $event );
 
 			return \Status::newGood();
 		}
@@ -382,7 +385,7 @@ abstract class ModuleRequestable extends Module {
 	/**
 	 * @param \stdClass $request
 	 * @param string $comment
-	 * @return INotification
+	 * @return NotificationEvent
 	 */
 	abstract public function getRequestDeniedNotification( $request, $comment );
 
