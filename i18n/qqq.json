@@ -200,7 +200,6 @@
 	"bs-privacy-module-consent-set-success": "Message shown when consents are set correctly",
 	"bs-privacy-module-consent-set-fail": "Message shown when setting consents failed",
 	"privacyconsent": "Title of {{Special:PrivacyConsent}}",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Cookie description",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Cookie description",
