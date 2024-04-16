@@ -428,7 +428,6 @@
 		"BeforePageDisplay": "addCookieConsent",
 		"TitleReadWhitelist": "\\BlueSpice\\Privacy\\Hook\\TitleReadWhitelist\\AddWhitelistPages::callback",
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
-		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\Privacy\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddCookieConsentFooterLink::callback",
 		"OutputPageParserOutput": "redirectToConsent",
 		"SpecialPageBeforeExecute": "\\BlueSpice\\Privacy\\Hook\\SpecialPageBeforeExecute\\RedirectToConsent::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
