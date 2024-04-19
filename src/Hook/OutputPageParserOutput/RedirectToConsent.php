@@ -86,6 +86,10 @@ class RedirectToConsent implements OutputPageParserOutputHook {
 				return true;
 			}
 		}
+		$specialPage = $this->specialPageFactory->getPage( 'PrivacyConsent' );
+		if ( !$specialPage ) {
+			return true;
+		}
 		$sp = $this->specialPageFactory->getTitleForAlias( 'PrivacyConsent' );
 		if ( !$sp ) {
 			return true;
