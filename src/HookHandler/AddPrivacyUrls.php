@@ -16,12 +16,15 @@ class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 		if ( !$user->isRegistered() ) {
 			return;
 		}
+		$specialPage = MediaWikiServices::getInstance()->getSpecialPageFactory()->getPage( 'PrivacyCenter' );
+		if ( !$specialPage ) {
+			return;
+		}
 
 		$links['user-menu']['privacycenter'] = [
 			'id' => 'pt-privacycenter',
 			'href' => \SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
-			'text' => MediaWikiServices::getInstance()->getSpecialPageFactory()
-				->getPage( 'PrivacyCenter' )->getDescription(),
+			'text' => $specialPage->getDescription(),
 			'position' => 70,
 		];
 	}
