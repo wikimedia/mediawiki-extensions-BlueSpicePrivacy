@@ -48,8 +48,12 @@ class RedirectToConsent {
 		}
 
 		$specialPageFactory = MediaWikiServices::getInstance()->getSpecialPageFactory();
+		$specialPage = $specialPageFactory->getPage( 'PrivacyConsent' );
+		if ( !$specialPage ) {
+			return true;
+		}
 		$sp->getOutput()->redirect(
-			$specialPageFactory->getPage( 'PrivacyConsent' )->getPageTitle()->getFullURL( [
+			$specialPage->getPageTitle()->getFullURL( [
 				'returnto' => $sp->getPageTitle( $subPage )->getPrefixedDBkey()
 			] )
 		);
