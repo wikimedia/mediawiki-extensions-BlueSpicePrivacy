@@ -200,7 +200,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-vee": "Ohranja uporabnikov izbrani način Vizualnega urejevalnika",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Uporablja se za notranje uravnoteženje obremenitve",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Ohranja konfigurirano vrednost za mehanizem predpomnjenja",
-	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Shranjuje konfiguracijo, ali naj se vsili protokol HTTPS",
+	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Shrani konfiguracijo, ali naj se vsili protokol HTTPS",
 	"bs-privacy-cookie-consent-cookie-list-label": "Seznam piškotkov v tej skupini:",
 	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|Naslednja stran ne obstaja|Naslednji strani ne obstajata|Naslednje strani ne obstajajo}}: $2. Ustvarite {{PLURAL:$1|jo|ju|jih}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Neveljavna podstran. Uporabite eno od naslednjega: $1",

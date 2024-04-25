@@ -11,7 +11,8 @@
 			"Thibaut120094",
 			"VIGNERON",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Alien333"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -128,6 +129,11 @@
 	"bs-privacy-consent-layout-label": "Acceptation de la politique de confidentialité",
 	"bs-privacy-consent-layout-help": "Afficher et modifier vos paramètres d’acceptation de la politique de confidentialité",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Activer les cookies obligatoires",
+	"bs-privacy-prefs-cookieacceptmandatory-help": "Les utilisateurs doivent accepter les cookies obligatoires pour obtenir et conserver l'accès",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Activer la \"Politique de confidentialité\" et les \"Conditions d'utilisation\" obligatoires",
+	"bs-privacy-prefs-privacypolicymandatory-help": "Les utilisateurs doivent consentir à la \"Politique de confidentialité\" et aux \"Conditions d'utilisation\" pour obtenir et conserver l'accès",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Accepter la \"Politique de confidentialité\" et les \"Conditions d'utilisation\" lors de la connexion",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "L'acceptation de la \"Politique de confidentialité\" et des \"Conditions d'utilisation\" est intégrée au processus de connexion. Il est requis lors de la première connexion et à chaque fois qu'un utilisateur désactive le consentement dans les paramètres.",
 	"bs-privacy-consent-save-button": "Enregistrer",
 	"bs-privacy-consent-get-options-fail": "Une erreur s’est produite en essayant de récupérer vos options de politique de confidentialité",
 	"bs-privacy-consent-save-success": "Vos préférences de politique de confidentialité ont été enregistrées",
