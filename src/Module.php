@@ -2,8 +2,10 @@
 
 namespace BlueSpice\Privacy;
 
-use BlueSpice\BaseNotification;
+use Exception;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\Notifier;
 
 abstract class Module implements IModule {
 	public const MODULE_UI_TYPE_ADMIN = 'admin';
@@ -128,12 +130,17 @@ abstract class Module implements IModule {
 
 	/**
 	 *
-	 * @param BaseNotification $notification
+	 * @param NotificationEvent $event
+	 * @throws Exception
 	 */
-	protected function notify( $notification ) {
-		$notificationsManager = $this->services->getService( 'BSNotificationManager' );
-		$notifier = $notificationsManager->getNotifier();
-		$notifier->notify( $notification );
+	protected function notify( $event ) {
+		if ( !( $event instanceof NotificationEvent ) ) {
+			// B/C
+			return;
+		}
+		/** @var Notifier $notifier */
+		$notifier = $this->services->getService( 'MWStake.Notifier' );
+		$notifier->emit( $event );
 	}
 
 	/**

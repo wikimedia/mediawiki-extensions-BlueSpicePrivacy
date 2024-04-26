@@ -40,9 +40,6 @@
 					"roles": [ "admin", "accountmanager" ]
 				}
 			},
-			"NotificationRegistrationFunctions": [
-				"\\BlueSpice\\Privacy\\Notifications\\Registrator::registerNotifications"
-			],
 			"AdminToolRegistry": {
 				"bs-privacy-admin": "BlueSpice\\Privacy\\AdminTool"
 			},
@@ -118,6 +115,47 @@
 				"forceHTTPS": {
 					"group": "necessary",
 					"addPrefix": false
+				}
+			}
+		},
+		"Notifications": {
+			"Events": {
+				"bs-privacy-anonymization-done": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\AnonymizationDone"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-privacy-anonymization-rejected": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\AnonymizationRejected"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-privacy-deletion-done": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\DeletionDone"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-privacy-deletion-rejected": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\DeletionRejected"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-privacy-deletion-failed": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\DeletionFailed"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-privacy-request-submitted": {
+					"spec": {
+						"class": "\\BlueSpice\\Privacy\\Event\\RequestSubmitted",
+						"services": [ "SpecialPageFactory", "GroupPermissionsLookup", "DBLoadBalancer", "UserFactory" ]
+					},
+					"buckets": [ "personal" ]
 				}
 			}
 		}
