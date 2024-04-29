@@ -4,9 +4,9 @@
 			"Papuass"
 		]
 	},
-	"privacycenter": "Privātuma centrs",
-	"bs-privacy-transparency-show-all-data-button": "Rādīt visus datus",
-	"bs-privacy-admin-consent-grid-column-user": "Lietotājvārds",
-	"logentry-bs-privacy-deletion": "Dalībnieks $4 izdzēsa savu kontu",
-	"echo-category-title-bs-privacy-cat": "Privātuma darbības"
+	"privacycenter": "Priv\u0101tuma centrs",
+	"bs-privacy-transparency-show-all-data-button": "R\u0101d\u012bt visus datus",
+	"bs-privacy-admin-consent-grid-column-user": "Lietot\u0101jv\u0101rds",
+	"logentry-bs-privacy-deletion": "Dal\u012bbnieks $4 izdz\u0113sa savu kontu",
+	"echo-category-title-bs-privacy-cat": "Priv\u0101tuma darb\u012bbas"
 }
