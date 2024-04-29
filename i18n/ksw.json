@@ -26,9 +26,5 @@
 	"bs-privacy-admin-consent-grid-column-user": "ပှၤသူတၢ်ဖိအမံၤ",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (တနံၤအံၤ)",
 	"logentry-bs-privacy-deletion": "ပှၤသူတၢ်ဖိ $4 တဂၤအံၤ အထူးသံကွံာ် အအၢခီၣ် ဝံၤလံ",
-	"notification-bs-privacy-login-url": "ဝၣ်နုာ်လီလၢ ဝံၣ်ကံး",
-	"notification-bs-privacy-center-url": "တၢ်ခူသူၣ်တၢ်ခၢၣ်သး",
-	"notification-bs-privacy-request-denied-deletion": "နတၢ်ဃ့လၢကထူးကွံာ်တၢ်န့ၢ်အတတူၢ်လိာ်ဘၣ်",
-	"notification-bs-privacy-request-denied-deletion-body": "ပှၤသူတၢ်ဖိ $1တဂၤအံၤ တတူၢ်လိာ် နတၢ်ဃ့လၢကထူးသံကွံာ်နအၢခီၣ်ဘၣ်. ခီမဲၣ်လီၤ: $2",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "တူၢ်လိာ်ခဲလၢၤလီၤ"
 }

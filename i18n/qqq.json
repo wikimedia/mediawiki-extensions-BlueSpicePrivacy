@@ -200,7 +200,7 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "Aria label for a icon that indicates a checked state of a boolean option",
 	"bs-privacy-admin-icon-bool-false-aria-label": "Aria label for a icon that indicates a unchecked state of a boolean option",
 	"bs-privacy-event-anonymization-done-desc": "Event type message",
-	"bs-privacy-event-anonymization-done": "Notification message when anonymization request has been approved.\n$1 - agent\n$2 - new username",
+	"bs-privacy-event-anonymization-done": "Notification message when anonymization request has been approved.\n* $1 - agent\n* $2 - new username",
 	"bs-privacy-event-anonymization-rejected-desc": "Event type message",
 	"bs-privacy-event-anonymization-rejected": "Notification message when anonymization request has been denied.\n$1 - agent\n$2 - new username, $3 - comment",
 	"bs-privacy-event-deletion-rejected-desc": "Event type message",

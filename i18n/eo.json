@@ -26,10 +26,6 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hodiaŭ)",
 	"bs-privacy-consent-bool-true": "Jes",
 	"bs-privacy-consent-bool-false": "Ne",
-	"echo-category-title-bs-privacy-cat": "Privateco",
-	"notification-bs-privacy-login-url": "Ensaluti en la vikion",
-	"notification-bs-privacy-center-url": "Privatecocentro",
-	"notification-bs-privacy-admin-url": "Privatecadministrejo",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Konservi",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Fermi"
 }
