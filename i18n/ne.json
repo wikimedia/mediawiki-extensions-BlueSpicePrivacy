@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"\u092a\u0930\u094d\u0935\u0924 \u0938\u0941\u092c\u0947\u0926\u0940"
+			"पर्वत सुबेदी"
 		]
 	},
-	"bs-privacy-acknowledge-request-button": "\u0930\u0926\u094d\u0926",
-	"bs-privacy-admin-request-grid-column-comment": "\u091f\u093f\u092a\u094d\u092a\u0923\u0940",
-	"bs-privacy-admin-consent-grid-column-user": "\u092a\u094d\u0930\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u093e\u092e",
-	"echo-category-title-bs-privacy-cat": "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0915\u093e\u0930\u094d\u092f\u0939\u0930\u0942",
-	"notification-bs-privacy-login-url": "\u0935\u093f\u0915\u093f\u092e\u093e \u092a\u094d\u0930\u0935\u0947\u0936 \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "\u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924"
+	"bs-privacy-acknowledge-request-button": "रद्द",
+	"bs-privacy-admin-request-grid-column-comment": "टिप्पणी",
+	"bs-privacy-admin-consent-grid-column-user": "प्रयोगकर्ता नाम",
+	"echo-category-title-bs-privacy-cat": "गोपनीयता कार्यहरू",
+	"notification-bs-privacy-login-url": "विकिमा प्रवेश गर्नुहोस्",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "सुरक्षित"
 }
