@@ -4,10 +4,10 @@
 			"Mehtab ahmed"
 		]
 	},
-	"bs-privacy-acknowledge-request-button": "\u0628\u0631\u062e\u0648\u0627\u0633\u062a \u06aa\u0631\u064a\u0648",
-	"bs-privacy-transparency-private-groups": "\u06af\u0631\u0648\u06be\u064e: $1",
-	"bs-privacy-consent-save-button": "\u0633\u0627\u0646\u068d\u064a\u0648",
-	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 \u068f\u064a\u0646\u06be\u0646}} \u0627\u06b3)",
-	"echo-category-title-bs-privacy-cat": "\u0646\u0648\u064a\u06aa\u0644\u0627\u0626\u064a \u0639\u0645\u0644",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "\u0633\u0627\u0646\u068d\u064a\u0648"
+	"bs-privacy-acknowledge-request-button": "برخواست ڪريو",
+	"bs-privacy-transparency-private-groups": "گروھَ: $1",
+	"bs-privacy-consent-save-button": "سانڍيو",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 ڏينھن}} اڳ)",
+	"echo-category-title-bs-privacy-cat": "نويڪلائي عمل",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "سانڍيو"
 }

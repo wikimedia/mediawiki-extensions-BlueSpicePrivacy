@@ -4,8 +4,8 @@
 			"Olve Utne"
 		]
 	},
-	"bs-privacy-request-denied-comment": "M\u00e5lgedibme: $1",
-	"bs-privacy-admin-request-grid-column-comment": "M\u00e5lgedibme",
+	"bs-privacy-request-denied-comment": "Målgedibme: $1",
+	"bs-privacy-admin-request-grid-column-comment": "Målgedibme",
 	"bs-privacy-transparency-private-groups": "Gruhpa: $1",
 	"notification-bs-privacy-login-url": "Luggi sisa wikij"
 }

@@ -4,8 +4,8 @@
 			"Bosogo"
 		]
 	},
-	"bs-privacy-admintool-text": "\u041a\u0443\u043f\u0443\u044f\u043b\u044b\u043a",
-	"bs-privacy-consent-bool-true": "\u041e\u043e\u0431\u0430",
-	"bs-privacy-consent-bool-false": "\u0416\u043e\u043a",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "\u0416\u0430\u0431\u0443\u0443"
+	"bs-privacy-admintool-text": "Купуялык",
+	"bs-privacy-consent-bool-true": "Ооба",
+	"bs-privacy-consent-bool-false": "Жок",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Жабуу"
 }
