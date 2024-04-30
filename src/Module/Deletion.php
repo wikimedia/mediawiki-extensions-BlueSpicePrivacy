@@ -6,6 +6,7 @@ use BlueSpice\Privacy\Event\DeletionDone;
 use BlueSpice\Privacy\Event\DeletionFailed;
 use BlueSpice\Privacy\Event\DeletionRejected;
 use BlueSpice\Privacy\ModuleRequestable;
+use MediaWiki\Block\DatabaseBlock;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
 
 class Deletion extends ModuleRequestable {
@@ -136,11 +137,11 @@ class Deletion extends ModuleRequestable {
 			}
 
 			// Block user
-			$block = new \Block();
+			$block = new DatabaseBlock();
 			$block->setTarget( $deletedUser );
 			$block->setBlocker( $this->context->getUser() );
-			$block->mExpiry = 'infinity';
-			$block->insert();
+			$block->setExpiry( 'infinity' );
+			$this->services->getDatabaseBlockStore()->insertBlock( $block );
 		}
 		return $deletedUser;
 	}
