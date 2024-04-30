@@ -183,6 +183,7 @@
 	"bs-privacy-event-anonymization-done": "{{GENDER:$1|aceptado}} su solicitud para anonimizar su cuenta de usuario al nombre de usuario \"$2\"",
 	"bs-privacy-event-anonymization-rejected-desc": "Se ha rechazado la anonimización de la cuenta de usuario.",
 	"bs-privacy-event-anonymization-rejected": "{{GENDER:$1|rechazado}} su solicitud para anonimizar su cuenta de usuario con el nombre de usuario \"$2\".<br><br> Comentario para rechazo: $3<br><br> Si tiene más preguntas, comuníquese con el administrador del sistema.",
+	"bs-privacy-event-deletion-rejected-desc": "Se ha rechazado la eliminación de la cuenta de usuario.",
 	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|rechazado}} su solicitud para eliminar su cuenta de usuario.<br><br> Comentario para rechazo: $2<br><br> Para más preguntas, comuníquese con el administrador del sistema.",
 	"bs-privacy-event-deletion-done-desc": "Se ha completado la eliminación de la cuenta de usuario.",
 	"bs-privacy-event-deletion-done": "{{GENDER:$1| aceptado}} su solicitud para eliminar su cuenta de usuario",
@@ -190,6 +191,7 @@
 	"bs-privacy-event-deletion-failed-desc": "La eliminación de su cuenta de usuario ha fallado",
 	"bs-privacy-event-request-submitted-link": "Ver solicitudes pendientes",
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|solicitado}} anonimización de {{GENDER:$1|su|ella|su}} cuenta de usuario, con comentario: $2",
+	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1| solicitado}} eliminación de {{GENDER:$1| él|ella|ellos}} cuenta de usuario, con comentario: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Solicitud de anonimización",
 	"bs-privacy-event-request-submitted-deletion-desc": "Solicitud de eliminación"
 }
