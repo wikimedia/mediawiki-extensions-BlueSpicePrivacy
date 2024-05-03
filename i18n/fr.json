@@ -187,7 +187,6 @@
 	"bs-privacy-module-consent-set-success": "Consentement bien stocké",
 	"bs-privacy-module-consent-set-fail": "Échec de sauvegarde du consentement !",
 	"privacyconsent": "Consentement à la politique de confidentialité",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Enregistre l’état des composants de l’habillage BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Enregistre l’état des composants de l’habillage BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Enregistre l’état des notifications de l’utilisateur",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contient le hachage de la session de l’utilisateur actuel",

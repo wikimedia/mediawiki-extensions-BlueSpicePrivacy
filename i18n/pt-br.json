@@ -168,7 +168,6 @@
 	"bs-privacy-module-consent-set-success": "Consentimento armazenado com sucesso",
 	"bs-privacy-module-consent-set-fail": "Falha ao salvar consentimento!",
 	"privacyconsent": "Consentimento para a política de privacidade",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva o estado dos componentes da skin BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva o estado dos componentes da skin BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva o estado das notificações do usuário",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Mantém o hash da sessão do usuário atual",

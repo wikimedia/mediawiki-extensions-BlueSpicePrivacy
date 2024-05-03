@@ -120,7 +120,6 @@
 	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
 	"privacyconsent": "Acconsentire alla privacy policy",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva lo stato dei componenti del tema BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva lo stato dei componenti del tema BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva lo stato delle notifiche dell'utente",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contiene l'hash della sessione dell'utente corrente",

@@ -183,7 +183,6 @@
 	"bs-privacy-module-consent-set-success": "Zustimmung erfolgreich gespeichert",
 	"bs-privacy-module-consent-set-fail": "Fehler beim Speichern der Zustimmung!",
 	"privacyconsent": "Zustimmung zur Datenschutzerklärung",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Speichert den Status der Komponenten der Oberfläche BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Speichert den Status der Komponenten der Oberfläche BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Speichert den Status von Benutzerbenachrichtigungen",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Enthält den Hashwert der aktuellen Benutzersitzung",

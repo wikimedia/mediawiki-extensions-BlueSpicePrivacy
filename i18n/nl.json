@@ -179,7 +179,6 @@
 	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
 	"privacyconsent": "Ga akkoord met het privacybeleid",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Slaat de status van gebruikersmeldingen op",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Bevat de sessie-hash van de huidige gebruiker",

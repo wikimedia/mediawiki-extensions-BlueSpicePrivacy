@@ -173,7 +173,6 @@
 	"bs-privacy-module-consent-set-success": "Soglašanje uspešno shranjeno",
 	"bs-privacy-module-consent-set-fail": "Shranjevanje soglašanja je spodletelo",
 	"privacyconsent": "Soglašanje s pravilnikom o zasebnosti",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Shranjuje stanje komponent preobleke BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Shranjuje stanje komponent preobleke BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Shranjuje stanje uporabniških obvestil",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Ohranja zgoščeno vrednost seje trenutnega uporabnika",

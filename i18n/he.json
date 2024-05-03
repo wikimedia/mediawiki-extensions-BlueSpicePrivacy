@@ -176,7 +176,6 @@
 	"bs-privacy-module-consent-set-success": "ההסכמה נשמרה בהצלחה",
 	"bs-privacy-module-consent-set-fail": "שמירת ההסכמה נכשלה!",
 	"privacyconsent": "הסכמה למדיניות הפרטיות",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "שמירת המצב של רכיבי עיצוב BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "שמירת המצב של רכיבי עיצוב BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "שמירת המצב של התראות משתמש",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "החזקת גיבוב ההתחברות של המשתמש הנוכחי",

@@ -173,7 +173,6 @@
 	"bs-privacy-module-consent-set-success": "تم تخزين الموافقة بنجاح",
 	"bs-privacy-module-consent-set-fail": "فشل حفظ الموافقة!",
 	"privacyconsent": "الموافقة على سياسة الخصوصية",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "يحفظ حالة مكونات البشرة BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "يحفظ حالة مكونات الجلد BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "يحفظ حالة إخطارات المستخدم",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "يحتفظ بتجزئة جلسة المستخدم الحالية",

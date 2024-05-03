@@ -169,7 +169,6 @@
 	"bs-privacy-module-consent-set-success": "許可儲存成功",
 	"bs-privacy-module-consent-set-fail": "許可儲存失敗！",
 	"privacyconsent": "同意隱私權政策",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "儲存 BlueSpiceCalumma 外觀組件的狀態",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "儲存 BlueSpiceDiscovery 外觀組件的狀態",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "儲存使用者通知的狀態",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "保持目前使用者的 session 雜湊",

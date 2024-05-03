@@ -175,7 +175,6 @@
 	"bs-privacy-module-consent-set-success": "O consentimento foi armazenado",
 	"bs-privacy-module-consent-set-fail": "Não foi possível gravar o consentimento!",
 	"privacyconsent": "Consentimento da política de privacidade",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Grava o estado dos componentes do tema BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Grava o estado dos componentes do tema BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Grava o estado da notificações do utilizador",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contém o resumo criptográfico da sessão do utilizador atual",

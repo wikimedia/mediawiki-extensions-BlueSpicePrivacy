@@ -135,7 +135,6 @@
 	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다",
 	"bs-privacy-module-consent-accepted": "이미 모든 약관에 동의했습니다",
 	"privacyconsent": "개인정보 보호정책 동의",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "BlueSpiceCalumma 스킨 구성 요소의 상태를 저장합니다",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "BlueSpiceDiscovery 스킨 구성 요소의 상태를 저장합니다",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "사용자 알림의 상태를 저장합니다",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "현재 사용자의 세션 해시를 보유합니다",
