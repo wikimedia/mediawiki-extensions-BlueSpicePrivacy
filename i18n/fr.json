@@ -202,7 +202,7 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Sous-page non valide. Veuillez utiliser l’une des suivantes : $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "coché",
 	"bs-privacy-admin-icon-bool-false-aria-label": "décoché",
-	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur a été complétée",
+	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur est terminée",
 	"bs-privacy-event-deletion-failed": "La suppression de votre compte utilisateur a échoué",
 	"bs-privacy-event-request-submitted-deletion-desc": "Demande de suppression"
 }
