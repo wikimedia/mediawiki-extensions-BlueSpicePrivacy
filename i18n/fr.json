@@ -188,7 +188,6 @@
 	"bs-privacy-module-consent-set-success": "Consentement bien stocké",
 	"bs-privacy-module-consent-set-fail": "Échec de sauvegarde du consentement !",
 	"privacyconsent": "Consentement à la politique de confidentialité",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Enregistre l’état des composants de l’habillage BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Enregistre l’état des composants de l’habillage BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Enregistre l’état des notifications de l’utilisateur",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contient le hachage de la session de l’utilisateur actuel",
@@ -204,7 +203,7 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Sous-page non valide. Veuillez utiliser l’une des suivantes : $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "coché",
 	"bs-privacy-admin-icon-bool-false-aria-label": "décoché",
-	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur a été complétée",
+	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur est terminée",
 	"bs-privacy-event-deletion-failed": "La suppression de votre compte utilisateur a échoué",
 	"bs-privacy-event-request-submitted-deletion-desc": "Demande de suppression"
 }
