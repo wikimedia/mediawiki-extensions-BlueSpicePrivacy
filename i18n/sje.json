@@ -6,5 +6,6 @@
 	},
 	"bs-privacy-request-denied-comment": "Målgedibme: $1",
 	"bs-privacy-admin-request-grid-column-comment": "Målgedibme",
-	"bs-privacy-transparency-private-groups": "Gruhpa: $1"
+	"bs-privacy-transparency-private-groups": "Gruhpa: $1",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Vurrki"
 }
