@@ -13,7 +13,8 @@
 			"Thibaut120094",
 			"VIGNERON",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Graineahumus"
 		]
 	},
 	"bs-privacy": "Confidentialité de BlueSpice",
@@ -203,7 +204,12 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Sous-page non valide. Veuillez utiliser l’une des suivantes : $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "coché",
 	"bs-privacy-admin-icon-bool-false-aria-label": "décoché",
+	"bs-privacy-event-anonymization-done-desc": "L'anonymisation du compte utilisateur est terminée",
+	"bs-privacy-event-anonymization-rejected-desc": "L'anonymisation du compte utilisateur a été rejetée",
+	"bs-privacy-event-deletion-rejected-desc": "La suppression du compte utilisateur a été refusée",
 	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur est terminée",
 	"bs-privacy-event-deletion-failed": "La suppression de votre compte utilisateur a échoué",
+	"bs-privacy-event-deletion-failed-desc": "La suppression du compte utilisateur a échoué",
+	"bs-privacy-event-request-submitted-anonymization-desc": "Demande d'anonymisation",
 	"bs-privacy-event-request-submitted-deletion-desc": "Demande de suppression"
 }
