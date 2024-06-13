@@ -132,12 +132,6 @@
 					},
 					"buckets": [ "personal" ]
 				},
-				"bs-privacy-deletion-done": {
-					"spec": {
-						"class": "\\BlueSpice\\Privacy\\Event\\DeletionDone"
-					},
-					"buckets": [ "personal" ]
-				},
 				"bs-privacy-deletion-rejected": {
 					"spec": {
 						"class": "\\BlueSpice\\Privacy\\Event\\DeletionRejected"

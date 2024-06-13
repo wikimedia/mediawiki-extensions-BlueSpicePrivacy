@@ -112,7 +112,7 @@ class Anonymization extends ModuleRequestable {
 			] );
 
 			$user = $this->services->getUserFactory()->newFromName( $username );
-			if ( !$user ) {
+			if ( $user ) {
 				$event = new AnonymizationDone( $executingUser, $oldUsername, $user );
 				$this->notify( $event );
 			}
