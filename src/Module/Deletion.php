@@ -2,12 +2,17 @@
 
 namespace BlueSpice\Privacy\Module;
 
-use BlueSpice\Privacy\Event\DeletionDone;
 use BlueSpice\Privacy\Event\DeletionFailed;
 use BlueSpice\Privacy\Event\DeletionRejected;
 use BlueSpice\Privacy\ModuleRequestable;
+use MailAddress;
 use MediaWiki\Block\DatabaseBlock;
+use Message;
+use MWException;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use Throwable;
+use User;
+use UserMailer;
 
 class Deletion extends ModuleRequestable {
 
@@ -97,9 +102,13 @@ class Deletion extends ModuleRequestable {
 
 		// Send notification while user still exists that deletion process is being carried out
 		$user = $this->services->getUserFactory()->newFromName( $data['username'] );
-		if ( $user ) {
-			$event = new DeletionDone( $this->context->getUser(), $user );
-			$this->notify( $event );
+		if ( $user && $user->canReceiveEmail() ) {
+			try {
+				$this->sendDeletionConfirmation( $user );
+			} catch ( Throwable $ex ) {
+				// Do nothing, failing to send mail does not fail deletion
+			}
+
 		}
 
 		$status = $this->delete( $data['username'] );
@@ -116,9 +125,9 @@ class Deletion extends ModuleRequestable {
 	 * Makes sure aggregate "Deleted user" is
 	 * created and exits.
 	 *
-	 * @return \User|null if Deleted user cannot be created
+	 * @return User|null if Deleted user cannot be created
 	 * @throws \ConfigException
-	 * @throws \MWException
+	 * @throws MWException
 	 */
 	protected function assertDeletedUser() {
 		$deletedUsername = $this->services->getConfigFactory()->makeConfig( 'bsg' )->get(
@@ -186,4 +195,23 @@ class Deletion extends ModuleRequestable {
 
 		return null;
 	}
+
+	/**
+	 * @param User $user
+	 * @return void
+	 * @throws MWException
+	 */
+	private function sendDeletionConfirmation( User $user ) {
+		$msg = Message::newFromKey( 'bs-privacy-event-deletion-done' )->params( $this->context->getUser()->getName() );
+		UserMailer::send(
+			MailAddress::newFromUser( $user ),
+			new MailAddress(
+				$this->services->getMainConfig()->get( 'PasswordSender' ),
+				Message::newFromKey( 'emailsender' )->text()
+			),
+			Message::newFromKey( 'bs-privacy-event-deletion-done-desc' )->text(),
+			$msg->text()
+		);
+	}
+
 }
