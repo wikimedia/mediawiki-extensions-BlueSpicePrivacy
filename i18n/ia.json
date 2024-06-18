@@ -194,7 +194,7 @@
 	"bs-privacy-event-deletion-rejected-desc": "Le deletion del conto de usator ha essite refusate",
 	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|ha refusate}} tu requesta de deler tu conto de usator.<br><br>Commento del refusa: $2<br><br>Pro ulterior questiones, per favor contacta le administrator del systema.",
 	"bs-privacy-event-deletion-done-desc": "Le deletion del conto de usator ha succedite",
-	"bs-privacy-event-deletion-done": "{{GENDER:$1|ha acceptate}} tu requesta de deler tu conto de usator",
+	"bs-privacy-event-deletion-done": "Le requesta de deler tu conto de usator ha essite acceptate",
 	"bs-privacy-event-deletion-failed": "Le deletion de tu conto de usator ha fallite",
 	"bs-privacy-event-deletion-failed-desc": "Le deletion del conto de usator ha fallite",
 	"bs-privacy-event-request-submitted-link": "Vider requestas pendente",
