@@ -6,8 +6,7 @@
 	},
 	"bs-privacy-acknowledge-request-button": "रद्द",
 	"bs-privacy-admin-request-grid-column-comment": "टिप्पणी",
+	"bs-privacy-transparency-layout-label": "पारदर्शिता",
 	"bs-privacy-admin-consent-grid-column-user": "प्रयोगकर्ता नाम",
-	"echo-category-title-bs-privacy-cat": "गोपनीयता कार्यहरू",
-	"notification-bs-privacy-login-url": "विकिमा प्रवेश गर्नुहोस्",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "सुरक्षित"
 }
