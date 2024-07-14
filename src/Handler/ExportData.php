@@ -194,8 +194,9 @@ class ExportData implements IPrivacyHandler {
 	protected function getActionsData() {
 		$data = [];
 		$logRows = $this->getLogRows();
+		$logFormatterFactory = MediaWikiServices::getInstance()->getLogFormatterFactory();
 		foreach ( $logRows as $logRow ) {
-			$formatter = \LogFormatter::newFromRow( $logRow );
+			$formatter = $logFormatterFactory->newFromRow( $logRow );
 			$timestamp = $logRow->log_timestamp;
 			$formattedTS = wfMessage(
 				'bs-privacy-transparency-action-timestamp',
