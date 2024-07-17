@@ -11,7 +11,8 @@
 			"Movses",
 			"Okras",
 			"Pacha Tchernof",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-privacy": "Приватность BlueSpice",
@@ -83,5 +84,13 @@
 	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
 	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
 	"privacyconsent": "Согласие с Политикой конфиденциальности",
-	"bs-privacy-prefs-privacypolicymandatory-label": "Включите обязательные «Политику конфиденциальности» и «Условия обслуживания»"
+	"bs-privacy-prefs-privacypolicymandatory-label": "Включите обязательные «Политику конфиденциальности» и «Условия обслуживания»",
+	"bs-privacy-api-error-generic": "Произошла ошибка",
+	"bs-privacy-anonymization-error-retrieving-name": "Произошла ошибка при попытке получить новое имя пользователя",
+	"bs-privacy-transparency-export-export-format-label": "Формат экспорта",
+	"bs-privacy-termsofservicepage": "Project:Условия использования",
+	"bs-privacy-privacypage": "Project:Политика конфиденциальности",
+	"bs-privacy-consent-auth-step": "Чтобы продолжить, пожалуйста, примите следующие условия",
+	"bs-privacy-consent-auth-fail": "Вы должны принять все условия",
+	"bs-privacy-module-consent-set-fail": "Не удалось сохранить согласие!"
 }

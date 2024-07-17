@@ -7,6 +7,7 @@
 			"DSwissK",
 			"Derugon",
 			"Gomoko",
+			"Graineahumus",
 			"MacOS Weed",
 			"McDutchie",
 			"SleaY",
@@ -222,7 +223,12 @@
 	"bs-privacy-prefs-privacypolicymandatory-help": "Les utilisateurs doivent consentir à la \"Politique de confidentialité\" et aux \"Conditions d'utilisation\" pour obtenir et conserver l'accès",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "Accepter la \"Politique de confidentialité\" et les \"Conditions d'utilisation\" lors de la connexion",
 	"bs-privacy-prefs-privacypolicyonlogin-help": "L'acceptation de la \"Politique de confidentialité\" et des \"Conditions d'utilisation\" est intégrée au processus de connexion. Il est requis lors de la première connexion et à chaque fois qu'un utilisateur désactive le consentement dans les paramètres.",
-	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur a été complétée",
+	"bs-privacy-event-deletion-done-desc": "La suppression du compte utilisateur est terminée",
 	"bs-privacy-event-deletion-failed": "La suppression de votre compte utilisateur a échoué",
-	"bs-privacy-event-request-submitted-deletion-desc": "Demande de suppression"
+	"bs-privacy-event-request-submitted-deletion-desc": "Demande de suppression",
+	"bs-privacy-event-anonymization-done-desc": "L'anonymisation du compte utilisateur est terminée",
+	"bs-privacy-event-anonymization-rejected-desc": "L'anonymisation du compte utilisateur a été rejetée",
+	"bs-privacy-event-deletion-rejected-desc": "La suppression du compte utilisateur a été refusée",
+	"bs-privacy-event-deletion-failed-desc": "La suppression du compte utilisateur a échoué",
+	"bs-privacy-event-request-submitted-anonymization-desc": "Demande d'anonymisation"
 }

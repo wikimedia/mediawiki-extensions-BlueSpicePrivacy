@@ -129,7 +129,7 @@
 	"bs-privacy-anonymization-request-button": "匿名化申請",
 	"bs-privacy-delete-error-deleting": "アカウントの削除を行う際にエラーが発生しました。",
 	"bs-privacy-deletion-final-prompt": "あなたのアカウントは完全に削除されます。この操作は元に戻せません",
-	"action-bs-privacy-admin": "プライバシー管理操作を実行する",
+	"action-bs-privacy-admin": "プライバシー管理操作の実行",
 	"right-bs-privacy-admin": "プライバシー管理操作の実行",
 	"bs-privacy-admin-request-manager-help": "すべての未解決のプライバシー要求の概要",
 	"bs-privacy-admin-request-manager-title": "保留中の申請",

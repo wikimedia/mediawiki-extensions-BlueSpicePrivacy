@@ -206,5 +206,20 @@
 	"bs-privacy-prefs-privacypolicymandatory-label": "Omogoči obvezna »Politiko zasebnosti« in »Pogoje storitve«",
 	"bs-privacy-prefs-privacypolicymandatory-help": "Uporabniki morajo soglašati s »Politiko zasebnosti« in »Pogoji storitve«, da pridobijo in ohranijo dostop",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "Sprejmi »Politiko zasebnosti« in »Pogoje storitve« ob prijavi",
-	"bs-privacy-prefs-privacypolicyonlogin-help": "Sprejetje »Politike zasebnosti« in »Pogojev storitve« je vključeno v postopek prijave. Zahteva se ob prvi prijavi in vsakič, ko uporabnik v nastavitvah dezaktivira soglasje."
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Sprejetje »Politike zasebnosti« in »Pogojev storitve« je vključeno v postopek prijave. Zahteva se ob prvi prijavi in vsakič, ko uporabnik v nastavitvah dezaktivira soglasje.",
+	"bs-privacy-event-anonymization-done-desc": "Anonimizacija uporabniškega računa je opravljena",
+	"bs-privacy-event-anonymization-done": "je {{GENDER:$1|sprejel|sprejela|sprejel_a}} vaš zahtevek za anonimizacijo vašega uporabniškega računa na uporabniško ime »$2«",
+	"bs-privacy-event-anonymization-rejected-desc": "Anonimizacija uporabniškega računa je bila zavrnjena",
+	"bs-privacy-event-anonymization-rejected": "{{GENDER:$1|je zavrnil|je zavrnila|je zavrnil_a}} vaš zahtevek za anonimizacijo vašega uporabniškega računa na uporabniško ime »$2«.<br><br>Komentar za zavrnitev: $3<br><br>Za dodatna vprašanja se obrnite na administratorja sistema.",
+	"bs-privacy-event-deletion-rejected-desc": "Izbris uporabniškega računa je bil zavrnjen",
+	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|je zavrnil|je zavrnila|je zavrnil_a}} vaš zahtevek za izbris vašega uporabniškega računa.<br><br>Komentar za zavrnitev: $2<br><br>Za dodatna vprašanja se obrnite na administratorja sistema.",
+	"bs-privacy-event-deletion-done-desc": "Izbris uporabniškega računa je opravljen",
+	"bs-privacy-event-deletion-done": "{{GENDER:$1|je sprejel|je sprejela|je sprejel_a}} vaš zahtevek za izbris vašega uporabniškega računa",
+	"bs-privacy-event-deletion-failed": "Izbris vašega uporabniškega računa ni uspel",
+	"bs-privacy-event-deletion-failed-desc": "Izbris uporabniškega računa ni uspel",
+	"bs-privacy-event-request-submitted-link": "Ogled čakajočih zahtevkov",
+	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|je zaprosil|je zaprosila|je zaprosil_a}} za anonimizacijo {{GENDER:$1|svojega|svojega|svojega}} uporabniškega računa s komentarjem: $2",
+	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1| je zaprosil|je zaprosila|je zaprosil_a}} za izbris {{GENDER:$1|svojega|svojega|svojega}} uporabniškega računa s komentarjem: $2",
+	"bs-privacy-event-request-submitted-anonymization-desc": "Zahtevek za anonimizacijo",
+	"bs-privacy-event-request-submitted-deletion-desc": "Zahtevek za izbris"
 }

@@ -215,7 +215,7 @@
 	"bs-privacy-event-deletion-rejected-desc": "Deletion of user account has been rejected",
 	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|rejected}} your request to delete your user account.<br><br>Comment for rejection: $2<br><br>For further questions, please contact your system administrator.",
 	"bs-privacy-event-deletion-done-desc": "Deletion of user account has been completed",
-	"bs-privacy-event-deletion-done": "{{GENDER:$1|accepted}} your request to delete your user account",
+	"bs-privacy-event-deletion-done": "Request to delete your user account has been accepted",
 	"bs-privacy-event-deletion-failed": "Deletion of your user account has failed",
 	"bs-privacy-event-deletion-failed-desc": "Deletion of user account has failed",
 	"bs-privacy-event-request-submitted-link": "View pending requests",
