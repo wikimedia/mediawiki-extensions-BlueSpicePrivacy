@@ -216,7 +216,7 @@
 	"bs-privacy-event-deletion-rejected-desc": "מחיקת חשבון המשתמש שלך נדחתה",
 	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|דחה|דחתה}} את בקשתך למחוק את חשבון המשתמש שלך.<br><br> הערה לדחייה: $2<br><br>לשאלות נוספות, נא לפנות למנהל המערכת שלך.",
 	"bs-privacy-event-deletion-done-desc": "מחיקת חשבון משתמש הושלמה",
-	"bs-privacy-event-deletion-done": "{{GENDER:$1|קיבל|קיבלה}} את בקשתך למחוק את חשבון המשתמש שלך",
+	"bs-privacy-event-deletion-done": "בקשתך למחוק את חשבון המשתמש שלך התקבלה",
 	"bs-privacy-event-deletion-failed": "מחיקת חשבון המשתמש שלך נכשלה",
 	"bs-privacy-event-deletion-failed-desc": "מחיקת חשבון המשתמש נכשלה",
 	"bs-privacy-event-request-submitted-link": "צפייה בבקשות ממתינות",

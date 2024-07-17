@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hakimi97",
 			"Tofeiku"
 		]
 	},
 	"bs-privacy-admintool-text": "Privasi",
 	"bs-privacy-transparency-export-types-of-data-label": "Jenis data",
-	"bs-privacy-transparency-export-export-format-label": "Format eksport"
+	"bs-privacy-transparency-export-export-format-label": "Format eksport",
+	"bs-privacy-transparency-type-title-personal": "Data peribadi"
 }

@@ -211,5 +211,20 @@
 	"bs-privacy-alert-page-not-exist": "De volgende {{PLURAL:$1|pagina bestaat|pagina's bestaan}} niet: $2. Maak {{PLURAL:$1|deze|ze}} aan.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ongeldige subpagina. Gebruik een van de volgende: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "aangevinkt",
-	"bs-privacy-admin-icon-bool-false-aria-label": "niet aangevinkt"
+	"bs-privacy-admin-icon-bool-false-aria-label": "niet aangevinkt",
+	"bs-privacy-event-anonymization-done-desc": "De anonimisering van het gebruikersaccount is voltooid",
+	"bs-privacy-event-anonymization-done": "{{GENDER:$1|heeft}} uw verzoek om uw gebruikersaccount te anonimiseren naar gebruikersnaam “$2” geaccepteerd",
+	"bs-privacy-event-anonymization-rejected-desc": "De anonimisering van het gebruikersaccount is afgewezen",
+	"bs-privacy-event-anonymization-rejected": "{{GENDER:$1|heeft}} uw verzoek om uw gebruikersaccount te anonimiseren naar gebruikersnaam “$2” afgewezen.<br><br> Commentaar bij de afwijzing: $3<br><br>Voor verdere vragen kunt u contact opnemen met uw systeembeheerder.",
+	"bs-privacy-event-deletion-rejected-desc": "De verwijdering van het gebruikersaccount is afgewezen",
+	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|heeft}} uw verzoek om uw gebruikersaccount te verwijderen afgewezen.<br><br>Commentaar bij de afwijzing: $2<br><br>Voor verdere vragen kunt u contact opnemen met uw systeembeheerder.",
+	"bs-privacy-event-deletion-done-desc": "Het verwijderen van het gebruikersaccount is voltooid",
+	"bs-privacy-event-deletion-done": "Het verzoek om uw gebruikersaccount te verwijderen is geaccepteerd",
+	"bs-privacy-event-deletion-failed": "Het verwijderen van uw gebruikersaccount is mislukt",
+	"bs-privacy-event-deletion-failed-desc": "Het verwijderen van het gebruikersaccount is mislukt",
+	"bs-privacy-event-request-submitted-link": "Openstaande verzoeken bekijken",
+	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|heeft}} gevraagd om de anonimisering van {{GENDER:$1|zijn|haar|het eigen}} gebruikersaccount, met commentaar: $2",
+	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|heeft}} gevraagd om de verwijdering van {{GENDER:$1|zijn|haar|het eigen}} gebruikersaccount, met commentaar: $2",
+	"bs-privacy-event-request-submitted-anonymization-desc": "Anonimiseringsverzoek",
+	"bs-privacy-event-request-submitted-deletion-desc": "Verwijderingsverzoek"
 }
