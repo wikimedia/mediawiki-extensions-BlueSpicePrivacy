@@ -209,8 +209,10 @@ class Consent extends Module {
 				$widgetData['cookieConsentProvider'] = [
 					"class" => $this->cookieConsentProvider->getHandlerClass(),
 					"config" => [
-						"map" => $this->cookieConsentProvider->getGroupMapping(),
-						"cookieName" => $this->cookieConsentProvider->getCookieName()
+						"cookirMap" => $this->cookieConsentProvider->getGroupMapping(),
+						"cookieName" => $this->cookieConsentProvider->getCookieName(),
+						"cookiePrefix" => $this->config->get( 'CookiePrefix' ),
+						"cookiePath" => $this->config->get( 'CookiePath' ),
 					]
 				];
 			}
