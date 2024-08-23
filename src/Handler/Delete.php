@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use RequestContext;
 use Wikimedia\Rdbms\IDatabase;
 
 class Delete extends Anonymize implements IPrivacyHandler {
@@ -109,8 +110,10 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	protected function removeUserPage() {
 		$userpage = $this->userToDelete->getUserPage();
 		if ( $userpage instanceof \Title && $userpage->exists() ) {
-			$article = new \Article( $userpage );
-			$article->doDelete( '', true );
+			$wikiPage = $this->services->getWikiPageFactory()->newFromTitle( $userpage );
+			$deletePage = $this->services->getDeletePageFactory()
+				->newDeletePage( $wikiPage, RequestContext::getMain()->getUser() );
+			$deletePage->setSuppress( true )->deleteIfAllowed( '' );
 		}
 	}
 
