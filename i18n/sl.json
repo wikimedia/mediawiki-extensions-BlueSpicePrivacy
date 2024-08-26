@@ -187,7 +187,7 @@
 	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|Naslednja stran ne obstaja|Naslednji strani ne obstajata|Naslednje strani ne obstajajo}}: $2. Ustvarite {{PLURAL:$1|jo|ju|jih}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Neveljavna podstran. Uporabite eno od naslednjega: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "obkljukano",
-	"bs-privacy-admin-icon-bool-false-aria-label": "odkljukano",
+	"bs-privacy-admin-icon-bool-false-aria-label": "neobkljukano",
 	"bs-privacy-event-anonymization-done-desc": "Anonimizacija uporabniškega računa je opravljena",
 	"bs-privacy-event-anonymization-done": "je {{GENDER:$1|sprejel|sprejela|sprejel_a}} vaš zahtevek za anonimizacijo vašega uporabniškega računa na uporabniško ime »$2«",
 	"bs-privacy-event-anonymization-rejected-desc": "Anonimizacija uporabniškega računa je bila zavrnjena",

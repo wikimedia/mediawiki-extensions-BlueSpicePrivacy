@@ -29,7 +29,7 @@
 	"bs-privacy-anonymization-layout-help": "Du kannst dein Konto anonymisieren, indem du alle Vorkommen deines Benutzernamens durch einen neuen Benutzernamen ersetzt.",
 	"bs-privacy-anonymization-new-username-label": "Neuer Benutzername",
 	"bs-privacy-anonymization-confirm-button-label": "Mein Konto anonymisieren",
-	"bs-privacy-anonymization-final-prompt": "Dein Konto wird umbenannt und alle deine Beiträge erscheinen unter dem neuen Benutzernamen. Diese Aktion kann nicht zurückgesetzt werden.",
+	"bs-privacy-anonymization-final-prompt": "Dein Konto wird umbenannt und alle deine Beiträge erscheinen unter dem neuen Benutzernamen. Diese Aktion kann nicht rückgängig gemacht werden.",
 	"bs-privacy-anonymization-error-check-name": "Beim Versuch, die Gültigkeit des neuen Benutzernamens zu überprüfen, ist ein Fehler aufgetreten.",
 	"bs-privacy-anonymization-invalid-name": "Der eingegebene Benutzername ist ungültig. Bitte wähle einen anderen Benutzernamen.",
 	"bs-privacy-anonymization-username-exists": "Der eingegebene Benutzername ist bereits einem anderen Benutzer zugeordnet. Bitte wähle einen anderen Benutzernamen.",
