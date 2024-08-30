@@ -7,8 +7,9 @@ use MediaWiki\User\UserIdentity;
 use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 
-class DeletionRejected extends NotificationEvent {
+class DeletionRejected extends NotificationEvent implements PriorityEvent {
 
 	/** @var UserIdentity */
 	protected $user;
