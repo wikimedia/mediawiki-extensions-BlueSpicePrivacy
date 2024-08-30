@@ -118,7 +118,7 @@
 				}
 			}
 		},
-		"Notifications": {
+		"NotifyMe": {
 			"Events": {
 				"bs-privacy-anonymization-done": {
 					"spec": {

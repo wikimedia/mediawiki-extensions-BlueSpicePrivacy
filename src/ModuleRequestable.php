@@ -2,8 +2,7 @@
 
 namespace BlueSpice\Privacy;
 
-use BlueSpice\Privacy\Event\RequestSubmitted;
-use MediaWiki\Extension\Notifications\EventFactory;
+use MediaWiki\Extension\NotifyMe\EventFactory;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
 
 abstract class ModuleRequestable extends Module {
@@ -225,7 +224,7 @@ abstract class ModuleRequestable extends Module {
 			] );
 
 			/** @var EventFactory $eventFactory */
-			$eventFactory = $this->services->getService( 'Notifications.EventFactory' );
+			$eventFactory = $this->services->getService( 'NotifyMe.EventFactory' );
 			$event = $eventFactory->create( 'bs-privacy-request-submitted', [
 				$this->context->getUser(),
 				$comment,

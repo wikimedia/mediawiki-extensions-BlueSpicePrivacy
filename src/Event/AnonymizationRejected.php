@@ -7,8 +7,9 @@ use MediaWiki\User\UserIdentity;
 use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 
-class AnonymizationRejected extends NotificationEvent {
+class AnonymizationRejected extends NotificationEvent implements PriorityEvent {
 
 	/** @var string */
 	protected $user;
