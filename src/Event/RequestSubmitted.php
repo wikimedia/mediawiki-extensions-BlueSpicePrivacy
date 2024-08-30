@@ -11,9 +11,10 @@ use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\EventLink;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 use Wikimedia\Rdbms\ILoadBalancer;
 
-class RequestSubmitted extends NotificationEvent {
+class RequestSubmitted extends NotificationEvent implements PriorityEvent {
 	/** @var SpecialPageFactory */
 	private $specialPageFactory;
 	/** @var GroupPermissionsLookup */

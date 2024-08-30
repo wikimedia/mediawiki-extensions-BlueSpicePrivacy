@@ -7,8 +7,9 @@ use MediaWiki\User\UserIdentity;
 use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 
-class AnonymizationDone extends NotificationEvent {
+class AnonymizationDone extends NotificationEvent implements PriorityEvent {
 
 	/** @var string */
 	protected $oldUsername;

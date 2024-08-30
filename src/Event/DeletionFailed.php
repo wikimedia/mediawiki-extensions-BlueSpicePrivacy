@@ -8,8 +8,9 @@ use Message;
 use MWStake\MediaWiki\Component\Events\BotAgent;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\PriorityEvent;
 
-class DeletionFailed extends NotificationEvent {
+class DeletionFailed extends NotificationEvent implements PriorityEvent {
 
 	/** @var UserIdentity */
 	protected $user;
