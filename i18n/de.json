@@ -209,6 +209,8 @@
 	"bs-privacy-event-deletion-failed": "Die Löschung deines Benutzerkontos ist fehlgeschlagen",
 	"bs-privacy-event-deletion-failed-desc": "Das Löschen des Benutzerkontos ist fehlgeschlagen",
 	"bs-privacy-event-request-submitted-link": "Ausstehende Anfragen anzeigen",
+	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|hat}} die Anonymisierung von {{GENDER:$1|seinem|ihrem|ihrem}} Benutzerkonto beantragt, mit Kommentar: $2",
+	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|hat}} die Löschung von {{GENDER:$1|seinem|ihrem|ihrem}} Benutzerkonto beantragt, mit Kommentar: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Anonymisierungsanfrage",
 	"bs-privacy-event-request-submitted-deletion-desc": "Löschanfrage"
 }
