@@ -5,6 +5,10 @@ use MediaWiki\MediaWikiServices;
 
 class PrivacyPages extends \BlueSpice\SpecialPage {
 
+	public function __construct() {
+		parent::__construct( 'PrivacyPages', '', false );
+	}
+
 	/**
 	 * @param string|null $subPage - can be either 'TermsOfServices' or 'PrivacyPolicy'
 	 */
