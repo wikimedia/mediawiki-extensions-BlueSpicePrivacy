@@ -4,5 +4,6 @@
 			"Cabal"
 		]
 	},
-	"bs-privacy-admin-approve-final-prompt": "ਕਿਰਪਾ ਕਰਕੇ ਬੇਨਤੀ ਨੂੰ ਮਨਜ਼ੂਰੀ ਦੇਣ ਦੀ ਤਸਦੀਕ ਕਰੋ"
+	"bs-privacy-admin-approve-final-prompt": "ਕਿਰਪਾ ਕਰਕੇ ਬੇਨਤੀ ਨੂੰ ਮਨਜ਼ੂਰੀ ਦੇਣ ਦੀ ਤਸਦੀਕ ਕਰੋ",
+	"bs-privacy-admin-request-grid-column-user": "ਵਰਤੋਂਕਾਰ"
 }
