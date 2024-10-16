@@ -18,30 +18,46 @@
 
 	OO.inheritClass( bs.privacy.widget.Transparency, bs.privacy.widget.Privacy );
 
+	bs.privacy.widget.Transparency.prototype.init = function() {
+		bs.privacy.widget.Transparency.parent.prototype.init.call( this );
+		this.loader.$element.remove();
+		this.loaders = {
+			data: new OO.ui.MessageWidget( { type: 'notice' } ),
+			export: new OO.ui.MessageWidget( { type: 'notice' } )
+		};
+		this.loaders.data.$element.insertAfter( this.viewDataButton.$element );
+		this.loaders.data.$element.addClass( 'visually-hidden' );
+		this.loaders.data.$element.attr( 'aria-live', 'assertive' );
+		this.loaders.export.$element.insertAfter( this.exportLayoutBody.$element );
+		this.loaders.export.$element.addClass( 'visually-hidden' );
+		this.loaders.export.$element.attr( 'aria-live', 'assertive' );
+
+	};
+
 	bs.privacy.widget.Transparency.prototype.makeForm = function() {
-		this.viewDataButton = new OO.ui.ButtonWidget( {
-			label: mw.message( 'bs-privacy-transparency-show-all-data-button' ).text(),
+		this.viewDataButton = new OO.ui.ButtonWidget({
+			label: mw.message('bs-privacy-transparency-show-all-data-button').text(),
 			flags: [
 				'primary',
 				'progressive'
 			]
-		} );
-		this.viewDataButton.on( 'click', this.viewData.bind( this ) );
+		});
+		this.viewDataButton.on('click', this.viewData.bind(this));
 
 		this.makeExportLayout();
 
-		this.form = new OO.ui.FieldsetLayout( {
+		this.form = new OO.ui.FieldsetLayout({
 			items: [
 				this.viewDataButton,
 				this.exportLayout
 			]
-		} );
+		});
 
 		this.layout.addItems( [ this.form ] );
 	};
 
 	bs.privacy.widget.Transparency.prototype.exportData = function() {
-		this.setLoading( true, this.exportLayoutBody );
+		this.setLoading( true, 'export' );
 
 		var data = {
 			types: this.typeSelector.getValue(),
@@ -53,7 +69,7 @@
 		}
 
 		this.getDataApi( data ).done( function( response ) {
-			this.setLoading( false );
+			this.setLoading( false, 'export' );
 			if( response.success === 0 ) {
 				return this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
 			}
@@ -81,7 +97,7 @@
 
 		}.bind( this ) ).fail( function( response ) {
 			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
-			this.setLoading( false );
+			this.setLoading( false, 'export' );
 		}.bind( this ) );
 	};
 
@@ -98,9 +114,9 @@
 	};
 
 	bs.privacy.widget.Transparency.prototype.viewData = function() {
-		this.setLoading( true, this.viewDataButton );
+		this.setLoading( true, 'data' );
 		this.getDataApi().done( function( response ) {
-			this.setLoading( false );
+			this.setLoading( false, 'data' );
 			if( response.success === 0 ) {
 				return this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
 			}
@@ -114,27 +130,24 @@
 			windowManager.openWindow( dialog );
 		}.bind( this ) ).fail( function() {
 			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
-			this.setLoading( false );
+			this.setLoading( false, 'data' );
 		}.bind( this ) );
 	};
 
-	bs.privacy.widget.Transparency.prototype.setLoading = function( value, element ) {
-		if( this.loading ) {
-			this.loading.$element.remove();
-			this.loadingElement.$element.show();
+	bs.privacy.widget.Transparency.prototype.setLoading = function( value, type ) {
+		var loader = this.loaders[type];
+		if( !loader ) {
+			return;
 		}
-
-		if( value ) {
-			this.loading = new OO.ui.HorizontalLayout( {
-				items: [
-					new OO.ui.LabelWidget( {
-						label: mw.message( 'bs-privacy-transparency-loading-message' ).text()
-					} )
-				]
-			} );
-			this.loadingElement = element;
-			this.loading.$element.insertAfter( this.loadingElement.$element );
-			this.loadingElement.$element.hide();
+		var element = type === 'export' ? this.exportLayoutBody : this.viewDataButton;
+		if ( value ) {
+			element.$element.hide();
+			loader.$element.removeClass( 'visually-hidden' );
+			loader.setLabel( mw.message( 'bs-privacy-transparency-loading-message' ).text() );
+		} else {
+			loader.setLabel( '' );
+			loader.$element.addClass( 'visually-hidden' );
+			element.$element.show();
 		}
 	};
 

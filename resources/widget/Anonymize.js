@@ -90,6 +90,7 @@
 
 		this.getUsername().done( function( response ) {
 			if( response.success === 1 ) {
+				this.clearErrors();
 				// Random username retrieved
 				this.newNameInput.setValue( response.data.username );
 				this.newUsername = response.data.username;
@@ -120,7 +121,7 @@
 		var loginButton = new OO.ui.ButtonWidget( {
 			label: mw.message( 'bs-privacy-anonymize-login-button' ).text(),
 			href: loginLink,
-			framed: false,
+			framed: true,
 			classes: [ 'bs-privacy-anonymize-login-btn' ]
 		} );
 		this.$element.append( loginButton.$element );
@@ -190,6 +191,7 @@
 			} else {
 				this.newUsername = response.data.username;
 				this.confirmButton.setDisabled( false );
+				this.clearErrors();
 			}
 		}.bind( this ) ).fail( function() {
 			this.displayError( mw.message( 'bs-privacy-anonymization-error-check-name' ).text() );
