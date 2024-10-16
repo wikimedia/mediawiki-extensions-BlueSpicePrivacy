@@ -62,7 +62,7 @@
 		buttonLabel = buttonLabel || 'bs-privacy-cancel-request-button';
 		var cancelButton = new OO.ui.ButtonWidget( {
 			label: mw.message( buttonLabel ).text(),
-			framed: false
+			framed: true
 		} );
 		cancelButton.on( 'click', this.cancelRequest.bind( this ) );
 
@@ -88,7 +88,7 @@
 		buttonLabel = buttonLabel || 'bs-privacy-acknowledge-request-button';
 		var ackButton = new OO.ui.ButtonWidget( {
 			label: mw.message( buttonLabel ).text(),
-			framed: false
+			framed: true
 		} );
 		ackButton.on( 'click', this.closeRequest.bind( this ) );
 

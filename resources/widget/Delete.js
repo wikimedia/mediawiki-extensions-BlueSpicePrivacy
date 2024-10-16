@@ -20,7 +20,8 @@
 
 	bs.privacy.widget.Delete.prototype.makeRequestForm = function() {
 		this.commentControl = new OO.ui.TextInputWidget( {
-			maxLength: 255
+			maxLength: 255,
+			autocomplete: false
 		} );
 		this.deleteButton = new OO.ui.ButtonWidget( {
 			label: mw.message( 'bs-privacy-deletion-request-deletion-button' ).text(),

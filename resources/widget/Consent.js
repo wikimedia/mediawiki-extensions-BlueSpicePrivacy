@@ -9,7 +9,7 @@
 		cfg.subtitle = cfg.subtitle || mw.message( 'bs-privacy-consent-layout-help' ).text();
 		bs.privacy.widget.Consent.parent.call( this, cfg );
 
-		this.cookieConsentProvider;
+		this.cookieConsentProvider = null;
 		if( cfg.cookieConsentProvider ) {
 			var func = bs.privacy.util.funcFromCallback( cfg.cookieConsentProvider.class );
 			this.cookieConsentProvider = new func( cfg.cookieConsentProvider.config );
