@@ -4,6 +4,8 @@
 
 	bs.privacy.widget.Privacy = function( cfg ) {
 		cfg = cfg || {};
+		cfg.framed = true;
+		cfg.expanded = false;
 
 		this.api = new mw.Api();
 		this.$element = cfg.$element || $( '<div>' );
@@ -13,7 +15,7 @@
 		bs.privacy.widget.Privacy.parent.call( this, cfg );
 	};
 
-	OO.inheritClass( bs.privacy.widget.Privacy, OO.ui.Widget );
+	OO.inheritClass( bs.privacy.widget.Privacy, OO.ui.PanelLayout );
 
 	bs.privacy.widget.Privacy.prototype.init = function() {
 		this.helpLabel = new OO.ui.LabelWidget( {
