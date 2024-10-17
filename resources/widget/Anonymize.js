@@ -172,7 +172,7 @@
 	}
 
 	bs.privacy.widget.Anonymize.prototype.checkUsername = function() {
-		var username = this.newNameInput.getValue();
+		var username = this.newNameInput.getValue().trim();
 		this.$element.find( ".bs-privacy-error" ).remove();
 
 		this.makeApiCall( {
