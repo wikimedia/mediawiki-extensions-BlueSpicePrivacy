@@ -81,7 +81,7 @@ class ExportData implements IPrivacyHandler {
 		if ( in_array( Transparency::DATA_TYPE_ACTIONS, $types ) ) {
 			$this->getActionsData();
 		}
-		if ( in_array( Transparency::DATA_TYPE_ACTIONS, $types ) ) {
+		if ( in_array( Transparency::DATA_TYPE_CONTENT, $types ) ) {
 			$this->getContentData();
 		}
 
