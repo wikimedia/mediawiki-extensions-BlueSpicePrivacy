@@ -7,7 +7,7 @@ class Extension extends \BlueSpice\Extension {
 		$GLOBALS['wgLogRestrictions']['bs-privacy'] = 'bs-privacy-admin';
 
 		$GLOBALS['mwsgCommonUIComponentFilters'] = array_merge(
-			$GLOBALS['mwsgCommonUIComponentFilters'],
+			$GLOBALS['mwsgCommonUIComponentFilters'] ?? [],
 			[
 				'privacy' => [
 					'class' => 'BlueSpice\\Privacy\\ComponentFilter\\PrivacyFilter',
