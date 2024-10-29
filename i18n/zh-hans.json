@@ -131,6 +131,7 @@
 	"bs-privacy-transparency-type-title-actions": "操作数据",
 	"bs-privacy-prefs-consent-cookies": "我同意存储此站点的Cookies",
 	"bs-privacy-prefs-consent-privacy-policy": "我接受此站点的<span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} 隐私政策]</span>",
+	"bs-privacy-prefs-consent-tos": "我接受此站点的<span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}}服务条款]</span>",
 	"bs-privacy-prefs-consent-cookies-help": "Cookies是存储于您电脑上的小型信息文件，旨在让用户体验更加顺畅。",
 	"bs-privacy-prefs-consent-privacy-policy-help": "点选此选项即代表您已阅读并了解此站点的隐私政策。",
 	"bs-privacy-consent-layout-label": "隐私政策许可",
