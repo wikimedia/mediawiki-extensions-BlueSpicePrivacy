@@ -5,8 +5,8 @@
 		]
 	},
 	"bs-privacy-prefs-cookieacceptmandatory-help": "Daaneba seŋ ka ba sage a madetoore kɔɔkere a tõɔ nyɛ kyɛ meŋ pɔgerɔ a",
-	"bs-privacy-prefs-privacypolicymandatory-help": "Daaneba seŋ ka taa teɛroŋ ko a ''piravisi polisiri'' ane ''sɛɛvisi tɛɛmɛ '' a pɔge kyɛ nyɛre nyaamo",
-	"bs-privacy-prefs-privacypolicyonlogin-help": "Sage a ''peravisi polisi'' aneŋ '' sɛɛvisi tɛɛme'' paale la a kpeɛbo. O boɔrɔ la kpeɛbo kyɛ saŋa zaa a daana leɛ-yi a teɛroŋ a sʋʋtere.",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Enabol madatore ''peravisi polisi'' ane''sɛɛvisi mine tɛɛme''",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "Sage ''peravisi polisi'' ane ''sɛɛvisi mine tɛɛme'' naŋ be kpeɛbo."
+	"bs-privacy-prefs-privacypolicymandatory-help": "Daaneba seŋ ka taa teɛroŋ ko a ''piravisi polisiri'' ane ''sɛɛvisi tɛɛmɛ '' a pɔge kyɛ nyɛre nyaamo",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Sage ''peravisi polisi'' ane ''sɛɛvisi mine tɛɛme'' naŋ be kpeɛbo.",
+	"bs-privacy-prefs-privacypolicyonlogin-help": "Sage a ''peravisi polisi'' aneŋ '' sɛɛvisi tɛɛme'' paale la a kpeɛbo. O boɔrɔ la kpeɛbo kyɛ saŋa zaa a daana leɛ-yi a teɛroŋ a sʋʋtere."
 }

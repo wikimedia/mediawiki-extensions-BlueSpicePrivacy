@@ -45,7 +45,6 @@
 	"bs-privacy-timestamp-with-days-ago": "$1 (пред {{PLURAL:$2|$2 ден|$2 дена}})",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Не",
-	"echo-category-title-bs-privacy-cat": "Приватност",
 	"apihelp-bs-privacy-get-requests-summary": "Крајна точка за добивање сите барања во исчекување",
 	"apihelp-bs-privacy-get-all-consents-summary": "Крајна точка за добивање информации за согласност за сите корисници",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прифати ги сите",

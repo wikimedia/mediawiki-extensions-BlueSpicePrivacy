@@ -13,12 +13,6 @@
 	"bs-privacy-prefs-consent-tos-help": "Door dit vakje aan te vinken bevestig je dat je de gebruiksvoorwaarden van deze site hebt gelezen en aanvaard.",
 	"bs-privacy-consent-get-options-fail": "Er is een fout opgetreden bij het opslaan van je privacybeleidsvoorkeuren.",
 	"bs-privacy-consent-save-fail": "Er is een fout opgetreden bij het opslaan van je privacybeleidsvoorkeuren.",
-	"notification-bs-privacy-anonymization-done-body": "Gelukt, je account is geanonimiseerd. Oude gebruikersnaam: \"$1\". Nieuwe gebruikersnaam: \"$2\".",
-	"notification-bs-privacy-deletion-approved": "Je verwijderingsaanvraag is toegewezen!",
-	"notification-bs-privacy-deletion-failed": "Het verwijderen van je account is mislukt!",
-	"notification-bs-privacy-request-denied-anonymization-body": "De gebruiker $1 heeft je aanvraag om jouw account onder de gebruikersnaam \"$2\" te anonimiseren afgewezen. Opmerking: $3",
-	"notification-bs-privacy-request-denied-deletion": "Je verwijderingsaanvraag is afgewezen!",
-	"notification-bs-privacy-request-denied-deletion-body": "De gebruiker $1 heeft je aanvraag om jouw account te verwijderen afgewezen. Opmerking: $2",
 	"bs-privacy-consent-auth-fail": "Je moet alle voorwaarden aanvaarden.",
 	"bs-privacy-module-consent-accepted": "Je hebt alle voorwaarden al aanvaard."
 }

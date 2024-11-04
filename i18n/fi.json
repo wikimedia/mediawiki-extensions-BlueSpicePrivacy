@@ -24,7 +24,6 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (tänään)",
 	"bs-privacy-consent-bool-true": "Kyllä",
 	"bs-privacy-consent-bool-false": "Ei",
-	"echo-category-title-bs-privacy-cat": "Tietosuojaan liittyvät toimet",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Hyväksy kaikki",
 	"bs-privacy-cookie-consent-group-necessary-label": "Välttämättömät evästeet",
 	"bs-privacy-cookie-consent-group-necessary-desc": "Evästeet, jotka ovat tarpeellisia sivuston toiminnan kannalta",

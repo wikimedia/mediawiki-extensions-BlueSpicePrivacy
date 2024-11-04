@@ -86,6 +86,8 @@
 	"bs-privacy-prefs-consent-tos": "Accetto i <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} termini di servizio]</span> di questo sito",
 	"bs-privacy-prefs-consent-cookies-help": "I cookie sono piccole informazioni memorizzate sul tuo computer tra le sessioni per rendere l'esperienza dell'utente più fluid",
 	"bs-privacy-prefs-consent-tos-help": "Selezionando questo campo confermi di aver letto e accettato i termini di servizio per questo sito",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Abilita l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" obbligatori",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Accetta l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" al momento dell'accesso",
 	"bs-privacy-consent-save-button": "Salva",
 	"bs-privacy-consent-save-success": "Le tue preferenze sulla privacy sono state salvate",
 	"bs-privacy-consent-save-fail": "Si è verificato un errore durante il tentativo di salvare le opzioni dell'informativa sulla privacy",
@@ -104,12 +106,6 @@
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|ha}} annullato la richiesta di cancellare {{GENDER:$2|la sua|la sua}} utenza",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|ha}} approvato la richiesta di cancellare l'utenza fatta dall'utente $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|ha}} respinto la richiesta di cancellare l'utenza fatta dall'utente $4, con commento: $5",
-	"notification-bs-privacy-deletion-approved": "La tua richiesta di cancellazione è stata approvata!",
-	"notification-bs-privacy-deletion-approved-body": "La richiesta di cancellare la tua utenza è stata approvata e verrà eseguita a breve.",
-	"notification-bs-privacy-deletion-failed": "Cancellazione della tua utenza non riuscita!",
-	"notification-bs-privacy-request-denied-deletion": "La tua richiesta di cancellazione è stata respinta!",
-	"notification-bs-privacy-request-denied-deletion-body": "L'utente $1 ha rifiutato la tua richiesta di eliminare la tua utenza. Commento: $2",
-	"notification-bs-privacy-request-submitted-body": "L'utente \"$1\" ha inviato una nuova richiesta di privacy. Modulo: $3 . Commento: $2",
 	"apihelp-bs-privacy-param-data": "Dati trasmessi alla funzione richiesta",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Impostazioni del consenso ai cookie",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accetta tutto",
@@ -124,7 +120,6 @@
 	"bs-privacy-consent-auth-fail": "Devi accettare tutti i termini",
 	"bs-privacy-module-consent-accepted": "Hai già accettato tutti i termini di servizio",
 	"privacyconsent": "Acconsentire alla privacy policy",
-	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Salva lo stato dei componenti del tema BlueSpiceCalumma",
 	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "Salva lo stato dei componenti del tema BlueSpiceDiscovery",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Salva lo stato delle notifiche dell'utente",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "Contiene l'hash della sessione dell'utente corrente",
@@ -135,7 +130,5 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Utilizzato per il bilanciamento del carico interno",
 	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:",
 	"bs-privacy-admin-icon-bool-true-aria-label": "selezionato",
-	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato",
-	"bs-privacy-prefs-privacypolicymandatory-label": "Abilita l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" obbligatori",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "Accetta l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" al momento dell'accesso"
+	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato"
 }

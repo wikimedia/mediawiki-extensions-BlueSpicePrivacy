@@ -11,6 +11,7 @@
 	"bs-privacy-anonymization-request-comment": "Ođđ õõʹnninõmm: $1",
 	"bs-privacy-request-denied-comment": "Kommeʹntt: $1",
 	"bs-privacy-deletion-button": "Jaukkâd õõʹnnitobldõõǥǥ",
+	"bs-privacy-admin-request-grid-column-user": "Õõʹnni",
 	"bs-privacy-admin-request-grid-column-timestamp": "Äiʹǧǧštemppal",
 	"bs-privacy-admin-request-grid-action-approve": "Priim",
 	"bs-privacy-transparency-show-all-data-button": "Čuäʹjet puk teâđaid",
@@ -27,6 +28,5 @@
 	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tät seiddõs âânn jeäʹvstõõzzid, što ââʹnnemǩiõččlâsttmõš lij pueʹrab",
 	"bs-privacy-cookie-consent-group-necessary-label": "Vieʹltʼteʹmes jeäʹvstõõzz",
 	"bs-privacy-cookie-consent-group-necessary-desc": "Jeäʹvstõõzz, koid âlgg ââʹnned, što seiddõs tuåimmai",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk",
-	"bs-privacy-admin-request-grid-column-user": "Õõʹnni"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ruõkk"
 }

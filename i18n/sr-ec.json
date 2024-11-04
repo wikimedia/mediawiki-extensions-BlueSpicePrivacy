@@ -45,6 +45,7 @@
 	"bs-privacy-prefs-consent-tos": "Прихватам <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} услове коришћења]</span> овог сајта",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Омогући обавезне колачиће",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности и услова коришћења",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”",
 	"bs-privacy-consent-save-button": "Сачувај",
 	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (данас)",
@@ -52,14 +53,10 @@
 	"bs-privacy-consent-bool-false": "Не",
 	"logentry-bs-privacy-anonymization": "$4 је анонимизовао налог. Ново корисничко име: $5",
 	"logentry-bs-privacy-deletion": "Корисник $4 је обрисао налог",
-	"echo-category-title-bs-privacy-cat": "Радње за приватност",
-	"notification-bs-privacy-center-url": "Центар приватности",
-	"notification-bs-privacy-anonymization-done": "Ваш налог је анонимизован!",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Прихвати све",
 	"bs-privacy-cookie-consent-group-necessary-label": "Само неопходни",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Сачувај",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори",
 	"bs-privacy-admin-icon-bool-true-aria-label": "проверено",
-	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”"
+	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено"
 }
