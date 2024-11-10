@@ -9,6 +9,7 @@
 			"Gomoko",
 			"Graineahumus",
 			"MacOS Weed",
+			"Mahabarata",
 			"McDutchie",
 			"SleaY",
 			"Thibaut120094",
@@ -212,5 +213,12 @@
 	"bs-privacy-event-anonymization-rejected-desc": "L'anonymisation du compte utilisateur a été rejetée",
 	"bs-privacy-event-deletion-rejected-desc": "La suppression du compte utilisateur a été refusée",
 	"bs-privacy-event-deletion-failed-desc": "La suppression du compte utilisateur a échoué",
-	"bs-privacy-event-request-submitted-anonymization-desc": "Demande d'anonymisation"
+	"bs-privacy-event-request-submitted-anonymization-desc": "Demande d'anonymisation",
+	"bs-privacy-event-anonymization-done": "{{GENDER:$1|}}a accepté votre demande d'anonymisation de votre compte utilisateur vers le nouveau nom « $2 »",
+	"bs-privacy-event-anonymization-rejected": "{{GENDER:$1|}}a rejeté votre demande d'anonymisation de votre compte utilisateur vers le nouveau nom « $2 ».<br><br>Raison du rejet : $3<br><br>Pour toute question supplémentaire, veuillez contacter votre administrateur système.",
+	"bs-privacy-event-deletion-rejected": "{{GENDER:$1|}}a rejeté votre demande de suppression de votre compte utilisateur.<br><br>Raison du rejet : $2<br><br>Pour toute question supplémentaire, veuillez contacter votre administrateur système.",
+	"bs-privacy-event-deletion-done": "La demande de suppression de votre compte utilisateur a été acceptée",
+	"bs-privacy-event-request-submitted-link": "Afficher les demandes en attente",
+	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|}}a demandé l'anonymisation de son compte utilisateur avec le commentaire : $2",
+	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|}}a demandé la suppression de son compte utilisateur avec le commentaire : $2"
 }

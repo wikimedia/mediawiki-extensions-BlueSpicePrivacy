@@ -208,5 +208,6 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "已勾选",
 	"bs-privacy-admin-icon-bool-false-aria-label": "未勾选",
 	"bs-privacy-event-request-submitted-anonymization-desc": "匿名化请求",
-	"bs-privacy-event-request-submitted-deletion-desc": "删除请求"
+	"bs-privacy-event-request-submitted-deletion-desc": "删除请求",
+	"bs-privacy-prefs-consent-tos": "我接受此站点的<span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}}服务条款]</span>"
 }
