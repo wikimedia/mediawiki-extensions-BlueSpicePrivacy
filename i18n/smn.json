@@ -6,6 +6,8 @@
 		]
 	},
 	"bs-privacy-admintool-text": "Priivaatvuotâ",
+	"bs-privacy-anonymization-new-username-label": "Uđđâ kevtteenommâ",
+	"bs-privacy-anonymization-request-comment": "Uđđâ kevtteenommâ: $1",
 	"bs-privacy-request-denied-comment": "Komment: $1",
 	"bs-privacy-admin-request-grid-column-user": "Kevttee",
 	"bs-privacy-transparency-view-data-dialog-close": "Toopâ",
