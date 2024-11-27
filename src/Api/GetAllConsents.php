@@ -40,7 +40,7 @@ class GetAllConsents extends \BSApiExtJSStoreBase {
 				'userName' => $user->getName()
 			];
 			foreach ( $module->getOptions() as $name => $prefName ) {
-				$record[$name] = $userOptionsLookup->getOption( $user, $prefName );
+				$record[$name] = (bool)$userOptionsLookup->getOption( $user, $prefName );
 			}
 
 			$data[] = (object)$record;
