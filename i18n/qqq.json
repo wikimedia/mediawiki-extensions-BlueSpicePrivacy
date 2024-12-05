@@ -212,5 +212,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "Notification message when user has submitted anonymization request.\n$1 - user name\n$2 - comment",
 	"bs-privacy-event-request-submitted-deletion": "Notification message when user has submitted deletion request.\n$1 - user name\n$2 - comment",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Event type message",
-	"bs-privacy-event-request-submitted-deletion-desc": "Event type message"
+	"bs-privacy-event-request-submitted-deletion-desc": "Event type message",
+	"bs-privacy-consent-type-privacy-policy-short": "Name label for privacy policy consent type",
+	"bs-privacy-consent-type-terms-of-service-short": "Name label for terms of service consent type",
+	"bs-privacy-module-name-anonymization": "Module name label",
+	"bs-privacy-module-name-deletion": "Module name label"
 }

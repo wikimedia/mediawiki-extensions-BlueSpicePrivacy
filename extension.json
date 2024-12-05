@@ -234,7 +234,9 @@
 				"bs-privacy-admin-requests-disabled",
 				"bs-privacy-admin-request-grid-action-deny",
 				"bs-privacy-admin-icon-bool-true-aria-label",
-				"bs-privacy-admin-icon-bool-false-aria-label"
+				"bs-privacy-admin-icon-bool-false-aria-label",
+				"bs-privacy-module-name-anonymization",
+				"bs-privacy-module-name-deletion"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -343,7 +345,10 @@
 			"messages": [
 				"bs-privacy-admin-consent-overview-title",
 				"bs-privacy-admin-consent-overview-help",
-				"bs-privacy-admin-consent-grid-column-user"
+				"bs-privacy-admin-consent-grid-column-user",
+				"bs-privacy-consent-type-privacy-policy-short",
+				"bs-privacy-consent-type-terms-of-service-short"
+
 			],
 			"dependencies": [
 				"ext.bluespice.privacy.admin"
