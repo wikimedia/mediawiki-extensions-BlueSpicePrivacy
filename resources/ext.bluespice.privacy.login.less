@@ -5,3 +5,10 @@ checkbox label. Also appears in skin vector.
 .mw-ui-checkbox:not(#noop) * a {
 	vertical-align: baseline;
 }
+
+/* Fix for missing space between link and text
+ * ERM39228
+*/
+#userloginForm .cdx-checkbox__label .plainlinks {
+	padding: 0 0.2em;
+}
