@@ -58,8 +58,8 @@
 	"bs-privacy-deletion-button": "Delete your account",
 	"action-bs-privacy-admin": "execute Privacy administrative action",
 	"right-bs-privacy-admin": "Execute Privacy administrative action",
-	"bs-privacy-admin-request-manager-help": "Overview of all open privacy requests",
-	"bs-privacy-admin-request-manager-title": "Pending requests",
+	"bs-privacy-admin-request-manager-help": "Overview of pending user requests to be processed",
+	"bs-privacy-admin-request-manager-title": "Requests from users",
 	"bs-privacy-admin-invalid-request": "Invalid request",
 	"bs-privacy-admin-request-action-failed": "Request action failed!",
 	"bs-privacy-admin-approve-final-prompt": "Please confirm approving the request",
@@ -128,8 +128,8 @@
 	"bs-privacy-consent-get-options-fail": "An error occurred while trying to retrieve your privacy policy options",
 	"bs-privacy-consent-save-success": "Your privacy policy preferences have been saved",
 	"bs-privacy-consent-save-fail": "An error occurred while trying to save your privacy policy options",
-	"bs-privacy-admin-consent-overview-title": "Privacy policy consent overview",
-	"bs-privacy-admin-consent-overview-help": "Overview of state of consent of all users",
+	"bs-privacy-admin-consent-overview-title": "Consent overview",
+	"bs-privacy-admin-consent-overview-help": "Overview of the consent of all users regarding Terms of service and Privacy policy",
 	"bs-privacy-admin-consent-grid-column-user": "Username",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 day|$2 days}} ago)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (today)",
@@ -205,5 +205,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|requested}} anonymization of {{GENDER:$1|his|her|their}} user account, with comment: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|requested}} deletion of {{GENDER:$1|his|her|their}} user account, with comment: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Anonymization request",
-	"bs-privacy-event-request-submitted-deletion-desc": "Deletion request"
+	"bs-privacy-event-request-submitted-deletion-desc": "Deletion request",
+	"bs-privacy-consent-type-privacy-policy-short": "Privacy policy",
+	"bs-privacy-consent-type-terms-of-service-short": "Terms of service",
+	"bs-privacy-module-name-anonymization": "Anonymization",
+	"bs-privacy-module-name-deletion": "Deletion"
 }

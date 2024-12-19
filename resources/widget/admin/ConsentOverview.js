@@ -24,12 +24,14 @@ bs.privacy.widget.ConsentOverview.prototype.makeForm = function() {
 	var columns = {
 		userName: {
 			type: 'text',
-			headerText: mw.message( 'bs-privacy-admin-consent-grid-column-user' ).text()
+			headerText: mw.message( 'bs-privacy-admin-consent-grid-column-user' ).text(),
+			filter: { type: 'user' },
+			sortable: true
 		}
 	};
 
 	for ( var name in this.consentTypes ) {
-		var msg = mw.message( this.consentTypes[name] );
+		var msg = mw.message( 'bs-privacy-consent-type-' + name + '-short' );
 		var header = name;
 		if( msg.exists() ) {
 			header = msg.text();
@@ -41,6 +43,7 @@ bs.privacy.widget.ConsentOverview.prototype.makeForm = function() {
 			filter: {
 				type: 'boolean'
 			},
+			sortable: true,
 			width: 100
 		};
 	}
@@ -50,5 +53,5 @@ bs.privacy.widget.ConsentOverview.prototype.makeForm = function() {
 		pageSize: 25
 	} );
 
-	this.$element.append( grid.$element );
+	this.layout.$element.append( grid.$element );
 };

@@ -8,8 +8,6 @@ bs.privacy.widget.RequestManager = function( cfg ) {
 	this.enabled = mw.config.get( 'bsPrivacyEnableRequests' );
 
 	bs.privacy.widget.RequestManager.parent.call( this, cfg );
-
-	this.makeForm();
 };
 
 OO.inheritClass( bs.privacy.widget.RequestManager, bs.privacy.widget.AdminWidget );
@@ -42,11 +40,24 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function() {
 	var grid = new OOJSPlus.ui.data.GridWidget( {
 		columns: {
 			userName: {
-				headerText: mw.message( 'bs-privacy-admin-request-grid-column-user' ).text()
+				headerText: mw.message( 'bs-privacy-admin-request-grid-column-user' ).text(),
+				filter: { type: 'user' },
+				sortable: true
 			},
 			module: {
 				headerText: mw.message( 'bs-privacy-admin-request-grid-column-action' ).text(),
-				width: 150
+				width: 150,
+				valueParser: function( value ) {
+					return mw.msg( 'bs-privacy-module-name-' + value );
+				},
+				filter: {
+					type: 'list',
+					list: [
+						{ data: 'anonymization', label: mw.msg( 'bs-privacy-module-name-anonymization' ) },
+						{ data: 'deletion', label: mw.msg( 'bs-privacy-module-name-deletion' ) },
+					]
+				},
+				sortable: true
 			},
 			timestampWithDaysAgo: {
 				headerText: mw.message( 'bs-privacy-admin-request-grid-column-timestamp' ).text(),
@@ -60,13 +71,13 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function() {
 			},
 			approveAction: {
 				type: 'action',
-				title: mw.message( 'bs-privacy-admin-request-grid-action-approve' ).text(),
+				label: mw.message( 'bs-privacy-admin-request-grid-action-approve' ).text(),
 				actionId: 'approve',
 				icon: 'check'
 			},
 			denyAction: {
 				type: 'action',
-				title: mw.message( 'bs-privacy-admin-request-grid-action-deny' ).text(),
+				label: mw.message( 'bs-privacy-admin-request-grid-action-deny' ).text(),
 				actionId: 'deny',
 				icon: 'close'
 			}
@@ -78,7 +89,7 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function() {
 		action: 'onGridAction'
 	} );
 
-	this.$element.append( grid.$element );
+	this.layout.$element.append( grid.$element );
 };
 
 bs.privacy.widget.RequestManager.prototype.renderTS = function( value, row ) {
