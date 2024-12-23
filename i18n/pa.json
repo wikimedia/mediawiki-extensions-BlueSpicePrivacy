@@ -5,7 +5,11 @@
 		]
 	},
 	"bs-privacy-deletion-layout-help": "ਤੁਸੀਂ ਆਪਣੇ ਵਰਤੋਂਕਾਰ ਨਾਂ ਦੇ ਸਾਰੇ ਖੁਰਾ-ਖੋਜ ਦੇ ਨਾਲ, ਵਿਕੀ ਤੋਂ ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਮਿਟਾ ਸਕਦੇ ਹੋ",
+	"bs-privacy-admin-request-manager-title": "ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਬੇਨਤੀਆਂ",
 	"bs-privacy-admin-approve-final-prompt": "ਕਿਰਪਾ ਕਰਕੇ ਬੇਨਤੀ ਨੂੰ ਮਨਜ਼ੂਰੀ ਦੇਣ ਦੀ ਤਸਦੀਕ ਕਰੋ",
 	"bs-privacy-admin-request-grid-column-user": "ਵਰਤੋਂਕਾਰ",
-	"bs-privacy-transparency-export-data-button": "ਡਾਟਾ ਬਰਾਮਦ ਕਰੋ"
+	"bs-privacy-transparency-export-data-button": "ਡਾਟਾ ਬਰਾਮਦ ਕਰੋ",
+	"bs-privacy-consent-type-privacy-policy-short": "ਨਿੱਜਤਾ ਨੀਤੀ",
+	"bs-privacy-consent-type-terms-of-service-short": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+	"bs-privacy-module-name-deletion": "ਮਿਟਾਉਣਾ"
 }

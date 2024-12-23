@@ -208,5 +208,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|heeft}} gevraagd om de anonimisering van {{GENDER:$1|zijn|haar|het eigen}} gebruikersaccount, met commentaar: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|heeft}} gevraagd om de verwijdering van {{GENDER:$1|zijn|haar|het eigen}} gebruikersaccount, met commentaar: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Anonimiseringsverzoek",
-	"bs-privacy-event-request-submitted-deletion-desc": "Verwijderingsverzoek"
+	"bs-privacy-event-request-submitted-deletion-desc": "Verwijderingsverzoek",
+	"bs-privacy-consent-type-privacy-policy-short": "Privacybeleid",
+	"bs-privacy-consent-type-terms-of-service-short": "Gebruiksvoorwaarden",
+	"bs-privacy-module-name-anonymization": "Anonimisering",
+	"bs-privacy-module-name-deletion": "Verwijdering"
 }
