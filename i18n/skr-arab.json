@@ -9,5 +9,7 @@
 	"bs-privacy-admin-consent-grid-column-user": "ورتݨ آلا ناں",
 	"bs-privacy-privacypage": "Project:رازداری پالیسی",
 	"bs-privacy-admin-icon-bool-true-aria-label": "پڑتال تھئے",
-	"bs-privacy-admin-icon-bool-false-aria-label": "پڑتال کائنی تھئے"
+	"bs-privacy-admin-icon-bool-false-aria-label": "پڑتال کائنی تھئے",
+	"bs-privacy-consent-type-terms-of-service-short": "خدمت شرطاں",
+	"bs-privacy-module-name-deletion": "مٹاوݨ"
 }
