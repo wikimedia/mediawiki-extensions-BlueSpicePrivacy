@@ -205,5 +205,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|ביקש|ביקשה}} הסרת פרטים אישיים של חשבון המשתמש {{GENDER:$1|שלו|שלה}}, עם הערה: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|ביקש|ביקשה}} מחיקה של חשבון המשתמש {{GENDER:$1|שלו|שלה}}, עם הערה: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "בקשת הסרת פרטים אישיים",
-	"bs-privacy-event-request-submitted-deletion-desc": "בקשת מחיקה"
+	"bs-privacy-event-request-submitted-deletion-desc": "בקשת מחיקה",
+	"bs-privacy-consent-type-privacy-policy-short": "מדיניות פרטיות",
+	"bs-privacy-consent-type-terms-of-service-short": "תנאי שירות",
+	"bs-privacy-module-name-anonymization": "אנונימיזציה",
+	"bs-privacy-module-name-deletion": "מחיקה"
 }
