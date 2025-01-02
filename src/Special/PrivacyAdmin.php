@@ -3,19 +3,40 @@ namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
+use Html;
+use MediaWiki\Config\ConfigFactory;
+use MediaWiki\SpecialPage\SpecialPage;
 
-class PrivacyAdmin extends \BlueSpice\SpecialPage {
+class PrivacyAdmin extends SpecialPage {
 
-	public function __construct() {
+	/**
+	 *
+	 * @var ModuleRegistry
+	 */
+	protected $moduleRegistry;
+
+	/**
+	 *
+	 * @var ConfigFactory
+	 */
+	protected $configFactory;
+
+	/**
+	 * @param ModuleRegistry $moduleRegistry
+	 * @param ConfigFactory $configFactory
+	 */
+	public function __construct( ModuleRegistry $moduleRegistry, ConfigFactory $configFactory ) {
 		parent::__construct( 'PrivacyAdmin', 'bs-privacy-admin' );
+		$this->moduleRegistry = $moduleRegistry;
+		$this->configFactory = $configFactory;
 	}
 
 	/**
 	 *
-	 * @param string $sub
+	 * @param string $subPage
 	 */
-	public function execute( $sub ) {
-		parent::execute( $sub );
+	public function execute( $subPage ) {
+		parent::execute( $subPage );
 
 		$this->setUp();
 		$this->output();
@@ -25,7 +46,7 @@ class PrivacyAdmin extends \BlueSpice\SpecialPage {
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.privacy.styles' );
 		$this->getOutput()->enableOOUI();
 
-		$config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $this->configFactory->makeConfig( 'bsg' );
 		$this->getOutput()->addJsConfigVars(
 			'bsPrivacyRequestDeadline',
 			$config->get( 'PrivacyRequestDeadline' )
@@ -39,45 +60,39 @@ class PrivacyAdmin extends \BlueSpice\SpecialPage {
 	}
 
 	protected function output() {
-		$html = \Html::openElement( 'div', [
+		$html = Html::openElement( 'div', [
 			'class' => 'bs-privacy-admin-container'
 		] );
 
-		$html .= \Html::element( 'div', [
+		$html .= Html::element( 'div', [
 			'id' => 'bs-privacy-admin-requests'
 		] );
 
-		$moduleRegistry = new ModuleRegistry();
-		$modules = $moduleRegistry->getAllKeys();
+		$modules = $this->moduleRegistry->getAllModules();
 
-		foreach ( $modules as $key ) {
-			$moduleClass = $moduleRegistry->getModuleClass( $key );
-			if ( class_exists( $moduleClass ) ) {
-				$module = new $moduleClass( $this->getContext() );
-				$rlModule = $module->getRLModule( Module::MODULE_UI_TYPE_ADMIN );
-				if ( $rlModule === null ) {
-					continue;
-				}
-				$data = [
-					'class' => "bs-privacy-admin-section section-{$module->getModuleName()}",
-					'data-rl-module' => $rlModule
-				];
-				$widgetData = $module->getUIWidget( Module::MODULE_UI_TYPE_ADMIN );
-
-				if ( is_string( $widgetData ) ) {
-					$data['data-callback'] = $widgetData;
-				} elseif ( is_array( $widgetData ) ) {
-					$data['data-callback'] = $widgetData['callback'];
-					if ( isset( $widgetData['data'] ) ) {
-						$data['data-config'] = \FormatJson::encode( $widgetData['data'] );
-					}
-				}
-
-				$html .= \Html::element( 'div', $data );
+		foreach ( $modules as $instance ) {
+			$rlModule = $instance->getRLModule( Module::MODULE_UI_TYPE_ADMIN );
+			if ( $rlModule === null ) {
+				continue;
 			}
+			$data = [
+				'class' => "bs-privacy-admin-section section-{$instance->getModuleName()}",
+				'data-rl-module' => $rlModule
+			];
+			$widgetData = $instance->getUIWidget( Module::MODULE_UI_TYPE_ADMIN );
+			if ( is_string( $widgetData ) ) {
+				$data['data-callback'] = $widgetData;
+			} elseif ( is_array( $widgetData ) ) {
+				$data['data-callback'] = $widgetData['callback'];
+				if ( isset( $widgetData['data'] ) ) {
+					$data['data-config'] = \FormatJson::encode( $widgetData['data'] );
+				}
+			}
+
+			$html .= Html::element( 'div', $data );
 		}
 
-		$html .= \Html::closeElement( 'div' );
+		$html .= Html::closeElement( 'div' );
 
 		$this->getOutput()->addHTML( $html );
 	}

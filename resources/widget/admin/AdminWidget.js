@@ -16,15 +16,12 @@ bs.privacy.widget.AdminWidget = function( cfg ) {
 OO.inheritClass( bs.privacy.widget.AdminWidget, OO.ui.Widget );
 
 bs.privacy.widget.AdminWidget.prototype.init = function() {
-	var helpLabel = new OO.ui.LabelWidget( {
-		label: mw.message( this.subtitle ).text(),
-		classes: [ "bs-privacy-subtitle" ]
-	} );
-
 	this.layout = new OO.ui.FieldsetLayout( {
-		label: mw.message( this.title ).text(),
 		items: [
-			helpLabel
+			new OOJSPlus.ui.widget.HeadingLabel( {
+				label: mw.message( this.title ).text(),
+				subtitle: mw.message( this.subtitle ).text()
+			} )
 		]
 	} );
 

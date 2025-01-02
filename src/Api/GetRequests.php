@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Privacy\Api;
 
-use BlueSpice\Privacy\ModuleRegistry;
+use MediaWiki\MediaWikiServices;
 
 class GetRequests extends \BSApiExtJSStoreBase {
 
@@ -12,11 +12,9 @@ class GetRequests extends \BSApiExtJSStoreBase {
 	 * @return \stdClass[]
 	 */
 	protected function makeData( $query = '' ) {
-		$moduleRegistry = new ModuleRegistry();
+		$moduleRegistry = MediaWikiServices::getInstance()->getService( 'BlueSpicePrivacy.ModuleRegistry' );
 		$data = [];
-		foreach ( $moduleRegistry->getAllModules() as  $key => $moduleConfig ) {
-			$moduleClass = $moduleConfig['class'];
-			$module = new $moduleClass( $this->getContext() );
+		foreach ( $moduleRegistry->getAllModules() as $module ) {
 			if ( $module->isRequestable() ) {
 				$status = $module->call( 'getRequests', [] );
 				if ( $status->isOk() === false ) {
