@@ -6,24 +6,20 @@ use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\Html\CheckLinkField;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
+use Config;
+use MediaWiki\Config\ConfigFactory;
+use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\User\Options\UserOptionsManager;
+use MWStake\MediaWiki\Component\Events\Notifier;
+use Status;
 use User;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class Consent extends Module {
 	/**
-	 * @var \User
+	 * @var UserOptionsManager
 	 */
-	protected $user;
-
-	/**
-	 *
-	 * @var array
-	 */
-	protected $options = [];
-
-	/**
-	 * @var \Config
-	 */
-	protected $config;
+	protected $userOptionsManager;
 
 	/**
 	 * @var ICookieConsentProvider|null
@@ -31,15 +27,23 @@ class Consent extends Module {
 	protected $cookieConsentProvider;
 
 	/**
-	 *
-	 * @param \IContextSource $context
+	 * @var ConfigFactory
 	 */
-	public function __construct( $context ) {
-		parent::__construct( $context );
-		$this->user = $context->getUser();
-		$this->config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
-		$this->options = $this->config->get( 'PrivacyConsentTypes' );
+	protected $configFactory;
 
+	/**
+	 * @var Config
+	 */
+	protected $mainConfig;
+
+	public function __construct(
+		ILoadBalancer $lb, Notifier $notifier, PermissionManager $permissionManager,
+		UserOptionsManager $userOptionsManager, ConfigFactory $configFactory, Config $mainConfig
+	) {
+		parent::__construct( $lb, $notifier, $permissionManager );
+		$this->userOptionsManager = $userOptionsManager;
+		$this->configFactory = $configFactory;
+		$this->mainConfig = $mainConfig;
 		$providerRegistry = new CookieConsentProviderRegistry();
 		$this->cookieConsentProvider = $providerRegistry->getProvider();
 	}
@@ -48,24 +52,24 @@ class Consent extends Module {
 	 *
 	 * @param string $func
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
 	 */
 	public function call( $func, $data ) {
 		if ( !$this->verifyUser() ) {
-			\Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
+			return Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
 		}
 
 		if ( $func === 'getConsent' ) {
 			return $this->getConsent();
 		} elseif ( $func === 'setConsent' ) {
 			if ( !isset( $data['consents'] ) ) {
-				return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "consents" ) );
+				return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "consents" ) );
 			}
 
 			return $this->setConsent( $data['consents'] );
 		}
 
-		return \Status::newFatal( wfMessage( 'bs-privacy-module-no-function', $func ) );
+		return Status::newFatal( wfMessage( 'bs-privacy-module-no-function', $func ) );
 	}
 
 	/**
@@ -78,19 +82,18 @@ class Consent extends Module {
 
 	/**
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function getConsent() {
 		$consents = [];
-		$userOptionLookup = $this->services->getUserOptionsLookup();
-		foreach ( $this->options as $optionName => $userPreference ) {
+		foreach ( $this->getOptions() as $optionName => $userPreference ) {
 			$consents[$optionName] = [
-				'value' => $userOptionLookup->getOption( $this->user, $userPreference ),
+				'value' => $this->userOptionsManager->getOption( $this->user, $userPreference ),
 				'label' => wfMessage( $userPreference )->parse(),
 				'help' => wfMessage( "$userPreference-help" )->parse()
 			];
 		}
-		return \Status::newGood( [
+		return Status::newGood( [
 			'consents' => $consents
 		] );
 	}
@@ -98,17 +101,17 @@ class Consent extends Module {
 	/**
 	 *
 	 * @param array $consents
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function setConsent( $consents ) {
 		$consentsForLog = [];
 
 		foreach ( $consents as $consentName => $value ) {
-			if ( !isset( $this->options[$consentName] ) ) {
+			if ( !isset( $this->getOptions()[$consentName] ) ) {
 				continue;
 			}
 
-			$consentMessage = wfMessage( $this->options[$consentName] )->parse();
+			$consentMessage = wfMessage( $this->getOptions()[$consentName] )->parse();
 			$valueMessage = $value ?
 				wfMessage( 'bs-privacy-consent-bool-true' )->plain() :
 				wfMessage( 'bs-privacy-consent-bool-false' )->plain();
@@ -118,8 +121,7 @@ class Consent extends Module {
 				$valueMessage
 			)->plain();
 
-			$optionManager = $this->services->getUserOptionsManager();
-			$optionManager->setOption( $this->user, $this->options[$consentName], $value );
+			$this->userOptionsManager->setOption( $this->user, $this->getOptions()[$consentName], $value );
 		}
 		$this->user->saveSettings();
 
@@ -127,7 +129,7 @@ class Consent extends Module {
 			'consents' => implode( ', ', $consentsForLog )
 		] );
 
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
@@ -135,7 +137,7 @@ class Consent extends Module {
 	 * @return array
 	 */
 	public function getOptions() {
-		return $this->options;
+		return $this->configFactory->makeConfig( 'bsg' )->get( 'PrivacyConsentTypes' );
 	}
 
 	/**
@@ -144,7 +146,7 @@ class Consent extends Module {
 	 */
 	public function getUserPreferenceDescriptors() {
 		$descriptors = [];
-		foreach ( $this->options as $name => $preferenceName ) {
+		foreach ( $this->getOptions() as $name => $preferenceName ) {
 			$descriptors[$preferenceName] = [
 				'type' => 'toggle',
 				'label-message' => $preferenceName,
@@ -161,8 +163,7 @@ class Consent extends Module {
 	 */
 	public function getAuthFormDescriptors( $type = 'checkbox' ) {
 		$descriptors = [];
-		$userOptionsLookup = $this->services->getUserOptionsLookup();
-		foreach ( $this->options as $name => $preferenceName ) {
+		foreach ( $this->getOptions() as $name => $preferenceName ) {
 			$helpMessageKey = "$preferenceName-help";
 			// Give grep a chance to find the usages:
 			// bs-privacy-prefs-consent-privacy-policy
@@ -174,7 +175,7 @@ class Consent extends Module {
 				'class' => CheckLinkField::class,
 				'label' => wfMessage( $preferenceName ),
 				'help' => wfMessage( $helpMessageKey ),
-				'default' => $userOptionsLookup->getOption( $this->user, $preferenceName ),
+				'default' => $this->userOptionsManager->getOption( $this->user, $preferenceName ),
 				// B/C
 				'help-message' => $helpMessageKey,
 				// validation is implemented elsewhere
@@ -196,11 +197,12 @@ class Consent extends Module {
 		} elseif ( $type === static::MODULE_UI_TYPE_ADMIN ) {
 			return "ext.bs.privacy.module.consent.admin";
 		}
+		return null;
 	}
 
 	/**
 	 * @param string $type
-	 * @return string|array|null
+	 * @return array|null
 	 */
 	public function getUIWidget( $type ) {
 		if ( $type === static::MODULE_UI_TYPE_USER ) {
@@ -211,8 +213,8 @@ class Consent extends Module {
 					"config" => [
 						"cookirMap" => $this->cookieConsentProvider->getGroupMapping(),
 						"cookieName" => $this->cookieConsentProvider->getCookieName(),
-						"cookiePrefix" => $this->config->get( 'CookiePrefix' ),
-						"cookiePath" => $this->config->get( 'CookiePath' ),
+						"cookiePrefix" => $this->mainConfig->get( 'CookiePrefix' ),
+						"cookiePath" => $this->mainConfig->get( 'CookiePath' ),
 					]
 				];
 			}
@@ -224,10 +226,11 @@ class Consent extends Module {
 			return [
 				"callback" => "bs.privacy.widget.ConsentOverview",
 				"data" => [
-					"consentTypes" => $this->config->get( 'PrivacyConsentTypes' )
+					"consentTypes" => $this->configFactory->makeConfig( 'bsg' )->get( 'PrivacyConsentTypes' ),
 				]
 			];
 		}
+		return null;
 	}
 
 	/**
@@ -238,8 +241,7 @@ class Consent extends Module {
 	 */
 	public function hasUserConsented( User $user ) {
 		foreach ( $this->getOptions() as $name => $prefName ) {
-			if ( !$this->services->getUserOptionsLookup()
-				->getBoolOption( $user, $prefName, false ) ) {
+			if ( !$this->userOptionsManager->getBoolOption( $user, $prefName, false ) ) {
 				return false;
 			}
 		}
@@ -253,10 +255,11 @@ class Consent extends Module {
 	 * @return bool
 	 */
 	public function isPrivacyPolicyConsentMandatory() {
-		if ( !$this->config->has( 'PrivacyPrivacyPolicyMandatory' ) ) {
+		$config = $this->configFactory->makeConfig( 'bsg' );
+		if ( !$config->has( 'PrivacyPrivacyPolicyMandatory' ) ) {
 			return false;
 		}
 
-		return $this->config->get( 'PrivacyPrivacyPolicyMandatory' );
+		return $config->get( 'PrivacyPrivacyPolicyMandatory' );
 	}
 }

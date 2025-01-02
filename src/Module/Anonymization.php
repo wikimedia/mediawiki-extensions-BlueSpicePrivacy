@@ -5,8 +5,11 @@ namespace BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\Event\AnonymizationDone;
 use BlueSpice\Privacy\Event\AnonymizationRejected;
 use BlueSpice\Privacy\ModuleRequestable;
+use Exception;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use Status;
+use User;
 
 class Anonymization extends ModuleRequestable {
 
@@ -14,11 +17,12 @@ class Anonymization extends ModuleRequestable {
 	 *
 	 * @param string $func
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
+	 * @throws Exception
 	 */
 	public function call( $func, $data ) {
 		if ( !$this->verifyUser() ) {
-			\Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
+			Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
 		}
 
 		switch ( $func ) {
@@ -26,15 +30,15 @@ class Anonymization extends ModuleRequestable {
 				return $this->getAlternativeUsername();
 			case "checkUsername":
 				if ( !isset( $data['username'] ) ) {
-					return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
+					return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 				}
 				return $this->checkUsername( $data['username'] );
 			case "anonymize":
 				if ( !isset( $data['username'] ) ) {
-					return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
+					return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 				}
 				if ( !isset( $data['oldUsername'] ) ) {
-					return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "oldUsername" ) );
+					return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "oldUsername" ) );
 				}
 				return $this->runAnonymization( $data['oldUsername'], $data['username'] );
 			default:
@@ -44,14 +48,14 @@ class Anonymization extends ModuleRequestable {
 
 	/**
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function getAlternativeUsername() {
 		do {
 			$username = $this->getRandomUsername();
 		} while ( $this->checkUsernameSimple( $username ) === false );
 
-		return \Status::newGood( [
+		return Status::newGood( [
 			'username' => $username
 		] );
 	}
@@ -59,13 +63,13 @@ class Anonymization extends ModuleRequestable {
 	/**
 	 *
 	 * @param string $username
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function checkUsername( $username ) {
 		$services = MediaWikiServices::getInstance();
-		$username = $this->context->getLanguage()->ucfirst( $username );
+		$username = $this->language->ucfirst( $username );
 		$user = $services->getUserFactory()->newFromName( (string)$username );
-		$invalid = !$user instanceof \User;
+		$invalid = !$user instanceof User;
 
 		if ( $services->getUserNameUtils()->isCreatable( $username ) === false ) {
 			$invalid = true;
@@ -76,7 +80,7 @@ class Anonymization extends ModuleRequestable {
 			$exists = $user->getId() > 1;
 		}
 
-		return \Status::newGood( [
+		return Status::newGood( [
 			'invalid' => $invalid ? 1 : 0,
 			'exists' => $exists ? 1 : 0,
 			'username' => $username
@@ -87,17 +91,17 @@ class Anonymization extends ModuleRequestable {
 	 *
 	 * @param string $oldUsername
 	 * @param string $username
-	 * @return \Status
+	 * @return Status
+	 * @throws Exception
 	 */
 	protected function runAnonymization( $oldUsername, $username ) {
-		$username = $this->context->getLanguage()->ucfirst( $username );
+		$username = $this->language->ucfirst( $username );
 		if ( $this->checkUsernameSimple( $username ) === false ) {
-			return \Status::newFatal( wfMessage( 'bs-privacy-anonymization-api-invalid-username' ) );
+			return Status::newFatal( wfMessage( 'bs-privacy-anonymization-api-invalid-username' ) );
 		}
 
-		$executingUser = $this->context->getUser();
-		if ( !$this->isRequestable() && $executingUser->getName() !== $oldUsername ) {
-			return \Status::newFatal( wfMessage( 'bs-privacy-api-username-mismatch' ) );
+		if ( !$this->isRequestable() && $this->user->getName() !== $oldUsername ) {
+			return Status::newFatal( wfMessage( 'bs-privacy-api-username-mismatch' ) );
 		}
 
 		$status = $this->runHandlers( 'anonymize', [
@@ -111,9 +115,9 @@ class Anonymization extends ModuleRequestable {
 				'newUsername' => $username
 			] );
 
-			$user = $this->services->getUserFactory()->newFromName( $username );
+			$user = $this->userFactory->newFromName( $username );
 			if ( $user ) {
-				$event = new AnonymizationDone( $executingUser, $oldUsername, $user );
+				$event = new AnonymizationDone( $this->user, $oldUsername, $user );
 				$this->notify( $event );
 			}
 
@@ -156,11 +160,11 @@ class Anonymization extends ModuleRequestable {
 	/**
 	 *
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function submitRequest( $data ) {
 		if ( !isset( $data['username'] ) || empty( $data['username'] ) ) {
-			return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
+			return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 		}
 		$comment = wfMessage( 'bs-privacy-anonymization-request-comment', $data['username'] )->plain();
 		$data['comment'] = $comment;
@@ -171,16 +175,17 @@ class Anonymization extends ModuleRequestable {
 	/**
 	 *
 	 * @param int $requestId
-	 * @return \Status
+	 * @return Status
+	 * @throws Exception
 	 */
 	protected function approveRequest( $requestId ) {
 		if ( !$this->checkAdminPermissions() ) {
-			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
+			return Status::newFatal( 'bs-privacy-admin-access-denied' );
 		}
 
 		$request = $this->getRequestById( $requestId );
 		if ( !$request ) {
-			return \Status::newFatal( 'bs-privacy-admin-invalid-request' );
+			return Status::newFatal( 'bs-privacy-admin-invalid-request' );
 		}
 
 		$data = unserialize( $request->pr_data );
@@ -203,12 +208,12 @@ class Anonymization extends ModuleRequestable {
 	public function getRequestDeniedNotification( $request, $comment ) {
 		$requestData = unserialize( $request->pr_data );
 
-		$user = $this->services->getUserFactory()->newFromName( $requestData['oldUsername'] );
+		$user = $this->userFactory->newFromName( $requestData['oldUsername'] );
 		if ( !$user ) {
-			$user = $this->services->getUserFactory()->newAnonymous();
+			$user = $this->userFactory->newAnonymous();
 		}
 		return new AnonymizationRejected(
-			$this->context->getUser(),
+			$this->user,
 			$user,
 			$requestData['username'],
 			$comment
@@ -230,14 +235,14 @@ class Anonymization extends ModuleRequestable {
 
 	/**
 	 * @param string $type
-	 * @return string|array|null
+	 * @return array|null
 	 */
 	public function getUIWidget( $type ) {
 		if ( $type === static::MODULE_UI_TYPE_USER ) {
 			return [
 				"callback" => "bs.privacy.widget.Anonymize",
 				"data" => [
-					"userName" => \RequestContext::getMain()->getUser()->getName()
+					"userName" => $this->user->getName()
 				]
 			];
 		}

@@ -2,10 +2,14 @@
 
 namespace BlueSpice\Privacy\Api;
 
+use ApiBase;
 use BlueSpice\Privacy\ModuleRegistry;
+use FormatJson;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Status\Status;
 use Wikimedia\ParamValidator\ParamValidator;
 
-class PrivacyApi extends \ApiBase {
+class PrivacyApi extends ApiBase {
 	/** @var Status */
 	protected $status;
 
@@ -38,19 +42,18 @@ class PrivacyApi extends \ApiBase {
 	/**
 	 * Using the settings determine the value for the given parameter
 	 *
-	 * @param string $paramName Parameter name
-	 * @param array|mixed $paramSettings Default value or an array of settings
-	 *  using PARAM_* constants.
+	 * @param string $name
+	 * @param string $settings
 	 * @param bool $parseLimit Whether to parse and validate 'limit' parameters
 	 * @return mixed Parameter value
 	 */
-	protected function getParameterFromSettings( $paramName, $paramSettings, $parseLimit ) {
-		$value = parent::getParameterFromSettings( $paramName, $paramSettings, $parseLimit );
-		if ( $paramName === 'data' ) {
+	protected function getParameterFromSettings( $name, $settings, $parseLimit ) {
+		$value = parent::getParameterFromSettings( $name, $settings, $parseLimit );
+		if ( $name === 'data' ) {
 			if ( !$value ) {
 				$value = [];
 			} else {
-				$decodedValue = \FormatJson::decode( $value, true );
+				$decodedValue = FormatJson::decode( $value, true );
 				$value = $decodedValue;
 				if ( !is_array( $value ) ) {
 					$value = [ $value ];
@@ -65,17 +68,16 @@ class PrivacyApi extends \ApiBase {
 		$function = $this->getParameter( 'func' );
 		$data = $this->getParameter( 'data' );
 
-		$moduleRegistry = new ModuleRegistry();
-		$moduleClass = $moduleRegistry->getModuleClass( $module );
-		if ( !class_exists( $moduleClass ) ) {
+		/** @var ModuleRegistry $moduleRegistry */
+		$moduleRegistry = MediaWikiServices::getInstance()->getService( 'BlueSpicePrivacy.ModuleRegistry' );
+		$module = $moduleRegistry->getModuleByKey( $module );
+		if ( !$module ) {
 			$this->status = \Status::newFatal(
 				wfMessage( "bs-privacy-api-error-missing-module", $module )
 			);
 			return;
 		}
-
-		$moduleObject = new $moduleClass( $this->getContext() );
-		$this->status = $moduleObject->call( $function, $data );
+		$this->status = $module->call( $function, $data );
 	}
 
 	protected function returnResults() {

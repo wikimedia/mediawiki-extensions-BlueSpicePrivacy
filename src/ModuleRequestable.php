@@ -2,8 +2,18 @@
 
 namespace BlueSpice\Privacy;
 
+use ManualLogEntry;
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Extension\NotifyMe\EventFactory;
+use MediaWiki\Language\Language;
+use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use MWStake\MediaWiki\Component\Events\Notifier;
+use Status;
+use Title;
+use User;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 abstract class ModuleRequestable extends Module {
 	public const TABLE_NAME = 'bs_privacy_request';
@@ -14,28 +24,51 @@ abstract class ModuleRequestable extends Module {
 	public const REQUEST_OPEN = 1;
 	public const REQUEST_CLOSED = 0;
 
-	/** @var \Wikimedia\Rdbms\IDatabase */
-	protected $database;
-	/** @var bool */
-	protected $requestsEnabled;
+	/**
+	 * @var ConfigFactory
+	 */
+	protected $configFactory;
 
 	/**
-	 *
-	 * @param \IContextSource $context
+	 * @var UserFactory
 	 */
-	public function __construct( $context ) {
-		parent::__construct( $context );
+	protected $userFactory;
 
-		$this->database = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
-		$this->requestsEnabled = $this->services->getConfigFactory()
-			->makeConfig( 'bsg' )->get( 'PrivacyEnableRequests' );
+	/**
+	 * @var Language
+	 */
+	protected $language;
+
+	/**
+	 * @var EventFactory
+	 */
+	protected $eventFactory;
+
+	/**
+	 * @param ILoadBalancer $lb
+	 * @param Notifier $notifier
+	 * @param PermissionManager $permissionManager
+	 * @param ConfigFactory $configFactory
+	 * @param UserFactory $userFactory
+	 * @param Language $language
+	 * @param EventFactory $eventFactory
+	 */
+	public function __construct(
+		ILoadBalancer $lb, Notifier $notifier, PermissionManager $permissionManager,
+		ConfigFactory $configFactory, UserFactory $userFactory, Language $language, EventFactory $eventFactory
+	) {
+		parent::__construct( $lb, $notifier, $permissionManager );
+		$this->configFactory = $configFactory;
+		$this->userFactory = $userFactory;
+		$this->language = $language;
+		$this->eventFactory = $eventFactory;
 	}
 
 	/**
 	 *
 	 * @param string $func
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
 	 */
 	public function call( $func, $data ) {
 		switch ( $func ) {
@@ -51,21 +84,21 @@ abstract class ModuleRequestable extends Module {
 				return $this->closeRequest();
 			case "approveRequest":
 				if ( !isset( $data['requestId'] ) ) {
-					return \Status::newFatal(
+					return Status::newFatal(
 						wfMessage( 'bs-privacy-missing-param', "requestId" )
 					);
 				}
 				return $this->approveRequest( $data['requestId'] );
 			case "denyRequest":
 				if ( !isset( $data['requestId'] ) ) {
-					return \Status::newFatal(
+					return Status::newFatal(
 						wfMessage( 'bs-privacy-missing-param', "requestId" )
 					);
 				}
 				$comment = isset( $data['comment'] ) ? $data['comment'] : '';
 				return $this->denyRequest( $data['requestId'], $comment );
 			default:
-				return \Status::newFatal(
+				return Status::newFatal(
 					wfMessage( 'bs-privacy-module-no-function', $func )
 				);
 		}
@@ -79,20 +112,20 @@ abstract class ModuleRequestable extends Module {
 	 * @return bool
 	 */
 	public function isRequestable() {
-		return $this->requestsEnabled;
+		return $this->configFactory->makeConfig( 'bsg' )->get( 'PrivacyEnableRequests' );
 	}
 
 	/**
 	 * Gets status of the request
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function checkStatus() {
-		$row = $this->database->selectRow(
+		$row = $this->lb->getConnection( DB_REPLICA )->selectRow(
 			static::TABLE_NAME,
 			'*',
 			[
-				'pr_user' => $this->context->getUser()->getId(),
+				'pr_user' => $this->user->getId(),
 				'pr_module' => $this->getModuleName(),
 				'pr_open' => static::REQUEST_OPEN
 			]
@@ -106,20 +139,20 @@ abstract class ModuleRequestable extends Module {
 			$statusData['comment'] = $row->pr_admin_comment;
 		}
 
-		return \Status::newGood( $statusData );
+		return Status::newGood( $statusData );
 	}
 
 	/**
 	 * Gets all requests
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function getRequests() {
 		if ( !$this->checkAdminPermissions() ) {
-			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
+			return Status::newFatal( 'bs-privacy-admin-access-denied' );
 		}
 
-		$res = $this->database->select(
+		$res = $this->lb->getConnection( DB_REPLICA )->select(
 			static::TABLE_NAME,
 			'*',
 			[ 'pr_module' => $this->getModuleName() ],
@@ -127,13 +160,12 @@ abstract class ModuleRequestable extends Module {
 		);
 
 		if ( !$res ) {
-			return \Status::newFatal( 'bs-privacy-admin-get-requests-failed' );
+			return Status::newFatal( 'bs-privacy-admin-get-requests-failed' );
 		}
 
 		$requests = [];
-		$userFactory = $this->services->getUserFactory();
 		foreach ( $res as $row ) {
-			$user = $userFactory->newFromId( $row->pr_user );
+			$user = $this->userFactory->newFromId( $row->pr_user );
 
 			// Get how many days ago request was made
 			$ts = wfTimestamp( TS_UNIX, $row->pr_timestamp );
@@ -144,17 +176,17 @@ abstract class ModuleRequestable extends Module {
 			if ( !$daysAgo ) {
 				$tsWithDaysAgo = wfMessage(
 					'bs-privacy-timestamp-with-days-ago-today',
-					$this->context->getLanguage()->userTimeAndDate(
+					$this->language->userTimeAndDate(
 						$row->pr_timestamp,
-						$this->context->getUser()
+						$this->user
 					)
 				)->parse();
 			} else {
 				$tsWithDaysAgo = wfMessage(
 					'bs-privacy-timestamp-with-days-ago',
-					$this->context->getLanguage()->userTimeAndDate(
+					$this->language->userTimeAndDate(
 						$row->pr_timestamp,
-						$this->context->getUser()
+						$this->user
 					),
 					$daysAgo
 				)->parse();
@@ -164,13 +196,14 @@ abstract class ModuleRequestable extends Module {
 				'requestId' => $row->pr_id,
 				'userId' => $user->getId(),
 				'userName' => $user->getName(),
+				'userPageUrl' => $user->getUserPage()->getLocalURL(),
 				'module' => $row->pr_module,
 				'rawTimestamp' => $row->pr_timestamp,
 				'daysAgo' => $daysAgo,
 				'timestampWithDaysAgo' => $tsWithDaysAgo,
-				'timestamp' => $this->context->getLanguage()->userTimeAndDate(
+				'timestamp' => $this->language->userTimeAndDate(
 					$row->pr_timestamp,
-					$this->context->getUser()
+					$this->user
 				),
 				'comment' => $row->pr_comment,
 				'adminComment' => $row->pr_admin_comment,
@@ -180,7 +213,7 @@ abstract class ModuleRequestable extends Module {
 			];
 		}
 
-		return \Status::newGood( $requests );
+		return Status::newGood( $requests );
 	}
 
 	/**
@@ -189,7 +222,7 @@ abstract class ModuleRequestable extends Module {
 	 * @return \stdClass|false
 	 */
 	protected function getRequestById( $id ) {
-		return $this->database->selectRow(
+		return $this->lb->getConnection( DB_REPLICA )->selectRow(
 			static::TABLE_NAME,
 			'*',
 			[ 'pr_id' => $id ]
@@ -200,16 +233,16 @@ abstract class ModuleRequestable extends Module {
 	 * Makes new request
 	 *
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function submitRequest( $data ) {
 		$comment = isset( $data['comment'] ) ? $data['comment'] : '';
 		unset( $data['comment'] );
 
-		$res = $this->database->insert(
+		$res = $this->lb->getConnection( DB_PRIMARY )->insert(
 			static::TABLE_NAME,
 			[
-				'pr_user' => $this->context->getUser()->getId(),
+				'pr_user' => $this->user->getId(),
 				'pr_module' => $this->getModuleName(),
 				'pr_timestamp' => wfTimestamp( TS_MW ),
 				'pr_comment' => $comment,
@@ -223,31 +256,29 @@ abstract class ModuleRequestable extends Module {
 				'comment' => $comment
 			] );
 
-			/** @var EventFactory $eventFactory */
-			$eventFactory = $this->services->getService( 'NotifyMe.EventFactory' );
-			$event = $eventFactory->create( 'bs-privacy-request-submitted', [
-				$this->context->getUser(),
+			$event = $this->eventFactory->create( 'bs-privacy-request-submitted', [
+				$this->user,
 				$comment,
 				$this->getModuleName()
 			] );
 			$this->notify( $event );
 
-			return \Status::newGood();
+			return Status::newGood();
 		}
 
-		return \Status::newFatal( 'bs-privacy-request-submit-failed' );
+		return Status::newFatal( 'bs-privacy-request-submit-failed' );
 	}
 
 	/**
 	 * Cancels existing request
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function cancelRequest() {
-		$res = $this->database->delete(
+		$res = $this->lb->getConnection( DB_PRIMARY )->delete(
 			static::TABLE_NAME,
 			[
-				'pr_user' => $this->context->getUser()->getId(),
+				'pr_user' => $this->user->getId(),
 				'pr_module' => $this->getModuleName(),
 				'pr_open' => static::REQUEST_OPEN
 			],
@@ -256,22 +287,22 @@ abstract class ModuleRequestable extends Module {
 
 		if ( $res ) {
 			$this->logRequestAction( 'cancel' );
-			return \Status::newGood();
+			return Status::newGood();
 		}
 
-		return \Status::newFatal( 'bs-privacy-request-cancel-failed' );
+		return Status::newFatal( 'bs-privacy-request-cancel-failed' );
 	}
 
 	/**
 	 *
 	 * @param int $userId
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function closeRequest( $userId = 0 ) {
-		$userId = $userId > 0 ? $userId : $this->context->getUser()->getId();
-		$user = $this->services->getUserFactory()->newFromId( $userId );
+		$userId = $userId > 0 ? $userId : $this->user->getId();
+		$user = $this->userFactory->newFromId( $userId );
 
-		$res = $this->database->update(
+		$res = $this->lb->getConnection( DB_PRIMARY )->update(
 			static::TABLE_NAME,
 			[ "pr_open" => static::REQUEST_CLOSED ],
 			[
@@ -287,26 +318,26 @@ abstract class ModuleRequestable extends Module {
 			$this->logRequestAction( 'close', [
 				'username' => $user->getName()
 			] );
-			return \Status::newGood();
+			return Status::newGood();
 		}
 
-		return \Status::newFatal( 'bs-privacy-request-close-failed' );
+		return Status::newFatal( 'bs-privacy-request-close-failed' );
 	}
 
 	/**
 	 *
 	 * @param int $requestId
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function approveRequest( $requestId ) {
 		if ( !$this->checkAdminPermissions() ) {
-			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
+			return Status::newFatal( 'bs-privacy-admin-access-denied' );
 		}
 
 		$request = $this->getRequestById( $requestId );
 		$deletedUsername = unserialize( $request->pr_data )['username'];
 
-		$this->database->update(
+		$this->lb->getConnection( DB_PRIMARY )->update(
 			static::TABLE_NAME,
 			[
 				'pr_status' => static::REQUEST_STATUS_APPROVED,
@@ -320,24 +351,24 @@ abstract class ModuleRequestable extends Module {
 			'username' => $deletedUsername
 		] );
 
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
 	 *
 	 * @param int $requestId
 	 * @param string $comment
-	 * @return \Status
+	 * @return Status
 	 */
 	protected function denyRequest( $requestId, $comment ) {
 		if ( !$this->checkAdminPermissions() ) {
-			return \Status::newFatal( 'bs-privacy-admin-access-denied' );
+			return Status::newFatal( 'bs-privacy-admin-access-denied' );
 		}
 
 		$request = $this->getRequestById( $requestId );
-		$subjectUser = $this->services->getUserFactory()->newFromId( $request->pr_user );
+		$subjectUser = $this->userFactory->newFromId( $request->pr_user );
 
-		$this->database->update(
+		$this->lb->getConnection( DB_PRIMARY )->update(
 			static::TABLE_NAME,
 			[
 				'pr_status' => static::REQUEST_STATUS_DENIED,
@@ -355,26 +386,24 @@ abstract class ModuleRequestable extends Module {
 		$notification = $this->getRequestDeniedNotification( $request, $comment );
 		$this->notify( $notification );
 
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
 	 *
 	 * @param string $action
 	 * @param array $params
-	 * @param \User|null $user
+	 * @param User|null $user
 	 */
 	protected function logRequestAction( $action, $params = [], $user = null ) {
-		if ( $user === null ) {
-			$user = $this->context->getUser();
-		}
+		$user = $user ?? $this->user;
 
-		$entry = new \ManualLogEntry(
+		$entry = new ManualLogEntry(
 			'bs-privacy',
 			"request-$action-{$this->getModuleName()}"
 		);
 
-		$title = \Title::newMainPage();
+		$title = Title::newMainPage();
 		$entry->setTarget( $title );
 		$entry->setParameters( $this->buildLogParams( $params ) );
 		$entry->setPerformer( $user );

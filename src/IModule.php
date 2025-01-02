@@ -2,12 +2,9 @@
 
 namespace BlueSpice\Privacy;
 
+use MediaWiki\User\UserIdentity;
+
 interface IModule {
-	/**
-	 * IModule constructor.
-	 * @param \IContextSource $context
-	 */
-	public function __construct( $context );
 
 	/**
 	 * @param string $func
@@ -51,4 +48,10 @@ interface IModule {
 	 * @return string|array|null
 	 */
 	public function getUIWidget( $type );
+
+	/**
+	 * @param UserIdentity $user
+	 * @return void
+	 */
+	public function setUser( UserIdentity $user );
 }
