@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"JSantos"
+			"JSantos",
+			"Joao Xavier"
 		]
 	},
 	"bs-privacy-consent-bool-true": "Yes",
-	"bs-privacy-consent-bool-false": "No"
+	"bs-privacy-consent-bool-false": "No",
+	"bs-privacy-admintool-text": "Privateso"
 }

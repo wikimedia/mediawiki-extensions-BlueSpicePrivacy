@@ -61,5 +61,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затвори",
 	"bs-privacy-admin-icon-bool-true-aria-label": "проверено",
 	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”"
+	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”",
+	"bs-privacy-consent-type-privacy-policy-short": "Политика приватности",
+	"bs-privacy-consent-type-terms-of-service-short": "Услови коришћења"
 }
