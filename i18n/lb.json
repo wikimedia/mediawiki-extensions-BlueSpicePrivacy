@@ -50,5 +50,6 @@
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "All akzeptéieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
-	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren"
+	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
+	"bs-privacy-module-name-anonymization": "Anonymiséierung"
 }

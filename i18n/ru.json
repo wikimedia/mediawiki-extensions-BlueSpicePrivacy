@@ -7,6 +7,7 @@
 			"DDPAT",
 			"Diralik",
 			"Ice bulldog",
+			"Kaganer",
 			"Kareyac",
 			"Movses",
 			"Okras",
@@ -26,7 +27,7 @@
 	"bs-privacy-anonymization-error-retrieving-name": "Произошла ошибка при попытке получить новое имя пользователя",
 	"bs-privacy-anonymization-layout-label": "Анонимизация",
 	"bs-privacy-anonymization-new-username-label": "Новое имя участника",
-	"bs-privacy-anonymization-confirm-button-label": "Анонимизировать мой аккаунт",
+	"bs-privacy-anonymization-confirm-button-label": "Анонимизировать мою учётную запись",
 	"bs-privacy-anonymization-final-prompt": "Ваша учётная запись будет переименована и все ваши вклады будут отображаться под новым именем участника. Это действие нельзя будет обратить",
 	"bs-privacy-api-error-missing-module": "Модуль $1 не зарегистрирован",
 	"bs-privacy-missing-param": "Должен присутствовать параметр \"$1\"!",
@@ -43,7 +44,7 @@
 	"bs-privacy-cancel-request-button": "Отменить запрос",
 	"bs-privacy-request-denied-comment": "Комментарий: $1",
 	"bs-privacy-deletion-button": "Удалить вашу учётную запись",
-	"bs-privacy-admin-request-manager-title": "Запросы, ожидающие рассмотрения",
+	"bs-privacy-admin-request-manager-title": "Запросы от участников",
 	"bs-privacy-admin-invalid-request": "Неверный запрос",
 	"bs-privacy-admin-request-action-failed": "Запросить действие не удалось!",
 	"bs-privacy-admin-deny-comment-placeholder": "Комментарий",
@@ -89,5 +90,8 @@
 	"bs-privacy-module-consent-accepted": "Вы уже приняли все условия",
 	"bs-privacy-module-consent-set-success": "Согласие успешно сохранено",
 	"bs-privacy-module-consent-set-fail": "Не удалось сохранить согласие!",
-	"privacyconsent": "Согласие с Политикой конфиденциальности"
+	"privacyconsent": "Согласие с Политикой конфиденциальности",
+	"bs-privacy-consent-type-terms-of-service-short": "Правила использования",
+	"bs-privacy-module-name-anonymization": "Анонимизация",
+	"bs-privacy-module-name-deletion": "Удаление"
 }

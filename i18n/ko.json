@@ -58,7 +58,7 @@
 	"bs-privacy-delete-error-deleting": "계정 삭제를 시도하는 동안 오류가 발생했습니다.",
 	"bs-privacy-deletion-final-prompt": "계정이 영구적으로 삭제됩니다. 이 동작은 취소할 수 없습니다",
 	"bs-privacy-deletion-button": "계정 지우기",
-	"bs-privacy-admin-request-manager-title": "보류 중인 요청",
+	"bs-privacy-admin-request-manager-title": "사용자의 요청",
 	"bs-privacy-admin-invalid-request": "잘못된 요청",
 	"bs-privacy-admin-request-action-failed": "요청 동작이 실패했습니다!",
 	"bs-privacy-admin-approve-final-prompt": "요청 승인을 확인해 주십시오",
@@ -108,8 +108,8 @@
 	"bs-privacy-consent-get-options-fail": "개인정보처리방침 옵션의 검색을 시도하는 동안 오류가 발생했습니다",
 	"bs-privacy-consent-save-success": "개인정보처리방침의 환경 설정이 저장되었습니다",
 	"bs-privacy-consent-save-fail": "개인정보처리방침 옵션의 저장을 시도하는 동안 오류가 발생했습니다",
-	"bs-privacy-admin-consent-overview-title": "개인정보처리방침 동의 개요",
-	"bs-privacy-admin-consent-overview-help": "모든 사용자의 동의 상태 개요",
+	"bs-privacy-admin-consent-overview-title": "동의 개요",
+	"bs-privacy-admin-consent-overview-help": "이용약관 및 개인정보취급방침에 대한 모든 사용자의 동의 개요",
 	"bs-privacy-admin-consent-grid-column-user": "사용자 이름",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2일}} 전)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (오늘)",
@@ -145,5 +145,10 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "내부 부하 분산에 사용됨",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "캐시 매커니즘의 구성된 값을 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS 프로토콜의 강제 여부에 관한 구성을 저장합니다",
-	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:"
+	"bs-privacy-cookie-consent-cookie-list-label": "이 그룹의 쿠키 목록:",
+	"bs-privacy-admin-request-manager-help": "처리해야 할 보류 중인 사용자 요청 개요",
+	"bs-privacy-consent-type-privacy-policy-short": "개인정보보호정책",
+	"bs-privacy-consent-type-terms-of-service-short": "서비스 약관",
+	"bs-privacy-module-name-anonymization": "익명화",
+	"bs-privacy-module-name-deletion": "삭제"
 }
