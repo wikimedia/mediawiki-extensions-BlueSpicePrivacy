@@ -14,18 +14,19 @@ OO.inheritClass( bs.privacy.widget.ConsentOverview, bs.privacy.widget.AdminWidge
 
 bs.privacy.widget.ConsentOverview.prototype.makeForm = function() {
 
-	var store = new OOJSPlus.ui.data.store.RemoteStore( {
-		action: 'bs-privacy-get-all-consents',
+	var store = new OOJSPlus.ui.data.store.RemoteRestStore( {
+		path: 'bs/privacy/v1/all-consents',
 		pageSize: 25,
 		sorter: {
-			userName: { direction: 'asc' }
+			user_name: { direction: 'asc' }
 		}
 	} );
 	var columns = {
-		userName: {
-			type: 'text',
+		user_name: {
+			type: 'user',
 			headerText: mw.message( 'bs-privacy-admin-consent-grid-column-user' ).text(),
 			filter: { type: 'user' },
+			showImage: true,
 			sortable: true
 		}
 	};

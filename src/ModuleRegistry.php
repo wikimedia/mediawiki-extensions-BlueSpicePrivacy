@@ -2,12 +2,40 @@
 
 namespace BlueSpice\Privacy;
 
-use BlueSpice\ExtensionAttributeBasedRegistry;
+use MediaWiki\User\UserIdentity;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
-class ModuleRegistry extends ExtensionAttributeBasedRegistry {
+class ModuleRegistry {
 
-	public function __construct() {
-		parent::__construct( 'BlueSpicePrivacyModules' );
+	/**
+	 * @var array
+	 */
+	private $modules;
+
+	/**
+	 * @var array|null
+	 */
+	private $instances = null;
+
+	/**
+	 * @var ObjectFactory
+	 */
+	private $objectFactory;
+
+	/**
+	 * @var UserIdentity
+	 */
+	private $activeUser;
+
+	/**
+	 * @param array $modules
+	 * @param ObjectFactory $objectFactory
+	 * @param UserIdentity $activeUser
+	 */
+	public function __construct( array $modules, ObjectFactory $objectFactory, UserIdentity $activeUser ) {
+		$this->modules = $modules;
+		$this->objectFactory = $objectFactory;
+		$this->activeUser = $activeUser;
 	}
 
 	/**
@@ -15,49 +43,43 @@ class ModuleRegistry extends ExtensionAttributeBasedRegistry {
 	 * @return array
 	 */
 	public function getAllModules() {
-		$modules = [];
-		foreach ( $this->getAllKeys() as $key ) {
-			$modules[$key] = $this->getModuleByKey( $key );
-		}
-
-		return $modules;
+		$this->assertLoaded();
+		return $this->instances;
 	}
 
 	/**
-	 *
-	 * @param array $module
-	 * @return string
+	 * @param string $name
+	 * @param IModule $module
+	 * @return void
 	 */
-	public function getModuleClass( $module ) {
-		$module = $this->getModuleByKey( $module );
-		if ( $module ) {
-			return $module['class'];
-		}
-		return '';
+	public function register( string $name, IModule $module ) {
+		$this->assertLoaded();
+		$this->instances[$name] = $module;
+		$this->instances[$name]->setUser( $this->activeUser );
 	}
 
 	/**
 	 *
 	 * @param string $key
-	 * @return bool
+	 * @return IModule|null
 	 */
-	public function getModuleByKey( $key ) {
-		$registry = $this->extensionRegistry->getAttribute( $this->attribName );
-		if ( !isset( $registry[$key] ) ) {
-			return false;
+	public function getModuleByKey( string $key ): ?IModule {
+		$this->assertLoaded();
+		if ( !isset( $this->instances[$key] ) ) {
+			return null;
 		}
+		return $this->instances[$key];
+	}
 
-		$rawModule = $registry[$key];
-
-		$class = $rawModule['class'];
-		if ( is_array( $class ) ) {
-			$class = end( $class );
+	/**
+	 * @return void
+	 */
+	private function assertLoaded() {
+		if ( $this->instances === null ) {
+			foreach ( $this->modules as $name => $module ) {
+				$this->instances[$name] = $this->objectFactory->createObject( $module );
+				$this->instances[$name]->setUser( $this->activeUser );
+			}
 		}
-
-		$module = [
-			'class' => $class
-		];
-
-		return $module;
 	}
 }

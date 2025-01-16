@@ -18,16 +18,13 @@
 	OO.inheritClass( bs.privacy.widget.Privacy, OO.ui.PanelLayout );
 
 	bs.privacy.widget.Privacy.prototype.init = function() {
-		this.helpLabel = new OO.ui.LabelWidget( {
-			label: this.subtitle,
-			classes: [ "bs-privacy-subtitle" ]
-		} );
-
-		this.layout = new OO.ui.FieldsetLayout( {
+		const heading = new OOJSPlus.ui.widget.HeadingLabel( {
 			label: this.title,
-			items: [
-				this.helpLabel
-			]
+			subtitle: this.subtitle
+		} );
+		heading.$element.css( 'margin-bottom', '10px' );
+		this.layout = new OO.ui.FieldsetLayout( {
+			items: [ heading ]
 		} );
 
 		this.makeForm();

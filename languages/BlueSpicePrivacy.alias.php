@@ -5,8 +5,8 @@ $specialPageAliases = [];
 /** English (English) */
 $specialPageAliases['en'] = [
 	'PrivacyCenter' => [ 'Privacy Center' ],
-	'PrivacyAdmin' => [ 'Privacy Admin' ],
-	'PrivacyConsent' => [ 'PrivacyConsent' ],
+	'PrivacyAdmin' => [ 'Privacy Administration', 'Privacy Admin' ],
+	'PrivacyConsent' => [ 'Privacy Consent' ],
 	'PrivacyPages' => [ 'Privacy Pages' ],
 ];
 

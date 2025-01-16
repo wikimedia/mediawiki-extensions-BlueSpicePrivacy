@@ -2,32 +2,56 @@
 namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
+use BlueSpice\Privacy\ModuleRegistry;
+use FormSpecialPage;
+use MediaWiki\Permissions\PermissionStatus;
+use OOUI\MessageWidget;
 use Title;
 
-class PrivacyConsent extends \FormSpecialPage {
+class PrivacyConsent extends FormSpecialPage {
+
 	/** @var Module\Consent */
 	private $module;
 
-	public function __construct() {
+	/** @var ModuleRegistry */
+	private $moduleRegistry;
+
+	/**
+	 * @param ModuleRegistry $moduleRegistry
+	 */
+	public function __construct( ModuleRegistry $moduleRegistry ) {
 		parent::__construct( 'PrivacyConsent', '', false );
-		$this->module = new Module\Consent( $this->getContext() );
+		$this->moduleRegistry = $moduleRegistry;
 	}
 
 	/**
 	 *
-	 * @param string $sub
+	 * @param string $par
 	 */
-	public function execute( $sub ) {
+	public function execute( $par ) {
 		$this->setHeaders();
+		$this->getOutput()->enableOOUI();
+
+		$this->module = $this->moduleRegistry->getModuleByKey( 'consent' );
+		if ( !$this->module ) {
+			$this->getOutput()->addHTML( new MessageWidget( [
+				'type' => 'error',
+				'label' => $this->msg( 'bs-privacy-api-error-missing-module', 'consent' )->parse()
+			] ) );
+			return;
+		}
 
 		if ( !$this->getUser()->isRegistered() ) {
-			$this->getOutput()->showPermissionsErrorPage( [
-				'apierror-mustbeloggedin-generic'
-			] );
+			$this->getOutput()->showPermissionStatus(
+				PermissionStatus::newFatal( 'apierror-mustbeloggedin-generic' )
+			);
 			return;
 		}
 		if ( $this->module->hasUserConsented( $this->getUser() ) ) {
-			$this->getOutput()->addWikiMsg( 'bs-privacy-module-consent-accepted' );
+			$this->getOutput()->addHTML( new MessageWidget( [
+				'type' => 'info',
+				'label' => $this->msg( 'bs-privacy-module-consent-accepted' )->parse()
+			] ) );
 			return;
 		}
 
@@ -75,10 +99,19 @@ class PrivacyConsent extends \FormSpecialPage {
 				$this->getOutput()->redirect( $redirTitle->getFullURL() );
 				return;
 			}
-			// Sanity - but should never get here
-			$this->getOutput()->addWikiMsg( 'bs-privacy-module-consent-set-success' );
+			$this->getOutput()->addHTML(
+				new MessageWidget( [
+					'type' => 'success',
+					'label' => $this->msg( 'bs-privacy-module-consent-set-success' )->parse()
+				] )
+			);
 		} else {
-			$this->getOutput()->addWikiMsg( 'bs-privacy-module-consent-set-fail' );
+			$this->getOutput()->addHTML(
+				new MessageWidget( [
+					'type' => 'error',
+					'label' => $this->msg( 'bs-privacy-module-consent-set-fail' )->parse()
+				] )
+			);
 		}
 	}
 }

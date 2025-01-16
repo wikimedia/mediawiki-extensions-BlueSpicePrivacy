@@ -3,29 +3,54 @@
 namespace BlueSpice\Privacy;
 
 use Exception;
-use MediaWiki\MediaWikiServices;
-use MWStake\MediaWiki\Component\Events\NotificationEvent;
+use ManualLogEntry;
+use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\User\UserIdentity;
+use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use MWStake\MediaWiki\Component\Events\Notifier;
+use Status;
+use Title;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 abstract class Module implements IModule {
 	public const MODULE_UI_TYPE_ADMIN = 'admin';
 	public const MODULE_UI_TYPE_USER = 'user';
 
-	/**
-	 * @var \IContextSource
-	 */
-	protected $context;
-
-	/** @var MediaWikiServices */
-	protected $services = null;
+	/** @var ILoadBalancer */
+	protected ILoadBalancer $lb;
 
 	/**
-	 *
-	 * @param \IContextSource $context
+	 * @var UserIdentity
 	 */
-	public function __construct( $context ) {
-		$this->context = $context;
-		$this->services = MediaWikiServices::getInstance();
+	protected UserIdentity $user;
+
+	/**
+	 * @var Notifier
+	 */
+	protected Notifier $notifier;
+
+	/**
+	 * @var PermissionManager
+	 */
+	protected PermissionManager $permissionManager;
+
+	/**
+	 * @param ILoadBalancer $lb
+	 * @param Notifier $notifier
+	 * @param PermissionManager $permissionManager
+	 */
+	public function __construct( ILoadBalancer $lb, Notifier $notifier, PermissionManager $permissionManager ) {
+		$this->lb = $lb;
+		$this->notifier = $notifier;
+		$this->permissionManager = $permissionManager;
+	}
+
+	/**
+	 * @param UserIdentity $user
+	 * @return void
+	 */
+	public function setUser( UserIdentity $user ) {
+		$this->user = $user;
 	}
 
 	/**
@@ -34,11 +59,11 @@ abstract class Module implements IModule {
 	 * @param string $action
 	 * @param array $data
 	 *
-	 * @return \Status
+	 * @return Status
 	 */
 	public function runHandlers( $action, $data ) {
-		$status = \Status::newGood();
-		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$status = Status::newGood();
+		$dbw = $this->lb->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		foreach ( $this->getHandlers() as $handler ) {
@@ -46,13 +71,13 @@ abstract class Module implements IModule {
 				$handlerObject = new $handler( $dbw );
 				$result = call_user_func_array( [ $handlerObject, $action ], $data );
 
-				if ( $result instanceof \Status && $result->isOk() === false ) {
+				if ( $result instanceof Status && $result->isOk() === false ) {
 					$status = $result;
 					break;
 				}
 				if ( $result === false ) {
 					// An error occurred
-					$status = \Status::newFatal( wfMessage( 'bs-privacy-handler-error', $handler ) );
+					$status = Status::newFatal( wfMessage( 'bs-privacy-handler-error', $handler ) );
 					break;
 				}
 			}
@@ -85,7 +110,7 @@ abstract class Module implements IModule {
 	 * @return bool
 	 */
 	protected function verifyUser() {
-		return $this->context->getUser()->getId() > 0;
+		return $this->user->isRegistered();
 	}
 
 	/**
@@ -93,8 +118,8 @@ abstract class Module implements IModule {
 	 * @return bool
 	 */
 	protected function checkAdminPermissions() {
-		return $this->services->getPermissionManager()->userHasRight(
-			$this->context->getUser(),
+		return $this->permissionManager->userHasRight(
+			$this->user,
 			'bs-privacy-admin'
 		);
 	}
@@ -104,19 +129,19 @@ abstract class Module implements IModule {
 	 * @param array $params
 	 */
 	protected function logAction( $params = [] ) {
-		$entry = new \ManualLogEntry( 'bs-privacy', $this->getModuleName() );
+		$entry = new ManualLogEntry( 'bs-privacy', $this->getModuleName() );
 
-		$title = \Title::newMainPage();
+		$title = Title::newMainPage();
 		$entry->setTarget( $title );
 		$entry->setParameters( $this->buildLogParams( $params ) );
-		$entry->setPerformer( $this->context->getUser() );
+		$entry->setPerformer( $this->user );
 		$entry->insert();
 	}
 
 	/**
 	 *
 	 * @param array $params
-	 * @return arraY
+	 * @return array
 	 */
 	protected function buildLogParams( $params ) {
 		$logParams = [];
@@ -130,17 +155,11 @@ abstract class Module implements IModule {
 
 	/**
 	 *
-	 * @param NotificationEvent $event
+	 * @param INotificationEvent $event
 	 * @throws Exception
 	 */
-	protected function notify( $event ) {
-		if ( !( $event instanceof NotificationEvent ) ) {
-			// B/C
-			return;
-		}
-		/** @var Notifier $notifier */
-		$notifier = $this->services->getService( 'MWStake.Notifier' );
-		$notifier->emit( $event );
+	protected function notify( INotificationEvent $event ) {
+		$this->notifier->emit( $event );
 	}
 
 	/**

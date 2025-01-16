@@ -19,7 +19,6 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function() {
 
 	this.store = new OOJSPlus.ui.data.store.RemoteStore( {
 		action: 'bs-privacy-get-requests',
-		pageSize: 25,
 		sorter: {
 			daysAgo: { direction: 'desc' }
 		},
@@ -40,6 +39,8 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function() {
 	var grid = new OOJSPlus.ui.data.GridWidget( {
 		columns: {
 			userName: {
+				type: 'user',
+				showImage: true,
 				headerText: mw.message( 'bs-privacy-admin-request-grid-column-user' ).text(),
 				filter: { type: 'user' },
 				sortable: true
