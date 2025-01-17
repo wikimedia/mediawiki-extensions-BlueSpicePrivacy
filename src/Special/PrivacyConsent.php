@@ -5,8 +5,8 @@ use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
 use FormSpecialPage;
 use MediaWiki\Permissions\PermissionStatus;
+use MediaWiki\Title\Title;
 use OOUI\MessageWidget;
-use Title;
 
 class PrivacyConsent extends FormSpecialPage {
 

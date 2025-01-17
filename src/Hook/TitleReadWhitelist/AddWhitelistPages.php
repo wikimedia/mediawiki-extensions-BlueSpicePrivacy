@@ -3,7 +3,7 @@
 namespace BlueSpice\Privacy\Hook\TitleReadWhitelist;
 
 use BlueSpice\Hook\TitleReadWhitelist;
-use Title;
+use MediaWiki\Title\Title;
 
 class AddWhitelistPages extends TitleReadWhitelist {
 
