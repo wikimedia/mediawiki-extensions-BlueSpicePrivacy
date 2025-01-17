@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use MediaWiki\Title\Title;
 use RequestContext;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -109,7 +110,7 @@ class Delete extends Anonymize implements IPrivacyHandler {
 
 	protected function removeUserPage() {
 		$userpage = $this->userToDelete->getUserPage();
-		if ( $userpage instanceof \Title && $userpage->exists() ) {
+		if ( $userpage instanceof Title && $userpage->exists() ) {
 			$wikiPage = $this->services->getWikiPageFactory()->newFromTitle( $userpage );
 			$deletePage = $this->services->getDeletePageFactory()
 				->newDeletePage( $wikiPage, RequestContext::getMain()->getUser() );
