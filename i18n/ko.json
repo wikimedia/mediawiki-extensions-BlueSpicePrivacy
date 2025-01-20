@@ -110,7 +110,7 @@
 	"bs-privacy-consent-save-fail": "개인정보처리방침 옵션의 저장을 시도하는 동안 오류가 발생했습니다",
 	"bs-privacy-admin-consent-overview-title": "동의 개요",
 	"bs-privacy-admin-consent-overview-help": "이용약관 및 개인정보취급방침에 대한 모든 사용자의 동의 개요",
-	"bs-privacy-admin-consent-grid-column-user": "사용자 이름",
+	"bs-privacy-admin-consent-grid-column-user": "사용자",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2일}} 전)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (오늘)",
 	"bs-privacy-consent-bool-true": "예",
