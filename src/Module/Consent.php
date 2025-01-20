@@ -10,9 +10,9 @@ use Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\Options\UserOptionsManager;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\Events\Notifier;
 use Status;
-use User;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Consent extends Module {

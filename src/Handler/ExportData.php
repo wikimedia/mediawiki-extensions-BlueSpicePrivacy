@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Handler;
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
 
 class ExportData implements IPrivacyHandler {
@@ -14,7 +15,7 @@ class ExportData implements IPrivacyHandler {
 	protected $data = [];
 
 	/**
-	 * @var \User
+	 * @var User
 	 */
 	protected $user;
 
@@ -53,11 +54,11 @@ class ExportData implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \User $userToDelete
-	 * @param \User $deletedUser
+	 * @param User $userToDelete
+	 * @param User $deletedUser
 	 * @return \Status
 	 */
-	public function delete( \User $userToDelete, \User $deletedUser ) {
+	public function delete( User $userToDelete, User $deletedUser ) {
 		return \Status::newGood();
 	}
 
@@ -65,10 +66,10 @@ class ExportData implements IPrivacyHandler {
 	 *
 	 * @param array $types
 	 * @param string $format
-	 * @param \User $user
+	 * @param User $user
 	 * @return \Status
 	 */
-	public function exportData( array $types, $format, \User $user ) {
+	public function exportData( array $types, $format, User $user ) {
 		$this->user = $user;
 		$this->format = $format;
 
