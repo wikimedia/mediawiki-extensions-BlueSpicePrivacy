@@ -8,6 +8,7 @@ use FormatJson;
 use Html;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\User\User;
 
 class PrivacyCenter extends SpecialPage {
 
@@ -35,10 +36,10 @@ class PrivacyCenter extends SpecialPage {
 
 	/**
 	 *
-	 * @param \User $user
+	 * @param User $user
 	 * @return bool
 	 */
-	public function userCanExecute( \User $user ) {
+	public function userCanExecute( User $user ) {
 		return $user->isRegistered();
 	}
 

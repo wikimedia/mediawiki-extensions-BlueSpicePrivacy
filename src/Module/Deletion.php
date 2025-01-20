@@ -15,13 +15,13 @@ use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Extension\NotifyMe\EventFactory;
 use MediaWiki\Language\Language;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use Message;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
 use MWStake\MediaWiki\Component\Events\Notifier;
 use Status;
 use Throwable;
-use User;
 use UserMailer;
 use Wikimedia\Rdbms\ILoadBalancer;
 

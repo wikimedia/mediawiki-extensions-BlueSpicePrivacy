@@ -4,12 +4,13 @@ namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use RequestContext;
 use Wikimedia\Rdbms\IDatabase;
 
 class Delete extends Anonymize implements IPrivacyHandler {
 	/**
-	 * @var \User
+	 * @var User
 	 */
 	protected $userToDelete;
 
@@ -17,7 +18,7 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	 * User that all data from the user we are deleting
 	 * will be moved to
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $groupingDeletedUser;
 
@@ -75,11 +76,11 @@ class Delete extends Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \User $userToDelete
-	 * @param \User $deletedUser
+	 * @param User $userToDelete
+	 * @param User $deletedUser
 	 * @return \Status
 	 */
-	public function delete( \User $userToDelete, \User $deletedUser ) {
+	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->userToDelete = $userToDelete;
 		$this->groupingDeletedUser = $deletedUser;
 		// First anonymize to deleted user
@@ -101,10 +102,10 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	 *
 	 * @param array $types
 	 * @param string $format
-	 * @param \User $user
+	 * @param User $user
 	 * @return \Status
 	 */
-	public function exportData( array $types, $format, \User $user ) {
+	public function exportData( array $types, $format, User $user ) {
 		return \Status::newGood( [] );
 	}
 

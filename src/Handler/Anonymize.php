@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Handler;
 use BlueSpice\Privacy\IPrivacyHandler;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use RequestContext;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -29,7 +30,7 @@ class Anonymize implements IPrivacyHandler {
 	protected $skipUserTable = false;
 
 	/**
-	 * @var \User
+	 * @var User
 	 */
 	protected $oldUser;
 
@@ -181,11 +182,11 @@ class Anonymize implements IPrivacyHandler {
 
 	/**
 	 *
-	 * @param \User $userToDelete
-	 * @param \User $deletedUser
+	 * @param User $userToDelete
+	 * @param User $deletedUser
 	 * @return \Status
 	 */
-	public function delete( \User $userToDelete, \User $deletedUser ) {
+	public function delete( User $userToDelete, User $deletedUser ) {
 		// Handled in another handler
 		return \Status::newGood();
 	}
@@ -194,10 +195,10 @@ class Anonymize implements IPrivacyHandler {
 	 *
 	 * @param array $types
 	 * @param string $format
-	 * @param \User $user
+	 * @param User $user
 	 * @return \Status
 	 */
-	public function exportData( array $types, $format, \User $user ) {
+	public function exportData( array $types, $format, User $user ) {
 		// Handled in another handler
 		return \Status::newGood( [] );
 	}

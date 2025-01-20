@@ -8,11 +8,11 @@ use MediaWiki\Extension\NotifyMe\EventFactory;
 use MediaWiki\Language\Language;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
 use MWStake\MediaWiki\Component\Events\Notifier;
 use Status;
-use User;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 abstract class ModuleRequestable extends Module {
