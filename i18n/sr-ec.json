@@ -47,7 +47,7 @@
 	"bs-privacy-prefs-privacypolicymandatory-label": "Омогући обавезну политику приватности и услова коришћења",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”",
 	"bs-privacy-consent-save-button": "Сачувај",
-	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
+	"bs-privacy-admin-consent-grid-column-user": "Корисник",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (данас)",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Не",

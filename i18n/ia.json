@@ -127,7 +127,7 @@
 	"bs-privacy-consent-save-fail": "Un error ha occurrite durante le tentative de salveguardar tu optiones de politica de confidentialitate",
 	"bs-privacy-admin-consent-overview-title": "Vista general de acceptation",
 	"bs-privacy-admin-consent-overview-help": "Vista general del acceptation de tote le usatores del Conditiones de servicio e del Politica de confidentialitate",
-	"bs-privacy-admin-consent-grid-column-user": "Nomine de usator",
+	"bs-privacy-admin-consent-grid-column-user": "Usator",
 	"bs-privacy-timestamp-with-days-ago": "$1 ($2 die{{PLURAL:$2||s}} retro)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hodie)",
 	"log-name-bs-privacy": "Confidentialitate BS",
