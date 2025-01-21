@@ -7,13 +7,13 @@
 	"descriptionmsg": "bs-privacy-desc",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePrivacy",
 	"type": "bluespice",
-	"version": "4.2.0-alpha",
+	"version": "5.0.0",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3",
+			"BlueSpiceFoundation": ">= 5.0.0",
 			"OOJSPlus": ">= 3.0.0",
-			"NotifyMe": ">= 1.0.0"
+			"NotifyMe": ">= 2.0.0"
 		}
 	},
 	"AuthManagerAutoConfig": {
