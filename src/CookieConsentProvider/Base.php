@@ -8,7 +8,7 @@ use ConfigException;
 use Exception;
 use HashConfig;
 use MediaWiki\MediaWikiServices;
-use WebRequest;
+use MediaWiki\Request\WebRequest;
 
 abstract class Base implements ICookieConsentProvider {
 	/**
