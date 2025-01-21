@@ -4,8 +4,8 @@ namespace BlueSpice\Privacy;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Privacy\CookieConsentProvider\Base as CookieConsentBase;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 
 class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 	/** @var ICookieConsentProvider|null */

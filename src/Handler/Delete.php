@@ -3,9 +3,9 @@
 namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use RequestContext;
 use Wikimedia\Rdbms\IDatabase;
 
 class Delete extends Anonymize implements IPrivacyHandler {
