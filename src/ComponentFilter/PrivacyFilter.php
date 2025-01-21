@@ -3,9 +3,9 @@
 namespace BlueSpice\Privacy\ComponentFilter;
 
 use IContextSource;
+use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponentFilter;
-use TitleFactory;
 
 class PrivacyFilter implements IComponentFilter {
 

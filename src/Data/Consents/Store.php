@@ -5,9 +5,9 @@ namespace BlueSpice\Privacy\Data\Consents;
 use BlueSpice\Privacy\ModuleRegistry;
 use GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\UserFactory;
-use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\Store {

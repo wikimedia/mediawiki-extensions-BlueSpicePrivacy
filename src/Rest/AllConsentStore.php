@@ -7,6 +7,7 @@ use BlueSpice\Privacy\ModuleRegistry;
 use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserOptionsLookup;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Rest\UserQueryStore;
@@ -22,14 +23,14 @@ class AllConsentStore extends UserQueryStore {
 	 * @param ILoadBalancer $lb
 	 * @param UserFactory $userFactory
 	 * @param LinkRenderer $linkRenderer
-	 * @param \TitleFactory $titleFactory
+	 * @param TitleFactory $titleFactory
 	 * @param GlobalVarConfig $mwsgConfig
 	 * @param ModuleRegistry $moduleRegistry
 	 * @param UserOptionsLookup $userOptionsLookup
 	 */
 	public function __construct(
 		HookContainer $hookContainer, ILoadBalancer $lb, UserFactory $userFactory,
-		LinkRenderer $linkRenderer, \TitleFactory $titleFactory,
+		LinkRenderer $linkRenderer, TitleFactory $titleFactory,
 		GlobalVarConfig $mwsgConfig, ModuleRegistry $moduleRegistry, UserOptionsLookup $userOptionsLookup
 	) {
 		parent::__construct( $hookContainer, $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig );

@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\Data\Consents;
 use BlueSpice\Privacy\ModuleRegistry;
 use GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserOptionsLookup;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -25,13 +26,13 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	 * @param ILoadBalancer $lb
 	 * @param UserFactory $userFactory
 	 * @param LinkRenderer $linkRenderer
-	 * @param \TitleFactory $titleFactory
+	 * @param TitleFactory $titleFactory
 	 * @param GlobalVarConfig $mwsgConfig
 	 * @param UserOptionsLookup $userOptionsLookup
 	 * @param ModuleRegistry $moduleRegistry
 	 */
 	public function __construct(
-		ILoadBalancer $lb, UserFactory $userFactory, LinkRenderer $linkRenderer, \TitleFactory $titleFactory,
+		ILoadBalancer $lb, UserFactory $userFactory, LinkRenderer $linkRenderer, TitleFactory $titleFactory,
 		GlobalVarConfig $mwsgConfig, UserOptionsLookup $userOptionsLookup, ModuleRegistry $moduleRegistry
 	) {
 		parent::__construct( $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig );
