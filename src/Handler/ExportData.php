@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy\Handler;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
@@ -40,7 +41,7 @@ class ExportData implements IPrivacyHandler {
 	 */
 	public function __construct( IDatabase $db ) {
 		$this->db = $db;
-		$this->context = \RequestContext::getMain();
+		$this->context = RequestContext::getMain();
 	}
 
 	/**

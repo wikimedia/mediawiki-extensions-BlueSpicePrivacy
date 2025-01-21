@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Privacy\ModuleRegistry;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 
 return [
