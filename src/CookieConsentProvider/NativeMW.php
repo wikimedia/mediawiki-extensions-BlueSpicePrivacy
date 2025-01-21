@@ -8,9 +8,9 @@ use Exception;
 use ExtensionRegistry;
 use FormatJson;
 use HashConfig;
+use MediaWiki\Request\WebRequest;
 use Message;
 use RawMessage;
-use WebRequest;
 
 class NativeMW extends Base {
 	/**
