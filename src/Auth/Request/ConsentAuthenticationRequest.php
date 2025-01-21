@@ -4,7 +4,8 @@ namespace BlueSpice\Privacy\Auth\Request;
 
 use BlueSpice\Privacy\Module\Consent;
 use MediaWiki\Auth\UserDataAuthenticationRequest;
-use RequestContext;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\MediaWikiServices;
 
 class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	/** @var Consent|null */
@@ -15,7 +16,7 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	 * @return array
 	 */
 	public function getFieldInfo() {
-		$module = new Consent( RequestContext::getMain() );
+		$module = $this->getConsent();
 		return $module->getAuthFormDescriptors();
 	}
 
@@ -32,7 +33,7 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	 * @return bool
 	 */
 	public function loadFromSubmission( array $data ) {
-		$module = new Consent( RequestContext::getMain() );
+		$module = $this->getConsent();
 		foreach ( array_keys( $module->getOptions() ) as $name ) {
 			if ( isset( $data[$name] ) ) {
 				$this->$name = $data[$name];
@@ -40,5 +41,24 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 		}
 
 		return true;
+	}
+
+	/**
+	 *
+	 * @return Consent
+	 */
+	private function getConsent(): Consent {
+		$services = MediaWikiServices::getInstance();
+		$lb = $services->getDBLoadBalancer();
+		$notifier = $services->get( 'MWStake.Notifier' );
+		$permissionManager = $services->getPermissionManager();
+		$userOptionsManager = $services->getUserOptionsManager();
+		$configFactory = $services->getConfigFactory();
+		$config = $services->getMainConfig();
+		$consent = new Consent( $lb, $notifier, $permissionManager,
+			$userOptionsManager, $configFactory, $config );
+		$user = RequestContext::getMain()->getUser();
+		$consent->setUser( $user );
+		return $consent;
 	}
 }

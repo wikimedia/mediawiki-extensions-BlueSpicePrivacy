@@ -6,7 +6,7 @@ use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\Html\CheckLinkField;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use BlueSpice\Privacy\Module;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\Options\UserOptionsManager;
