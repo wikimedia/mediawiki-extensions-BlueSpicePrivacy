@@ -91,7 +91,7 @@
 	"bs-privacy-consent-save-fail": "Si è verificato un errore durante il tentativo di salvare le opzioni dell'informativa sulla privacy",
 	"bs-privacy-admin-consent-overview-title": "Panoramica del consenso",
 	"bs-privacy-admin-consent-overview-help": "Panoramica del consenso di tutti gli utenti in merito ai Termini di servizio e all'Informativa sulla privacy",
-	"bs-privacy-admin-consent-grid-column-user": "Nome utente",
+	"bs-privacy-admin-consent-grid-column-user": "Utente",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 giorno|$2 giorni}} fa)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (oggi)",
 	"bs-privacy-consent-bool-true": "Sì",
