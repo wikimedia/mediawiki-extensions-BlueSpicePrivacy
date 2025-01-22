@@ -144,7 +144,7 @@
 	"bs-privacy-consent-save-fail": "Une erreur s’est produite en essayant d’enregistrer vos options de politique de confidentialité",
 	"bs-privacy-admin-consent-overview-title": "Aperçu du consentement",
 	"bs-privacy-admin-consent-overview-help": "Aperçu du consentement de tous les utilisateurs concernant les conditions d'utilisation et la politique de confidentialité",
-	"bs-privacy-admin-consent-grid-column-user": "Nom d’utilisateur",
+	"bs-privacy-admin-consent-grid-column-user": "Utilisateur",
 	"bs-privacy-timestamp-with-days-ago": "$1 (il y a $2 jour{{PLURAL:$2||s}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (aujourd’hui)",
 	"log-name-bs-privacy": "Confidentialité BS",
