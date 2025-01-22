@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Privacy;
 
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
 use SpecialPage;
 

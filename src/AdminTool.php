@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy;
 
 use BlueSpice\IAdminTool;
+use MediaWiki\Message\Message;
 
 class AdminTool implements IAdminTool {
 
@@ -16,14 +17,14 @@ class AdminTool implements IAdminTool {
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getDescription() {
 		return wfMessage( 'bs-privacy-desc' );
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getName() {
 		return wfMessage( 'bs-privacy-admintool-label' );

@@ -3,11 +3,11 @@
 namespace BlueSpice\Privacy\Event;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Permissions\GroupPermissionsLookup;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
-use Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\EventLink;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
