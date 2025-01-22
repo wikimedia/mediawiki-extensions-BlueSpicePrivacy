@@ -4,9 +4,9 @@ namespace BlueSpice\Privacy\AlertProvider;
 
 use Config;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserGroupManager;
-use Message;
 use MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
 use Skin;

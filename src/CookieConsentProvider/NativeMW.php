@@ -8,8 +8,8 @@ use Exception;
 use ExtensionRegistry;
 use FormatJson;
 use HashConfig;
+use MediaWiki\Message\Message;
 use MediaWiki\Request\WebRequest;
-use Message;
 use RawMessage;
 
 class NativeMW extends Base {
