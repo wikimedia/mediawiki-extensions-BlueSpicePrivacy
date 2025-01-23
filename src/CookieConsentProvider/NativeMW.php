@@ -3,11 +3,11 @@
 namespace BlueSpice\Privacy\CookieConsentProvider;
 
 use BlueSpice\Privacy\ICookieConsentProvider;
-use Config;
 use Exception;
 use ExtensionRegistry;
 use FormatJson;
 use HashConfig;
+use MediaWiki\Config\Config;
 use MediaWiki\Message\Message;
 use MediaWiki\Request\WebRequest;
 use RawMessage;

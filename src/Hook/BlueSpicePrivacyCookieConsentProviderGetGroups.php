@@ -4,8 +4,8 @@ namespace BlueSpice\Privacy\Hook;
 
 use BlueSpice\Hook;
 use BlueSpice\Privacy\CookieConsentProvider\Base as CookieConsentProvider;
-use Config;
 use IContextSource;
+use MediaWiki\Config\Config;
 
 abstract class BlueSpicePrivacyCookieConsentProviderGetGroups extends Hook {
 	/** @var CookieConsentProvider */

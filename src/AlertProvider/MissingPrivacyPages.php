@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Privacy\AlertProvider;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
