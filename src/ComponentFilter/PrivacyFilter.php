@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Privacy\ComponentFilter;
 
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponentFilter;
