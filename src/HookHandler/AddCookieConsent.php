@@ -4,8 +4,8 @@ namespace BlueSpice\Privacy\HookHandler;
 
 use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\ICookieConsentProvider;
-use Config;
 use ConfigFactory;
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\BeforePageDisplayHook;
 
 class AddCookieConsent implements BeforePageDisplayHook {
