@@ -142,7 +142,7 @@
 	"bs-privacy-consent-save-fail": "尝试保存您的隐私政策设置时发生错误。",
 	"bs-privacy-admin-consent-overview-title": "隐私政策许可预览",
 	"bs-privacy-admin-consent-overview-help": "预览所有用户的许可状态",
-	"bs-privacy-admin-consent-grid-column-user": "用户名",
+	"bs-privacy-admin-consent-grid-column-user": "用户",
 	"bs-privacy-timestamp-with-days-ago": "$1（{{PLURAL:$2|$2天|$2天}}前）",
 	"bs-privacy-timestamp-with-days-ago-today": "$1（今天）",
 	"log-name-bs-privacy": "BlueSpice隐私",
