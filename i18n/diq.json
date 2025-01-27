@@ -32,7 +32,7 @@
 	"bs-privacy-transparency-private-edit-count": "Amarê vurnayışan: $1",
 	"bs-privacy-transparency-type-title-personal": "Hacetê şexsiyi",
 	"bs-privacy-consent-save-button": "Qeyd ke",
-	"bs-privacy-admin-consent-grid-column-user": "Nameyê karberi",
+	"bs-privacy-admin-consent-grid-column-user": "Karber",
 	"bs-privacy-timestamp-with-days-ago": "$1 (verê {{PLURAL:$2|$2 roce|$2 rocan}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (ewro)",
 	"bs-privacy-consent-bool-true": "Eya",
