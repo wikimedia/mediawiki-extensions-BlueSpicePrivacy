@@ -134,7 +134,7 @@
 	"bs-privacy-consent-save-fail": "Er is een fout opgetreden bij het opslaan van uw privacybeleidsvoorkeuren.",
 	"bs-privacy-admin-consent-overview-title": "Overzicht van instemming",
 	"bs-privacy-admin-consent-overview-help": "Overzicht van de instemming van alle gebruikers met de Servicevoorwaarden en het Privacybeleid",
-	"bs-privacy-admin-consent-grid-column-user": "Gebruikersnaam",
+	"bs-privacy-admin-consent-grid-column-user": "Gebruiker",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dagen}} geleden)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (vandaag)",
 	"log-name-bs-privacy": "BlueSpice-privacylogboek",
