@@ -7,9 +7,9 @@ use BlueSpice\Privacy\Event\AnonymizationRejected;
 use BlueSpice\Privacy\ModuleRequestable;
 use Exception;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
-use Status;
 
 class Anonymization extends ModuleRequestable {
 

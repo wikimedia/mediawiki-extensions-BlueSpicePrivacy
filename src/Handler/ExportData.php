@@ -8,6 +8,7 @@ use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -49,20 +50,20 @@ class ExportData implements IPrivacyHandler {
 	/**
 	 * @param string $oldUsername
 	 * @param string $newUsername
-	 * @return \Status
+	 * @return Status
 	 */
 	public function anonymize( $oldUsername, $newUsername ) {
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
 	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
-	 * @return \Status
+	 * @return Status
 	 */
 	public function delete( User $userToDelete, User $deletedUser ) {
-		return \Status::newGood();
+		return Status::newGood();
 	}
 
 	/**
@@ -70,7 +71,7 @@ class ExportData implements IPrivacyHandler {
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user
-	 * @return \Status
+	 * @return Status
 	 */
 	public function exportData( array $types, $format, User $user ) {
 		$this->user = $user;
@@ -89,7 +90,7 @@ class ExportData implements IPrivacyHandler {
 			$this->getContentData();
 		}
 
-		return \Status::newGood( $this->data );
+		return Status::newGood( $this->data );
 	}
 
 	/**

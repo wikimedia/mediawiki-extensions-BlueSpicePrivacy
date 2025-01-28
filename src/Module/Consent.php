@@ -9,10 +9,10 @@ use BlueSpice\Privacy\Module;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Status\Status;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\Events\Notifier;
-use Status;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Consent extends Module {
