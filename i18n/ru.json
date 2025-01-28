@@ -72,7 +72,7 @@
 	"bs-privacy-transparency-type-title-personal": "Персональные данные",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Включите обязательные «Политику конфиденциальности» и «Условия обслуживания»",
 	"bs-privacy-consent-save-button": "Сохранить",
-	"bs-privacy-admin-consent-grid-column-user": "Имя участника",
+	"bs-privacy-admin-consent-grid-column-user": "Участник",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (сегодня)",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Нет",
