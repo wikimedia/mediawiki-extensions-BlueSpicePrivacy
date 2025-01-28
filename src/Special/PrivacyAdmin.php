@@ -3,8 +3,8 @@ namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
-use Html;
 use MediaWiki\Config\ConfigFactory;
+use MediaWiki\Html\Html;
 use MediaWiki\SpecialPage\SpecialPage;
 
 class PrivacyAdmin extends SpecialPage {

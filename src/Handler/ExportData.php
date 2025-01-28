@@ -6,6 +6,7 @@ use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
@@ -209,10 +210,10 @@ class ExportData implements IPrivacyHandler {
 				)->plain();
 
 			if ( $this->format === Transparency::DATA_FORMAT_HTML ) {
-				$html = \Html::openElement( 'span' );
+				$html = Html::openElement( 'span' );
 				$html .= $formattedTS;
 				$html .= $formatter->getActionText();
-				$html .= \Html::closeElement( 'span' );
+				$html .= Html::closeElement( 'span' );
 
 				$data[] = $html;
 			} else {
