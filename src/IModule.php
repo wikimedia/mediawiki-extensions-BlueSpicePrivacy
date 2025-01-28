@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Privacy;
 
+use MediaWiki\Status\Status;
 use MediaWiki\User\UserIdentity;
 
 interface IModule {
@@ -9,7 +10,7 @@ interface IModule {
 	/**
 	 * @param string $func
 	 * @param array $data
-	 * @return \Status
+	 * @return Status
 	 */
 	public function call( $func, $data );
 

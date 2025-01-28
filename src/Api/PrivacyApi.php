@@ -72,7 +72,7 @@ class PrivacyApi extends ApiBase {
 		$moduleRegistry = MediaWikiServices::getInstance()->getService( 'BlueSpicePrivacy.ModuleRegistry' );
 		$module = $moduleRegistry->getModuleByKey( $module );
 		if ( !$module ) {
-			$this->status = \Status::newFatal(
+			$this->status = Status::newFatal(
 				wfMessage( "bs-privacy-api-error-missing-module", $module )
 			);
 			return;

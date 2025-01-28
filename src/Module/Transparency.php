@@ -5,8 +5,8 @@ namespace BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\Module;
 use MediaWiki\Language\Language;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Status\Status;
 use MWStake\MediaWiki\Component\Events\Notifier;
-use Status;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Transparency extends Module {

@@ -5,11 +5,11 @@ namespace BlueSpice\Privacy;
 use Exception;
 use ManualLogEntry;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use MWStake\MediaWiki\Component\Events\Notifier;
-use Status;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 abstract class Module implements IModule {
