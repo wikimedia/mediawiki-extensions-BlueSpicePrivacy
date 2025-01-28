@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 
@@ -23,7 +24,7 @@ class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 
 		$links['user-menu']['privacycenter'] = [
 			'id' => 'pt-privacycenter',
-			'href' => \SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
+			'href' => SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
 			'text' => $specialPage->getDescription(),
 			'position' => 70,
 		];
