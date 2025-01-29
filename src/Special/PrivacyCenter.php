@@ -4,9 +4,9 @@ namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
-use FormatJson;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Html\Html;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\User;
 

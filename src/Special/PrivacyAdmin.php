@@ -5,6 +5,7 @@ use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Html\Html;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\SpecialPage\SpecialPage;
 
 class PrivacyAdmin extends SpecialPage {
@@ -85,7 +86,7 @@ class PrivacyAdmin extends SpecialPage {
 			} elseif ( is_array( $widgetData ) ) {
 				$data['data-callback'] = $widgetData['callback'];
 				if ( isset( $widgetData['data'] ) ) {
-					$data['data-config'] = \FormatJson::encode( $widgetData['data'] );
+					$data['data-config'] = FormatJson::encode( $widgetData['data'] );
 				}
 			}
 

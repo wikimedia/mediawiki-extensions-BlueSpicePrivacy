@@ -3,8 +3,8 @@
 namespace BlueSpice\Privacy\Api;
 
 use BlueSpice\Privacy\ModuleRegistry;
-use FormatJson;
 use MediaWiki\Api\ApiBase;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Status\Status;
 use Wikimedia\ParamValidator\ParamValidator;
