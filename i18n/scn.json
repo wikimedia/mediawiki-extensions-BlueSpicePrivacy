@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"bs-privacy-anonymization-new-username-label": "Novu nomu utenti",
@@ -25,10 +26,10 @@
 	"bs-privacy-consent-save-button": "Sarva",
 	"bs-privacy-admin-consent-grid-column-user": "Nomu utenti",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 jornu|$2 jorna}} fa)",
-	"bs-privacy-timestamp-with-days-ago-today": "$1 (oi)",
+	"bs-privacy-timestamp-with-days-ago-today": "$1 (oji)",
 	"bs-privacy-consent-bool-true": "Sì",
 	"bs-privacy-consent-bool-false": "No",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sarva",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Chiudi",
-	"bs-privacy-cookie-consent-cookie-list-label": "Elencu dî cookie n stu gruppu:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Lista dî cookie nna stu gruppu:"
 }
