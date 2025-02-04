@@ -12,10 +12,11 @@ use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Extension\NotifyMe\EventFactory;
 use MediaWiki\Language\Language;
 use MediaWiki\Message\Message;
+use MediaWiki\Permissions\GroupPermissionsLookup;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
@@ -44,17 +45,19 @@ class Deletion extends ModuleRequestable {
 	 * @param ConfigFactory $configFactory
 	 * @param UserFactory $userFactory
 	 * @param Language $language
-	 * @param EventFactory $eventFactory
+	 * @param SpecialPageFactory $specialPageFactory
+	 * @param GroupPermissionsLookup $groupPermissionsLookup
 	 * @param DatabaseBlockStore $databaseBlockStore
 	 * @param Config $mainConfig
 	 */
 	public function __construct(
 		ILoadBalancer $lb, Notifier $notifier, PermissionManager $permissionManager, ConfigFactory $configFactory,
-		UserFactory $userFactory, Language $language, EventFactory $eventFactory,
-		DatabaseBlockStore $databaseBlockStore, Config $mainConfig
+		UserFactory $userFactory, Language $language, SpecialPageFactory $specialPageFactory,
+		GroupPermissionsLookup $groupPermissionsLookup, DatabaseBlockStore $databaseBlockStore, Config $mainConfig
 	) {
 		parent::__construct(
-			$lb, $notifier, $permissionManager, $configFactory, $userFactory, $language, $eventFactory
+			$lb, $notifier, $permissionManager, $configFactory,
+			$userFactory, $language, $specialPageFactory, $groupPermissionsLookup
 		);
 		$this->databaseBlockStore = $databaseBlockStore;
 		$this->mainConfig = $mainConfig;
