@@ -4,49 +4,37 @@ namespace BlueSpice\Privacy\Event;
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
-use MediaWiki\Permissions\GroupPermissionsLookup;
-use MediaWiki\SpecialPage\SpecialPageFactory;
-use MediaWiki\User\UserFactory;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\EventLink;
 use MWStake\MediaWiki\Component\Events\NotificationEvent;
 use MWStake\MediaWiki\Component\Events\PriorityEvent;
-use Wikimedia\Rdbms\ILoadBalancer;
 
 class RequestSubmitted extends NotificationEvent implements PriorityEvent {
-	/** @var SpecialPageFactory */
-	private $specialPageFactory;
-	/** @var GroupPermissionsLookup */
-	private $groupPermissionsLookup;
-	/** @var UserFactory */
-	private $userFactory;
-	/** @var ILoadBalancer */
-	private $loadBalancer;
+	/** @var Title|null */
+	private ?Title $adminPage;
+	/** @var UserIdentity[] */
+	private array $admins;
 	/** @var string */
 	private $comment;
 	/** @var string */
 	private $module;
 
 	/**
-	 * @param SpecialPageFactory $spf
-	 * @param GroupPermissionsLookup $gpl
-	 * @param ILoadBalancer $loadBalancer
-	 * @param UserFactory $userFactory
+	 * @param Title|null $adminPage
+	 * @param array $admins
 	 * @param UserIdentity $agent
 	 * @param string $comment
 	 * @param string $module
 	 */
 	public function __construct(
-		SpecialPageFactory $spf, GroupPermissionsLookup $gpl, ILoadBalancer $loadBalancer, UserFactory $userFactory,
-		UserIdentity $agent, string $comment, string $module
+		?Title $adminPage, array $admins, UserIdentity $agent, string $comment, string $module
 	) {
 		parent::__construct( $agent );
 
-		$this->specialPageFactory = $spf;
-		$this->groupPermissionsLookup = $gpl;
-		$this->loadBalancer = $loadBalancer;
-		$this->userFactory = $userFactory;
+		$this->adminPage = $adminPage;
+		$this->admins = $admins;
 		$this->comment = $comment;
 		$this->module = $module;
 	}
@@ -88,21 +76,7 @@ class RequestSubmitted extends NotificationEvent implements PriorityEvent {
 	 * @return UserIdentity[]|null
 	 */
 	public function getPresetSubscribers(): ?array {
-		$groups = $this->groupPermissionsLookup->getGroupsWithPermission( 'bs-privacy-admin' );
-		$db = $this->loadBalancer->getConnection( DB_REPLICA );
-		$res = $db->select(
-			[ 'u' => 'user', 'ug' => 'user_groups' ],
-			[ 'u.user_name' ],
-			[ 'ug_group IN (' . $db->makeList( $groups ) . ')', 'u.user_id = ug.ug_user' ],
-			__METHOD__
-		);
-
-		$users = [];
-		foreach ( $res as $row ) {
-			$users[] = $this->userFactory->newFromName( $row->user_name );
-		}
-		// Filter out nulls
-		return array_filter( $users );
+		return $this->admins;
 	}
 
 	/**
@@ -115,6 +89,8 @@ class RequestSubmitted extends NotificationEvent implements PriorityEvent {
 		UserIdentity $agent, MediaWikiServices $services, array $extra = []
 	): array {
 		return [
+			$services->getSpecialPageFactory()->getPage( 'PrivacyAdmin' )->getPageTitle(),
+			[ $extra['targetUser'] ?? $services->getUserFactory()->newFromName( 'WikiSysop' ) ],
 			$agent,
 			'Please accept my request',
 			'anonymization'
@@ -125,13 +101,12 @@ class RequestSubmitted extends NotificationEvent implements PriorityEvent {
 	 * @inheritDoc
 	 */
 	public function getLinks( IChannel $forChannel ): array {
-		$privacyAdminPage = $this->specialPageFactory->getPage( 'PrivacyAdmin' );
-		if ( !$privacyAdminPage ) {
+		if ( !$this->adminPage ) {
 			return [];
 		}
 		return [
 			new EventLink(
-				$privacyAdminPage->getPageTitle()->getFullURL(),
+				$this->adminPage->getFullURL(),
 				Message::newFromKey( 'bs-privacy-event-request-submitted-link' )
 			)
 		];

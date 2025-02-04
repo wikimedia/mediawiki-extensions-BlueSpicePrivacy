@@ -12,8 +12,7 @@
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.0.0",
-			"OOJSPlus": ">= 3.0.0",
-			"NotifyMe": ">= 2.0.0"
+			"OOJSPlus": ">= 3.0.0"
 		}
 	},
 	"AuthManagerAutoConfig": {
@@ -55,14 +54,15 @@
 					"class": "\\BlueSpice\\Privacy\\Module\\Anonymization",
 					"services": [
 						"DBLoadBalancer", "MWStake.Notifier", "PermissionManager", "ConfigFactory",
-						"UserFactory", "ContentLanguage", "NotifyMe.EventFactory"
+						"UserFactory", "ContentLanguage", "SpecialPageFactory", "GroupPermissionsLookup"
 					]
 				},
 				"deletion": {
 					"class": "\\BlueSpice\\Privacy\\Module\\Deletion",
 					"services": [
 						"DBLoadBalancer", "MWStake.Notifier", "PermissionManager", "ConfigFactory",
-						"UserFactory", "ContentLanguage", "NotifyMe.EventFactory", "DatabaseBlockStore", "MainConfig"
+						"UserFactory", "ContentLanguage", "SpecialPageFactory", "GroupPermissionsLookup",
+						"DatabaseBlockStore", "MainConfig"
 					]
 				},
 				"transparency": {
@@ -162,8 +162,7 @@
 				},
 				"bs-privacy-request-submitted": {
 					"spec": {
-						"class": "\\BlueSpice\\Privacy\\Event\\RequestSubmitted",
-						"services": [ "SpecialPageFactory", "GroupPermissionsLookup", "DBLoadBalancer", "UserFactory" ]
+						"class": "\\BlueSpice\\Privacy\\Event\\RequestSubmitted"
 					},
 					"buckets": [ "personal" ]
 				}
