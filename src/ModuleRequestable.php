@@ -2,11 +2,13 @@
 
 namespace BlueSpice\Privacy;
 
+use BlueSpice\Privacy\Event\RequestSubmitted;
 use ManualLogEntry;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Extension\NotifyMe\EventFactory;
 use MediaWiki\Language\Language;
+use MediaWiki\Permissions\GroupPermissionsLookup;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -40,28 +42,25 @@ abstract class ModuleRequestable extends Module {
 	protected $language;
 
 	/**
-	 * @var EventFactory
-	 */
-	protected $eventFactory;
-
-	/**
 	 * @param ILoadBalancer $lb
 	 * @param Notifier $notifier
 	 * @param PermissionManager $permissionManager
 	 * @param ConfigFactory $configFactory
 	 * @param UserFactory $userFactory
 	 * @param Language $language
-	 * @param EventFactory $eventFactory
+	 * @param SpecialPageFactory $specialPageFactory
+	 * @param GroupPermissionsLookup $groupPermissionLookup
 	 */
 	public function __construct(
 		ILoadBalancer $lb, Notifier $notifier, PermissionManager $permissionManager,
-		ConfigFactory $configFactory, UserFactory $userFactory, Language $language, EventFactory $eventFactory
+		ConfigFactory $configFactory, UserFactory $userFactory, Language $language,
+		private readonly SpecialPageFactory $specialPageFactory,
+		private readonly GroupPermissionsLookup $groupPermissionLookup
 	) {
 		parent::__construct( $lb, $notifier, $permissionManager );
 		$this->configFactory = $configFactory;
 		$this->userFactory = $userFactory;
 		$this->language = $language;
-		$this->eventFactory = $eventFactory;
 	}
 
 	/**
@@ -234,6 +233,7 @@ abstract class ModuleRequestable extends Module {
 	 *
 	 * @param array $data
 	 * @return Status
+	 * @throws \Exception
 	 */
 	protected function submitRequest( $data ) {
 		$comment = isset( $data['comment'] ) ? $data['comment'] : '';
@@ -256,17 +256,41 @@ abstract class ModuleRequestable extends Module {
 				'comment' => $comment
 			] );
 
-			$event = $this->eventFactory->create( 'bs-privacy-request-submitted', [
+			$event = new RequestSubmitted(
+				$this->specialPageFactory->getPage( 'PrivacyAdmin' )?->getPageTitle(),
+				$this->getAdminsToNotify(),
 				$this->user,
 				$comment,
 				$this->getModuleName()
-			] );
+			);
+
 			$this->notify( $event );
 
 			return Status::newGood();
 		}
 
 		return Status::newFatal( 'bs-privacy-request-submit-failed' );
+	}
+
+	/**
+	 * @return User[]
+	 */
+	private function getAdminsToNotify(): array {
+		$groups = $this->groupPermissionLookup->getGroupsWithPermission( 'bs-privacy-admin' );
+		$db = $this->lb->getConnection( DB_REPLICA );
+		$res = $db->select(
+			[ 'u' => 'user', 'ug' => 'user_groups' ],
+			[ 'u.user_name' ],
+			[ 'ug_group IN (' . $db->makeList( $groups ) . ')', 'u.user_id = ug.ug_user' ],
+			__METHOD__
+		);
+
+		$users = [];
+		foreach ( $res as $row ) {
+			$users[] = $this->userFactory->newFromName( $row->user_name );
+		}
+		// Filter out nulls
+		return array_filter( $users );
 	}
 
 	/**
