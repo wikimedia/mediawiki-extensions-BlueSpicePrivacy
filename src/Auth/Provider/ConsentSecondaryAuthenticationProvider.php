@@ -9,8 +9,8 @@ use MediaWiki\Auth\AuthenticationResponse;
 use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
-use MediaWiki\User\UserOptionsManager;
 
 class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthenticationProvider {
 	/**
