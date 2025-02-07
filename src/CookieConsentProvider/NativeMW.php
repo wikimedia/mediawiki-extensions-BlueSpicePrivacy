@@ -8,9 +8,9 @@ use ExtensionRegistry;
 use HashConfig;
 use MediaWiki\Config\Config;
 use MediaWiki\Json\FormatJson;
+use MediaWiki\Language\RawMessage;
 use MediaWiki\Message\Message;
 use MediaWiki\Request\WebRequest;
-use RawMessage;
 
 class NativeMW extends Base {
 	/**
