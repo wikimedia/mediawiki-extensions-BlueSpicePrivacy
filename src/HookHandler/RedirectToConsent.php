@@ -11,9 +11,9 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Specials\SpecialUserLogin;
+use MediaWiki\Specials\SpecialUserLogout;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use SpecialUserLogout;
 
 class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParserOutputHook {
 
