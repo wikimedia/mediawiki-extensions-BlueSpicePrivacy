@@ -3,8 +3,8 @@ namespace BlueSpice\Privacy\Special;
 
 use BlueSpice\Privacy\Module;
 use BlueSpice\Privacy\ModuleRegistry;
-use FormSpecialPage;
 use MediaWiki\Permissions\PermissionStatus;
+use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\Title\Title;
 use OOUI\MessageWidget;
 
