@@ -6,7 +6,7 @@ use BlueSpice\Privacy\Module\Consent;
 use BlueSpice\Privacy\ModuleRegistry;
 use BlueSpice\Privacy\Special\PrivacyConsent;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Hook\OutputPageParserOutputHook;
+use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\SpecialPage\SpecialPageFactory;
