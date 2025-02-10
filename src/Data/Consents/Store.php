@@ -3,7 +3,7 @@
 namespace BlueSpice\Privacy\Data\Consents;
 
 use BlueSpice\Privacy\ModuleRegistry;
-use GlobalVarConfig;
+use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\Options\UserOptionsLookup;
