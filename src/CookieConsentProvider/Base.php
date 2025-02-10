@@ -5,8 +5,8 @@ namespace BlueSpice\Privacy\CookieConsentProvider;
 use BlueSpice\Privacy\ICookieConsentProvider;
 use ConfigException;
 use Exception;
-use HashConfig;
 use MediaWiki\Config\Config;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;
 

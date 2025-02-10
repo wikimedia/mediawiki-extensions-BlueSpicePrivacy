@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\CookieConsentProvider;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\Request\WebRequest;
 
 class OneTrust extends Base {
@@ -34,7 +35,7 @@ class OneTrust extends Base {
 	/**
 	 * @param Config $config
 	 * @param WebRequest $request
-	 * @param \HashConfig $providerConfig
+	 * @param HashConfig $providerConfig
 	 * @return OneTrust
 	 * @throws \Exception
 	 */
