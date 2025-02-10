@@ -3,6 +3,7 @@
 use BlueSpice\Privacy\ModuleRegistry;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Registration\ExtensionRegistry;
 
 return [
 	'BlueSpicePrivacy.ModuleRegistry' => static function ( MediaWikiServices $services ) {
