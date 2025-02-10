@@ -3,6 +3,7 @@
 namespace BlueSpice\Privacy\Module;
 
 use BlueSpice\Privacy\Module;
+use MediaWiki\Html\TemplateParser;
 use MediaWiki\Language\Language;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Status\Status;
@@ -216,7 +217,7 @@ class Transparency extends Module {
 			];
 		}
 
-		$templateParser = new \TemplateParser( dirname( dirname( __DIR__ ) ) . '/resources/templates' );
+		$templateParser = new TemplateParser( dirname( dirname( __DIR__ ) ) . '/resources/templates' );
 		$html = $templateParser->processTemplate(
 			'DataExport',
 			$args
