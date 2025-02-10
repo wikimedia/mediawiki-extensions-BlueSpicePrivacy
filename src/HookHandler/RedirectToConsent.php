@@ -10,9 +10,9 @@ use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use MediaWiki\Specials\SpecialUserLogin;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use SpecialUserLogin;
 use SpecialUserLogout;
 
 class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParserOutputHook {
