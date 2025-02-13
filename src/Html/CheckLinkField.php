@@ -2,7 +2,9 @@
 
 namespace BlueSpice\Privacy\Html;
 
-class CheckLinkField extends \HTMLCheckField {
+use MediaWiki\HTMLForm\Field\HTMLCheckField;
+
+class CheckLinkField extends HTMLCheckField {
 	/**
 	 * @return string
 	 */
