@@ -219,5 +219,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|ha requestate}} le anonymisation de su conto de usator, con commento: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|ha requestate}} le deletion de su conto de usator, con commento: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Requesta de anonymisation",
-	"bs-privacy-event-request-submitted-deletion-desc": "Requesta de deletion"
+	"bs-privacy-event-request-submitted-deletion-desc": "Requesta de deletion",
+	"bs-privacy-consent-type-privacy-policy-short": "Politica de confidentialitate",
+	"bs-privacy-consent-type-terms-of-service-short": "Conditiones de servicio",
+	"bs-privacy-module-name-anonymization": "Anonymisation",
+	"bs-privacy-module-name-deletion": "Deletion"
 }
