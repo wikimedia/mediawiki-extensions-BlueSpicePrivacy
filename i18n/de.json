@@ -136,9 +136,9 @@
 	"bs-privacy-consent-get-options-fail": "Beim Versuch, deine Datenschutzrichtlinienoptionen abzurufen, ist ein Fehler aufgetreten.",
 	"bs-privacy-consent-save-success": "Deine Datenschutzeinstellungen wurden gespeichert.",
 	"bs-privacy-consent-save-fail": "Beim Versuch, deine Datenschutzrichtlinienoptionen zu speichern, ist ein Fehler aufgetreten.",
-	"bs-privacy-admin-consent-overview-title": "Übersicht über Zustimmungen",
-	"bs-privacy-admin-consent-overview-help": " Übersicht über die Zustimmung aller Benutzer zu den Nutzungsbedingungen und der Datenschutzrichtlinie",
-	"bs-privacy-admin-consent-grid-column-user": "Benutzername",
+	"bs-privacy-admin-consent-overview-title": "Übersicht über die Zustimmung",
+	"bs-privacy-admin-consent-overview-help": "Überblick über die Zustimmung aller Nutzer zu den Nutzungsbedingungen und der Richtlinie zum Datenschutz",
+	"bs-privacy-admin-consent-grid-column-user": "Benutzer",
 	"bs-privacy-timestamp-with-days-ago": "$1 (vor {{PLURAL:$2|$2 Tag|$2 Tagen}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (heute)",
 	"log-name-bs-privacy": "BS-Datenschutz",
@@ -212,5 +212,9 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|hat}} die Anonymisierung von {{GENDER:$1|seinem|ihrem|ihrem}} Benutzerkonto beantragt, mit Kommentar: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|hat}} die Löschung von {{GENDER:$1|seinem|ihrem|ihrem}} Benutzerkonto beantragt, mit Kommentar: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Anonymisierungsanfrage",
-	"bs-privacy-event-request-submitted-deletion-desc": "Löschanfrage"
+	"bs-privacy-event-request-submitted-deletion-desc": "Löschanfrage",
+	"bs-privacy-consent-type-privacy-policy-short": "Datenschutzrichtlinie",
+	"bs-privacy-consent-type-terms-of-service-short": "Nutzungsbedingungen",
+	"bs-privacy-module-name-anonymization": "Anonymisierung",
+	"bs-privacy-module-name-deletion": "Löschung"
 }
