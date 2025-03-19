@@ -176,7 +176,8 @@ class Anonymize implements IPrivacyHandler {
 				[
 					'up_property' => $property,
 					'up_user' => $user->getId()
-				]
+				],
+				__METHOD__
 			);
 		}
 	}
