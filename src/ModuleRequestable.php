@@ -127,7 +127,8 @@ abstract class ModuleRequestable extends Module {
 				'pr_user' => $this->user->getId(),
 				'pr_module' => $this->getModuleName(),
 				'pr_open' => static::REQUEST_OPEN
-			]
+			],
+			__METHOD__
 		);
 
 		$statusData = [
@@ -224,7 +225,8 @@ abstract class ModuleRequestable extends Module {
 		return $this->lb->getConnection( DB_REPLICA )->selectRow(
 			static::TABLE_NAME,
 			'*',
-			[ 'pr_id' => $id ]
+			[ 'pr_id' => $id ],
+			__METHOD__
 		);
 	}
 
