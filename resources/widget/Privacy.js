@@ -1,8 +1,8 @@
-( function( mw, $, bs ) {
+( function ( mw, $, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.widget = bs.privacy.widget || {};
 
-	bs.privacy.widget.Privacy = function( cfg ) {
+	bs.privacy.widget.Privacy = function ( cfg ) {
 		cfg = cfg || {};
 		cfg.framed = true;
 		cfg.expanded = false;
@@ -17,7 +17,7 @@
 
 	OO.inheritClass( bs.privacy.widget.Privacy, OO.ui.PanelLayout );
 
-	bs.privacy.widget.Privacy.prototype.init = function() {
+	bs.privacy.widget.Privacy.prototype.init = function () {
 		const heading = new OOJSPlus.ui.widget.HeadingLabel( {
 			label: this.title,
 			subtitle: this.subtitle
@@ -40,21 +40,21 @@
 		this.$element.append( this.message.$element );
 	};
 
-	bs.privacy.widget.Privacy.prototype.makeForm = function() {
+	bs.privacy.widget.Privacy.prototype.makeForm = function () {
 		// Stub
 	};
 
-	bs.privacy.widget.Privacy.prototype.makeApiCall = function( module, data ) {
-		data = $.extend( {
+	bs.privacy.widget.Privacy.prototype.makeApiCall = function ( module, data ) {
+		data = Object.assign( {
 			module: module,
 			action: 'bs-privacy'
 		}, data );
 		return this.api.post( data );
 	};
 
-	bs.privacy.widget.Privacy.prototype.displayMessage = function( type, message ) {
+	bs.privacy.widget.Privacy.prototype.displayMessage = function ( type, message ) {
 		// B/C
-		if( Array.isArray( type ) ) {
+		if ( Array.isArray( type ) ) {
 			if ( type.indexOf( 'bs-privacy-error' ) !== -1 ) {
 				type = 'bs-privacy-error';
 			}
@@ -79,7 +79,7 @@
 		}
 	};
 
-	bs.privacy.widget.Privacy.prototype.setLoading = function( loading ) {
+	bs.privacy.widget.Privacy.prototype.setLoading = function ( loading ) {
 		this.clearErrors();
 		if ( loading ) {
 			this.loader.$element.show();
@@ -94,7 +94,7 @@
 		}
 	};
 
-	bs.privacy.widget.Privacy.prototype.clearErrors = function() {
+	bs.privacy.widget.Privacy.prototype.clearErrors = function () {
 		this.message.$element.addClass( 'visually-hidden' );
 		this.message.setLabel( '' );
 		if ( this.form instanceof OO.ui.FormLayout || this.form instanceof OO.ui.FieldLayout ) {
@@ -102,12 +102,12 @@
 		}
 	};
 
-	bs.privacy.widget.Privacy.prototype.displayError = function( message ) {
-		this.displayMessage( "bs-privacy-error", message );
+	bs.privacy.widget.Privacy.prototype.displayError = function ( message ) {
+		this.displayMessage( 'bs-privacy-error', message );
 	};
 
-	bs.privacy.widget.Privacy.prototype.displaySuccess = function( message ) {
-		this.displayMessage( "bs-privacy-success", message );
+	bs.privacy.widget.Privacy.prototype.displaySuccess = function ( message ) {
+		this.displayMessage( 'bs-privacy-success', message );
 	};
 
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );

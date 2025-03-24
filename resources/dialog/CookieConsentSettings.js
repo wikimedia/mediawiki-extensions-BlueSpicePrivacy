@@ -1,12 +1,12 @@
-( function( mw, $, bs, d, undefined ){
+( function ( mw, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.dialog = bs.privacy.dialog || {};
 
-	bs.privacy.dialog.CookieConsentSettings = function( cfg ) {
+	bs.privacy.dialog.CookieConsentSettings = function ( cfg ) {
 		cfg = cfg || {};
 
 		this.values = cfg.values || {};
-		this.groups = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ).cookieGroups;
+		this.groups = mw.config.get( 'bsPrivacyCookieConsentHandlerConfig' ).cookieGroups;
 
 		bs.privacy.dialog.CookieConsentSettings.super.call( this, cfg );
 	};
@@ -32,16 +32,16 @@
 	];
 
 	bs.privacy.dialog.CookieConsentSettings.prototype.getActionProcess = function ( action ) {
-		var me = this;
+		const me = this;
 
-		if( action === 'save' ) {
-			return new OO.ui.Process( function() {
-				var results = [];
+		if ( action === 'save' ) {
+			return new OO.ui.Process( () => {
+				const results = [];
 
-				for( var groupName in me.switches ) {
-					var sw = me.switches[groupName];
+				for ( const groupName in me.switches ) {
+					const sw = me.switches[ groupName ];
 
-					if( sw.getValue() === true ) {
+					if ( sw.getValue() === true ) {
 						results.push( groupName );
 					}
 				}
@@ -53,45 +53,45 @@
 		return bs.privacy.dialog.CookieConsentSettings.super.prototype.getActionProcess.call( this, action );
 	};
 
-	bs.privacy.dialog.CookieConsentSettings.prototype.initialize = function() {
+	bs.privacy.dialog.CookieConsentSettings.prototype.initialize = function () {
 		bs.privacy.dialog.CookieConsentSettings.super.prototype.initialize.call( this );
 
-		var content = [];
+		const content = [];
 		this.switches = {};
-		for ( var groupName in this.groups ) {
+		for ( const groupName in this.groups ) {
 			if ( !this.groups.hasOwnProperty( groupName ) ) {
 				continue;
 			}
-			var groupSettings = this.groups[groupName];
+			const groupSettings = this.groups[ groupName ];
 
-			var label = groupSettings.label;
-			if ( mw.message( groupSettings.label ).exists() ) {
-				label = mw.message( groupSettings.label ).text();
+			let label = groupSettings.label;
+			if ( mw.message( groupSettings.label ).exists() ) { // eslint-disable-line mediawiki/msg-doc
+				label = mw.message( groupSettings.label ).text(); // eslint-disable-line mediawiki/msg-doc
 			}
-			var desc = groupSettings.desc;
-			if ( mw.message( groupSettings.desc ).exists() ) {
-				desc = mw.message( groupSettings.desc ).text();
+			let desc = groupSettings.desc;
+			if ( mw.message( groupSettings.desc ).exists() ) { // eslint-disable-line mediawiki/msg-doc
+				desc = mw.message( groupSettings.desc ).text(); // eslint-disable-line mediawiki/msg-doc
 			}
 
-			var value = true;
-			if( groupName in this.values ) {
-				value = this.values[groupName];
+			let value = true;
+			if ( groupName in this.values ) {
+				value = this.values[ groupName ];
 			} else {
-				if( groupSettings.type === 'opt-in' ) {
+				if ( groupSettings.type === 'opt-in' ) {
 					value = false;
 				}
 			}
-			if( groupSettings.type === 'always-on' ) {
+			if ( groupSettings.type === 'always-on' ) {
 				value = true;
 			}
-			var toggle = new OO.ui.ToggleSwitchWidget( {
+			const toggle = new OO.ui.ToggleSwitchWidget( {
 				value: value,
 				disabled: groupSettings.type === 'always-on'
 			} );
 
-			this.switches[groupName] = toggle;
+			this.switches[ groupName ] = toggle;
 
-			var field = new OO.ui.FieldLayout( toggle, {
+			const field = new OO.ui.FieldLayout( toggle, {
 				align: 'left',
 				helpInline: false,
 				label: label,
@@ -112,8 +112,8 @@
 		this.$body.append( this.layout.$element );
 	};
 
-	bs.privacy.dialog.CookieConsentSettings.prototype.getBodyHeight = function() {
-		return this.$body[0].scrollHeight + 20;
+	bs.privacy.dialog.CookieConsentSettings.prototype.getBodyHeight = function () {
+		return this.$body[ 0 ].scrollHeight + 20;
 	};
 
-} )( mediaWiki, jQuery, blueSpice, document );
+}( mediaWiki, blueSpice ) );

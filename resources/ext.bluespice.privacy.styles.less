@@ -1,21 +1,25 @@
-.bs-privacy-user-section, .bs-privacy-admin-widget {
+.bs-privacy-user-section,
+.bs-privacy-admin-widget {
 	padding: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
 	margin-bottom: 10px;
+
 	.oo-ui-fieldsetLayout {
 		.oo-ui-fieldsetLayout-header {
 			span.oo-ui-labelElement-label {
 				margin: 0 !important;
-				font-size: 1.5em
+				font-size: 1.5em;
 			}
 		}
 	}
+
 	.bs-privacy-anonymize-login-btn {
 		margin-left: 20px;
 		vertical-align: top;
 	}
+
 	.oo-ui-flaggedElement-primary.oo-ui-buttonWidget span {
 		color: white;
 	}
@@ -24,27 +28,34 @@
 		border-top: 2px solid #c2bdbd;
 		margin-top: 10px;
 		padding-top: 10px;
+
 		.oo-ui-fieldLayout-body {
 			padding-top: 10px;
+
 			.oo-ui-fieldLayout-header {
 				padding-bottom: 0;
 			}
+
 			.oo-ui-labelElement-label {
 				font-weight: normal;
 				vertical-align: top;
 			}
+
 			.oo-ui-horizontalLayout {
 				margin-bottom: 10px;
+
 				.oo-ui-fieldLayout {
 					padding: 10px;
 				}
 			}
 		}
 	}
+
 	&.section-consent {
 		.oo-ui-fieldLayout {
-			margin-top: 0px;
+			margin-top: 0;
 		}
+
 		.oo-ui-buttonWidget.oo-ui-flaggedElement-primary {
 			margin-bottom: 10px;
 			margin-top: 5px;
@@ -62,12 +73,13 @@
 
 #bs-privacy-extjs-requests {
 	.icon-approve {
-		background-image: url( 'images/approve.png' );
+		background-image: url( images/approve.png );
 		background-size: contain;
 	}
+
 	.icon-deny {
 		margin-left: 5px;
-		background-image: url( 'images/deny.png' );
+		background-image: url( images/deny.png );
 		background-size: contain;
 	}
 }
@@ -81,6 +93,7 @@
 	.x-grid-cell-inner {
 		padding: 5px;
 		text-align: center !important;
+
 		.bs-privacy-admin-consent-column-bool-true,
 		.bs-privacy-admin-consent-column-bool-false {
 			background-repeat: no-repeat;
@@ -88,12 +101,13 @@
 			height: 18px;
 			display: inline-block;
 		}
+
 		.bs-privacy-admin-consent-column-bool-true {
-			background-image: url('../../BlueSpiceFoundation/resources/bluespice/images/bs-tick.png');
+			background-image: url( ../../BlueSpiceFoundation/resources/bluespice/images/bs-tick.png );
 		}
 
 		.bs-privacy-admin-consent-column-bool-false {
-			background-image: url('../../BlueSpiceFoundation/resources/bluespice/images/bs-cross.png');
+			background-image: url( ../../BlueSpiceFoundation/resources/bluespice/images/bs-cross.png );
 		}
 	}
 }
@@ -110,4 +124,3 @@
 	padding: 10px;
 	font-size: 1.2em;
 }
-

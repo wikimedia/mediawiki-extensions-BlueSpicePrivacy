@@ -1,34 +1,34 @@
-( function( mw, $ ) {
-	var requestManager = new bs.privacy.widget.RequestManager( {
+( function ( mw, $ ) {
+	const requestManager = new bs.privacy.widget.RequestManager( {
 		$element: $( '#bs-privacy-admin-requests' )
 	} );
 	requestManager.init();
 
 	function initPanel( $section ) {
-		var sectionCallback = $section.data( 'callback' );
-		var func = bs.privacy.util.funcFromCallback( sectionCallback );
+		const sectionCallback = $section.data( 'callback' );
+		const func = bs.privacy.util.funcFromCallback( sectionCallback );
 
-		var config = {};
-		if( $section.data( 'config' ) ) {
+		let config = {};
+		if ( $section.data( 'config' ) ) {
 			config = $section.data( 'config' );
 		}
 
-		var widget = new func( $.extend( {
+		const widget = new func( Object.assign( { // eslint-disable-line new-cap
 			$element: $section
 		}, config ) );
 		widget.init();
 	}
 
-	$( '.bs-privacy-admin-section' ).each( function( k, section ) {
-		var $section = $( section );
+	$( '.bs-privacy-admin-section' ).each( ( k, section ) => {
+		const $section = $( section );
 
-		var rlModule = $section.data( 'rl-module' );
+		const rlModule = $section.data( 'rl-module' );
 		if ( !rlModule ) {
 			initPanel( $section );
 			return;
 		}
-		mw.loader.using( rlModule ).then( function() {
+		mw.loader.using( rlModule ).then( () => {
 			initPanel( $section );
 		} );
 	} );
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

@@ -1,5 +1,5 @@
-( function( mw, $ ) {
-	bs.privacy.cookieConsent.OneTrust = function( cfg ) {
+( function ( mw, $ ) {
+	bs.privacy.cookieConsent.OneTrust = function ( cfg ) {
 		cfg = cfg || {};
 
 		bs.privacy.cookieConsent.OneTrust.parent.call( this, cfg );
@@ -7,42 +7,42 @@
 
 	OO.inheritClass( bs.privacy.cookieConsent.OneTrust, bs.privacy.cookieConsent.BaseHandler );
 
-	bs.privacy.cookieConsent.OneTrust.prototype.getGroups = function() {
-		var cookie = $.cookie( this.cookieName );
+	bs.privacy.cookieConsent.OneTrust.prototype.getGroups = function () {
+		const cookie = $.cookie( this.cookieName );
 
-		if( !cookie ) {
+		if ( !cookie ) {
 			return [];
 		}
 		// Find `groups=((.*=?))\' in the cookie
-		var match = cookie.match( /groups=(.*=?)/ );
-		if( !match ) {
+		const match = cookie.match( /groups=(.*=?)/ );
+		if ( !match ) {
 			return [];
 		}
 		// Get the first match
-		var groups = match[1];
+		let groups = match[ 1 ];
 
-		var pairs = groups.split( "," );
+		const pairs = groups.split( ',' );
 		groups = {};
-		for( var i = 0; i < pairs.length; i++ ){
-			var pair = pairs[i].split( ":" );
-			groups[( pair[0] + '' ).trim()] = pair[1] === "1";
+		for ( let i = 0; i < pairs.length; i++ ) {
+			const pair = pairs[ i ].split( ':' );
+			groups[ ( String( pair[ 0 ] ) ).trim() ] = pair[ 1 ] === '1';
 		}
 
 		return groups;
 	};
 
-	bs.privacy.cookieConsent.OneTrust.prototype.getCookieName = function( prefixed ) {
+	bs.privacy.cookieConsent.OneTrust.prototype.getCookieName = function ( prefixed ) { // eslint-disable-line no-unused-vars
 		return this.cookieName;
 	};
 
-	bs.privacy.cookieConsent.OneTrust.prototype.settingsOpen = function() {
-		Optanon.ToggleInfoDisplay();
+	bs.privacy.cookieConsent.OneTrust.prototype.settingsOpen = function () {
+		Optanon.ToggleInfoDisplay(); // eslint-disable-line no-undef
 	};
 
-	bs.privacy.cookieConsent.OneTrust.prototype.isCookieAllowed = function( cookieName ) {
+	bs.privacy.cookieConsent.OneTrust.prototype.isCookieAllowed = function ( cookieName ) {
 		if ( cookieName === 'OptanonAlertBoxClosed' ) {
 			return true;
 		}
 		return bs.privacy.cookieConsent.OneTrust.parent.prototype.isCookieAllowed.call( this, cookieName );
 	};
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

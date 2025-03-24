@@ -1,7 +1,7 @@
 window.bs.privacy = bs.privacy || {};
 bs.privacy.widget = bs.privacy.widget || {};
 
-bs.privacy.widget.AdminWidget = function( cfg ) {
+bs.privacy.widget.AdminWidget = function ( cfg ) {
 	this.$element = cfg.$element || $( '<div>' );
 
 	this.title = cfg.title;
@@ -15,12 +15,12 @@ bs.privacy.widget.AdminWidget = function( cfg ) {
 
 OO.inheritClass( bs.privacy.widget.AdminWidget, OO.ui.Widget );
 
-bs.privacy.widget.AdminWidget.prototype.init = function() {
+bs.privacy.widget.AdminWidget.prototype.init = function () {
 	this.layout = new OO.ui.FieldsetLayout( {
 		items: [
 			new OOJSPlus.ui.widget.HeadingLabel( {
-				label: mw.message( this.title ).text(),
-				subtitle: mw.message( this.subtitle ).text()
+				label: mw.message( this.title ).text(), // eslint-disable-line mediawiki/msg-doc
+				subtitle: mw.message( this.subtitle ).text() // eslint-disable-line mediawiki/msg-doc
 			} )
 		]
 	} );
@@ -30,6 +30,6 @@ bs.privacy.widget.AdminWidget.prototype.init = function() {
 	this.makeForm();
 };
 
-bs.privacy.widget.AdminWidget.prototype.makeForm = function() {
+bs.privacy.widget.AdminWidget.prototype.makeForm = function () {
 	// Stub
 };

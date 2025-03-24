@@ -1,26 +1,26 @@
-( function( mw, $, bs ) {
-	$( '.bs-privacy-user-section' ).each( function( k, section ) {
-		let $section = $( section );
+( function ( mw, $, bs ) {
+	$( '.bs-privacy-user-section' ).each( ( k, section ) => {
+		const $section = $( section );
 
-		let rlModule = $section.data( 'rl-module' );
+		const rlModule = $section.data( 'rl-module' );
 		if ( !rlModule ) {
 			return;
 		}
 
-		mw.loader.using( rlModule ).then( function() {
-			let sectionCallback = $section.data( 'callback' );
-			let func = bs.privacy.util.funcFromCallback( sectionCallback );
+		mw.loader.using( rlModule ).then( () => {
+			const sectionCallback = $section.data( 'callback' );
+			const func = bs.privacy.util.funcFromCallback( sectionCallback );
 
 			let config = {};
-			if( $section.data( 'config' ) ) {
+			if ( $section.data( 'config' ) ) {
 				config = $section.data( 'config' );
 			}
 
-			let widget = new func( $.extend( {
+			const widget = new func( Object.assign( { // eslint-disable-line new-cap
 				$element: $section
 			}, config ) );
 			widget.init();
 		} );
 	} );
 
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );

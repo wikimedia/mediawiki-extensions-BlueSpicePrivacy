@@ -8,8 +8,9 @@
 	text-align: right;
 	padding: 20px;
 	padding-top: 30px;
-	background-color: #ffffff;
-	border-top: 1px solid #999999;
+	background-color: #fff;
+	border-top: 1px solid #999;
+
 	.disclaimer {
 		float: left;
 	}
@@ -24,7 +25,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba( 0, 0, 0, 0.7 );
 	z-index: 1050;
 }
 
@@ -41,15 +42,11 @@
    input boxes and login buttons gets enabled until page gets loaded
    hence used the below code to disable clicking on loginform
 */
-.mw-ui-container #userloginForm
-{
+.mw-ui-container #userloginForm {
 	pointer-events: none;
 }
 
 /* fix the alignment of the plainlinks */
-#userloginForm .mw-ui-checkbox .plainlinks
-{
+#userloginForm .mw-ui-checkbox .plainlinks {
 	vertical-align: top;
 }
-
-

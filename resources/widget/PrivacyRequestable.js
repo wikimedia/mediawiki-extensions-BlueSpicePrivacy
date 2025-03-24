@@ -1,8 +1,8 @@
-( function( mw, $, bs ) {
+( function ( mw, $, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.widget = bs.privacy.widget || {};
 
-	bs.privacy.widget.PrivacyRequestable = function( cfg ) {
+	bs.privacy.widget.PrivacyRequestable = function ( cfg ) {
 		cfg = cfg || {};
 
 		bs.privacy.widget.PrivacyRequestable.parent.call( this, cfg );
@@ -11,40 +11,40 @@
 
 	OO.inheritClass( bs.privacy.widget.PrivacyRequestable, bs.privacy.widget.Privacy );
 
-	bs.privacy.widget.PrivacyRequestable.prototype.checkStatus = function() {
+	bs.privacy.widget.PrivacyRequestable.prototype.checkStatus = function () {
 		return this.makeApiCall( { func: 'checkStatus' } );
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makeForm = function() {
-		if( this.useRequests ) {
-			this.checkStatus().done( function( response ) {
+	bs.privacy.widget.PrivacyRequestable.prototype.makeForm = function () {
+		if ( this.useRequests ) {
+			this.checkStatus().done( ( response ) => {
 				if ( response.success === 1 ) {
-					var status = parseInt( response.data.status );
+					const status = parseInt( response.data.status );
 					if ( status === 0 ) {
 						this.makeRequestForm();
-					}  else {
+					} else {
 						this.makeRequestStatusForm( status, response.data.comment );
 					}
 					return;
 				}
-				this.displayError( mw.message( "bs-privacy-api-error-generic" ).text() );
-			}.bind( this ) ).fail( function() {
-				this.displayError( mw.message( "bs-privacy-api-error-generic" ).text() );
-			}.bind( this ) );
+				this.displayError( mw.message( 'bs-privacy-api-error-generic' ).text() );
+			} ).fail( () => {
+				this.displayError( mw.message( 'bs-privacy-api-error-generic' ).text() );
+			} );
 		} else {
 			this.makeDirectForm();
 		}
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makeDirectForm = function() {
+	bs.privacy.widget.PrivacyRequestable.prototype.makeDirectForm = function () {
 		// Stub
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makeRequestForm = function() {
+	bs.privacy.widget.PrivacyRequestable.prototype.makeRequestForm = function () {
 		// Stub
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makeRequestStatusForm = function( status, comment ) {
+	bs.privacy.widget.PrivacyRequestable.prototype.makeRequestStatusForm = function ( status, comment ) {
 		if ( status === 1 ) {
 			return this.makePendingForm();
 		} else if ( status === 2 ) {
@@ -54,14 +54,14 @@
 		// user wont be able to access their old account anymore
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makePendingForm = function( label, buttonLabel ) {
-		var statusLabel = new OO.ui.LabelWidget( {
-			label: mw.message( label ).text()
+	bs.privacy.widget.PrivacyRequestable.prototype.makePendingForm = function ( label, buttonLabel ) {
+		const statusLabel = new OO.ui.LabelWidget( {
+			label: mw.message( label ).text() // eslint-disable-line mediawiki/msg-doc
 		} );
 
 		buttonLabel = buttonLabel || 'bs-privacy-cancel-request-button';
-		var cancelButton = new OO.ui.ButtonWidget( {
-			label: mw.message( buttonLabel ).text(),
+		const cancelButton = new OO.ui.ButtonWidget( {
+			label: mw.message( buttonLabel ).text(), // eslint-disable-line mediawiki/msg-doc
 			framed: true
 		} );
 		cancelButton.on( 'click', this.cancelRequest.bind( this ) );
@@ -75,19 +75,19 @@
 		this.layout.addItems( [ this.form ] );
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.makeDeniedForm = function( label, buttonLabel, comment ) {
-		var statusLabel = new OO.ui.LabelWidget( {
-			label: mw.message( label ).text(),
+	bs.privacy.widget.PrivacyRequestable.prototype.makeDeniedForm = function ( label, buttonLabel, comment ) {
+		const statusLabel = new OO.ui.LabelWidget( {
+			label: mw.message( label ).text(), // eslint-disable-line mediawiki/msg-doc
 			classes: [ 'bs-privacy-label-warning' ]
 		} );
-		var commentLabel = new OO.ui.LabelWidget( {
+		const commentLabel = new OO.ui.LabelWidget( {
 			label: mw.message( 'bs-privacy-request-denied-comment', comment ).text(),
 			classes: [ 'bs-privacy-label-block' ]
 		} );
 
 		buttonLabel = buttonLabel || 'bs-privacy-acknowledge-request-button';
-		var ackButton = new OO.ui.ButtonWidget( {
-			label: mw.message( buttonLabel ).text(),
+		const ackButton = new OO.ui.ButtonWidget( {
+			label: mw.message( buttonLabel ).text(), // eslint-disable-line mediawiki/msg-doc
 			framed: true
 		} );
 		ackButton.on( 'click', this.closeRequest.bind( this ) );
@@ -102,35 +102,34 @@
 		this.layout.addItems( [ this.form ] );
 	};
 
-
-	bs.privacy.widget.PrivacyRequestable.prototype.cancelRequest = function() {
+	bs.privacy.widget.PrivacyRequestable.prototype.cancelRequest = function () {
 		this.setLoading( true );
-		this.makeApiCall( { func: 'cancelRequest' } ).done( function( response ) {
+		this.makeApiCall( { func: 'cancelRequest' } ).done( ( response ) => {
 			if ( response.success === 1 ) {
 				this.setLoading( false );
 				this.form.$element.remove();
 				this.makeRequestForm();
 				return;
 			}
-			this.displayError( mw.message( "bs-privacy-request-cancel-failed" ).text() );
-		}.bind( this ) ).fail( function() {
-			this.displayError( mw.message( "bs-privacy-request-cancel-failed" ).text() );
-		}.bind( this ) );
+			this.displayError( mw.message( 'bs-privacy-request-cancel-failed' ).text() );
+		} ).fail( () => {
+			this.displayError( mw.message( 'bs-privacy-request-cancel-failed' ).text() );
+		} );
 	};
 
-	bs.privacy.widget.PrivacyRequestable.prototype.closeRequest = function() {
+	bs.privacy.widget.PrivacyRequestable.prototype.closeRequest = function () {
 		this.setLoading( true );
-		this.makeApiCall( { func: 'closeRequest' } ).done( function( response ) {
+		this.makeApiCall( { func: 'closeRequest' } ).done( ( response ) => {
 			if ( response.success === 1 ) {
 				this.setLoading( false );
 				this.form.$element.remove();
 				this.makeRequestForm();
 				return;
 			}
-			this.displayError( mw.message( "bs-privacy-request-cancel-failed" ).text() );
-		}.bind( this ) ).fail( function() {
-			this.displayError( mw.message( "bs-privacy-request-cancel-failed" ).text() );
-		}.bind( this ) );
+			this.displayError( mw.message( 'bs-privacy-request-cancel-failed' ).text() );
+		} ).fail( () => {
+			this.displayError( mw.message( 'bs-privacy-request-cancel-failed' ).text() );
+		} );
 	};
 
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );

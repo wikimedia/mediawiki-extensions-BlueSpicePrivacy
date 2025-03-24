@@ -1,8 +1,8 @@
-( function( mw, $, bs ) {
+( function ( mw, $, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.widget = bs.privacy.widget || {};
 
-	bs.privacy.widget.Consent = function( cfg ) {
+	bs.privacy.widget.Consent = function ( cfg ) {
 		cfg = cfg || {};
 
 		cfg.title = cfg.title || mw.message( 'bs-privacy-consent-layout-label' ).text();
@@ -10,15 +10,15 @@
 		bs.privacy.widget.Consent.parent.call( this, cfg );
 
 		this.cookieConsentProvider = null;
-		if( cfg.cookieConsentProvider ) {
-			var func = bs.privacy.util.funcFromCallback( cfg.cookieConsentProvider.class );
-			this.cookieConsentProvider = new func( cfg.cookieConsentProvider.config );
+		if ( cfg.cookieConsentProvider ) {
+			const func = bs.privacy.util.funcFromCallback( cfg.cookieConsentProvider.class );
+			this.cookieConsentProvider = new func( cfg.cookieConsentProvider.config ); // eslint-disable-line new-cap
 		}
 	};
 
 	OO.inheritClass( bs.privacy.widget.Consent, bs.privacy.widget.Privacy );
 
-	bs.privacy.widget.Consent.prototype.makeForm = function() {
+	bs.privacy.widget.Consent.prototype.makeForm = function () {
 		this.saveButton = new OO.ui.ButtonWidget( {
 			label: mw.message( 'bs-privacy-consent-save-button' ).text(),
 			flags: [
@@ -29,17 +29,17 @@
 		this.saveButton.on( 'click', this.saveSettings.bind( this ) );
 
 		this.consentInputs = {};
-		this.getOptions().done( function( response ) {
-			if( response.success === 1 ) {
+		this.getOptions().done( ( response ) => {
+			if ( response.success === 1 ) {
 				this.form = new OO.ui.FieldsetLayout();
 
-				for( var name in response.data.consents ) {
-					var data = response.data.consents[name];
+				for ( const name in response.data.consents ) {
+					const data = response.data.consents[ name ];
 
-					var check = new OO.ui.CheckboxInputWidget( {
+					const check = new OO.ui.CheckboxInputWidget( {
 						selected: parseInt( data.value ) === 1
 					} );
-					this.consentInputs[name] = check;
+					this.consentInputs[ name ] = check;
 
 					this.form.addItems( [
 						// Html snippets - not particularly cool
@@ -51,7 +51,7 @@
 					] );
 				}
 
-				if( this.cookieConsentProvider ) {
+				if ( this.cookieConsentProvider ) {
 					this.form.addItems( [
 						this.cookieConsentProvider.getSettingsWidget()
 					] );
@@ -63,36 +63,36 @@
 			} else {
 				this.displayError( mw.message( 'bs-privacy-consent-get-options-fail' ).text() );
 			}
-		}.bind( this ) ).fail( function( response ) {
+		} ).fail( () => {
 			this.displayError( mw.message( 'bs-privacy-consent-get-options-fail' ).text() );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Consent.prototype.saveSettings = function() {
-		var data = {};
-		for( var name in this.consentInputs ) {
-			var widget = this.consentInputs[name];
-			data[name] = widget.isSelected();
+	bs.privacy.widget.Consent.prototype.saveSettings = function () {
+		const data = {};
+		for ( const name in this.consentInputs ) {
+			const widget = this.consentInputs[ name ];
+			data[ name ] = widget.isSelected();
 		}
 
 		this.makeApiCall( {
 			func: 'setConsent',
 			data: JSON.stringify( { consents: data } )
-		} ).done( function( response ) {
-			if( response.success === 1 ) {
+		} ).done( ( response ) => {
+			if ( response.success === 1 ) {
 				return this.displaySuccess( mw.message( 'bs-privacy-consent-save-success' ).text() );
 			}
 			this.displayError( mw.message( 'bs-privacy-consent-save-fail' ).text() );
-		}.bind( this ) ).fail( function( response ) {
+		} ).fail( () => {
 			this.displayError( mw.message( 'bs-privacy-consent-save-fail' ).text() );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Consent.prototype.getOptions = function() {
+	bs.privacy.widget.Consent.prototype.getOptions = function () {
 		return this.makeApiCall( { func: 'getConsent' } );
 	};
 
-	bs.privacy.widget.Consent.prototype.makeApiCall = function( data ) {
+	bs.privacy.widget.Consent.prototype.makeApiCall = function ( data ) {
 		return bs.privacy.widget.Consent.parent.prototype.makeApiCall.apply( this, [ 'consent', data ] );
 	};
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );

@@ -1,23 +1,23 @@
-( function( mw, $, d ){
+( function ( mw, $, d ) {
 
-	$( d ).keydown( function(e) {
-		if( e.key && e.key.toLowerCase() === 'tab' &&
+	$( d ).on( 'keydown', ( e ) => {
+		if ( e.key && e.key.toLowerCase() === 'tab' &&
 			$( '.bs-privacy-cookie-consent-mw-provider-bar' ).length ) {
-			var $targetEl = $( e.target );
-			var $tabChildren = $( ".bs-privacy-cookie-consent-mw-provider-bar ").children();
+			const $targetEl = $( e.target );
+			const $tabChildren = $( '.bs-privacy-cookie-consent-mw-provider-bar ' ).children();
 
-			if( e.shiftKey ) {
+			if ( e.shiftKey ) {
 				if ( $targetEl.is( $tabChildren.first() ) ) {
 					e.preventDefault();
-					$tabChildren.last().children().focus();
+					$tabChildren.last().children().trigger( 'focus' );
 				}
 			} else {
 				if ( $targetEl.is( $tabChildren.last().children() ) ) {
 					e.preventDefault();
-					$tabChildren.first().focus();
+					$tabChildren.first().trigger( 'focus' );
 				}
 			}
 		}
-	})
+	} );
 
-} )( mediaWiki, jQuery, document );
+}( mediaWiki, jQuery, document ) );

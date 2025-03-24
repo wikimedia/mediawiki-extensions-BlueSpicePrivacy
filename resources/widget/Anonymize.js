@@ -1,8 +1,8 @@
-( function( mw, $, bs ) {
+( function ( mw, $, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.widget = bs.privacy.widget || {};
 
-	bs.privacy.widget.Anonymize = function( cfg ) {
+	bs.privacy.widget.Anonymize = function ( cfg ) {
 		cfg = cfg || {};
 
 		cfg.title = cfg.title || mw.message( 'bs-privacy-anonymization-layout-label' ).text();
@@ -17,7 +17,7 @@
 
 	OO.inheritClass( bs.privacy.widget.Anonymize, bs.privacy.widget.PrivacyRequestable );
 
-	bs.privacy.widget.Anonymize.prototype.makeRequestForm = function() {
+	bs.privacy.widget.Anonymize.prototype.makeRequestForm = function () {
 		this.makeDirectForm();
 
 		this.confirmButton = new OO.ui.ButtonWidget( {
@@ -33,13 +33,13 @@
 		this.layout.addItems( this.form );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.makePendingForm = function() {
+	bs.privacy.widget.Anonymize.prototype.makePendingForm = function () {
 		bs.privacy.widget.Anonymize.parent.prototype.makePendingForm.apply( this, [
 			'bs-privacy-anonymization-request-pending'
 		] );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.makeDeniedForm = function( comment ) {
+	bs.privacy.widget.Anonymize.prototype.makeDeniedForm = function ( comment ) {
 		bs.privacy.widget.Anonymize.parent.prototype.makeDeniedForm.call(
 			this,
 			'bs-privacy-anonymization-request-denied',
@@ -48,7 +48,7 @@
 		);
 	};
 
-	bs.privacy.widget.Anonymize.prototype.makeRequest = function() {
+	bs.privacy.widget.Anonymize.prototype.makeRequest = function () {
 		this.setLoading( true );
 		this.makeApiCall( {
 			func: 'submitRequest',
@@ -56,20 +56,20 @@
 				oldUsername: this.currentUsername,
 				username: this.newUsername
 			} )
-		} ).done( function( response ) {
+		} ).done( ( response ) => {
 			if ( response.success === 1 ) {
 				this.setLoading( false );
 				this.form.$element.remove();
 				this.makePendingForm();
 				return;
 			}
-			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
-		}.bind( this ) ).fail( function() {
-			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
-		}.bind( this ) );
+			this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
+		} ).fail( () => {
+			this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
+		} );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.makeDirectForm = function() {
+	bs.privacy.widget.Anonymize.prototype.makeDirectForm = function () {
 		this.newNameInput = new OO.ui.TextInputWidget( {
 			maxLength: 255
 		} );
@@ -88,8 +88,8 @@
 			label: mw.message( 'bs-privacy-anonymization-new-username-label' ).text()
 		} );
 
-		this.getUsername().done( function( response ) {
-			if( response.success === 1 ) {
+		this.getUsername().done( ( response ) => {
+			if ( response.success === 1 ) {
 				this.clearErrors();
 				// Random username retrieved
 				this.newNameInput.setValue( response.data.username );
@@ -99,26 +99,26 @@
 			} else {
 				this.displayError( mw.message( 'bs-privacy-anonymization-error-retrieving-name' ).text() );
 			}
-		}.bind( this ) ).fail( function( response ) {
+		} ).fail( () => {
 			this.displayError( mw.message( 'bs-privacy-anonymization-error-retrieving-name' ).text() );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.getUsername = function() {
+	bs.privacy.widget.Anonymize.prototype.getUsername = function () {
 		return this.makeApiCall( { func: 'getUsername' } );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.makeApiCall = function( data ) {
+	bs.privacy.widget.Anonymize.prototype.makeApiCall = function ( data ) {
 		return bs.privacy.widget.Anonymize.parent.prototype.makeApiCall.apply( this, [ 'anonymization', data ] );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.displaySuccess = function( message ) {
+	bs.privacy.widget.Anonymize.prototype.displaySuccess = function ( message ) {
 		bs.privacy.widget.Anonymize.parent.prototype.displaySuccess.apply( this, [ message ] );
 
-		var loginLink = mw.Title.makeTitle( -1, "Login" ).getUrl( {
+		const loginLink = mw.Title.makeTitle( -1, 'Login' ).getUrl( {
 			wpName: this.newUsername
 		} );
-		var loginButton = new OO.ui.ButtonWidget( {
+		const loginButton = new OO.ui.ButtonWidget( {
 			label: mw.message( 'bs-privacy-anonymize-login-button' ).text(),
 			href: loginLink,
 			framed: true,
@@ -127,18 +127,18 @@
 		this.$element.append( loginButton.$element );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.anonymize = function() {
+	bs.privacy.widget.Anonymize.prototype.anonymize = function () {
 		OO.ui.confirm( mw.message( 'bs-privacy-anonymization-final-prompt' ).text() )
-			.done( function( confirmed ) {
-				if( confirmed ) {
+			.done( ( confirmed ) => {
+				if ( confirmed ) {
 					this.doAnonymize();
 				}
-			}.bind( this ) );
+			} );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.doAnonymize = function() {
+	bs.privacy.widget.Anonymize.prototype.doAnonymize = function () {
 		// For sanity
-		if( !this.newUsername ) {
+		if ( !this.newUsername ) {
 			return this.displayError( mw.message( 'bs-privacy-anonymization-invalid-name' ).text() );
 		}
 		this.setLoading( true );
@@ -150,41 +150,41 @@
 				oldUsername: this.currentUsername,
 				username: this.newUsername
 			} )
-		} ).done( function( response ) {
+		} ).done( ( response ) => {
 			if ( response.success ) {
 				this.displaySuccess( mw.message( 'bs-privacy-anonymization-success-anonymizing', this.newUsername ).text() );
 			} else {
 				this.displayError( mw.message( 'bs-privacy-anonymization-error-anonymizing' ).text() );
 			}
-		}.bind( this ) ).fail( function( response ) {
+		} ).fail( () => {
 			this.displayError( mw.message( 'bs-privacy-anonymization-error-anonymizing' ).text() );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Anonymize.prototype.onNameInputChange = function() {
+	bs.privacy.widget.Anonymize.prototype.onNameInputChange = function () {
 		this.confirmButton.setDisabled( true );
 		this.newUsername = '';
 
 		clearTimeout( this.typingTimer );
-		this.typingTimer = setTimeout( function() {
+		this.typingTimer = setTimeout( () => {
 			this.checkUsername();
-		}.bind( this ), this.typingDoneInterval );
-	}
+		}, this.typingDoneInterval );
+	};
 
-	bs.privacy.widget.Anonymize.prototype.checkUsername = function() {
-		var username = this.newNameInput.getValue().trim();
-		this.$element.find( ".bs-privacy-error" ).remove();
+	bs.privacy.widget.Anonymize.prototype.checkUsername = function () {
+		const username = this.newNameInput.getValue().trim();
+		this.$element.find( '.bs-privacy-error' ).remove();
 
 		this.makeApiCall( {
 			func: 'checkUsername',
 			data: JSON.stringify( {
 				username: username
 			} )
-		} ).done( function( response ) {
-			if( response.success === 0 ) {
+		} ).done( ( response ) => {
+			if ( response.success === 0 ) {
 				return this.displayError( mw.message( 'bs-privacy-anonymization-error-check-name' ).text() );
 			}
-			if( response.data.exists === 1 ) {
+			if ( response.data.exists === 1 ) {
 				this.displayError( mw.message( 'bs-privacy-anonymization-username-exists' ).text() );
 			} else if ( response.data.invalid === 1 ) {
 				this.displayError( mw.message( 'bs-privacy-anonymization-invalid-name' ).text() );
@@ -193,9 +193,9 @@
 				this.confirmButton.setDisabled( false );
 				this.clearErrors();
 			}
-		}.bind( this ) ).fail( function() {
+		} ).fail( () => {
 			this.displayError( mw.message( 'bs-privacy-anonymization-error-check-name' ).text() );
-		}.bind( this ) );
+		} );
 	};
 
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );

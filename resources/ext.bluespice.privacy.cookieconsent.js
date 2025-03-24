@@ -1,39 +1,39 @@
-( function( mw, $, bs ) {
-	var handlerConfig = mw.config.get( "bsPrivacyCookieConsentHandlerConfig" ),
-		handler = null,
-		cookieGetterOrig = document.__lookupGetter__( "cookie" ),
-		cookieSetterOrig = document.__lookupSetter__( "cookie" ),
-		cookieQueue = [];
+( function ( mw, $, bs ) {
+	const handlerConfig = mw.config.get( 'bsPrivacyCookieConsentHandlerConfig' );
+	let handler = null;
+	const cookieGetterOrig = document.__lookupGetter__( 'cookie' ); // eslint-disable-line no-underscore-dangle
+	const cookieSetterOrig = document.__lookupSetter__( 'cookie' ); // eslint-disable-line no-underscore-dangle
+	let cookieQueue = [];
 
-	mw.loader.using( handlerConfig.RLModule ).done( function() {
-		var callback = handlerConfig.class;
+	mw.loader.using( handlerConfig.RLModule ).done( () => {
+		const callback = handlerConfig.class;
 
-		var func = bs.privacy.util.funcFromCallback( callback );
+		const func = bs.privacy.util.funcFromCallback( callback );
 
 		try {
-			handler = new func( {
+			handler = new func( { // eslint-disable-line new-cap
 				cookiePrefix: handlerConfig.cookiePrefix,
 				cookiePath: handlerConfig.cookiePath,
 				cookieName: handlerConfig.cookieName,
 				cookieMap: handlerConfig.map,
 				cookieSetterOrig: cookieSetterOrig
 			} );
-		} catch( err ) {
+		} catch ( err ) {
 			return;
 		}
 
 		$( '#userloginForm .mw-htmlform .warningbox' ).attr( 'tabindex', 0 );
 		// Bind to change cookie settings footer link
-		$( 'body' ).on( 'click', '#bs-privacy-footer-change-cookie-settings', function() {
-			var openSettings = handler.settingsOpen;
+		$( 'body' ).on( 'click', '#bs-privacy-footer-change-cookie-settings', () => {
+			const openSettings = handler.settingsOpen;
 			openSettings.apply( handler );
 		} );
 	} );
 
 	// Override default mechanism for setting cookies
-	Object.defineProperty(document, "cookie", {
+	Object.defineProperty( document, 'cookie', {
 		get: function () {
-			return cookieGetterOrig.apply(document);
+			return cookieGetterOrig.apply( document );
 		},
 		set: function () {
 			return setIfAllowed.apply( this, arguments );
@@ -49,8 +49,8 @@
 			return false;
 		} else {
 			if ( cookieQueue.length > 0 ) {
-				for ( var i = 0; i < cookieQueue.length; i ++ ) {
-					handler.setIfAllowed.apply( handler, cookieQueue[i] );
+				for ( let i = 0; i < cookieQueue.length; i++ ) {
+					handler.setIfAllowed.apply( handler, cookieQueue[ i ] );
 				}
 				cookieQueue = [];
 			}
@@ -58,4 +58,4 @@
 			return handler.setIfAllowed.apply( handler, arguments );
 		}
 	}
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );
