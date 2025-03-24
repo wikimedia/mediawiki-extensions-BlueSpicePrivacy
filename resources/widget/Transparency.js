@@ -1,8 +1,8 @@
-( function( mw, $, bs ) {
+( function ( mw, $, bs ) {
 	window.bs.privacy = bs.privacy || {};
 	bs.privacy.widget = bs.privacy.widget || {};
 
-	bs.privacy.widget.Transparency = function( cfg ) {
+	bs.privacy.widget.Transparency = function ( cfg ) {
 		cfg = cfg || {};
 
 		cfg.title = cfg.title || mw.message( 'bs-privacy-transparency-layout-label' ).text();
@@ -18,7 +18,7 @@
 
 	OO.inheritClass( bs.privacy.widget.Transparency, bs.privacy.widget.Privacy );
 
-	bs.privacy.widget.Transparency.prototype.init = function() {
+	bs.privacy.widget.Transparency.prototype.init = function () {
 		bs.privacy.widget.Transparency.parent.prototype.init.call( this );
 		this.loader.$element.remove();
 		this.loaders = {
@@ -34,76 +34,76 @@
 
 	};
 
-	bs.privacy.widget.Transparency.prototype.makeForm = function() {
-		this.viewDataButton = new OO.ui.ButtonWidget({
-			label: mw.message('bs-privacy-transparency-show-all-data-button').text(),
+	bs.privacy.widget.Transparency.prototype.makeForm = function () {
+		this.viewDataButton = new OO.ui.ButtonWidget( {
+			label: mw.message( 'bs-privacy-transparency-show-all-data-button' ).text(),
 			flags: [
 				'primary',
 				'progressive'
 			]
-		});
-		this.viewDataButton.on('click', this.viewData.bind(this));
+		} );
+		this.viewDataButton.on( 'click', this.viewData.bind( this ) );
 
 		this.makeExportLayout();
 
-		this.form = new OO.ui.FieldsetLayout({
+		this.form = new OO.ui.FieldsetLayout( {
 			items: [
 				this.viewDataButton,
 				this.exportLayout
 			]
-		});
+		} );
 
 		this.layout.addItems( [ this.form ] );
 	};
 
-	bs.privacy.widget.Transparency.prototype.exportData = function() {
+	bs.privacy.widget.Transparency.prototype.exportData = function () {
 		this.setLoading( true, 'export' );
 
-		var data = {
+		const data = {
 			types: this.typeSelector.getValue(),
-			export_format: this.formatSelector.getValue()
+			export_format: this.formatSelector.getValue() // eslint-disable-line camelcase
 		};
 
-		if( data.types.length === 0 ) {
+		if ( data.types.length === 0 ) {
 			return;
 		}
 
-		this.getDataApi( data ).done( function( response ) {
+		this.getDataApi( data ).done( ( response ) => {
 			this.setLoading( false, 'export' );
-			if( response.success === 0 ) {
-				return this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
+			if ( response.success === 0 ) {
+				return this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
 			}
 
-			var anchor = document.createElement( 'a' );
+			const anchor = document.createElement( 'a' );
 			anchor.download = response.data.filename;
-			if( response.data.format === 'html' ) {
+			if ( response.data.format === 'html' ) {
 				anchor.href = 'data:text/html;charset=utf-8,' + encodeURIComponent( response.data.contents );
 			} else if ( response.data.format === 'csv' ) {
 				anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent( response.data.contents );
 			}
 
-			if( window.navigator.msSaveOrOpenBlob ) {
+			if ( window.navigator.msSaveOrOpenBlob ) {
 				// Special treatment for IE/Edge, as usual
 				window.navigator.msSaveBlob( new Blob(
 					[ response.data.contents ],
 					{ type: 'text/html' }
 				), anchor.download );
 			} else {
-				var e = document.createEvent( 'MouseEvents' );
+				const e = document.createEvent( 'MouseEvents' );
 				e.initEvent( 'click', true, true );
 				anchor.dispatchEvent( e );
 				return true;
 			}
 
-		}.bind( this ) ).fail( function( response ) {
-			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
+		} ).fail( () => {
+			this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
 			this.setLoading( false, 'export' );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Transparency.prototype.getDataApi = function( data ) {
+	bs.privacy.widget.Transparency.prototype.getDataApi = function ( data ) {
 		data = data || {};
-		var apiData = {
+		const apiData = {
 			action: 'bs-privacy',
 			module: 'transparency',
 			func: 'getData',
@@ -113,33 +113,33 @@
 		return this.api.post( apiData );
 	};
 
-	bs.privacy.widget.Transparency.prototype.viewData = function() {
+	bs.privacy.widget.Transparency.prototype.viewData = function () {
 		this.setLoading( true, 'data' );
-		this.getDataApi().done( function( response ) {
+		this.getDataApi().done( ( response ) => {
 			this.setLoading( false, 'data' );
-			if( response.success === 0 ) {
-				return this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
+			if ( response.success === 0 ) {
+				return this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
 			}
-			var windowManager = OO.ui.getWindowManager();
-			var cfg = {
+			const windowManager = OO.ui.getWindowManager();
+			const cfg = {
 				data: response.data,
 				size: 'larger'
 			};
-			var dialog = new bs.privacy.dialog.ViewDataDialog( cfg );
+			const dialog = new bs.privacy.dialog.ViewDataDialog( cfg );
 			windowManager.addWindows( [ dialog ] );
 			windowManager.openWindow( dialog );
-		}.bind( this ) ).fail( function() {
-			this.displayError( mw.message( "bs-privacy-request-failed" ).text() );
+		} ).fail( () => {
+			this.displayError( mw.message( 'bs-privacy-request-failed' ).text() );
 			this.setLoading( false, 'data' );
-		}.bind( this ) );
+		} );
 	};
 
-	bs.privacy.widget.Transparency.prototype.setLoading = function( value, type ) {
-		var loader = this.loaders[type];
-		if( !loader ) {
+	bs.privacy.widget.Transparency.prototype.setLoading = function ( value, type ) {
+		const loader = this.loaders[ type ];
+		if ( !loader ) {
 			return;
 		}
-		var element = type === 'export' ? this.exportLayoutBody : this.viewDataButton;
+		const element = type === 'export' ? this.exportLayoutBody : this.viewDataButton;
 		if ( value ) {
 			element.$element.hide();
 			loader.$element.removeClass( 'visually-hidden' );
@@ -151,7 +151,7 @@
 		}
 	};
 
-	bs.privacy.widget.Transparency.prototype.makeExportLayout = function() {
+	bs.privacy.widget.Transparency.prototype.makeExportLayout = function () {
 		this.typeSelector = new OO.ui.CheckboxMultiselectInputWidget( {
 			value: [
 				'personal',
@@ -229,4 +229,4 @@
 		} );
 	};
 
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, jQuery, blueSpice ) );
