@@ -66,9 +66,7 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function () {
 			timestampWithDaysAgo: {
 				headerText: mw.message( 'bs-privacy-admin-request-grid-column-timestamp' ).text(),
 				width: 280,
-				valueRenderer: function ( value, row ) {
-					this.renderTS( value, row );
-				}.bind( this )
+				valueParser: ( value, row ) => this.renderTS( value, row )
 			},
 			comment: {
 				headerText: mw.message( 'bs-privacy-admin-request-grid-column-comment' ).text()
@@ -96,25 +94,26 @@ bs.privacy.widget.RequestManager.prototype.makeForm = function () {
 	this.layout.$element.append( grid.$element );
 };
 
-bs.privacy.widget.RequestManager.prototype.renderTS = function ( value, row ) { // eslint-disable-line no-unused-vars
-	// Reached or passed the deadline
+bs.privacy.widget.RequestManager.prototype.renderTS = function ( value, row ) {
 	const deadline = mw.config.get( 'bsPrivacyRequestDeadline' );
-	if ( record.get( 'daysAgo' ) >= deadline ) { // eslint-disable-line no-undef
-		return new OO.ui.HtmlSnippet( $( '<div>' ).append( $( '<span>' )
-			.addClass( 'bs-privacy-request-overdue' ).html( value ) )
-			.html() );
+	const untilDeadline = deadline - row.daysAgo;
+	let tsClass = '';
+
+	if ( row.daysAgo >= deadline ) {
+		// Reached or passed the deadline
+		tsClass = 'bs-privacy-request-overdue';
+	} else if ( untilDeadline < 3 ) {
+		// Near a deadline
+		tsClass = 'bs-privacy-request-near';
 	}
 
-	// Near a deadline
-	const untilDeadline = deadline - record.get( 'daysAgo' ); // eslint-disable-line no-undef
-	if ( untilDeadline < 3 ) {
-		return new OO.ui.HtmlSnippet( $( '<div>' ).append( $( '<span>' )
-			.addClass( 'bs-privacy-request-near' ).html( value ) )
-			.html() );
-	}
-
-	// Far from deadline
-	return new OO.ui.HtmlSnippet( $( '<div>' ).append( $( '<span>' ).html( value ) ).html() );
+	return new OO.ui.HtmlSnippet(
+		mw.html.element(
+			'p',
+			{ class: tsClass },
+			value
+		)
+	);
 };
 
 bs.privacy.widget.RequestManager.prototype.onGridAction = function ( action, row ) {
