@@ -5,7 +5,7 @@
 	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0|~2",
-		"mwstake/mediawiki-component-events": "~3"
+		"mwstake/mediawiki-component-events": "~4"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "43.0.0",
