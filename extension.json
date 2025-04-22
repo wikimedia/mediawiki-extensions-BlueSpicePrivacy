@@ -566,6 +566,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Privacy\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Privacy\\Tests\\": "tests/phpunit/"
+	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"
 	],
