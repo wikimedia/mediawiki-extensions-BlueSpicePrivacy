@@ -73,7 +73,7 @@ class PrivacyApi extends ApiBase {
 		$module = $moduleRegistry->getModuleByKey( $module );
 		if ( !$module ) {
 			$this->status = Status::newFatal(
-				wfMessage( "bs-privacy-api-error-missing-module", $module )
+				$this->msg( "bs-privacy-api-error-missing-module", $module )
 			);
 			return;
 		}
