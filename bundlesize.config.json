@@ -1,0 +1,10 @@
+[
+	{
+		"resourceModule": "ext.bs.privacy.cookieconsent.nativemw.register",
+		"maxSize": "2.7 kB"
+	},
+	{
+		"resourceModule": "ext.bs.privacy.cookieconsent",
+		"maxSize": "0.7 kB"
+	}
+]
