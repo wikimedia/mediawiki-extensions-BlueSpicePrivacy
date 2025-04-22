@@ -1,5 +1,4 @@
-vendor
-Thumbs.db
-composer.lock
-node_modules
-/.eslintcache
+/composer.lock
+/vendor
+/node_modules
+.eslintcache
