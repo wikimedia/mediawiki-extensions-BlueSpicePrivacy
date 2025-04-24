@@ -7,6 +7,7 @@
 			"MathXplore",
 			"Reiwa period",
 			"Shirayuki",
+			"Yaakiyu.jp",
 			"もなー(偽物)"
 		]
 	},
@@ -164,7 +165,7 @@
 	"bs-privacy-consent-auth-fail": "すべての条件に同意する必要があります",
 	"bs-privacy-module-consent-set-success": "同意は正常に保存されました",
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "BlueSpiceCalumma 外装コンポーネントの状態を保存します",
-	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "BlueSpiceDiscovery 外装コンポーネントの状態を保存します",
+	"bs-privacy-cookie-consent-cookie-desc-bluespicediscovery": "BlueSpiceDiscoveryスキンのコンポーネントの状態を保存します",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "ユーザー通知の状態を保存します",
 	"bs-privacy-cookie-consent-cookie-desc-_session": "現在の利用者のセッションハッシュを保持します",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "キャッシュメカニズムの設定値を保持する",

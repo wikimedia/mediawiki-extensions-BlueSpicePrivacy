@@ -25,7 +25,7 @@
 	"bs-privacy-transparency-private-edit-count": "Nùmmiru di canciamenti: $1",
 	"bs-privacy-consent-save-button": "Sarva",
 	"bs-privacy-admin-consent-grid-column-user": "Nomu utenti",
-	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 jornu|$2 jorna}} fa)",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 jornu|$2 jorna}} arrè)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (oji)",
 	"bs-privacy-consent-bool-true": "Sì",
 	"bs-privacy-consent-bool-false": "No",
