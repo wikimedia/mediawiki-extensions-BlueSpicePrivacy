@@ -51,5 +51,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
-	"bs-privacy-module-name-anonymization": "Anonymiséierung"
+	"bs-privacy-module-name-anonymization": "Anonymiséierung",
+	"bs-privacy-anonymization-api-invalid-username": "Ongültege Benotzernumm"
 }
