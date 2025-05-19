@@ -42,9 +42,10 @@
 	"bs-privacy-prefs-consent-privacy-policy": "Prihvatam <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} politiku privatnosti]</span> ovog sajta",
 	"bs-privacy-prefs-consent-tos": "Prihvatam <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} uslove korišćenja]</span> ovog sajta",
 	"bs-privacy-prefs-cookieacceptmandatory-label": "Omogući obavezne kolačiće",
-	"bs-privacy-prefs-privacypolicymandatory-label": "Omogući obaveznu politiku privatnosti",
+	"bs-privacy-prefs-privacypolicymandatory-label": "Omogući obaveznu politiku privatnosti i uslova korišćenja",
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Pri prijavi prihvati „politiku privatnosti” i „uslove korišćenja”",
 	"bs-privacy-consent-save-button": "Sačuvaj",
-	"bs-privacy-admin-consent-grid-column-user": "Korisničko ime",
+	"bs-privacy-admin-consent-grid-column-user": "Korisnik",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (danas)",
 	"bs-privacy-consent-bool-true": "Da",
 	"bs-privacy-consent-bool-false": "Ne",
@@ -55,5 +56,7 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Sačuvaj",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zatvori",
 	"bs-privacy-admin-icon-bool-true-aria-label": "provereno",
-	"bs-privacy-admin-icon-bool-false-aria-label": "neprovereno"
+	"bs-privacy-admin-icon-bool-false-aria-label": "neprovereno",
+	"bs-privacy-consent-type-privacy-policy-short": "Politika privatnosti",
+	"bs-privacy-consent-type-terms-of-service-short": "Uslovi korišćenja"
 }
