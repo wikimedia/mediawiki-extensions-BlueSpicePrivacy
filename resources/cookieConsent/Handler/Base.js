@@ -41,6 +41,10 @@
 			this.cookieSetterOrig.apply( document, arguments );
 			return;
 		}
+		// Unset cookie in case its already set
+		this.cookieSetterOrig.apply( document, [
+			cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=' + this.cookiePath
+		] );
 		return false;
 	};
 
