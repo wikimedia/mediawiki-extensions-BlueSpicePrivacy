@@ -4,6 +4,10 @@
 			"Умар"
 		]
 	},
+	"bs-privacy-admintool-label": "Конфиденциаллалин администраци",
+	"bs-privacy-admintool-text": "Къайлаха",
+	"privacycenter": "Конфиденциаллалин центр",
+	"privacyadmin": "Конфиденциаллалин администраци",
 	"bs-privacy-anonymization-request-comment": "Декъашхочун керла цӀе: $1",
 	"bs-privacy-acknowledge-request-button": "Йухадаккха",
 	"bs-privacy-request-denied-comment": "Коммент: $1",
