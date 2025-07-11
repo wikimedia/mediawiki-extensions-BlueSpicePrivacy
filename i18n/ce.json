@@ -32,5 +32,9 @@
 	"logentry-bs-privacy-deletion": "$4 декъашхочо дӀайаьккхина аккаунт",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "ТӀеэца массо",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Ӏалашйе",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ДӀачӀагӀа"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "ДӀачӀагӀа",
+	"bs-privacy-admintool-label": "Конфиденциаллалин администраци",
+	"bs-privacy-admintool-text": "Къайлаха",
+	"privacycenter": "Конфиденциаллалин центр",
+	"privacyadmin": "Конфиденциаллалин администраци"
 }
