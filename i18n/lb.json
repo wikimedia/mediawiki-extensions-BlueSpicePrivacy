@@ -8,7 +8,7 @@
 	"bs-privacy-api-error-generic": "Et ass e Feeler geschitt",
 	"bs-privacy-anonymization-new-username-label": "Neie Benotzernumm",
 	"bs-privacy-api-error-missing-module": "Module $1 ass net registréiert!",
-	"bs-privacy-invalid-user": "De Benotzer ass net valabel",
+	"bs-privacy-invalid-user": "De Benotzer ass ongülteg",
 	"bs-privacy-request-cancel-failed": "D'Ufro konnt net annuléiert ginn",
 	"bs-privacy-deletion-layout-label": "Äre Benotzerkont läschen",
 	"bs-privacy-deletion-submit-request-label": "Bemierkung (fakultativ)",
@@ -36,7 +36,7 @@
 	"bs-privacy-transparency-private-realname": "Richtegen Numm: $1",
 	"bs-privacy-transparency-private-groups": "Gruppen: $1",
 	"bs-privacy-transparency-private-former-groups": "Fréier Gruppen: $1",
-	"bs-privacy-transparency-private-not-blocked": "Gespaart: Neen",
+	"bs-privacy-transparency-private-not-blocked": "Gespaart: Nee",
 	"bs-privacy-transparency-private-blocked": "Gespaart: Jo (vum $1)",
 	"bs-privacy-transparency-private-edit-count": "Zuel vun den Ännerungen: $1",
 	"bs-privacy-transparency-type-title-personal": "Perséinlech Daten",
@@ -44,12 +44,13 @@
 	"bs-privacy-admin-consent-grid-column-user": "Benotzer",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (haut)",
 	"bs-privacy-consent-bool-true": "Jo",
-	"bs-privacy-consent-bool-false": "Neen",
+	"bs-privacy-consent-bool-false": "Nee",
 	"logentry-bs-privacy-anonymization": "$4 huet de Benotzerkont anonymiséiert. Neie Benotzernumm: $5",
 	"logentry-bs-privacy-deletion": "De Benotzer $4 huet de Benotzerkont geläscht",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "All akzeptéieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zoumaachen",
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
-	"bs-privacy-module-name-anonymization": "Anonymiséierung"
+	"bs-privacy-module-name-anonymization": "Anonymiséierung",
+	"bs-privacy-anonymization-api-invalid-username": "Ongültege Benotzernumm"
 }
