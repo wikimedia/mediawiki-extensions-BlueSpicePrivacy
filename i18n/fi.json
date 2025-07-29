@@ -21,6 +21,7 @@
 	"bs-privacy-prefs-consent-cookies": "Hyväksyn evästeiden tallentamisen",
 	"bs-privacy-prefs-privacypolicyonlogin-label": "Hyväksy \"Tietosuojakäytäntö\" ja \"Käyttöehdot\" kirjautuessasi",
 	"bs-privacy-consent-save-button": "Tallenna",
+	"bs-privacy-admin-consent-grid-column-user": "Käyttäjä",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (tänään)",
 	"bs-privacy-consent-bool-true": "Kyllä",
 	"bs-privacy-consent-bool-false": "Ei",
