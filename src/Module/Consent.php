@@ -150,7 +150,7 @@ class Consent extends Module {
 			$descriptors[$preferenceName] = [
 				'type' => 'toggle',
 				'label-message' => $preferenceName,
-				'section' => 'personal/info'
+				'section' => 'personal/privacy'
 			];
 		}
 
