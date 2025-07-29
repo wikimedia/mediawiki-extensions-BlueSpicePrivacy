@@ -3,7 +3,8 @@
 		"authors": [
 			"EdoAug",
 			"Jon Harald Søby",
-			"Vukky"
+			"Vukky",
+			"Yupik"
 		]
 	},
 	"bs-privacy": "BlueSpice Privacy",
@@ -123,7 +124,7 @@
 	"bs-privacy-consent-save-fail": "En feil oppsto mens vi prøvde å lagre personvernsinnstillingene dine",
 	"bs-privacy-admin-consent-overview-title": "Oversikt over personvernssamtykke",
 	"bs-privacy-admin-consent-overview-help": "Oversikt over samtykkestatus for alle brukere",
-	"bs-privacy-admin-consent-grid-column-user": "Brukernavn",
+	"bs-privacy-admin-consent-grid-column-user": "Bruker",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|i går|2=i forgårs|for $2 dager siden}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (i dag)",
 	"log-name-bs-privacy": "BS-personvern",
