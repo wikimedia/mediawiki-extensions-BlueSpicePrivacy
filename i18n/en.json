@@ -209,5 +209,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "Privacy policy",
 	"bs-privacy-consent-type-terms-of-service-short": "Terms of service",
 	"bs-privacy-module-name-anonymization": "Anonymization",
-	"bs-privacy-module-name-deletion": "Deletion"
+	"bs-privacy-module-name-deletion": "Deletion",
+	"prefs-privacy": "Privacy"
 }
