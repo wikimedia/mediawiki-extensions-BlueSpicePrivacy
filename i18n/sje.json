@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Olve Utne"
+			"Olve Utne",
+			"Yupik"
 		]
 	},
 	"bs-privacy-request-denied-comment": "Målgedibme: $1",
 	"bs-privacy-admin-request-grid-column-comment": "Målgedibme",
 	"bs-privacy-transparency-private-groups": "Gruhpa: $1",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Vurrki"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Vurrki",
+	"bs-privacy-anonymization-new-username-label": "Åđđå adnejnamma",
+	"bs-privacy-anonymization-request-comment": "Åđđå adnejnamma: $1",
+	"bs-privacy-admin-consent-grid-column-user": "Adnej"
 }
