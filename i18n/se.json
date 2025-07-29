@@ -11,5 +11,6 @@
 	"bs-privacy-admin-request-grid-column-user": "Geavaheaddji",
 	"bs-privacy-anonymization-new-username-label": "Ođđa geavaheaddjinamma",
 	"bs-privacy-anonymization-request-comment": "Ođđa geavaheaddjinamma: $1",
-	"bs-privacy-transparency-private-realname": "Albma namma: $1"
+	"bs-privacy-transparency-private-realname": "Albma namma: $1",
+	"bs-privacy-admin-consent-grid-column-user": "Geavaheaddji"
 }

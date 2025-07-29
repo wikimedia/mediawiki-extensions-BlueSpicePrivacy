@@ -79,7 +79,7 @@
 	"bs-privacy-prefs-consent-privacy-policy": "Jag accepterar denna webbplats [[{{MediaWiki:Privacypage}}|sekretesspolicy]]",
 	"bs-privacy-consent-layout-label": "Integritetsreglerssamtycke",
 	"bs-privacy-consent-save-button": "Spara",
-	"bs-privacy-admin-consent-grid-column-user": "Användarnamn",
+	"bs-privacy-admin-consent-grid-column-user": "Användare",
 	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|$2 dag|$2 dagar}} sedan)",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (idag)",
 	"bs-privacy-consent-bool-true": "Ja",
