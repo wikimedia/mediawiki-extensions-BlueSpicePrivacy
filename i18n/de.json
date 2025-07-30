@@ -234,5 +234,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "Datenschutzrichtlinie",
 	"bs-privacy-consent-type-terms-of-service-short": "Nutzungsbedingungen",
 	"bs-privacy-module-name-anonymization": "Anonymisierung",
-	"bs-privacy-module-name-deletion": "Löschung"
+	"bs-privacy-module-name-deletion": "Löschung",
+	"prefs-privacy": "Datenschutz"
 }
