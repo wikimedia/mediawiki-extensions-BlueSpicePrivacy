@@ -137,5 +137,6 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "selezionato",
 	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato",
 	"bs-privacy-prefs-privacypolicymandatory-label": "Abilita l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" obbligatori",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "Accetta l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" al momento dell'accesso"
+	"bs-privacy-prefs-privacypolicyonlogin-label": "Accetta l'\"Informativa sulla privacy\" e le \"Condizioni di servizio\" al momento dell'accesso",
+	"prefs-privacy": "Privacy"
 }
