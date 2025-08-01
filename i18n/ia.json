@@ -223,5 +223,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "Politica de confidentialitate",
 	"bs-privacy-consent-type-terms-of-service-short": "Conditiones de servicio",
 	"bs-privacy-module-name-anonymization": "Anonymisation",
-	"bs-privacy-module-name-deletion": "Deletion"
+	"bs-privacy-module-name-deletion": "Deletion",
+	"prefs-privacy": "Confidentialitate"
 }

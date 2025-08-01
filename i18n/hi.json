@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abijeet Patro",
 			"Prong$31"
 		]
 	},
@@ -31,5 +32,6 @@
 	"notification-bs-privacy-login-url": "विकि पर लॉगिन करें",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "सभी स्वीकृति करें",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "सहेजें",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "बंद करें"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "बंद करें",
+	"prefs-privacy": "गोपनीयता"
 }
