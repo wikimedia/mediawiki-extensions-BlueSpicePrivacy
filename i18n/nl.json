@@ -212,5 +212,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "Privacybeleid",
 	"bs-privacy-consent-type-terms-of-service-short": "Gebruiksvoorwaarden",
 	"bs-privacy-module-name-anonymization": "Anonimisering",
-	"bs-privacy-module-name-deletion": "Verwijdering"
+	"bs-privacy-module-name-deletion": "Verwijdering",
+	"prefs-privacy": "Privacy"
 }
