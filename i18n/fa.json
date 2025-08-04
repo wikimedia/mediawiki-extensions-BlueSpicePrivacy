@@ -102,5 +102,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "بستن",
 	"bs-privacy-consent-auth-step": "برای ادامه، لطفاً شرایط زیر را بپذیرید",
 	"bs-privacy-consent-auth-fail": "شما باید کلیه شرایط را بپذیرید",
-	"bs-privacy-special-privacy-pages-invalid-subpage": "زیرصفحه نامعتبر است. لطفاً از یکی از موارد زیر استفاده کنید: $1"
+	"bs-privacy-special-privacy-pages-invalid-subpage": "زیرصفحه نامعتبر است. لطفاً از یکی از موارد زیر استفاده کنید: $1",
+	"prefs-privacy": "حریم خصوصی"
 }
