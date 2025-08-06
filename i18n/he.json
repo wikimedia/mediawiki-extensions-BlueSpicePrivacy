@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Erelon",
+			"Neriah",
 			"Steeve815",
 			"Strayblues",
 			"YaronSh"
@@ -227,5 +228,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "מדיניות פרטיות",
 	"bs-privacy-consent-type-terms-of-service-short": "תנאי שירות",
 	"bs-privacy-module-name-anonymization": "אנונימיזציה",
-	"bs-privacy-module-name-deletion": "מחיקה"
+	"bs-privacy-module-name-deletion": "מחיקה",
+	"prefs-privacy": "פרטיות"
 }
