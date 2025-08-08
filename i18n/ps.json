@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"bs-privacy-admin-consent-grid-column-user": "کارن"
+	"bs-privacy-admin-consent-grid-column-user": "کارن",
+	"prefs-privacy": "پټنتيا"
 }
