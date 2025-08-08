@@ -8,6 +8,7 @@
 			"Derugon",
 			"Gomoko",
 			"Graineahumus",
+			"JLTRY",
 			"MacOS Weed",
 			"Mahabarata",
 			"McDutchie",
@@ -222,5 +223,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "Politique de confidentialité",
 	"bs-privacy-consent-type-terms-of-service-short": "Conditions d’utilisation",
 	"bs-privacy-module-name-anonymization": "Anonymisation",
-	"bs-privacy-module-name-deletion": "Suppression"
+	"bs-privacy-module-name-deletion": "Suppression",
+	"prefs-privacy": "Confidentialité"
 }
