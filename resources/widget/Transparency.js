@@ -59,9 +59,10 @@
 	bs.privacy.widget.Transparency.prototype.exportData = function () {
 		this.setLoading( true, 'export' );
 
+		const selectedFormat = this.formatSelector.findSelectedItem();
 		const data = {
 			types: this.typeSelector.getValue(),
-			export_format: this.formatSelector.getValue() // eslint-disable-line camelcase
+			export_format: selectedFormat.getData() // eslint-disable-line camelcase
 		};
 
 		if ( data.types.length === 0 ) {
@@ -179,19 +180,19 @@
 			]
 		} );
 
-		this.formatSelector = new OO.ui.RadioSelectInputWidget( {
-			value: 'html',
-			options: [
-				{
+		this.formatSelector = new OO.ui.RadioSelectWidget( {
+			items: [
+				new OO.ui.RadioOptionWidget( {
 					data: 'html',
 					label: mw.message( 'bs-privacy-transparency-format-html' ).text()
-				},
-				{
+				} ),
+				new OO.ui.RadioOptionWidget( {
 					data: 'csv',
 					label: mw.message( 'bs-privacy-transparency-format-csv' ).text()
-				}
+				} )
 			]
 		} );
+		this.formatSelector.selectItemByData( 'html' );
 
 		this.exportButton = new OO.ui.ButtonWidget( {
 			label: mw.message( 'bs-privacy-transparency-export-data-button' ).text(),
