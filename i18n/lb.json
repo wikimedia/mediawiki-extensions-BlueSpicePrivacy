@@ -53,5 +53,7 @@
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
 	"bs-privacy-module-name-anonymization": "Anonymiséierung",
 	"bs-privacy-anonymization-api-invalid-username": "Ongültege Benotzernumm",
-	"prefs-privacy": "Dateschutz"
+	"prefs-privacy": "Dateschutz",
+	"bs-privacy-transparency-export-data-button": "Donnéeën exportéieren",
+	"bs-privacy-transparency-export-layout-title": "Är Donnéeën exportéieren"
 }
