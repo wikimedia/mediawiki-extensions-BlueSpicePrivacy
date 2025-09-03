@@ -425,7 +425,7 @@
 				"bs-privacy-cookie-convenience-group-label",
 				"bs-privacy-cookie-convenience-group-desc",
 				"bs-privacy-cookie-consent-mw-provider-settings-dialog-save",
-				"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel"
+				"cancel"
 			],
 			"group": "general",
 			"dependencies": [
