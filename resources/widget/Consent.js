@@ -46,7 +46,8 @@
 						new OO.ui.FieldLayout( check, {
 							align: 'inline',
 							label: new OO.ui.HtmlSnippet( data.label ),
-							help: new OO.ui.HtmlSnippet( data.help )
+							help: new OO.ui.HtmlSnippet( data.help ),
+							helpInline: true
 						} )
 					] );
 				}

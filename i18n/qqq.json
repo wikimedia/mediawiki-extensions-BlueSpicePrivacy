@@ -173,7 +173,6 @@
 	"bs-privacy-cookie-convenience-group-label": "Label for the cookie type \"convenience\"",
 	"bs-privacy-cookie-convenience-group-desc": "Help etxt for the cookie type \"convenience\"",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Label for button to save settings in cookie consent settings dialog",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Label for button to close cookie consent settings dialog",
 	"bs-privacy-consent-cookie-settings-label": "Label for the anchor that opens cookie consent dialog",
 	"bs-privacy-termsofservicepage": "{{doc-important|Copy the word \"Project:\" as is to the translation, without translating it. This is the namespace prefix.}}\nUsed as a link target\n\n{{Identical|Requestaccount-page}}",
 	"bs-privacy-privacypage": "{{doc-important|Copy the word \"Project:\" as is to the translation, without translating it. This is the namespace prefix.}}\nUsed as a link target\n\n{{Identical|Privacypage}}",

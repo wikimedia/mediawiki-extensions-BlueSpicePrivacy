@@ -21,12 +21,11 @@
 		{
 			action: 'save',
 			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-settings-dialog-save' ).text(),
-			flags: 'primary',
-			disabled: false
+			flags: [ 'primary', 'progressive' ]
 		},
 		{
-			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel' ).text(),
-			flags: 'safe'
+			label: mw.message( 'cancel' ).text(),
+			flags: [ 'safe', 'close' ]
 		}
 
 	];
