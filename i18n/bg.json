@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"StanProg"
 		]
 	},
 	"bs-privacy-consent-bool-true": "Да",
-	"bs-privacy-consent-bool-false": "Не"
+	"bs-privacy-consent-bool-false": "Не",
+	"bs-privacy-transparency-view-data-dialog-close": "Затваряне",
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Затваряне"
 }
