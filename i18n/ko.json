@@ -130,7 +130,6 @@
 	"bs-privacy-cookie-convenience-group-label": "Convenience 쿠키",
 	"bs-privacy-cookie-convenience-group-desc": "사이트의 사용자 경험을 개선하는 쿠키",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "저장",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "닫기",
 	"bs-privacy-consent-cookie-settings-label": "쿠키 동의 변경하기",
 	"bs-privacy-consent-auth-step": "계속하려면 다음 조항을 수락해 주십시오",
 	"bs-privacy-consent-auth-fail": "모든 조항을 수락해야 합니다",

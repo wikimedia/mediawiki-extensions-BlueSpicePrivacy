@@ -39,6 +39,5 @@
 	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$4|zanonimizował|zanonimizowała}} konto użytkownika. Nowa nazwa użytkownika to $5",
 	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął konto",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Zamknij",
 	"bs-privacy-privacypage": "Project:Polityka prywatności"
 }

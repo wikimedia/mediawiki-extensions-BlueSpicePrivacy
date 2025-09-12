@@ -18,6 +18,5 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (այսոր)",
 	"bs-privacy-consent-bool-true": "Այո",
 	"bs-privacy-consent-bool-false": "Ոչ",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Հիշել",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Փակել"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Հիշել"
 }
