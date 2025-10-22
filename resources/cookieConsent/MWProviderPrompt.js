@@ -62,6 +62,10 @@
 			return;
 		}
 
+		this.$element = $( '<section>' ).attr( 'aria-label',
+			mw.message( 'bs-privacy-cookie-banner-aria-label' ).text()
+		).attr( 'role', 'dialog' ).attr( 'aria-modal', true );
+
 		this.bar = new OO.ui.HorizontalLayout( {
 			classes: [ 'bs-privacy-cookie-consent-mw-provider-bar' ]
 		} );
@@ -100,8 +104,9 @@
 			acceptAll
 		] );
 
+		this.$element.append( this.bar.$element );
 		// Accessibility: prepend element to be first focus with tab navigation
-		$( 'body' ).prepend( this.bar.$element );
+		$( 'body' ).prepend( this.$element );
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.onCookieSettingsChanged = function ( groups ) {

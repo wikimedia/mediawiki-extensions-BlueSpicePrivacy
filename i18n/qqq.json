@@ -216,5 +216,6 @@
 	"bs-privacy-consent-type-terms-of-service-short": "Name label for terms of service consent type",
 	"bs-privacy-module-name-anonymization": "Module name label",
 	"bs-privacy-module-name-deletion": "Module name label",
-	"prefs-privacy": "Header of the Privacy options on [[Special:Preferences]]"
+	"prefs-privacy": "Header of the Privacy options on [[Special:Preferences]]",
+	"bs-privacy-cookie-banner-aria-label": "Aria label for cookie banner to manage cookies"
 }

@@ -425,7 +425,8 @@
 				"bs-privacy-cookie-convenience-group-label",
 				"bs-privacy-cookie-convenience-group-desc",
 				"bs-privacy-cookie-consent-mw-provider-settings-dialog-save",
-				"cancel"
+				"cancel",
+				"bs-privacy-cookie-banner-aria-label"
 			],
 			"group": "general",
 			"dependencies": [
