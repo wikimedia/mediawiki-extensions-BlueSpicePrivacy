@@ -145,8 +145,8 @@ class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParse
 		}
 
 		$exceptions = [
-			$outputPage->getContext()->msg( 'Privacypage' )->plain(),
-			$outputPage->getContext()->msg( 'Termsofservicepage' )->plain(),
+			$outputPage->getContext()->msg( 'Privacypage' )->text(),
+			$outputPage->getContext()->msg( 'Termsofservicepage' )->text(),
 		];
 		$action = $outputPage->getContext()->getRequest()->getText( 'action', 'view' );
 		foreach ( $exceptions as $exceptionPage ) {

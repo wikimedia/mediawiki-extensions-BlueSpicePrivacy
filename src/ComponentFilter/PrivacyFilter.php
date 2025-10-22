@@ -69,7 +69,7 @@ class PrivacyFilter implements IComponentFilter {
 
 		foreach ( self::PRIVACY_PAGES as $value ) {
 			$page = $context->msg( $value );
-			$privacytitle = $this->titleFactory->newFromText( $page->inContentLanguage()->plain() );
+			$privacytitle = $this->titleFactory->newFromText( $page->inContentLanguage()->text() );
 			if ( $privacytitle && $title->equals( $privacytitle ) ) {
 				return false;
 			}
