@@ -68,7 +68,7 @@ class PrivacyCenter extends SpecialPage {
 	 * @return void
 	 */
 	private function output() {
-		$this->getOutput()->addSubtitle( $this->msg( 'bs-privacy-privacy-center-subtitle' )->plain() );
+		$this->getOutput()->addSubtitle( $this->msg( 'bs-privacy-privacy-center-subtitle' )->text() );
 
 		$modules = $this->moduleRegistry->getAllModules();
 

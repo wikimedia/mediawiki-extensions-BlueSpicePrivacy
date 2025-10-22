@@ -23,11 +23,11 @@ class AddWhitelistPages extends TitleReadWhitelist {
 
 		foreach ( $pages as $value ) {
 			$page = $this->msg( $value );
-			$title = Title::newFromText( $page->plain() );
+			$title = Title::newFromText( $page->text() );
 			if ( $title && $this->title->equals( $title ) ) {
 				return false;
 			}
-			$title = Title::newFromText( $page->inContentLanguage()->plain() );
+			$title = Title::newFromText( $page->inContentLanguage()->text() );
 			if ( $title && $this->title->equals( $title ) ) {
 				return false;
 			}
