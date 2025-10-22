@@ -15,10 +15,10 @@ class PrivacyPages extends \BlueSpice\SpecialPage {
 	public function execute( $subPage ) {
 		if ( $subPage === 'TermsOfServices' ) {
 			$configName = 'PrivacyTermsOfServiceLink';
-			$localPageName = $this->msg( 'bs-privacy-termsofservicepage' )->inContentLanguage()->plain();
+			$localPageName = $this->msg( 'bs-privacy-termsofservicepage' )->inContentLanguage()->text();
 		} elseif ( $subPage === 'PrivacyPolicy' ) {
 			$configName = 'PrivacyPrivacyPolicyLink';
-			$localPageName = $this->msg( 'bs-privacy-privacypage' )->inContentLanguage()->plain();
+			$localPageName = $this->msg( 'bs-privacy-privacypage' )->inContentLanguage()->text();
 		} else {
 			$this->getOutput()->showErrorPage(
 				'error',

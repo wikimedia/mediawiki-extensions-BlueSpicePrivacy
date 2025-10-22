@@ -166,7 +166,7 @@ class Anonymization extends ModuleRequestable {
 		if ( !isset( $data['username'] ) || empty( $data['username'] ) ) {
 			return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 		}
-		$comment = wfMessage( 'bs-privacy-anonymization-request-comment', $data['username'] )->plain();
+		$comment = wfMessage( 'bs-privacy-anonymization-request-comment', $data['username'] )->text();
 		$data['comment'] = $comment;
 
 		return parent::submitRequest( $data );

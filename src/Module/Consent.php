@@ -113,13 +113,13 @@ class Consent extends Module {
 
 			$consentMessage = wfMessage( $this->getOptions()[$consentName] )->parse();
 			$valueMessage = $value ?
-				wfMessage( 'bs-privacy-consent-bool-true' )->plain() :
-				wfMessage( 'bs-privacy-consent-bool-false' )->plain();
+				wfMessage( 'bs-privacy-consent-bool-true' )->text() :
+				wfMessage( 'bs-privacy-consent-bool-false' )->text();
 			$consentsForLog[] = wfMessage(
 				'bs-privacy-consent-log-consent',
 				$consentMessage,
 				$valueMessage
-			)->plain();
+			)->text();
 
 			$this->userOptionsManager->setOption( $this->user, $this->getOptions()[$consentName], $value );
 		}

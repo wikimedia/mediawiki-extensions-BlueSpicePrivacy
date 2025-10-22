@@ -206,13 +206,13 @@ class Transparency extends Module {
 			$this->user
 		);
 		$args = [
-			'title' => wfMessage( 'bs-privacy-transparency-html-export-title', $formattedDate )->plain(),
+			'title' => wfMessage( 'bs-privacy-transparency-html-export-title', $formattedDate )->text(),
 			'groups' => []
 		];
 
 		foreach ( $data as $section => $items ) {
 			$args['groups'][] = [
-				'name' => wfMessage( 'bs-privacy-transparency-type-title-' . $section )->plain(),
+				'name' => wfMessage( 'bs-privacy-transparency-type-title-' . $section )->text(),
 				'items' => $items
 			];
 		}
@@ -245,10 +245,10 @@ class Transparency extends Module {
 		);
 
 		$csvData = [
-			wfMessage( 'bs-privacy-transparency-html-export-title', $formattedDate )->plain()
+			wfMessage( 'bs-privacy-transparency-html-export-title', $formattedDate )->text()
 		];
 		foreach ( $data as $section => $items ) {
-			$csvData[] = wfMessage( 'bs-privacy-transparency-type-title-' . $section )->plain();
+			$csvData[] = wfMessage( 'bs-privacy-transparency-type-title-' . $section )->text();
 			foreach ( $items as $item ) {
 				$csvData[] = "$item";
 			}
