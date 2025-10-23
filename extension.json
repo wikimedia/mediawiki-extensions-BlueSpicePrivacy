@@ -41,9 +41,6 @@
 					"roles": [ "admin", "accountmanager" ]
 				}
 			},
-			"AdminToolRegistry": {
-				"bs-privacy-admin": "BlueSpice\\Privacy\\AdminTool"
-			},
 			"AlertProviderRegistry": {
 				"bs-privacy-alert": "\\BlueSpice\\Privacy\\AlertProvider\\MissingPrivacyPages::factory"
 			}
