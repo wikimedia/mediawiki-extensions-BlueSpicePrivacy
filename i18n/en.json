@@ -210,5 +210,6 @@
 	"bs-privacy-consent-type-terms-of-service-short": "Terms of service",
 	"bs-privacy-module-name-anonymization": "Anonymization",
 	"bs-privacy-module-name-deletion": "Deletion",
-	"prefs-privacy": "Privacy"
+	"prefs-privacy": "Privacy",
+	"bs-privacy-cookie-banner-aria-label": "Cookie settings"
 }
