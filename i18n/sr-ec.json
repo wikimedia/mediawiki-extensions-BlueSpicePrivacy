@@ -65,5 +65,6 @@
 	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”",
 	"bs-privacy-consent-type-privacy-policy-short": "Политика приватности",
 	"bs-privacy-consent-type-terms-of-service-short": "Услови коришћења",
-	"prefs-privacy": "Приватност"
+	"prefs-privacy": "Приватност",
+	"bs-privacy-cookie-banner-aria-label": "Подешавање колачића"
 }

@@ -208,5 +208,6 @@
 	"bs-privacy-alert-page-not-exist": "{{PLURAL:$1|A seguinte página não existe: $2. Crie-a|As seguintes páginas não existem: $2. Crie-as}}, por favor.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Subpágina inválida. Use uma das seguintes, por favor: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "verificado",
-	"bs-privacy-admin-icon-bool-false-aria-label": "não verificado"
+	"bs-privacy-admin-icon-bool-false-aria-label": "não verificado",
+	"bs-privacy-cookie-banner-aria-label": "Definições de ''cookies''"
 }
