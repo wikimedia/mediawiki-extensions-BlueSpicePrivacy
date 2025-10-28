@@ -62,5 +62,6 @@
 	"bs-privacy-admin-icon-bool-false-aria-label": "непроверено",
 	"bs-privacy-consent-type-privacy-policy-short": "Политика приватности",
 	"bs-privacy-consent-type-terms-of-service-short": "Услови коришћења",
-	"prefs-privacy": "Приватност"
+	"prefs-privacy": "Приватност",
+	"bs-privacy-cookie-banner-aria-label": "Подешавање колачића"
 }

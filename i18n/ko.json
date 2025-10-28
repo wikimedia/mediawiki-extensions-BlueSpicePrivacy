@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ellif",
 			"Maoue",
 			"Nuevo Paso",
 			"Ykhwong",
@@ -150,5 +151,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "개인정보보호정책",
 	"bs-privacy-consent-type-terms-of-service-short": "서비스 약관",
 	"bs-privacy-module-name-anonymization": "익명화",
-	"bs-privacy-module-name-deletion": "삭제"
+	"bs-privacy-module-name-deletion": "삭제",
+	"bs-privacy-cookie-banner-aria-label": "쿠키 설정"
 }

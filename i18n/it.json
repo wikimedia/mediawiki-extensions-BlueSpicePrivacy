@@ -131,5 +131,6 @@
 	"bs-privacy-cookie-consent-cookie-list-label": "Elenco dei cookie in questo gruppo:",
 	"bs-privacy-admin-icon-bool-true-aria-label": "selezionato",
 	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato",
-	"prefs-privacy": "Privacy"
+	"prefs-privacy": "Privacy",
+	"bs-privacy-cookie-banner-aria-label": "Impostazioni cookie"
 }
