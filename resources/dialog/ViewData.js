@@ -13,11 +13,11 @@
 
 	bs.privacy.dialog.ViewDataDialog.static.name = 'viewDataDialog';
 
-	bs.privacy.dialog.ViewDataDialog.static.title = mw.message( 'bs-privacy-transparency-view-data-dialog-title' ).plain();
+	bs.privacy.dialog.ViewDataDialog.static.title = mw.message( 'bs-privacy-transparency-view-data-dialog-title' ).text();
 
 	bs.privacy.dialog.ViewDataDialog.static.actions = [
 		{
-			label: mw.message( 'bs-privacy-transparency-view-data-dialog-close' ).plain(),
+			label: mw.message( 'bs-privacy-transparency-view-data-dialog-close' ).text(),
 			flags: 'safe'
 		}
 
