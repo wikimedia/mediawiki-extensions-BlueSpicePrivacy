@@ -10,7 +10,6 @@
 	},
 	"bs-privacy": "Privacidade do BlueSpice",
 	"bs-privacy-desc": "Página de gerenciamento para configurações de privacidade do usuário",
-	"bs-privacy-admintool-label": "Administrador de privacidade",
 	"bs-privacy-admintool-text": "Privacidade",
 	"bs-privacy-header": "Registro de todas as ações realizadas pelos usuários em relação à privacidade",
 	"privacycenter": "Centro de privacidade",

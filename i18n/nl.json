@@ -8,12 +8,12 @@
 			"McDutchie",
 			"Nickthijssen1994",
 			"Optilete",
-			"Romaine"
+			"Romaine",
+			"Siebrand"
 		]
 	},
 	"bs-privacy": "BlueSpice Privacy",
 	"bs-privacy-desc": "Beheerpagina voor gebruikersprivacy-instellingen",
-	"bs-privacy-admintool-label": "Privacybeheer",
 	"bs-privacy-admintool-text": "Privacy",
 	"bs-privacy-header": "Logboek van alle handelingen die gebruikers hebben verricht met betrekking tot privacy",
 	"privacycenter": "Centrum voor persoonsgegevens",
@@ -212,5 +212,6 @@
 	"bs-privacy-consent-type-terms-of-service-short": "Gebruiksvoorwaarden",
 	"bs-privacy-module-name-anonymization": "Anonimisering",
 	"bs-privacy-module-name-deletion": "Verwijdering",
-	"prefs-privacy": "Privacy"
+	"prefs-privacy": "Privacy",
+	"bs-privacy-cookie-banner-aria-label": "Cookie-instellingen"
 }
