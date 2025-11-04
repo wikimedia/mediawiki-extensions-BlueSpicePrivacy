@@ -6,12 +6,12 @@
 			"Meno25",
 			"أَحمد",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Mohammed Qays"
 		]
 	},
 	"bs-privacy": "خصوصية BlueSpice",
 	"bs-privacy-desc": "صفحةلإدارة لإعدادات خصوصية المستخدم",
-	"bs-privacy-admintool-label": "إدارة الخصوصية",
 	"bs-privacy-admintool-text": "الخصوصية",
 	"bs-privacy-header": "سجل جميع الإجراءات التي اتخذها المستخدمون بخصوص الخصوصية",
 	"privacycenter": "مركز الخصوصية",
@@ -186,5 +186,6 @@
 	"bs-privacy-alert-page-not-exist": "التالي {{PLURAL:$1| الصفحة | الصفحات غير موجودة}} غير موجودة: $2 . يرجى إنشاء {{PLURAL:$1| انها | هم}}.",
 	"bs-privacy-special-privacy-pages-invalid-subpage": "صفحة فرعية غير صالحة. الرجاء استخدام أحد الخيارات التالية: $1",
 	"bs-privacy-admin-icon-bool-true-aria-label": "مفحوص",
-	"bs-privacy-admin-icon-bool-false-aria-label": "غير مفحوص"
+	"bs-privacy-admin-icon-bool-false-aria-label": "غير مفحوص",
+	"bs-privacy-cookie-banner-aria-label": "إعدادات ملفات تعريف الارتباط"
 }

@@ -5,11 +5,11 @@
 			"Nuevo Paso",
 			"Ykhwong",
 			"Yunbj",
-			"아라"
+			"아라",
+			"Ellif"
 		]
 	},
 	"bs-privacy-desc": "사용자 개인정보 설정의 관리 페이지",
-	"bs-privacy-admintool-label": "프라이버시 관리",
 	"bs-privacy-admintool-text": "개인정보",
 	"privacycenter": "프라이버시 센터",
 	"privacyadmin": "프라이버시 관리",
@@ -149,5 +149,6 @@
 	"bs-privacy-consent-type-privacy-policy-short": "개인정보보호정책",
 	"bs-privacy-consent-type-terms-of-service-short": "서비스 약관",
 	"bs-privacy-module-name-anonymization": "익명화",
-	"bs-privacy-module-name-deletion": "삭제"
+	"bs-privacy-module-name-deletion": "삭제",
+	"bs-privacy-cookie-banner-aria-label": "쿠키 설정"
 }

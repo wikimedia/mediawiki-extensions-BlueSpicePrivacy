@@ -54,5 +54,6 @@
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Späicheren",
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
 	"bs-privacy-module-name-anonymization": "Anonymiséierung",
-	"prefs-privacy": "Dateschutz"
+	"prefs-privacy": "Dateschutz",
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen"
 }
