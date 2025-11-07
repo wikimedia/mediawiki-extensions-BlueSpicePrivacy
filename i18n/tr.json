@@ -7,6 +7,7 @@
 			"Hedda",
 			"Ice bulldog",
 			"MuratTheTurkish",
+			"Sakblue",
 			"SaldırganSincap",
 			"İmmortalance"
 		]
@@ -169,5 +170,6 @@
 	"privacyconsent": "Gizlilik Politikası Onayı",
 	"bs-privacy-cookie-consent-cookie-desc-notificationflag": "Kullanıcı bildirimleri durumunu kaydeder",
 	"bs-privacy-cookie-consent-cookie-list-label": "Bu gruptaki çerezlerin listesi:",
-	"bs-privacy-event-deletion-done": "Kullanıcı hesabınızı silme isteğiniz kabul edildi"
+	"bs-privacy-event-deletion-done": "Kullanıcı hesabınızı silme isteğiniz kabul edildi",
+	"bs-privacy-cookie-banner-aria-label": "Çerez ayarları"
 }
