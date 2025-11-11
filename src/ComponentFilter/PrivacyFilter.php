@@ -63,7 +63,7 @@ class PrivacyFilter implements IComponentFilter {
 		}
 
 		$title = $context->getTitle();
-		if ( $title->isSpecial( 'PrivacyPages' ) ) {
+		if ( !$title || $title->isSpecial( 'PrivacyPages' ) ) {
 			return false;
 		}
 
