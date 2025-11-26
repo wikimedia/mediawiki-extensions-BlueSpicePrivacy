@@ -207,5 +207,6 @@
 	"bs-privacy-consent-type-terms-of-service-short": "服務條款",
 	"bs-privacy-module-name-anonymization": "匿名化",
 	"bs-privacy-module-name-deletion": "刪除",
-	"prefs-privacy": "隱私"
+	"prefs-privacy": "隱私",
+	"bs-privacy-cookie-banner-aria-label": "Cookie 設定"
 }
