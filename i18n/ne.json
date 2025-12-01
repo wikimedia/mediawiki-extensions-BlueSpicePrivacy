@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"पर्वत सुबेदी"
+			"पर्वत सुबेदी",
+			"Nirajan pant"
 		]
 	},
 	"bs-privacy-acknowledge-request-button": "रद्द",
 	"bs-privacy-admin-request-grid-column-comment": "टिप्पणी",
 	"bs-privacy-transparency-layout-label": "पारदर्शिता",
-	"bs-privacy-admin-consent-grid-column-user": "प्रयोगकर्ता नाम",
+	"bs-privacy-admin-consent-grid-column-user": "प्रयोगकर्ता",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "सुरक्षित"
 }
