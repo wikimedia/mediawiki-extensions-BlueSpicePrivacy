@@ -546,7 +546,8 @@
 				"TitleFactory",
 				"MWStakeCommonUtilsConfig",
 				"BlueSpicePrivacy.ModuleRegistry",
-				"UserOptionsLookup"
+				"UserOptionsLookup",
+				"MWStakeCommonUtilsFactory"
 			]
 		}
 	],
