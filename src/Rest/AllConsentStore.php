@@ -12,6 +12,7 @@ use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Rest\UserQueryStore;
 use MWStake\MediaWiki\Component\DataStore\IStore;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class AllConsentStore extends UserQueryStore {
@@ -27,15 +28,19 @@ class AllConsentStore extends UserQueryStore {
 	 * @param GlobalVarConfig $mwsgConfig
 	 * @param ModuleRegistry $moduleRegistry
 	 * @param UserOptionsLookup $userOptionsLookup
+	 * @param UtilityFactory $utilityFactory
 	 */
 	public function __construct(
 		HookContainer $hookContainer, ILoadBalancer $lb, UserFactory $userFactory,
-		LinkRenderer $linkRenderer, TitleFactory $titleFactory,
-		GlobalVarConfig $mwsgConfig, ModuleRegistry $moduleRegistry, UserOptionsLookup $userOptionsLookup
+		LinkRenderer $linkRenderer, TitleFactory $titleFactory, GlobalVarConfig $mwsgConfig,
+		ModuleRegistry $moduleRegistry, UserOptionsLookup $userOptionsLookup, UtilityFactory $utilityFactory
 	) {
-		parent::__construct( $hookContainer, $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig );
+		parent::__construct(
+			$hookContainer, $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig, $utilityFactory
+		);
 		$this->consentStore = new Store(
-			$lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig, $userOptionsLookup, $moduleRegistry
+			$lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig, $utilityFactory,
+			$userOptionsLookup, $moduleRegistry
 		);
 	}
 

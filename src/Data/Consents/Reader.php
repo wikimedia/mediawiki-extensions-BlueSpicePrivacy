@@ -8,6 +8,7 @@ use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\UserFactory;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\Reader {
@@ -28,14 +29,16 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	 * @param LinkRenderer $linkRenderer
 	 * @param TitleFactory $titleFactory
 	 * @param GlobalVarConfig $mwsgConfig
+	 * @param UtilityFactory $utilityFactory
 	 * @param UserOptionsLookup $userOptionsLookup
 	 * @param ModuleRegistry $moduleRegistry
 	 */
 	public function __construct(
 		ILoadBalancer $lb, UserFactory $userFactory, LinkRenderer $linkRenderer, TitleFactory $titleFactory,
-		GlobalVarConfig $mwsgConfig, UserOptionsLookup $userOptionsLookup, ModuleRegistry $moduleRegistry
+		GlobalVarConfig $mwsgConfig, UtilityFactory $utilityFactory,
+		UserOptionsLookup $userOptionsLookup, ModuleRegistry $moduleRegistry
 	) {
-		parent::__construct( $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig );
+		parent::__construct( $lb, $userFactory, $linkRenderer, $titleFactory, $mwsgConfig, $utilityFactory );
 		$this->moduleRegistry = $moduleRegistry;
 		$this->userOptionsLookup = $userOptionsLookup;
 	}
