@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
 	"bs-privacy-deletion-layout-label": "Выдаліць Ваш рахунак",
+	"bs-privacy-deletion-request-deletion-button": "Запыт выдаленьня рахунку",
 	"bs-privacy-deletion-cancel-request-button": "Скасаваць запыт выдаленьня",
 	"bs-privacy-cancel-request-button": "Скасаваць запыт",
 	"bs-privacy-deletion-button": "Выдаліць Ваш рахунак",
