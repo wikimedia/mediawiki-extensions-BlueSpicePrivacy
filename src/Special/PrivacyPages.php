@@ -6,7 +6,11 @@ use MediaWiki\MediaWikiServices;
 class PrivacyPages extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'PrivacyPages', '', false );
+		parent::__construct( 'PrivacyPages' );
+	}
+
+	public function isListed() {
+		return false;
 	}
 
 	/**

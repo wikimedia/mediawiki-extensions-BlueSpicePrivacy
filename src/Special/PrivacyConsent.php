@@ -20,8 +20,12 @@ class PrivacyConsent extends FormSpecialPage {
 	 * @param ModuleRegistry $moduleRegistry
 	 */
 	public function __construct( ModuleRegistry $moduleRegistry ) {
-		parent::__construct( 'PrivacyConsent', '', false );
+		parent::__construct( 'PrivacyConsent' );
 		$this->moduleRegistry = $moduleRegistry;
+	}
+
+	public function isListed() {
+		return false;
 	}
 
 	/**
