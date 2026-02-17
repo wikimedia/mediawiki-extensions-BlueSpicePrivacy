@@ -169,5 +169,6 @@
 	"privacyconsent": "Samtykke i personvernspolitikken",
 	"bs-privacy-cookie-consent-cookie-list-label": "Liste over informasjonskapsler i denne gruppen:",
 	"bs-privacy-admin-icon-bool-true-aria-label": "krysset av",
-	"bs-privacy-admin-icon-bool-false-aria-label": "ikke krysset av"
+	"bs-privacy-admin-icon-bool-false-aria-label": "ikke krysset av",
+	"bs-privacy-cookie-banner-aria-label": "Innstillinger for informasjonskapsler"
 }
