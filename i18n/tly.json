@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Patriot Kor",
-			"Patriot Kur"
+			"Patriot Kur",
+			"Гусейн"
 		]
 	},
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (ımrüj)",
 	"bs-privacy-consent-bool-false": "Ne",
-	"bs-privacy-cookie-consent-group-necessary-label": "Lozım cookies"
+	"bs-privacy-cookie-consent-group-necessary-label": "Lozim byə cookies"
 }

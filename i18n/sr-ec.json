@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"BadDog",
 			"Kizule",
 			"Milicevic01"
@@ -16,7 +17,7 @@
 	"bs-privacy-admin-request-grid-column-comment": "Коментар",
 	"bs-privacy-transparency-show-all-data-button": "Прикажи све податке",
 	"bs-privacy-consent-save-button": "Сачувај",
-	"bs-privacy-admin-consent-grid-column-user": "Корисничко име",
+	"bs-privacy-admin-consent-grid-column-user": "Корисник",
 	"bs-privacy-consent-bool-true": "Да",
 	"bs-privacy-consent-bool-false": "Не",
 	"echo-category-title-bs-privacy-cat": "Радње за приватност",
@@ -61,5 +62,9 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (данас)",
 	"logentry-bs-privacy-anonymization": "$4 је анонимизовао налог. Ново корисничко име: $5",
 	"logentry-bs-privacy-deletion": "Корисник $4 је обрисао налог",
-	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”"
+	"bs-privacy-prefs-privacypolicyonlogin-label": "При пријави прихвати „политику приватности” и „услове коришћења”",
+	"bs-privacy-consent-type-privacy-policy-short": "Политика приватности",
+	"bs-privacy-consent-type-terms-of-service-short": "Услови коришћења",
+	"prefs-privacy": "Приватност",
+	"bs-privacy-cookie-banner-aria-label": "Подешавање колачића"
 }

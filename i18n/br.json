@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Adriendelucca"
+			"Adriendelucca",
+			"Huñvreüs"
 		]
 	},
 	"bs-privacy-admintool-text": "Prevezded",
@@ -32,7 +33,7 @@
 	"bs-privacy-transparency-private-edit-count": "Niver a zegasadennoù: $1",
 	"bs-privacy-transparency-type-title-personal": "Titouroù personel",
 	"bs-privacy-consent-save-button": "Enrollañ",
-	"bs-privacy-admin-consent-grid-column-user": "Anv implijer",
+	"bs-privacy-admin-consent-grid-column-user": "Implijer",
 	"bs-privacy-timestamp-with-days-ago": "$1 {{PLURAL:$2|$2 devezh|$2 zevezh|$2 devezh}} zo",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (hiriv)",
 	"bs-privacy-consent-bool-true": "Ya",
