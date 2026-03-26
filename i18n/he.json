@@ -229,5 +229,6 @@
 	"bs-privacy-consent-type-terms-of-service-short": "תנאי שירות",
 	"bs-privacy-module-name-anonymization": "אנונימיזציה",
 	"bs-privacy-module-name-deletion": "מחיקה",
-	"prefs-privacy": "פרטיות"
+	"prefs-privacy": "פרטיות",
+	"bs-privacy-cookie-banner-aria-label": "הגדרות עוגיות"
 }
