@@ -5,6 +5,29 @@
 			"شاه زمان پټان"
 		]
 	},
+	"bs-privacy": "شين‌تشيال پټتيا",
+	"bs-privacy-desc": "د کارن پټتيا اوڼنو لپاره د چاروالۍ مخ",
+	"bs-privacy-admintool-text": "پټتيا",
+	"bs-privacy-header": "د ټولو هغه چارو يادښت چې کارن د پټتيا لپاره کړې دي",
+	"privacycenter": "پټتياځی",
+	"privacyadmin": "د پټتيا پازوالي",
+	"bs-privacy-privacy-center-subtitle": "د خپلې پټتيا اوڼنو ټول‌کتنه",
+	"bs-privacy-api-error-generic": "یوه تېروتنه رامنځته شوه",
+	"bs-privacy-anonymization-error-retrieving-name": "د نوي کارن‌نوم ترلاسنه پخې پر مهال يوه تېروتنه رامنځته شوه",
 	"bs-privacy-admin-consent-grid-column-user": "کارن",
-	"prefs-privacy": "پټنتيا"
+	"bs-privacy-event-deletion-done-desc": "د کارن گڼون ړنگول بشپړ شول",
+	"bs-privacy-event-deletion-done": "ستاسو د کارن گڼون ړنگولو  غوښتنه ومنل شوه",
+	"bs-privacy-event-deletion-failed": "ستاسو د کارن گڼون ړنگول نابرياله شول",
+	"bs-privacy-event-deletion-failed-desc": "ستاسو د کارن گڼون ړنگول نابرياله شول",
+	"bs-privacy-event-request-submitted-link": "په تمه غوښتنې کتل",
+	"bs-privacy-event-request-submitted-anonymization": "لاندې څرگندونه کې {{GENDER:$1|هغه|هغې|هغوی}} د خپل کارن گڼون د نوم‌پټولو {{GENDER:$1|غوښتنه کړې}}: $2",
+	"bs-privacy-event-request-submitted-deletion": "لاندې څرگندونه کې {{GENDER:$1|هغه|هغې|هغوی}} د خپل کارن گڼون د ړنگولو {{GENDER:$1|غوښتنه کړې}}: $2",
+	"bs-privacy-event-request-submitted-anonymization-desc": "نوم‌پټولو غوښتنه",
+	"bs-privacy-event-request-submitted-deletion-desc": "ړنگولو غوښتنه",
+	"bs-privacy-consent-type-privacy-policy-short": "پټتيا تگلار",
+	"bs-privacy-consent-type-terms-of-service-short": "خدماتي منښتونه",
+	"bs-privacy-module-name-anonymization": "نوم‌پټول",
+	"bs-privacy-module-name-deletion": "ړنگول",
+	"prefs-privacy": "پټتيا",
+	"bs-privacy-cookie-banner-aria-label": "خوړو اوڼنې"
 }
