@@ -88,6 +88,8 @@
 	"bs-privacy-transparency-type-selector-content": "Згадки у контенті (напр., статті, елементи розкладу, коментарі тощо)",
 	"bs-privacy-transparency-export-data-button": "Експортувати дані",
 	"bs-privacy-transparency-export-layout-title": "Експортувати ваші дані",
+	"bs-privacy-transparency-export-types-of-data-label": "Типи даних",
+	"bs-privacy-transparency-export-export-format-label": "Формат експорту",
 	"bs-privacy-transparency-format-html": "HTML",
 	"bs-privacy-transparency-loading-message": "Будь ласка, зачекайте, поки ваші дані збираються...",
 	"bs-privacy-transparency-view-data-dialog-title": "Переглянути ваші дані",
@@ -164,6 +166,7 @@
 	"bs-privacy-cookie-convenience-group-desc": "Cookies, що покращують користувацький досвід на сайті",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Зберегти",
 	"bs-privacy-consent-cookie-settings-label": "Змінити згоду на обробку cookies",
+	"bs-privacy-privacypage": "Project:Політика конфіденційності",
 	"bs-privacy-consent-auth-step": "Щоб продовжити, прийміть наступні умови",
 	"bs-privacy-consent-auth-fail": "Вам потрібно прийняти усі умови",
 	"bs-privacy-module-consent-accepted": "Ви вже прийняли всі умови",
@@ -179,5 +182,10 @@
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "Використовується для внутрішнього балансування навантаження",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "Зберігає налаштоване значення для механізму кешування",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "Зберігає конфігурацію щодо застосування протоколу HTTPS",
-	"bs-privacy-cookie-consent-cookie-list-label": "Список файлів cookie в цій групі:"
+	"bs-privacy-cookie-consent-cookie-list-label": "Список файлів cookie в цій групі:",
+	"bs-privacy-consent-type-privacy-policy-short": "Політика конфіденційності",
+	"bs-privacy-consent-type-terms-of-service-short": "Умови надання послуг",
+	"bs-privacy-module-name-anonymization": "Анонімізація",
+	"prefs-privacy": "Конфіденційність",
+	"bs-privacy-cookie-banner-aria-label": "Налаштування файлів cookie"
 }
