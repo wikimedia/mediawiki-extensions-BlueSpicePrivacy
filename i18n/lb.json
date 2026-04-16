@@ -55,5 +55,6 @@
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
 	"bs-privacy-module-name-anonymization": "Anonymiséierung",
 	"prefs-privacy": "Dateschutz",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen",
+	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!"
 }
