@@ -56,5 +56,6 @@
 	"prefs-privacy": "Dateschutz",
 	"bs-privacy-transparency-export-data-button": "Donnéeën exportéieren",
 	"bs-privacy-transparency-export-layout-title": "Är Donnéeën exportéieren",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen",
+	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!"
 }
