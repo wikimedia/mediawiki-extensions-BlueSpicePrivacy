@@ -8,6 +8,7 @@
 	"bs-privacy-api-error-generic": "Et ass e Feeler geschitt",
 	"bs-privacy-anonymization-new-username-label": "Neie Benotzernumm",
 	"bs-privacy-api-error-missing-module": "D'Modul $1 ass net registréiert!",
+	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!",
 	"bs-privacy-anonymization-api-invalid-username": "Ongültege Benotzernumm",
 	"bs-privacy-invalid-user": "De Benotzer ass ongülteg",
 	"bs-privacy-request-cancel-failed": "D'Ufro konnt net annuléiert ginn",
@@ -55,6 +56,5 @@
 	"bs-privacy-consent-auth-fail": "Dir musst all Bedingungen akzeptéieren",
 	"bs-privacy-module-name-anonymization": "Anonymiséierung",
 	"prefs-privacy": "Dateschutz",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen",
-	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen"
 }
