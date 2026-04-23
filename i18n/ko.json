@@ -4,6 +4,7 @@
 			"Ellif",
 			"Maoue",
 			"Nuevo Paso",
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj",
 			"아라"
@@ -143,7 +144,7 @@
 	"bs-privacy-cookie-consent-cookie-desc-mwuser-sessionid": "현재 사용자의 세션 ID를 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-userid": "현재 사용자의 ID를 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-username": "현재 사용자의 사용자 이름을 보유합니다",
-	"bs-privacy-cookie-consent-cookie-desc-vee": "사용자가 선택한 시각 편집기 모드를 보유합니다",
+	"bs-privacy-cookie-consent-cookie-desc-vee": "사용자가 선택한 시각편집기 모드를 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-usedc": "내부 부하 분산에 사용됨",
 	"bs-privacy-cookie-consent-cookie-desc-usecdncache": "캐시 매커니즘의 구성된 값을 보유합니다",
 	"bs-privacy-cookie-consent-cookie-desc-forcehttps": "HTTPS 프로토콜의 강제 여부에 관한 구성을 저장합니다",
