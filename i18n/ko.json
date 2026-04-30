@@ -102,7 +102,7 @@
 	"bs-privacy-transparency-type-title-working": "작업중인 데이터",
 	"bs-privacy-transparency-type-title-personal": "개인 데이터",
 	"bs-privacy-prefs-consent-cookies": "쿠키 저장에 동의합니다",
-	"bs-privacy-prefs-consent-privacy-policy": "이 사이트의 [[{{MediaWiki:Privacypage}}|개인정보처리방침]]에 동의합니다",
+	"bs-privacy-prefs-consent-privacy-policy": "이 사이트의 <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/PrivacyPolicy}} 개인정보 처리방침]</span>에 동의합니다",
 	"bs-privacy-prefs-consent-cookies-help": "쿠키는 사용자 경험을 더 순조롭게 만들기 위해 세션 간에 컴퓨터에 저장되는 조그마한 정보 조각입니다",
 	"bs-privacy-prefs-consent-privacy-policy-help": "이 칸에 체크하면 이 사이트의 개인정보처리방침을 읽었고 이해하였음을 확인하는 것으로 간주됩니다",
 	"bs-privacy-consent-layout-label": "개인정보처리방침 동의",
