@@ -67,7 +67,7 @@
 	"right-bs-privacy-admin": "Privacybeheerhandelingen uitvoeren",
 	"bs-privacy-admin-request-manager-help": "Overzicht van openstaande verzoeken van gebruikers",
 	"bs-privacy-admin-request-manager-title": "Verzoeken van gebruikers",
-	"bs-privacy-admin-invalid-request": "Ongeldig verzoek",
+	"bs-privacy-admin-invalid-request": "Onjuist verzoek",
 	"bs-privacy-admin-request-action-failed": "De verwerking van het verzoek is mislukt.",
 	"bs-privacy-admin-approve-final-prompt": "Bevestig de goedkeuring van het verzoek.",
 	"bs-privacy-admin-deny-prompt": "Leg uit waarom dit verzoek wordt afgewezen.",
