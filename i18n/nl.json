@@ -34,7 +34,7 @@
 	"bs-privacy-anonymization-success-anonymizing": "Uw account is geanonimiseerd! Uw nieuwe gebruikersnaam is $1",
 	"bs-privacy-api-error-missing-module": "De module $1 staat niet ingeschreven!",
 	"bs-privacy-missing-param": "Parameter \"$1\" moet aanwezig zijn!",
-	"bs-privacy-invalid-param": "Parameter \"$1\" heeft een ongeldig formaat!",
+	"bs-privacy-invalid-param": "Parameter \"$1\" heeft een foutieve opmaak!",
 	"bs-privacy-module-no-function": "\"$1\" is geen geldige functienaam voor deze module.",
 	"bs-privacy-anonymization-api-invalid-username": "Ongeldige gebruikersnaam",
 	"bs-privacy-api-username-mismatch": "De gebruiker die het verzoek doet is een andere dan de gebruiker die momenteel is aangemeld",
