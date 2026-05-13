@@ -168,5 +168,14 @@
 	"bs-privacy-consent-type-terms-of-service-short": "서비스 약관",
 	"bs-privacy-module-name-anonymization": "익명화",
 	"bs-privacy-module-name-deletion": "삭제",
-	"bs-privacy-cookie-banner-aria-label": "쿠키 설정"
+	"bs-privacy-cookie-banner-aria-label": "쿠키 설정",
+	"bs-privacy": "BlueSpice 개인정보",
+	"action-bs-privacy-admin": "개인정보 관리 작업을 실행할",
+	"right-bs-privacy-admin": "개인정보 관리 작업을 실행",
+	"bs-privacy-admin-deny-prompt": "이 요청을 거부하는 이유를 의견으로 남겨 주십시오",
+	"bs-privacy-transparency-export-export-format-label": "내보내기 형식",
+	"bs-privacy-transparency-type-title-actions": "작업 데이터",
+	"bs-privacy-prefs-consent-tos": "이 사이트의 <span class=\"plainlinks\">[{{fullurl:Special:PrivacyPages/TermsOfServices}} 이용 약관]</span>에 동의합니다",
+	"bs-privacy-prefs-consent-tos-help": "이 칸에 체크하면 이 사이트의 이용 약관을 읽었고 이해하였음을 확인하는 것으로 간주됩니다",
+	"prefs-privacy": "개인정보"
 }
