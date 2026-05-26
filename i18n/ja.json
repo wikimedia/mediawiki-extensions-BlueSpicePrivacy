@@ -7,6 +7,7 @@
 			"MathXplore",
 			"Reiwa period",
 			"Shirayuki",
+			"Tensama0415",
 			"Yaakiyu.jp",
 			"もなー(偽物)"
 		]
@@ -60,7 +61,7 @@
 	"bs-privacy-consent-save-fail": "プライバシー ポリシー オプションの保存中にエラーが発生しました",
 	"bs-privacy-admin-consent-overview-title": "プライバシー ポリシーの同意の概要",
 	"bs-privacy-admin-consent-overview-help": "すべての利用者の同意状況の概要",
-	"bs-privacy-admin-consent-grid-column-user": "利用者名",
+	"bs-privacy-admin-consent-grid-column-user": "利用者",
 	"bs-privacy-consent-bool-true": "はい",
 	"bs-privacy-consent-bool-false": "いいえ",
 	"echo-category-title-bs-privacy-cat": "プライバシーの操作",
