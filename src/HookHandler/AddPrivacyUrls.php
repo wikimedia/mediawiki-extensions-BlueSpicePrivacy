@@ -26,7 +26,7 @@ class AddPrivacyUrls implements SkinTemplateNavigation__UniversalHook {
 			'id' => 'pt-privacycenter',
 			'href' => SpecialPage::getTitleFor( 'PrivacyCenter' )->getLocalURL(),
 			'text' => $specialPage->getDescription(),
-			'position' => 70,
+			'position' => 30,
 		];
 	}
 }
