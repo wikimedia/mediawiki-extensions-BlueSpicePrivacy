@@ -9,6 +9,7 @@ class PrivacyPages extends \BlueSpice\SpecialPage {
 		parent::__construct( 'PrivacyPages' );
 	}
 
+	/** @inheritDoc */
 	public function isListed() {
 		return false;
 	}

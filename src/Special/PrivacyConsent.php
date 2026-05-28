@@ -24,6 +24,7 @@ class PrivacyConsent extends FormSpecialPage {
 		$this->moduleRegistry = $moduleRegistry;
 	}
 
+	/** @inheritDoc */
 	public function isListed() {
 		return false;
 	}
