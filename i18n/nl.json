@@ -194,7 +194,7 @@
 	"bs-privacy-consent-auth-step": "Aanvaard de volgende voorwaarden om door te gaan:",
 	"bs-privacy-consent-auth-fail": "U moet alle voorwaarden aanvaarden.",
 	"bs-privacy-module-consent-accepted": "U hebt alle voorwaarden al aanvaard.",
-	"bs-privacy-module-consent-set-success": "Instemming succesvol opgeslagen.",
+	"bs-privacy-module-consent-set-success": "Instemming opgeslagen",
 	"bs-privacy-module-consent-set-fail": "Instemming kon niet worden opgeslagen.",
 	"privacyconsent": "Ga akkoord met het privacybeleid",
 	"bs-privacy-cookie-consent-cookie-desc-calumma_state": "Slaat de toestand op van onderdelen van de vormgeving BlueSpiceCalumma",
