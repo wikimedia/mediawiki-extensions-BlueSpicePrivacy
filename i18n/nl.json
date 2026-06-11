@@ -142,7 +142,7 @@
 	"bs-privacy-consent-bool-false": "Nee",
 	"logentry-bs-privacy-anonymization": "$4 heeft het profiel account anoniem gemaakt. De nieuwe gebruikersnaam is $5",
 	"logentry-bs-privacy-deletion": "De gebruiker $4 heeft het profiel verwijderd",
-	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} data geëxporteerd",
+	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|heeft}} {{GENDER:$2|zijn|haar}} gegevens geëxporteerd",
 	"logentry-bs-privacy-consent": "$1 heeft {{GENDER:$2|zijn|haar|de eigen}} gegevens met betrekking tot de instemming met het privacybeleid gewijzigd in: $4",
 	"logentry-bs-privacy-request-submit-anonymization": "$1 heeft een aanvraag ingediend om {{GENDER:$2|zijn|haar|diens}} account te anonimiseren met de opmerking: $4",
 	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|heeft}} de door $4 ingediende anonimiseringsaanvraag afgesloten",
