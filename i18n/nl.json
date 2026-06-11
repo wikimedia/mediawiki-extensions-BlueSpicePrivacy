@@ -109,7 +109,7 @@
 	"bs-privacy-transparency-private-rights": "Machtigingen (rechten): $1",
 	"bs-privacy-transparency-private-not-blocked": "Geblokkeerd: nee",
 	"bs-privacy-transparency-private-blocked": "Geblokkeerd: ja (door $1)",
-	"bs-privacy-transparency-private-user-page-url": "URL gebruikerspagina: $1",
+	"bs-privacy-transparency-private-user-page-url": "Gebruikerspagina-url: $1",
 	"bs-privacy-transparency-private-edit-count": "Aantal bewerkingen: $1",
 	"bs-privacy-transparency-type-title-content": "Vermeldingen in inhoud",
 	"bs-privacy-transparency-type-title-working": "Werkgegevens",
