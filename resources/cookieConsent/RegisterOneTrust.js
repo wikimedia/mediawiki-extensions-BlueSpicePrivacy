@@ -10,4 +10,4 @@ if ( nonce ) {
 	mw.loader.load( handlerConfig.scriptURL, 'text/javascript' );
 }
 
-function OptanonWrapper() {} // eslint-disable-line no-implicit-globals, no-unused-vars
+function OptanonWrapper() {} // eslint-disable-line no-unused-vars
