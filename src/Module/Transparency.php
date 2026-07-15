@@ -39,7 +39,6 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $func
 	 * @param array $data
 	 * @return Status
@@ -74,7 +73,6 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $action
 	 * @param array $data
 	 * @return Status
@@ -115,7 +113,6 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $types
 	 * @param string $format
 	 * @return string
@@ -145,13 +142,15 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getModuleName() {
 		return 'transparency';
 	}
 
+	/**
+	 * @return array
+	 */
 	protected function allDataTypes() {
 		return [
 			static::DATA_TYPE_PERSONAL,
@@ -196,7 +195,6 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return Status
 	 */
@@ -234,7 +232,6 @@ class Transparency extends Module {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return Status
 	 */

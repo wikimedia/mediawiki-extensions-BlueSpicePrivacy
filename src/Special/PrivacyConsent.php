@@ -30,7 +30,6 @@ class PrivacyConsent extends FormSpecialPage {
 	}
 
 	/**
-	 *
 	 * @param string $par
 	 */
 	public function execute( $par ) {

@@ -8,7 +8,6 @@ use MediaWiki\Title\Title;
 class AddWhitelistPages extends TitleReadWhitelist {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {

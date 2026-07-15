@@ -8,7 +8,6 @@ use BlueSpice\Privacy\ISettingPaths;
 class PrivacyPolicyMandatory extends BooleanSetting implements ISettingPaths {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -20,7 +19,6 @@ class PrivacyPolicyMandatory extends BooleanSetting implements ISettingPaths {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -28,7 +26,6 @@ class PrivacyPolicyMandatory extends BooleanSetting implements ISettingPaths {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

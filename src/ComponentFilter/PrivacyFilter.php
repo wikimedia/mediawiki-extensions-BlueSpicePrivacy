@@ -29,13 +29,11 @@ class PrivacyFilter implements IComponentFilter {
 	];
 
 	/**
-	 *
 	 * @var TitleFactory
 	 */
 	private $titleFactory = null;
 
 	/**
-	 *
 	 * @param TitleFactory $titleFactory
 	 */
 	public function __construct( TitleFactory $titleFactory ) {
