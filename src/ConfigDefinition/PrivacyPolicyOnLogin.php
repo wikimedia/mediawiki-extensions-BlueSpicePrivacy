@@ -9,7 +9,6 @@ use BlueSpice\Privacy\ISettingPaths;
 class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths, IOverwriteGlobal {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -21,7 +20,6 @@ class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths, IOve
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -29,7 +27,6 @@ class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths, IOve
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {
@@ -37,7 +34,6 @@ class PrivacyPolicyOnLogin extends BooleanSetting implements ISettingPaths, IOve
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getGlobalName() {

@@ -39,7 +39,6 @@ class BlockCookie extends WebResponseSetCookie {
 	}
 
 	/**
-	 *
 	 * @param array $mapping
 	 * @return string
 	 */

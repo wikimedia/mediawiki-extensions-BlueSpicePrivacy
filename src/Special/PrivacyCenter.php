@@ -13,13 +13,11 @@ use MediaWiki\User\User;
 class PrivacyCenter extends SpecialPage {
 
 	/**
-	 *
 	 * @var ModuleRegistry
 	 */
 	protected $moduleRegistry;
 
 	/**
-	 *
 	 * @var ConfigFactory
 	 */
 	protected $configFactory;
@@ -35,7 +33,6 @@ class PrivacyCenter extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @return bool
 	 */
@@ -44,7 +41,6 @@ class PrivacyCenter extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @param string $subPage
 	 */
 	public function execute( $subPage ) {

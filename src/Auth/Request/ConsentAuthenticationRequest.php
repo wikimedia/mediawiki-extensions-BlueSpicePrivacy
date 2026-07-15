@@ -12,7 +12,6 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	protected $module = null;
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getFieldInfo() {
@@ -21,7 +20,6 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getUniqueId() {
@@ -44,7 +42,6 @@ class ConsentAuthenticationRequest extends UserDataAuthenticationRequest {
 	}
 
 	/**
-	 *
 	 * @return Consent
 	 */
 	private function getConsent(): Consent {

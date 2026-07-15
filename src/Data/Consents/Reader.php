@@ -43,6 +43,9 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function makeSecondaryDataProvider() {
 		return new SecondaryDataProvider(
 			$this->userFactory, $this->linkRenderer,

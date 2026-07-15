@@ -16,7 +16,6 @@ class AddPrivacyRequestTable extends LoadExtensionSchemaUpdates {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getExtensionPath() {

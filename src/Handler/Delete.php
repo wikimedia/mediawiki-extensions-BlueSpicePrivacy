@@ -32,7 +32,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	protected $skipUserTable = true;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $moveToDeletedActorTables = [
@@ -46,7 +45,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	];
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $moveToDeletedTables = [
@@ -55,7 +53,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	];
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $deleteTables = [
@@ -76,7 +73,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
 	 * @return Status
@@ -100,7 +96,6 @@ class Delete extends Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user

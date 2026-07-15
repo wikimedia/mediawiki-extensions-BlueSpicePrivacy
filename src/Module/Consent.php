@@ -49,7 +49,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $func
 	 * @param array $data
 	 * @return Status
@@ -73,7 +72,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getModuleName() {
@@ -81,7 +79,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @return Status
 	 */
 	protected function getConsent() {
@@ -99,7 +96,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @param array $consents
 	 * @return Status
 	 */
@@ -133,7 +129,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getOptions() {
@@ -141,7 +136,6 @@ class Consent extends Module {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getUserPreferenceDescriptors() {
