@@ -47,7 +47,6 @@ class CookieConsentProviderRegistry extends ExtensionAttributeBasedRegistry {
 	}
 
 	/**
-	 *
 	 * @param string $callback
 	 * @param array $config
 	 * @return CookieConsentBase

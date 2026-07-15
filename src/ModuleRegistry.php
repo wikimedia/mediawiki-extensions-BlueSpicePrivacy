@@ -39,7 +39,6 @@ class ModuleRegistry {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAllModules() {
@@ -59,7 +58,6 @@ class ModuleRegistry {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @return IModule|null
 	 */

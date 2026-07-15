@@ -89,7 +89,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getHandlers() {
@@ -98,7 +97,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @return false
 	 */
 	public function isRequestable() {
@@ -106,7 +104,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function verifyUser() {
@@ -114,7 +111,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function checkAdminPermissions() {
@@ -125,7 +121,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	protected function logAction( $params = [] ) {
@@ -139,7 +134,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return array
 	 */
@@ -154,7 +148,6 @@ abstract class Module implements IModule {
 	}
 
 	/**
-	 *
 	 * @param INotificationEvent $event
 	 * @throws Exception
 	 */

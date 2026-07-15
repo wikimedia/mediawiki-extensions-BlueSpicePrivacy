@@ -14,7 +14,6 @@ use MediaWiki\User\User;
 
 class ConsentSecondaryAuthenticationProvider extends AbstractSecondaryAuthenticationProvider {
 	/**
-	 *
 	 * @param string $action
 	 * @param array $options
 	 * @return array

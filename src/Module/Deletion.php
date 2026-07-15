@@ -64,7 +64,6 @@ class Deletion extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param string $func
 	 * @param array $data
 	 * @return Status
@@ -86,7 +85,6 @@ class Deletion extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param string $username
 	 * @return Status
 	 * @throws Exception
@@ -123,7 +121,6 @@ class Deletion extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getModuleName() {
@@ -131,7 +128,6 @@ class Deletion extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param int $requestId
 	 * @return Status
 	 */
@@ -201,7 +197,6 @@ class Deletion extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $request
 	 * @param string $comment
 	 * @return NotificationEvent

@@ -12,7 +12,6 @@ use Wikimedia\Rdbms\IDatabase;
 
 class Anonymize implements IPrivacyHandler {
 	/**
-	 *
 	 * @var array
 	 */
 	protected $tableMap = [
@@ -39,7 +38,6 @@ class Anonymize implements IPrivacyHandler {
 	protected $services = null;
 
 	/**
-	 *
 	 * @param IDatabase $db
 	 */
 	public function __construct( IDatabase $db ) {
@@ -48,7 +46,6 @@ class Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param string $oldUsername
 	 * @param string $newUsername
 	 * @return Status
@@ -73,7 +70,6 @@ class Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param string $newUsername
 	 */
 	protected function updateTables( $newUsername ) {
@@ -126,7 +122,6 @@ class Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param string $newUsername
 	 */
 	protected function moveUserPage( $newUsername ) {
@@ -183,7 +178,6 @@ class Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
 	 * @return Status
@@ -194,7 +188,6 @@ class Anonymize implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user

@@ -15,7 +15,6 @@ use Wikimedia\Rdbms\LoadBalancer;
 class MissingPrivacyPages extends AlertProviderBase {
 
 	/**
-	 *
 	 * @var Message
 	 */
 	protected $alertMessage = null;
@@ -49,7 +48,6 @@ class MissingPrivacyPages extends AlertProviderBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHTML() {
@@ -61,7 +59,6 @@ class MissingPrivacyPages extends AlertProviderBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -69,7 +66,6 @@ class MissingPrivacyPages extends AlertProviderBase {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public static function factory( $skin = null ) {
