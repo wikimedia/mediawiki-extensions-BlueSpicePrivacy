@@ -18,12 +18,12 @@
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.cookieExists = function () {
 		if ( mw.cookie.get( this.getCookieName() ) ) {
 			return true;
-		} else if ( localStorage.getItem( this.getCookieName( true ) ) !== null ) {
+		} else if ( localStorage.getItem( this.getCookieName( true ) ) !== null ) { // eslint-disable-line mediawiki/no-storage
 			// If cookie is not set, but settings do exist in localStorage,
 			// translate settings from local storage to cookie so they can be passed to the server
 			mw.cookie.set(
 				this.getCookieName(),
-				localStorage.getItem( this.getCookieName( true ) ),
+				localStorage.getItem( this.getCookieName( true ) ), // eslint-disable-line mediawiki/no-storage
 				{ path: '/', expires: 20 * 365 }
 			);
 			return true;
@@ -126,7 +126,7 @@
 
 		// Set the cookie - expires in 20 years
 		mw.cookie.set( this.getCookieName(), cookieVal, { path: '/', expires: 20 * 365 } );
-		localStorage.setItem( this.getCookieName( true ), cookieVal );
+		localStorage.setItem( this.getCookieName( true ), cookieVal ); // eslint-disable-line mediawiki/no-storage
 
 		this.bar.$element.remove();
 		if ( this.$overlay ) {
@@ -158,7 +158,7 @@
 				continue;
 			}
 
-			if ( groups.indexOf( groupName ) !== -1 ) {
+			if ( groups.indexOf( groupName ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 				ret[ groupName ] = true;
 			} else {
 				ret[ groupName ] = false;

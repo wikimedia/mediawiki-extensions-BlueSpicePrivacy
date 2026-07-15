@@ -64,12 +64,12 @@
 			const groupSettings = this.groups[ groupName ];
 
 			let label = groupSettings.label;
-			if ( mw.message( groupSettings.label ).exists() ) { // eslint-disable-line mediawiki/msg-doc
-				label = mw.message( groupSettings.label ).text(); // eslint-disable-line mediawiki/msg-doc
+			if ( mw.message( groupSettings.label ).exists() ) {
+				label = mw.message( groupSettings.label ).text();
 			}
 			let desc = groupSettings.desc;
-			if ( mw.message( groupSettings.desc ).exists() ) { // eslint-disable-line mediawiki/msg-doc
-				desc = mw.message( groupSettings.desc ).text(); // eslint-disable-line mediawiki/msg-doc
+			if ( mw.message( groupSettings.desc ).exists() ) {
+				desc = mw.message( groupSettings.desc ).text();
 			}
 
 			let value = true;

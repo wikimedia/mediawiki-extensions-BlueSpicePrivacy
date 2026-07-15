@@ -55,10 +55,10 @@
 	bs.privacy.widget.Privacy.prototype.displayMessage = function ( type, message ) {
 		// B/C
 		if ( Array.isArray( type ) ) {
-			if ( type.indexOf( 'bs-privacy-error' ) !== -1 ) {
+			if ( type.indexOf( 'bs-privacy-error' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 				type = 'bs-privacy-error';
 			}
-			if ( type.indexOf( 'bs-privacy-success' ) !== -1 ) {
+			if ( type.indexOf( 'bs-privacy-success' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 				type = 'bs-privacy-success';
 			}
 		}

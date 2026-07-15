@@ -9,7 +9,7 @@
 	OO.inheritClass( bs.privacy.cookieConsent.MWProvider, bs.privacy.cookieConsent.BaseHandler );
 
 	bs.privacy.cookieConsent.MWProvider.prototype.getGroups = function () {
-		const settings = localStorage.getItem( this.getCookieName( true ) );
+		const settings = localStorage.getItem( this.getCookieName( true ) ); // eslint-disable-line mediawiki/no-storage
 		if ( !settings ) {
 			return [];
 		}
@@ -37,7 +37,7 @@
 			if ( data.action === 'save' ) {
 				const newVal = {};
 				for ( const groupName in this.getGroups() ) {
-					if ( data.results.indexOf( groupName ) !== -1 ) {
+					if ( data.results.indexOf( groupName ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 						newVal[ groupName ] = true;
 					} else {
 						newVal[ groupName ] = false;
@@ -49,7 +49,7 @@
 
 				// Set the cookie - expires in 20 years
 				mw.cookie.set( this.getCookieName(), cookieVal, { path: '/', expires: 20 * 365 } );
-				localStorage.setItem( this.getCookieName( true ), cookieVal );
+				localStorage.setItem( this.getCookieName( true ), cookieVal ); // eslint-disable-line mediawiki/no-storage
 			}
 		} );
 	};

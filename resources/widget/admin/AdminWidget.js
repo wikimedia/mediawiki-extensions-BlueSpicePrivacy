@@ -19,8 +19,8 @@ bs.privacy.widget.AdminWidget.prototype.init = function () {
 	this.layout = new OO.ui.FieldsetLayout( {
 		items: [
 			new OOJSPlus.ui.widget.HeadingLabel( {
-				label: mw.message( this.title ).text(), // eslint-disable-line mediawiki/msg-doc
-				subtitle: mw.message( this.subtitle ).text() // eslint-disable-line mediawiki/msg-doc
+				label: mw.message( this.title ).text(),
+				subtitle: mw.message( this.subtitle ).text()
 			} )
 		]
 	} );

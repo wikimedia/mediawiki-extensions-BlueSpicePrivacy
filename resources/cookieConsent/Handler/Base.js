@@ -102,7 +102,7 @@
 	};
 
 	bs.privacy.cookieConsent.BaseHandler.prototype.parseActiveCookies = function () {
-		const pairs = document.cookie.split( ';' );
+		const pairs = document.cookie.split( ';' ); // eslint-disable-line mediawiki/no-cookie
 		this.cookies = [];
 		for ( let i = 0; i < pairs.length; i++ ) {
 			const pair = pairs[ i ].split( '=' );

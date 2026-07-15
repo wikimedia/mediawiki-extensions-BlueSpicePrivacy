@@ -56,12 +56,12 @@
 
 	bs.privacy.widget.PrivacyRequestable.prototype.makePendingForm = function ( label, buttonLabel ) {
 		const statusLabel = new OO.ui.LabelWidget( {
-			label: mw.message( label ).text() // eslint-disable-line mediawiki/msg-doc
+			label: mw.message( label ).text()
 		} );
 
 		buttonLabel = buttonLabel || 'bs-privacy-cancel-request-button';
 		const cancelButton = new OO.ui.ButtonWidget( {
-			label: mw.message( buttonLabel ).text(), // eslint-disable-line mediawiki/msg-doc
+			label: mw.message( buttonLabel ).text(),
 			framed: true
 		} );
 		cancelButton.on( 'click', this.cancelRequest.bind( this ) );
@@ -77,7 +77,7 @@
 
 	bs.privacy.widget.PrivacyRequestable.prototype.makeDeniedForm = function ( label, buttonLabel, comment ) {
 		const statusLabel = new OO.ui.LabelWidget( {
-			label: mw.message( label ).text(), // eslint-disable-line mediawiki/msg-doc
+			label: mw.message( label ).text(),
 			classes: [ 'bs-privacy-label-warning' ]
 		} );
 		const commentLabel = new OO.ui.LabelWidget( {
@@ -87,7 +87,7 @@
 
 		buttonLabel = buttonLabel || 'bs-privacy-acknowledge-request-button';
 		const ackButton = new OO.ui.ButtonWidget( {
-			label: mw.message( buttonLabel ).text(), // eslint-disable-line mediawiki/msg-doc
+			label: mw.message( buttonLabel ).text(),
 			framed: true
 		} );
 		ackButton.on( 'click', this.closeRequest.bind( this ) );
