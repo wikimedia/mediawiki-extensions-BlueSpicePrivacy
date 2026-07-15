@@ -19,7 +19,6 @@ class PrivacyApi extends ApiBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getAllowedParams() {

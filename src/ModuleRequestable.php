@@ -64,7 +64,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $func
 	 * @param array $data
 	 * @return Status
@@ -217,7 +216,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param int $id
 	 * @return \stdClass|false
 	 */
@@ -320,7 +318,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param int $userId
 	 * @return Status
 	 */
@@ -351,7 +348,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param int $requestId
 	 * @return Status
 	 */
@@ -381,7 +377,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param int $requestId
 	 * @param string $comment
 	 * @return Status
@@ -416,7 +411,6 @@ abstract class ModuleRequestable extends Module {
 	}
 
 	/**
-	 *
 	 * @param string $action
 	 * @param array $params
 	 * @param User|null $user

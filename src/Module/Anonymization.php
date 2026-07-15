@@ -14,7 +14,6 @@ use MWStake\MediaWiki\Component\Events\NotificationEvent;
 class Anonymization extends ModuleRequestable {
 
 	/**
-	 *
 	 * @param string $func
 	 * @param array $data
 	 * @return Status
@@ -47,7 +46,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @return Status
 	 */
 	protected function getAlternativeUsername() {
@@ -61,7 +59,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param string $username
 	 * @return Status
 	 */
@@ -88,7 +85,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param string $oldUsername
 	 * @param string $username
 	 * @return Status
@@ -127,7 +123,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getModuleName() {
@@ -150,7 +145,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getRandomUsername() {
@@ -158,7 +152,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return Status
 	 */
@@ -173,7 +166,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param int $requestId
 	 * @return Status
 	 * @throws Exception
@@ -200,7 +192,6 @@ class Anonymization extends ModuleRequestable {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $request
 	 * @param string $comment
 	 * @return NotificationEvent

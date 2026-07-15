@@ -7,7 +7,6 @@ use MediaWiki\MediaWikiServices;
 class GetRequests extends \BSApiExtJSStoreBase {
 
 	/**
-	 *
 	 * @param string $query
 	 * @return \stdClass[]
 	 */

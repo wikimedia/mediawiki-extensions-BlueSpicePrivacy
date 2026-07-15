@@ -54,7 +54,6 @@ class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParse
 	}
 
 	/**
-	 *
 	 * @var array
 	 */
 	private static $exceptions = [
