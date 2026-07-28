@@ -49,6 +49,7 @@
 	"bs-privacy-transparency-type-title-personal": "Perséinlech Daten",
 	"bs-privacy-consent-save-button": "Späicheren",
 	"bs-privacy-admin-consent-grid-column-user": "Benotzer",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|virun $2 Dag|viru(n) $2 Deeg}})",
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (haut)",
 	"bs-privacy-consent-bool-true": "Jo",
 	"bs-privacy-consent-bool-false": "Nee",
