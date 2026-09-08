@@ -5,7 +5,8 @@
 			"Msz2001",
 			"Odder",
 			"Rail",
-			"WaldiSt"
+			"WaldiSt",
+			"PanWor"
 		]
 	},
 	"bs-privacy-api-error-generic": "Wystąpił błąd",
@@ -36,8 +37,20 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (dzisiaj)",
 	"bs-privacy-consent-bool-true": "Tak",
 	"bs-privacy-consent-bool-false": "Nie",
-	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$4|zanonimizował|zanonimizowała}} konto użytkownika. Nowa nazwa użytkownika to $5",
-	"logentry-bs-privacy-deletion": "Użytkownik $4 usunął konto",
+	"logentry-bs-privacy-anonymization": "$4 {{GENDER:$4|zanonimizował|zanonimizowała|zanonimizował(a)}} konto użytkownika. Nowa nazwa użytkownika to „$5”",
+	"logentry-bs-privacy-deletion": "$4 usunął(-ęła) konto",
+	"logentry-bs-privacy-transparency": "$1 {{GENDER:$2|wyeksportował|wyeksportowała|wyeksportował(a)}} dane",
+	"logentry-bs-privacy-consent": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} swoje dane dotyczące zgody na politykę prywatności na: „$4”",
+	"logentry-bs-privacy-request-submit-anonymization": "$1 {{GENDER:$2|przesłał|przesłała|przesłał(a)}} prośbę o anonimizację swojego konta z komentarzem: „$4”",
+	"logentry-bs-privacy-request-close-anonymization": "$1 {{GENDER:$2|zamknął|zamknęła|zamknął(-ęła)}} prośbę o anonimizację konta złożoną przez $4",
+	"logentry-bs-privacy-request-cancel-anonymization": "$1 {{GENDER:$2|anulował|anulowała|anulował(a)}} prośbę o anonimizację swojego konta",
+	"logentry-bs-privacy-request-approve-anonymization": "$1 {{GENDER:$2|zatwierdził|zatwierdziła|zatwierdził(a)}} prośbę o anonimizację konta złożoną przez $4",
+	"logentry-bs-privacy-request-deny-anonymization": "$1 {{GENDER:$2|odrzucił|odrzuciła|odrzucił(a)}} prośbę o anonimizację konta złożoną przez $4 z komentarzem: „$5”",
+	"logentry-bs-privacy-request-submit-deletion": "$1 {{GENDER:$2|przesłał|przesłała|przesłał(a)}} prośbę o usunięcie swojego konta z komentarzem: „$4”",
+	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|zamknął|zamknęła|zamknął(-ęła)}} prośbę o usunięcie konta złożoną przez $4",
+	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|anulował|anulowała|anulował(a)}} prośbę o usunięcie swojego konta",
+	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|zatwierdził|zatwierdziła|zatwierdził(a)}} prośbę o usunięcie konta złożoną przez $4",
+	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|odrzucił|odrzuciła|odrzucił(a)}} prośbę o usunięcie konta złożoną przez $4 z komentarzem: „$5”",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
 	"bs-privacy-privacypage": "Project:Polityka prywatności"
 }
