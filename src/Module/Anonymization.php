@@ -6,6 +6,7 @@ use BlueSpice\Privacy\Event\AnonymizationDone;
 use BlueSpice\Privacy\Event\AnonymizationRejected;
 use BlueSpice\Privacy\ModuleRequestable;
 use Exception;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Status\Status;
 use MediaWiki\User\User;
@@ -156,9 +157,16 @@ class Anonymization extends ModuleRequestable {
 	 * @return Status
 	 */
 	protected function submitRequest( $data ) {
-		if ( !isset( $data['username'] ) || empty( $data['username'] ) ) {
+		$user = RequestContext::getMain()->getUser();
+		if ( !$user->isRegistered() ) {
+			return Status::newFatal( wfMessage( 'bs-privacy-anonymization-api-not-logged-in' ) );
+		}
+		// Force anonymization only for the current user
+		$data['oldUsername'] = $user->getName();
+		if ( empty( $data['username'] ) || $data['username'] === $data['oldUsername'] ) {
 			return Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 		}
+
 		$comment = wfMessage( 'bs-privacy-anonymization-request-comment', $data['username'] )->text();
 		$data['comment'] = $comment;
 

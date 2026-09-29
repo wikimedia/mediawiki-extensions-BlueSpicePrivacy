@@ -209,5 +209,6 @@
 	"bs-privacy-module-name-anonymization": "Anonymization",
 	"bs-privacy-module-name-deletion": "Deletion",
 	"prefs-privacy": "Privacy",
-	"bs-privacy-cookie-banner-aria-label": "Cookie settings"
+	"bs-privacy-cookie-banner-aria-label": "Cookie settings",
+	"bs-privacy-anonymization-api-not-logged-in": "You must be logged in to anonymize a user account"
 }
