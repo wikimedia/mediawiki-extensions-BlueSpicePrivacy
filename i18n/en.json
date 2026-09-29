@@ -222,5 +222,6 @@
 	"bs-privacy-event-request-submitted-anonymization": "{{GENDER:$1|requested}} anonymization of {{GENDER:$1|his|her|their}} user account, with comment: $2",
 	"bs-privacy-event-request-submitted-deletion": "{{GENDER:$1|requested}} deletion of {{GENDER:$1|his|her|their}} user account, with comment: $2",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Anonymization request",
-	"bs-privacy-event-request-submitted-deletion-desc": "Deletion request"
+	"bs-privacy-event-request-submitted-deletion-desc": "Deletion request",
+	"bs-privacy-anonymization-api-not-logged-in": "You must be logged in to anonymize a user account"
 }

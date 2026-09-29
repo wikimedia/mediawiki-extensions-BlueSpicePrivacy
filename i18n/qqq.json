@@ -229,5 +229,6 @@
 	"bs-privacy-event-request-submitted-anonymization": "Notification message when user has submitted anonymization request.\n$1 - user name\n$2 - comment",
 	"bs-privacy-event-request-submitted-deletion": "Notification message when user has submitted deletion request.\n$1 - user name\n$2 - comment",
 	"bs-privacy-event-request-submitted-anonymization-desc": "Event type message",
-	"bs-privacy-event-request-submitted-deletion-desc": "Event type message"
+	"bs-privacy-event-request-submitted-deletion-desc": "Event type message",
+	"bs-privacy-anonymization-api-not-logged-in": "Error message when trying to anonymize a user without being logged in"
 }

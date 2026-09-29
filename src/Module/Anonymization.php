@@ -159,9 +159,15 @@ class Anonymization extends ModuleRequestable {
 	 * @return \Status
 	 */
 	protected function submitRequest( $data ) {
-		if ( !isset( $data['username'] ) || empty( $data['username'] ) ) {
+		if ( !$this->context->getUser()->isRegistered() ) {
+			return \Status::newFatal( wfMessage( 'bs-privacy-anonymization-api-not-logged-in' ) );
+		}
+		// Force anonymization only for the current user
+		$data['oldUsername'] = $this->context->getUser()->getName();
+		if ( empty( $data['username'] ) || $data['username'] === $data['oldUsername'] ) {
 			return \Status::newFatal( wfMessage( 'bs-privacy-missing-param', "username" ) );
 		}
+
 		$comment = wfMessage( 'bs-privacy-anonymization-request-comment', $data['username'] )->plain();
 		$data['comment'] = $comment;
 
