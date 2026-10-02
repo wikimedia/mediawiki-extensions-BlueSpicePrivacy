@@ -5,6 +5,7 @@ namespace BlueSpice\Privacy\HookHandler;
 use BlueSpice\Privacy\Module\Consent;
 use BlueSpice\Privacy\ModuleRegistry;
 use BlueSpice\Privacy\Special\PrivacyConsent;
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
@@ -12,7 +13,6 @@ use MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Specials\SpecialUserLogin;
 use MediaWiki\Specials\SpecialUserLogout;
-use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
 class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParserOutputHook {
@@ -37,20 +37,25 @@ class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParse
 	 */
 	private $titleFactory;
 
-	/**
+	/** @var PrivacyPageProvider */
+	private PrivacyPageProvider $pageProvider;
+
+	/*
 	 * @param SpecialPageFactory $specialPageFactory
 	 * @param ConfigFactory $configFactory
 	 * @param TitleFactory $titleFactory
 	 * @param ModuleRegistry $moduleRegistry
+	 * @param PrivacyPageProvider $pageProvider
 	 */
 	public function __construct(
 		SpecialPageFactory $specialPageFactory, ConfigFactory $configFactory,
-		TitleFactory $titleFactory, ModuleRegistry $moduleRegistry
+		TitleFactory $titleFactory, ModuleRegistry $moduleRegistry, PrivacyPageProvider $pageProvider
 	) {
 		$this->moduleRegistry = $moduleRegistry;
 		$this->specialPageFactory = $specialPageFactory;
 		$this->configFactory = $configFactory;
 		$this->titleFactory = $titleFactory;
+		$this->pageProvider = $pageProvider;
 	}
 
 	/**
@@ -143,19 +148,16 @@ class RedirectToConsent implements SpecialPageBeforeExecuteHook, OutputPageParse
 			return true;
 		}
 
-		$exceptions = [
-			$outputPage->getContext()->msg( 'Privacypage' )->text(),
-			$outputPage->getContext()->msg( 'Termsofservicepage' )->text(),
-		];
 		$action = $outputPage->getContext()->getRequest()->getText( 'action', 'view' );
-		foreach ( $exceptions as $exceptionPage ) {
-			$exceptionTitle = $this->titleFactory->newFromText( $exceptionPage );
-			if (
-				$exceptionTitle instanceof Title &&
-				$outputPage->getTitle()->equals( $exceptionTitle ) &&
-				$action === 'view'
-			) {
-				return true;
+		if ( $action === 'view' ) {
+			foreach ( $this->pageProvider->getNames() as $name ) {
+				$privacyTitle = $this->pageProvider->getPrivacyTitle( $name );
+				if ( !$privacyTitle ) {
+					continue;
+				}
+				if ( $outputPage->getTitle()->equals( $privacyTitle ) ) {
+					return true;
+				}
 			}
 		}
 		return $outputPage->getTitle() && $outputPage->getTitle()->isSpecial( 'PrivacyConsent' );

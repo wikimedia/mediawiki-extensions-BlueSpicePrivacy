@@ -190,7 +190,7 @@
 		},
 		"PrivacyPages": {
 			"class": "\\BlueSpice\\Privacy\\Special\\PrivacyPages",
-			"args": [ "PrivacyPages" ]
+			"services": [ "BlueSpicePrivacy.PrivacyPageProvider" ]
 		},
 		"PrivacyConsent": {
 			"class": "\\BlueSpice\\Privacy\\Special\\PrivacyConsent",
@@ -423,7 +423,8 @@
 				"bs-privacy-cookie-convenience-group-desc",
 				"bs-privacy-cookie-consent-mw-provider-settings-dialog-save",
 				"cancel",
-				"bs-privacy-cookie-banner-aria-label"
+				"bs-privacy-cookie-banner-aria-label",
+				"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label"
 			],
 			"group": "general",
 			"dependencies": [
@@ -463,22 +464,27 @@
 	},
 	"HookHandlers": {
 		"common-user-interface": {
-			"class": "\\BlueSpice\\Privacy\\HookHandler\\CommonUserInterface"
+			"class": "\\BlueSpice\\Privacy\\HookHandler\\CommonUserInterface",
+			"services": [ "TitleFactory" ]
 		},
 		"addPrivacyUrls": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddPrivacyUrls"
 		},
 		"addCookieConsent": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddCookieConsent",
-			"services": [ "MainConfig", "ConfigFactory" ]
+			"services": [ "MainConfig", "ConfigFactory", "BlueSpicePrivacy.PrivacyPageProvider" ]
 		},
 		"redirectToConsent": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\RedirectToConsent",
-			"services": [ "SpecialPageFactory", "ConfigFactory", "TitleFactory", "BlueSpicePrivacy.ModuleRegistry" ]
+			"services": [ "SpecialPageFactory", "ConfigFactory", "TitleFactory", "BlueSpicePrivacy.ModuleRegistry", "BlueSpicePrivacy.PrivacyPageProvider" ]
 		},
 		"addPreferences": {
 			"class": "\\BlueSpice\\Privacy\\HookHandler\\AddPreferences",
 			"services": [ "BlueSpicePrivacy.ModuleRegistry" ]
+		},
+		"whitelistPrivacyPages": {
+			"class": "\\BlueSpice\\Privacy\\Hook\\TitleReadWhitelist\\AddWhitelistPages",
+			"services": [ "BlueSpicePrivacy.PrivacyPageProvider" ]
 		}
 	},
 	"Hooks": {
@@ -488,7 +494,7 @@
 		],
 		"GetPreferences": "addPreferences",
 		"BeforePageDisplay": "addCookieConsent",
-		"TitleReadWhitelist": "\\BlueSpice\\Privacy\\Hook\\TitleReadWhitelist\\AddWhitelistPages::callback",
+		"TitleReadWhitelist": "whitelistPrivacyPages",
 		"WebResponseSetCookie": "\\BlueSpice\\Privacy\\Hook\\WebResponseSetCookie\\BlockCookie::callback",
 		"OutputPageParserOutput": "redirectToConsent",
 		"SpecialPageBeforeExecute": "redirectToConsent",

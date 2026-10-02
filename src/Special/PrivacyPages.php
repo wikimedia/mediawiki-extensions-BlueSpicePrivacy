@@ -1,11 +1,15 @@
 <?php
 namespace BlueSpice\Privacy\Special;
 
-use MediaWiki\MediaWikiServices;
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
+use MediaWiki\SpecialPage\SpecialPage;
+use OOUI\MessageWidget;
 
-class PrivacyPages extends \BlueSpice\SpecialPage {
+class PrivacyPages extends SpecialPage {
 
-	public function __construct() {
+	public function __construct(
+		private readonly PrivacyPageProvider $provider
+	) {
 		parent::__construct( 'PrivacyPages' );
 	}
 
@@ -15,30 +19,49 @@ class PrivacyPages extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 * @param string|null $subPage - can be either 'TermsOfServices' or 'PrivacyPolicy'
+	 * @param string|null $subPage
 	 */
 	public function execute( $subPage ) {
-		if ( $subPage === 'TermsOfServices' ) {
-			$configName = 'PrivacyTermsOfServiceLink';
-			$localPageName = $this->msg( 'bs-privacy-termsofservicepage' )->inContentLanguage()->text();
-		} elseif ( $subPage === 'PrivacyPolicy' ) {
-			$configName = 'PrivacyPrivacyPolicyLink';
-			$localPageName = $this->msg( 'bs-privacy-privacypage' )->inContentLanguage()->text();
-		} else {
-			$this->getOutput()->showErrorPage(
-				'error',
-				'bs-privacy-special-privacy-pages-invalid-subpage',
-				[ 'TermsOfServices, PrivacyPolicy' ]
-			);
+		if ( !in_array( $subPage, $this->provider->getNames(), true ) ) {
+			$this->error();
 			return;
 		}
-
-		$targetUrl = $this->getConfig()->get( $configName );
-		if ( empty( $targetUrl ) ) {
-			$titleFactory = MediaWikiServices::getInstance()->getTitleFactory();
-			$targetUrl = $titleFactory->newFromText( $localPageName )->getFullURL();
+		$title = $this->provider->getPrivacyTitle( $subPage );
+		$url = $this->provider->getPageUrl( $subPage );
+		if ( !$title && $url ) {
+			// Manual configuration
+			$this->getOutput()->redirect( $url );
+		} elseif ( $title ) {
+			if ( $title->isSpecialPage() ) {
+				$this->getOutput()->redirect( $url );
+			}
+			$this->getOutput()->setPageTitle( $title->getText() );
+			if ( $title->exists() ) {
+				$pageText = $title->getPrefixedText();
+				if ( $title->getNamespace() === NS_MAIN ) {
+					$pageText = ':' . $pageText;
+				}
+				// Include local page
+				$this->getOutput()->addWikiTextAsContent( "{{{$pageText}}}" );
+			} else {
+				$this->getOutput()->enableOOUI();
+				$this->getOutput()->addHTML(
+					new MessageWidget( [
+						'type' => 'warning',
+						'label' => $this->msg( 'bs-privacy-special-privacy-pages-missing-page' )->text()
+					] )
+				);
+			}
+		} else {
+			$this->error();
 		}
+	}
 
-		$this->getOutput()->redirect( $targetUrl );
+	private function error() {
+		$this->getOutput()->showErrorPage(
+			'error',
+			'bs-privacy-special-privacy-pages-invalid-subpage',
+			array_values( $this->provider->getNames() )
+		);
 	}
 }

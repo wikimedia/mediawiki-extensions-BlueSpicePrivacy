@@ -2,14 +2,16 @@
 
 namespace BlueSpice\Privacy\AlertProvider;
 
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
 use MediaWiki\Config\Config;
+use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Skin\Skin;
-use MediaWiki\Title\TitleFactory;
-use MediaWiki\User\UserGroupManager;
 use MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
+use Wikimedia\Rdbms\ILoadBalancer;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class MissingPrivacyPages extends AlertProviderBase {
@@ -19,15 +21,6 @@ class MissingPrivacyPages extends AlertProviderBase {
 	 */
 	protected $alertMessage = null;
 
-	/** @var UserGroupManager */
-	private $groupManager = null;
-
-	/** @var TitleFactory */
-	private $titleFactory = null;
-
-	/** @var LinkRenderer */
-	private $linkRenderer = null;
-
 	/** @var bool */
 	private $isInitialized = false;
 
@@ -35,16 +28,19 @@ class MissingPrivacyPages extends AlertProviderBase {
 	 * @param Skin $skin
 	 * @param LoadBalancer $loadBalancer
 	 * @param Config $config
-	 * @param UserGroupManager $groupManager
-	 * @param TitleFactory $titleFactory
-	 * @param LinkRenderer $linkRenderer
+	 * @param PrivacyPageProvider $pageProvider
+	 * @param PermissionManager $permissionManager
+	 * @param HookContainer $hookContainer
 	 */
-	public function __construct( $skin, LoadBalancer $loadBalancer, Config $config,
-	$groupManager, $titleFactory, $linkRenderer ) {
+	public function __construct(
+		$skin,
+		ILoadBalancer $loadBalancer,
+		Config $config,
+		private readonly PrivacyPageProvider $pageProvider,
+		private readonly PermissionManager $permissionManager,
+		private readonly HookContainer $hookContainer
+	) {
 		parent::__construct( $skin, $loadBalancer, $config );
-		$this->groupManager = $groupManager;
-		$this->titleFactory = $titleFactory;
-		$this->linkRenderer = $linkRenderer;
 	}
 
 	/**
@@ -72,17 +68,14 @@ class MissingPrivacyPages extends AlertProviderBase {
 		$services = MediaWikiServices::getInstance();
 		$loadBalancer = $services->getDBLoadBalancer();
 		$config = $services->getConfigFactory()->makeConfig( 'bsg' );
-		$groupManager = $services->getUserGroupManager();
-		$titleFactory = $services->getTitleFactory();
-		$linkRenderer = $services->getLinkRenderer();
 
 		return new static(
 			$skin,
 			$loadBalancer,
 			$config,
-			$groupManager,
-			$titleFactory,
-			$linkRenderer
+			$services->getService( 'BlueSpicePrivacy.PrivacyPageProvider' ),
+			$services->getPermissionManager(),
+			$services->getHookContainer()
 		);
 	}
 
@@ -91,47 +84,33 @@ class MissingPrivacyPages extends AlertProviderBase {
 			return;
 		}
 
+		$shouldRender = true;
+		$this->hookContainer->run( 'BlueSpicePrivacyShowShowMissingPageAlert', [ $this->skin, &$shouldRender ] );
+
+		if ( !$shouldRender ) {
+			return;
+		}
 		$user = $this->skin->getUser();
-		$groupMemberships = $this->groupManager->getUserGroupMemberships( $user );
-		if ( !array_key_exists( 'sysop', $groupMemberships ) ) {
-			$this->isInitialized = true;
-			return;
-		}
-
-		$tosPage = $this->skin->msg( 'bs-privacy-termsofservicepage' )->inContentLanguage()->text();
-		$ppPage = $this->skin->msg( 'bs-privacy-privacypage' )->inContentLanguage()->text();
-
-		$tosTitle = $this->titleFactory->newFromText( $tosPage );
-		$ppTitle = $this->titleFactory->newFromText( $ppPage );
-
-		$titles = [];
-		if ( empty( $this->getConfig()->get( "PrivacyTermsOfServiceLink" ) ) ) {
-			$titles[] = $tosTitle;
-		}
-		if ( empty( $this->getConfig()->get( "PrivacyPrivacyPolicyLink" ) ) ) {
-			$titles[] = $ppTitle;
-		}
-		if ( empty( $titles ) ) {
-			$this->isInitialized = true;
-			return;
-		}
-		$redLinks = [];
-		foreach ( $titles as $title ) {
-			if ( !$title || $title->exists() ) {
+		$pages = [];
+		foreach ( $this->pageProvider->getNames() as $name ) {
+			$title = $this->pageProvider->getPrivacyTitle( $name );
+			if ( !$title || $title->exists() || $title->isSpecialPage() ) {
 				continue;
 			}
-			$redLinks[] = $this->linkRenderer->makeLink( $title );
+			if ( !$this->permissionManager->quickUserCan( 'createpage', $user, $title ) ) {
+				continue;
+			}
+			$pages[] = $this->pageProvider->getLinkHtml( $name );
 		}
-		if ( empty( $redLinks ) ) {
-			$this->isInitialized = true;
+		$this->isInitialized = true;
+
+		if ( empty( $pages ) ) {
 			return;
 		}
-		$redLinkList = $this->skin->getLanguage()->listToText( $redLinks );
-		$redlinkCount = count( $redLinks );
-
 		$this->alertMessage = $this->skin->msg( 'bs-privacy-alert-page-not-exist' )
-			->rawParams( $redlinkCount, $redLinkList );
-
-		$this->isInitialized = true;
+			->rawParams(
+				count( $pages ),
+				$this->skin->getLanguage()->listToText( $pages )
+			);
 	}
 }

@@ -22,7 +22,7 @@ class Anonymization extends ModuleRequestable {
 	 */
 	public function call( $func, $data ) {
 		if ( !$this->verifyUser() ) {
-			Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
+			return Status::newFatal( wfMessage( 'bs-privacy-invalid-user' ) );
 		}
 
 		switch ( $func ) {
@@ -155,6 +155,7 @@ class Anonymization extends ModuleRequestable {
 	/**
 	 * @param array $data
 	 * @return Status
+	 * @throws Exception
 	 */
 	protected function submitRequest( $data ) {
 		$user = RequestContext::getMain()->getUser();

@@ -11,7 +11,7 @@ class Extension extends \BlueSpice\Extension {
 			[
 				'privacy' => [
 					'class' => 'BlueSpice\\Privacy\\ComponentFilter\\PrivacyFilter',
-					'services' => [ 'TitleFactory' ]
+					'services' => [ 'BlueSpicePrivacy.PrivacyPageProvider' ]
 				]
 			]
 		);

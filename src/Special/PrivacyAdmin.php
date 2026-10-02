@@ -25,7 +25,7 @@ class PrivacyAdmin extends SpecialPage {
 	 * @param ConfigFactory $configFactory
 	 */
 	public function __construct( ModuleRegistry $moduleRegistry, ConfigFactory $configFactory ) {
-		parent::__construct( 'PrivacyAdmin', 'bs-privacy-admin' );
+		parent::__construct( 'PrivacyAdmin' );
 		$this->moduleRegistry = $moduleRegistry;
 		$this->configFactory = $configFactory;
 	}
@@ -38,6 +38,13 @@ class PrivacyAdmin extends SpecialPage {
 
 		$this->setUp();
 		$this->output();
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getRestriction(): string {
+		return 'bs-privacy-admin';
 	}
 
 	protected function setUp() {

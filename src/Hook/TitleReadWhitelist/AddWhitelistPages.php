@@ -2,40 +2,35 @@
 
 namespace BlueSpice\Privacy\Hook\TitleReadWhitelist;
 
-use BlueSpice\Hook\TitleReadWhitelist;
-use MediaWiki\Title\Title;
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
+use MediaWiki\Permissions\Hook\TitleReadWhitelistHook;
 
-class AddWhitelistPages extends TitleReadWhitelist {
+class AddWhitelistPages implements TitleReadWhitelistHook {
 
 	/**
-	 * @return bool
+	 * @param PrivacyPageProvider $pageProvider
 	 */
-	protected function skipProcessing() {
-		if ( $this->title->isSpecial( 'PrivacyPages' ) ) {
-			return false;
-		}
-
-		$pages = [
-			'bs-privacy-privacypage',
-			'bs-privacy-termsofservicepage'
-		];
-
-		foreach ( $pages as $value ) {
-			$page = $this->msg( $value );
-			$title = Title::newFromText( $page->text() );
-			if ( $title && $this->title->equals( $title ) ) {
-				return false;
-			}
-			$title = Title::newFromText( $page->inContentLanguage()->text() );
-			if ( $title && $this->title->equals( $title ) ) {
-				return false;
-			}
-
-		}
-		return true;
+	public function __construct(
+		private readonly PrivacyPageProvider $pageProvider
+	) {
 	}
 
-	protected function doProcess() {
-		$this->whitelisted = true;
+	/**
+	 * @inheritDoc
+	 */
+	public function onTitleReadWhitelist( $title, $user, &$allowed ) {
+		if ( $title->isSpecial( 'PrivacyPages' ) ) {
+			$allowed = true;
+			return false;
+		}
+		foreach ( $this->pageProvider->getNames() as $name ) {
+			$page = $this->pageProvider->getPrivacyTitle( $name );
+			if ( $page && $page->equals( $title ) ) {
+				$allowed = true;
+				return false;
+			}
+		}
+
+		return true;
 	}
 }
