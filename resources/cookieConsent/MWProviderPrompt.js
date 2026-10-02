@@ -71,11 +71,18 @@
 		} );
 
 		const disclamer = new OO.ui.LabelWidget( {
-			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-disclaimer' ).text(),
+			label: new OO.ui.HtmlSnippet( mw.message( 'bs-privacy-cookie-consent-mw-provider-disclaimer' ).text() ),
 			classes: [ 'disclaimer' ]
 		} );
 		// Accessibility: Set tabindex fot tab navigation
 		disclamer.$element.attr( 'tabindex', '0' );
+
+		const links = this.handlerConfig.privacyPages || [];
+		if ( links.length > 0 ) {
+			disclamer.$element.append(
+				$( '<div>' ).addClass( 'bs-privacy-cookie-consent-mw-provider-links' ).append( links )
+			);
+		}
 
 		const settings = new OO.ui.ButtonWidget( {
 			framed: false,
@@ -84,6 +91,19 @@
 		} );
 		settings.on( 'click', () => {
 			this.bar.emit( 'cookieSettingsOpen' );
+		} );
+
+		const onlyMandatory = new OO.ui.ButtonWidget( {
+			flags: [
+				'progressive'
+			],
+			framed: false,
+			label: mw.message( 'bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label' ).text()
+		} );
+		onlyMandatory.connect( this, {
+			click: () => {
+				this.bar.emit( 'cookieSettingsChanged', [] );
+			}
 		} );
 
 		const acceptAll = new OO.ui.ButtonWidget( {
@@ -101,6 +121,7 @@
 		this.bar.addItems( [
 			disclamer,
 			settings,
+			onlyMandatory,
 			acceptAll
 		] );
 
@@ -186,7 +207,7 @@
 	};
 
 	bs.privacy.cookieConsent.MWProviderPrompt.prototype.shouldCookieBannerBeShown = function () {
-		return this.cookieExists() === false && this.acceptMandatory;
+		return this.cookieExists() === false && this.acceptMandatory && !this.handlerConfig.isWhitelistedPage;
 	};
 
 	new bs.privacy.cookieConsent.MWProviderPrompt(); // eslint-disable-line no-new

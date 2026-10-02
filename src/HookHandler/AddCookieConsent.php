@@ -4,6 +4,7 @@ namespace BlueSpice\Privacy\HookHandler;
 
 use BlueSpice\Privacy\CookieConsentProviderRegistry;
 use BlueSpice\Privacy\ICookieConsentProvider;
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
@@ -19,13 +20,20 @@ class AddCookieConsent implements BeforePageDisplayHook {
 	 */
 	protected $bsgConfig;
 
+	/** @var PrivacyPageProvider */
+	private $privacyPageProvider;
+
 	/**
 	 * @param Config $mainConfig
 	 * @param ConfigFactory $configFactory
+	 * @param PrivacyPageProvider $privacyPageProvider
 	 */
-	public function __construct( Config $mainConfig, ConfigFactory $configFactory ) {
+	public function __construct(
+		Config $mainConfig, ConfigFactory $configFactory, PrivacyPageProvider $privacyPageProvider
+	) {
 		$this->mainConfig = $mainConfig;
 		$this->bsgConfig = $configFactory->makeConfig( 'bsg' );
+		$this->privacyPageProvider = $privacyPageProvider;
 	}
 
 	/**
@@ -56,7 +64,9 @@ class AddCookieConsent implements BeforePageDisplayHook {
 			"cookiePrefix" => $this->mainConfig->get( 'CookiePrefix' ),
 			"cookiePath" => $this->mainConfig->get( 'CookiePath' ),
 			"RLModule" => $provider->getRLHandlerModule(),
-			"acceptMandatory" => (bool)$this->bsgConfig->get( 'PrivacyCookieAcceptMandatory' )
+			"acceptMandatory" => (bool)$this->bsgConfig->get( 'PrivacyCookieAcceptMandatory' ),
+			"privacyPages" => $this->privacyPageProvider->getLinksHtml(),
+			"isWhitelistedPage" => $this->privacyPageProvider->isPrivacyPage( $out->getTitle() ),
 		], $provider->getHandlerConfig() ) );
 	}
 }

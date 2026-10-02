@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Privacy\ComponentFilter;
 
+use BlueSpice\Privacy\Util\PrivacyPageProvider;
 use MediaWiki\Context\IContextSource;
-use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponentFilter;
 
@@ -20,24 +20,12 @@ class PrivacyFilter implements IComponentFilter {
 		'BlueSpice\Discovery\Component\SidebarPrimaryToggleButtonMobile'
 	];
 
-	private const PRIVACY_PAGES = [
-		'bs-privacy-privacypage',
-		'bs-privacy-termsofservicepage',
-		'privacypage',
-		'aboutpage',
-		'disclaimerpage'
-	];
-
 	/**
-	 * @var TitleFactory
+	 * @param PrivacyPageProvider $pageProvider
 	 */
-	private $titleFactory = null;
-
-	/**
-	 * @param TitleFactory $titleFactory
-	 */
-	public function __construct( TitleFactory $titleFactory ) {
-		$this->titleFactory = $titleFactory;
+	public function __construct(
+		private readonly PrivacyPageProvider $pageProvider
+	) {
 	}
 
 	/**
@@ -64,11 +52,12 @@ class PrivacyFilter implements IComponentFilter {
 		if ( !$title || $title->isSpecial( 'PrivacyPages' ) ) {
 			return false;
 		}
-
-		foreach ( self::PRIVACY_PAGES as $value ) {
-			$page = $context->msg( $value );
-			$privacytitle = $this->titleFactory->newFromText( $page->inContentLanguage()->text() );
-			if ( $privacytitle && $title->equals( $privacytitle ) ) {
+		foreach ( $this->pageProvider->getExtendedNames() as $name ) {
+			$privacyTitle = $this->pageProvider->getPrivacyTitle( $name );
+			if ( !$privacyTitle ) {
+				continue;
+			}
+			if ( $title->equals( $privacyTitle ) ) {
 				return false;
 			}
 		}
