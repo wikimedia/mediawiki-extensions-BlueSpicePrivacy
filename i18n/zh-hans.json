@@ -230,5 +230,6 @@
 	"bs-privacy-module-name-anonymization": "匿名化",
 	"bs-privacy-module-name-deletion": "删除",
 	"prefs-privacy": "隐私",
-	"bs-privacy-cookie-banner-aria-label": "Cookie设置"
+	"bs-privacy-cookie-banner-aria-label": "Cookie设置",
+	"bs-privacy-anonymization-api-not-logged-in": "您必须登录才能匿名化用户账号"
 }
