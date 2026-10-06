@@ -211,5 +211,6 @@
 	"bs-privacy-module-name-anonymization": "익명화",
 	"bs-privacy-module-name-deletion": "삭제",
 	"prefs-privacy": "개인정보",
-	"bs-privacy-cookie-banner-aria-label": "쿠키 설정"
+	"bs-privacy-cookie-banner-aria-label": "쿠키 설정",
+	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다"
 }
