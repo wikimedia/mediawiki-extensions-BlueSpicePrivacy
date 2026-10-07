@@ -3,9 +3,9 @@
 namespace BlueSpice\Privacy;
 
 use BlueSpice\Privacy\Event\RequestSubmitted;
-use ManualLogEntry;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Language\Language;
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Permissions\GroupPermissionsLookup;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\SpecialPage\SpecialPageFactory;

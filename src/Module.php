@@ -3,7 +3,7 @@
 namespace BlueSpice\Privacy;
 
 use Exception;
-use ManualLogEntry;
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
