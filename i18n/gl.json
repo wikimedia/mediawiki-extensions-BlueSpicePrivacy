@@ -205,5 +205,6 @@
 	"bs-privacy-module-name-anonymization": "Anonimización",
 	"bs-privacy-module-name-deletion": "Eliminación",
 	"prefs-privacy": "Privacidade",
-	"bs-privacy-cookie-banner-aria-label": "Configuración de cookies"
+	"bs-privacy-cookie-banner-aria-label": "Configuración de cookies",
+	"bs-privacy-anonymization-api-not-logged-in": "Debes iniciar sesión para anonimizar unha conta de usuario"
 }
