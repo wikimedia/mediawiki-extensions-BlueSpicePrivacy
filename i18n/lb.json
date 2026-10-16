@@ -57,5 +57,10 @@
 	"bs-privacy-transparency-export-data-button": "Donnéeën exportéieren",
 	"bs-privacy-transparency-export-layout-title": "Är Donnéeën exportéieren",
 	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen",
-	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!"
+	"bs-privacy-missing-param": "De Parameter „$1“ muss present sinn!",
+	"bs-privacy-anonymization-invalid-name": "De Benotzernumm, deen Dir aginn hutt, ass ongülteg. Sicht wgl. en anere Benotzernumm eraus.",
+	"bs-privacy-invalid-param": "De Parameter „$1“ huet en ongültegt Format!",
+	"bs-privacy-admin-invalid-request": "Ongülteg Ufro",
+	"bs-privacy-timestamp-with-days-ago": "$1 ({{PLURAL:$2|virun $2 Dag|viru(n) $2 Deeg}})",
+	"bs-privacy-special-privacy-pages-invalid-subpage": "Ongülteg Ënnersäit. Benotzt wgl. eng vun deene Follgenden: $1"
 }

@@ -213,5 +213,6 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "체크됨",
 	"bs-privacy-admin-icon-bool-false-aria-label": "체크되지 않음",
 	"bs-privacy-transparency-type-selector-working": "작업 관련 데이터 (예: 알림, 할당 등)",
-	"bs-privacy-transparency-type-selector-content": "콘텐츠 내의 언급 (예: 문서, 타임라인 개체, 댓글 등)"
+	"bs-privacy-transparency-type-selector-content": "콘텐츠 내의 언급 (예: 문서, 타임라인 개체, 댓글 등)",
+	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다"
 }
