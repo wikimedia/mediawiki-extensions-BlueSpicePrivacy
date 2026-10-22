@@ -213,5 +213,6 @@
 	"bs-privacy-module-name-anonymization": "Anonimisering",
 	"bs-privacy-module-name-deletion": "Verwijdering",
 	"prefs-privacy": "Privacy",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-instellingen"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-instellingen",
+	"bs-privacy-anonymization-api-not-logged-in": "U moet aangemeld zijn om een gebruikersaccount te anonimiseren."
 }
