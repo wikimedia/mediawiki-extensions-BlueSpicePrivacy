@@ -5,11 +5,11 @@ namespace BlueSpice\Privacy\AlertProvider;
 use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MediaWiki\Skin\Skin;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserGroupManager;
 use MWStake\MediaWiki\Component\AlertBanners\AlertProviderBase;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
-use Skin;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class MissingPrivacyPages extends AlertProviderBase {
