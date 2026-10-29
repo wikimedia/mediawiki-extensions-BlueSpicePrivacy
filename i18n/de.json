@@ -218,5 +218,6 @@
 	"bs-privacy-module-name-anonymization": "Anonymisierung",
 	"bs-privacy-module-name-deletion": "Löschung",
 	"prefs-privacy": "Datenschutz",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-Einstellungen"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Einstellungen",
+	"bs-privacy-anonymization-api-not-logged-in": "{{#FORMAL:Du musst|Sie müssen}} angemeldet sein, um ein Benutzerkonto zu anonymisieren."
 }
