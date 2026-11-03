@@ -32,7 +32,7 @@ class PrivacyPages extends SpecialPage {
 			// Manual configuration
 			$this->getOutput()->redirect( $url );
 		} elseif ( $title ) {
-			if ( $title->isSpecialPage() ) {
+			if ( $title->isSpecialPage() || $title->getInterwiki() ) {
 				$this->getOutput()->redirect( $url );
 			}
 			$this->getOutput()->setPageTitle( $title->getText() );
