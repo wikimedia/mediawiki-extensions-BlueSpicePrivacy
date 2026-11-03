@@ -156,7 +156,7 @@
 	"apihelp-bs-privacy-param-module": "Requested module to execute action on",
 	"apihelp-bs-privacy-param-func": "Function to execute withing the requested module",
 	"apihelp-bs-privacy-param-data": "Data passed to the requested function",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "This site uses cookies to improve user experience",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "This site uses cookies to improve user experience.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Cookie consent settings",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Accept all",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Cookie consent settings",
@@ -210,5 +210,8 @@
 	"bs-privacy-module-name-deletion": "Deletion",
 	"prefs-privacy": "Privacy",
 	"bs-privacy-cookie-banner-aria-label": "Cookie settings",
-	"bs-privacy-anonymization-api-not-logged-in": "You must be logged in to anonymize a user account"
+	"bs-privacy-anonymization-api-not-logged-in": "You must be logged in to anonymize a user account",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Accept only mandatory cookies",
+	"bs-privacy-special-privacy-pages-missing-page": "This page does not exist yet. Please contact your system administrator.",
+	"bs-privacy-global-label": "Global"
 }
