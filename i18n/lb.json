@@ -61,5 +61,7 @@
 	"bs-privacy-special-privacy-pages-invalid-subpage": "Ongülteg Ënnersäit. Benotzt wgl. eng vun deene Follgenden: $1",
 	"bs-privacy-module-name-anonymization": "Anonymiséierung",
 	"prefs-privacy": "Dateschutz",
-	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen"
+	"bs-privacy-cookie-banner-aria-label": "Cookie-Astellungen",
+	"bs-privacy-special-privacy-pages-missing-page": "Dës Säit gëtt et nach net. Kontaktéiert wgl. Äre Systemadministrateur.",
+	"bs-privacy-global-label": "Global"
 }
