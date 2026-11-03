@@ -2,9 +2,7 @@
 
 namespace BlueSpice\Privacy;
 
-use HtmlArmor;
-use MediaWiki\Html\Html;
-use MediaWiki\Message\Message;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Title\TitleFactory;
 
 class EnhancedGlobalActionsAdministration extends GlobalActionsAdministration {
@@ -19,24 +17,21 @@ class EnhancedGlobalActionsAdministration extends GlobalActionsAdministration {
 	}
 
 	/**
-	 * @inheritDoc
-	 */
-	public function getPostHtml(): HtmlArmor {
-		$html = Html::element( 'span', [
-			'class' => 'badge'
-		], Message::newFromKey( 'bs-privacy-global-label' )->text() );
-		return new HtmlArmor( $html );
-	}
-
-	/**
 	 * @return string
 	 */
 	public function getHref(): string {
-		if ( defined( 'FARMER_IS_ROOT_WIKI_CALL' ) && FARMER_IS_ROOT_WIKI_CALL ) {
+		$title = $this->titleFactory->newFromText( 'w:Special:PrivacyAdmin' );
+		if ( !defined( 'FARMER_IS_ROOT_WIKI_CALL' ) && !defined( FARMER_CALLED_INSTANCE ) ) {
+			return $title->getFullURL();
+		}
+		if ( FARMER_IS_ROOT_WIKI_CALL ) {
 			$title = $this->titleFactory->makeTitle( NS_SPECIAL, 'PrivacyAdmin' );
 			return $title->getLocalURL();
 		}
-		$title = $this->titleFactory->newFromText( 'w:Special:PrivacyAdmin' );
-		return $title->getFullURL();
+
+		$contextTitle = RequestContext::getMain()->getTitle();
+		$instance = FARMER_CALLED_INSTANCE_OBJECT;
+		$link = $instance->getInterwiki() . ':' . $contextTitle->getFullText();
+		return $title->getLocalURL( 'backTo=' . $link );
 	}
 }
