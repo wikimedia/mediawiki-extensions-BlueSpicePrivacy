@@ -11,15 +11,15 @@ use MediaWiki\Title\TitleFactory;
 
 class PrivacyPageProvider {
 
-	private const NAMES = [ 'TermsOfServices', 'PrivacyPolicy' ];
+	private const NAMES = [ 'TermsOfService', 'PrivacyPolicy' ];
 
 	private const PAGE_MSG_KEYS = [
-		'TermsOfServices' => 'bs-privacy-termsofservicepage',
+		'TermsOfService' => 'bs-privacy-termsofservicepage',
 		'PrivacyPolicy' => 'bs-privacy-privacypage'
 	];
 
 	private const DISPLAY_NAMES = [
-		'TermsOfServices' => 'bs-privacy-consent-type-terms-of-service-short',
+		'TermsOfService' => 'bs-privacy-consent-type-terms-of-service-short',
 		'PrivacyPolicy' => 'bs-privacy-consent-type-privacy-policy-short'
 	];
 
@@ -80,7 +80,8 @@ class PrivacyPageProvider {
 		}
 		$configName = "Privacy{$name}Link";
 		if ( $this->bsConfig->has( $configName ) && $this->bsConfig->get( $configName ) ) {
-			return $this->bsConfig->get( $configName );
+			// Manual configuration exists, no Title
+			return null;
 		}
 
 		$pageName = Message::newFromKey( self::PAGE_MSG_KEYS[$name] )->inContentLanguage()->text();
@@ -96,6 +97,10 @@ class PrivacyPageProvider {
 	 * @return string|null
 	 */
 	public function getPageUrl( string $name ): ?string {
+		$configName = "Privacy{$name}Link";
+		if ( $this->bsConfig->has( $configName ) && $this->bsConfig->get( $configName ) ) {
+			return $this->bsConfig->get( $configName );
+		}
 		$title = $this->getPrivacyTitle( $name );
 		return $title?->getFullURL();
 	}

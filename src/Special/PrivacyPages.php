@@ -22,6 +22,10 @@ class PrivacyPages extends SpecialPage {
 	 * @param string|null $subPage
 	 */
 	public function execute( $subPage ) {
+		if ( $subPage === 'TermsOfServices' ) {
+			// Compatibility normalisation
+			$subPage = 'TermsOfService';
+		}
 		if ( !in_array( $subPage, $this->provider->getNames(), true ) ) {
 			$this->error();
 			return;
