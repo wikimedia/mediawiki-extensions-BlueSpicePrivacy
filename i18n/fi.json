@@ -7,7 +7,8 @@
 			"Pxos",
 			"Pyscowicz",
 			"Silvonen",
-			"Yupik"
+			"Yupik",
+			"Wikipeedikko"
 		]
 	},
 	"bs-privacy-admintool-text": "Yksityisyys",
@@ -25,9 +26,13 @@
 	"bs-privacy-timestamp-with-days-ago-today": "$1 (tänään)",
 	"bs-privacy-consent-bool-true": "Kyllä",
 	"bs-privacy-consent-bool-false": "Ei",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tällä sivustolla käytetään evästeitä käyttäjäkokemuksen parantamiseksi.",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Hyväksy kaikki",
 	"bs-privacy-cookie-consent-group-necessary-label": "Välttämättömät evästeet",
 	"bs-privacy-cookie-consent-group-necessary-desc": "Evästeet, jotka ovat tarpeellisia sivuston toiminnan kannalta",
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
-	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna"
+	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Hyväksy vain pakolliset evästeet",
+	"bs-privacy-special-privacy-pages-missing-page": "Tätä sivua ei ole vielä olemassa. Ota yhteyttä järjestelmänvalvojaan.",
+	"bs-privacy-global-label": "Järjestelmänlaajuinen"
 }
