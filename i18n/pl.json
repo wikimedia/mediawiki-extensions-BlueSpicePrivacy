@@ -9,6 +9,8 @@
 			"WaldiSt"
 		]
 	},
+	"bs-privacy": "Prywatność BlueSpice",
+	"bs-privacy-desc": "Strona zarządzania ustawieniami ochrony prywatności",
 	"bs-privacy-api-error-generic": "Wystąpił błąd",
 	"bs-privacy-anonymization-layout-label": "Anonimizacja",
 	"bs-privacy-anonymization-new-username-label": "Nowa nazwa użytkownika",
