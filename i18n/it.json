@@ -131,5 +131,6 @@
 	"bs-privacy-admin-icon-bool-true-aria-label": "selezionato",
 	"bs-privacy-admin-icon-bool-false-aria-label": "deselezionato",
 	"prefs-privacy": "Privacy",
-	"bs-privacy-cookie-banner-aria-label": "Impostazioni cookie"
+	"bs-privacy-cookie-banner-aria-label": "Impostazioni cookie",
+	"bs-privacy-global-label": "Globale"
 }

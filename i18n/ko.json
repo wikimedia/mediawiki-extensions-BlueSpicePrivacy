@@ -158,7 +158,7 @@
 	"apihelp-bs-privacy-param-module": "작업을 실행하기 위해 요청된 모듈",
 	"apihelp-bs-privacy-param-func": "요청된 모듈 내에서 실행할 함수",
 	"apihelp-bs-privacy-param-data": "요청된 함수에 전달된 데이터",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "이 사이트를 사용자 경험을 개선하기 위해 쿠키를 사용합니다",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "이 사이트는 사용자 경험을 개선하기 위해 쿠키를 사용합니다.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "모두 승인",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "쿠키 동의 설정",
@@ -212,5 +212,8 @@
 	"bs-privacy-module-name-deletion": "삭제",
 	"prefs-privacy": "개인정보",
 	"bs-privacy-cookie-banner-aria-label": "쿠키 설정",
-	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다"
+	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "필수 쿠키만 허용",
+	"bs-privacy-special-privacy-pages-missing-page": "이 문서는 아직 존재하지 않습니다. 시스템 관리자에게 문의해주세요.",
+	"bs-privacy-global-label": "전역"
 }
