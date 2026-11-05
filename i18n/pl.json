@@ -52,5 +52,7 @@
 	"logentry-bs-privacy-request-close-deletion": "$1 {{GENDER:$2|zamknął|zamknęła|zamknął(-ęła)}} prośbę o usunięcie konta złożoną przez $4",
 	"logentry-bs-privacy-request-cancel-deletion": "$1 {{GENDER:$2|anulował|anulowała|anulował(a)}} prośbę o usunięcie swojego konta",
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|zatwierdził|zatwierdziła|zatwierdził(a)}} prośbę o usunięcie konta złożoną przez $4",
-	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|odrzucił|odrzuciła|odrzucił(a)}} prośbę o usunięcie konta złożoną przez $4 z komentarzem: „$5”"
+	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|odrzucił|odrzuciła|odrzucił(a)}} prośbę o usunięcie konta złożoną przez $4 z komentarzem: „$5”",
+	"bs-privacy": "Prywatność BlueSpice",
+	"bs-privacy-desc": "Strona zarządzania ustawieniami ochrony prywatności"
 }
