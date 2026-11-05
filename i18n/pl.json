@@ -52,5 +52,7 @@
 	"logentry-bs-privacy-request-approve-deletion": "$1 {{GENDER:$2|zatwierdził|zatwierdziła|zatwierdził(a)}} prośbę o usunięcie konta złożoną przez $4",
 	"logentry-bs-privacy-request-deny-deletion": "$1 {{GENDER:$2|odrzucił|odrzuciła|odrzucił(a)}} prośbę o usunięcie konta złożoną przez $4 z komentarzem: „$5”",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Zapisz",
-	"bs-privacy-privacypage": "Project:Polityka prywatności"
+	"bs-privacy-privacypage": "Project:Polityka prywatności",
+	"bs-privacy": "Prywatność BlueSpice",
+	"bs-privacy-desc": "Strona zarządzania ustawieniami ochrony prywatności"
 }
