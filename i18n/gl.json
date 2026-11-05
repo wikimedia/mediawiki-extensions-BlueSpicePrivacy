@@ -153,7 +153,7 @@
 	"apihelp-bs-privacy-param-module": "Módulo solicitado no cal executar a acción",
 	"apihelp-bs-privacy-param-func": "Función a executar dentro do módulo solicitado",
 	"apihelp-bs-privacy-param-data": "Datos pasados á función solicitada",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio usa cookies para mellorar a experiencia de usuario",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Este sitio usa cookies para mellorar a experiencia de usuario.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Configuración do consentimento das cookies",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Aceptar todas",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Configuración do consentimento das cookies",
@@ -208,5 +208,8 @@
 	"bs-privacy-module-name-deletion": "Eliminación",
 	"prefs-privacy": "Privacidade",
 	"bs-privacy-cookie-banner-aria-label": "Configuración de cookies",
-	"bs-privacy-anonymization-api-not-logged-in": "Debes iniciar sesión para anonimizar unha conta de usuario"
+	"bs-privacy-anonymization-api-not-logged-in": "Debes iniciar sesión para anonimizar unha conta de usuario",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Aceptar só as cookies obrigatorias",
+	"bs-privacy-special-privacy-pages-missing-page": "Esta páxina aínda non existe. Ponte en contacto coa administración do sistema.",
+	"bs-privacy-global-label": "Global"
 }

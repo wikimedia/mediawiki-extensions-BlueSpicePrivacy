@@ -4,5 +4,9 @@
 			"AhmedG612"
 		]
 	},
-	"bs-privacy-anonymization-api-not-logged-in": "Waa inaad soo gashaa si aad akoon isticmaale uga dhigto mid aan la aqoonsan karin"
+	"bs-privacy-anonymization-api-not-logged-in": "Waa inaad soo gashaa si aad akoon isticmaale uga dhigto mid aan la aqoonsan karin",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Boggan wuxuu adeegsadaa kukiyo si loo hagaajiyo khibradda isticmaalaha.",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Aqbal oo keliya kukiyada khasabka ah.",
+	"bs-privacy-special-privacy-pages-missing-page": "Boggan weli ma jiro. Fadlan la xiriir maamulaha nidaamkaaga.",
+	"bs-privacy-global-label": "Caalami"
 }

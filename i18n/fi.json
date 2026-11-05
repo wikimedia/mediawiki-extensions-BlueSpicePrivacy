@@ -7,6 +7,7 @@
 			"Pxos",
 			"Pyscowicz",
 			"Silvonen",
+			"Wikipeedikko",
 			"Yupik"
 		]
 	},
@@ -30,5 +31,9 @@
 	"bs-privacy-cookie-convenience-group-label": "Hyödylliset evästeet",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-save": "Tallenna",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-cancel": "Sulje",
-	"bs-privacy-admin-consent-grid-column-user": "Käyttäjä"
+	"bs-privacy-admin-consent-grid-column-user": "Käyttäjä",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Tällä sivustolla käytetään evästeitä käyttäjäkokemuksen parantamiseksi.",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Hyväksy vain pakolliset evästeet",
+	"bs-privacy-special-privacy-pages-missing-page": "Tätä sivua ei ole vielä olemassa. Ota yhteyttä järjestelmänvalvojaan.",
+	"bs-privacy-global-label": "Järjestelmänlaajuinen"
 }

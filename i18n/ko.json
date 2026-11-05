@@ -123,7 +123,7 @@
 	"logentry-bs-privacy-request-close-anonymization": "$4님의 익명화 요청을 $1님이 닫았{{GENDER:$2|습니다}}",
 	"logentry-bs-privacy-request-close-deletion": "$1 님이 $4의 삭제 요청을 {{GENDER:$2|닫았습니다}}",
 	"logentry-bs-privacy-request-approve-deletion": "$1님이 $4 사용자의 삭제 요청을 승인{{GENDER:$2|했습니다}}",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "이 사이트를 사용자 경험을 개선하기 위해 쿠키를 사용합니다",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "이 사이트는 사용자 경험을 개선하기 위해 쿠키를 사용합니다.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "쿠키 동의 설정",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "모두 승인",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "쿠키 동의 설정",
@@ -214,5 +214,8 @@
 	"bs-privacy-admin-icon-bool-false-aria-label": "체크되지 않음",
 	"bs-privacy-transparency-type-selector-working": "작업 관련 데이터 (예: 알림, 할당 등)",
 	"bs-privacy-transparency-type-selector-content": "콘텐츠 내의 언급 (예: 문서, 타임라인 개체, 댓글 등)",
-	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다"
+	"bs-privacy-anonymization-api-not-logged-in": "사용자 계정을 익명화하려면 로그인해야 합니다",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "필수 쿠키만 허용",
+	"bs-privacy-special-privacy-pages-missing-page": "이 문서는 아직 존재하지 않습니다. 시스템 관리자에게 문의해주세요.",
+	"bs-privacy-global-label": "전역"
 }

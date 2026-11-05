@@ -171,7 +171,7 @@
 	"apihelp-bs-privacy-param-module": "要执行操作的请求模块",
 	"apihelp-bs-privacy-param-func": "请求模块中要执行的函数",
 	"apihelp-bs-privacy-param-data": "数据已传递至请求的函数",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "此站点使用Cookies以提升用户体验。",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "本站点使用cookies以提升用户体验。",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Cookie许可设置",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "接受所有",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Cookie许可设置",
@@ -233,5 +233,8 @@
 	"bs-privacy-module-name-deletion": "删除",
 	"prefs-privacy": "隐私",
 	"bs-privacy-cookie-banner-aria-label": "Cookie设置",
-	"bs-privacy-anonymization-api-not-logged-in": "您必须登录才能匿名化用户账号"
+	"bs-privacy-anonymization-api-not-logged-in": "您必须登录才能匿名化用户账号",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "仅接受必要的cookies",
+	"bs-privacy-special-privacy-pages-missing-page": "此页面尚不存在。请联系您的系统管理员。",
+	"bs-privacy-global-label": "全域"
 }
