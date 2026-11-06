@@ -160,7 +160,7 @@
 	"apihelp-bs-privacy-param-module": "De gevraagde module waarop de handeling moet worden verricht",
 	"apihelp-bs-privacy-param-func": "De binnen de gevraagde module uit te voeren functie",
 	"apihelp-bs-privacy-param-data": "De gegevens die aan de gevraagde functie doorgegeven worden",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Deze site gebruikt cookies om het gebruik te verbeteren",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Deze site gebruikt cookies om het gebruik te verbeteren.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Instellingen voor toestemming van volgbestanden",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alles accepteren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Instellingen voor toestemming voor cookies",
