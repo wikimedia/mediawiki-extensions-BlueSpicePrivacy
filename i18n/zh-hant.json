@@ -3,6 +3,7 @@
 		"authors": [
 			"Arielyurusova",
 			"Kly",
+			"LowensteinYang",
 			"Winston Sung",
 			"捍粵者"
 		]
@@ -156,7 +157,7 @@
 	"apihelp-bs-privacy-param-module": "執行操作的請求模組",
 	"apihelp-bs-privacy-param-func": "以請求模組執行的功能",
 	"apihelp-bs-privacy-param-data": "傳遞至請求功能的資料",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "此站台使用 cookie 來增進使用者體驗",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "此站台使用cookie來增進使用者體驗。",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Cookie 許可設定",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "接受全部",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Cookie 許可設定",
