@@ -164,7 +164,7 @@
 	"apihelp-bs-privacy-param-module": "Angefordertes Modul auf das Aktion ausgeführt werden soll",
 	"apihelp-bs-privacy-param-func": "Funktion zur Ausführung mit dem angeforderten Modul",
 	"apihelp-bs-privacy-param-data": "Daten, die an die angeforderte Funktion übergeben werden.",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Diese Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern.",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "Cookie-Zustimmungseinstellungen",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "Alle akzeptieren",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "Cookie-Zustimmungseinstellungen",
@@ -219,5 +219,8 @@
 	"bs-privacy-module-name-deletion": "Löschung",
 	"prefs-privacy": "Datenschutz",
 	"bs-privacy-cookie-banner-aria-label": "Cookie-Einstellungen",
-	"bs-privacy-anonymization-api-not-logged-in": "{{#FORMAL:Du musst|Sie müssen}} angemeldet sein, um ein Benutzerkonto zu anonymisieren."
+	"bs-privacy-anonymization-api-not-logged-in": "{{#FORMAL:Du musst|Sie müssen}} angemeldet sein, um ein Benutzerkonto zu anonymisieren.",
+	"bs-privacy-cookie-consent-mw-provider-mandatory-only-btn-label": "Nur notwendige Cookies akzeptieren",
+	"bs-privacy-special-privacy-pages-missing-page": "Diese Seite existiert noch nicht. Bitte {{#FORMAL:kontaktiere|kontaktieren Sie}} {{#FORMAL:deinen|Ihren}} Systemadministrator.",
+	"bs-privacy-global-label": "Global"
 }
