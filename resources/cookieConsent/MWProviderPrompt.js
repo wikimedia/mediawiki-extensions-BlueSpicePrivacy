@@ -102,7 +102,7 @@
 		} );
 		onlyMandatory.connect( this, {
 			click: () => {
-				this.bar.emit( 'cookieSettingsChanged', [] );
+				this.bar.emit( 'cookieSettingsChanged', [ 'necessary' ] );
 			}
 		} );
 
