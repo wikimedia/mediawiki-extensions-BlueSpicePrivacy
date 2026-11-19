@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"Erelon",
 			"Neriah",
@@ -157,7 +158,7 @@
 	"apihelp-bs-privacy-param-module": "המודול המבוקש לביצוע פעולה עליו",
 	"apihelp-bs-privacy-param-func": "פונקציה לביצוע בתוך המודול המבוקש",
 	"apihelp-bs-privacy-param-data": "הנתונים שמועברים לפונקציה המבוקשת",
-	"bs-privacy-cookie-consent-mw-provider-disclaimer": "האתר הזה משתמש בעוגיות בשביל לשפר את חוויית המשתמש",
+	"bs-privacy-cookie-consent-mw-provider-disclaimer": "האתר הזה משתמש בעוגיות כדי לשפר את חוויית המשתמש.",
 	"bs-privacy-cookie-consent-mw-provider-settings-btn-label": "הגדרות הסכמה לעוגיות",
 	"bs-privacy-cookie-consent-mw-provider-accept-all-btn-label": "לקבל את הכול",
 	"bs-privacy-cookie-consent-mw-provider-settings-dialog-title": "הגדרות הסכמה לעוגיות",
